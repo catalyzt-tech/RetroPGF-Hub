@@ -19,7 +19,7 @@
 </script>
 
 <div
-  class="border-2 relative border-black w-1/5 m-5 overflow-hidden rounded-2xl"
+  class="border-2 relative bg-white border-black w-1/5 m-5 overflow-hidden rounded-2xl"
 >
   <div
     class="absolute right-4 top-2 font font-bold text-[12px] text-[#FF0000] border-black border-[1px] bg-white px-2.5 p-1.5 rounded-[10px]"
@@ -29,7 +29,7 @@
       <img alt="OP" src="./img/Optimism.png" />
     </div>
   </div>
-  <div class="bg-cover w-fit opacity-100 z-2 h-20 overflow-hidden">
+  <div class="bg-cover w-fit opacity-100 z-2 h-24 overflow-hidden">
     <img src={bannerUrl} alt="banner_image" />
   </div>
   <div
