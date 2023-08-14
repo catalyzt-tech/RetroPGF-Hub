@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 lockfileVersion: '6.0'
+=======
+lockfileVersion: '6.1'
+>>>>>>> refs/remotes/origin/main
 
 settings:
   autoInstallPeers: true
