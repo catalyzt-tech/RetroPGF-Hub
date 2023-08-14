@@ -1,6 +1,9 @@
 <script>
-  import Main from "../components/Archive/Main.svelte"
+  import Navbar from "../components/Navbar.svelte";
+
 </script>
-<Main/>
-<!-- <h1 class="underline">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p> -->
+<div>
+  <Navbar />
+  <img src="/img/bg.png" alt="" class="w-screen" />
+</div>
+
