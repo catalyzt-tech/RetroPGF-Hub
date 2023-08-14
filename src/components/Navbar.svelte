@@ -6,15 +6,11 @@
   class="h-[80px] w-screen flex flex-row justify-between items-center px-4 lg:px-10"
 >
   <div class="lg:h-fit h-fit w-[200px]">
-    <img src="/img/hub-logo.png" alt="logo" height={100} />
+    <a href="/"><img src="/img/hub-logo.png" alt="logo" height={100} /></a>
   </div>
-  {#if isMobile}
-    <div>hee</div>
-  {:else}
-    <div class="flex flex-row gap-10">
-      <div>History</div>
-      <div>Dashboard</div>
-      <div>Button</div>
-    </div>
-  {/if}
+  <div class="flex flex-row gap-10">
+    <div class="font-semibold"><a href="/archive">History</a></div>
+    <div class="font-semibold">Dashboard</div>
+    <div class="font-semibold">Login</div>
+  </div>
 </div>
