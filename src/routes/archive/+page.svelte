@@ -2,6 +2,7 @@
   import Card from '../../components/Archive/Card.svelte'
   import Data from '../../data/results.json'
   import Navbar from '../../components/Navbar.svelte'
+  import Footer from '../../components/Footer.svelte'
 </script>
 
 <Navbar />
@@ -19,3 +20,4 @@
     {/each}
   </div>
 </div>
+<Footer />
