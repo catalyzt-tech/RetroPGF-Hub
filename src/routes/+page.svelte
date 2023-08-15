@@ -1,5 +1,6 @@
 <script>
   import Navbar from '../components/Navbar.svelte'
+  import Footer from '../components/Footer.svelte'
 </script>
 
 <div>
@@ -7,8 +8,12 @@
   <!-- <img src="/img/bg.png" alt="op collective" class="w-screen" /> -->
 </div>
 <div class="bg-[#FFE8E8] w-screen h-[40em]">
-  <div class="pt-20 flex justify-center items-center animate-[spin_linear_10s_infinite]">
-    <img src="img/sun.png" class="w-[15em]" alt="OP Sun" />
+  <div class="pt-20 flex justify-center items-center">
+    <img
+      src="img/sun.png"
+      class="w-[15em] animate-[spin_4s_linear_infinite]"
+      alt="OP Sun"
+    />
   </div>
 
   <h1
@@ -26,15 +31,20 @@
       Get involved</button
     >
   </div>
-  <div class="flex justify-center mt-16">
+  <div class="flex justify-center mt-16 animate-bounce">
     <img src="/img/arrow_down2.png" class="w-6" alt="arrow" />
   </div>
 </div>
-<div class ="w-screen h-[40em]">
-  <h1 class ="pt-10 mb-6 flex flex-row justify-center text-[30px] italic font-medium"> "
-    RetroPGF Hub is not only a place, but rather,
-    <br/>
-    it is about the OPtimist and collective."
+<div class="w-screen h-[40em]">
+  <div class="pt-6 flex flex-row text-[60px] justify-center italic">"</div>
+  <h1 class="mb-6 flex flex-row justify-center text-[30px] italic font-medium">
+    RetroPGF Hub is not only a place, but rather, it is about the OPtimist and
+    collective.
   </h1>
-  <p class = "flex flex-row justify-center">Come together to collaborate, share ideas which project is eligible for Retroactive Public Good Funding.</p>
+  <div class=" flex flex-row text-[60px] justify-center italic">"</div>
+  <p class="flex flex-row justify-center text-lg">
+    Let's Collaborate and Share Ideas: Together, We Shape Retroactive Public
+    Good Funding.
+  </p>
 </div>
+<Footer />
