@@ -19,10 +19,10 @@
 </script>
 
 <div
-  class="border-2 relative bg-white border-black w-1/5 m-5 overflow-hidden rounded-2xl"
+  class="border-2 relative bg-white border-black w-[15em] m-3 overflow-hidden rounded-2xl"
 >
   <div
-    class="absolute right-4 top-2 font font-bold text-[12px] text-[#FF0000] border-black border-[1px] bg-white px-2.5 p-1.5 rounded-[10px]"
+    class="absolute right-3 top-2 font font-bold text-[12px] text-[#FF0000] border-black border-[1px] bg-white px-2.5 p-1.5 rounded-[10px]"
   >
     {totalop}
     <div class="w-5 inline-flex align-[-30%]">
