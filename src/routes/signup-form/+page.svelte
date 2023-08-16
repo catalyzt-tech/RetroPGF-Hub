@@ -1,6 +1,7 @@
 <script>
   import Navbar from '../../components/Navbar.svelte'
   import Form from '../../components/Form.svelte'
+  import Footer from '../../components/Footer.svelte'
 </script>
 
 <Navbar />
@@ -16,3 +17,4 @@
   </div>
   <Form />
 </div>
+<Footer />
