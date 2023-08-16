@@ -1,4 +1,13 @@
-<script>
+<script lang="ts">
+  import { browser } from '$app/environment'
+
+  const dynamicHeight = (event: any) => {
+    if (browser) {
+      const textarea: any = event.target
+      textarea.style.height = 'auto'
+      textarea.style.height = textarea.scrollHeight + 'px'
+    }
+  }
 </script>
 
 <div class="flex justify-center">
@@ -10,7 +19,7 @@
           type="text"
           name="name"
           placeholder="Name"
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
           required
         />
       </div>
@@ -21,7 +30,7 @@
         <input
           type="file"
           accept="image/png,image/jpeg"
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm"
           required
         />
       </div></label
@@ -32,7 +41,7 @@
         <input
           type="file"
           accept="image/png,image/jpeg"
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm"
           required
         />
       </div></label
@@ -42,7 +51,7 @@
       <div>
         <input
           type="url"
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
           required
         />
       </div></label
@@ -53,7 +62,7 @@
       <div>
         <select
           name="Category"
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+          class="bg-[#EDEDED] px-5 my-5 rounded-md text-sm w-48 h-12"
           required
           >Category
           <option value="" disabled selected>Select category</option>
@@ -71,9 +80,9 @@
     <label class="font-bold text-md"
       >Project Description
       <div>
-        <input
-          type="text"
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+        <textarea
+          on:input={dynamicHeight}
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em] resize-none max-h-32"
           required
         />
       </div></label
@@ -82,9 +91,9 @@
       >How has this project contributed to the development and adoption of
       Optimism?
       <div>
-        <input
-          type="text"
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+        <textarea
+          on:input={dynamicHeight}
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em] resize-none max-h-32"
           required
         />
       </div></label
@@ -93,7 +102,7 @@
       >Which category describes this project best?
       <div>
         <select
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+          class="bg-[#EDEDED] px-5 my-5 rounded-lg text-sm w-48 h-12"
           required
         >
           <option value="" disabled selected>Select Category</option>
@@ -111,7 +120,7 @@
       <div>
         <input
           type="text"
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
           required
         />
       </div></label
@@ -121,7 +130,7 @@
       <div>
         <input
           type="text"
-          class="border-black border-2 p-4 my-5 rounded-md text-sm w-fit h-fit"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
           required
         />
       </div></label
@@ -129,7 +138,7 @@
     <button
       type="submit"
       name="submit"
-      class="flex justify-center mx-auto border-[#FF0000] bg-[#FF0000] border-2 px-4 py-2 rounded-xl font-bold text-white"
+      class="flex justify-center my-3 mx-auto border-[#FF0000] bg-[#FF0000] border-2 px-8 py-2 rounded-xl font-bold text-white"
       >Submit!</button
     >
   </form>

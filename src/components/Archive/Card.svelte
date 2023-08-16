@@ -29,8 +29,8 @@
       <img alt="OP" src="./img/Optimism.png" />
     </div>
   </div>
-  <div class="bg-cover w-fit opacity-100 z-2 h-24 overflow-hidden">
-    <img src={bannerUrl} alt="banner_image" />
+  <div class="bg-cover opacity-100 z-2 h-24 overflow-hidden">
+    <img src={bannerUrl} alt="banner_image" class=" w-full" />
   </div>
   <div
     class="ml-3 relative mt-[-2.5em] z-0 overflow-hidden w-16 border-2 border-black rounded-lg"
