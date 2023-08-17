@@ -15,6 +15,8 @@
     <BigCard />
     <BigCard />
     <BigCard />
+    <BigCard />
+    <BigCard />
   </div>
 </div>
 <Footer />

@@ -1,8 +1,8 @@
-<script>
-  import Navbar from "../components/Navbar.svelte";
-  import Footer from "../components/Footer.svelte";
-  import Button from "../components/Button.svelte";
-  import DialogCard from "../components/Home/DialogCard.svelte";
+<script lang="ts">
+  import Navbar from '../components/Navbar.svelte'
+  import Footer from '../components/Footer.svelte'
+  import Button from '../components/Button.svelte'
+  import DialogCard from '../components/Home/DialogCard.svelte'
 </script>
 
 <div>
