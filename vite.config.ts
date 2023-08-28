@@ -7,8 +7,7 @@ export default defineConfig({
     fs: {
       // Add the directories where your images are stored
       allow: [
-        '/Users/ratchanon/Desktop/Billy191/Optimism Project/RetroPGF-Forum/public/data',
-        '/Users/ratchanon/Desktop/Billy191/RetroPGF-Forum/public/data/retroPGF2-dataset',
+        '/Users/ratchanon/Desktop/Billy191/RetroPGF-Hub',
         // Add more directories if needed
       ],
     },
