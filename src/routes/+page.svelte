@@ -63,8 +63,8 @@
     </p>
 
     <div class="flex flex-col lg:flex-row gap-4 mt-8">
-      <DialogCard title="For Mentors" desc="Connect, inspire, and reap the fulfillment of guiding aspiring minds on other's journeys to success."/>
-      <DialogCard title="For Creators" desc="Empower Your Vision: Embrace Possibilities on RetroPGF Hub. Refine your ideas, Getting support from the pros."/>
+      <DialogCard title="For Mentors" desc="Connect, inspire, and reap the fulfillment of guiding aspiring minds on other's journeys to success." buttonText="Discover" buttonPath="/projects"/>
+      <DialogCard title="For Creators" desc="Empower Your Vision: Embrace Possibilities on RetroPGF Hub. Refine your ideas, Getting support from the pros." buttonText="Nominate" buttonPath="/nominate-form"/>
     </div>
 </section>
 
