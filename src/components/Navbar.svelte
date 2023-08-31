@@ -49,7 +49,7 @@
       >
         <a class="text-gray-800 hover:text-red-400" href="/projects">Projects</a>
         <a class="text-gray-800 hover:text-red-400" href="/archive">Archive</a>
-        <a class="text-gray-800 hover:text-red-400" href="/nominate"
+        <a class="text-gray-800 hover:text-red-400" href="/nominate-form"
           >Nominate</a
         >
         <a class="text-gray-800 hover:text-red-400" href="/login">Login</a>
