@@ -12,7 +12,7 @@
     <div class="text-center mb-3">{desc}</div>
     <a href={buttonPath}>
         <div
-            class="border rounded-[1em] border-black hover:bg-black hover:text-white py-2 px-6"
+            class="border rounded-[1em] border-red-500 hover:bg-red-500 hover:text-white py-2 px-6"
         >
             {buttonText}
         </div>
