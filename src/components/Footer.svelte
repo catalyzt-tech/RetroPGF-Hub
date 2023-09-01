@@ -1,7 +1,4 @@
-<script>
-</script>
-
-<div class="relative bg-[#FFE8E8] h-fit mt-10 pt-5 pb-2 text-sm">
+<footer class=" relative bg-[#FFE8E8] h-fit mt-10 pt-5 pb-2 text-sm">
   <div class="absolute top-7 left-10">
     <div class="flex space-x-3">
       <a href="https://www.facebook.com" target="_blank">
@@ -35,4 +32,4 @@
       >
     </div>
   </div>
-</div>
+</footer>

@@ -1,17 +1,25 @@
 <script lang="ts">
   import Navbar from '../../../components/Navbar.svelte'
   import Footer from '../../../components/Footer.svelte'
-  import DetailCard from '../../../components/DetailCard.svelte'
-  export let data
+  import DetailCard from '../../../components/Archive/DetailCard.svelte'
+  import { onMount } from 'svelte'
+  export let data: any
   const { detail } = data
-  console.log('This is' + detail.name)
+  let loading = true
+  onMount(async () => {
+    loading = !detail ? true : false
+  })
+  // console.log('This is' + detail.name)
 </script>
 
-<Navbar />
-<div><DetailCard {detail} /></div>
-
-<Footer />
-
-<!-- <pre>
-      {JSON.stringify($page, null, 2)}
-</pre> -->
+<div class="flex flex-col min-h-screen">
+  <Navbar />
+  {#if loading}
+    <div class="flex flex-row justify-center font-bold text-3xl my-64">
+      Loading
+    </div>
+  {:else}
+    <div><DetailCard {detail} /></div>
+  {/if}
+  <div class="flex-grow"><Footer /></div>
+</div>
