@@ -1,13 +1,40 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
   import Card from '../../components/Archive/Card.svelte'
-  import Data from '../../data/results.json'
+  // import Data from '../../data/results.json'
   import Navbar from '../../components/Navbar.svelte'
   import Footer from '../../components/Footer.svelte'
+
+  interface ProjectData {
+    'Project Name': string
+    Category: string
+    '% of votes received': number
+    'OP Received': number
+    'Project Profile': string
+  }
+
+  let Data: ProjectData = []
+  onMount(async () => {
+    try {
+      const response = await fetch('src/data/results.json')
+
+      if (!response.ok) {
+        throw new Error(`Fetch failed with status ${response.status}`)
+      }
+
+      Data = await response.json()
+      console.log(Data)
+    } catch (error) {
+      console.error('Error importing data:', error)
+    }
+  })
+
   const maxWidthCard: any = () => {
     const allCard = document.querySelector('.allcard')
     const filter: any = document.querySelector('.filter')
     filter.style.Width = allCard.style.maxWidth
   }
+
   let round: string = 'Round 2'
   const filterRound = (event: any) => {
     round = event.target.value
