@@ -1,17 +1,31 @@
 <script lang="ts">
-  import { browser } from '$app/environment'
+  import { browser } from "$app/environment";
+  import { uploadFile } from "$lib/uploadFile";
 
   const dynamicHeight = (event: any) => {
     if (browser) {
-      const textarea: any = event.target
-      textarea.style.height = 'auto'
-      textarea.style.height = textarea.scrollHeight + 'px'
+      const textarea: any = event.target;
+      textarea.style.height = "auto";
+      textarea.style.height = textarea.scrollHeight + "px";
     }
-  }
+  };
+  let bannerImageFile: File;
+
+  const onFileSelected = (e: any) => {
+    bannerImageFile = e.target.files[0];
+  };
+
+  const onSubmit = async () => {
+    const banner_url = await uploadFile(bannerImageFile, "project_banner");
+    console.log(banner_url);
+  };
 </script>
 
 <div class="flex justify-center">
-  <form class="border-2 border-black rounded-2xl mx-36 my-10 p-8">
+  <form
+    class="border-2 border-black rounded-2xl mx-36 my-10 p-8"
+    on:submit|preventDefault={onSubmit}
+  >
     <label class="font-bold text-md"
       >Project Name
       <div>
@@ -29,6 +43,7 @@
       <div>
         <input
           type="file"
+          on:change={(e) => onFileSelected(e)}
           accept="image/png,image/jpeg"
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm"
           required
