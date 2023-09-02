@@ -29,10 +29,8 @@
   </div>
 </section>
 
-<img class="w-screen" src="/img/bg.png" alt="op collective" />
-
 <section class="px-16 flex flex-col justify-center items-center">
-    <div class="relative mt-16 text-center max-w-lg mx-auto">
+    <div class="relative mt-20 text-center max-w-lg mx-auto">
       <svg
         class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-200"
         width="16"
@@ -62,7 +60,7 @@
       Retroactive Public Good Funding.
     </p>
 
-    <div class="flex flex-col lg:flex-row gap-4 mt-8">
+    <div class="flex flex-col lg:flex-row gap-4 mt-8 mb-10">
       <DialogCard title="For Mentors" desc="Connect, inspire, and reap the fulfillment of guiding aspiring minds on other's journeys to success." buttonText="Discover" buttonPath="/projects"/>
       <DialogCard title="For Creators" desc="Empower Your Vision: Embrace Possibilities on RetroPGF Hub. Refine your ideas, Getting support from the pros." buttonText="Nominate" buttonPath="/nominate-form"/>
     </div>
