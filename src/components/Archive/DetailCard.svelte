@@ -5,37 +5,54 @@
 </script>
 
 <div class="flex justify-center">
-  <div
-    class=" overflow-hidden border-2 rounded-3xl border-black w-[55em] h-[100vh] m-20"
-  >
+  <div class=" overflow-hidden border-2 rounded-2xl border-black w-[55em] m-20">
     <img src={bannerPath} alt="" class="w-fit" />
     <div class="p-10">
       <div class="relative">
-        <img src={iconPath} alt="" class="w-32 rounded-lg absolute" />
+        <img src={iconPath} alt="" class="w-32 rounded-3xl absolute" />
         <div class="absolute text-center text-3xl font-bold top-0 left-40">
           {detail?.name}
         </div>
-        <div class="absolute divide-x-2 grid grid-cols-3 top-12 left-40 w-full">
-          <div class="font-bold">Website</div>
-          <div class="font-bold">Website</div>
-          <div class="font-bold">Website</div>
+        <div
+          class="absolute divide-x-2 grid grid-cols-3 top-20 left-40 w-[calc(55em-18rem)]"
+        >
+          <div class="font-bold flex flex-col justify-center items-center">
+            <img
+              src="/img/twitter_logo.png"
+              alt="twitter"
+              class="w-6 h-6 m-1"
+            />
+            <div>Twitter (X)</div>
+          </div>
+          <div class="font-bold flex flex-col justify-center items-center">
+            <img
+              src="/img/web_logo.png"
+              alt="website"
+              class="w-6 h-6 m-1"
+            />Website
+          </div>
+          <div class="font-bold flex flex-col justify-center items-center">
+            <img
+              src="/img/github_logo.png"
+              class="w-6 h-6 m-1"
+              alt="github"
+            />Github
+          </div>
         </div>
-
-        <div class="absolute font-bold top-36">About the project</div>
-        <div class="absolute top-44">{detail?.about}</div>
-
-        <!-- <div class="font-bold">Funding allocation</div>
-        <div class="font-bold">
-          How do you support development and usage of the OP Stack? What public
-          good do you provide to the Collective?
-        </div> -->
-        <!-- <div>{detail?.question_1}</div>
-        <div class="font-bold">
-          How do you sustain yourself? Please list sources of funding and
-          revenue
-        </div>
-        <div>Recipient Address</div> -->
       </div>
+      <div class=" font-bold mt-40 text-lg">About the project</div>
+      <div class="mt-1 mb-5 text-[#616161]">{detail?.about}</div>
+      <div class=" font-bold text-lg">Funding allocation</div>
+      <div class="mt-1 mb-5 text-[#616161]">123,456.789 OP</div>
+      <div class="font-bold text-lg">
+        How do you support development and usage of the OP Stack? What public
+        good do you provide to the Collective?
+      </div>
+      <div class="mt-1 mb-5 text-[#616161]">{detail?.question_1}</div>
+      <div class="font-bold text-lg">
+        How do you sustain yourself? Please list sources of funding and revenue
+      </div>
+      <div class=" mt-1 text-[#616161]">{detail?.question_2}</div>
     </div>
   </div>
 </div>
