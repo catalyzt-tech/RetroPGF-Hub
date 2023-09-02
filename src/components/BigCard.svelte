@@ -24,7 +24,7 @@
         <br class="hidden lg:block">
         & Adoption
       </div>
-      <div class="font-medium text-xs">View More &gt</div>
+      <div class="font-medium text-xs shrink-0">View More &gt</div>
     </div>
   </div>
 </div>
