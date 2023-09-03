@@ -1,7 +1,7 @@
 <script>
-  import Navbar from '../../components/Navbar.svelte'
-  import Form from '../../components/Nominate-Form/Form.svelte'
-  import Footer from '../../components/Footer.svelte'
+  import Navbar from '@/components/Navbar.svelte'
+  import Form from '@/components/Nominate-Form/Form.svelte'
+  import Footer from '@/components/Footer.svelte'
 </script>
 
 <Navbar />

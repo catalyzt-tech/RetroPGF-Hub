@@ -1,8 +1,8 @@
 <script lang="ts">
   import { Axios } from "$lib/axios";
   import { onMount } from "svelte";
-  import { loginSession } from "../../../stores/session";
-  import type { Project } from "../../../types/Response";
+  import { loginSession } from "@/stores/session";
+  import type { Project } from "@/types/Response";
 
   let projects: Project[] = [];
 

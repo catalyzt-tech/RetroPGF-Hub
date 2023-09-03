@@ -1,7 +1,7 @@
 <script>
-  import Navbar from '../../components/Navbar.svelte'
-  import Footer from '../../components/Footer.svelte'
-  import BigCard from '../../components/Projects/BigCard.svelte'
+  import Navbar from '@/components/Navbar.svelte'
+  import Footer from '@/components/Footer.svelte'
+  import BigCard from '@/components/Projects/BigCard.svelte'
 </script>
 
 <Navbar />
