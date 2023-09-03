@@ -33,7 +33,11 @@
     {/if}
     <div class="p-10">
       <div class="relative">
-        <img src={iconPath} alt="" class="w-32 rounded-3xl absolute" />
+        <img
+          src={iconPath}
+          alt=""
+          class="w-32 rounded-3xl absolute shadow-sm"
+        />
         <div class="absolute text-center text-[2em] font-bold top-0 left-40">
           {detail?.name}
         </div>
