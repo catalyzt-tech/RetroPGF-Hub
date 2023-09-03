@@ -52,7 +52,7 @@
           >Nominate</a
         >
         {#if !$loginSession}
-          <a class="text-gray-800 hover:text-red-400" href="/login">Login </a>
+          <a class="text-gray-800 hover:bg-red-500 hover:text-white px-3 py-1 bg-gray-200 rounded-full" href="/login">Login </a>
         {:else}
           <button on:click={() => localStorage.removeItem("session")}
             >Logout</button
