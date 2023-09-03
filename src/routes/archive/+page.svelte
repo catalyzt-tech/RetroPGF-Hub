@@ -17,7 +17,7 @@
   let loading = true
   onMount(async () => {
     try {
-      const response = await fetch('src/data/results.json')
+      const response = await fetch('public/data/retroPGF2-dataset/results.json')
       Data = await response.json()
       // console.log(Data)
     } catch (error) {
