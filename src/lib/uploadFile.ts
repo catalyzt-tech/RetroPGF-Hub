@@ -1,6 +1,7 @@
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { nanoid } from "nanoid";
 import { storage } from "./firebase";
+
 export const uploadFile = async (File: File, filePath: string) => {
   if (!File) return;
 

@@ -3,6 +3,7 @@
   const toggleNavbar = () => {
     showMenu = !showMenu
   }
+  import { loginSession } from "../stores/session";
 </script>
 
 <div class="text-base">
@@ -44,21 +45,10 @@
           ? 'flex'
           : 'hidden'}"
       >
-        <a
-          class="text-gray-800 font-medium transition ease-in-out hover:text-red-400"
-          href="/projects">Projects</a
-        >
-        <a
-          class="text-gray-800 font-medium transition ease-in-out hover:text-red-400"
-          href="/archive">Archive</a
-        >
-        <a
-          class="text-gray-800 font-medium transition ease-in-out hover:text-red-400"
-          href="/nominate-form">Nominate</a
-        >
-        <a
-          class="text-gray-800 font-medium transition ease-in-out hover:text-red-400"
-          href="/login">Login</a
+        <a class="text-gray-800 hover:text-red-400" href="/projects">Projects</a>
+        <a class="text-gray-800 hover:text-red-400" href="/archive">Archive</a>
+        <a class="text-gray-800 hover:text-red-400" href="/nominate-form"
+          >Nominate</a
         >
       </div>
     </nav>
