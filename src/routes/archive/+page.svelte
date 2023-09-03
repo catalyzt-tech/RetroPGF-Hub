@@ -61,9 +61,13 @@
           the Optimism Collective.
         </div>
       </div>
-      <div class="flex justify-center text-base font-semibold my-2">
+      <a
+        href="https://community.optimism.io/docs/governance/retropgf-2/"
+        target="_blank"
+        class="flex justify-center text-base font-semibold my-2"
+      >
         Read More &gt
-      </div>
+      </a>
       <div class="flex justify-end">
         <select
           on:change={filterRound}

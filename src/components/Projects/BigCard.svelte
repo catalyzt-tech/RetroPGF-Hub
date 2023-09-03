@@ -2,7 +2,7 @@
 </script>
 
 <div
-  class="border border-black rounded-3xl p-6 lg:p-4 flex justify-center items-center flex-wrap lg:flex-nowrap w-80 lg:w-[560px]"
+  class="border border-black rounded-3xl lg:p-4 flex justify-center items-center flex-wrap lg:flex-nowrap w-80 lg:w-[600px] shadow-xl"
 >
   <div class="lg:h-full">
     <img

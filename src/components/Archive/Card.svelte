@@ -19,7 +19,7 @@
 </script>
 
 <div
-  class="border-2 relative bg-white border-black w-[15em] m-3 overflow-hidden rounded-2xl"
+  class="flex flex-col border-2 relative bg-white border-black w-[17em] m-3 overflow-hidden rounded-2xl"
 >
   <div
     class="absolute right-3 top-2 font font-bold text-[12px] text-[#FF0000] border-black border-[1px] bg-white px-2.5 p-1.5 rounded-[10px]"
@@ -29,8 +29,8 @@
       <img alt="OP" src="./img/Optimism.png" />
     </div>
   </div>
-  <div class="bg-cover opacity-100 z-2 h-24 overflow-hidden">
-    <img src={bannerUrl} alt="banner_image" class=" w-full" />
+  <div class="bg-cover opacity-100 max-h-[5em] overflow-hidden">
+    <img src={bannerUrl} alt="banner_image" class="w-fit" />
   </div>
   <div
     class="ml-3 relative mt-[-2.5em] z-0 overflow-hidden w-16 border-2 border-black rounded-lg"
@@ -48,9 +48,10 @@
   <div class="px-3 max-h-32">
     <p class=" line-clamp-3 text-sm">{description}</p>
   </div>
+  <div class="flex-grow my-1" />
   <div class="p-4 flex flex-row justify-end place-self-end">
     <button
-      class="px-3 py-1 text-sm border-2 border-black font-medium rounded-lg bg-black text-white"
+      class="px-3 py-1 text-sm border-2 border-black font-medium rounded-lg bg-black text-white hover:bg-red-500 transition ease-in-out hover:border-red-500 duration-200"
     >
       {category}
       <button />

@@ -1,7 +1,7 @@
 <script>
   import Navbar from '../../components/Navbar.svelte'
   import Footer from '../../components/Footer.svelte'
-  import BigCard from '../../components/BigCard.svelte'
+  import BigCard from '../../components/Projects/BigCard.svelte'
 </script>
 
 <Navbar />
@@ -12,9 +12,13 @@
       <h1 class="text-[40px] flex justify-center font-bold text-center">
         Discovery Project nominated by the community
       </h1>
-      <p class="text-md flex justify-center text-gray-600 mt-2">
-        Read more about RetroPGF 3 here
-      </p>
+      <div class="flex justify-center">
+        <p class="text-md text-center text-gray-600 mt-2 max-w-[50em]">
+          RetroPGF 3 will allocate 30m OP tokens to reward contributions that
+          supported the development and adoption of Optimism. To ensure that
+          multiple projects are included in RetroPGF 3.
+        </p>
+      </div>
     </div>
     <div class="flex flex-wrap justify-center gap-x-6 gap-y-6">
       <BigCard />

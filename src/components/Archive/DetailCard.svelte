@@ -16,13 +16,14 @@
   <div
     class=" relative overflow-hidden border-2 rounded-2xl border-black w-[55em] m-20 shadow-xl"
   >
-    <a href="/archive" class="absolute left-6 top-10 bg-white">
+    <a href="/archive" class="absolute left-5 top-5 bg-white w-9 h-8 rounded">
       <img
         src="/img/arrow_down2.png"
-        class="w-4 rotate-90 drop-shadow-2xl"
+        class="absolute left-2 top-3 w-4 rotate-90 drop-shadow-2xl"
         alt="arrow"
-      />
-    </a>
+      /></a
+    >
+
     {#if bannerExist}
       <div class="w-fit h-60 overflow-hidden">
         <img src={bannerPath} alt="banner" class="w-fit" />
