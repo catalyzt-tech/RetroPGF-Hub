@@ -8,6 +8,7 @@ export default defineConfig({
       // Add the directories where your images are stored
       allow: [
         '/Users/ratchanon/Desktop/Billy191/RetroPGF-Hub',
+        "/home/chaiyapatoam/project/RetroPGF-Hub"
         // Add more directories if needed
       ],
     },

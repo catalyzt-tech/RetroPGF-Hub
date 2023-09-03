@@ -1,4 +1,6 @@
 <script>
+  import { loginSession } from "../stores/session";
+
   let showMenu = false;
 
   function toggleNavbar() {
@@ -12,10 +14,8 @@
       class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center"
     >
       <div class="flex items-center justify-between">
-        <a
-          href="/"
-        >
-          <img src="/img/hub-logo.png" alt="logo" height={100} class="w-40"/>
+        <a href="/">
+          <img src="/img/hub-logo.png" alt="logo" height={100} class="w-40" />
         </a>
         <!-- Mobile menu button -->
         <div class="flex md:hidden">
@@ -47,12 +47,19 @@
           ? 'flex'
           : 'hidden'}"
       >
-        <a class="text-gray-800 hover:text-red-400" href="/projects">Projects</a>
+        <a class="text-gray-800 hover:text-red-400" href="/projects">Projects</a
+        >
         <a class="text-gray-800 hover:text-red-400" href="/archive">Archive</a>
         <a class="text-gray-800 hover:text-red-400" href="/nominate-form"
           >Nominate</a
         >
-        <a class="text-gray-800 hover:text-red-400" href="/login">Login</a>
+        {#if !$loginSession}
+          <a class="text-gray-800 hover:text-red-400" href="/login">Login</a>
+        {:else}
+          <button on:click={() => localStorage.removeItem("session")}
+            >Logout</button
+          >
+        {/if}
       </div>
     </nav>
   </div>
