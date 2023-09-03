@@ -1,11 +1,9 @@
-<script>
-  import { loginSession } from "../stores/session";
-
-  let showMenu = false;
-
-  function toggleNavbar() {
-    showMenu = !showMenu;
+<script lang="ts">
+  let showMenu: boolean = false
+  const toggleNavbar = () => {
+    showMenu = !showMenu
   }
+  import { loginSession } from "../stores/session";
 </script>
 
 <div class="text-base">
@@ -47,19 +45,11 @@
           ? 'flex'
           : 'hidden'}"
       >
-        <a class="text-gray-800 hover:text-red-400" href="/projects">Projects</a
-        >
+        <a class="text-gray-800 hover:text-red-400" href="/projects">Projects</a>
         <a class="text-gray-800 hover:text-red-400" href="/archive">Archive</a>
         <a class="text-gray-800 hover:text-red-400" href="/nominate-form"
           >Nominate</a
         >
-        {#if !$loginSession}
-          <a class="text-gray-800 hover:text-red-400" href="/login">Login</a>
-        {:else}
-          <button on:click={() => localStorage.removeItem("session")}
-            >Logout</button
-          >
-        {/if}
       </div>
     </nav>
   </div>
