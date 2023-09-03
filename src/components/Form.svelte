@@ -1,6 +1,8 @@
 <script lang="ts">
   import { browser } from "$app/environment";
+  import { Axios } from "$lib/axios";
   import { uploadFile } from "$lib/uploadFile";
+  import { loginSession } from "../stores/session";
 
   const dynamicHeight = (event: any) => {
     if (browser) {
@@ -9,15 +11,47 @@
       textarea.style.height = textarea.scrollHeight + "px";
     }
   };
-  let bannerImageFile: File;
+  let categories = [
+    { value: "defi", name: "DeFi" },
+    { value: "nft", name: "NTF" },
+    { value: "bridge", name: "Bridge" },
+    { value: "wallet", name: "Wallet" },
+    { value: "portfolio-tracker", name: "Portfolio Tracker" },
+    { value: "dao", name: "DAO" },
+    { value: "on-ramp", name: "On-ramp" },
+  ];
 
-  const onFileSelected = (e: any) => {
-    bannerImageFile = e.target.files[0];
+  let logoFile: File;
+  let bannerFile: File;
+
+  let data = {
+    name: "",
+    logo_url: "",
+    banner_url: "",
+    website_url: "",
+    crypto_category: "",
+    description: "",
+    reason: "",
+    category: "",
+    contact: "",
+  };
+
+  const onFileSelected = (e: any, fileType: string) => {
+    if (fileType === "logoFile") {
+      logoFile = e.target.files[0];
+    }
+    if (fileType === "bannerFile") {
+      bannerFile = e.target.files[0];
+    }
   };
 
   const onSubmit = async () => {
-    const banner_url = await uploadFile(bannerImageFile, "project_banner");
-    console.log(banner_url);
+    data.logo_url = (await uploadFile(logoFile, "project_logo")) ?? "";
+    data.banner_url = (await uploadFile(bannerFile, "project_banner")) ?? "";
+
+    Axios.post("/api/projects", data, {
+      headers: { "access-token": $loginSession },
+    }).catch((err) => console.log(err));
   };
 </script>
 
@@ -32,6 +66,7 @@
         <input
           type="text"
           name="name"
+          bind:value={data.name}
           placeholder="Name"
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
           required
@@ -43,7 +78,7 @@
       <div>
         <input
           type="file"
-          on:change={(e) => onFileSelected(e)}
+          on:change={(e) => onFileSelected(e, "logoFile")}
           accept="image/png,image/jpeg"
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm"
           required
@@ -55,6 +90,7 @@
       <div>
         <input
           type="file"
+          on:change={(e) => onFileSelected(e, "bannerFile")}
           accept="image/png,image/jpeg"
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm"
           required
@@ -66,6 +102,7 @@
       <div>
         <input
           type="url"
+          bind:value={data.website_url}
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
           required
         />
@@ -78,17 +115,13 @@
         <select
           name="Category"
           class="bg-[#EDEDED] px-5 my-5 rounded-md text-sm w-48 h-12"
+          bind:value={data.crypto_category}
           required
           >Category
           <option value="" disabled selected>Select category</option>
-          <option value="defi">DeFi</option>
-          <option value="nft">NFT</option>
-          <option value="bridge">Bridge</option>
-          <option value="wallet">Wallet</option>
-          <option value="tool">Tool</option>
-          <option value="portfoliotracker">Portfolio Tracker</option>
-          <option value="dao">DAO</option>
-          <option value="onramp">On-ramp</option>
+          {#each categories as category}
+            <option value={category.value}>{category.name}</option>
+          {/each}
         </select>
       </div></label
     >
@@ -97,6 +130,7 @@
       <div>
         <textarea
           on:input={dynamicHeight}
+          bind:value={data.description}
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em] resize-none max-h-32"
           required
         />
@@ -108,6 +142,7 @@
       <div>
         <textarea
           on:input={dynamicHeight}
+          bind:value={data.reason}
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em] resize-none max-h-32"
           required
         />
@@ -118,6 +153,7 @@
       <div>
         <select
           class="bg-[#EDEDED] px-5 my-5 rounded-lg text-sm w-48 h-12"
+          bind:value={data.category}
           required
         >
           <option value="" disabled selected>Select Category</option>
@@ -145,6 +181,7 @@
       <div>
         <input
           type="text"
+          bind:value={data.contact}
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
           required
         />
