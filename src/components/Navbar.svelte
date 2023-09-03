@@ -1,8 +1,7 @@
-<script>
-  let showMenu = false;
-
-  function toggleNavbar() {
-    showMenu = !showMenu;
+<script lang="ts">
+  let showMenu: boolean = false
+  const toggleNavbar = () => {
+    showMenu = !showMenu
   }
 </script>
 
@@ -12,10 +11,8 @@
       class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center"
     >
       <div class="flex items-center justify-between">
-        <a
-          href="/"
-        >
-          <img src="/img/hub-logo.png" alt="logo" height={100} class="w-40"/>
+        <a href="/">
+          <img src="/img/hub-logo.png" alt="logo" height={100} class="w-40" />
         </a>
         <!-- Mobile menu button -->
         <div class="flex md:hidden">
@@ -47,12 +44,22 @@
           ? 'flex'
           : 'hidden'}"
       >
-        <a class="text-gray-800 hover:text-red-400" href="/projects">Projects</a>
-        <a class="text-gray-800 hover:text-red-400" href="/archive">Archive</a>
-        <a class="text-gray-800 hover:text-red-400" href="/nominate-form"
-          >Nominate</a
+        <a
+          class="text-gray-800 font-medium transition ease-in-out hover:text-red-400"
+          href="/projects">Projects</a
         >
-        <a class="text-gray-800 hover:text-red-400" href="/login">Login</a>
+        <a
+          class="text-gray-800 font-medium transition ease-in-out hover:text-red-400"
+          href="/archive">Archive</a
+        >
+        <a
+          class="text-gray-800 font-medium transition ease-in-out hover:text-red-400"
+          href="/nominate-form">Nominate</a
+        >
+        <a
+          class="text-gray-800 font-medium transition ease-in-out hover:text-red-400"
+          href="/login">Login</a
+        >
       </div>
     </nav>
   </div>
