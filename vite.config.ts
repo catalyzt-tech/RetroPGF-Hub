@@ -1,4 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite'
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -11,6 +12,11 @@ export default defineConfig({
         "/home/chaiyapatoam/project/RetroPGF-Hub"
         // Add more directories if needed
       ],
+    },
+  },
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "src"),
     },
   },
 })

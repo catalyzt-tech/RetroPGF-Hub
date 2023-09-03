@@ -1,8 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import Card from '../../components/Archive/Card.svelte'
-  import Navbar from '../../components/Navbar.svelte'
-  import Footer from '../../components/Footer.svelte'
+  import Card from '@/components/Archive/Card.svelte'
+  import Navbar from '@/components/Navbar.svelte'
+  import Footer from '@/components/Footer.svelte'
   import { load } from './[slug]/+page'
 
   interface ProjectData {

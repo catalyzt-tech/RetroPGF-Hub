@@ -6,7 +6,7 @@
     GoogleAuthProvider,
     signInWithPopup,
   } from "firebase/auth";
-  import { loginSession } from "../../stores/session";
+  import { loginSession } from "@/stores/session";
   import { goto } from "$app/navigation";
 
   const handleLogin = async (

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Navbar from '../../../components/Navbar.svelte'
-  import Footer from '../../../components/Footer.svelte'
-  import DetailCard from '../../../components/Archive/DetailCard.svelte'
+  import Navbar from '@/components/Navbar.svelte'
+  import Footer from '@/components/Footer.svelte'
+  import DetailCard from '@/components/Archive/DetailCard.svelte'
   import { onMount } from 'svelte'
   export let data: any
   const { detail } = data
