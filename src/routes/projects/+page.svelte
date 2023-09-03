@@ -2,6 +2,34 @@
   import Navbar from '@/components/Navbar.svelte'
   import Footer from '@/components/Footer.svelte'
   import BigCard from '@/components/Projects/BigCard.svelte'
+
+  let data = [{
+    name: "TokenUnlock",
+    desc: "Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.",
+    img: "img/test_logo.png",
+    tags: ["DeFi", "Token", "Unlock"],
+    likeCount: 19,
+    dislikeCount: 2,
+    commentCount: 3,
+  },
+  {
+    name: "TokenUnlock",
+    desc: "Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.",
+    img: "img/test_logo.png",
+    tags: ["DeFi", "Token", "Unlock"],
+    likeCount: 19,
+    dislikeCount: 2,
+    commentCount: 3,
+  },
+  {
+    name: "TokenUnlock",
+    desc: "Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.",
+    img: "img/test_logo.png",
+    tags: ["DeFi", "Token", "Unlock"],
+    likeCount: 19,
+    dislikeCount: 2,
+    commentCount: 3,
+  }]
 </script>
 
 <Navbar />
@@ -23,12 +51,17 @@
       </div>
     </div>
     <div class="flex flex-wrap justify-center gap-x-6 gap-y-6">
-      <BigCard />
-      <BigCard />
-      <BigCard />
-      <BigCard />
-      <BigCard />
-      <BigCard />
+      {#each data as project}
+        <BigCard
+          name={project.name}
+          desc={project.desc}
+          img={project.img}
+          tags={project.tags}
+          likeCount={project.likeCount}
+          disLikeCount={project.dislikeCount}
+          commentCount={project.commentCount}
+        />
+      {/each}
     </div>
   </div>
 </div>
