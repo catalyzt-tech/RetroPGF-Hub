@@ -28,7 +28,7 @@
     loading = (await !Data) ? true : false
   })
   const maxWidthCard: any = () => {
-    const allCard = document.querySelector('.allcard')
+    const allCard: any = document.querySelector('.allcard')
     const filter: any = document.querySelector('.filter')
     filter.style.Width = allCard.style.maxWidth
   }
@@ -61,9 +61,13 @@
           the Optimism Collective.
         </div>
       </div>
-      <div class="flex justify-center text-base font-semibold my-2">
+      <a
+        href="https://community.optimism.io/docs/governance/retropgf-2/"
+        target="_blank"
+        class="flex justify-center text-base font-semibold my-2"
+      >
         Read More &gt
-      </div>
+      </a>
       <div class="flex justify-end">
         <select
           on:change={filterRound}
