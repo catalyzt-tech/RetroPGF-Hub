@@ -2,42 +2,77 @@
   export let detail: any
   let iconPath: string = `../../../public/data/retroPGF2-dataset/each_project/${detail.name}/icon.jpg`
   let bannerPath: string = `../../../public/data/retroPGF2-dataset/each_project/${detail.name}/banner.jpg`
+  let bannerExist: boolean = false
+  const checkBanner = async () => {
+    const response = await fetch(bannerPath)
+    if (response.ok) {
+      bannerExist = true
+    }
+  }
+  checkBanner()
 </script>
 
 <div class="flex justify-center">
-  <div class=" overflow-hidden border-2 rounded-2xl border-black w-[55em] m-20">
-    <img src={bannerPath} alt="" class="w-fit" />
+  <div
+    class=" relative overflow-hidden border-2 rounded-2xl border-black w-[55em] m-20 shadow-xl"
+  >
+    <a href="/archive" class="absolute left-6 top-10 bg-white">
+      <img
+        src="/img/arrow_down2.png"
+        class="w-4 rotate-90 drop-shadow-2xl"
+        alt="arrow"
+      />
+    </a>
+    {#if bannerExist}
+      <div class="w-fit h-60 overflow-hidden">
+        <img src={bannerPath} alt="banner" class="w-fit" />
+      </div>
+    {:else}
+      <div class="h-10" />
+    {/if}
     <div class="p-10">
       <div class="relative">
         <img src={iconPath} alt="" class="w-32 rounded-3xl absolute" />
-        <div class="absolute text-center text-3xl font-bold top-0 left-40">
+        <div class="absolute text-center text-[2em] font-bold top-0 left-40">
           {detail?.name}
         </div>
         <div
-          class="absolute divide-x-2 grid grid-cols-3 top-20 left-40 w-[calc(55em-18rem)]"
+          class="absolute divide-x-2 grid grid-cols-3 top-16 left-40 w-[calc(55em-18rem)]"
         >
-          <div class="font-bold flex flex-col justify-center items-center">
+          <a
+            href={detail.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-bold flex flex-col justify-center items-center"
+          >
             <img
               src="/img/twitter_logo.png"
               alt="twitter"
               class="w-6 h-6 m-1"
             />
             <div>Twitter (X)</div>
-          </div>
-          <div class="font-bold flex flex-col justify-center items-center">
+          </a>
+          <a
+            href={detail.website}
+            target="_blank"
+            class="font-bold flex flex-col justify-center items-center"
+          >
             <img
               src="/img/web_logo.png"
               alt="website"
               class="w-6 h-6 m-1"
             />Website
-          </div>
-          <div class="font-bold flex flex-col justify-center items-center">
-            <img
-              src="/img/github_logo.png"
-              class="w-6 h-6 m-1"
-              alt="github"
-            />Github
-          </div>
+          </a>
+          <a
+            href={detail?.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-bold flex flex-col justify-center items-center"
+          >
+            <img src="/img/github_logo.png" class="w-6 h-6 m-1" alt="github" />
+
+            Github
+          </a>
         </div>
       </div>
       <div class=" font-bold mt-40 text-lg">About the project</div>
