@@ -2,7 +2,7 @@
 </script>
 
 <div
-  class="border border-black rounded-3xl lg:p-4 flex justify-center items-center flex-wrap lg:flex-nowrap w-80 lg:w-[600px] shadow-xl"
+  class="border border-black rounded-3xl p-6 lg:p-6 flex justify-center items-center flex-wrap lg:flex-nowrap w-80 lg:w-[600px] shadow-xl"
 >
   <div class="lg:h-full">
     <img
@@ -13,7 +13,7 @@
       alt="Logo"
     />
   </div>
-  <div class="flex flex-col justify-between lg:ml-4 lg:h-full">
+  <div class="flex flex-col justify-between lg:ml-5 lg:h-full">
     <div class="flex flex-col my-3 lg:my-0">
       <div class="text-2xl lg:text-xl font-bold">TokenUnlock</div>
       <div class="my-3">

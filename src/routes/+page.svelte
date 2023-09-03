@@ -77,5 +77,34 @@
     />
   </div>
 </section>
+<div class=" bg-[#FFE8E8] h-[50em] w-full">
+  <div class="flex justify-center text-2xl font-semibold pt-10 mb-5">
+    Retroactive Public Good Funding
+  </div>
+  <div class=" grid grid-cols-2 m-10 px-16">
+    <div class="flex flex-col">
+      <div class="font-bold text-xl">What is RetroPGF?</div>
+      <div class="text-md">
+        RetroPGF is Optimism’s process for funding public goods for the benefit
+        of the Collective and beyond.
+      </div>
+    </div>
+    <div class="flex flex-col justify-start mt-32">
+      <div class="flex justify-end text-xl font-bold">
+        And why are we funding those projects?
+      </div>
+      <div class="flex justify-end text-end text-md">
+        <div>
+          It is very simple to say that positive or useful projects should be
+          rewarded, this is aligned with the Optimism's vision
+          <span class="font-bold italic">"impact = profit"</span>. Moreover,
+          this reward can bootstrap based on the early potential and promise of
+          their projects.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<section />
 <Footer />

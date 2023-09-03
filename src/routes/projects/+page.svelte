@@ -6,7 +6,9 @@
 
 <Navbar />
 <div>
-  <img src="./img/bg.png" class="w-fit" alt="" />
+  <div class="h-[10em] overflow-hidden">
+    <img src="./img/retropgfcity.png" class="w-fit" alt="" />
+  </div>
   <div class="px-8">
     <div class="my-8">
       <h1 class="text-[40px] flex justify-center font-bold text-center">
