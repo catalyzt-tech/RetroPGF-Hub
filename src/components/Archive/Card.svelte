@@ -3,7 +3,6 @@
   export let name: string
   export let category: string
   let imageUrl: string = `/public/data/retroPGF2-dataset/result_scrap/${name}/icon.jpg`
-  // import data from '../../../public/data/retroPGF2-dataset/result_scrap/0xPARC/info.json'
   let bannerUrl: string = `/public/data/retroPGF2-dataset/result_scrap/${name}/banner.jpg`
   let description: string
   let totalop: number
