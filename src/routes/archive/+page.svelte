@@ -28,7 +28,7 @@
     loading = (await !Data) ? true : false
   })
   const maxWidthCard: any = () => {
-    const allCard = document.querySelector('.allcard')
+    const allCard: any = document.querySelector('.allcard')
     const filter: any = document.querySelector('.filter')
     filter.style.Width = allCard.style.maxWidth
   }

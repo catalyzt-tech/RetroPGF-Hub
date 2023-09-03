@@ -2,11 +2,11 @@
   import { onMount } from 'svelte'
   export let name: string
   export let category: string
-  let imageUrl: any = `/public/data/retroPGF2-dataset/result_scrap/${name}/icon.jpg`
+  let imageUrl: string = `/public/data/retroPGF2-dataset/result_scrap/${name}/icon.jpg`
   // import data from '../../../public/data/retroPGF2-dataset/result_scrap/0xPARC/info.json'
-  let bannerUrl: any = `/public/data/retroPGF2-dataset/result_scrap/${name}/banner.jpg`
-  let description: any
-  let totalop: any
+  let bannerUrl: string = `/public/data/retroPGF2-dataset/result_scrap/${name}/banner.jpg`
+  let description: string
+  let totalop: number
   onMount(async () => {
     let respond = await fetch(
       `../../../public/data/retroPGF2-dataset/result_scrap/${name}/info.json`
