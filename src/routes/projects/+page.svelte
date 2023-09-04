@@ -58,7 +58,6 @@
           img={project.img}
           tags={project.tags}
           likeCount={project.likeCount}
-          disLikeCount={project.dislikeCount}
           commentCount={project.commentCount}
         />
       {/each}
