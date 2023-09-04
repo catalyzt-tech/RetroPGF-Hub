@@ -3,7 +3,6 @@
   import Card from '@/components/Archive/Card.svelte'
   import Navbar from '@/components/Navbar.svelte'
   import Footer from '@/components/Footer.svelte'
-  import { load } from './[slug]/+page'
 
   interface ProjectData {
     'Project Name': string
@@ -14,24 +13,26 @@
   }
 
   let Data: ProjectData[] = []
-  let loading = true
+  let loading: boolean = true
+  let itemsToShow: number = 20 // Number of items to display initially
+  let totalItems: number = 195 // Total number of items available
+
+  const loadMore = () => {
+    if (itemsToShow < totalItems) {
+      itemsToShow += 10 // Increase the number of items to display
+    }
+  }
+
   onMount(async () => {
     try {
       const response = await fetch('public/data/retroPGF2-dataset/results.json')
       Data = await response.json()
-      // console.log(Data)
+      totalItems = Data.length // Set the total number of items available
+      loading = false
     } catch (error) {
       console.error('Error importing data:', error)
     }
   })
-  onMount(async () => {
-    loading = (await !Data) ? true : false
-  })
-  const maxWidthCard: any = () => {
-    const allCard: any = document.querySelector('.allcard')
-    const filter: any = document.querySelector('.filter')
-    filter.style.Width = allCard.style.maxWidth
-  }
 
   let round: string = 'Round 2'
   const filterRound = (event: any) => {
@@ -46,12 +47,12 @@
     <div class="flex flex-row justify-center font-bold text-3xl my-64">
       Loading
     </div>
-  {:else if !loading}
+  {:else}
     <div class="h-[10em] overflow-hidden">
       <img src="./img/opsunsmile.png" alt="OPBanner" class="w-full" />
     </div>
     <div class="px-[10em]">
-      <h1 class="flex justify-center font-bold mt-6 text-[40px]">
+      <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
         RetroPGF 2 Nominated Projects
       </h1>
       <div class="flex justify-center my-3">
@@ -68,6 +69,9 @@
       >
         Read More &gt
       </a>
+    </div>
+    <div class="px-[10em]">
+      <!-- ...other content... -->
       <div class="flex justify-end">
         <select
           on:change={filterRound}
@@ -79,7 +83,7 @@
       </div>
       {#if round == 'Round 2'}
         <div class="allcard flex flex-wrap justify-center">
-          {#each Data as project}
+          {#each Data.slice(0, itemsToShow) as project}
             <Card
               name={project['Project Name']}
               category={project['Category']}
@@ -88,12 +92,22 @@
         </div>
       {:else if round == 'Round 1'}
         <div class="allcard flex flex-wrap justify-center">
-          {#each Data as project}
+          {#each Data.slice(0, itemsToShow) as project}
             <Card
               name={project['Project Name']}
               category={project['Category']}
             />
           {/each}
+        </div>
+      {/if}
+      {#if itemsToShow < totalItems}
+        <div class="flex justify-center mt-4">
+          <button
+            on:click={loadMore}
+            class="bg-black hover:bg-red-500 text-white font-bold py-2 px-6 rounded-xl transition ease-in-out duration-200"
+          >
+            Load More
+          </button>
         </div>
       {/if}
     </div>
