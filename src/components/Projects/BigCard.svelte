@@ -8,17 +8,17 @@
 </script>
 
 <div
-  class="border border-black rounded-3xl p-6 lg:p-6 flex justify-center items-center flex-wrap lg:flex-nowrap w-80 lg:w-[600px] shadow-xl"
+  class="border border-black rounded-3xl p-5 lg:p-6 flex justify-center items-center flex-wrap lg:flex-nowrap w-80 lg:w-[600px] shadow-xl"
 >
-  <div class="lg:h-full">
+  
     <img
       src={img}
-      class="rounded-lg overflow-hidden object-contain w-[1500px]"
+      class="rounded-xl h-60"
       width={1000}
       height={1000}
       alt="Logo"
     />
-  </div>
+  
   <div class="flex flex-col justify-between lg:ml-5 lg:h-full">
     <div class="flex flex-col my-3 lg:my-0">
       <div class="text-2xl lg:text-xl font-bold">{name}</div>
