@@ -7,7 +7,7 @@
     name: "TokenUnlock",
     desc: "Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.",
     img: "img/test_logo.png",
-    tags: ["DeFi", "Token", "Unlock"],
+    tag: "DeFi",
     likeCount: 19,
     dislikeCount: 2,
     commentCount: 3,
@@ -16,7 +16,7 @@
     name: "TokenUnlock",
     desc: "Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.",
     img: "img/test_logo.png",
-    tags: ["DeFi", "Token", "Unlock"],
+    tag: "Token",
     likeCount: 19,
     dislikeCount: 2,
     commentCount: 3,
@@ -25,7 +25,7 @@
     name: "TokenUnlock",
     desc: "Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.",
     img: "img/test_logo.png",
-    tags: ["DeFi", "Token", "Unlock"],
+    tag: "Unlock",
     likeCount: 19,
     dislikeCount: 2,
     commentCount: 3,
@@ -56,7 +56,7 @@
           name={project.name}
           desc={project.desc}
           img={project.img}
-          tags={project.tags}
+          tag={project.tag}
           likeCount={project.likeCount}
           commentCount={project.commentCount}
         />
