@@ -1,6 +1,4 @@
 <script>
-  import Navbar from '@/components/Navbar.svelte'
-  import Footer from '@/components/Footer.svelte'
   import BigCard from '@/components/Projects/BigCard.svelte'
 
   let data = [{
@@ -32,7 +30,6 @@
   }]
 </script>
 
-<Navbar />
 <div>
   <div class="h-[10em] overflow-hidden">
     <img src="./img/retropgfcity.png" class="w-fit" alt="" />
@@ -64,4 +61,3 @@
     </div>
   </div>
 </div>
-<Footer />

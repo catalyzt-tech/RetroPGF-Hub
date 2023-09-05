@@ -1,13 +1,11 @@
 <script lang="ts">
-  import { Axios } from "$lib/axios";
-  import { auth, githubProvider, googleProvider } from "$lib/firebase";
+  import { Axios } from "@/lib/axios";
+  import { auth, githubProvider, googleProvider } from "@/lib/firebase";
   import {
     GithubAuthProvider,
     GoogleAuthProvider,
     signInWithPopup,
   } from "firebase/auth";
-  import { loginSession } from "@/stores/session";
-  import { goto } from "$app/navigation";
 
   const handleLogin = async (
     provider: GoogleAuthProvider | GithubAuthProvider
@@ -22,9 +20,9 @@
         headers: { "id-token": idToken },
       }
     )
-      .then((response) => {;
-        loginSession.set(response.data.accessToken);
-        goto("/");
+      .then((response) => {
+        if (response.status === 200) window.location.pathname = "/";
+        else console.log("Err");
       })
       .catch((err) => {
         console.log(err);

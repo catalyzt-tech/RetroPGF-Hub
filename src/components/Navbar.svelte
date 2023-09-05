@@ -3,7 +3,22 @@
   const toggleNavbar = () => {
     showMenu = !showMenu;
   };
-  import { loginSession } from "@/stores/session";
+  import { Axios } from "@/lib/axios";
+  import { onMount } from "svelte";
+  import { User } from "@/stores/User";
+
+  onMount(async () => {
+    try {
+      const response = await Axios.get("/api/users", {});
+      if (response.status === 200) {
+        $User = response.data;
+      }
+       
+    } catch (error) {
+      console.log(error);
+    }
+  });
+  
 </script>
 
 <div class="text-base">
@@ -51,8 +66,12 @@
         <a class="text-gray-800 hover:text-red-400" href="/nominate-form"
           >Nominate</a
         >
-        {#if !$loginSession}
-          <a class="text-gray-800 hover:bg-red-500 hover:text-white px-3 py-1 bg-gray-200 rounded-full" href="/login">Login </a>
+        {#if !$User}
+          <a
+            class="text-gray-800 hover:bg-red-500 hover:text-white px-3 py-1 bg-gray-200 rounded-full"
+            href="/login"
+            >Login
+          </a>
         {:else}
           <button on:click={() => localStorage.removeItem("session")}
             >Logout</button

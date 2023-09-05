@@ -1,18 +1,13 @@
 <script lang="ts">
   import { Axios } from "$lib/axios";
   import { onMount } from "svelte";
-  import { loginSession } from "@/stores/session";
-  import type { Project } from "@/types/Response";
+  import type { ProjectReponse } from "@/types/Response";
 
-  let projects: Project[] = [];
+  let projects: ProjectReponse[] = [];
 
   onMount(async () => {
     try {
-      const response = (
-        await Axios.get("/api/users/projects", {
-          headers: { "access-token": $loginSession },
-        })
-      ).data;
+      const response = (await Axios.get("/api/users/projects")).data;
       projects = response.data.Project;
       console.log(projects);
     } catch (error) {
