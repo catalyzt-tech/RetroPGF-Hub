@@ -1,11 +1,8 @@
 <script lang="ts">
-  import Navbar from '@/components/Navbar.svelte'
-  import Footer from '@/components/Footer.svelte'
   import Button from '@/components/Button.svelte'
   import DialogCard from '@/components/Home/DialogCard.svelte'
 </script>
 
-<Navbar />
 <section
   class="bg-[#FFE8E8] w-full h-[calc(100vh-2rem)] px-16 flex flex-col justify-center items-center"
 >
@@ -107,4 +104,3 @@
 </div>
 
 <section />
-<Footer />

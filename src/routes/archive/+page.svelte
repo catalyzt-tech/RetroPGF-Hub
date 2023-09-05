@@ -1,8 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import Card from '@/components/Archive/Card.svelte'
-  import Navbar from '@/components/Navbar.svelte'
-  import Footer from '@/components/Footer.svelte'
 
   interface ProjectData {
     'Project Name': string
@@ -42,7 +40,6 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-  <Navbar />
   {#if loading}
     <div class="flex flex-row justify-center font-bold text-3xl my-64">
       Loading
@@ -112,5 +109,4 @@
       {/if}
     </div>
   {/if}
-  <div class="flex-grow"><Footer /></div>
 </div>

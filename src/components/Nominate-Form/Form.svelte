@@ -1,8 +1,7 @@
 <script lang="ts">
   import { browser } from "$app/environment";
-  import { Axios } from "$lib/axios";
-  import { uploadFile } from "$lib/uploadFile";
-  import { loginSession } from "@/stores/session.ts";
+  import { Axios } from "@/lib/axios";
+  import { uploadFile } from "@/lib/uploadFile";
 
   const dynamicHeight = (event: any) => {
     if (browser) {
@@ -49,9 +48,7 @@
     data.logo_url = (await uploadFile(logoFile, "project_logo")) ?? "";
     data.banner_url = (await uploadFile(bannerFile, "project_banner")) ?? "";
 
-    Axios.post("/api/projects", data, {
-      headers: { "access-token": $loginSession },
-    }).catch((err) => console.log(err));
+    Axios.post("/api/projects", data).catch((err) => console.log(err));
   };
 </script>
 
