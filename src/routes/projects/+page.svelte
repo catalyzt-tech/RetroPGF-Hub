@@ -1,33 +1,35 @@
-<script>
+<script lang="ts">
   import BigCard from '@/components/Projects/BigCard.svelte'
 
-  let data = [{
-    name: "TokenUnlock",
-    desc: "Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.",
-    img: "img/test_logo.png",
-    tag: "DeFi",
-    likeCount: 19,
-    dislikeCount: 2,
-    commentCount: 3,
-  },
-  {
-    name: "TokenUnlock",
-    desc: "Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.",
-    img: "img/test_logo.png",
-    tag: "Token",
-    likeCount: 19,
-    dislikeCount: 2,
-    commentCount: 3,
-  },
-  {
-    name: "TokenUnlock",
-    desc: "Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.",
-    img: "img/test_logo.png",
-    tag: "Unlock",
-    likeCount: 19,
-    dislikeCount: 2,
-    commentCount: 3,
-  }]
+  let data = [
+    {
+      name: 'TokenUnlock',
+      desc: 'Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.',
+      img: 'img/test_logo.png',
+      tag: 'DeFi',
+      likeCount: 19,
+      dislikeCount: 2,
+      commentCount: 3,
+    },
+    {
+      name: 'TokenUnlock',
+      desc: 'Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.',
+      img: 'img/test_logo.png',
+      tag: 'Token',
+      likeCount: 19,
+      dislikeCount: 2,
+      commentCount: 3,
+    },
+    {
+      name: 'TokenUnlock',
+      desc: 'Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.',
+      img: 'img/test_logo.png',
+      tag: 'Unlock',
+      likeCount: 19,
+      dislikeCount: 2,
+      commentCount: 3,
+    },
+  ]
 </script>
 
 <div>

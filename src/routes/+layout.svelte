@@ -15,6 +15,9 @@
   />
 </svelte:head>
 
-<Navbar />
-<slot />
-<Footer />
+<div class="flex flex-col min-h-screen">
+  <Navbar />
+  <slot />
+  <div class="flex-grow" />
+  <Footer />
+</div>

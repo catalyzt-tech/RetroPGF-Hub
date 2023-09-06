@@ -62,7 +62,7 @@
   }
 </script>
 
-<div>
+<div class="flex flex-col">
   <h1 class="text-2xl">Login</h1>
   <button
     class="text-red-300 bg-black"
