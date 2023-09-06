@@ -14,7 +14,7 @@
   >
     Create, Nominate, and Discover.
   </h1>
-  <p class="flex flex-row justify-center text-lg p-2 text-center">
+  <p class="flex flex-row justify-center text-lg p-2 text-center font-rubik">
     RetroPGF Hub is a platform for you to nominate and discover projects that
     are making a positive impact to the world.
   </p>

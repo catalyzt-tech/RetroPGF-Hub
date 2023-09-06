@@ -2,8 +2,9 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      rubik: ['Rubik', 'sans-serif'],
+    },
   },
   plugins: [],
 }
-

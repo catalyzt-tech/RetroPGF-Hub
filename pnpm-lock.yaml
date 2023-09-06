@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/rubik':
+    specifier: ^5.0.11
+    version: 5.0.11
   axios:
     specifier: ^1.5.0
     version: 1.5.0
@@ -718,6 +721,10 @@ packages:
 
   /@firebase/webchannel-wrapper@0.10.2:
     resolution: {integrity: sha512-xDxhD9++451HuCv3xKBEdSYaArX9NcokODXZYH/MxGw1XFFOz7OKkTRItZ5wf6npBN/inwp8dUZCP7SpAg46yQ==}
+    dev: false
+
+  /@fontsource/rubik@5.0.11:
+    resolution: {integrity: sha512-/aaDe4YfptSRC8xMj+xiurZu9108IFv9tcmk2o4xyM5vZcCLl6J+kehq7BvIZ4wmu3iaTiD4tqVbv8vGV+9OSQ==}
     dev: false
 
   /@grpc/grpc-js@1.8.21:
