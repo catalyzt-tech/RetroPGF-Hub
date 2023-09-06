@@ -125,7 +125,7 @@
         <div class="flex justify-center mt-4">
           <button
             on:click={loadMore}
-            class="bg-black hover:bg-red-500 text-white font-bold py-2 px-6 rounded-xl transition ease-in-out duration-200"
+            class="bg-black hover:bg-red-500 text-white font-medium py-2 px-6 rounded-xl transition ease-in-out duration-200"
           >
             Load More
           </button>

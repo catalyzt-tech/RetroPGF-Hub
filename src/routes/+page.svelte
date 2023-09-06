@@ -10,7 +10,7 @@
     <img src="img/sun.png" class="w-[15em] animate-pulse" alt="OP Sun" />
   </div>
   <h1
-    class="flex flex-row pt-10 text-black text-[36px] text-center font-bold justify-center"
+    class="flex flex-row pt-10 text-black text-[36px] text-center font-semibold justify-center"
   >
     Create, Nominate, and Discover.
   </h1>
