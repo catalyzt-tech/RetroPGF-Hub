@@ -11,14 +11,18 @@
     try {
       const response = await Axios.get("/api/users", {});
       if (response.status === 200) {
-        $User = response.data;
+        $User = response.data.data;
       }
-       
+      
     } catch (error) {
       console.log(error);
     }
   });
-  
+
+  const handleLogout = async () => {
+    await Axios.post("/api/users/logout");
+    window.location.pathname = "/";
+  };
 </script>
 
 <div class="text-base">
@@ -73,9 +77,7 @@
             >Login
           </a>
         {:else}
-          <button on:click={() => localStorage.removeItem("session")}
-            >Logout</button
-          >
+          <button on:click={handleLogout}>Logout</button>
         {/if}
       </div>
     </nav>
