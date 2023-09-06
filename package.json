@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/rubik": "^5.0.11",
 		"axios": "^1.5.0",
 		"fetch": "^1.1.0",
 		"firebase": "^10.3.1",

@@ -1,65 +1,65 @@
 <script lang="ts">
-  import { Axios } from "@/lib/axios";
-  import { auth, githubProvider, googleProvider } from "@/lib/firebase";
-  import { User } from "@/stores/User";
+  import { Axios } from '@/lib/axios'
+  import { auth, githubProvider, googleProvider } from '@/lib/firebase'
+  import { User } from '@/stores/User'
   import {
     GithubAuthProvider,
     GoogleAuthProvider,
     signInWithEmailAndPassword,
     signInWithPopup,
-  } from "firebase/auth";
-  import { onMount } from "svelte";
+  } from 'firebase/auth'
+  import { onMount } from 'svelte'
 
-  let email = "";
-  let password = "";
+  let email = ''
+  let password = ''
 
   onMount(() => {
     // check if user is login
     // * But Its not work *
-    console.log($User);
-    if ($User) window.location.pathname = "/";
-  });
+    console.log($User)
+    if ($User) window.location.pathname = '/'
+  })
 
   const handleLogin = async (
     provider: GoogleAuthProvider | GithubAuthProvider
   ) => {
-    const result = await signInWithPopup(auth, provider);
-    const idToken = await result.user.getIdToken();
+    const result = await signInWithPopup(auth, provider)
+    const idToken = await result.user.getIdToken()
 
     Axios.post(
-      "/api/users/login",
+      '/api/users/login',
       {},
       {
-        headers: { "id-token": idToken },
+        headers: { 'id-token': idToken },
       }
     )
       .then((response) => {
-        if (response.status === 200 || 201) window.location.pathname = "/";
-        else console.log("Err");
+        if (response.status === 200 || 201) window.location.pathname = '/'
+        else console.log('Err')
       })
       .catch((err) => {
-        console.log(err);
-      });
-  };
+        console.log(err)
+      })
+  }
   const handlePasswordLogin = async () => {
-    const result = await signInWithEmailAndPassword(auth, email, password); //create user before login : Use createUserWithEmailAndPassword()
-    const idToken = await result.user.getIdToken();
+    const result = await signInWithEmailAndPassword(auth, email, password) //create user before login : Use createUserWithEmailAndPassword()
+    const idToken = await result.user.getIdToken()
 
     Axios.post(
-      "/api/users/login",
+      '/api/users/login',
       {},
       {
-        headers: { "id-token": idToken },
+        headers: { 'id-token': idToken },
       }
     )
       .then((response) => {
-        if (response.status === 200 || 201) window.location.pathname = "/";
-        else console.log("Err");
+        if (response.status === 200 || 201) window.location.pathname = '/'
+        else console.log('Err')
       })
       .catch((err) => {
-        console.log(err);
-      });
-  };
+        console.log(err)
+      })
+  }
 </script>
 
 <div>
@@ -77,11 +77,13 @@
     Github Login
   </button>
   <div class="flex items-center justify-center">
-    <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
+    <div
+      class="px-8 py-6 mt-4 text-left bg-white rounded-xl border-2 border-black shadow-lg"
+    >
       <div class="flex justify-center">
         <img src="/img/hub-logo.png" alt="logo" height={100} class="w-40" />
       </div>
-      <h3 class="text-2xl font-bold text-center text-red-600">Login</h3>
+      <h3 class="text-xl font-bold text-center text-red-600 mt-3">Login</h3>
       <form action="">
         <div class="mt-4">
           <div>

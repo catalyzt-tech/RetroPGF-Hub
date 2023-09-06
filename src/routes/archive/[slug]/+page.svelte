@@ -7,7 +7,6 @@
   onMount(async () => {
     loading = !detail ? true : false
   })
-  // console.log('This is' + detail.name)
 </script>
 
 <div class="flex flex-col min-h-screen">
