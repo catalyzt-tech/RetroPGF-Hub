@@ -1,10 +1,10 @@
 export type UserResponse = {
     id: string;
     email: string;
-    profile: string;
-    user_name: string;
-    first_name: string;
-    last_name: string;
+    profile?: string;
+    user_name?: string;
+    first_name?: string;
+    last_name?: string;
 }
 
 export type ProjectReponse = {
