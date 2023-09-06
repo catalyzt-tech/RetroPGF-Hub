@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import Card from '@/components/Archive/Card.svelte'
+  import CardRound2 from '@/components/Archive/CardRound2.svelte'
+  import CardRound1 from '@/components/Archive/CardRound1.svelte'
 
   interface ProjectData {
     'Project Name': string
@@ -9,31 +10,55 @@
     'OP Received': number
     'Project Profile': string
   }
+  interface ProjectDataRound1 {
+    name: string
+    website: string
+    lead_name: string
+    email: string
+    question_1: string
+    allocation: number
+  }
 
-  let Data: ProjectData[] = []
+  let Data1: ProjectDataRound1[] = []
+  let Data2: ProjectData[] = []
   let loading: boolean = true
-  let itemsToShow: number = 20 // Number of items to display initially
-  let totalItems: number = 195 // Total number of items available
+  let itemsToShow: number = 20
+  let totalItems: number
 
   const loadMore = () => {
     if (itemsToShow < totalItems) {
-      itemsToShow += 10 // Increase the number of items to display
+      itemsToShow += 10
     }
   }
-
   onMount(async () => {
-    try {
-      const response = await fetch('public/data/retroPGF2-dataset/results.json')
-      Data = await response.json()
-      totalItems = Data.length // Set the total number of items available
-      loading = false
-    } catch (error) {
-      console.error('Error importing data:', error)
-    }
+    const response = await fetch('public/data/retroPGF2-dataset/results.json')
+    Data2 = await response.json()
+    totalItems = Data2.length
+    loading = false
   })
 
   let round: string = 'Round 2'
-  const filterRound = (event: any) => {
+  $: {
+    const changeRound = async () => {
+      if (round == 'Round 2') {
+        const response = await fetch(
+          'public/data/retroPGF2-dataset/results.json'
+        )
+        Data2 = await response.json()
+        totalItems = Data2.length
+        loading = false
+      } else if (round == 'Round 1') {
+        const response = await fetch('public/data/results_rpgf1.json')
+        Data1 = await response.json()
+        totalItems = Data1.length
+        loading = false
+        // console.log(Data1)
+      }
+    }
+    changeRound()
+  }
+
+  const filterRound = async (event: any) => {
     round = event.target.value
     console.log(round)
   }
@@ -68,7 +93,6 @@
       </a>
     </div>
     <div class="px-[10em]">
-      <!-- ...other content... -->
       <div class="flex justify-end">
         <select
           on:change={filterRound}
@@ -80,8 +104,8 @@
       </div>
       {#if round == 'Round 2'}
         <div class="allcard flex flex-wrap justify-center">
-          {#each Data.slice(0, itemsToShow) as project}
-            <Card
+          {#each Data2.slice(0, itemsToShow) as project}
+            <CardRound2
               name={project['Project Name']}
               category={project['Category']}
             />
@@ -89,11 +113,8 @@
         </div>
       {:else if round == 'Round 1'}
         <div class="allcard flex flex-wrap justify-center">
-          {#each Data.slice(0, itemsToShow) as project}
-            <Card
-              name={project['Project Name']}
-              category={project['Category']}
-            />
+          {#each Data1.slice(0, itemsToShow) as project}
+            <CardRound1 name={project.name} />
           {/each}
         </div>
       {/if}
