@@ -1,7 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import CardRound2 from '@/components/Archive/CardRound2.svelte'
+  import { browser } from '$app/environment'
   import CardRound1 from '@/components/Archive/CardRound1.svelte'
+  import CardRound2 from '@/components/Archive/CardRound2.svelte'
 
   interface ProjectData {
     'Project Name': string
@@ -39,23 +40,25 @@
 
   let round: string = 'Round 2'
   $: {
-    const changeRound = async () => {
-      if (round == 'Round 2') {
-        const response = await fetch(
-          'public/data/retroPGF2-dataset/results.json'
-        )
-        Data2 = await response.json()
-        totalItems = Data2.length
-        loading = false
-      } else if (round == 'Round 1') {
-        const response = await fetch('public/data/results_rpgf1.json')
-        Data1 = await response.json()
-        totalItems = Data1.length
-        loading = false
-        // console.log(Data1)
+    if (browser) {
+      const changeRound = async () => {
+        if (round == 'Round 2') {
+          const response = await fetch(
+            'public/data/retroPGF2-dataset/results.json'
+          )
+          Data2 = await response.json()
+          totalItems = Data2.length
+          loading = false
+        } else if (round == 'Round 1') {
+          const response = await fetch('public/data/results_rpgf1.json')
+          Data1 = await response.json()
+          totalItems = Data1.length
+          loading = false
+          // console.log(Data1)
+        }
       }
+      changeRound()
     }
-    changeRound()
   }
 
   const filterRound = async (event: any) => {
