@@ -50,11 +50,12 @@
           totalItems = Data2.length
           loading = false
         } else if (round == 'Round 1') {
-          const response = await fetch('public/data/results_rpgf1.json')
+          const response = await fetch(
+            'public/data/retroPGF1-dataset/results_rpgf1.json'
+          )
           Data1 = await response.json()
           totalItems = Data1.length
           loading = false
-          // console.log(Data1)
         }
       }
       changeRound()
@@ -77,23 +78,44 @@
       <img src="./img/opsunsmile.png" alt="OPBanner" class="w-full" />
     </div>
     <div class="px-[10em]">
-      <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
-        RetroPGF 2 Nominated Projects
-      </h1>
-      <div class="flex justify-center my-3">
-        <div class="text-[20px] max-w-[50em] text-base text-center">
-          RetroPGF Round 2 stretched over multiple months and involved
-          participation from hundreds of projects and community members across
-          the Optimism Collective.
+      {#if round === 'Round 1'}
+        <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
+          RetroPGF 1 Nominated Projects
+        </h1>
+        <div class="flex justify-center my-3">
+          <div class="text-[20px] max-w-[50em] text-base text-center">
+            The Retroactive Public Goods Funding (RetroPGF) by The Optimism
+            Collective awarded funding to 58 out of 76 nominated projects,
+            marking the first experiment in a new form of governance through
+            badgeholders.
+          </div>
         </div>
-      </div>
-      <a
-        href="https://community.optimism.io/docs/governance/retropgf-2/"
-        target="_blank"
-        class="flex justify-center text-base font-semibold my-2"
-      >
-        Read More &gt
-      </a>
+        <a
+          href="https://community.optimism.io/docs/governance/retropgf-1/"
+          target="_blank"
+          class="flex justify-center text-base font-semibold my-2"
+        >
+          Read More &gt
+        </a>
+      {:else}
+        <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
+          RetroPGF 2 Nominated Projects
+        </h1>
+        <div class="flex justify-center my-3">
+          <div class="text-[20px] max-w-[50em] text-base text-center">
+            RetroPGF Round 2 stretched over multiple months and involved
+            participation from hundreds of projects and community members across
+            the Optimism Collective.
+          </div>
+        </div>
+        <a
+          href="https://community.optimism.io/docs/governance/retropgf-2/"
+          target="_blank"
+          class="flex justify-center text-base font-semibold my-2"
+        >
+          Read More &gt
+        </a>
+      {/if}
     </div>
     <div class="px-[10em]">
       <div class="flex justify-end">
