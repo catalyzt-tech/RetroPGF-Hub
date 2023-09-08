@@ -4,13 +4,6 @@
   import CardRound1 from '@/components/Archive/CardRound1.svelte'
   import CardRound2 from '@/components/Archive/CardRound2.svelte'
 
-  interface ProjectData {
-    'Project Name': string
-    Category: string
-    '% of votes received': number
-    'OP Received': number
-    'Project Profile': string
-  }
   interface ProjectDataRound1 {
     name: string
     website: string
@@ -20,52 +13,61 @@
     allocation: number
   }
 
+  interface ProjectDataRound2 {
+    'Project Name': string
+    Category: string
+    '% of votes received': number
+    'OP Received': number
+    'Project Profile': string
+  }
+
   let Data1: ProjectDataRound1[] = []
-  let Data2: ProjectData[] = []
+  let Data2: ProjectDataRound2[] = []
   let loading: boolean = true
   let itemsToShow: number = 20
   let totalItems: number
   let filteredProjects1: ProjectDataRound1[] = []
-  let filteredProjects2: ProjectData[] = Data2
+  let filteredProjects2: ProjectDataRound2[] = Data2
+
   const loadMore = () => {
     if (itemsToShow < totalItems) {
       itemsToShow += 10
     }
   }
-  onMount(async () => {
-    const response = await fetch('public/data/retroPGF2-dataset/results.json')
-    Data2 = await response.json()
-    filteredProjects2 = Data2
-    totalItems = Data2.length
-    loading = false
-  })
+
+  if (browser) {
+    onMount(async () => {
+      const response = await fetch('public/data/retroPGF2-dataset/results.json')
+      Data2 = await response.json()
+      filteredProjects2 = await Data2
+      totalItems = Data2.length
+      loading = false
+    })
+  }
 
   let round: string = 'Round 2'
-  let changeRound: any
-  if (browser) {
-    changeRound = async (event: any) => {
-      round = event?.target?.value ?? round
-      if (round == 'Round 2') {
-        const response = await fetch(
-          'public/data/retroPGF2-dataset/results.json'
-        )
-        Data2 = await response.json()
-        filteredProjects2 = Data2
-        console.log(filteredProjects2)
-        totalItems = Data2.length
-        loading = false
-      } else if (round == 'Round 1') {
-        const response = await fetch(
-          'public/data/retroPGF1-dataset/results_rpgf1.json'
-        )
-        Data1 = await response.json()
-        filteredProjects1 = Data1
-        console.log(filteredProjects1)
-        totalItems = Data1.length
-        loading = false
-      }
+
+  const changeRound = async (event: any) => {
+    round = event?.target?.value ?? round
+    if (round == 'Round 2') {
+      const response = await fetch('public/data/retroPGF2-dataset/results.json')
+      Data2 = await response.json()
+      filteredProjects2 = await Data2
+      console.log(filteredProjects2)
+      totalItems = Data2.length
+      loading = false
+    } else if (round == 'Round 1') {
+      const response = await fetch(
+        'public/data/retroPGF1-dataset/results_rpgf1.json'
+      )
+      Data1 = await response.json()
+      filteredProjects1 = Data1
+      console.log(filteredProjects1)
+      totalItems = Data1.length
+      loading = false
     }
   }
+
   const categoryRound1 = ['All']
   const categoryRound2 = [
     'All',
@@ -79,17 +81,19 @@
   const filterCategory = (event: any) => {
     showCategory = event.target.value
     console.log(showCategory)
-    if (round == 'Round 1') {
+    if (round == 'Round 2') {
       if (showCategory === 'All') {
         filteredProjects2 = Data2
       } else {
         filteredProjects2 = Data2.filter(
           (project) => project['Category'] === showCategory
         )
+        totalItems = filteredProjects2.length
       }
     } else {
       if (showCategory === 'All') {
         filteredProjects1 = Data1
+        totalItems = filteredProjects1.length
       }
     }
   }
@@ -143,13 +147,14 @@
           Read More &gt
         </a>
       {/if}
-      <div
-        class="flex flex-wrap justify-end border-2 border-black rounded-2xl my-4 p-3"
-      >
-        <input
-          class=" bg-gray-200 rounded-lg px-2 py-2 mr-3 my-2 text-right max-w-fit"
-          placeholder="Search"
-        />
+      <div class="flex flex-wrap border-2 border-black rounded-2xl my-4 p-3">
+        <form class="flex flex-grow">
+          <input
+            class=" bg-gray-200 flex-grow rounded-lg px-2 py-2 mr-3 my-2 text-right"
+            placeholder="Search"
+          />
+          <button>Gogo!</button>
+        </form>
         {#if round == 'Round 2'}
           {#each categoryRound2 as category}
             <button
@@ -171,7 +176,6 @@
             >
           {/each}
         {/if}
-
         <select
           on:change={changeRound}
           class="px-2 my-2 h-10 border-2 border-black rounded-lg"
@@ -184,16 +188,15 @@
     </div>
     <div class="px-[10em]">
       {#if round == 'Round 2'}
-        <div
-          class="allcard flex flex-wrap justify-center"
-          bind:clientWidth={width}
-        >
-          {#each filteredProjects2.slice(0, itemsToShow) as project}
-            <CardRound2
-              name={project['Project Name']}
-              category={project['Category']}
-            />
-          {/each}
+        <div class="allcard flex flex-wrap justify-center">
+          {#key showCategory}
+            {#each filteredProjects2.slice(0, itemsToShow) as project}
+              <CardRound2
+                name={project['Project Name']}
+                category={project['Category']}
+              />
+            {/each}
+          {/key}
         </div>
       {:else if round == 'Round 1'}
         <div class="allcard flex flex-wrap justify-center">
