@@ -97,6 +97,29 @@
       }
     }
   }
+  let filteredProjects: ProjectDataRound2[] = []
+  const searchFilter = async (event: any) => {
+    const message = event.target.value.toLowerCase()
+    if (round === 'Round 2') {
+      if (!message) {
+        filteredProjects2 = Data2
+      } else {
+        filteredProjects2 = await Data2.filter((project: ProjectDataRound2) => {
+          const projectName = project['Project Name'].toLowerCase()
+          return projectName.includes(message)
+        })
+      }
+    } else if (round === 'Round 1') {
+      if (!message) {
+        filteredProjects1 = Data1
+      } else {
+        filteredProjects1 = await Data1.filter((project: ProjectDataRound1) => {
+          const projectName = project.name.toLowerCase()
+          return projectName.includes(message)
+        })
+      }
+    }
+  }
 </script>
 
 <div class="flex flex-col min-h-screen">
@@ -148,13 +171,14 @@
         </a>
       {/if}
       <div class="flex flex-wrap border-2 border-black rounded-2xl my-4 p-3">
-        <form class="flex flex-grow">
+        <div class="flex flex-grow mr-3">
           <input
-            class=" bg-gray-200 flex-grow rounded-lg px-2 py-2 mr-3 my-2 text-right"
+            on:change={searchFilter}
+            type="text"
+            class=" bg-gray-200 flex-grow rounded-lg px-2 py-2 my-2 text-right"
             placeholder="Search"
           />
-          <button>Gogo!</button>
-        </form>
+        </div>
         {#if round == 'Round 2'}
           {#each categoryRound2 as category}
             <button
@@ -189,7 +213,7 @@
     <div class="px-[10em]">
       {#if round == 'Round 2'}
         <div class="allcard flex flex-wrap justify-center">
-          {#key showCategory}
+          {#key showCategory || filteredProjects2}
             {#each filteredProjects2.slice(0, itemsToShow) as project}
               <CardRound2
                 name={project['Project Name']}
@@ -200,9 +224,11 @@
         </div>
       {:else if round == 'Round 1'}
         <div class="allcard flex flex-wrap justify-center">
-          {#each filteredProjects1.slice(0, itemsToShow) as project}
-            <CardRound1 name={project.name} />
-          {/each}
+          {#key filteredProjects1}
+            {#each filteredProjects1.slice(0, itemsToShow) as project}
+              <CardRound1 name={project.name} />
+            {/each}
+          {/key}
         </div>
       {/if}
       {#if itemsToShow < totalItems}
