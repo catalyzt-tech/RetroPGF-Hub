@@ -3,7 +3,6 @@
   import { browser } from '$app/environment'
   import CardRound1 from '@/components/Archive/CardRound1.svelte'
   import CardRound2 from '@/components/Archive/CardRound2.svelte'
-  import SearchBar from '@/components/Archive/SearchBar.svelte'
 
   interface ProjectData {
     'Project Name': string
@@ -26,7 +25,8 @@
   let loading: boolean = true
   let itemsToShow: number = 20
   let totalItems: number
-
+  let filteredProjects1: ProjectDataRound1[] = []
+  let filteredProjects2: ProjectData[] = Data2
   const loadMore = () => {
     if (itemsToShow < totalItems) {
       itemsToShow += 10
@@ -35,39 +35,38 @@
   onMount(async () => {
     const response = await fetch('public/data/retroPGF2-dataset/results.json')
     Data2 = await response.json()
+    filteredProjects2 = Data2
     totalItems = Data2.length
     loading = false
   })
 
   let round: string = 'Round 2'
-  $: {
-    if (browser) {
-      const changeRound = async () => {
-        if (round == 'Round 2') {
-          const response = await fetch(
-            'public/data/retroPGF2-dataset/results.json'
-          )
-          Data2 = await response.json()
-          totalItems = Data2.length
-          loading = false
-        } else if (round == 'Round 1') {
-          const response = await fetch(
-            'public/data/retroPGF1-dataset/results_rpgf1.json'
-          )
-          Data1 = await response.json()
-          totalItems = Data1.length
-          loading = false
-        }
+  let changeRound: any
+  if (browser) {
+    changeRound = async (event: any) => {
+      round = event?.target?.value ?? round
+      if (round == 'Round 2') {
+        const response = await fetch(
+          'public/data/retroPGF2-dataset/results.json'
+        )
+        Data2 = await response.json()
+        filteredProjects2 = Data2
+        console.log(filteredProjects2)
+        totalItems = Data2.length
+        loading = false
+      } else if (round == 'Round 1') {
+        const response = await fetch(
+          'public/data/retroPGF1-dataset/results_rpgf1.json'
+        )
+        Data1 = await response.json()
+        filteredProjects1 = Data1
+        console.log(filteredProjects1)
+        totalItems = Data1.length
+        loading = false
       }
-      changeRound()
     }
   }
-
-  const filterRound = async (event: any) => {
-    round = event.target.value
-    console.log(round)
-  }
-
+  const categoryRound1 = ['All']
   const categoryRound2 = [
     'All',
     'Education',
@@ -75,17 +74,23 @@
     'Tooling and utilities',
   ]
   let width: number
-  let filteredProjects: ProjectData[] = []
-  let showCategory: string = 'All'
+  let showCategory: string
+
   const filterCategory = (event: any) => {
     showCategory = event.target.value
     console.log(showCategory)
-    if (showCategory === 'All') {
-      filteredProjects = Data2
+    if (round == 'Round 1') {
+      if (showCategory === 'All') {
+        filteredProjects2 = Data2
+      } else {
+        filteredProjects2 = Data2.filter(
+          (project) => project['Category'] === showCategory
+        )
+      }
     } else {
-      filteredProjects = Data2.filter(
-        (project) => project['Category'] === showCategory
-      )
+      if (showCategory === 'All') {
+        filteredProjects1 = Data1
+      }
     }
   }
 </script>
@@ -119,7 +124,7 @@
         >
           Read More &gt
         </a>
-      {:else}
+      {:else if round === 'Round 2'}
         <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
           RetroPGF 2 Nominated Projects
         </h1>
@@ -138,39 +143,52 @@
           Read More &gt
         </a>
       {/if}
-    </div>
-    <div class="px-[10em]">
-      {#if round == 'Round 2'}
-        <div
-          class="flex justify-end border-2 border-black rounded-2xl p-3 my-3"
-        >
-          <input
-            class=" bg-gray-200 rounded-lg px-2 py-2 mr-3 text-right max-w-fit"
-            placeholder="Search"
-          />
+      <div
+        class="flex flex-wrap justify-end border-2 border-black rounded-2xl my-4 p-3"
+      >
+        <input
+          class=" bg-gray-200 rounded-lg px-2 py-2 mr-3 my-2 text-right max-w-fit"
+          placeholder="Search"
+        />
+        {#if round == 'Round 2'}
           {#each categoryRound2 as category}
             <button
               on:click={filterCategory}
               value={category}
-              class="bg-black text-white px-5 mr-3 rounded-lg hover:bg-red-500 transition ease-in-out duration-200"
+              class="bg-black text-white px-5 mr-3 my-2 h-10 rounded-lg hover:bg-red-500 transition ease-in-out duration-200"
             >
               {category}</button
             >
           {/each}
-          <select
-            on:change={filterRound}
-            class="filter p-3 border-2 border-black rounded-lg"
-          >
-            <option selected disabled>-- Filter --</option>
-            <option>Round 1</option>
-            <option>Round 2</option>
-          </select>
-        </div>
+        {:else}
+          {#each categoryRound1 as category}
+            <button
+              on:click={filterCategory}
+              value={category}
+              class="bg-black text-white px-5 mr-3 my-2 h-10 rounded-lg hover:bg-red-500 transition ease-in-out duration-200"
+            >
+              {category}</button
+            >
+          {/each}
+        {/if}
+
+        <select
+          on:change={changeRound}
+          class="px-2 my-2 h-10 border-2 border-black rounded-lg"
+        >
+          <option disabled>-- Select --</option>
+          <option value="Round 1">Round 1</option>
+          <option selected value="Round 2">Round 2</option>
+        </select>
+      </div>
+    </div>
+    <div class="px-[10em]">
+      {#if round == 'Round 2'}
         <div
           class="allcard flex flex-wrap justify-center"
           bind:clientWidth={width}
         >
-          {#each filteredProjects.slice(0, itemsToShow) as project}
+          {#each filteredProjects2.slice(0, itemsToShow) as project}
             <CardRound2
               name={project['Project Name']}
               category={project['Category']}
@@ -179,7 +197,7 @@
         </div>
       {:else if round == 'Round 1'}
         <div class="allcard flex flex-wrap justify-center">
-          {#each Data1.slice(0, itemsToShow) as project}
+          {#each filteredProjects1.slice(0, itemsToShow) as project}
             <CardRound1 name={project.name} />
           {/each}
         </div>
