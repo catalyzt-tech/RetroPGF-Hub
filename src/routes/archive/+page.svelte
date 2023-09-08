@@ -3,6 +3,7 @@
   import { browser } from '$app/environment'
   import CardRound1 from '@/components/Archive/CardRound1.svelte'
   import CardRound2 from '@/components/Archive/CardRound2.svelte'
+  import SearchBar from '@/components/Archive/SearchBar.svelte'
 
   interface ProjectData {
     'Project Name': string
@@ -66,6 +67,27 @@
     round = event.target.value
     console.log(round)
   }
+
+  const categoryRound2 = [
+    'All',
+    'Education',
+    'Infrastructure',
+    'Tooling and utilities',
+  ]
+  let width: number
+  let filteredProjects: ProjectData[] = []
+  let showCategory: string = 'All'
+  const filterCategory = (event: any) => {
+    showCategory = event.target.value
+    console.log(showCategory)
+    if (showCategory === 'All') {
+      filteredProjects = Data2
+    } else {
+      filteredProjects = Data2.filter(
+        (project) => project['Category'] === showCategory
+      )
+    }
+  }
 </script>
 
 <div class="flex flex-col min-h-screen">
@@ -118,18 +140,37 @@
       {/if}
     </div>
     <div class="px-[10em]">
-      <div class="flex justify-end">
-        <select
-          on:change={filterRound}
-          class="filter my-2 p-3 border-2 border-black rounded-lg"
-        >
-          <option>Round 1</option>
-          <option selected>Round 2</option>
-        </select>
-      </div>
       {#if round == 'Round 2'}
-        <div class="allcard flex flex-wrap justify-center">
-          {#each Data2.slice(0, itemsToShow) as project}
+        <div
+          class="flex justify-end border-2 border-black rounded-2xl p-3 my-3"
+        >
+          <input
+            class=" bg-gray-200 rounded-lg px-2 py-2 mr-3 text-right max-w-fit"
+            placeholder="Search"
+          />
+          {#each categoryRound2 as category}
+            <button
+              on:click={filterCategory}
+              value={category}
+              class="bg-black text-white px-5 mr-3 rounded-lg hover:bg-red-500 transition ease-in-out duration-200"
+            >
+              {category}</button
+            >
+          {/each}
+          <select
+            on:change={filterRound}
+            class="filter p-3 border-2 border-black rounded-lg"
+          >
+            <option selected disabled>-- Filter --</option>
+            <option>Round 1</option>
+            <option>Round 2</option>
+          </select>
+        </div>
+        <div
+          class="allcard flex flex-wrap justify-center"
+          bind:clientWidth={width}
+        >
+          {#each filteredProjects.slice(0, itemsToShow) as project}
             <CardRound2
               name={project['Project Name']}
               category={project['Category']}
