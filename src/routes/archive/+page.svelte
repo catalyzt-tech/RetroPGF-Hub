@@ -76,7 +76,7 @@
     'Tooling and utilities',
   ]
   let width: number
-  let showCategory: string
+  let showCategory: string = 'All'
 
   const filterCategory = (event: any) => {
     showCategory = event.target.value
@@ -102,7 +102,7 @@
     const message = event.target.value.toLowerCase()
     if (round === 'Round 2') {
       if (!message) {
-        filteredProjects2 = Data2
+        filteredProjects2 = await Data2
       } else {
         filteredProjects2 = await Data2.filter((project: ProjectDataRound2) => {
           const projectName = project['Project Name'].toLowerCase()
@@ -173,7 +173,7 @@
       <div class="flex flex-wrap border-2 border-black rounded-2xl my-4 p-3">
         <div class="flex flex-grow mr-3">
           <input
-            on:change={searchFilter}
+            on:input={searchFilter}
             type="text"
             class=" bg-gray-200 flex-grow rounded-lg px-2 py-2 my-2 text-right"
             placeholder="Search"
@@ -184,7 +184,9 @@
             <button
               on:click={filterCategory}
               value={category}
-              class="bg-black text-white px-5 mr-3 my-2 h-10 rounded-lg hover:bg-red-500 transition ease-in-out duration-200"
+              class="{showCategory === category
+                ? 'bg-red-500'
+                : 'bg-black'} text-white px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
             >
               {category}</button
             >
@@ -194,7 +196,9 @@
             <button
               on:click={filterCategory}
               value={category}
-              class="bg-black text-white px-5 mr-3 my-2 h-10 rounded-lg hover:bg-red-500 transition ease-in-out duration-200"
+              class="{showCategory === category
+                ? 'bg-red-500'
+                : 'bg-black'} text-white px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
             >
               {category}</button
             >
@@ -213,7 +217,7 @@
     <div class="px-[10em]">
       {#if round == 'Round 2'}
         <div class="allcard flex flex-wrap justify-center">
-          {#key showCategory || filteredProjects2}
+          {#key filteredProjects2}
             {#each filteredProjects2.slice(0, itemsToShow) as project}
               <CardRound2
                 name={project['Project Name']}
