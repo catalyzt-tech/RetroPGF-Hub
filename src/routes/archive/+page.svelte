@@ -170,48 +170,54 @@
           Read More &gt
         </a>
       {/if}
-      <div class="flex flex-wrap rounded-2xl my-1 p-5">
-        <div class="flex flex-grow mr-3">
-          <input
-            on:input={searchFilter}
-            type="text"
-            class=" bg-[#e4e4e4] flex-grow rounded-lg px-5 py-2 my-2 text-left transition ease-in-out duration-200"
-            placeholder="Search"
-          />
+      <div class="flex justify-center">
+        <div class="flex flex-wrap rounded-2xl mt-4 mb-1 px-5 w-[60em]">
+          <div class="flex flex-grow mr-3">
+            <input
+              on:input={searchFilter}
+              type="text"
+              class=" bg-[#e4e4e4] flex-grow rounded-lg px-5 py-2 my-2 text-left transition ease-in-out duration-200"
+              placeholder="Search"
+            />
+          </div>
         </div>
-        {#if round == 'Round 2'}
-          {#each categoryRound2 as category}
-            <button
-              on:click={filterCategory}
-              value={category}
-              class="{showCategory === category
-                ? 'bg-red-500 text-white'
-                : 'bg-[#d7d7d7]'} text-black px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
-            >
-              {category}</button
-            >
-          {/each}
-        {:else}
-          {#each categoryRound1 as category}
-            <button
-              on:click={filterCategory}
-              value={category}
-              class="{showCategory === category
-                ? 'bg-red-500'
-                : 'bg-black'} text-white px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
-            >
-              {category}</button
-            >
-          {/each}
-        {/if}
-        <select
-          on:change={changeRound}
-          class="px-2 my-2 h-10 border-2 border-black rounded-lg"
-        >
-          <option disabled>-- Select --</option>
-          <option value="Round 1">Round 1</option>
-          <option selected value="Round 2">Round 2</option>
-        </select>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex px-5 mb-3">
+          {#if round == 'Round 2'}
+            {#each categoryRound2 as category}
+              <button
+                on:click={filterCategory}
+                value={category}
+                class="{showCategory === category
+                  ? 'bg-red-500 text-white'
+                  : 'bg-[#d7d7d7]'} text-black px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
+              >
+                {category}</button
+              >
+            {/each}
+          {:else}
+            {#each categoryRound1 as category}
+              <button
+                on:click={filterCategory}
+                value={category}
+                class="{showCategory === category
+                  ? 'bg-red-500'
+                  : 'bg-black'} text-white px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
+              >
+                {category}</button
+              >
+            {/each}
+          {/if}
+          <select
+            on:change={changeRound}
+            class="px-2 my-2 h-10 border-2 border-black rounded-lg"
+          >
+            <option disabled>-- Select --</option>
+            <option value="Round 1">Round 1</option>
+            <option selected value="Round 2">Round 2</option>
+          </select>
+        </div>
       </div>
     </div>
     <div class="px-[10em]">
