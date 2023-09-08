@@ -1,7 +1,7 @@
 <script lang="ts">
   import Navbar from '@/components/Navbar.svelte'
   import Footer from '@/components/Footer.svelte'
-  export let title = 'Retro-PGF'
+  export let title = 'RetroPGF Hub'
   import '../app.css'
 </script>
 
