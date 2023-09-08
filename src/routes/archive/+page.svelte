@@ -170,12 +170,12 @@
           Read More &gt
         </a>
       {/if}
-      <div class="flex flex-wrap border-2 border-black rounded-2xl my-4 p-3">
+      <div class="flex flex-wrap rounded-2xl my-1 p-5">
         <div class="flex flex-grow mr-3">
           <input
             on:input={searchFilter}
             type="text"
-            class=" bg-gray-200 flex-grow rounded-lg px-2 py-2 my-2 text-right"
+            class=" bg-[#e4e4e4] flex-grow rounded-lg px-5 py-2 my-2 text-left transition ease-in-out duration-200"
             placeholder="Search"
           />
         </div>
@@ -185,8 +185,8 @@
               on:click={filterCategory}
               value={category}
               class="{showCategory === category
-                ? 'bg-red-500'
-                : 'bg-black'} text-white px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
+                ? 'bg-red-500 text-white'
+                : 'bg-[#d7d7d7]'} text-black px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
             >
               {category}</button
             >
