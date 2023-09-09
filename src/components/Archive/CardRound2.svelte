@@ -57,5 +57,4 @@
       <button />
     </button>
   </div>
-  <!-- <img src={imageUrl} alt="test dynamic icon" /> -->
 </div>

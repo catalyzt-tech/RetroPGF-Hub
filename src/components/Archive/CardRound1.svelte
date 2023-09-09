@@ -8,7 +8,6 @@
     )
     console.log(respond)
     data = await respond.json()
-    console.log(data)
   })
 </script>
 

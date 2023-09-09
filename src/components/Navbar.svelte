@@ -1,28 +1,27 @@
 <script lang="ts">
-  let showMenu: boolean = false;
+  let showMenu: boolean = false
   const toggleNavbar = () => {
-    showMenu = !showMenu;
-  };
-  import { Axios } from "@/lib/axios";
-  import { onMount } from "svelte";
-  import { User } from "@/stores/User";
+    showMenu = !showMenu
+  }
+  import { Axios } from '@/lib/axios'
+  import { onMount } from 'svelte'
+  import { User } from '@/stores/User'
 
   onMount(async () => {
     try {
-      const response = await Axios.get("/api/users", {});
+      const response = await Axios.get('/api/users', {})
       if (response.status === 200) {
-        $User = response.data.data;
+        $User = response.data.data
       }
-      
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
-  });
+  })
 
   const handleLogout = async () => {
-    await Axios.post("/api/users/logout");
-    window.location.pathname = "/";
-  };
+    await Axios.post('/api/users/logout')
+    window.location.pathname = '/'
+  }
 </script>
 
 <div class="text-base">
@@ -64,15 +63,21 @@
           ? 'flex'
           : 'hidden'}"
       >
-        <a class="text-gray-800 hover:text-red-400" href="/projects">Projects</a
+        <a
+          class="text-gray-800 hover:text-red-400 transition ease-linear duration-200"
+          href="/projects">Projects</a
         >
-        <a class="text-gray-800 hover:text-red-400" href="/archive">Archive</a>
-        <a class="text-gray-800 hover:text-red-400" href="/nominate-form"
-          >Nominate</a
+        <a
+          class="text-gray-800 hover:text-red-400 transition ease-linear duration-200"
+          href="/archive">Archive</a
+        >
+        <a
+          class="text-gray-800 hover:text-red-400 transition ease-linear duration-200"
+          href="/nominate-form">Nominate</a
         >
         {#if !$User}
           <a
-            class="text-gray-800 hover:bg-red-500 hover:text-white px-3 py-1 bg-gray-200 rounded-full"
+            class="text-gray-800 hover:bg-red-500 hover:text-white px-3 py-1 bg-gray-200 rounded-full transition ease-linear duration-200"
             href="/login"
             >Login
           </a>
