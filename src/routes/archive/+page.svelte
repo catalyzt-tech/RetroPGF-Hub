@@ -106,15 +106,17 @@
       } else {
         filteredProjects2 = await Data2.filter((project: ProjectDataRound2) => {
           const projectName = project['Project Name'].toLowerCase()
+          totalItems = filteredProjects2.length
           return projectName.includes(message)
         })
       }
     } else if (round === 'Round 1') {
       if (!message) {
-        filteredProjects1 = Data1
+        filteredProjects1 = await Data1
       } else {
         filteredProjects1 = await Data1.filter((project: ProjectDataRound1) => {
           const projectName = project.name.toLowerCase()
+          totalItems = filteredProjects1.length
           return projectName.includes(message)
         })
       }
