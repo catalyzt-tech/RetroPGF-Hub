@@ -1,7 +1,7 @@
 <script lang="ts">
   export let detail: any
-  let iconPath: string = `../../../public/data/retroPGF2-dataset/each_project/${detail.name}/icon.jpg`
-  let bannerPath: string = `../../../public/data/retroPGF2-dataset/each_project/${detail.name}/banner.jpg`
+  let iconPath: string = `/data/retroPGF2-dataset/each_project/${detail.name}/icon.jpg`
+  let bannerPath: string = `/data/retroPGF2-dataset/each_project/${detail.name}/banner.jpg`
   let bannerExist: boolean = false
   const checkBanner = async () => {
     const response = await fetch(bannerPath)
