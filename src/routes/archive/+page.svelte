@@ -37,7 +37,7 @@
 
   if (browser) {
     onMount(async () => {
-      const response = await fetch('public/data/retroPGF2-dataset/results.json')
+      const response = await fetch('data/retroPGF2-dataset/results.json')
       Data2 = await response.json()
       filteredProjects2 = await Data2
       totalItems = Data2.length
@@ -50,16 +50,14 @@
   const changeRound = async (event: any) => {
     round = event?.target?.value ?? round
     if (round == 'Round 2') {
-      const response = await fetch('public/data/retroPGF2-dataset/results.json')
+      const response = await fetch('data/retroPGF2-dataset/results.json')
       Data2 = await response.json()
       filteredProjects2 = await Data2
       console.log(filteredProjects2)
       totalItems = Data2.length
       loading = false
     } else if (round == 'Round 1') {
-      const response = await fetch(
-        'public/data/retroPGF1-dataset/results_rpgf1.json'
-      )
+      const response = await fetch('data/retroPGF1-dataset/results_rpgf1.json')
       Data1 = await response.json()
       filteredProjects1 = Data1
       console.log(filteredProjects1)
@@ -97,7 +95,6 @@
       }
     }
   }
-  let filteredProjects: ProjectDataRound2[] = []
   const searchFilter = async (event: any) => {
     const message = event.target.value.toLowerCase()
     if (round === 'Round 2') {
@@ -185,7 +182,7 @@
         </div>
       </div>
       <div class="flex justify-center">
-        <div class="flex px-5 mb-3">
+        <div class="flex flex-wrap justify-between px-5 mb-3">
           {#if round == 'Round 2'}
             {#each categoryRound2 as category}
               <button

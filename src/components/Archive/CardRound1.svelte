@@ -3,9 +3,7 @@
   export let name: string
   let data: any
   onMount(async () => {
-    let respond = await fetch(
-      `/public/data/retroPGF1-dataset/${name}/info.json`
-    )
+    let respond = await fetch(`data/retroPGF1-dataset/${name}/info.json`)
     console.log(respond)
     data = await respond.json()
   })
