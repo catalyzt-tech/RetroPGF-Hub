@@ -73,7 +73,6 @@
     'Infrastructure',
     'Tooling and utilities',
   ]
-  let width: number
   let showCategory: string = 'All'
 
   const filterCategory = (event: any) => {

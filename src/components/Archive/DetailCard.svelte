@@ -10,6 +10,7 @@
     }
   }
   checkBanner()
+  console.log(detail)
 </script>
 
 <div class="flex justify-center">
