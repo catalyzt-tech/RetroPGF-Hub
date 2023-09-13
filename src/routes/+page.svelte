@@ -4,9 +4,11 @@
 </script>
 
 <section
-  class="bg-[#FFE8E8] w-full h-[calc(100vh-2rem)] px-16 flex flex-col justify-center items-center"
+  class="changebackground w-full h-[calc(100vh-2rem)] px-16 flex flex-col justify-center items-center"
 >
-  <div class="flex justify-center items-center">
+  <div
+    class="flex justify-center items-center transform ease-in-out duration-700"
+  >
     <img src="img/sun.png" class="w-[15em] animate-pulse" alt="OP Sun" />
   </div>
   <h1
@@ -25,8 +27,11 @@
     <img src="/img/arrow_down2.png" class="w-6" alt="arrow" />
   </div>
 </section>
-
-<section class="px-16 flex flex-col justify-center items-center">
+<section />
+<section class="relative px-16 flex flex-col justify-center items-center">
+  <div class=" absolute top-0 right-0">
+    <img src="/img/op_phoenix.png" alt="phoenix" width={400} />
+  </div>
   <div class="relative mt-20 text-center max-w-lg mx-auto">
     <svg
       class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-200"
@@ -59,7 +64,7 @@
     Retroactive Public Good Funding.
   </p>
 
-  <div class="flex flex-col lg:flex-row gap-4 mt-8 mb-10">
+  <div class="flex flex-col lg:flex-row gap-12 mt-8 mb-10">
     <DialogCard
       title="For Mentors"
       desc="Connect, inspire, and reap the fulfillment of guiding aspiring minds on other's journeys to success."
@@ -74,6 +79,9 @@
     />
   </div>
 </section>
+<!-- <div class="max-h-40 overflow-hidden">
+  <img src="/img/op_mountain.png" alt="op mountain" class="w-full" />
+</div> -->
 <div class=" bg-[#FFE8E8] h-[50em] w-full">
   <div class="flex justify-center text-2xl font-semibold pt-10 mb-5">
     Retroactive Public Good Funding
@@ -104,3 +112,22 @@
 </div>
 
 <section />
+
+<style>
+  .changebackground {
+    background: linear-gradient(-45deg, #fbb29c, #ffd490, #fba5a5, #fbb27d);
+    background-size: 400% 400%;
+    animation: gradient 6s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
