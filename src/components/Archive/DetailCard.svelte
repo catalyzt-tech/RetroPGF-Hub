@@ -26,24 +26,26 @@
     >
 
     {#if bannerExist}
-      <div class="w-fit h-60 overflow-hidden">
+      <div class="w-fit h-fit overflow-hidden">
         <img src={bannerPath} alt="banner" class="w-fit" />
       </div>
     {:else}
       <div class="h-10" />
     {/if}
-    <div class="p-10">
-      <div class="relative">
+    <div class="flex flex-col py-5 px-10 lg:p-10">
+      <div class="lg:relative">
         <img
           src={iconPath}
           alt=""
-          class="w-32 rounded-3xl absolute shadow-sm"
+          class="w-32 rounded-3xl lg:absolute shadow-sm"
         />
-        <div class="absolute text-center text-[2em] font-bold top-0 left-40">
+        <div
+          class="mt-3 lg:absolute lg:text-center text-[2em] font-bold lg:top-0 lg:left-40"
+        >
           {detail?.name}
         </div>
         <div
-          class="absolute divide-x-2 grid grid-cols-3 top-16 left-40 w-[calc(55em-18rem)]"
+          class="flex gap-4 my-2 lg:absolute lg:divide-x-2 lg:grid lg:grid-cols-3 lg:top-16 lg:left-40 w-[calc(55em-18rem)]"
         >
           <a
             href={detail.twitter}
@@ -56,18 +58,15 @@
               alt="twitter"
               class="w-6 h-6 m-1"
             />
-            <div>Twitter (X)</div>
+            <div class="hidden lg:flex">Twitter (X)</div>
           </a>
           <a
             href={detail.website}
             target="_blank"
             class="font-bold flex flex-col justify-center items-center"
           >
-            <img
-              src="/img/web_logo.png"
-              alt="website"
-              class="w-6 h-6 m-1"
-            />Website
+            <img src="/img/web_logo.png" alt="website" class="w-6 h-6 m-1" />
+            <div class="hidden lg:flex">Website</div>
           </a>
           <a
             href={detail?.github}
@@ -76,12 +75,11 @@
             class="font-bold flex flex-col justify-center items-center"
           >
             <img src="/img/github_logo.png" class="w-6 h-6 m-1" alt="github" />
-
-            Github
+            <div class="hidden lg:flex">Github</div>
           </a>
         </div>
       </div>
-      <div class=" font-bold mt-40 text-lg">About the project</div>
+      <div class=" font-bold mt-4 lg:mt-40 text-lg">About the project</div>
       <div class="mt-1 mb-5 text-[#616161]">{detail?.about}</div>
       <div class=" font-bold text-lg">Funding allocation</div>
       <div class="mt-1 mb-5 text-[#616161]">123,456.789 OP</div>
