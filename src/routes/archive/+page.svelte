@@ -129,7 +129,7 @@
     <div class="h-[10em] overflow-hidden">
       <img src="./img/opsunsmile.png" alt="OPBanner" class="w-full" />
     </div>
-    <div class="px-[10em]">
+    <div class="px-10 lg:px-[10em]">
       {#if round === 'Round 1'}
         <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
           RetroPGF 1 Nominated Projects
@@ -218,7 +218,7 @@
         </div>
       </div>
     </div>
-    <div class="px-[10em]">
+    <div class="lg:px-[10em]">
       {#if round == 'Round 2'}
         <div class="allcard flex flex-wrap justify-center">
           {#key filteredProjects2}
