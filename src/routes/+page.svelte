@@ -29,10 +29,14 @@
 </section>
 <section />
 <section class="relative px-16 flex flex-col justify-center items-center">
-  <div class=" absolute top-0 right-0">
-    <img src="/img/op_phoenix.png" alt="phoenix" width={400} />
+  <div class="absolute top-0 right-0">
+    <img
+      src="/img/op_phoenix.png"
+      alt="phoenix"
+      class="w-[300px] sm:w-[350px] 2xl:w-[400px]"
+    />
   </div>
-  <div class="relative mt-20 text-center max-w-lg mx-auto">
+  <div class="relative mt-64 lg:mt-20 text-center max-w-lg mx-auto">
     <svg
       class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-200"
       width="16"
