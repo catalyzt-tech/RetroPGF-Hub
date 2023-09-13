@@ -3,10 +3,12 @@
 </script>
 
 <div>
-  <div class="flex flex-row justify-center text-[30px] font-bold mb-2">
+  <div
+    class="flex flex-row flex-wrap justify-center text-[30px] font-bold mb-2"
+  >
     Nominate Project
   </div>
-  <div class="flex justify-center">
+  <div class="flex justify-center px-10">
     <div class="max-w-[50em] text-center">
       In the spirit of <span
         class="font-semibold bg-[#FF0000] mx-1 px-4 py-1 rounded-xl text-white"

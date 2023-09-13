@@ -1,55 +1,55 @@
 <script lang="ts">
-  import { browser } from "$app/environment";
-  import { Axios } from "@/lib/axios";
-  import { uploadFile } from "@/lib/uploadFile";
+  import { browser } from '$app/environment'
+  import { Axios } from '@/lib/axios'
+  import { uploadFile } from '@/lib/uploadFile'
 
   const dynamicHeight = (event: any) => {
     if (browser) {
-      const textarea: any = event.target;
-      textarea.style.height = "auto";
-      textarea.style.height = textarea.scrollHeight + "px";
+      const textarea: any = event.target
+      textarea.style.height = 'auto'
+      textarea.style.height = textarea.scrollHeight + 'px'
     }
-  };
+  }
   let categories = [
-    { value: "defi", name: "DeFi" },
-    { value: "nft", name: "NTF" },
-    { value: "bridge", name: "Bridge" },
-    { value: "wallet", name: "Wallet" },
-    { value: "portfolio-tracker", name: "Portfolio Tracker" },
-    { value: "dao", name: "DAO" },
-    { value: "on-ramp", name: "On-ramp" },
-  ];
+    { value: 'defi', name: 'DeFi' },
+    { value: 'nft', name: 'NTF' },
+    { value: 'bridge', name: 'Bridge' },
+    { value: 'wallet', name: 'Wallet' },
+    { value: 'portfolio-tracker', name: 'Portfolio Tracker' },
+    { value: 'dao', name: 'DAO' },
+    { value: 'on-ramp', name: 'On-ramp' },
+  ]
 
-  let logoFile: File;
-  let bannerFile: File;
+  let logoFile: File
+  let bannerFile: File
 
   let data = {
-    name: "",
-    logo_url: "",
-    banner_url: "",
-    website_url: "",
-    crypto_category: "",
-    description: "",
-    reason: "",
-    category: "",
-    contact: "",
-  };
+    name: '',
+    logo_url: '',
+    banner_url: '',
+    website_url: '',
+    crypto_category: '',
+    description: '',
+    reason: '',
+    category: '',
+    contact: '',
+  }
 
   const onFileSelected = (e: any, fileType: string) => {
-    if (fileType === "logoFile") {
-      logoFile = e.target.files[0];
+    if (fileType === 'logoFile') {
+      logoFile = e.target.files[0]
     }
-    if (fileType === "bannerFile") {
-      bannerFile = e.target.files[0];
+    if (fileType === 'bannerFile') {
+      bannerFile = e.target.files[0]
     }
-  };
+  }
 
   const onSubmit = async () => {
-    data.logo_url = (await uploadFile(logoFile, "project_logo")) ?? "";
-    data.banner_url = (await uploadFile(bannerFile, "project_banner")) ?? "";
+    data.logo_url = (await uploadFile(logoFile, 'project_logo')) ?? ''
+    data.banner_url = (await uploadFile(bannerFile, 'project_banner')) ?? ''
 
-    Axios.post("/api/projects", data).catch((err) => console.log(err));
-  };
+    Axios.post('/api/projects', data).catch((err) => console.log(err))
+  }
 </script>
 
 <div class="flex justify-center">
@@ -65,7 +65,7 @@
           name="name"
           bind:value={data.name}
           placeholder="Name"
-          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-full"
           required
         />
       </div>
@@ -75,7 +75,7 @@
       <div>
         <input
           type="file"
-          on:change={(e) => onFileSelected(e, "logoFile")}
+          on:change={(e) => onFileSelected(e, 'logoFile')}
           accept="image/png,image/jpeg"
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm"
           required
@@ -87,7 +87,7 @@
       <div>
         <input
           type="file"
-          on:change={(e) => onFileSelected(e, "bannerFile")}
+          on:change={(e) => onFileSelected(e, 'bannerFile')}
           accept="image/png,image/jpeg"
           class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm"
           required
@@ -100,7 +100,7 @@
         <input
           type="url"
           bind:value={data.website_url}
-          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-full"
           required
         />
       </div></label
@@ -128,7 +128,7 @@
         <textarea
           on:input={dynamicHeight}
           bind:value={data.description}
-          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em] resize-none max-h-32"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-full resize-none max-h-32"
           required
         />
       </div></label
@@ -140,7 +140,7 @@
         <textarea
           on:input={dynamicHeight}
           bind:value={data.reason}
-          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em] resize-none max-h-32"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-full resize-none max-h-32"
           required
         />
       </div></label
@@ -168,7 +168,7 @@
       <div>
         <input
           type="text"
-          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-full"
           required
         />
       </div></label
@@ -179,7 +179,7 @@
         <input
           type="text"
           bind:value={data.contact}
-          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-[50em]"
+          class="bg-[#EDEDED] p-4 my-5 rounded-md text-sm w-full"
           required
         />
       </div></label
