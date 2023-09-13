@@ -13,9 +13,9 @@
   console.log(detail)
 </script>
 
-<div class="flex justify-center">
+<div class="flex justify-center w-screen">
   <div
-    class=" relative overflow-hidden border-2 rounded-2xl border-black w-[55em] m-20 shadow-xl"
+    class=" relative overflow-hidden border-2 rounded-2xl border-black w-[55em] m-6 lg:m-20 shadow-xl"
   >
     <a href="/archive" class="absolute left-5 top-5 bg-white w-9 h-8 rounded">
       <img

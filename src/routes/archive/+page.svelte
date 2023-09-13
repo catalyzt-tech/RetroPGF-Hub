@@ -126,7 +126,7 @@
       Loading
     </div>
   {:else}
-    <div class="h-[10em] overflow-hidden">
+    <div class="w-full lg:h-[10em] overflow-hidden">
       <img src="./img/opsunsmile.png" alt="OPBanner" class="w-full" />
     </div>
     <div class="px-10 lg:px-[10em]">
@@ -181,7 +181,7 @@
         </div>
       </div>
       <div class="flex justify-center">
-        <div class="flex flex-wrap justify-between px-5 mb-3">
+        <div class="flex flex-wrap px-5 mb-3">
           {#if round == 'Round 2'}
             {#each categoryRound2 as category}
               <button
@@ -189,7 +189,7 @@
                 value={category}
                 class="{showCategory === category
                   ? 'bg-red-500 text-white'
-                  : 'bg-[#d7d7d7]'} text-black px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
+                  : 'bg-[#d7d7d7]'} text-black flex-grow lg:grow-0 px-5 mr-3 my-2 h-10 rounded-lg hover:drop-shadow-[0_8px_5px_rgb(0,0,0,0.31)] transition ease-in-out duration-200"
               >
                 {category}</button
               >
