@@ -9,14 +9,18 @@
   <div
     class="flex justify-center items-center transform ease-in-out duration-700"
   >
-    <img src="img/sun.png" class="w-[15em] animate-pulse" alt="OP Sun" />
+    <img
+      src="img/sun.png"
+      class="w-[10em] md:w-[15em] animate-pulse"
+      alt="OP Sun"
+    />
   </div>
   <h1
-    class="flex flex-row pt-10 text-black text-[36px] text-center font-semibold justify-center"
+    class="flex flex-row pt-10 text-black text-[24px] sm:text-[36px] text-center font-semibold justify-center"
   >
     Create, Nominate, and Discover.
   </h1>
-  <p class="flex flex-row justify-center text-lg p-2 text-center font-rubik">
+  <p class="flex flex-row justify-center sm:text-lg p-2 text-center font-rubik">
     RetroPGF Hub is a platform for you to nominate and discover projects that
     are making a positive impact to the world.
   </p>
@@ -94,37 +98,96 @@
     </div>
   </div>
 </section>
-
-<div class=" bg-[#FFE8E8] h-[50em] w-full">
-  <div class="flex justify-center text-2xl font-semibold pt-10 mb-5">
-    Retroactive Public Good Funding
-  </div>
-  <div class=" grid grid-cols-2 m-10 px-16">
-    <div class="flex flex-col">
-      <div class="font-bold text-xl">What is RetroPGF?</div>
-      <div class="text-md">
-        RetroPGF is Optimism’s process for funding public goods for the benefit
-        of the Collective and beyond.
+<section>
+  <div class=" changebackground p-6 w-full">
+    <div
+      class="flex text-center justify-center text-[2em] italic font-semibold pt-10"
+    >
+      Retroactive Public Goods Funding
+    </div>
+    <div
+      class="flex text-center justify-center text-[1.5em] italic font-medium"
+    >
+      <div class=" mt-1 px-5 py-1 bg-[#FF0000] text-white rounded-full">
+        RetroPGF
       </div>
     </div>
-    <div class="flex flex-col justify-start mt-32">
-      <div class="flex justify-end text-xl font-bold">
-        And why are we funding those projects?
+    <div class="flex flex-col items-center my-10">
+      <img
+        src="img/retropgf_round.png"
+        alt=""
+        class="max-w-screen lg:max-w-[60em] opacity-70"
+      />
+    </div>
+    <div class=" md:grid md:grid-cols-2 md:px-16">
+      <div class="flex flex-col">
+        <div class="font-bold text-xl">What is RetroPGF?</div>
+        <div class="text-md mt-2">
+          RetroPGF is Optimism’s process for funding public goods for the
+          benefit of the Collective. Beyond that, it is fantastic default option
+          for being rewarded for the work that you do. RetroPGF is distributed
+          after impact has already been made and there is never a 100%
+          likelihood that any given project will be rewarded.
+        </div>
       </div>
-      <div class="flex justify-end text-end text-md">
-        <div>
-          It is very simple to say that positive or useful projects should be
-          rewarded, this is aligned with the Optimism's vision
-          <span class="font-bold italic">"impact = profit"</span>. Moreover,
-          this reward can bootstrap based on the early potential and promise of
-          their projects.
+    </div>
+    <div class=" md:grid md:grid-cols-2 mt-5 md:px-16">
+      <div />
+      <div class="flex flex-col md:justify-start">
+        <div class="flex md:justify-end text-xl font-bold">
+          And why are we funding those projects?
+        </div>
+        <div class="flex md:justify-end md:text-end text-md mt-2">
+          <div>
+            It is very simple to say that positive or useful projects should be
+            rewarded, this is aligned with the Optimism's vision
+            <span class="font-bold italic">"impact = profit"</span>. Moreover,
+            this reward can bootstrap based on the early potential and promise
+            of their projects.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" md:grid md:grid-cols-2 mt-5 md:px-16">
+      <div class="flex flex-col md:justify-start">
+        <div class="font-bold text-xl">How to get involved?</div>
+        <div class="text-md mt-2">
+          <div>
+            <span class="font-medium">
+              - If you’re a developer, check out the</span
+            >
+            <a
+              href="https://github.com/ethereum-optimism/ecosystem-contributions#readme"
+              target="_blank"
+              class="underline hover:text-[#FF0000] transition ease-linear duration-200"
+              >Ecosystem Contributions board</a
+            > for a range of ideas and projects to get started on.
+          </div>
+          <div>
+            <span class="font-medium"> - If you’re a community builder,</span>
+            check out the NERD program (support, onboarding) or Ambassador program
+            (marketing, business development).
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" md:grid md:grid-cols-2 mt-5 md:px-16">
+      <div />
+      <div class="flex flex-col md:justify-start">
+        <div class="flex md:justify-end text-xl font-bold">
+          Public goods supercharge Optimism's ecosystem
+        </div>
+        <div class="flex md:justify-end md:text-end text-md mt-2">
+          <div>
+            If you've contributed to the development and use of Optimism, you
+            might be eligible for funding from RetroPGF 3. They're looking to
+            support any public good that helps with the OP Stack.
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<section />
+</section>
 
 <style>
   .changebackground {
