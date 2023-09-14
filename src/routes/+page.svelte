@@ -68,7 +68,7 @@
     Retroactive Public Good Funding.
   </p>
 
-  <div class="flex flex-col lg:flex-row gap-12 mt-8 mb-10">
+  <div class="flex flex-col lg:flex-row gap-12 mt-8">
     <DialogCard
       title="For Mentors"
       desc="Connect, inspire, and reap the fulfillment of guiding aspiring minds on other's journeys to success."
@@ -82,10 +82,19 @@
       buttonPath="/nominate-form"
     />
   </div>
+  <div>
+    <div
+      class="pt-[1em] w-full lg:pt-32 max-h-[25em] sm:max-h-[30em] md:max-h-[35em] lg:max-h-[25em] lg:max-w-[70em] flex justify-center items-center lg:overflow-hidden"
+    >
+      <img
+        src="/img/op_city.png"
+        alt="op_city"
+        class="max-w-[140%] md:max-w-[120%] lg:max-w-full"
+      />
+    </div>
+  </div>
 </section>
-<!-- <div class="max-h-40 overflow-hidden">
-  <img src="/img/op_mountain.png" alt="op mountain" class="w-full" />
-</div> -->
+
 <div class=" bg-[#FFE8E8] h-[50em] w-full">
   <div class="flex justify-center text-2xl font-semibold pt-10 mb-5">
     Retroactive Public Good Funding
