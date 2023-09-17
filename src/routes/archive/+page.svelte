@@ -120,7 +120,7 @@
   }
 </script>
 
-<div class="flex flex-col min-h-screen">
+<div class="flex flex-col min-h-screen  mb-10">
   {#if loading}
     <div class="flex flex-row justify-center font-bold text-3xl my-64">
       Loading
