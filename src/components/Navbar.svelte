@@ -44,11 +44,11 @@
 <div class="text-base">
   <div>
     <nav class="container mx-auto md:flex md:justify-between md:items-center">
-      <div class="flex items-center justify-between">
-        <a href="/" on:click={selectPage}>
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="pl-6" on:click={selectPage}>
           <img src="/img/hub-logo.png" alt="logo" height={100} class="w-40" />
         </a>
-        <div class="flex md:hidden">
+        <div class="flex pr-6 md:hidden">
           <button
             on:click={toggleNavbar}
             type="button"
@@ -71,21 +71,25 @@
           </button>
         </div>
       </div>
-
       <div
-        class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 {showMenu
+        class="flex-col space-y-3 my-3 mx-6 justify-center md:my-0 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 {showMenu
           ? 'flex'
           : 'hidden'}"
       >
-        <ul class="flex items-center h-16">
+        <ul
+          class="{showMenu
+            ? 'flex-col'
+            : ''} flex mt-8 space-y-3 md:space-y-0 md:items-center md:h-16 md:mt-0"
+        >
           <a
             class="{Page === 'projects'
-              ? 'font-bold show-inset'
-              : ''} flex mr-8 text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full shadow-inset"
+              ? 'md:font-bold show-inset'
+              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
             href="/projects"
           >
             <button
               on:click={selectPage}
+              type="button"
               category="projects"
               class="flex items-center"
             >
@@ -94,11 +98,12 @@
           </a>
           <a
             class="{Page === 'archive'
-              ? 'font-semibold show-inset'
-              : ''} flex mr-8 text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full shadow-inset"
+              ? 'md:font-bold show-inset'
+              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
             href="/archive"
             ><button
               on:click={selectPage}
+              type="button"
               category="archive"
               class="flex items-center"
             >
@@ -107,13 +112,14 @@
           >
           <a
             class="{Page === 'nominate-form'
-              ? 'font-bold show-inset'
-              : ''} flex text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full shadow-inset"
+              ? 'md:font-bold show-inset'
+              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
             href="/nominate-form"
             ><button
               on:click={selectPage}
+              type="button"
               category="nominate-form"
-              class="flex items-center"
+              class="md:flex md:items-center"
             >
               Nominate
             </button></a
@@ -134,10 +140,12 @@
 </div>
 
 <style>
-  .show-inset {
-    box-shadow: inset 0 -3px 0 black;
-  }
-  .shadow-inset:hover {
-    box-shadow: inset 0 -3px 0 rgb(255, 0, 0);
+  @media (min-width: 768px) {
+    .show-inset {
+      box-shadow: inset 0 -3px 0 black;
+    }
+    .shadow-inset:hover {
+      box-shadow: inset 0 -3px 0 rgb(255, 0, 0);
+    }
   }
 </style>
