@@ -24,6 +24,17 @@
     window.location.pathname = '/'
   }
   let Page: string = ''
+
+  let url: string | URL | undefined = ''
+  onMount(() => {
+    url = new URL(window.location.href)
+    url = url.pathname.slice(1)
+    if (url !== '') {
+      Page = url
+      console.log(Page)
+    }
+  })
+
   const selectPage = (event: any) => {
     console.log(event.target.getAttribute('category'))
     Page = event.target.getAttribute('category')
@@ -95,13 +106,13 @@
             </button></a
           >
           <a
-            class="{Page === 'form'
+            class="{Page === 'nominate-form'
               ? 'font-bold show-inset'
               : ''} flex text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full shadow-inset"
             href="/nominate-form"
             ><button
               on:click={selectPage}
-              category="form"
+              category="nominate-form"
               class="flex items-center"
             >
               Nominate
