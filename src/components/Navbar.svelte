@@ -119,7 +119,7 @@
               on:click={selectPage}
               type="button"
               category="nominate-form"
-              class="md:flex md:items-center"
+              class="flex items-center"
             >
               Nominate
             </button></a

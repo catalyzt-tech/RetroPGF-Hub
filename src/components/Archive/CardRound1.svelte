@@ -4,7 +4,7 @@
   let data: any
   onMount(async () => {
     let respond = await fetch(`data/retroPGF1-dataset/${name}/info.json`)
-    console.log(respond)
+    console.log('Respond = ' + respond)
     data = await respond.json()
   })
 </script>
@@ -26,18 +26,21 @@
   </h1>
   <div class="px-3 max-h-32">
     {#if data}
-      <p class=" line-clamp-3 text-sm">{data.question_1}</p>
+      <p class=" line-clamp-3 text-sm">
+        {data.Question}
+      </p>
     {:else}
       <p>Loading</p>
     {/if}
   </div>
   <div class="flex-grow my-1" />
-  <div class="p-4 ml-12 flex flex-row justify-end place-self-end">
-    <button
-      class="px-3 py-1 text-sm border-2 border-black font-medium text-end rounded-lg bg-black text-white hover:bg-red-500 transition ease-in-out hover:border-red-500 duration-200"
-    >
-      {data?.lead_name}
-      <button />
-    </button>
+  <div class="p-4 ml-12 flex flex-row justify-end">
+    {#if data}
+      <button
+        class="px-3 py-1 text-sm border-2 border-black font-medium text-end rounded-lg bg-black truncate text-white hover:bg-red-500 transition ease-in-out hover:border-red-500 duration-200"
+      >
+        {data['Leader']}
+      </button>
+    {/if}
   </div>
 </div>

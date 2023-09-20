@@ -5,12 +5,12 @@
   import CardRound2 from '@/components/Archive/CardRound2.svelte'
 
   interface ProjectDataRound1 {
-    name: string
-    website: string
-    lead_name: string
-    email: string
-    question_1: string
-    allocation: number
+    'Project Name': string
+    'Project Website': string
+    'Project Lead Email': string
+    Leader: string
+    Question: string
+    allocation: string
   }
 
   interface ProjectDataRound2 {
@@ -120,7 +120,7 @@
   }
 </script>
 
-<div class="flex flex-col min-h-screen  mb-10">
+<div class="flex flex-col min-h-screen mb-10">
   {#if loading}
     <div class="flex flex-row justify-center font-bold text-3xl my-64">
       Loading
@@ -234,7 +234,7 @@
         <div class="allcard flex flex-wrap justify-center">
           {#key filteredProjects1}
             {#each filteredProjects1.slice(0, itemsToShow) as project}
-              <CardRound1 name={project.name} />
+              <CardRound1 name={project['Project Name']} />
             {/each}
           {/key}
         </div>
