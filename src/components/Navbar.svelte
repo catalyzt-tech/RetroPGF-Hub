@@ -1,11 +1,12 @@
 <script lang="ts">
+  import { Axios } from '@/lib/axios'
+  import { onMount } from 'svelte'
+  import { User } from '@/stores/User'
+
   let showMenu: boolean = false
   const toggleNavbar = () => {
     showMenu = !showMenu
   }
-  import { Axios } from '@/lib/axios'
-  import { onMount } from 'svelte'
-  import { User } from '@/stores/User'
 
   onMount(async () => {
     try {
@@ -22,18 +23,20 @@
     await Axios.post('/api/users/logout')
     window.location.pathname = '/'
   }
+  let Page: string = ''
+  const selectPage = (event: any) => {
+    console.log(event.target.getAttribute('category'))
+    Page = event.target.getAttribute('category')
+  }
 </script>
 
 <div class="text-base">
   <div>
-    <nav
-      class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center"
-    >
+    <nav class="container mx-auto md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
-        <a href="/">
+        <a href="/" on:click={selectPage}>
           <img src="/img/hub-logo.png" alt="logo" height={100} class="w-40" />
         </a>
-        <!-- Mobile menu button -->
         <div class="flex md:hidden">
           <button
             on:click={toggleNavbar}
@@ -63,21 +66,50 @@
           ? 'flex'
           : 'hidden'}"
       >
-        <a
-          class="text-gray-800 hover:text-red-400 transition ease-linear duration-200"
-          href="/projects">Projects</a
-        >
-        <a
-          class="text-gray-800 hover:text-red-400 transition ease-linear duration-200"
-          href="/archive">Archive</a
-        >
-        <a
-          class="text-gray-800 hover:text-red-400 transition ease-linear duration-200"
-          href="/nominate-form">Nominate</a
-        >
+        <ul class="flex items-center h-16">
+          <a
+            class="{Page === 'projects'
+              ? 'font-bold'
+              : ''} flex mr-8 text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full"
+            href="/projects"
+            ><button
+              on:click={selectPage}
+              category="projects"
+              class="flex items-center"
+            >
+              Projects
+            </button></a
+          >
+          <a
+            class="{Page === 'archive'
+              ? 'font-semibold'
+              : ''} flex mr-8 text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full"
+            href="/archive"
+            ><button
+              on:click={selectPage}
+              category="archive"
+              class="flex items-center"
+            >
+              Archive
+            </button></a
+          >
+          <a
+            class="{Page === 'form'
+              ? 'font-bold'
+              : ''} flex text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full"
+            href="/nominate-form"
+            ><button
+              on:click={selectPage}
+              category="form"
+              class="flex items-center"
+            >
+              Nominate
+            </button></a
+          >
+        </ul>
         {#if !$User}
           <a
-            class="text-gray-800 hover:bg-red-500 hover:text-white px-3 py-1 bg-gray-200 rounded-full transition ease-linear duration-200"
+            class=" text-gray-800 hover:bg-red-500 hover:text-white px-3 py-1 bg-gray-200 rounded-full transition ease-linear duration-200"
             href="/login"
             >Login
           </a>
