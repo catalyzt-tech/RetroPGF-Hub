@@ -69,21 +69,22 @@
         <ul class="flex items-center h-16">
           <a
             class="{Page === 'projects'
-              ? 'font-bold'
-              : ''} flex mr-8 text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full"
+              ? 'font-bold show-inset'
+              : ''} flex mr-8 text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full shadow-inset"
             href="/projects"
-            ><button
+          >
+            <button
               on:click={selectPage}
               category="projects"
               class="flex items-center"
             >
               Projects
-            </button></a
-          >
+            </button>
+          </a>
           <a
             class="{Page === 'archive'
-              ? 'font-semibold'
-              : ''} flex mr-8 text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full"
+              ? 'font-semibold show-inset'
+              : ''} flex mr-8 text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full shadow-inset"
             href="/archive"
             ><button
               on:click={selectPage}
@@ -95,8 +96,8 @@
           >
           <a
             class="{Page === 'form'
-              ? 'font-bold'
-              : ''} flex text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full"
+              ? 'font-bold show-inset'
+              : ''} flex text-gray-800 hover:text-red-600 transition ease-linear duration-200 h-full shadow-inset"
             href="/nominate-form"
             ><button
               on:click={selectPage}
@@ -120,3 +121,12 @@
     </nav>
   </div>
 </div>
+
+<style>
+  .show-inset {
+    box-shadow: inset 0 -3px 0 black;
+  }
+  .shadow-inset:hover {
+    box-shadow: inset 0 -3px 0 rgb(255, 0, 0);
+  }
+</style>
