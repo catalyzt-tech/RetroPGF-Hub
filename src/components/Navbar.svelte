@@ -97,6 +97,20 @@
             </button>
           </a>
           <a
+            class="{Page === 'history'
+              ? 'md:font-bold show-inset'
+              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
+            href="/history"
+            ><button
+              on:click={selectPage}
+              type="button"
+              category="history"
+              class="flex items-center"
+            >
+              History
+            </button></a
+          >
+          <a
             class="{Page === 'archive'
               ? 'md:font-bold show-inset'
               : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"

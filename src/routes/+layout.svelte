@@ -17,7 +17,9 @@
 
 <div class="flex flex-col min-h-screen">
   <Navbar />
-  <slot />
+  <div class="bg-slate-50">
+    <slot />
+  </div>
   <div class="flex-grow" />
   <Footer />
 </div>

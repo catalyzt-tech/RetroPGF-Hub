@@ -2,9 +2,9 @@
   import Form from '@/components/Nominate-Form/Form.svelte'
 </script>
 
-<div>
+<div class="mt-10">
   <div
-    class="flex flex-row flex-wrap justify-center text-[30px] font-bold mb-2"
+    class="flex flex-row flex-wrap justify-center text-[40px] font-bold mb-2"
   >
     Nominate Project
   </div>
