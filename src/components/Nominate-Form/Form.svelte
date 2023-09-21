@@ -54,7 +54,7 @@
 
 <div class="flex justify-center">
   <form
-    class="border-2 border-black rounded-2xl mx-36 my-10 p-8"
+    class="border-2 border-black rounded-2xl mx-36 my-10 p-8 bg-white"
     on:submit|preventDefault={onSubmit}
   >
     <label class="font-bold text-md"
