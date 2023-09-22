@@ -134,7 +134,7 @@
             />
             <time
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
-              >After November 2022
+              >After April 2023
             </time>
             <div class="text-md font-medium">Payout / Distribution</div>
             <p class="text-gray-600">
@@ -253,6 +253,22 @@
           </p>
         </li>
       </ol>
+      <div class="mt-4">
+        It's essential to clarify that the term "project" encompasses both
+        individual and group efforts. However, collections, referring to
+        projects without a single verifiable entity on GitHub or Twitter, can
+        only be nominated by the Optimism Foundation. Your participation is
+        valued as we continue to shape the future of RetroPGF.
+      </div>
+    </section>
+    <section class="mt-4">
+      <div class="text-2xl font-bold italic">Voting Badges</div>
+    </section>
+    <section class="mt-4">
+      <div class="text-2xl font-bold italic">Results</div>
+    </section>
+    <section class="mt-4">
+      <div class="text-2xl font-bold italic">Learnings & Reflections</div>
     </section>
   </div>
 </div>
