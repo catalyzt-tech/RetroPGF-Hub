@@ -3,7 +3,7 @@
 
 <div class="flex flex-col bg-white">
   <div class="w-screen h-64 overflow-hidden">
-    <img src="/img/retropgf1_banner_2.jpg" class="w-full" alt="retropgf1" />
+    <img src="/img/retropgf1_banner_3.jpg" class="w-full" alt="retropgf1" />
   </div>
   <div class="flex flex-col px-52 overflow-hidden">
     <div
@@ -22,7 +22,7 @@
     </div>
     <div class="flex justify-center items-center w-full overflow-hidden my-10">
       <img
-        src="/img/summer_1.png"
+        src="/img/retropgf1_banner_2.jpg"
         class="max-w-[70em] rounded-full"
         alt="retropgf1"
       />
@@ -162,13 +162,117 @@
         >
       </div>
     </section>
-    <section>
+    <section class="mb-5">
       <div class="text-2xl font-bold italic">Reflection and Learning</div>
+      <div class="mt-3">
+        Below is a summary of the crucial lessons and valuable insights gained
+        from the first round of RetroPGF. For more in-depth information, please
+        read more <a
+          class="text-[#ff1818] hover:underline"
+          href="https://medium.com/@JonasSFT/learnings-from-optimisms-retropgf-experiment-1-and-proposals-for-experiment-2-165422cedebf"
+          target="_blank">here.</a
+        >
+      </div>
+      <ol class="mt-3 list-disc ml-5">
+        <li>
+          <span class="font-medium"
+            >The Fairness Ratio and Public Goods Definition</span
+          >
+          <div class="text-gray-700">
+            The Ethereum community expanded the definition of public goods,
+            focusing on outcomes rather than strict economic characteristics.
+            This shift led to projects like Etherscan, although not
+            traditionally public goods, receiving support due to their
+            contributions.
+          </div>
+        </li>
+        <li>
+          <span class="font-medium">The Fairness Ratio</span>
+          <div class="text-gray-700">
+            The concept of value created vs. value captured (Value Created /
+            Value Captured = 1) played a crucial role in allocation decisions.
+            Projects like Etherscan, despite extracting value through ads, were
+            considered to create more value than they captured.
+          </div>
+        </li>
+        <li>
+          <span class="font-medium">Conflicts of Interest</span>
+          <div class="text-gray-700">
+            Many badge holders had affiliations or connections with nominated
+            projects, raising questions about conflicts of interest. Strategies
+            for badge holder voting were often influenced by their areas of
+            expertise.
+          </div>
+        </li>
+        <li>
+          <span class="font-medium">Nominee Curation</span>
+          <div class="text-gray-700">
+            The nomination process lacked detail, with proposals often failing
+            to describe how the nominated project benefited the public good. A
+            significant number of proposals were accepted.
+          </div>
+        </li>
+        <li>
+          <span class="font-medium">Missing Transparency</span>
+          <div class="text-gray-700">
+            Some information about Round 1 was not publicly available, including
+            the full allocation of rewards, the badge holder manual, and nominee
+            curation details.
+          </div>
+        </li>
+      </ol>
     </section>
-    <div class="text-lg font-medium my-6">
-      Thank you for joining us in this exciting experiment to make the internet
-      a better place for all!
-    </div>
+    <section>
+      <div class="text-2xl font-bold italic">Improvements for RetroPGF2</div>
+      <div class="mt-3">
+        These enhancements aim to make RetroPGF2 more effective, inclusive, and
+        transparent, ensuring that public goods contributors are duly rewarded.
+        Stay tuned for more exciting developments in the world of Retroactive
+        Public Goods Funding!
+      </div>
+      <ol class="mt-3 list-disc ml-5">
+        <li>
+          <span class="font-medium">Badgeholder Expertise</span>
+          <div class="text-gray-700">
+            Implement a two-phase process for nominations, separating the
+            identification of projects that contribute to the public good from
+            quantifying their value. Use a token-curated registry model to
+            curate high-quality nominees, reducing the burden on badge holders.
+          </div>
+        </li>
+        <li>
+          <span class="font-medium"
+            >Improving Nomination Process with Optimistic Curation</span
+          >
+          <div class="text-gray-700">
+            Instead of expecting a small group of badge holders to have
+            expertise across the entire ecosystem, elect badge holders with
+            strong knowledge in various areas. This approach ensures that
+            expertise is leveraged to benefit the ecosystem effectively.
+          </div>
+        </li>
+        <li>
+          <span class="font-medium">Managing Conflicts of Interest</span>
+          <div class="text-gray-700">
+            Establish clear guidelines and increase transparency regarding
+            conflicts of interest. Rules in the badge holder manual can forbid
+            voting for one's own projects and require transparent disclosure of
+            potential conflicts.
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section>
+      <div
+        class="flex justify-center items-center w-full overflow-hidden my-10"
+      >
+        <img
+          src="/img/retropgf1_banner_4.jpeg"
+          class="max-w-[70em] rounded-full"
+          alt="retropgf1"
+        />
+      </div>
+    </section>
   </div>
 </div>
 
