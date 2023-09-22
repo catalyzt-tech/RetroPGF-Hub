@@ -7,14 +7,14 @@
   <div class="w-full min-h-[150px] lg:h-[12em] overflow-hidden">
     <img src="./img/history_banner_2.png" alt="OPBanner" class="w-full" />
   </div>
-  <div class="flex justify-center text-[40px] font-bold mt-8">History</div>
-  <em class="flex justify-center text-center mx-10 md:mx-52">
+  <div class="flex justify-center text-[40px] font-bold my-8">History</div>
+  <em class="flex justify-center text-center mx-10 md:mx-72">
     The Optimism team has long been in search of a solution on how to
     sustainably fund public goods, and we now have the structure of our first
     experiment thanks to a brilliant design by Vitalik Buterin.
   </em>
   <br />
-  <div class="flex justify-center text-center mx-10 md:mx-52">
+  <div class="flex justify-center text-center mx-10 md:mx-72">
     The core principle behind the concept of retroactive public goods funding is
     simple: it’s easier to agree on what was useful than what will be useful.
     The former is still often a source of disagreement, but it’s a type of
