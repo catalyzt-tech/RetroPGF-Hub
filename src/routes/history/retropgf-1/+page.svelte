@@ -5,7 +5,7 @@
   <div class="w-screen h-64 overflow-hidden">
     <img src="/img/retropgf1_banner_3.jpg" class="w-full" alt="retropgf1" />
   </div>
-  <div class="flex flex-col px-52 overflow-hidden">
+  <div class="flex flex-col px-10 md:px-20 lg:px-52 overflow-hidden">
     <div
       class="flex justify-center text-center font-semibold text-[40px] mt-8 mb-4"
     >
@@ -54,9 +54,9 @@
       </div>
       <div>
         <ol
-          class="relative border-l border-[#ff1818] dark:border-[#ff1818] my-6"
+          class="relative border-l border-[#ff1818] dark:border-[#ff1818] my-6 ml-2"
         >
-          <li class="mb-6 ml-4">
+          <li class="mb-6 ml-6">
             <div
               class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
             />
@@ -71,7 +71,7 @@
               distributing retrofunding to nominated projects.
             </p>
           </li>
-          <li class="mb-6 ml-4">
+          <li class="mb-6 ml-6">
             <div
               class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
             />
@@ -81,12 +81,15 @@
             </time>
             <div class="text-md font-medium">Nominations</div>
             <p class="text-gray-600">
-              Anyone could nominate a project via a form submission (opens new
-              window) by providing a project name, project lead name, project
-              lead e-mail and impact description.
+              Anyone could nominate a project via a <a
+                class="text-[#ff1818] hover:underline"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdSF_Om4JfhQAjdDOHnjfbRJfJg1F-EY_I_IR0g-CDaa9FqyQ/viewform?vc=0&c=0&w=1&flr=0"
+                target="_blank">form submission</a
+              > by providing a project name, project lead name, project lead e-mail
+              and impact description.
             </p>
           </li>
-          <li class="mb-6 ml-4">
+          <li class="mb-6 ml-6">
             <div
               class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
             />
@@ -101,7 +104,7 @@
               quadraticvote.co's interface (opens new window).
             </p>
           </li>
-          <li class="ml-4">
+          <li class="ml-6">
             <div
               class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
             />
@@ -120,35 +123,38 @@
     <section class="mb-5">
       <div class="text-2xl font-bold italic">Result</div>
       <div class="flex flex-col mt-3 mb-10">
-        Curious about the outcomes of our first round? Here's a quick summary:
-        <ul class=" flex flex-wrap justify-between ml-5 mt-8">
-          <li
-            class="border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        Probably the most obvious property of the RetroPGF 1 results that can be
+        seen without any comparisons is the category of the winners, every major
+        Optimism RetroPGF winner was a technology project. Curious about the
+        outcomes of our first round? Here's a quick summary:
+        <div class=" flex flex-wrap flex-grow justify-between mt-8 max-w-full">
+          <div
+            class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
           >
             <span class="font-medium text-lg">Nominated Projects</span>
             <div class="text-3xl font-medium mt-2">76</div>
-          </li>
-          <li
-            class="border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          </div>
+          <div
+            class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
           >
             <span class="font-medium text-lg">Projects Awarded Funding</span>
             <div class="text-3xl font-medium mt-2">58</div>
-          </li>
-          <li
-            class="border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          </div>
+          <div
+            class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
           >
             <span class="font-medium text-lg">Median Funding</span>
             <div class="text-3xl font-medium mt-2">$14,670</div>
-          </li>
-          <li
-            class="border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          </div>
+          <div
+            class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
           >
             <span class="font-medium text-lg"
               >Top 10% of Projects received over</span
             >
             <div class="text-3xl font-medium mt-2">$36,919</div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
       <div>
         For a detailed list of funded projects and their allocations, please
