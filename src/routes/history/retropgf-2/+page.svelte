@@ -31,9 +31,9 @@
         alt="retropgf1 "
       />
     </div>
-    <section>
-      <div class="text-2xl font-bold italic">Experiment Overview</div>
-      <div class=" mt-2">
+    <section class="mb-3">
+      <div class="text-3xl font-bold italic">Experiment Overview</div>
+      <div class="mt-3">
         The Optimism Collective recently held its second round of Retroactive
         Public Goods Funding (RetroPGF) in the first quarter of 2023. The
         RetroPGF 2 allocation of 10 million OP tokens was directed towards
@@ -53,8 +53,8 @@
         <img src="/img/Bicameral.webp" alt="bicameral" class="max-w-[70em]" />
       </div>
     </section>
-    <section>
-      <div class="text-2xl font-bold italic">Process and Timeline</div>
+    <section class="mb-3">
+      <div class="text-3xl font-bold italic">Process and Timeline</div>
       <div class="mt-3">
         This is the kick-off for the project nominations of the recently
         announced RetroPGF Round 2. Optimism’s vision is to build a global
@@ -144,21 +144,22 @@
         </ol>
       </div>
     </section>
-    <section>
-      <div class="text-2xl font-bold italic">Scope of Round 2</div>
-      <div>
+    <section class="mb-3">
+      <div class="text-3xl font-bold italic">Scope of Round 2</div>
+      <div class="mt-3">
         RetroPGF Round 2 has a clear mission which is allocate 10 million OP
         tokens to projects that enhance the development and utilization of the
         OP Stack. These projects fall into three key categories:
       </div>
-      <ol class="list-disc ml-5">
+      <ol class="list-disc ml-5 my-5">
         <li>
           <div class="font-medium">Infrastructure + Dependencies</div>
           <p class="text-gray-600">
-            Software used to build or deploy the OP Stack; contributions to
-            protocols or standards upon which the OP Stack runs; experiments
+            Software used to build or deploy the OP Stack / contributions to
+            protocols or standards upon which the OP Stack runs / experiments
             that support future development of the core OP Stack protocol.
           </p>
+          <div />
         </li>
         <li>
           <div class="font-medium">Tooling + Utilities</div>
@@ -177,9 +178,9 @@
         </li>
       </ol>
     </section>
-    <section>
-      <div class="text-2xl font-bold italic">Nominate Projects</div>
-      <div>
+    <section class="mb-3">
+      <div class="text-3xl font-bold italic">Nominate Projects</div>
+      <div class="mt-3">
         To nominate a project for RetroPGF, visit the designated forum posts for
         your chosen nomination category:
       </div>
@@ -187,46 +188,50 @@
         <div
           class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
-          <span class="font-medium text-lg">Infrastructure + Dependencies</span>
+          <span class="font-medium text-lg"
+            ><div class="text-4xl">🏗️</div>
+            Infrastructure + Dependencies</span
+          >
         </div>
         <div
           class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
+          <div class="text-4xl">🛠️</div>
           <span class="font-medium text-lg">Tooling + Utilities</span>
         </div>
         <div
           class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
+          <div class="text-4xl">🧑‍🏫</div>
           <span class="font-medium text-lg">Education</span>
         </div>
       </div>
       <div class="text-lg font-semibold">
         What is things to consider when nominating a project?
       </div>
-      <div class="mt-5">
-        <ol class="list-disc ml-5">
-          <li>
-            <div class="font-medium">Provide Impact Details:</div>
-            <p class="text-gray-600">
-              Describe how the project has made a positive impact within the
-              scope of this round
-            </p>
-          </li>
-          <li>
-            <div class="font-medium">Choose the Right Category:</div>
-            <p class="text-gray-600">
-              Ensure that you nominate projects in the relevant category.
-            </p>
-          </li>
-          <li>
-            <div class="font-medium">Avoid Duplicates:</div>
-            <p class="text-gray-600">
-              Check if the project has already been nominated to prevent
-              duplication.
-            </p>
-          </li>
-        </ol>
-      </div>
+
+      <ol class="list-disc ml-5 mt-5">
+        <li>
+          <div class="font-medium">Provide Impact Details:</div>
+          <p class="text-gray-600">
+            Describe how the project has made a positive impact within the scope
+            of this round
+          </p>
+        </li>
+        <li>
+          <div class="font-medium">Choose the Right Category:</div>
+          <p class="text-gray-600">
+            Ensure that you nominate projects in the relevant category.
+          </p>
+        </li>
+        <li>
+          <div class="font-medium">Avoid Duplicates:</div>
+          <p class="text-gray-600">
+            Check if the project has already been nominated to prevent
+            duplication.
+          </p>
+        </li>
+      </ol>
       <div class="text-lg font-semibold my-4">For project owner</div>
       <ol class="list-disc ml-5">
         <li>
@@ -261,14 +266,138 @@
         valued as we continue to shape the future of RetroPGF.
       </div>
     </section>
-    <section class="mt-4">
-      <div class="text-2xl font-bold italic">Voting Badges</div>
+    <section class="mb-3">
+      <div class="text-3xl font-bold italic">Voting Badges</div>
+      <div class="mt-3">
+        Selecting the right badgeholders is like building a dream team for
+        RetroPGF Round 2. We wanted a mix of experience, expertise, and fresh
+        perspectives to ensure a robust and effective round. Here's how we did
+        it
+      </div>
+      <div class=" flex flex-wrap flex-grow justify-between my-4 max-w-full">
+        <div
+          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        >
+          <div class="text-4xl">🎓</div>
+          <span class="font-medium text-lg">Round 1 Alumni</span>
+          <div class="text-[#ff1818]">14 Badgeholders</div>
+        </div>
+        <div
+          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        >
+          <div class="text-4xl">🔴</div>
+          <span class="font-medium text-lg">Optimism Foundation's Picks</span>
+          <div class="text-[#ff1818]">21 Badgeholders</div>
+        </div>
+        <div
+          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        >
+          <div class="text-4xl">🏛️</div>
+          <span class="font-medium text-lg">Token House Elections</span>
+          <div class="text-[#ff1818]">10 Badgeholders</div>
+        </div>
+        <div
+          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        >
+          <div class="text-4xl">✨</div>
+          <span class="font-medium text-lg">Badgeholders Nominates</span>
+          <div class="text-[#ff1818]">29 Badgeholders</div>
+        </div>
+      </div>
+      <div class="text-lg font-semibold">
+        Let deep dive more to detail across four different criteria:
+      </div>
+      <ol class="list-disc ml-5 my-5">
+        <li>
+          <span class="font-medium">Round 1 Alumni</span>
+          <p class="text-gray-600">
+            We welcomed back 14 badgeholders who had previously participated in
+            Round 1 of RetroPGF. Their experience and insights from the first
+            round make them valuable assets for Round 2.
+          </p>
+        </li>
+        <li>
+          <span class="font-medium">Optimism Foundation's Picks</span>
+          <p class="text-gray-600">
+            The Optimism Foundation had a say in selecting 21 badgeholders, each
+            bringing a unique perspective to the table. Their diverse
+            backgrounds and expertise contribute to a well-rounded group.
+          </p>
+        </li>
+        <li>
+          <span class="font-medium">Optimism's Token House Elections</span>
+          <p class="text-gray-600">
+            Ten badgeholders were elected by Optimism's Token House, adding a
+            democratic element to the selection process. These members were
+            chosen based on their commitment to the project.
+          </p>
+        </li>
+        <li>
+          <span class="font-medium">Badgeholders Nominates</span>
+          <p class="text-gray-600">
+            To ensure community representation, we opened up nominations for
+            badgeholders from the three categories mentioned above. This
+            approach allows us to include fresh voices and new perspectives in
+            our badgeholder team. Each of badgeholders will be able to
+            distribute a voting badge to one community member of their choosing.
+          </p>
+        </li>
+      </ol>
+      <div class="text-lg font-semibold">
+        Guideline Badgeholders that looking for:
+      </div>
+      <ol class="list-disc ml-5 my-5">
+        <li>
+          <div class="font-medium">Passion for Public Goods</div>
+          <p class="text-gray-600">
+            We love advocates who believe in the value of public goods, not just
+            in crypto but in the broader world. If you're passionate about the
+            greater good, you're our kind of advocate!
+          </p>
+        </li>
+        <li>
+          <div class="font-medium">Innovative Thinkers</div>
+          <p class="text-gray-600">
+            Are you someone who can help us improve and refine retroPGF as a
+            funding mechanism? We're looking for creative minds who can advance
+            the process and structure to make it even better.
+          </p>
+        </li>
+        <li>
+          <div class="font-medium">Domain Expertise</div>
+          <p class="text-gray-600">
+            If you're an expert in any of the categories up for funding in
+            RetroPGF 2, we want to hear from you. Your expertise can be a
+            game-changer!
+          </p>
+        </li>
+        <li>
+          <div class="font-medium">Alignment with Our Mission</div>
+          <p class="text-gray-600">
+            We're on a mission to support the long-term growth of the Optimism
+            ecosystem and the Collective's mission. If you share our vision and
+            goals, you're a great fit for our team.
+          </p>
+        </li>
+      </ol>
+      <div>
+        Getting a badge for RetroPGF 2 doesn't mean you're guaranteed permanent
+        participation in the Citizens' House or future RetroPGF iterations. Our
+        citizenship criteria may evolve over time. The responsibility for
+        citizenship distribution ultimately lies with Optimism's two-house
+        governance system.
+      </div>
     </section>
-    <section class="mt-4">
-      <div class="text-2xl font-bold italic">Results</div>
+    <section class="mb-3">
+      <div class="text-3xl font-bold italic">Results</div>
     </section>
-    <section class="mt-4">
-      <div class="text-2xl font-bold italic">Learnings & Reflections</div>
+    <section class="mb-3">
+      <div class="text-3xl font-bold italic">Learnings & Reflections</div>
+      <ol>
+        <li>
+          <div />
+        </li>
+      </ol>
     </section>
   </div>
 </div>
