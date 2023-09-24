@@ -67,7 +67,7 @@
         >
           <li class="mb-6 ml-6">
             <div
-              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white"
             />
             <time
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
@@ -83,7 +83,7 @@
           </li>
           <li class="mb-6 ml-6">
             <div
-              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white"
             />
             <time
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
@@ -100,7 +100,7 @@
           </li>
           <li class="mb-6 ml-6">
             <div
-              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white"
             />
             <time
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
@@ -118,7 +118,7 @@
           </li>
           <li class="mb-6 ml-6">
             <div
-              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white"
             />
             <time
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
@@ -139,7 +139,7 @@
           </li>
           <li class="ml-6">
             <div
-              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+              class="absolute w-3 h-3 bg-[#ff1818] rounded-full mt-1.5 -left-1.5 border border-white"
             />
             <time
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
