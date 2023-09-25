@@ -5,7 +5,7 @@
 
 <div class="relative flex flex-col overflow-hidden md:h-fit">
   <div class="w-full min-h-[150px] lg:h-[12em] overflow-hidden">
-    <img src="./img/history_banner_2.png" alt="OPBanner" class="w-full" />
+    <img src="./img/history_banner_3.jpg" alt="OPBanner" class="w-full" />
   </div>
   <div class="flex justify-center text-[40px] font-bold my-8">History</div>
   <em class="flex justify-center text-center mx-10 md:mx-72">

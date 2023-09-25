@@ -1,9 +1,8 @@
-<script>
-</script>
+<script></script>
 
 <div class="flex flex-col bg-white">
   <div class="w-screen h-64 overflow-hidden">
-    <img src="/img/retropgf2_banner.jpeg" class="w-full" alt="retropgf1" />
+    <img src="/img/retropgf2_banner_1xx.jpg" class="w-full" alt="retropgf2" />
   </div>
   <div class="flex flex-col px-10 md:px-20 lg:px-52 overflow-hidden">
     <div
@@ -73,7 +72,7 @@
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
               >Prior January 2023
             </time>
-            <div class="text-md font-medium">Badgeholder selection</div>
+            <div class="text-md font-medium">Badgeholder Selection</div>
             <p class="text-gray-600">
               Badgeholders have the power to distribute OP tokens to projects.
               They’re instrumental in running an effective RetroPGF round. For
@@ -106,7 +105,7 @@
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
               >7 - 21st February 2023
             </time>
-            <div class="text-md font-medium">Project profile creation</div>
+            <div class="text-md font-medium">Project Profile Creation</div>
             <p class="text-gray-600">
               Projects had to create a profile where they were asked for general
               information, as well as a description of their project and its
@@ -145,7 +144,7 @@
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
               >After April 2023
             </time>
-            <div class="text-md font-medium">Payout / Distribution</div>
+            <div class="text-md font-medium">Payout / Funding Distribution</div>
             <p class="text-gray-600">
               Projects received rewards based on their received OP allocation
               votes from each badgeholders which can be viewed <a
@@ -349,7 +348,7 @@
         </p>
         <p class="italic text-gray-600">
           Because of the high risk for fraud, collections will only be nominated
-          by the Foundation in this next round of RetroPGF.
+          by the Foundation in this round of RetroPGF (Round 2).
         </p>
       </div>
     </section>
@@ -361,34 +360,50 @@
         perspectives to ensure a robust and effective round. Here's how we did
         it
       </div>
-      <div class=" flex flex-wrap flex-grow justify-between my-4 max-w-full">
+      <div class="flex flex-wrap flex-grow justify-between my-4 max-w-full">
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group mt-4 flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">🎓</div>
-          <span class="font-medium text-lg">Round 1 Alumni</span>
-          <div class="text-[#ff1818]">14 Badgeholders</div>
+          <span class="font-medium text-lg group-hover:text-white"
+            >Round 1 Alumni</span
+          >
+          <div class="text-[#ff1818] group-hover:text-white">
+            14 Badgeholders
+          </div>
         </div>
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group mt-4 flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">🔴</div>
-          <span class="font-medium text-lg">Optimism Foundation's Picks</span>
-          <div class="text-[#ff1818]">21 Badgeholders</div>
+          <span class="font-medium text-lg group-hover:text-white"
+            >Optimism Foundation's Picks</span
+          >
+          <div class="text-[#ff1818] group-hover:text-white">
+            21 Badgeholders
+          </div>
         </div>
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group mt-4 flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">🏛️</div>
-          <span class="font-medium text-lg">Token House Elections</span>
-          <div class="text-[#ff1818]">10 Badgeholders</div>
+          <span class="font-medium text-lg group-hover:text-white"
+            >Token House Elections</span
+          >
+          <div class="text-[#ff1818] group-hover:text-white">
+            10 Badgeholders
+          </div>
         </div>
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group mt-4 flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">✨</div>
-          <span class="font-medium text-lg">Badgeholders Nominates</span>
-          <div class="text-[#ff1818]">29 Badgeholders</div>
+          <span class="font-medium text-lg group-hover:text-white"
+            >Badgeholders Nominates</span
+          >
+          <div class="text-[#ff1818] group-hover:text-white">
+            29 Badgeholders
+          </div>
         </div>
       </div>
       <div class="text-lg font-semibold">
@@ -521,6 +536,15 @@
           </li>
         </ol>
       </div>
+      <div
+        class="flex justify-center items-center w-full overflow-hidden my-10"
+      >
+        <img
+          src="/img/retropgf2_banner.jpeg"
+          class="w-[50em] rounded-full"
+          alt="retropgf1"
+        />
+      </div>
     </section>
     <section class="mb-3">
       <div class="text-3xl font-bold italic">Results</div>
@@ -539,28 +563,28 @@
         class=" flex flex-wrap flex-grow justify-between mt-8 max-w-full my-5"
       >
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="flex-grow mt-4 lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">📬</div>
           <span class="font-medium text-lg">Nominated Projects</span>
           <div class="text-3xl font-medium mt-2">195</div>
         </div>
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="flex-grow mt-4 lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">🌱</div>
           <span class="font-medium text-lg">Projects Awarded Funding</span>
           <div class="text-3xl font-medium mt-2">195</div>
         </div>
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="flex-grow mt-4 lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">🎉</div>
           <span class="font-medium text-lg">Median Funding</span>
           <div class="text-3xl font-medium mt-2">22,825 OP</div>
         </div>
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="flex-grow mt-4 lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">🔥</div>
           <span class="font-medium text-lg"
@@ -578,45 +602,54 @@
         funding was evenly distributed by badgeholders across three categories
         which are education, infrastructure, and tooling & utilities.
       </div>
-      <!-- <div
-        class="flex justify-center items-center w-full overflow-hidden my-10"
-      >
-        <img
-          src="/img/retropgf2_result_1.webp"
-          class="max-w-[55em] rounded-full"
-          alt="retropgf1"
-        />
-      </div> -->
       <div
-        class=" flex flex-wrap flex-grow justify-between mt-8 max-w-full my-5"
+        class=" flex flex-wrap flex-grow justify-between mt-8 max-w-full mb-5"
       >
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group mt-4 flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">🏗️</div>
-          <span class="font-medium text-lg">Infrastructure & Dependencies</span>
-          <div class="text-3xl font-medium mt-2">37.06%</div>
-          <div class="text-lg mt-2 font-medium text-[#ff1818]">
+          <span class="font-medium text-lg group-hover:text-white"
+            >Infrastructure & Dependencies</span
+          >
+          <div class="text-3xl font-medium mt-2 group-hover:text-white">
+            37.06%
+          </div>
+          <div
+            class="text-lg mt-2 font-medium text-[#ff1818] group-hover:text-white"
+          >
             3,706,329 OP
           </div>
         </div>
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group mt-4 flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">🛠️</div>
-          <span class="font-medium text-lg">Tooling & Utilities</span>
-          <div class="text-3xl font-medium mt-2">32.29%</div>
-          <div class="text-lg mt-2 font-medium text-[#ff1818]">
+          <span class="font-medium text-lg group-hover:text-white"
+            >Tooling & Utilities</span
+          >
+          <div class="text-3xl font-medium mt-2 group-hover:text-white">
+            32.29%
+          </div>
+          <div
+            class="text-lg mt-2 font-medium text-[#ff1818] group-hover:text-white"
+          >
             3,229,011 OP
           </div>
         </div>
         <div
-          class="flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group mt-4 flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] group hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl">🧑‍🏫</div>
-          <span class="font-medium text-lg">Educations</span>
-          <div class="text-3xl font-medium mt-2">30.64%</div>
-          <div class="text-lg mt-2 font-medium text-[#ff1818]">
+          <span class="font-medium text-lg group-hover:text-white"
+            >Educations</span
+          >
+          <div class="text-3xl font-medium mt-2 group-hover:text-white">
+            30.64%
+          </div>
+          <div
+            class="text-lg mt-2 font-medium text-[#ff1818] group-hover:text-white"
+          >
             3,064,659 OP
           </div>
         </div>
@@ -632,21 +665,48 @@
           class="text-[#ff1818] hover:underline">here</a
         >.
       </div>
+      <div class="text-lg font-semibold my-4">Voting Rationale</div>
+      <div>
+        While badgeholders are not obligated to reveal their voting choices,
+        some may choose to share their voting rationale here. This transparency
+        can provide valuable insights into the thought processes and
+        considerations that guided their decisions, fostering a deeper
+        understanding of the evaluation and allocation of Retroactive Public
+        Goods Funding in Round 2.
+      </div>
       <div class="text-lg font-semibold my-4">
         Infrastructure & Dependencies
       </div>
       <div>
         A total of 43 infrastructure projects received financial support.
-        Notably, the top three recipients in this category were Protocol Guild,
-        geth, and Solidity, reflecting their pivotal roles in bolstering the
-        infrastructure of the Optimism ecosystem. This allocation of resources
-        signifies a strategic investment in the backbone of the platform,
-        ensuring its robustness and scalability.
+        Notably, the top three recipients in this category were <a
+          href="/archive/Protocol%20Guild"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">Protocol Guild</a
+        >,
+        <a
+          href="/archive/geth"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">geth</a
+        >, and
+
+        <a
+          href="/archive/Solidity"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">Solidity</a
+        >, reflecting their pivotal roles in bolstering the infrastructure of
+        the Optimism ecosystem. This allocation of resources signifies a
+        strategic investment in the backbone of the platform, ensuring its
+        robustness and scalability.
       </div>
       <div
         class="flex flex-col items-center justify-center max-h-[50em] my-5 overflow-hidden"
       >
-        <img src="/img/retropgf2_result_4.webp" class="w-[60em] rounded-2xl" />
+        <img
+          src="/img/retropgf2_result_4.webp"
+          class="w-[60em] rounded-2xl"
+          alt="Infrastructure & Dependencies"
+        />
         <div class="mt-3 text-gray-600">
           RetroPGF 2 Recipients - Infrastructure & Dependencies
         </div>
@@ -654,7 +714,11 @@
       <div
         class="flex flex-col items-center justify-center max-h-[60em] my-5 overflow-hidden"
       >
-        <img src="/img/retropgf2_result_5.webp" class="w-[60em] rounded-2xl" />
+        <img
+          src="/img/retropgf2_result_5.webp"
+          class="w-[60em] rounded-2xl"
+          alt="Infrastructure & Dependencies"
+        />
         <div class="mt-3 text-gray-600">
           RetroPGF 2 Breakdown - Infrastructure & Dependencies
         </div>
@@ -663,17 +727,33 @@
       <div>
         There is a total of 82 projects within the Tooling & Utilities category
         were recipients of funding during this phase. Notably, among these
-        recipients, OpenZeppelin, DefiLlama, and wagmi emerged as the top
-        recipients in this category, demonstrating their significant
-        contributions to the ecosystem's development and functionality. This
-        allocation of resources highlights the commitment to enhancing the tools
-        and utilities that empower the OP Stack, setting the stage for further
-        growth and innovation.
+        recipients, <a
+          href="/archive/OpenZeppelin"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">OpenZeppelin</a
+        >,
+        <a
+          href="/archive/DefiLlama"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">DefiLlama</a
+        >, and
+        <a
+          href="/archive/wagmi"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">wagmi</a
+        > emerged as the top recipients in this category, demonstrating their significant
+        contributions to the ecosystem's development and functionality. This allocation
+        of resources highlights the commitment to enhancing the tools and utilities
+        that empower the OP Stack, setting the stage for further growth and innovation.
       </div>
       <div
         class="flex flex-col items-center justify-center max-h-[50em] my-5 overflow-hidden"
       >
-        <img src="/img/retropgf2_result_2.webp" class="w-[60em] rounded-2xl" />
+        <img
+          src="/img/retropgf2_result_2.webp"
+          class="w-[60em] rounded-2xl"
+          alt="Tooling & Utilities"
+        />
         <div class="mt-3 text-gray-600">
           RetroPGF 2 Recipients - Tooling & Utilities
         </div>
@@ -681,7 +761,11 @@
       <div
         class="flex flex-col items-center justify-center max-h-[60em] my-5 overflow-hidden"
       >
-        <img src="/img/retropgf2_result_3.webp" class="w-[60em] rounded-2xl" />
+        <img
+          src="/img/retropgf2_result_3.webp"
+          class="w-[60em] rounded-2xl"
+          alt="Tooling & Utilities"
+        />
         <div class="mt-3 text-gray-600">
           RetroPGF 2 Breakdown - Tooling & Utilities
         </div>
@@ -691,23 +775,45 @@
         Within the Education category, the Collective demonstrated its
         commitment to knowledge dissemination by providing funding to a total of
         70 individuals and projects. Notably, the top three recipients in this
-        educational initiative were L2Beat, ETHGlobal, and BuidlGuidl,
-        underlining their significant contributions to fostering a culture of
+        educational initiative were <a
+          href="/archive/L2BEAT"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">L2Beat</a
+        >,
+        <a
+          href="/archive/ETHGlobal"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">ETHGlobal</a
+        >, and
+        <a
+          href="/archive/BuidlGuidl"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">BuidlGuidl</a
+        >, underlining their significant contributions to fostering a culture of
         learning and understanding within the Optimism Stack and ecosystem.
       </div>
       <div
         class="flex flex-col items-center justify-center max-h-[50em] my-5 overflow-hidden"
       >
-        <img src="/img/retropgf2_result_6.webp" class="w-[60em] rounded-2xl" />
+        <img
+          src="/img/retropgf2_result_6.webp"
+          class="w-[60em] rounded-2xl"
+          alt="Educations"
+        />
         <div class="mt-3 text-gray-600">RetroPGF 2 Recipients - Educations</div>
       </div>
       <div
         class="flex flex-col items-center justify-center max-h-[60em] my-5 overflow-hidden"
       >
-        <img src="/img/retropgf2_result_7.webp" class="w-[60em] rounded-2xl" />
+        <img
+          src="/img/retropgf2_result_7.webp"
+          class="w-[60em] rounded-2xl"
+          alt="Educations"
+        />
         <div class="mt-3 text-gray-600">RetroPGF 2 Breakdown - Educations</div>
       </div>
-      <div>
+      <div class="text-lg font-semibold my-4">Analyzing Results</div>
+      <div class="mb-8">
         In conclusion, Results for Round 2 similar to <a
           href="/history/retropgf-1"
           class="text-[#ff1818] hover:text-white">Round 1</a
@@ -721,6 +827,18 @@
         even a minor allocation by a single badgeholder could result in a
         significant token distribution to a project.
       </div>
+      <div
+        class="flex flex-col items-center justify-center max-h-[60em] my-5 overflow-hidden"
+      >
+        <img
+          src="/img/retropgf2_result_8.webp"
+          class="w-[60em] rounded-lg"
+          alt="Table Allocarion Compare"
+        />
+        <div class="mt-3 text-gray-600">
+          Top Recipients RetroPGF Round 2 vs Round 1
+        </div>
+      </div>
       <div class="mt-3">
         The diversity of projects funded during this round improved compared to
         Round 1. The majority of the funded projects in RetroPGF 2 were not
@@ -731,6 +849,43 @@
     </section>
     <section class="mb-3">
       <div class="text-3xl font-bold italic">Learnings & Reflections</div>
+
+      <div
+        class=" flex flex-wrap flex-grow justify-between mt-5 max-w-full my-5"
+      >
+        <div
+          class="flex-grow lg:mr-8 border-2 border-black mt-4 px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        >
+          <div class="text-4xl">🤔</div>
+          <span class="font-medium text-lg"
+            >How Badgeholders Assessed Impact</span
+          >
+        </div>
+        <div
+          class="flex-grow lg:mr-8 border-2 border-black mt-4 px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        >
+          <div class="text-4xl">🔍</div>
+          <span class="font-medium text-lg">Scaling Impact Evaluation</span>
+        </div>
+        <div
+          class="flex-grow lg:mr-8 border-2 border-black mt-4 px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        >
+          <div class="text-4xl">🤝</div>
+          <span class="font-medium text-lg">Badgeholders Collaboration</span>
+        </div>
+        <div
+          class="flex-grow lg:mr-8 border-2 border-black mt-4 px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        >
+          <div class="text-4xl">📌</div>
+          <span class="font-medium text-lg">Defining Impact = Profit</span>
+        </div>
+        <div
+          class="flex-grow lg:mr-8 border-2 border-black mt-4 px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+        >
+          <div class="text-4xl">🗳️</div>
+          <span class="font-medium text-lg">Voting Tool & Experience</span>
+        </div>
+      </div>
       <div class="text-lg font-semibold my-4">
         How Badgeholders Assessed Impact
       </div>
@@ -747,10 +902,19 @@
           <div class="font-medium">Project Eligibility</div>
           <div class="text-gray-600">
             To be considered for RetroPGF, projects had to go through a two-step
-            process: nomination in the forum and subsequent sign-up via the
-            Project intake form. This process aimed to filter out qualifying
-            projects and gather valuable information for badgeholders to assess
-            impact.
+            process: <a
+              class="text-[#ff1818] hover:underline"
+              href="https://gov.optimism.io/t/nominations-for-retropgf2/4636"
+              target="_blank"
+              >nomination in the forum
+            </a>
+            and subsequent sign-up via the
+            <a
+              class="text-[#ff1818] hover:underline"
+              href="https://app.optimism.io/retropgf-manager"
+              target="_blank">Project intake form</a
+            >. This process aimed to filter out qualifying projects and gather
+            valuable information for badgeholders to assess impact.
           </div>
         </li>
         <li>
@@ -830,7 +994,7 @@
         is no small feat. Badgeholders were tasked with assessing a multitude of
         projects, leading to significant challenges:
       </div>
-      <ol class="list-disc ml-5">
+      <ol class="list-disc ml-5 my-5">
         <li>
           <div class="font-medium">Quantity Overload</div>
           <div class="text-gray-600">
@@ -871,8 +1035,12 @@
         <li>
           <div class="font-medium">Mixed Feedback on Collections</div>
           <div>
-            While some collections were uncontroversial, the EIP-4844 collection
-            faced pushback from Ethereum contributors. Concerns included:
+            While some collections were uncontroversial, the <a
+              class="text-[#ff1818] hover:underline"
+              href="https://gov.optimism.io/t/feedback-on-eip4844-contributors-collection/5566"
+              target="_blank"
+              >EIP-4844 collection faced pushback from Ethereum contributors</a
+            >. Concerns included:
           </div>
           <div class="px-8 my-5 rounded-xl">
             <div class="italic text-[#ff1818]">
@@ -916,7 +1084,7 @@
           >onboarding calls</a
         >.
       </div>
-      <ol class="list-disc ml-5">
+      <ol class="list-disc ml-5 my-5">
         <li>
           <div class="font-medium">Guidance with Flexibility</div>
           <div class="text-gray-600">
@@ -931,8 +1099,18 @@
           <div class="text-gray-600">
             Collaboration among badgeholders was strongly encouraged, fostering
             a high-context environment through asynchronous communication on
-            platforms like Discord and Telegram. Additionally, collaborative
-            calls hosted by Other Internet played a pivotal role.
+            platforms like <a
+              class="text-[#ff1818] hover:underline"
+              target="_blank"
+              href="https://discord.gg/optimism">Discord</a
+            >
+            and Telegram. Additionally,
+            <a
+              class="text-[#ff1818] hover:underline"
+              target="_blank"
+              href="https://www.figma.com/file/d6tuHAYanykDhIHpG75xWS/RetroPGF-Co-working?type=whiteboard&node-id=0-1&t=s3C3Jc7jMvin2RYu-0"
+              >collaborative calls</a
+            > hosted by Other Internet played a pivotal role.
           </div>
         </li>
         <li>
@@ -954,10 +1132,10 @@
             </div>
           </div>
           <div class="text-gray-600">
-            Feedback, Reflection, and Idea Aggregation, The second call focused
-            on feedback, reflection, and the accumulation of ideas for future
-            rounds. Badgeholders found these sessions immensely valuable, and
-            they should continue to be an integral part of RetroPGF.
+            The second call focused on feedback, reflection, and the
+            accumulation of ideas for future rounds. Badgeholders found these
+            sessions immensely valuable, and they should continue to be an
+            integral part of RetroPGF.
           </div>
           <div class="px-8 my-5 rounded-xl">
             <div class="italic text-[#ff1818]">
@@ -969,13 +1147,13 @@
       </ol>
       <div class="text-lg font-semibold my-4">Defining Impact = Profit</div>
       <div>
-        One of the Optimism Collective's core values is "impact=profit," a
+        One of the Optimism Collective's core values is "impact = profit," a
         principle that individuals should receive profit equivalent to the
         impact they contribute to the collective. However, applying this
         framework in practice can be challenging, particularly without a clear
         and quantitative definition of "impact" or "profit."
       </div>
-      <ol class="list-disc ml-5">
+      <ol class="list-disc ml-5 my-5">
         <li>
           <div class="font-medium">The Challenge of Interpretation</div>
           <div class="text-gray-600">
@@ -1017,12 +1195,23 @@
         <li>
           <div class="font-medium">Custom Evaluation Frameworks</div>
           <div class="text-gray-600">
-            In response to the ambiguity, some badgeholders developed their own
-            evaluation frameworks. These often included categorizations and
-            combinations of criteria to simplify impact assessment. Examples
-            ranged from binary criteria like "Is the Project Optimism specific
-            [Y/N]" to simplified impact sizing like "Contribution Type [Large,
-            Medium, Small]."
+            In response to the ambiguity, some badgeholders developed their
+            <a
+              class="text-[#ff1818] hover:underline"
+              href="https://gov.optimism.io/t/retropgf-round-2-voting-rationale/5570"
+              target="_blank">own evaluation frameworks</a
+            >. These often included categorizations and combinations of criteria
+            to simplify impact assessment. Examples ranged from binary criteria
+            like
+            <div class="px-8 my-5 rounded-xl">
+              <div class="italic text-[#ff1818]">
+                "Is the Project Optimism specific [Y/N]"
+              </div>
+              <div class="italic text-[#ff1818]">
+                "to simplified impact sizing like "Contribution Type [Large,
+                Medium, Small]."
+              </div>
+            </div>
           </div>
         </li>
         <li>
@@ -1033,10 +1222,14 @@
             discussions about whether to factor in expected future impact. A
             Twitter poll by Tim Beiko on
             <div class="px-8 my-5 rounded-xl">
-              <div class="italic text-[#ff1818]">
+              <a
+                target="_blank"
+                class="italic text-[#ff1818] hover:underline"
+                href="https://twitter.com/timbeiko/status/1640524783015313408?s=21"
+              >
                 "How much should retroactive public goods funding (RPGF) weight
                 'future value delivered' when allocating funds?"
-              </div>
+              </a>
             </div>
             Revealed mixed opinions. It highlighted the complexity of making the
             concept of retroactive funding well-understood.
@@ -1067,7 +1260,9 @@
           </div>
         </li>
       </ol>
-      <div class="text-lg font-semibold my-4">Voting Tool & Experience</div>
+      <div class="text-lg font-semibold my-4">
+        Voting Tool & User Experience
+      </div>
       <div>
         Round 2 brought valuable insights into the voting process. While the
         voting experience faced challenges, it also demonstrated the
@@ -1075,7 +1270,7 @@
         explore the journey and future prospects of voting tooling within
         RetroPGF.
       </div>
-      <ol class="list-disc ml-5">
+      <ol class="list-disc ml-5 my-5">
         <li>
           <div class="font-medium">MVP Voting Solution</div>
           <div class="text-gray-600">
@@ -1094,11 +1289,28 @@
           <div class="text-gray-600">
             While the voting user experience was not ideal, badgeholders
             showcased their ingenuity in addressing the issues. For instance,
-            Ludens from Lattice developed a script that could export votes from
-            the voting scratchpad and import them into the form. Additionally,
-            in the final days of voting, Vitalik provided a script that allowed
-            for the quick tallying of votes across the ballot using the browser
-            console.
+            Ludens from Lattice developed a <a
+              class="text-[#ff1818] hover:underline"
+              target="_blank"
+              href="https://github.com/latticexyz/retro-pfg-automation"
+              >script that could export votes</a
+            >
+            from the
+            <a
+              class="text-[#ff1818] hover:underline"
+              target="_blank"
+              href="https://docs.google.com/spreadsheets/d/1V7FAydlEzFO-IvNKRD2ZKKE6xyA4KygjGijAmdgkQAo/edit?usp=sharing"
+              >voting scratchpad</a
+            >
+            and import them into the form. Additionally, in the final days of voting,
+            Vitalik provided a
+            <a
+              class="text-[#ff1818] hover:underline"
+              target="_blank"
+              href="https://discord.com/channels/667044843901681675/892113251851206756/1088102210069614663"
+              >script that allowed for the quick tallying of votes across the
+              ballot using the browser console</a
+            >.
           </div>
         </li>
         <li>
