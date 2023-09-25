@@ -165,7 +165,7 @@
       </div>
       <ol class="list-disc ml-5 my-5">
         <li>
-          <div class="font-medium">Infrastructure + Dependencies</div>
+          <div class="font-medium">Infrastructure & Dependencies</div>
           <p class="text-gray-600">
             Software used to build or deploy the OP Stack / contributions to
             protocols or standards upon which the OP Stack runs / experiments
@@ -174,7 +174,7 @@
           <div />
         </li>
         <li>
-          <div class="font-medium">Tooling + Utilities</div>
+          <div class="font-medium">Tooling & Utilities</div>
           <p class="text-gray-600">
             Work that helps builders create applications on Optimism mainnet,
             build on the OP Stack, interact with governance of the Collective,
@@ -205,15 +205,17 @@
         To nominate a project for RetroPGF, visit the designated forum posts for
         your chosen nomination category:
       </div>
-      <div class=" flex flex-wrap flex-grow justify-between my-4 max-w-full">
+      <div
+        class=" flex flex-wrap flex-grow justify-between mt-4 mb-5 max-w-full"
+      >
         <a
           href="https://gov.optimism.io/t/infrastructure-dependencies-nominations-for-rpgf2/"
           target="_blank"
-          class="group flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group flex-grow mt-4 lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl group-hover:text-white">🏗️</div>
           <div class="font-medium text-lg group-hover:text-white">
-            Infrastructure + Dependencies
+            Infrastructure & Dependencies
           </div>
           <div class="text-[#ff1818] group-hover:text-white">
             View nominations &gt
@@ -222,11 +224,11 @@
         <a
           href="https://gov.optimism.io/t/tooling-utilities-nominations-for-rpgf2"
           target="_blank"
-          class="group flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group flex-grow mt-4 lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl group-hover:text-white">🛠️</div>
           <span class="font-medium text-lg group-hover:text-white"
-            >Tooling + Utilities</span
+            >Tooling & Utilities</span
           >
           <div class="text-[#ff1818] group-hover:text-white">
             View nominations &gt
@@ -235,7 +237,7 @@
         <a
           href="https://gov.optimism.io/t/education-nominations-for-rpgf2"
           target="_blank"
-          class="group flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
+          class="group flex-grow mt-4 lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
           <div class="text-4xl group-hover:text-white">🧑‍🏫</div>
           <span class="font-medium text-lg group-hover:text-white"
@@ -252,20 +254,20 @@
 
       <ol class="list-disc ml-5 mt-5">
         <li>
-          <div class="font-medium">Provide Impact Details:</div>
+          <div class="font-medium">Provide Impact Details</div>
           <p class="text-gray-600">
             Describe how the project has made a positive impact within the scope
             of this round
           </p>
         </li>
         <li>
-          <div class="font-medium">Choose the Right Category:</div>
+          <div class="font-medium">Choose the Right Category</div>
           <p class="text-gray-600">
             Ensure that you nominate projects in the relevant category.
           </p>
         </li>
         <li>
-          <div class="font-medium">Avoid Duplicates:</div>
+          <div class="font-medium">Avoid Duplicates</div>
           <p class="text-gray-600">
             Check if the project has already been nominated to prevent
             duplication.
@@ -360,7 +362,9 @@
         perspectives to ensure a robust and effective round. Here's how we did
         it
       </div>
-      <div class="flex flex-wrap flex-grow justify-between my-4 max-w-full">
+      <div
+        class="flex flex-wrap flex-grow justify-between mt-2 mb-5 max-w-full"
+      >
         <div
           class="group mt-4 flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
         >
@@ -560,7 +564,7 @@
         usage and development.
       </div>
       <div
-        class=" flex flex-wrap flex-grow justify-between mt-8 max-w-full my-5"
+        class=" flex flex-wrap flex-grow justify-between max-w-full mt-2 mb-5"
       >
         <div
           class="flex-grow mt-4 lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
@@ -593,7 +597,7 @@
           <div class="text-3xl font-medium mt-2">140,000 OP</div>
         </div>
       </div>
-      <div class="text-lg font-semibold my-4">Overview Allocation</div>
+      <div class="text-lg font-semibold">Overview Allocation</div>
       <div>
         In this second round of RetroPGF, 195 people and projects were nominated
         for funding, and all 195 were awarded funding by the badgeholders! While
@@ -603,7 +607,7 @@
         which are education, infrastructure, and tooling & utilities.
       </div>
       <div
-        class=" flex flex-wrap flex-grow justify-between mt-8 max-w-full mb-5"
+        class=" flex flex-wrap flex-grow justify-between mt-2 mb-5 max-w-full"
       >
         <div
           class="group mt-4 flex-grow lg:mr-8 border-2 border-black px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:border-[#ff1818] transition ease-in-out duration-300"
@@ -673,6 +677,81 @@
         considerations that guided their decisions, fostering a deeper
         understanding of the evaluation and allocation of Retroactive Public
         Goods Funding in Round 2.
+      </div>
+      <div class="mt-4">
+        This is an example of a thoughtful and balanced voting rationale for
+        Retroactive Public Goods Funding (RetroPGF) Round 2:
+      </div>
+      <div class="bg-[#FFE8E8] py-5 px-8 my-5 rounded-xl">
+        <div class="flex justify-start items-center">
+          <img
+            src="/img/retropgf2_voting.jpeg"
+            class="flex rounded-full w-[4em]"
+            alt="profile"
+          />
+          <div class="flex justify-start flex-col ml-4 mr-8">
+            <div class="font-semibold">Thomas Jay Rush</div>
+            <div>Badgeholder</div>
+          </div>
+          <div class="flex-grow" />
+          <a
+            href="https://gov.optimism.io/t/retropgf-round-2-voting-rationale/5570/4"
+            class="flex text-[#ff1818] hover:underline"
+            target="_blank">See on the forum &gt</a
+          >
+        </div>
+
+        <div class="my-5">
+          My criteria is (1) impact (of course), (2) potential impact (is the
+          idea sound), (3) current funding status. I weigh these things in order
+          3, 2, 1. If a project has raised money (through either token or VC),
+          most likely I won’t be voting for that project. If a project has a
+          great idea but is just starting to see impact, I will vote for them
+          with the thinking that supporting a great idea is a good thing. And
+          hopefully the support will help that team to execute on the idea in
+          the future. (Yes, I know this is supposed to be retro-active, but see
+          below…) If a project has already had impact, I think that’s excellent
+          and deserves support, but many times early impactful things fade in
+          the long run. Use Yahoo as an example. It had a huge impact in the
+          early Internet, but it faded to insignificance. I’m not sure past
+          impact is a good measure. Also, there’s a winner-take-all aspect to
+          all of this. Everyone votes for “well known projects” and then “well
+          known projects” become more well known because they have a marketing
+          budget, spiral, spiral…
+        </div>
+        <div>
+          For these reasons, I think I’m going to do something similar to this.
+        </div>
+        <ol class="list-disc ml-5 my-5 text-gray-600">
+          <li>
+            Identify project that I won’t be voting for due to already existing
+            funding through VCs or token raises. Allocate 0% to those projects.
+          </li>
+          <li>
+            Identify the 10-20 projects that either have great future potention
+            and growing impact or past impact and a really good idea. Allocation
+            about 50% of my vote to those project split up in a way that makes
+            sense.
+          </li>
+          <li>
+            Use the remaining 50% of my vote to vote evenly across the remaining
+            projects in the belief that even 1% of my vote (or whatever it works
+            out to) is a significant amount of money, and especially for small
+            projects, any amount of money keeps them going and is a huge
+            encouragement.
+          </li>
+        </ol>
+      </div>
+      <div>
+        If you're curious to learn more about how other badgeholders are
+        approaching their voting rotations, feel free to check out the
+        <a
+          class="text-[#ff1818] hover:underline"
+          target="_blank"
+          href="https://gov.optimism.io/t/retropgf-round-2-voting-rationale"
+          >discussions on the governance forum</a
+        >. It's a great way to get insights from the community and see the
+        diverse strategies people are using!
       </div>
       <div class="text-lg font-semibold my-4">
         Infrastructure & Dependencies
@@ -849,9 +928,14 @@
     </section>
     <section class="mb-3">
       <div class="text-3xl font-bold italic">Learnings & Reflections</div>
-
+      <div class="mt-3">
+        As we find ourselves at the crossroads of completed endeavors and
+        unfolding experiences, it's the perfect time for reflection. Let's take
+        a moment to appreciate what we've achieved and the wealth of knowledge
+        we've gained throughout this journey.
+      </div>
       <div
-        class=" flex flex-wrap flex-grow justify-between mt-5 max-w-full my-5"
+        class=" flex flex-wrap flex-grow justify-between mt-2 mb-5 max-w-full"
       >
         <div
           class="flex-grow lg:mr-8 border-2 border-black mt-4 px-6 py-4 rounded-xl hover:bg-[#ff1818] hover:text-white hover:border-[#ff1818] transition ease-in-out duration-300"
@@ -1034,7 +1118,7 @@
         </li>
         <li>
           <div class="font-medium">Mixed Feedback on Collections</div>
-          <div>
+          <div class="text-gray-600">
             While some collections were uncontroversial, the <a
               class="text-[#ff1818] hover:underline"
               href="https://gov.optimism.io/t/feedback-on-eip4844-contributors-collection/5566"
@@ -1057,7 +1141,7 @@
         </li>
         <li>
           <div class="font-medium">High-Leverage Voting Through Categories</div>
-          <div>
+          <div class="text-gray-600">
             Looking ahead, categories may offer a solution through high-leverage
             voting. Badgeholders without expertise in a particular area could
             allocate funding to an entire category, which would then be
