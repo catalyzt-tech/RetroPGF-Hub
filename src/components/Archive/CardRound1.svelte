@@ -18,7 +18,7 @@
     <div class="w-5 inline-flex align-[-33%]">
       <img alt="$" src="/img/usd_coin.png" />
     </div>
-    {data?.allocation.slice(1) ?? 'Loading...'}
+    {data?.allocation ?? 'Loading...'}
   </div>
 
   <h1 class="mt-10 font-bold pt-3 pl-3 pb-2 text-[20px]">
