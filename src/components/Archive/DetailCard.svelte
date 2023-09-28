@@ -10,7 +10,7 @@
     }
   }
   checkBanner()
-  console.log(detail)
+  console.log(detail['OP Allocation'])
 </script>
 
 <div class="flex justify-center w-screen">
@@ -82,7 +82,7 @@
       <div class=" font-bold mt-4 lg:mt-40 text-lg">About the project</div>
       <div class="mt-1 mb-5 text-[#616161]">{detail?.about}</div>
       <div class=" font-bold text-lg">Funding allocation</div>
-      <div class="mt-1 mb-5 text-[#616161]">123,456.789 OP</div>
+      <div class="mt-1 mb-5 text-[#616161]">{detail['OP Allocation']} OP</div>
       <div class="font-bold text-lg">
         How do you support development and usage of the OP Stack? What public
         good do you provide to the Collective?
