@@ -1,6 +1,7 @@
 <script lang="ts">
   import Navbar from '@/components/Navbar.svelte'
   import Footer from '@/components/Footer.svelte'
+  import Alertbar from '@/components/Alertbar.svelte'
   export let title: string = 'RetroPGF Hub'
   import '../app.css'
 </script>
@@ -17,6 +18,7 @@
 
 <div class="flex flex-col min-h-screen">
   <Navbar />
+  <Alertbar />
   <div class="bg-slate-50">
     <slot />
   </div>
