@@ -75,10 +75,11 @@
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
               >1st August - 15th September 2023
             </time>
-            <div class="text-md font-medium">Badgeholder Selection</div>
+            <div class="text-md font-medium">Badgeholders Selection</div>
             <p class="text-gray-600">
               Badgeholders will be selected based on their contributions by
-              three ways
+              three ways which total badgeholders in this round up to 208
+              people!
             </p>
           </li>
           <li class="mb-6 ml-6">
@@ -89,12 +90,23 @@
               class="mb-1 text-sm font-normal leading-none text-[#ff1818] dark:text-gray-500"
               >19th September - 23rd October 2023
             </time>
-            <div class="text-md font-medium">Project Applications</div>
+            <div class="text-md font-medium">
+              Project Applications <span
+                class="bg-[#ff1818] mx-1 px-3 py-1 rounded-full w-fit text-white"
+              >
+                Live
+              </span>
+            </div>
             <p class="text-gray-600">
               During this phase, builders, creators, and educators had the
               chance to submit their applications, showcasing their positive
               impact within the Optimism Collective.Theres no nominations
-              process in this round, instead projects sign-up directly.
+              process in this round, instead projects sign-up directly. You can
+              <a
+                href="https://app.optimism.io/retropgf-signup"
+                target="_blank"
+                class="text-[#ff1818] hover:underline">apply here</a
+              > through the sign-up period.
             </p>
           </li>
           <li class="mb-6 ml-6">
@@ -138,6 +150,9 @@
         making a positive impact, you're in!
       </div>
       <div class="mt-3">
+        Applications for RetroPGF Round 3 are live! You can apply here
+      </div>
+      <div class="mt-3">
         We're rolling out the red carpet for Optimism artists, creators,
         writers, builders, and all the passionate folks who make our ecosystem
         thrive.
@@ -175,6 +190,10 @@
         </li>
       </ol>
       <div>
+        You can select multiple categories, but try to select the categories
+        that best describe your impact!
+      </div>
+      <div class="mt-3">
         RetroPGF isn't just for a select few. It's for all the amazing
         individuals who've left their mark in these categories. So, if you've
         made a difference, don't hesitate—submit an application and let's
@@ -188,6 +207,68 @@
           class="w-[60em] rounded-lg"
           alt="Lists"
         />
+      </div>
+      <div class="text-lg font-semibold my-4">How to get involved</div>
+      <div>
+        Guess what? This is the perfect moment to become a part of the vibrant
+        Optimism Collective, and there are various ways to jump right in:
+      </div>
+      <div class="bg-[#FFE8E8] py-5 px-8 my-5 rounded-xl">
+        <ol class="list-disc ml-5 my-5">
+          <li>
+            <div class="font-medium">If You're a Developer</div>
+            <div class="text-gray-600">
+              Take a look at the <a
+                href="https://github.com/ethereum-optimism/ecosystem-contributions"
+                target="_blank"
+                class="text-[#ff1818] hover:underline"
+                >Ecosystem Contributions board</a
+              > where you'll find a treasure trove of ideas and projects waiting
+              for your magic touch. Who knows, these could be your ticket to RetroPGF
+              funding and making an impact!
+            </div>
+          </li>
+          <li>
+            <div class="font-medium">Got a Project in Mind?</div>
+            <div class="text-gray-600">
+              If you're working on something that aligns with our <a
+                href="https://gov.optimism.io/t/collective-intents"
+                target="_blank"
+                class="text-[#ff1818] hover:underline">Collective Intents</a
+              > but need a little financial boost to kickstart it, check out the
+              guide on how to apply for a grant. We've got your back!
+            </div>
+          </li>
+          <li>
+            <div class="font-medium">Community Builder Extraordinaire</div>
+            <div class="text-gray-600">
+              If you're all about building communities, consider exploring the
+              <a
+                href="https://community.optimism.io/docs/contribute/contribution-path/NERD-req"
+                target="_blank"
+                class="text-[#ff1818] hover:underline">NERD program</a
+              >
+              for support and onboarding or the
+              <a
+                href="https://community.optimism.io/docs/contribute/contribution-path/Ambassador-req/"
+                target="_blank"
+                class="text-[#ff1818] hover:underline">Ambassador program</a
+              > if you're into marketing and business development. There's a place
+              for you to shine!
+            </div>
+          </li>
+          <li>
+            <div class="font-medium">Choose Your Adventure</div>
+            <div class="text-gray-600">
+              Feel like charting your own course? That's cool too! In RetroPGF
+              2, we celebrated and funded 195 incredible projects and people.
+              You can check out <a
+                href="/archive"
+                class="text-[#ff1818] hover:underline">this page</a
+              > to get inspired and find your unique way to contribute.
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
     <section class="mb-3">
@@ -238,16 +319,14 @@
         </div>
       </div>
       <div class="text-lg font-semibold my-4">RetroPGF Sign up</div>
-
       <div>
         We're on a mission to make Retroactive Public Goods Funding (RetroPGF)
         even better by helping projects showcase their impact and profit more
         effectively. Our goal is to empower projects to quantify their
         contributions and give badgeholders the insights they need.
       </div>
-
       <div
-        class="flex flex-col items-center justify-center max-h-[60em] my-5 overflow-hidden"
+        class="flex flex-col items-center justify-center max-h-[60em] my-7 overflow-hidden"
       >
         <img
           src="/img/retropgf3_design_1.jpg"
@@ -308,9 +387,13 @@
         of all the amazing projects nominated for Retroactive Public Goods
         Funding (RetroPGF)? It's a big task, and no single badgeholder can have
         all the answers. But fret not, because we have a plan to make it happen!
-        In previous rounds, we've seen badgeholders sharing their project
-        evaluations with each other. Now, in Round 3, we're taking it up a
-        notch. We're introducing a cool new feature called "Lists."
+        In previous rounds, we've seen badgeholders <a
+          href="https://gov.optimism.io/t/retropgf-round-2-voting-rationale/"
+          target="_blank"
+          class="text-[#ff1818] hover:underline"
+          >sharing their project evaluations</a
+        > with each other. Now, in Round 3, we're taking it up a notch. We're introducing
+        a cool new feature called "Lists."
       </div>
       <div
         class="flex flex-col items-center justify-center max-h-[60em] my-5 overflow-hidden"
@@ -509,14 +592,24 @@
         <div>Core applications in development for RetroPGF 3</div>
         <ol class="list-disc ml-5 my-5">
           <li>
-            <div class="font-medium">RetroPGF Sign-up</div>
+            <a
+              href="https://app.optimism.io/retropgf-signup"
+              target="_blank"
+              class="font-medium text-[#ff1818] hover:underline"
+              >RetroPGF Sign-up</a
+            >
             <div class="text-gray-600">
               Our friends at OP Labs EcoPod are crafting this gem. It makes it a
               breeze for projects to sign up for RetroPGF 3.
             </div>
           </li>
           <li>
-            <div class="font-medium">Discovery & Voting</div>
+            <a
+              href="https://github.com/ethereum-optimism/ecosystem-contributions/issues/104"
+              target="_blank"
+              class="font-medium text-[#ff1818] hover:underline"
+              >Discovery & Voting</a
+            >
             <div class="text-gray-600">
               Supermodular and Agora are hard at work on these apps. They will
               empower badgeholders to review and vote on projects. Plus, they're
@@ -525,7 +618,12 @@
             </div>
           </li>
           <li>
-            <div class="font-medium">List Creation UI</div>
+            <a
+              href="https://github.com/ethereum-optimism/ecosystem-contributions/issues/106"
+              target="_blank"
+              class="font-medium text-[#ff1818] hover:underline"
+              >List Creation UI</a
+            >
             <div class="text-gray-600">
               Supermodular is also cooking up a cool feature that lets
               badgeholders create Lists.
@@ -538,28 +636,43 @@
         </div>
         <ol class="list-disc ml-5 my-5">
           <li>
-            <div class="font-medium">OpenSource Observer</div>
+            <a
+              href="https://www.opensource.observer/"
+              target="_blank"
+              class="font-medium text-[#ff1818] hover:underline"
+              >OpenSource Observer</a
+            >
             <div class="text-gray-600">
               This tool provides analytics to evaluate the impact of open-source
               projects.
             </div>
           </li>
           <li>
-            <div class="font-medium">Pairwise</div>
+            <a
+              href="https://gov.optimism.io/t/final-pairwise-tinder-ux-for-web3-community-signaling/6142"
+              target="_blank"
+              class="font-medium text-[#ff1818] hover:underline">Pairwise</a
+            >
             <div class="text-gray-600">
               Imagine a "Tinder-like" voting experience for badgeholders. It's
               here!
             </div>
           </li>
           <li>
-            <div class="font-medium">Community Project Suggestions</div>
+            <a href="/" class="font-medium text-[#ff1818] hover:underline"
+              >Community Project Suggestions</a
+            >
             <div class="text-gray-600">
               We're making it easy for community members to suggest projects
-              that should sign up for RetroPGF.
+              that should sign up for RetroPGF which is us! (RetroPGF Hub)
             </div>
           </li>
           <li>
-            <div class="font-medium">BuidlGuidl</div>
+            <a
+              href="https://github.com/scaffold-eth/OP-RetroPGF3-Discovery-Voting"
+              target="_blank"
+              class="font-medium text-[#ff1818] hover:underline">BuidlGuidl</a
+            >
             <div class="text-gray-600">
               They're experimenting with a RetroPGF voting application. Exciting
               stuff! Got Ideas?
@@ -569,10 +682,243 @@
       </div>
       <div>
         If you're itching to contribute and need inspiration, head over to our
-        ecosystem contributions page for some fantastic ideas. And if you've got
-        an experiment or project in mind, share it with the community in the
-        Governance forum. Together, we're building RetroPGF into something
-        extraordinary. Join us in this exciting journey!
+        <a
+          href="https://github.com/orgs/ethereum-optimism/projects/31/views/4?filterQuery=retropgf"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">ecosystem contributions page</a
+        >
+        for some fantastic ideas. And if you've got an experiment or project in mind,
+        share it with the community in the
+        <a
+          href="https://gov.optimism.io/c/retropgf/46"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">Governance forum</a
+        >. Together, we're building RetroPGF into something extraordinary. Join
+        us in this exciting journey!
+      </div>
+    </section>
+    <section class="mb-3">
+      <div class="text-3xl font-bold italic">Voting Badges</div>
+      <div class="mt-3">
+        In RetroPGF 3, we're distributing voting badges to 208 community members
+        to ensure a fair and diverse voting process. Here's how it works:
+      </div>
+      <div class="mt-3">
+        If you're a badgeholder, you can go to the badgeholder hub to find
+        relevant resources and stay up to date.
+      </div>
+      <div class="text-lg font-semibold my-4">Badge Distribution</div>
+
+      <ol class="list-disc ml-5 my-5">
+        <li>
+          <div class="font-medium">Returning Badgeholders</div>
+          <div class="text-gray-600">
+            If you voted in RetroPGF 2, you'll receive a new voting badge. Plus,
+            you can give one to a community member of your choice.
+          </div>
+        </li>
+        <li>
+          <div class="font-medium">Top 50 Recipients of RetroPGF 2</div>
+          <div class="text-gray-600">
+            The top 50 badgeholders from RetroPGF 2 also get to share a voting
+            badge with someone they choose.
+          </div>
+        </li>
+        <li>
+          <div class="font-medium">The Optimism Foundation</div>
+          <div class="text-gray-600">
+            They have 10 voting badges to distribute to community members of
+            their choice.
+          </div>
+        </li>
+      </ol>
+      <div>
+        If you've got a voting badge, it's your chance to make someone's day!
+        Here's what to do:
+      </div>
+      <ol class="list-disc ml-5 my-5">
+        <li>
+          If you’re a badgeholder, please use <a
+            href="https://app.deform.cc/form/f08a65d7-ac0d-4054-8b55-8c89b66f7cb7/"
+            target="_blank"
+            class="text-[#ff1818] hover:underline">this form</a
+          > to tell us who should receive a voting badge.
+        </li>
+        <li>
+          If you’re one of the top 50 recipients of RetroPGF 2, please use <a
+            href="https://app.deform.cc/form/0b2b8e01-eac1-4e86-b6d2-d14ec88b4ddd/"
+            target="_blank"
+            class="text-[#ff1818] hover:underline">this form</a
+          >.
+        </li>
+      </ol>
+      <div>
+        Just so you know, the criteria for citizenship may change in the future,
+        and it'll be decided by governance. Voting in RetroPGF 3 doesn't
+        guarantee a permanent spot in the Citizens' House or future RetroPGF
+        rounds.
+      </div>
+      <div class="text-lg font-semibold my-4">Rules and Code of Conduct</div>
+      <div class="mt-3">
+        Badgeholders must abide by the following rules and the <a
+          href="https://gov.optimism.io/t/code-of-conduct/5751"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">Code of Conduct</a
+        >. In case of a violation, the voting badge that has been distributed
+        may be revoked.
+      </div>
+      <ol class="list-disc ml-5 my-5">
+        <li>
+          <div class="font-medium">Untransferred Badge</div>
+          <div class="text-gray-600">
+            You’re not allowed to distribute your voting badge to a co-worker
+            with whom you work on your primary project. “Primary” is defined as
+            a project to which you dedicate >25% of working hours or derive >25%
+            of your compensation. This rule is established to counteract the
+            concentration of voting badges among the members of a small number
+            of projects.
+          </div>
+        </li>
+        <li>
+          <div class="font-medium">Be Independent</div>
+          <div class="text-gray-600">
+            Badgeholders represent individual members of the Optimism
+            Collective. They can not represent a project or company in their
+            capacity as badgeholders.
+          </div>
+        </li>
+      </ol>
+      <div class="text-lg font-semibold my-4">Sharing Your Voting Badge</div>
+      <div>
+        The Optimism Foundation has some handy guidelines for distributing
+        voting badges, and they encourage everyone to consider these criteria
+        when making their own choices:
+      </div>
+      <div class="bg-[#FFE8E8] py-5 px-8 my-5 rounded-xl">
+        <ol class="list-disc pl-5">
+          <li>
+            Can this person help make RetroPGF even better as a funding
+            mechanism?
+          </li>
+          <li>
+            Is this person a pro in any of the categories we're funding in
+            RetroPGF?
+          </li>
+          <li>
+            Has this person shown a strong commitment to the long-term growth of
+            the Optimism ecosystem and our Collective's mission?
+          </li>
+          <li>
+            Can this person bring fresh perspectives and insights to the table,
+            enriching our evaluations?
+          </li>
+        </ol>
+      </div>
+      <div
+        class="flex justify-center items-center w-full overflow-hidden my-10"
+      >
+        <img
+          src="/img/retropgf3_voting_2.jpg"
+          class="w-[50em] rounded-full"
+          alt="retropgf1"
+        />
+      </div>
+      <div class="text-lg font-semibold my-4">
+        Why this badgeholder selection method?
+      </div>
+      <ol class="list-disc ml-5 my-5">
+        <li>
+          <div class="font-medium">Learning from RetroPGF 2</div>
+          <div class="text-gray-600">
+            In <a
+              href="/history/retropgf-2"
+              class="text-[#ff1818] hover:underline">RetroPGF 2</a
+            >, we noticed something cool. When we allowed each badgeholder from
+            the previous round to choose a new badgeholder, it created a
+            super-committed and value-aligned group of voters. That's what we
+            want!
+          </div>
+        </li>
+        <li>
+          <div class="font-medium">Steering Clear of Centralization</div>
+          <div class="text-gray-600">
+            But here's the twist. Sometimes badgeholders tended to pass their
+            voting badges to their team members, which could lead to a bit too
+            much centralization. To keep things fair, we now have a rule that
+            stops badgeholders from picking their coworkers. We're all about
+            diversity!
+          </div>
+        </li>
+        <li>
+          <div class="font-medium">Top 50 Recipients Rock</div>
+          <div class="text-gray-600">
+            Those awesome <a
+              href="/archive"
+              target="_blank"
+              class="text-[#ff1818] hover:underline">top 50 recipients</a
+            > from RetroPGF round 2? They've shown they're totally on board with
+            Optimism's values, and they're committed to making RetroPGF a fair process.
+            We're even experimenting to see if getting a RetroPGF badge could be
+            a way to become a citizen in the future.
+          </div>
+        </li>
+        <li>
+          <div class="font-medium">Optimism Foundation's Role</div>
+          <div class="text-gray-600">
+            The Optimism Foundation has some badges to give away too, and
+            they're using the same cool criteria we mentioned earlier. But they
+            won't be involved in picking badgeholders or citizens in future
+            rounds.
+          </div>
+        </li>
+      </ol>
+      <div>
+        Remember, the criteria for citizenship may change in the future, and
+        it'll be decided by the community's governance. So, we're always
+        evolving and improving! Let's keep the RetroPGF spirit alive and make
+        this journey even more exciting together!
+      </div>
+      <div class="text-lg font-semibold my-4">
+        The Future of Becoming a Citizen
+      </div>
+      <div>
+        In the exciting future of the Optimism Collective, the responsibility
+        for selecting citizens will rest with our <a
+          href="https://gov.optimism.io/t/the-future-of-optimism-governance"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">two-house governance system</a
+        >. It's all about making sure that citizenship is earned based on the
+        <a
+          href="https://community.optimism.io/docs/identity/"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">reputation</a
+        > you build within our community.
+      </div>
+      <div class="mt-3">
+        But here's the best part: we want you, the badgeholders, and our amazing
+        community members, to be part of this decision-making process. We invite
+        you to join discussions about what reputation attributes (kind of like
+        endorsements) should be considered valuable when selecting future
+        citizens. You can share your thoughts and ideas in <a
+          href="https://gov.optimism.io/t/future-citizenship-selection-criteria/"
+          target="_blank"
+          class="text-[#ff1818] hover:underline">this thread</a
+        >.
+      </div>
+      <div class="mt-3">
+        By doing this, we're getting ready for the day when citizenship
+        selection will be in the hands of the Collective. It's all about making
+        sure the process is fair, transparent, and aligned with our collective
+        values.
+      </div>
+      <div
+        class="flex justify-center items-center w-full overflow-hidden my-10"
+      >
+        <img
+          src="/img/retropgf3_banner_3.png"
+          class="w-[50em] rounded-full"
+          alt="retropgf1"
+        />
       </div>
     </section>
   </div>
