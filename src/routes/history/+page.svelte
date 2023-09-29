@@ -1,8 +1,10 @@
 <script>
+  import Alertbar from '@/components/Alertbar.svelte'
   import Button from '@/components/History/Button.svelte'
   const round = ['Round 1', 'Round 2', 'Round 3']
 </script>
 
+<Alertbar />
 <div class="relative flex flex-col overflow-hidden md:h-fit">
   <div class="w-full min-h-[150px] lg:h-[12em] overflow-hidden">
     <img src="./img/history_banner_3.jpg" alt="OPBanner" class="w-full" />

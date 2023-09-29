@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Alertbar from '@/components/Alertbar.svelte'
   import { Axios } from '@/lib/axios'
   import { auth, githubProvider, googleProvider } from '@/lib/firebase'
   import { User } from '@/stores/User'
@@ -62,6 +63,7 @@
   }
 </script>
 
+<Alertbar />
 <div class="flex flex-col items-center justify-center">
   <div class="flex-grow">
     <div class="flex items-center justify-center">
