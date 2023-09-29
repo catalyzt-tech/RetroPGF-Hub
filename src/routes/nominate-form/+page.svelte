@@ -1,7 +1,9 @@
 <script>
+  import Alertbar from '@/components/Alertbar.svelte'
   import Form from '@/components/Nominate-Form/Form.svelte'
 </script>
 
+<Alertbar />
 <div class="mt-10">
   <div
     class="flex flex-row flex-wrap justify-center text-[40px] font-bold mb-2"

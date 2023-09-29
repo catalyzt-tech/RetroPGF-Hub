@@ -3,6 +3,7 @@
   import { browser } from '$app/environment'
   import CardRound1 from '@/components/Archive/CardRound1.svelte'
   import CardRound2 from '@/components/Archive/CardRound2.svelte'
+  import Alertbar from '@/components/Alertbar.svelte'
 
   interface ProjectDataRound1 {
     'Project Name': string
@@ -120,6 +121,7 @@
   }
 </script>
 
+<Alertbar />
 <div class="flex flex-col min-h-screen mb-10">
   {#if loading}
     <div class="flex flex-row justify-center font-bold text-3xl my-64">

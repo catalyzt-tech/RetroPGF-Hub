@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Alertbar from '@/components/Alertbar.svelte'
   import BigCard from '@/components/Projects/BigCard.svelte'
 
   let data = [
@@ -32,6 +33,7 @@
   ]
 </script>
 
+<Alertbar />
 <div>
   <div class="h-[10em] overflow-hidden">
     <img src="./img/retropgfcity.png" class="w-fit" alt="" />
