@@ -1,0 +1,11 @@
+{
+  "name": "Questbook",
+  "twitter": "https://twitter.com/questbookapp",
+  "github": "https://github.com/questbook",
+  "website": "https://questbook.app/",
+  "about": "Questbook is a decentralized grant management platform. The platform is open-sourced, on-chain, and deployed on Optimism. Using the tool, - Grant managers have facilitated grants worth $2.1M. - 1500+ Builders have applied for various grants, reported milestones and funding, and received feedback. - The entire lifecycle for every grant proposal is transparent for the community to view.",
+  "question_1": "Questbook has accelerated the growth of the Web3 ecosystem as well as the OP Stack by enabling protocols to give out grants to competent builders in a transparent manner, We are also pushing the boundaries on moving processes away from centralized servers to on-chain alternatives. All our data is stored on decentralized storage while all business logic is executed client-side or on-chain(OP).",
+  "question_2": "We’re a Series A YC Backed company, so we’re backed by venture capital. We have raised $9.2mn.",
+  "team": "We are a team of 20; 13 engineers, 7 design and growth.",
+  "OP Allocation": "1,014.56"
+}
