@@ -2,19 +2,30 @@
   import { onMount } from 'svelte'
   export let name: string
   export let category: string
-  let imageUrl: string = `data/retroPGF2-dataset/result_scrap/${name}/icon.jpg`
-  let bannerUrl: string = `data/retroPGF2-dataset/result_scrap/${name}/banner.jpg`
+  let imageUrl: string = `data/retroPGF2-dataset/each_project/${name}/icon.jpg`
+  let bannerUrl: string = `data/retroPGF2-dataset/each_project/${name}/banner.jpg`
   let description: string
   let totalop: number
+  let bannerExists: boolean = true
   onMount(async () => {
+    let bannerResponse = await fetch(bannerUrl)
+    if (bannerResponse.status !== 200) {
+      bannerExists = false
+      bannerUrl = `data/retroPGF2-dataset/each_project/${name}/icon.jpg`
+    }
     let respond = await fetch(
-      `data/retroPGF2-dataset/result_scrap/${name}/info.json`
+      `data/retroPGF2-dataset/each_project/${name}/info.json`
     )
+    console.log(name)
     let data = await respond.json()
-    description = data['description'] ?? 'Loading...'
-    totalop = data['totalop'] ?? 'Loading...'
-    console.log(description)
+    await console.log(data)
+    description = data['about'] ?? 'Loading...'
+    totalop = data['OP Allocation'] ?? 'Loading...'
   })
+
+  if (!bannerUrl) {
+    bannerUrl = `data/retroPGF2-dataset/each_project/${name}/icon.jpg`
+  }
 </script>
 
 <div
@@ -29,7 +40,12 @@
     </div>
   </div>
   <div class="bg-cover opacity-100 max-h-[5em] overflow-hidden">
-    <img src={bannerUrl} alt="banner_image" class="w-fit" loading="lazy" />
+    <img
+      src={bannerUrl ?? '/img/Optimism.png'}
+      alt="banner_image"
+      class="w-fit"
+      loading="lazy"
+    />
   </div>
   <div
     class="ml-3 relative mt-[-2.5em] z-0 overflow-hidden w-16 border-2 border-black rounded-lg"
