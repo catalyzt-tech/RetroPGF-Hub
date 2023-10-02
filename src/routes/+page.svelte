@@ -10,7 +10,7 @@
     class="flex justify-center items-center transform ease-in-out duration-700"
   >
     <img
-      src="img/sun.png"
+      src="img/retropgf_sun.svg"
       class="w-[10em] md:w-[15em] animate-pulse"
       alt="OP Sun"
     />

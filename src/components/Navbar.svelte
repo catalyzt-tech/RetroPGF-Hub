@@ -125,17 +125,17 @@
             </button></a
           >
           <a
-            class="{Page === 'nominate-form'
+            class="{Page === 'suggest-form'
               ? 'md:font-bold show-inset'
               : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
-            href="/nominate-form"
+            href="/suggest-form"
             ><button
               on:click={selectPage}
               type="button"
               category="nominate-form"
               class="flex items-center"
             >
-              Nominate
+              Suggest
             </button></a
           >
         </ul>
