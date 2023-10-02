@@ -1,5 +1,4 @@
 <script lang="ts">
-  import DetailCard from "@/components/Archive/DetailCard.svelte";
   import { onMount } from "svelte";
   export let data: any;
   const { detail } = data;
