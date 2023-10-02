@@ -1,9 +1,9 @@
 <script lang="ts">
   import { Axios } from "$lib/axios";
   import { onMount } from "svelte";
-  import type { ProjectReponse } from "@/types/Response";
+  import type { UserProjectReponse } from "@/types/Response";
 
-  let projects: ProjectReponse[] = [];
+  let projects: UserProjectReponse[] = [];
 
   onMount(async () => {
     try {

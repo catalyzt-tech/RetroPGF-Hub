@@ -1,36 +1,21 @@
 <script lang="ts">
   import Alertbar from '@/components/Alertbar.svelte'
   import BigCard from '@/components/Projects/BigCard.svelte'
+  import { Axios } from '@/lib/axios'
+  import { onMount } from 'svelte';
+  import type { ProjectResponse } from "@/types/Response";
 
-  let data = [
-    {
-      name: 'TokenUnlock',
-      desc: 'Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.',
-      img: 'img/test_logo.png',
-      tag: 'DeFi',
-      likeCount: 19,
-      dislikeCount: 2,
-      commentCount: 3,
-    },
-    {
-      name: 'TokenUnlock',
-      desc: 'Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.',
-      img: 'img/test_logo.png',
-      tag: 'Token',
-      likeCount: 19,
-      dislikeCount: 2,
-      commentCount: 3,
-    },
-    {
-      name: 'TokenUnlock',
-      desc: 'Token unlocks refer to the release of previously locked or restricted tokens into the market. These tokens become available for trading, buying, and selling after the end of their vesting period. The vesting period is the duration during which the tokens are restricted.',
-      img: 'img/test_logo.png',
-      tag: 'Unlock',
-      likeCount: 19,
-      dislikeCount: 2,
-      commentCount: 3,
-    },
-  ]
+  let projects: ProjectResponse[] = [];
+
+  onMount(async () => {
+    try {
+      const response = (await Axios.get("/api/projects")).data;
+      projects = response.data;
+      console.log(projects)
+    } catch (error) {
+      console.log(error);
+    }
+  });
 </script>
 
 <Alertbar />
@@ -52,14 +37,14 @@
       </div>
     </div>
     <div class="flex flex-wrap justify-center gap-x-6 gap-y-6">
-      {#each data as project}
+      {#each projects as project}
         <BigCard
           name={project.name}
-          desc={project.desc}
-          img={project.img}
-          tag={project.tag}
-          likeCount={project.likeCount}
-          commentCount={project.commentCount}
+          desc={project.description}
+          img={project.logo_url}
+          tag={project.category}
+          likeCount={project._count.Like}
+          commentCount={project._count.Comment}
         />
       {/each}
     </div>
