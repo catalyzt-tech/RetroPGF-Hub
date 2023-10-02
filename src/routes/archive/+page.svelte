@@ -97,9 +97,11 @@
   }
   const searchFilter = async (event: any) => {
     const message = event.target.value.toLowerCase().replace(/\s+/g, '')
+    itemsToShow = 20
     if (round === 'Round 2') {
       if (!message) {
         filteredProjects2 = await Data2
+        totalItems = filteredProjects2.length
       } else {
         filteredProjects2 = await Data2.filter((project: ProjectDataRound2) => {
           const projectName = project['Project Name'].toLowerCase()
@@ -110,6 +112,7 @@
     } else if (round === 'Round 1') {
       if (!message) {
         filteredProjects1 = await Data1
+        totalItems = filteredProjects1.length
       } else {
         filteredProjects1 = await Data1.filter((project: ProjectDataRound1) => {
           const projectName = project['Project Name'].toLowerCase()

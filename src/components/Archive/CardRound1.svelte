@@ -18,11 +18,11 @@
     <div class="w-5 inline-flex align-[-33%]">
       <img alt="$" src="/img/usd_coin.png" />
     </div>
-    {data?.allocation ?? 'Loading...'}
+    {data?.allocation != "" ? data?.allocation : '0'}
   </div>
 
   <h1 class="mt-10 font-bold pt-3 pl-3 pb-2 text-[20px]">
-    <a href="/archive/{name}">{name}</a>
+    <a href="/archive/round1/{name}">{name}</a>
   </h1>
   <div class="px-3 max-h-32">
     {#if data}

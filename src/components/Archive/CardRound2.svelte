@@ -59,7 +59,7 @@
   </div>
 
   <h1 class="font-bold pt-3 pl-3 pb-2 text-[20px]">
-    <a href="/archive/{name}">{name}</a>
+    <a href="/archive/round2/{name}">{name}</a>
   </h1>
   <div class="px-3 max-h-32">
     <p class=" line-clamp-3 text-sm">{description}</p>
