@@ -13,7 +13,7 @@
   console.log(detail['OP Allocation'])
 </script>
 
-<div class="flex justify-center w-screen">
+<div class="flex justify-center w-screen bg-white">
   <div
     class=" relative overflow-hidden border-2 rounded-2xl border-black w-[55em] m-6 lg:m-20 shadow-xl"
   >
@@ -81,7 +81,7 @@
       </div>
       <div class=" font-bold mt-4 lg:mt-40 text-lg">About the project</div>
       <div class="mt-1 mb-5 text-[#616161]">{detail?.about}</div>
-      <div class=" font-bold text-lg">Funding allocation</div>
+      <div class=" font-bold text-lg">RetroPGF Received</div>
       <div class="mt-1 mb-5 text-[#616161]">{detail['OP Allocation']} OP</div>
       <div class="font-bold text-lg">
         How do you support development and usage of the OP Stack? What public
