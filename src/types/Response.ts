@@ -7,8 +7,8 @@ export type UserResponse = {
     last_name?: string;
 }
 
-export type ProjectReponse = {
-    id: string
+export type UserProjectReponse = {
+    id: string;
     name: string;
     logo_url: string;
     banner_url: string;
@@ -20,4 +20,14 @@ export type ProjectReponse = {
     contact: string;
     create_by: string;
     create_at: string;
+}
+
+export type ProjectResponse = {
+    id: string;
+    name: string;
+    logo_url: string;
+    category: string;
+    crypto_category: string;
+    description: string;
+    _count: { Comment: number, Like: number }
 }
