@@ -48,7 +48,7 @@
     data.logo_url = (await uploadFile(logoFile, "project_logo")) ?? "";
     data.banner_url = (await uploadFile(bannerFile, "project_banner")) ?? "";
 
-    Axios.post("/api/projects", data).catch((err) => console.log(err));
+    Axios.post("/api/projects", data).then(()=> console.log("success")).catch((err) => console.log(err));
   };
 </script>
 
