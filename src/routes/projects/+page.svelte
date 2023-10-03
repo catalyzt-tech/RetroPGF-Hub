@@ -6,6 +6,12 @@
   import type { ProjectResponse } from "@/types/Response";
 
   let projects: ProjectResponse[] = [];
+  let localLike = 0;
+
+  const onLike = async (id: string) => {
+    await Axios.post(`/api/projects/${id}/like`);
+    localLike += 1;
+  }
 
   onMount(async () => {
     try {
@@ -43,7 +49,8 @@
           desc={project.description}
           img={project.logo_url}
           tag={project.category}
-          likeCount={project._count.Like}
+          likeCount={project._count.Like + localLike}
+          onLike={() => onLike(project.id)}
           commentCount={project._count.Comment}
         />
       {/each}
