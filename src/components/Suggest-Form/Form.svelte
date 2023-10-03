@@ -168,10 +168,10 @@
           required
         >
           <option value="" disabled selected>Select Category</option>
-          <option value="opstack">OP Stack</option>
-          <option value="collectivegovernance">Collective Governance</option>
-          <option value="developerecosystem">Developer Ecosystem</option>
-          <option value="enduserexperienceandadoption"
+          <option value="OP Stack">OP Stack</option>
+          <option value="Collective Governance">Collective Governance</option>
+          <option value="Developer Ecosystem">Developer Ecosystem</option>
+          <option value="End User Experience & Adoption"
             >End User Experience & Adoption</option
           >
         </select>
