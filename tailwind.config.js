@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
-      rubik: ['Rubik', 'sans-serif'],
+      colors: {
+        retro: "#FF0000",
+      },
+      rubik: ["Rubik", "sans-serif"],
     },
   },
   plugins: [],
-}
+};
