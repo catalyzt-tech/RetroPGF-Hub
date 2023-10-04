@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Alertbar from '@/components/Alertbar.svelte'
-  import BigCard from '@/components/Projects/BigCard.svelte'
-  import { Axios } from '@/lib/axios'
-  import { onMount } from 'svelte';
+  import Alertbar from "@/components/Alertbar.svelte";
+  import BigCard from "@/components/Projects/BigCard.svelte";
+  import { Axios } from "@/lib/axios";
+  import { onMount } from "svelte";
   import type { ProjectResponse } from "@/types/Response";
 
   let projects: ProjectResponse[] = [];
@@ -11,13 +11,13 @@
   const onLike = async (id: string) => {
     await Axios.post(`/api/projects/${id}/like`);
     localLike += 1;
-  }
+  };
 
   onMount(async () => {
     try {
       const response = (await Axios.get("/api/projects")).data;
       projects = response.data;
-      console.log(projects)
+      console.log(projects);
     } catch (error) {
       console.log(error);
     }
@@ -45,6 +45,7 @@
     <div class="flex flex-wrap justify-center gap-x-6 gap-y-6">
       {#each projects as project}
         <BigCard
+          id={project.id}
           name={project.name}
           desc={project.description}
           img={project.logo_url}
