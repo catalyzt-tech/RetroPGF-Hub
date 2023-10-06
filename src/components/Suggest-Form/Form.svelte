@@ -1,61 +1,61 @@
 <script lang="ts">
-  import { browser } from "$app/environment";
-  import { goto } from "$app/navigation";
-  import { Axios } from "@/lib/axios";
-  import { uploadFile } from "@/lib/uploadFile";
+  import { browser } from '$app/environment'
+  import { goto } from '$app/navigation'
+  import { Axios } from '@/lib/axios'
+  import { uploadFile } from '@/lib/uploadFile'
 
   const dynamicHeight = (event: any) => {
     if (browser) {
-      const textarea: any = event.target;
-      textarea.style.height = "auto";
-      textarea.style.height = textarea.scrollHeight + "px";
+      const textarea: any = event.target
+      textarea.style.height = 'auto'
+      textarea.style.height = textarea.scrollHeight + 'px'
     }
-  };
+  }
 
   let categories = [
-    { value: "defi", name: "DeFi" },
-    { value: "nft", name: "NTF" },
-    { value: "bridge", name: "Bridge" },
-    { value: "wallet", name: "Wallet" },
-    { value: "portfolio-tracker", name: "Portfolio Tracker" },
-    { value: "dao", name: "DAO" },
-    { value: "on-ramp", name: "On-ramp" },
-  ];
+    { value: 'defi', name: 'DeFi' },
+    { value: 'nft', name: 'NTF' },
+    { value: 'bridge', name: 'Bridge' },
+    { value: 'wallet', name: 'Wallet' },
+    { value: 'portfolio-tracker', name: 'Portfolio Tracker' },
+    { value: 'dao', name: 'DAO' },
+    { value: 'on-ramp', name: 'On-ramp' },
+  ]
 
-  let logoFile: File;
-  let bannerFile: File;
+  let logoFile: File
+  let bannerFile: File
 
   let data = {
-    name: "",
-    logo_url: "",
-    banner_url: "",
-    website_url: "",
-    crypto_category: "",
-    description: "",
-    reason: "",
-    category: "",
-    contact: "",
-  };
+    name: '',
+    logo_url: '',
+    banner_url: '',
+    website_url: '',
+    crypto_category: '',
+    description: '',
+    reason: '',
+    category: '',
+    contact: '',
+  }
 
-  let loading = false;
+  let loading = false
   const onFileSelected = (e: any, fileType: string) => {
-    if (fileType === "logoFile") {
-      logoFile = e.target.files[0];
+    if (fileType === 'logoFile') {
+      logoFile = e.target.files[0]
     }
-    if (fileType === "bannerFile") {
-      bannerFile = e.target.files[0];
+    if (fileType === 'bannerFile') {
+      bannerFile = e.target.files[0]
     }
-  };
+  }
 
   const onSubmit = async () => {
-    loading = true;
-    data.logo_url = (await uploadFile(logoFile, "project_logo")) ?? "";
-    data.banner_url = (await uploadFile(bannerFile, "project_banner")) ?? "";
+    loading = true
+    data.logo_url = (await uploadFile(logoFile, 'project_logo')) ?? ''
+    data.banner_url = (await uploadFile(bannerFile, 'project_banner')) ?? ''
 
-    Axios.post("/api/projects", data)
-      .then(() => goto("/projects"))
-      .catch((err) => console.log(err));
-  };
+    Axios.post('/api/projects', data)
+      .then(() => goto('/projects'))
+      .catch((err) => console.log(err))
+  }
 </script>
 
 <div class="flex justify-center">
@@ -73,7 +73,7 @@
           name="name"
           bind:value={data.name}
           placeholder="Example Project"
-          class="bg-white p-4 my-5 rounded-md text-sm w-full"
+          class="bg-gray-100 p-4 my-5 rounded-md text-sm w-full"
           required
         />
       </div>
@@ -85,9 +85,9 @@
       <div>
         <input
           type="file"
-          on:change={(e) => onFileSelected(e, "logoFile")}
+          on:change={(e) => onFileSelected(e, 'logoFile')}
           accept="image/png,image/jpeg"
-          class="bg-white p-4 my-5 rounded-md text-sm"
+          class="bg-gray-100 p-4 my-5 rounded-md text-sm"
         />
       </div></label
     >
@@ -98,9 +98,9 @@
       <div>
         <input
           type="file"
-          on:change={(e) => onFileSelected(e, "bannerFile")}
+          on:change={(e) => onFileSelected(e, 'bannerFile')}
           accept="image/png,image/jpeg"
-          class="bg-white p-4 my-5 rounded-md text-sm"
+          class="bg-gray-100 p-4 my-5 rounded-md text-sm"
         />
       </div></label
     >
@@ -112,7 +112,7 @@
         <input
           type="url"
           bind:value={data.website_url}
-          class="bg-white p-4 my-5 rounded-md text-sm w-full"
+          class="bg-gray-100 p-4 my-5 rounded-md text-sm w-full"
           placeholder="https://example.project.com"
           required
         />
@@ -146,7 +146,7 @@
         <textarea
           on:input={dynamicHeight}
           bind:value={data.description}
-          class="bg-white p-4 my-5 rounded-md text-sm w-full resize-none max-h-32"
+          class="bg-gray-100 p-4 my-5 rounded-md text-sm w-full resize-none max-h-32"
           placeholder="Please describe your project in few sentences or passage."
           required
         />
@@ -161,7 +161,7 @@
         <textarea
           on:input={dynamicHeight}
           bind:value={data.reason}
-          class="bg-white p-4 my-5 rounded-md text-sm w-full resize-none max-h-32"
+          class="bg-gray-100 p-4 my-5 rounded-md text-sm w-full resize-none max-h-32"
           placeholder="Please describe how this project has contributed to the development and adoption of Optimism."
           required
         />
@@ -194,7 +194,7 @@
       <div>
         <input
           type="text"
-          class="bg-white p-4 my-5 rounded-md text-sm w-full"
+          class="bg-gray-100 p-4 my-5 rounded-md text-sm w-full"
           placeholder="Please describe why you think this project be suited for this category."
         />
       </div></label
@@ -207,7 +207,7 @@
         <input
           type="text"
           bind:value={data.contact}
-          class="bg-white p-4 my-5 rounded-md text-sm w-full"
+          class="bg-gray-100 p-4 my-5 rounded-md text-sm w-full"
           placeholder="Please provide a contact method of project or project lead."
           required
         />
