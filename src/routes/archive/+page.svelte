@@ -122,6 +122,13 @@
       }
     }
   }
+
+  const sortFilter = async (event: any) => {
+    let select = event.target.value
+    if (select === 'LowtoHigh') {
+      filteredProjects2 = await Data2
+    }
+  }
 </script>
 
 <Alertbar />
@@ -214,11 +221,20 @@
           {/if}
           <select
             on:change={changeRound}
-            class="px-2 my-2 h-10 border-2 border-black rounded-lg"
+            class="px-2 my-2 mr-3 h-10 border-2 border-black rounded-lg"
           >
             <option disabled>-- Select --</option>
             <option value="Round 1">Round 1</option>
             <option selected value="Round 2">Round 2</option>
+          </select>
+          <select
+            on:change={sortFilter}
+            class="px-2 my-2 h-10 border-2 border-black rounded-lg"
+          >
+            <option disabled>-- Filter Sort --</option>
+            <option value="LowtoHigh">OP Received (Low to high)</option>
+            <option value="HightoLow">OP Received (High to low)</option>
+            <option value="AtoZ">Project Name (A to Z)</option>
           </select>
         </div>
       </div>
