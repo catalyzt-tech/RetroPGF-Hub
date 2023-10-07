@@ -1,66 +1,74 @@
 <script lang="ts">
-  import Alertbar from '@/components/Alertbar.svelte'
-  import { Axios } from '@/lib/axios'
-  import { auth, githubProvider, googleProvider } from '@/lib/firebase'
-  import { User } from '@/stores/User'
+  import Alertbar from "@/components/Alertbar.svelte";
+  import { Axios } from "@/lib/axios";
+  import { auth, githubProvider, googleProvider } from "@/lib/firebase";
+  import { User } from "@/stores/User";
   import {
     GithubAuthProvider,
     GoogleAuthProvider,
     signInWithEmailAndPassword,
     signInWithPopup,
-  } from 'firebase/auth'
-  import { onMount } from 'svelte'
+  } from "firebase/auth";
+  import { onMount } from "svelte";
 
-  let email: any = ''
-  let password: any = ''
+  let email: any = "";
+  let password: any = "";
 
-  onMount(() => {
+  onMount(async () => {
     // check if user is login
     // * But Its not work *
-    console.log($User)
-    if ($User) window.location.pathname = '/'
-  })
+    try {
+      const response = await Axios.get("/api/users");
+      if (response.status === 200) {
+        $User = response.data.data;
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
+    if ($User) window.location.pathname = "/";
+  });
 
   const handleLogin = async (
     provider: GoogleAuthProvider | GithubAuthProvider
   ) => {
-    const result = await signInWithPopup(auth, provider)
-    const idToken = await result.user.getIdToken()
+    const result = await signInWithPopup(auth, provider);
+    const idToken = await result.user.getIdToken();
 
     Axios.post(
-      '/api/users/login',
+      "/api/users/login",
       {},
       {
-        headers: { 'id-token': idToken },
+        headers: { "id-token": idToken },
       }
     )
       .then((response) => {
-        if (response.status === 200 || 201) window.location.pathname = '/'
-        else console.log('Err')
+        if (response.status === 200 || 201) window.location.pathname = "/";
+        else console.log("Err");
       })
       .catch((err) => {
-        console.log(err)
-      })
-  }
+        console.log(err);
+      });
+  };
   const handlePasswordLogin = async () => {
-    const result = await signInWithEmailAndPassword(auth, email, password) //create user before login : Use createUserWithEmailAndPassword()
-    const idToken = await result.user.getIdToken()
+    const result = await signInWithEmailAndPassword(auth, email, password); //create user before login : Use createUserWithEmailAndPassword()
+    const idToken = await result.user.getIdToken();
 
     Axios.post(
-      '/api/users/login',
+      "/api/users/login",
       {},
       {
-        headers: { 'id-token': idToken },
+        headers: { "id-token": idToken },
       }
     )
       .then((response) => {
-        if (response.status === 200 || 201) window.location.pathname = '/'
-        else console.log('Err')
+        if (response.status === 200 || 201) window.location.pathname = "/";
+        else console.log("Err");
       })
       .catch((err) => {
-        console.log(err)
-      })
-  }
+        console.log(err);
+      });
+  };
 </script>
 
 <Alertbar />
