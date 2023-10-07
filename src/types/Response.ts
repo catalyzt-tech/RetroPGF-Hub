@@ -22,6 +22,13 @@ export type UserProjectReponse = {
     create_at: string;
 }
 
+export type UserLikeProjectResponse = {
+    id: number
+    user_id: string
+    project_id: string
+    create_at: string
+}
+
 export type ProjectResponse = {
     id: string;
     name: string;

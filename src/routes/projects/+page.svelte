@@ -3,21 +3,25 @@
   import BigCard from "@/components/Projects/BigCard.svelte";
   import { Axios } from "@/lib/axios";
   import { onMount } from "svelte";
-  import type { ProjectResponse } from "@/types/Response";
+  import { User } from "@/stores/User";
+  import type {
+    ProjectResponse,
+    UserLikeProjectResponse,
+  } from "@/types/Response";
 
   let projects: ProjectResponse[] = [];
-  let localLike = 0;
-
-  const onLike = async (id: string) => {
-    await Axios.post(`/api/projects/${id}/like`);
-    localLike += 1;
-  };
+  let userLike: UserLikeProjectResponse[] = [];
 
   onMount(async () => {
     try {
       const response = (await Axios.get("/api/projects")).data;
       projects = response.data;
       console.log(projects);
+      if ($User) {
+        await Axios.get("/api/users/favorites").then((res) => {
+          userLike = res.data.data;
+        });
+      }
     } catch (error) {
       console.log(error);
     }
@@ -50,8 +54,8 @@
           desc={project.description}
           img={project.logo_url}
           tag={project.category}
-          likeCount={project._count.Like + localLike}
-          onLike={() => onLike(project.id)}
+          likeCount={project._count.Like}
+          isLike={userLike.some((like) => like.project_id == project.id)}
           commentCount={project._count.Comment}
         />
       {/each}
