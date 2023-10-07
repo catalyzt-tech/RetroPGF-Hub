@@ -74,7 +74,6 @@
     <!-- component -->
     <div class="antialiased mx-10 mb-6 w-fit">
       <h3 class="mb-4 text-lg font-bold">Comments</h3>
-
       <div class="space-y-4">
         <div class="flex">
           <div class="flex-shrink-0 mr-3">
@@ -97,8 +96,50 @@
           </div>
         </div>
 
-        
+        <div class="flex">
+          <div class="flex-shrink-0 mr-3">
+            <img
+              class="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10"
+              src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex-1 border rounded-lg w-full px-4 py-2 sm:px-6 sm:py-4 leading-relaxed"
+          >
+            <strong>Sarah</strong>
+            <span class="text-xs text-gray-400">3:34 PM</span>
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <form class="bg-white rounded-lg mx-10 mb-6">
+      <div class="flex flex-wrap">
+        <h2 class="text-gray-800">Add a new comment</h2>
+        <div class="w-full md:w-full mb-2 mt-2">
+          <textarea
+            class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 placeholder-gray-700 focus:outline-none focus:bg-white"
+            name="body"
+            placeholder="Type Your Comment"
+            required
+          />
+        </div>
+        <div class="w-full flex justify-end">
+          <div class="mr-0">
+            <input
+              type="submit"
+              class="bg-gray-900 font-normal text-white py-2 px-6 rounded-[1em] transition ease-in-out hover:bg-red-500 duration-200"
+              value="Post Comment"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
