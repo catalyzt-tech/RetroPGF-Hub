@@ -1,24 +1,46 @@
 <script lang="ts">
+  import { Axios } from "@/lib/axios";
+
   export let id: string;
   export let name: string;
   export let desc: string;
   export let img: string;
   export let tag: string;
   export let likeCount: number;
+  export let isLike: boolean;
   export let commentCount: number;
-  export let onLike: () => void;
+
+  const onLike = async (id: string) => {
+    if (!isLike) {
+      await Axios.post(`/api/projects/${id}/like`)
+        .then((res) => console.log(res.status))
+        .catch((err) => (window.location.pathname = "/login"));
+      likeCount += 1;
+    }
+    if (isLike) {
+      await Axios.post(`/api/projects/${id}/unlike`)
+        .then((res) => console.log(res.status))
+        .catch((err) => (window.location.pathname = "/login"));
+      likeCount -= 1;
+    }
+    isLike = !isLike;
+  };
 </script>
 
 <div
   class="border border-black rounded-3xl p-5 lg:p-6 flex justify-between items-center flex-wrap lg:flex-nowrap w-80 lg:w-[450px] shadow-xl"
 >
-  <a href={"/projects/" + id} class="lg:w-1/2 aspect-square overflow-hidden rounded-xl">
+  <a
+    href={"/projects/" + id}
+    class="lg:w-1/2 aspect-square overflow-hidden rounded-xl"
+  >
     <img loading="lazy" src={img} class="w-full" alt="Logo" />
   </a>
 
   <div class="flex flex-col justify-between lg:ml-5 lg:h-full lg:w-1/2">
     <div class="flex flex-col my-3 lg:my-0">
-      <a href={"projects/" + id} class="text-2xl lg:text-xl font-bold">{name}</a>
+      <a href={"projects/" + id} class="text-2xl lg:text-xl font-bold">{name}</a
+      >
       <div class="my-3">
         <div class="line-clamp-3 lg:line-clamp-4 text-sm">
           {desc}
@@ -36,10 +58,13 @@
       </div>
     </div>
     <div class="flex gap-x-5 items-center mt-2">
+      <!-- Like button -->
       <div class="flex flex-nowrap gap-2">
-        <button on:click={onLike}>
+        <button on:click={() => onLike(id)}>
           <svg
-            class="w-6 opacity-80 hover:fill-red-500"
+            class={isLike
+              ? "w-6 opacity-80 fill-red-500"
+              : "w-6 opacity-80 hover:fill-red-500"}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
             ><path
@@ -49,6 +74,7 @@
         </button>
         <div>{likeCount}</div>
       </div>
+      <!-- Comment -->
       <div class="flex flex-nowrap gap-2">
         <svg
           class="w-6 opacity-80 hover:fill-red-500"
