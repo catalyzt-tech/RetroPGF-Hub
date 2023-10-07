@@ -12,13 +12,13 @@
 <div
   class="border border-black rounded-3xl p-5 lg:p-6 flex justify-between items-center flex-wrap lg:flex-nowrap w-80 lg:w-[450px] shadow-xl"
 >
-  <div class="lg:w-1/2 aspect-square overflow-hidden rounded-xl">
+  <a href={"/projects/" + id} class="lg:w-1/2 aspect-square overflow-hidden rounded-xl">
     <img loading="lazy" src={img} class="w-full" alt="Logo" />
-  </div>
+  </a>
 
   <div class="flex flex-col justify-between lg:ml-5 lg:h-full lg:w-1/2">
     <div class="flex flex-col my-3 lg:my-0">
-      <div class="text-2xl lg:text-xl font-bold">{name}</div>
+      <a href={"projects/" + id} class="text-2xl lg:text-xl font-bold">{name}</a>
       <div class="my-3">
         <div class="line-clamp-3 lg:line-clamp-4 text-sm">
           {desc}

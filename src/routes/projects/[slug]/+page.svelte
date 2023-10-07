@@ -1,10 +1,17 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  export let data: any;
-  const { detail } = data;
+  import DetailCard from '@/components/Projects/DetailCard.svelte'
+
+  export let data;
+  let detail = data;
+
   let loading = true;
+
   onMount(async () => {
-    loading = !detail ? true : false;
+    console.log(detail)
+    if(detail) {
+      loading = false;
+    }
   });
 </script>
 
@@ -15,7 +22,7 @@
     </div>
   {:else}
     <div>
-      <!-- to do: copy detailCard then parse here -->
+      <div><DetailCard {detail} /></div>
     </div>
   {/if}
 </div>
