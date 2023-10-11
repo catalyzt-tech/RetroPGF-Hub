@@ -2,6 +2,7 @@
   import { browser } from '$app/environment'
   import { goto } from '$app/navigation'
   import { Axios } from '@/lib/axios'
+  import { User } from "@/stores/User";
   import { uploadFile } from '@/lib/uploadFile'
 
   const dynamicHeight = (event: any) => {
@@ -50,6 +51,8 @@
   }
 
   const onSubmit = async () => {
+    if (!$User) window.location.pathname = "/login";
+    
     loading = true
     data.logo_url = (await uploadFile(logoFile, 'project_logo')) ?? ''
     data.banner_url = (await uploadFile(bannerFile, 'project_banner')) ?? ''
