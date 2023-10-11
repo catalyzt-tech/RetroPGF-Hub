@@ -83,7 +83,7 @@
       title="For Creators"
       desc="Empower Your Vision: Embrace Possibilities on RetroPGF Hub. Refine your ideas, Getting support from the pros."
       buttonText="Nominate"
-      buttonPath="/nominate-form"
+      buttonPath="/suggest-form"
     />
   </div>
   <div>
