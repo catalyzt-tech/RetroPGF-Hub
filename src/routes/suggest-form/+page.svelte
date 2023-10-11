@@ -1,6 +1,7 @@
 <script>
   import Alertbar from '@/components/Alertbar.svelte'
   import Form from '@/components/Suggest-Form/Form.svelte'
+  import { User } from '@/stores/User'
 </script>
 
 <Alertbar />
@@ -20,5 +21,12 @@
       are notified to sign up for RetroPGF 3
     </div>
   </div>
-  <Form />
+  {#if $User}
+    <Form />
+  {:else}
+    <div class="my-10 font-medium text-xl text-center">
+      Please <a href="/login" class="underline hover:text-red-600">login</a> first
+      before fill the form
+    </div>
+  {/if}
 </div>
