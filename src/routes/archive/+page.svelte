@@ -125,8 +125,85 @@
 
   const sortFilter = async (event: any) => {
     let select = event.target.value
-    if (select === 'LowtoHigh') {
-      filteredProjects2 = await Data2
+    console.log('Select:', select)
+    if (round === 'Round 2') {
+      if (select === 'LowtoHigh') {
+        filteredProjects2 = await Data2.slice().sort((a, b): number => {
+          const numA = parseFloat(a['OP Received'].replace(/,/g, ''))
+          const numB = parseFloat(b['OP Received'].replace(/,/g, ''))
+          return numA - numB
+        })
+      } else if (select === 'HightoLow') {
+        filteredProjects2 = await Data2.slice().sort((a, b): number => {
+          const numA = parseFloat(a['OP Received'].replace(/,/g, ''))
+          const numB = parseFloat(b['OP Received'].replace(/,/g, ''))
+          return numB - numA
+        })
+      } else if (select === 'AtoZ') {
+        filteredProjects2 = await Data2.sort((a, b) => {
+          const nameA = a['Project Name'].toUpperCase()
+          const nameB = b['Project Name'].toUpperCase()
+          if (nameA < nameB) {
+            return -1
+          }
+          if (nameA > nameB) {
+            return 1
+          }
+          return 0
+        })
+      } else if (select === 'ZtoA') {
+        filteredProjects2 = await Data2.sort((a, b) => {
+          const nameA = a['Project Name'].toUpperCase()
+          const nameB = b['Project Name'].toUpperCase()
+          if (nameA > nameB) {
+            return -1
+          }
+          if (nameA < nameB) {
+            return 1
+          }
+          return 0
+        })
+      }
+      console.log('Filtered Projects:', filteredProjects2)
+    } else if (round === 'Round 1') {
+      if (select === 'LowtoHigh') {
+        filteredProjects1 = await Data1.slice().sort((a, b): number => {
+          const numA = parseFloat(a.allocation.replace(/,/g, ''))
+          const numB = parseFloat(b.allocation.replace(/,/g, ''))
+          return numA - numB
+        })
+      } else if (select === 'HightoLow') {
+        filteredProjects1 = await Data1.slice().sort((a, b): number => {
+          const numA = parseFloat(a.allocation.replace(/,/g, ''))
+          const numB = parseFloat(b.allocation.replace(/,/g, ''))
+          return numB - numA
+        })
+      } else if (select === 'AtoZ') {
+        filteredProjects1 = await Data1.sort((a, b) => {
+          const nameA = a['Project Name'].toUpperCase()
+          const nameB = b['Project Name'].toUpperCase()
+          if (nameA < nameB) {
+            return -1
+          }
+          if (nameA > nameB) {
+            return 1
+          }
+          return 0
+        })
+      } else if (select === 'ZtoA') {
+        filteredProjects1 = await Data1.sort((a, b) => {
+          const nameA = a['Project Name'].toUpperCase()
+          const nameB = b['Project Name'].toUpperCase()
+          if (nameA > nameB) {
+            return -1
+          }
+          if (nameA < nameB) {
+            return 1
+          }
+          return 0
+        })
+      }
+      console.log('Filtered Projects:', filteredProjects1)
     }
   }
 </script>
@@ -227,15 +304,33 @@
             <option value="Round 1">Round 1</option>
             <option selected value="Round 2">Round 2</option>
           </select>
-          <select
-            on:change={sortFilter}
-            class="px-2 my-2 h-10 border-2 border-black rounded-lg"
-          >
-            <option disabled>-- Filter Sort --</option>
-            <option value="LowtoHigh">OP Received (Low to high)</option>
-            <option value="HightoLow">OP Received (High to low)</option>
-            <option value="AtoZ">Project Name (A to Z)</option>
-          </select>
+          {#if round === 'Round 2'}
+            <select
+              on:change={sortFilter}
+              class="px-2 my-2 h-10 border-2 border-black rounded-lg"
+            >
+              <option disabled>-- Filter Sort --</option>
+              <option value="LowtoHigh">OP Received (Low to high)</option>
+              <option value="HightoLow" selected
+                >OP Received (High to low)</option
+              >
+              <option value="AtoZ">Project Name (A to Z)</option>
+              <option value="ZtoA">Project Name (Z to A)</option>
+            </select>
+          {:else}
+            <select
+              on:change={sortFilter}
+              class="px-2 my-2 h-10 border-2 border-black rounded-lg"
+            >
+              <option disabled>-- Filter Sort --</option>
+              <option value="LowtoHigh">USD Received (Low to high)</option>
+              <option value="HightoLow" selected
+                >USD Received (High to low)</option
+              >
+              <option value="AtoZ">Project Name (A to Z)</option>
+              <option value="ZtoA">Project Name (Z to A)</option>
+            </select>
+          {/if}
         </div>
       </div>
     </div>

@@ -16,9 +16,9 @@
     let respond = await fetch(
       `data/retroPGF2-dataset/each_project/${name}/info.json`
     )
-    console.log(name)
+    // console.log(name)
     let data = await respond.json()
-    await console.log(data)
+    // await console.log(data)
     description = data['about'] ?? 'Loading...'
     totalop = data['OP Allocation'] ?? 'Loading...'
   })
