@@ -13,6 +13,8 @@
   }
 
   let categories = [
+    { value: 'infrastructure', name: 'Infrastructure' },
+    { value: 'tool', name: 'Tool' },
     { value: 'defi', name: 'DeFi' },
     { value: 'nft', name: 'NTF' },
     { value: 'bridge', name: 'Bridge' },
