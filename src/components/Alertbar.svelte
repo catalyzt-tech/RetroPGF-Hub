@@ -1,4 +1,4 @@
-<div class=" bg-[#f03b3b] text-white text-center py-3 text-sm">
+<div class=" bg-[#f03b3b] text-white text-center py-3 px-8 text-sm">
   <div class="font-medium">
     RetroPGF3 Application is now open! <a
       class="font-medium underline"
