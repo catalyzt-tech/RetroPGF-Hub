@@ -20,6 +20,12 @@ dependencies:
   firebase:
     specifier: ^10.3.1
     version: 10.3.1
+  grid.js:
+    specifier: ^1.0.0
+    version: 1.0.0
+  gridjs:
+    specifier: ^6.0.6
+    version: 6.0.6
   nanoid:
     specifier: ^4.0.2
     version: 4.0.2
@@ -1441,6 +1447,16 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: true
 
+  /grid.js@1.0.0:
+    resolution: {integrity: sha512-jC8ylOuQyYv62Fu1aLGk2mM7gg2dFYdsM9+d/+oLZPdECy/GN2GGEYXpKQs4SFcCJFF26Xnr2bjQQwsEr2ZlNw==}
+    dev: false
+
+  /gridjs@6.0.6:
+    resolution: {integrity: sha512-TZ20nY+weE/wlyXOd3A9FJyJlsJ/MrHr6frMgUHFN29RmWZCYtnyfF0zuspXC81oePwSJeSZ8HY651aeyX8+rQ==}
+    dependencies:
+      preact: 10.18.1
+    dev: false
+
   /has@1.0.3:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
     engines: {node: '>= 0.4.0'}
@@ -1827,6 +1843,10 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
+
+  /preact@10.18.1:
+    resolution: {integrity: sha512-mKUD7RRkQQM6s7Rkmi7IFkoEHjuFqRQUaXamO61E6Nn7vqF/bo7EZCmSyrUnp2UWHw0O7XjZ2eeXis+m7tf4lg==}
+    dev: false
 
   /protobufjs@7.2.5:
     resolution: {integrity: sha512-gGXRSXvxQ7UiPgfw8gevrfRWcTlSbOFg+p/N+JVJEK5VhueL2miT6qTymqAmjr1Q5WbOCyJbyrk6JfWKwlFn6A==}
