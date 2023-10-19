@@ -22,33 +22,6 @@
       },
       options: {
         maintainAspectRatio: false,
-        scales: {
-          y: {
-            beginAtZero: true,
-            title: {
-              display: true,
-              text: 'Projects',
-              font: {
-                size: 14,
-                weight: 'bold',
-              },
-            },
-          },
-          x: {
-            title: {
-              display: true,
-              text: 'Categories',
-              font: {
-                size: 14,
-                weight: 'bold',
-              },
-            },
-            ticks: {
-              maxRotation: 0,
-              minRotation: 0,
-            },
-          },
-        },
       },
     })
   })

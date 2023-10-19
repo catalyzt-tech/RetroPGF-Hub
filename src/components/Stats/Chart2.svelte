@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte'
   import Chart from 'chart.js/auto'
-  let data = [43, 42, 70]
+  let data = [43, 82, 70]
   onMount(() => {
     const ctx = document.getElementById('2').getContext('2d')
     const chart = new Chart(ctx, {
@@ -14,15 +14,20 @@
         ],
         datasets: [
           {
-            label: ['Categories'],
+            label: 'Category',
             backgroundColor: ['#ff1818', '#000000', '#FFC300', '#FF8C4F'],
             data: data,
           },
         ],
       },
       options: {
-        indexAxis: 'y',
+        indexAxis: 'x',
         maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
         scales: {
           y: {
             beginAtZero: true,
@@ -47,15 +52,6 @@
               maxRotation: 0,
               minRotation: 0,
             },
-          },
-        },
-        plugins: {
-          legend: {
-            display: false,
-          },
-          title: {
-            display: true,
-            text: 'Nominated Projects By Categories',
           },
         },
       },
