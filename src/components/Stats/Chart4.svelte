@@ -75,4 +75,4 @@
   })
 </script>
 
-<div><canvas id="4" width="1200" height="400" /></div>
+<div class="w-[35em] h-[20em]"><canvas id="4" /></div>
