@@ -4,6 +4,7 @@
   import Chart2 from '@/components/Stats/Chart2.svelte'
   import Chart3 from '@/components/Stats/Chart3.svelte'
   import Chart4 from '@/components/Stats/Chart4.svelte'
+  import Chart5 from '@/components/Stats/Chart5.svelte'
 </script>
 
 <Alertbar />
@@ -11,7 +12,7 @@
   <img src="./img/opsun_rise2.png" class="w-fit" alt="" />
 </div>
 <div class="mt-10">
-  <div class="px-64">
+  <div class="px-12 sm:px-20 md:px-32 lg:px-64">
     <div
       class="flex flex-row flex-wrap justify-center text-[40px] font-bold mb-2"
     >
@@ -33,7 +34,7 @@
       for all.
     </div>
     <div
-      class="flex flex-row flex-wrap justify-between items-center space-y-10"
+      class="flex flex-row flex-wrap flex-grow justify-between items-center space-y-10"
     >
       <div class="border-2 border-black rounded-md p-6 bg-white">
         <div class="mb-4 font-bold">Total Projects - RetroPGF Round 2</div>
@@ -54,6 +55,12 @@
       <div class="border-2 border-black rounded-md p-6 bg-white">
         <div class="mb-4 font-bold">OP Awarded Allocation - Each Recipient</div>
         <Chart4 />
+      </div>
+      <div class="border-2 border-black rounded-md p-6 bg-white">
+        <div class="mb-4 font-bold">
+          Average OP Awarded Allocation - Each Category
+        </div>
+        <Chart5 />
       </div>
     </div>
   </div>

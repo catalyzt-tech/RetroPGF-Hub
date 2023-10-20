@@ -51,6 +51,8 @@
       type: 'bubble',
       data: chartData,
       options: {
+        maintainAspectRatio: false,
+        responsive: true,
         plugins: {
           legend: {
             display: false,
@@ -75,4 +77,4 @@
   })
 </script>
 
-<div class="w-[35em] h-[20em]"><canvas id="4" /></div>
+<div class="md:w-[35em] md:h-[20em]"><canvas id="4" /></div>
