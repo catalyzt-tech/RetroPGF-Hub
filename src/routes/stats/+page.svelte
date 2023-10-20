@@ -5,6 +5,8 @@
   import Chart3 from '@/components/Stats/Chart3.svelte'
   import Chart4 from '@/components/Stats/Chart4.svelte'
   import Chart5 from '@/components/Stats/Chart5.svelte'
+  import Chart6 from '@/components/Stats/Chart6.svelte'
+  import Chart7 from '@/components/Stats/Chart7.svelte'
 </script>
 
 <Alertbar />
@@ -61,6 +63,18 @@
           Average OP Awarded Allocation - Each Category
         </div>
         <Chart5 />
+      </div>
+      <div class="border-2 border-black rounded-md p-6 bg-white">
+        <div class="mb-4 font-bold">
+          Median OP Awarded Allocation - Each Category
+        </div>
+        <Chart6 />
+      </div>
+      <div class="border-2 border-black rounded-md p-6 bg-white">
+        <div class="mb-4 font-bold">
+          Normal Distribution OP Awarded Allocation - Each Category
+        </div>
+        <Chart7 />
       </div>
     </div>
   </div>
