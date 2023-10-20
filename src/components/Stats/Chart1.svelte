@@ -31,7 +31,6 @@
     grid = new Grid({
       columns: ['Project Name', 'OP Awarded', 'Category'],
       resizable: true,
-      // pagination: true,
       search: true,
       fixedHeader: true,
       data: rpgfDataArray,

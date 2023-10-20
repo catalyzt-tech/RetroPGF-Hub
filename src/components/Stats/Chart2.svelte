@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
   import Chart from 'chart.js/auto'
   let data = [43, 82, 70]
+
   onMount(() => {
     const ctx = document.getElementById('2').getContext('2d')
     const chart = new Chart(ctx, {
@@ -10,19 +11,19 @@
         labels: [
           'Infrastructure & Dependencies',
           'Tooling & Utilities',
-          'Educations',
+          'Education',
         ],
         datasets: [
           {
             label: 'Category',
-            backgroundColor: ['#ff1818', '#000000', '#FFC300', '#FF8C4F'],
+            backgroundColor: ['#ff1818', '#000000', '#FFC300'],
             data: data,
           },
         ],
       },
       options: {
         indexAxis: 'x',
-        maintainAspectRatio: false,
+        responsive: true,
         plugins: {
           legend: {
             display: false,
@@ -59,4 +60,4 @@
   })
 </script>
 
-<div class="w-[35rem] h-[20em]"><canvas id="2" /></div>
+<div class="md:w-[35em] md:h-[20em]"><canvas id="2" /></div>
