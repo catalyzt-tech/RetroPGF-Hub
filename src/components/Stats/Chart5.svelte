@@ -30,6 +30,24 @@
             display: false,
           },
         },
+        scales: {
+          x: {
+            type: 'category',
+            title: {
+              display: false,
+              text: 'Category',
+              font: {
+                size: 14,
+                weight: 'bold',
+              },
+            },
+            ticks: {
+              minRotation: 0,
+              maxRotation: 0,
+              maxTextWidth: 100,
+            },
+          },
+        },
       },
     })
   })

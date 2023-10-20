@@ -1,10 +1,10 @@
 <script>
   import { onMount } from 'svelte'
   import Chart from 'chart.js/auto'
-  let data = [43, 82, 70]
 
+  const data = [58260.33, 19316.32, 20329.42]
   onMount(() => {
-    const ctx = document.getElementById('2').getContext('2d')
+    const ctx = document.getElementById('6').getContext('2d')
     const chart = new Chart(ctx, {
       type: 'bar',
       data: {
@@ -15,14 +15,14 @@
         ],
         datasets: [
           {
-            label: 'Category',
+            label: 'Amount of projects',
             backgroundColor: ['#ff1818', '#000000', '#FFC300'],
             data: data,
           },
         ],
       },
       options: {
-        indexAxis: 'x',
+        maintainAspectRatio: false,
         responsive: true,
         plugins: {
           legend: {
@@ -30,28 +30,20 @@
           },
         },
         scales: {
-          y: {
-            beginAtZero: true,
-            title: {
-              display: true,
-              font: {
-                size: 14,
-                weight: 'bold',
-              },
-            },
-          },
           x: {
+            type: 'category',
             title: {
               display: false,
-              text: 'Amount of projects',
+              text: 'Category',
               font: {
                 size: 14,
                 weight: 'bold',
               },
             },
             ticks: {
-              maxRotation: 0,
               minRotation: 0,
+              maxRotation: 0,
+              maxTextWidth: 100,
             },
           },
         },
@@ -60,4 +52,4 @@
   })
 </script>
 
-<div class="md:w-[35em] md:h-[20em]"><canvas id="2" /></div>
+<div class="md:w-[35em] md:h-[20em]"><canvas id="6" /></div>
