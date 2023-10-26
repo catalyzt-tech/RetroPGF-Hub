@@ -170,16 +170,9 @@
   1400 applications have been submitted, with a significant portion showing
   signs of spam. To not overwhelm the voting process with applications, this
   application review process will exclude applications that violate the
-  Application Rules.
-</div>
-<div class="mx-40 mb-10 text-center">
-  The Reviewer will read the report, and make an informed decisions as to
-  whether or not the project has violated the application guidelines by either
-  voting to either “Keep” or “Remove” the project Once a report has been
-  reviewed by 5 Reviewers, the total votes are tallied up to determine whether
-  the vote is valid or not. For the application to be excluded from the Round,
-  at least 3 out of the 5 Reviewers need to cast votes in favor of excluding the
-  application.
+  Application Rules. For the application to be excluded from the Round, at least
+  3 out of the 5 Reviewers need to cast votes either voting to either “Keep” or
+  “Remove” in favor of excluding the application.
 </div>
 <div class="flex justify-center">
   <div class="flex flex-wrap rounded-2xl mt-4 mb-1 px-5 w-[60em]">
