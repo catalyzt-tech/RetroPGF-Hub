@@ -162,10 +162,12 @@
 </script>
 
 <Alertbar />
-<h1 class="text-[40px] mx-40 my-10 flex justify-center font-bold text-center">
+<h1
+  class="text-[40px] mx-10 lg:mx-40 my-10 flex justify-center font-bold text-center"
+>
   RetroPGF3 Application Review Result
 </h1>
-<div class="mx-40 mb-10 text-center">
+<div class="mx-10 lg:mx-40 mb-10 text-center">
   In RetroPGF Round 3, anybody can submit an application. In total, more than
   1400 applications have been submitted, with a significant portion showing
   signs of spam. To not overwhelm the voting process with applications, this
