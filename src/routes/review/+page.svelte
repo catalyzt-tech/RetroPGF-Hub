@@ -201,7 +201,7 @@
   >
 </div>
 {#key totalRemove}
-  <div class="flex flex-wrap justify-center mx-20 my-5">
+  <div class="flex flex-wrap justify-center mx-64 my-5">
     <div
       class="flex flex-col flex-grow my-4 lg:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
     >
