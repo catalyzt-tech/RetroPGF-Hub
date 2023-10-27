@@ -1,10 +1,15 @@
 <script lang="ts">
   import Alertbar from '@/components/Alertbar.svelte'
+  import Summary from '@/components/Review/Summary.svelte'
   import Card from '@/components/Review/Card.svelte'
   import CardSkeleton from '@/components/Review/CardSkeleton.svelte'
   let loading: boolean = true
   let showProject: number = 40
   let fetchData: any[] = []
+  let totalKeep: number = 0
+  let totalRemove: number = 0
+  let totalProject: number = 0
+  let totalPending: number = 0
   const sheetName = [
     'Sheet A',
     'Sheet B',
@@ -30,7 +35,7 @@
     //     console.log(heading.label.replace(/[^a-z0-9]/gi, '_').toLowerCase())
     //   }
     // })
-    jsonData.table.rows.forEach((row: any) => {
+    jsonData.table.rows.forEach(async (row: any) => {
       let obj: object = {}
       row.c.forEach((cell: any, index: number) => {
         if (cell) {
@@ -38,7 +43,7 @@
             if (jsonData.table.cols[index].label == 'Twitter') {
               obj[
                 jsonData.table.cols[index].label
-              ] = `https://twiiter.com/${cell.v}`
+              ] = `https://twitter.com/${cell.v}`
             } else {
               obj[jsonData.table.cols[index].label] = cell.v
             }
@@ -100,7 +105,17 @@
         ...obj,
       }
       fetchData.push(newObj)
-      console.log(newObj)
+      obj.Keep = (await obj.Keep) ? obj.Keep : 0
+      obj.Remove = (await obj.Remove) ? obj.Remove : 0
+      //   console.log(obj.Keep, obj.Remove)
+      if (obj.Keep > obj.Remove && obj.Keep >= 3) {
+        totalKeep++
+      } else if (obj.Keep < obj.Remove && obj.Remove >= 3) {
+        totalRemove++
+      } else {
+        totalPending++
+      }
+      //   console.log(newObj)
       console.log(fetchData.length)
     })
   }
@@ -185,8 +200,42 @@
     target="_blank">View Data Sheet &gt</a
   >
 </div>
+{#key totalRemove}
+  <div class="flex flex-wrap justify-center mx-20 my-5">
+    <div
+      class="flex flex-col flex-grow my-4 lg:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
+    >
+      <div class="text-3xl">📬</div>
+      <div class="font-medium text-lg mt-1">
+        Total: {totalKeep + totalRemove + totalPending} Projects
+      </div>
+    </div>
+    <div
+      class="flex flex-col flex-grow my-4 lg:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
+    >
+      <div class="text-3xl">✅</div>
+      <div class="font-medium text-lg mt-1">Keep: {totalKeep} Projects</div>
+    </div>
+    <div
+      class="flex flex-col flex-grow my-4 lg:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
+    >
+      <div class="text-3xl">❌</div>
+      <div class="font-medium text-lg mt-1">
+        Remove: {totalRemove} Projects
+      </div>
+    </div>
+    <div
+      class="flex flex-col flex-grow my-4 lg:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
+    >
+      <div class="text-3xl">🧐</div>
+      <div class="font-semibold text-lg mt-1">
+        Pending Review: {totalPending} Projects
+      </div>
+    </div>
+  </div>
+{/key}
 <div class="flex justify-center">
-  <div class="flex flex-wrap rounded-2xl mb-4 px-5 w-[60em]">
+  <div class="flex flex-wrap rounded-2xl my-4 px-5 w-[60em]">
     <div class="flex flex-grow mr-3">
       <input
         on:input={searchFilter}
