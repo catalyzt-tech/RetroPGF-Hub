@@ -170,16 +170,21 @@
 >
   RetroPGF3 Application Review Result
 </h1>
-<div class="mx-10 lg:mx-40 mb-8 text-center">
+<div class="mx-10 lg:mx-40 mb-4 text-center">
   In RetroPGF Round 3, anybody can submit an application. In total, more than
   1400 applications have been submitted, with a significant portion showing
   signs of spam. To not overwhelm the voting process with applications, this
   application review process will exclude applications that violate the
-  Application Rules. “For the application to be excluded from the Round, at
-  least 3 out of the 5 Reviewers need to vote in favor of excluding the
-  application.”
+  Application Rules. For the application to be excluded from the Round, at least
+  3 out of the 5 Reviewers need to vote in favor of excluding the application.
 </div>
-<a href="" />
+<div class="flex justify-center w-full">
+  <a
+    href="https://docs.google.com/spreadsheets/d/1o1AZNEPiESrluvTEUBJgFqFWwI6G9xihGy3VL1ecNaQ/edit#gid=692135326"
+    class="text-center font-semibold mb-4 hover:text-[#ff0000] transition-all duration-200"
+    target="_blank">View Data Sheet &gt</a
+  >
+</div>
 <div class="flex justify-center">
   <div class="flex flex-wrap rounded-2xl mb-4 px-5 w-[60em]">
     <div class="flex flex-grow mr-3">
