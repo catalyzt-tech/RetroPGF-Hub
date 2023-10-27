@@ -162,22 +162,26 @@
 </script>
 
 <Alertbar />
+<div class="w-full lg:h-[10em] overflow-hidden">
+  <img src="./img/retropgf3_red.jpg" alt="OPBanner" class="w-full" />
+</div>
 <h1
   class="text-[40px] mx-10 lg:mx-40 my-10 flex justify-center font-bold text-center"
 >
   RetroPGF3 Application Review Result
 </h1>
-<div class="mx-10 lg:mx-40 mb-10 text-center">
+<div class="mx-10 lg:mx-40 mb-8 text-center">
   In RetroPGF Round 3, anybody can submit an application. In total, more than
   1400 applications have been submitted, with a significant portion showing
   signs of spam. To not overwhelm the voting process with applications, this
   application review process will exclude applications that violate the
-  Application Rules. For the application to be excluded from the Round, at least
-  3 out of the 5 Reviewers need to cast votes either voting to either “Keep” or
-  “Remove” in favor of excluding the application.
+  Application Rules. “For the application to be excluded from the Round, at
+  least 3 out of the 5 Reviewers need to vote in favor of excluding the
+  application.”
 </div>
+<a href="" />
 <div class="flex justify-center">
-  <div class="flex flex-wrap rounded-2xl mt-4 mb-1 px-5 w-[60em]">
+  <div class="flex flex-wrap rounded-2xl mb-4 px-5 w-[60em]">
     <div class="flex flex-grow mr-3">
       <input
         on:input={searchFilter}
@@ -204,7 +208,7 @@
           {/each}
         {:else}
           <div class="font-bold my-20 text-lg">
-            Congrats!, Your project was not reported.
+            Congrats! 🥳, Your project was not reported.
           </div>
         {/if}
       {/key}
