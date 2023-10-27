@@ -18,7 +18,7 @@
       data.R4,
       data.R5,
     ]
-    console.log(voteList)
+    // console.log(data)
     voteDecision = await voteList.map((each) => {
       if (each === undefined) {
         each = 'Waiting'
@@ -88,7 +88,7 @@
       {#each voteDecision as each}
         {#if each === 'Remove'}
           <svg
-            class="svg-icon"
+            class="svg-icon hover:scale-110 transition ease-linear duration-200"
             viewBox="0 0 1024 1024"
             width="30"
             height="30"
@@ -102,7 +102,7 @@
           </svg>
         {:else if each === 'Keep'}
           <svg
-            class="svg-icon"
+            class="svg-icon hover:scale-110 transition ease-linear duration-200"
             viewBox="0 0 1024 1024"
             width="30"
             height="30"
@@ -116,7 +116,7 @@
           </svg>
         {:else}
           <svg
-            class="svg-icon"
+            class="svg-icon hover:scale-110 transition ease-linear duration-200"
             viewBox="0 0 1024 1024"
             width="30"
             height="30"
