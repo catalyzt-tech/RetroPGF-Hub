@@ -10,6 +10,7 @@
   let totalRemove: number = 0
   let totalProject: number = 0
   let totalPending: number = 0
+  const fetchIcon = async (projectID: number) => {}
   const sheetName = [
     'Sheet A',
     'Sheet B',
@@ -107,7 +108,6 @@
       fetchData.push(newObj)
       obj.Keep = (await obj.Keep) ? obj.Keep : 0
       obj.Remove = (await obj.Remove) ? obj.Remove : 0
-      //   console.log(obj.Keep, obj.Remove)
       if (obj.Keep > obj.Remove && obj.Keep >= 3) {
         totalKeep++
       } else if (obj.Keep < obj.Remove && obj.Remove >= 3) {
