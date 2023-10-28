@@ -27,6 +27,21 @@
     })
   }
   waitData()
+  let iconUrl = ''
+  const fetchIcon = async () => {
+    try {
+      let rawData =
+        (await fetch(
+          'https://api.retrolist.app/projects/' + data['Project ID']
+        )) ?? ''
+      let imgData = (await rawData) ? await rawData.json() : ''
+      iconUrl = await imgData.profile.profileImageUrl
+      console.log(data['Project Name'], iconUrl)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  fetchIcon()
 </script>
 
 <div
@@ -53,9 +68,16 @@
       </div>
     {/if}
   </div>
-  <div class="mt-5 mb-3 w-16 rounded-xl bg-[#ff0000]">
-    <img src="/img/retropgf_sun.svg" />
-  </div>
+  {#key iconUrl}
+    <div class="mt-5 mb-3 w-16 h-16 rounded-xl bg-[#ff0000] overflow-hidden">
+      {#if iconUrl}
+        <img src={iconUrl} />
+      {:else}
+        <div class="transition ease-linear duration-500" />
+        <img src="/img/retropgf_sun.svg" class="animate-pulse" />
+      {/if}
+    </div>
+  {/key}
   <a class="text-lg font-semibold" href={data.Link} target="_blank"
     >{data['Project Name']}</a
   >
