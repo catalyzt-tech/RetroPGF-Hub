@@ -33,7 +33,7 @@
       // (await fetch(
       //   'https://api.retrolist.app/projects/' + data['Project ID']
       // )) ?? ''
-      let query = {
+      const query = {
         query:
           'query RetroPGFApplicationPageRouteQuery(\n  $id: ID!\n) {\n  retroPGF {\n    project(id: $id) {\n      id\n      ...RetroPGFApplicationBannerFragment\n      ...RetroPGFApplicationContentFragment\n    }\n  }\n}\n\nfragment ENSAvatarFragment on ResolvedName {\n  name\n}\n\nfragment NounResolvedLinkFragment on ResolvedName {\n  address\n  ...NounResolvedNameFragment\n}\n\nfragment NounResolvedNameFragment on ResolvedName {\n  address\n  name\n}\n\nfragment RetroPGFAddProjectToBallotModalContentFragment on Project {\n  id\n  ...RetroPGFModalApplicationRowFragment\n}\n\nfragment RetroPGFApplicationBannerFragment on Project {\n  id\n  bio\n  impactCategory\n  displayName\n  websiteUrl\n  applicant {\n    address {\n      address\n      resolvedName {\n        ...NounResolvedLinkFragment\n      }\n    }\n    id\n  }\n  applicantType\n  profile {\n    profileImageUrl\n    bannerImageUrl\n    id\n  }\n  ...RetroPGFAddProjectToBallotModalContentFragment\n}\n\nfragment RetroPGFApplicationContentContributionLinkFragment on ContributionLink {\n  type\n  url\n  description\n}\n\nfragment RetroPGFApplicationContentFragment on Project {\n  impactDescription\n  contributionDescription\n  contributionLinks {\n    ...RetroPGFApplicationContentContributionLinkFragment\n  }\n  impactMetrics {\n    ...RetroPGFApplicationContentImpactMetricFragment\n  }\n  ...RetroPGFApplicationContentFundingSourceFragment\n  ...RetroPGFApplicationListContainerFragment\n}\n\nfragment RetroPGFApplicationContentFundingSourceFragment on Project {\n  fundingSources {\n    type\n    currency\n    amount\n    description\n  }\n}\n\nfragment RetroPGFApplicationContentImpactMetricFragment on ImpactMetric {\n  description\n  number\n  url\n}\n\nfragment RetroPGFApplicationListContainerFragment on Project {\n  lists {\n    ...RetroPGFListRowFragment\n    id\n  }\n}\n\nfragment RetroPGFListRowFragment on List {\n  id\n  author {\n    resolvedName {\n      ...NounResolvedNameFragment\n      ...ENSAvatarFragment\n    }\n  }\n  listName\n  listDescription\n  categories\n  listContent {\n    project {\n      displayName\n      profile {\n        profileImageUrl\n        id\n      }\n      id\n    }\n  }\n}\n\nfragment RetroPGFModalApplicationRowFragment on Project {\n  displayName\n  bio\n  profile {\n    profileImageUrl\n    id\n  }\n}\n',
         variables: {
@@ -41,7 +41,7 @@
         },
       }
       console.log(query)
-      let rawData = await fetch('https://vote.optimism.io/graphql', {
+      const rawData = await fetch('https://vote.optimism.io/graphql', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,10 +49,7 @@
         },
         body: JSON.stringify(query),
       })
-      if (!rawData.ok) {
-        throw new Error(`Request failed with status: ${rawData.status}`)
-      }
-      let imgData = (await rawData) ? await rawData.json() : ''
+      const imgData = (await rawData) ? await rawData.json() : ''
       iconUrl = await imgData.data.retroPGF.project.profile.profileImageUrl
       console.log(iconUrl)
       // console.log(data['Project Name'], iconUrl)
@@ -88,17 +85,22 @@
     {/if}
   </div>
   {#key iconUrl}
-    <div class="mt-5 mb-3 w-16 h-16 rounded-xl bg-[#ff0000] overflow-hidden">
+    <div
+      class="mt-5 mb-3 w-16 h-16 rounded-xl {iconUrl
+        ? 'bg-white'
+        : 'bg-[#ff0000]'} overflow-hidden"
+    >
       {#if iconUrl}
         <img src={iconUrl} />
       {:else}
-        <div class="transition ease-linear duration-500" />
         <img src="/img/retropgf_sun.svg" class="animate-pulse" />
       {/if}
     </div>
   {/key}
-  <a class="text-lg font-semibold" href={data.Link} target="_blank"
-    >{data['Project Name']}</a
+  <a
+    class="text-lg font-semibold hover:text-[#ff0000] transition ease-in-out duration-200 truncate"
+    href={data.Link}
+    target="_blank">{data['Project Name']}</a
   >
   <div class="flex my-1">
     <a href={data.Twitter} target="_blank"
@@ -110,11 +112,17 @@
   </div>
   <div class="text-sm text-gray-500 mt-2 truncate">{data.Bio}</div>
   <div class="flex-grow" />
+
+  <div class="text-sm mt-3">
+    <!-- <div class="font-medium">Review Batch</div> -->
+    <div class="bg-gray-200 w-fit px-3 py-1 rounded-md">
+      Review Round {data.Round}
+    </div>
+  </div>
   <div class="text-sm mt-3">
     <div class="font-medium">Reason</div>
     <div>{data.Reason}</div>
   </div>
-
   <div class="text-sm mt-2">
     <div class="font-medium">Description of Report</div>
     {#if data['Description of Report']}
