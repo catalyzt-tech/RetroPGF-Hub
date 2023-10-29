@@ -21,12 +21,14 @@
     'Sheet G',
     'Sheet H',
   ]
+  // const sheetNumber = []
   const fetchSheet = async (sheet: string) => {
     let query = encodeURIComponent('Select *')
     const sheetID = '1o1AZNEPiESrluvTEUBJgFqFWwI6G9xihGy3VL1ecNaQ'
     let data: any = await fetch(
       `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?tqx=out:json&sheet=${sheet}&tq=${query}`
     )
+    let countProject: number = 0
     // console.log(data.status)
     data = await data.text()
     let jsonData = await JSON.parse(data.slice(47, -2))
@@ -37,6 +39,7 @@
     //   }
     // })
     jsonData.table.rows.forEach(async (row: any) => {
+      countProject++
       let obj: object = {}
       row.c.forEach((cell: any, index: number) => {
         if (cell) {
@@ -108,16 +111,17 @@
       fetchData.push(newObj)
       obj.Keep = (await obj.Keep) ? obj.Keep : 0
       obj.Remove = (await obj.Remove) ? obj.Remove : 0
-      if (obj.Keep > obj.Remove && obj.Keep >= 3) {
+      if (obj.Keep > obj.Remove) {
         totalKeep++
-      } else if (obj.Keep < obj.Remove && obj.Remove >= 3) {
+      } else if (obj.Keep < obj.Remove) {
         totalRemove++
       } else {
         totalPending++
       }
-      //   console.log(newObj)
-      console.log(fetchData.length)
+      // console.log(newObj)
+      // console.log(fetchData.length)
     })
+    // sheetNumber.push(countProject)
   }
 
   let fetchDataNew: any[] = []
@@ -128,7 +132,7 @@
       await Promise.all(fetchPromises)
       fetchDataNew = await fetchData
       fetchDataNew = await shuffle(fetchDataNew)
-      console.log(fetchDataNew.length)
+      // console.log(fetchDataNew.length)
     } catch (error) {
       console.error(error)
     } finally {
@@ -137,10 +141,10 @@
   }
 
   fetchLoad()
-
+  // console.log(sheetNumber)
   const searchFilter = async (e: Event) => {
-    let searchValue =
-      e.target.value.replace(/[^a-z0-9]/gi, '').toLowerCase() ?? ''
+    let searchValue: string =
+      e.target.value.replace(/[^a-z0-9]/gi, '').toLowerCase() || ''
     loading = true
     console.log(loading)
     console.log(searchValue)
@@ -153,7 +157,6 @@
         .toLowerCase()
         .includes(searchValue)
     })
-
     loading = false
   }
 
