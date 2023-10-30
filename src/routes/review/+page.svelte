@@ -206,21 +206,21 @@
 {#key totalRemove}
   <div class="flex flex-wrap justify-center sm:mx-32 lg:mx-64 my-5">
     <div
-      class="flex flex-col flex-grow my-4 lg:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
+      class="flex flex-col flex-grow my-4 xl:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
     >
       <div class="text-3xl">📬</div>
       <div class="font-medium text-lg mt-1">
-        Total: {totalKeep + totalRemove + totalPending} Projects
+        Total Report: {totalKeep + totalRemove + totalPending} Projects
       </div>
     </div>
     <div
-      class="flex flex-col flex-grow my-4 lg:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
+      class="flex flex-col flex-grow my-4 xl:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
     >
       <div class="text-3xl">✅</div>
       <div class="font-medium text-lg mt-1">Keep: {totalKeep} Projects</div>
     </div>
     <div
-      class="flex flex-col flex-grow my-4 lg:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
+      class="flex flex-col flex-grow my-4 xl:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
     >
       <div class="text-3xl">❌</div>
       <div class="font-medium text-lg mt-1">
@@ -228,7 +228,7 @@
       </div>
     </div>
     <div
-      class="flex flex-col flex-grow my-4 lg:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
+      class="flex flex-col flex-grow my-4 xl:my-0 hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition ease-in-out duration-300 justify-center border-2 border-black py-4 rounded-xl mx-6 px-6 bg-white"
     >
       <div class="text-3xl">🧐</div>
       <div class="font-semibold text-lg mt-1">
