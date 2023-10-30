@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
   export let data: any = []
   let voteDecision: string[] = []
   const waitData = async () => {
@@ -40,7 +41,7 @@
           id: data['Project ID'],
         },
       }
-      console.log(query)
+      // console.log(query)
       const rawData = await fetch('https://vote.optimism.io/graphql', {
         method: 'POST',
         headers: {
@@ -49,16 +50,23 @@
         },
         body: JSON.stringify(query),
       })
+      console.log(rawData.status)
       const imgData = (await rawData) ? await rawData.json() : ''
+      // console.log(imgData)
+      if (!data.Bio) {
+        data.Bio = await imgData.data.retroPGF.project.bio
+        data.Link =
+          'https://vote.optimism.io/retropgf/3/application/' +
+          data['Project ID']
+      }
       iconUrl = await imgData.data.retroPGF.project.profile.profileImageUrl
-      console.log(iconUrl)
-      // console.log(data['Project Name'], iconUrl)
     } catch (err) {
       console.log(err)
     }
   }
-  fetchIcon()
-  console.log(data['Description of Report'])
+  onMount(async () => {
+    await fetchIcon()
+  })
 </script>
 
 <div
@@ -77,11 +85,17 @@
       >
         {data['results']}
       </div>
-    {:else}
+    {:else if data['results'] === 'Pending Review' && !data.Outcome}
       <div
         class="text-sm font-medium bg-black border-black text-white w-fit rounded-md px-3 py-1"
       >
         {data['results']}
+      </div>
+    {:else if data.Outcome}
+      <div
+        class="text-sm font-medium bg-[#000000] border-[#000000] text-white w-fit rounded-md px-3 py-1"
+      >
+        Not Reported
       </div>
     {/if}
   </div>
@@ -92,17 +106,19 @@
         : 'bg-[#ff0000]'} overflow-hidden"
     >
       {#if iconUrl}
-        <img src={iconUrl} />
+        <img src={`${iconUrl}`} />
       {:else}
         <img src="/img/retropgf_sun.svg" class="animate-pulse" />
       {/if}
     </div>
   {/key}
-  <a
-    class="text-lg font-semibold hover:text-[#ff0000] transition ease-in-out duration-200 truncate"
-    href={data.Link}
-    target="_blank">{data['Project Name']}</a
-  >
+  {#key data.Link}
+    <a
+      class="text-lg font-semibold hover:text-[#ff0000] transition ease-in-out duration-200 truncate"
+      href={`${data.Link}`}
+      target="_blank">{data['Project Name']}</a
+    >
+  {/key}
   <div class="flex my-1">
     <a href={data.Twitter} target="_blank"
       ><img src="/img/twitter_logo.png" width="20" /></a
@@ -111,26 +127,39 @@
       ><img src="/img/web_logo.png" width="20" /></a
     >
   </div>
-  <div class="text-sm text-gray-500 mt-2 truncate">{data.Bio}</div>
-  <div class="flex-grow" />
 
+  {#if data.Bio}
+    <div class="text-sm text-gray-500 mt-2 truncate">
+      {data.Bio ?? 'Loading...'}
+    </div>
+  {/if}
+
+  <div class="flex-grow" />
   <div class="text-sm mt-3">
     <!-- <div class="font-medium">Review Batch</div> -->
-    <div class="bg-gray-200 w-fit px-3 py-1 rounded-md">
-      Review Round {data.Round !== undefined ? data.Round : '2'}
-    </div>
+    {#if data.Round}
+      <div class="bg-gray-200 w-fit px-3 py-1 rounded-md">
+        Review Round {data.Round}
+      </div>
+    {/if}
   </div>
   <div class="text-sm mt-3">
     <div class="font-medium">Reason</div>
-    <div>{data.Reason}</div>
+    {#key data.Reason}
+      <div>{data.Reason ? data.Reason : '-'}</div>
+    {/key}
   </div>
   <div class="text-sm mt-2">
     <div class="font-medium">Description of Report</div>
     {#if data['Description of Report']}
       <div class="max-w-fit">
-        <div class="max-w-fit break-all">
-          {data['Description of Report']}
-        </div>
+        {#key data['Description of Report']}
+          <div class="max-w-fit break-all">
+            {data['Description of Report']
+              ? data['Description of Report']
+              : '-'}
+          </div>
+        {/key}
       </div>
     {:else}
       <div>-</div>

@@ -20,8 +20,9 @@
     'Sheet F',
     'Sheet G',
     'Sheet H',
+    'Total Reports',
   ]
-  // const sheetNumber = []
+
   const fetchSheet = async (sheet: string) => {
     let query = encodeURIComponent('Select *')
     const sheetID = '1o1AZNEPiESrluvTEUBJgFqFWwI6G9xihGy3VL1ecNaQ'
@@ -39,8 +40,8 @@
     //   }
     // })
     jsonData.table.rows.forEach(async (row: any) => {
-      countProject++
       let obj: object = {}
+
       row.c.forEach((cell: any, index: number) => {
         if (cell) {
           if (cell.v) {
@@ -108,15 +109,19 @@
         sheet: sheet,
         ...obj,
       }
-      fetchData.push(newObj)
-      obj.Keep = (await obj.Keep) ? obj.Keep : 0
-      obj.Remove = (await obj.Remove) ? obj.Remove : 0
-      if (obj.Keep > obj.Remove) {
-        totalKeep++
-      } else if (obj.Keep < obj.Remove) {
-        totalRemove++
-      } else {
-        totalPending++
+      console.log(fetchData.length)
+      if (!newObj['Reported'] || newObj['Reported'] == undefined || null) {
+        totalProject++
+        fetchData.push(newObj)
+        obj.Keep = (await obj.Keep) ? obj.Keep : 0
+        obj.Remove = (await obj.Remove) ? obj.Remove : 0
+        if (obj.Keep > obj.Remove) {
+          totalKeep++
+        } else if (obj.Keep < obj.Remove) {
+          totalRemove++
+        } else if (obj.Outcome) {
+          totalPending++
+        }
       }
       // console.log(newObj)
       // console.log(fetchData.length)
@@ -143,21 +148,23 @@
   fetchLoad()
   // console.log(sheetNumber)
   const searchFilter = async (e: Event) => {
-    let searchValue: string =
-      e.target.value.replace(/[^a-z0-9]/gi, '').toLowerCase() || ''
-    loading = true
-    console.log(loading)
-    console.log(searchValue)
-    if (!searchValue) {
-      fetchDataNew = await fetchData
-    }
-    fetchDataNew = await fetchData.filter((each) => {
-      return each['Project Name']
-        .replace(/[^a-z0-9]/gi, '')
-        .toLowerCase()
-        .includes(searchValue)
-    })
-    loading = false
+    setTimeout(async () => {
+      let searchValue: string =
+        e.target.value.replace(/[^a-z0-9]/gi, '').toLowerCase() || ''
+      loading = true
+      console.log(loading)
+      console.log(searchValue)
+      if (!searchValue) {
+        fetchDataNew = await fetchData
+      }
+      fetchDataNew = await fetchData.filter((each) => {
+        return each['Project Name']
+          .replace(/[^a-z0-9]/gi, '')
+          .toLowerCase()
+          .includes(searchValue)
+      })
+      loading = false
+    }, 4000)
   }
 
   const loadMore = () => {
@@ -210,7 +217,7 @@
     >
       <div class="text-3xl">📬</div>
       <div class="font-medium text-lg mt-1">
-        Total Report: {totalKeep + totalRemove + totalPending} Projects
+        Total Report: {totalProject} Projects
       </div>
     </div>
     <div
