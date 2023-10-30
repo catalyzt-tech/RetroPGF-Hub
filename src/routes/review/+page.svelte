@@ -10,7 +10,13 @@
   let totalRemove: number = 0
   let totalProject: number = 0
   let totalPending: number = 0
-  const fetchIcon = async (projectID: number) => {}
+  const status: string[] = [
+    'All',
+    'Keep',
+    'Remove',
+    'Pending Review',
+    'Not Reported',
+  ]
   const sheetName = [
     'Sheet A',
     'Sheet B',
@@ -109,7 +115,7 @@
         sheet: sheet,
         ...obj,
       }
-      console.log(fetchData.length)
+      // console.log(fetchData.length)
       if (!newObj['Reported'] || newObj['Reported'] == undefined || null) {
         totalProject++
         fetchData.push(newObj)
@@ -123,7 +129,7 @@
           totalPending++
         }
       }
-      // console.log(newObj)
+      console.log(newObj)
       // console.log(fetchData.length)
     })
     // sheetNumber.push(countProject)
@@ -164,7 +170,7 @@
           .includes(searchValue)
       })
       loading = false
-    }, 4000)
+    }, 2000)
   }
 
   const loadMore = () => {
@@ -183,6 +189,31 @@
       ]
     }
     return array
+  }
+  let selected: string = 'All'
+  const selectStatus = async (val: string) => {
+    selected = val
+    console.log(selected)
+    if (selected == 'All') {
+      fetchDataNew = fetchData
+      return
+    } else if (selected === 'Keep')
+      fetchDataNew = await fetchData.filter((each) => {
+        return each['Outcome'] == selected
+      })
+    else if (selected === 'Remove') {
+      fetchDataNew = await fetchData.filter((each) => {
+        return each['Outcome'] == selected
+      })
+    } else if (selected === 'Not Reported') {
+      fetchDataNew = await fetchData.filter((each) => {
+        return each['Outcome'] == '#N/A'
+      })
+    } else {
+      fetchDataNew = await fetchData.filter((each) => {
+        return each['Outcome'] == undefined || null
+      })
+    }
   }
 </script>
 
@@ -217,7 +248,7 @@
     >
       <div class="text-3xl">📬</div>
       <div class="font-medium text-lg mt-1">
-        Total Report: {totalProject} Projects
+        Total: {totalProject} Projects
       </div>
     </div>
     <div
@@ -256,6 +287,20 @@
     </div>
   </div>
 </div>
+<div class="flex flex-row flex-wrap justify-center mx-4 lg:mx-64 2xl:mx-96">
+  {#each status as each}
+    <button
+      on:click={() => {
+        selectStatus(each)
+      }}
+      class="{selected === each
+        ? 'bg-red-500 text-white font-medium'
+        : 'bg-[#e4e4e4]'} flex flex-grow text-center justify-center my-2 mx-2 px-2 py-2 rounded-lg bg-[#e4e4e4]"
+      >{each}</button
+    >
+  {/each}
+</div>
+
 <div class="flex flex-col">
   <div class=" flex flex-row flex-wrap justify-center">
     {#if loading}
