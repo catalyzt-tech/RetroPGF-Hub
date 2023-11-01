@@ -1,6 +1,5 @@
 <script lang="ts">
   import Alertbar from '@/components/Alertbar.svelte'
-  import Summary from '@/components/Review/Summary.svelte'
   import Card from '@/components/Review/Card.svelte'
   import CardSkeleton from '@/components/Review/CardSkeleton.svelte'
   let loading: boolean = true
@@ -26,7 +25,7 @@
     'Sheet F',
     'Sheet G',
     'Sheet H',
-    'Total Reports',
+    // 'Total Reports',
   ]
 
   const fetchSheet = async (sheet: string) => {
@@ -45,9 +44,8 @@
     //     console.log(heading.label.replace(/[^a-z0-9]/gi, '_').toLowerCase())
     //   }
     // })
-    jsonData.table.rows.forEach(async (row: any) => {
+    await jsonData.table.rows.forEach(async (row: any) => {
       let obj: object = {}
-
       row.c.forEach((cell: any, index: number) => {
         if (cell) {
           if (cell.v) {
@@ -125,7 +123,7 @@
           totalKeep++
         } else if (obj.Keep < obj.Remove) {
           totalRemove++
-        } else if (obj.Outcome) {
+        } else if (obj.Outcome !== '#N/A') {
           totalPending++
         }
       }
@@ -153,22 +151,27 @@
 
   fetchLoad()
   // console.log(sheetNumber)
-  const searchFilter = async (e: Event) => {
+  const searchFilter = async (e: any) => {
     setTimeout(async () => {
       let searchValue: string =
         e.target.value.replace(/[^a-z0-9]/gi, '').toLowerCase() || ''
       loading = true
       console.log(loading)
       console.log(searchValue)
-      if (!searchValue) {
-        fetchDataNew = await fetchData
-      }
-      fetchDataNew = await fetchData.filter((each) => {
-        return each['Project Name']
+      console.log(fetchDataNew)
+
+      fetchDataNew = await fetchData
+
+      fetchDataNew = await fetchData.filter((each: any) => {
+        console.log(each)
+        const target = each['Project Name']
           .replace(/[^a-z0-9]/gi, '')
           .toLowerCase()
           .includes(searchValue)
+        console.log(target)
+        return target
       })
+      console.log('New ' + fetchDataNew)
       loading = false
     }, 2000)
   }
