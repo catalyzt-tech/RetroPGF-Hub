@@ -53,12 +53,12 @@
       console.log(rawData.status)
       const imgData = (await rawData) ? await rawData.json() : ''
       // console.log(imgData)
-      if (!data.Bio) {
-        data.Bio = await imgData.data.retroPGF.project.bio
-        data.Link =
-          'https://vote.optimism.io/retropgf/3/application/' +
-          data['Project ID']
-      }
+      // if (!data.Bio) {
+      //   data.Bio = await imgData.data.retroPGF.project.bio
+      //   data.Link =
+      //     'https://vote.optimism.io/retropgf/3/application/' +
+      //     data['Project ID']
+      // }
       iconUrl = await imgData.data.retroPGF.project.profile.profileImageUrl
     } catch (err) {
       console.log(err)
@@ -95,7 +95,7 @@
       <div
         class="text-sm font-medium bg-[#000000] border-[#000000] text-white w-fit rounded-md px-3 py-1"
       >
-        Not Reported
+        Unreported
       </div>
     {/if}
   </div>
