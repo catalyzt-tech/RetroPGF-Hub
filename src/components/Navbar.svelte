@@ -82,6 +82,20 @@
             : ''} flex mt-8 space-y-3 md:space-y-0 md:items-center md:h-16 md:mt-0"
         >
           <a
+            class="{Page === 'retropgf3'
+              ? 'md:font-bold show-inset'
+              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
+            href="/retropgf3"
+            ><button
+              on:click={selectPage}
+              type="button"
+              category="retropgf3"
+              class="flex items-center"
+            >
+              RetroPGF 3
+            </button></a
+          >
+          <a
             class="{Page === 'projects'
               ? 'md:font-bold show-inset'
               : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"

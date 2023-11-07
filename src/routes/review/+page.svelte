@@ -14,7 +14,7 @@
   let totalAppeal: any[] = []
   const status: string[] = ['All', 'Keep', 'Remove', 'Pending Review']
   const round: string[] = ['All Round', 'Round 1', 'Round 2', 'Appeal']
-  const sheetName = [
+  const sheetName: string[] = [
     'Appeals - Sheet A',
     'Appeals - Sheet B',
     'Sheet A',
