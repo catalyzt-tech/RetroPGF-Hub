@@ -55,34 +55,30 @@
 >
   {#key data || iconUrl || bannerUrl}
     <div
-      class="absolute right-3 top-3 z-1 text-sm {bannerUrl
+      class="absolute right-3 top-3 z-10 text-sm {bannerUrl
         ? 'bg-[#ff0000] text-white font-medium'
         : 'bg-black text-white'} w-fit px-3 py-1 rounded-md"
     >
       {data['applicantType']}
     </div>
-    {#key bannerUrl}
-      <div class="absolute top-0 left-0 w-full max-h-20 overflow-hidden">
-        <img
-          class="w-fit"
-          src={bannerUrl ? bannerUrl : '/img/retropgf_sun.svg'}
-          alt="icon"
-        />
+    <div class="absolute top-0 left-0 -z-0 w-full max-h-24 overflow-hidden">
+      <img
+        class="w-fit z-0"
+        src={bannerUrl ? bannerUrl : '/img/retropgf_sun.svg'}
+        alt="icon"
+      />
+    </div>
+    {#if iconUrl}
+      <div
+        class="absolute top-14 my-1 bg-white rounded-xl overflow-hidden w-16 h-16"
+      >
+        <img src={iconUrl} alt="icon" />
       </div>
-    {/key}
-    {#key iconUrl}
-      {#if iconUrl}
-        <div
-          class="absolute top-14 my-1 bg-white rounded-xl overflow-hidden w-16 h-16"
-        >
-          <img src={iconUrl} alt="icon" />
-        </div>
-      {:else}
-        <div class="absolute top-14 my-1 bg-[#ff0000] rounded-xl w-16">
-          <img src="/img/retropgf_sun.svg" class="animate-pulse" alt="icon" />
-        </div>
-      {/if}
-    {/key}
+    {:else}
+      <div class="absolute top-14 my-1 bg-[#ff0000] rounded-xl w-16">
+        <img src="/img/retropgf_sun.svg" class="animate-pulse" alt="icon" />
+      </div>
+    {/if}
     <!-- <img src={imgUrl} alt="banner" /> -->
     <div class="mt-28 text-lg font-bold">
       <a

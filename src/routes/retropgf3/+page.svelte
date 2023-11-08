@@ -86,10 +86,12 @@
   </div>
   {#if !loading}
     <div class="flex flex-row flex-wrap justify-center">
-      {#each fetchData.slice(0, showCard) as data}
-        <Card {data} />
-        <!-- <div>Array {fetchData.length}</div> -->
-      {/each}
+      {#key fetchData}
+        {#each fetchData.slice(0, showCard) as data}
+          <Card {data} />
+          <!-- <div>Array {fetchData.length}</div> -->
+        {/each}
+      {/key}
     </div>
     {#if fetchData.length > showCard}
       <div class="flex flex-row justify-center">
