@@ -1,8 +1,10 @@
 <script lang="ts">
   import Alertbar from '@/components/Alertbar.svelte'
   import Card from '@/components/RetroPGF3/Card.svelte'
+  import CardSkeleton from '@/components/RetroPGF3/CardSkeleton.svelte'
   import { onMount } from 'svelte'
   let fetchData: any = []
+  let fetchDataNew: any = []
   let loading = true
   let showCard = 20
 
@@ -44,7 +46,8 @@
     } catch (err) {
       console.log(err)
     } finally {
-      shuffle(fetchData)
+      fetchDataNew = fetchData
+      shuffle(fetchDataNew)
     }
   }
 
@@ -55,6 +58,20 @@
 
   const loadMore = () => {
     showCard += 20
+  }
+
+  const searchFilter = async (val: any) => {
+    console.log(val.target.value)
+    if (val.target.value === '') {
+      fetchDataNew = fetchData
+      return
+    }
+    fetchDataNew = await fetchData.filter((data: any) => {
+      return data['displayName']
+        .toLowerCase()
+        .includes(val.target.value.toLowerCase())
+    })
+    console.log(fetchDataNew)
   }
 </script>
 
@@ -84,22 +101,49 @@
       View Data Sheet &gt
     </a>
   </div>
-  {#if !loading}
-    <div class="flex flex-row flex-wrap justify-center">
-      {#key fetchData}
-        {#each fetchData.slice(0, showCard) as data}
-          <Card {data} />
-          <!-- <div>Array {fetchData.length}</div> -->
-        {/each}
-      {/key}
+  <div class="flex flex-row justify-center">
+    <div
+      class="flex flex-grow justify-center rounded-2xl mx-4 md:mx-0 lg:my-4 max-w-[35em]"
+    >
+      <div class="flex flex-grow mr-3">
+        <input
+          on:input={searchFilter}
+          type="text"
+          class=" bg-[#e4e4e4] flex-grow rounded-lg px-5 py-2 my-2 text-left transition ease-in-out duration-200"
+          placeholder="Search For Review Round"
+        />
+      </div>
     </div>
-    {#if fetchData.length > showCard}
+  </div>
+  {#key fetchDataNew}
+    {#if !loading}
+      <div class="flex flex-row flex-wrap justify-center">
+        {#key fetchDataNew}
+          {#each fetchDataNew.slice(0, showCard) as data}
+            <Card {data} />
+            <!-- <div>Array {fetchData.length}</div> -->
+          {/each}
+        {/key}
+      </div>
+      {#if fetchDataNew.length > showCard}
+        <div class="flex flex-row justify-center">
+          <button
+            class="bg-black px-4 py-2 rounded-lg w-fit text-white font-base"
+            on:click={loadMore}>Show More</button
+          >
+        </div>
+      {:else if fetchDataNew.length == 0}
+        <div class="flex flex-row justify-center">
+          <div class="">Not found the project, please try again.</div>
+        </div>
+      {/if}
+    {:else}
       <div class="flex flex-row justify-center">
-        <button
-          class="bg-black px-4 py-2 rounded-lg w-fit text-white font-base"
-          on:click={loadMore}>Show More</button
-        >
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
       </div>
     {/if}
-  {/if}
+  {/key}
 </div>

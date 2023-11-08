@@ -34,7 +34,7 @@
         body: JSON.stringify(query),
       })
       newData = await rawData.json()
-      await console.log(newData)
+      //   await console.log(newData)
       iconUrl = (await newData.data.retroPGF.project.profile.profileImageUrl)
         ? newData.data.retroPGF.project.profile.profileImageUrl
         : undefined
@@ -42,7 +42,7 @@
         ? newData.data.retroPGF.project.profile.bannerImageUrl
         : iconUrl
       totalBallots = await newData.data.retroPGF.project.includedInBallots
-      console.log(totalBallots)
+      //   console.log(totalBallots)
     } catch (err) {
       console.log(err)
     }
