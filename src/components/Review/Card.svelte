@@ -38,7 +38,7 @@
         query:
           '\n  query Project($id: ID!) {\n    retroPGF {\n      project(id: $id) {\n        \ndisplayName\npayoutAddress {\n  address\n}\nwebsiteUrl\napplicantType\nbio\ncontributionDescription\ncontributionLinks {\n  description\n  type\n  url\n}\nfundingSources {\n  currency\n  amount\n  description\n  type\n}\nid\nincludedInBallots\nimpactCategory\nimpactDescription\nimpactMetrics {\n  description\n  number\n  url\n}\nprofile {\n  id\n  name\n  profileImageUrl\n  bannerImageUrl\n  websiteUrl\n  bio\n}\nlists {\n  id\n  listName\n  listDescription\n  author {\n    address\n    resolvedName {\n      name\n    }\n  }\n  listContent {\n    OPAmount\n    project {\n      id\n    }\n  }\n}\n\n      }\n    }\n  }\n',
         variables: {
-          id: '0x9e1829323c35d18c3b5366b75922da2d966c39abf4472b29f763cf09e150a09d',
+          id: data['Project ID'],
         },
       }
       // console.log(query)
