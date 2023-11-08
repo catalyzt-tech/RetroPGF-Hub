@@ -61,17 +61,19 @@
   }
 
   const searchFilter = async (val: any) => {
-    console.log(val.target.value)
-    if (val.target.value === '') {
-      fetchDataNew = fetchData
-      return
-    }
-    fetchDataNew = await fetchData.filter((data: any) => {
-      return data['displayName']
-        .toLowerCase()
-        .includes(val.target.value.toLowerCase())
-    })
-    console.log(fetchDataNew)
+    setTimeout(async () => {
+      console.log(val.target.value)
+      if (val.target.value === '') {
+        fetchDataNew = fetchData
+        return
+      }
+      fetchDataNew = await fetchData.filter((data: any) => {
+        return data['displayName']
+          .toLowerCase()
+          .includes(val.target.value.toLowerCase())
+      })
+      console.log(fetchDataNew)
+    }, 2000)
   }
 </script>
 
@@ -138,7 +140,7 @@
         </div>
       {/if}
     {:else}
-      <div class="flex flex-row justify-center">
+      <div class="flex flex-row flex-wrap justify-center">
         <CardSkeleton />
         <CardSkeleton />
         <CardSkeleton />

@@ -5,15 +5,12 @@
   let iconUrl: string = ''
   let bannerUrl: string = ''
   let totalBallots: number = 0
-  onMount(async () => {
-    data['applicantType'] =
-      (await data['applicantType']) === 'PROJECT' ? 'Project' : 'Individual'
-    data['New Main-Category'] = await data['New Main-Category'].replace(
-      /_/g,
-      ' '
-    )
-    loading = false
-  })
+
+  //   data['applicantType'] =
+  //     data['applicantType'] === 'PROJECT' ? 'Project' : 'Individual'
+  data['New Main-Category'] = data['New Main-Category'].replace(/_/g, ' ')
+  loading = false
+
   let newData: any = []
   const fetchIcon = async () => {
     try {
@@ -54,13 +51,15 @@
   class="flex flex-col relative w-80 m-5 p-4 bg-white border-black border-2 rounded-2xl overflow-hidden"
 >
   {#key data || iconUrl || bannerUrl}
-    <div
-      class="absolute right-3 top-3 z-10 text-sm {bannerUrl
-        ? 'bg-[#ff0000] text-white font-medium'
-        : 'bg-black text-white'} w-fit px-3 py-1 rounded-md"
-    >
-      {data['applicantType']}
-    </div>
+    {#key data['applicantType']}
+      <div
+        class="absolute right-3 top-3 z-10 text-sm {bannerUrl
+          ? 'bg-[#ff0000] text-white font-medium'
+          : 'bg-black text-white'} w-fit px-3 py-1 rounded-md"
+      >
+        {data['applicantType'] === 'PROJECT' ? 'Project' : 'Individual'}
+      </div>
+    {/key}
     <div class="absolute top-0 left-0 -z-0 w-full max-h-24 overflow-hidden">
       <img
         class="w-fit z-0"
