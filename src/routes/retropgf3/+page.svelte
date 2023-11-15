@@ -7,7 +7,43 @@
   let fetchDataNew: any = []
   let loading = true
   let showCard = 20
-
+  let currentCategory: string = 'all'
+  let currentSubCategory: string = 'all'
+  const mainCategoryList = [
+    'All',
+    'OP Stack',
+    'Collective Governance',
+    'Developer Ecosystem',
+    'End User Experience Adoption',
+  ]
+  const subCategoryListOPStack = [
+    'All',
+    'Ethereum Development & Maintanance',
+    'OP Stack tooling',
+    'OP Stack development & research',
+  ]
+  const subCategoryListGovernance = [
+    'All',
+    'Optimism Governance contributions',
+    'Governance tooling',
+    'Governance Research',
+  ]
+  const subCategoryListDevEcosystem = [
+    'All',
+    'Dev Services & Support',
+    'Dev Tooling',
+    'Research & Analytics',
+    'Conferences, Events & Hackathons',
+    'Developer Education',
+  ]
+  const subCategoryListEndUserX = [
+    'All',
+    'Applications (Defi, Social, NFTs, Gaming Etc)',
+    'Discovery tooling',
+    'Portfolio Tracker',
+    'Wallets',
+    'Evangelism & User Onboarding',
+  ]
   const shuffle = (array: []) => {
     let currentIndex = array.length,
       randomIndex
@@ -33,7 +69,7 @@
       data = await data.text()
       let jsonData = await JSON.parse(data.slice(47, -2))
       await jsonData.table.rows.forEach(async (row: any) => {
-        let obj: object = {}
+        let obj: any = {}
         row.c.forEach((cell: any, index: number) => {
           if (cell) {
             if (cell.v) {
@@ -77,6 +113,63 @@
       console.log(fetchDataNew)
     }, 2000)
   }
+
+  const mainCategoryFilter = async (val: any) => {
+    showCard = 20
+    try {
+      const choose = val.target.value.replace(/\s/g, '').toLowerCase()
+      currentCategory = choose
+      currentSubCategory = 'all'
+      if (choose == 'all') {
+        fetchDataNew = fetchData
+        return
+      }
+      fetchDataNew = await fetchData.filter((data: any) => {
+        if (data['New Main-Category'] === undefined) return false
+        const cleanName = data['New Main-Category']
+          .replace(/[_\s]/g, '')
+          .toLowerCase()
+        // console.log(data)
+        console.log(cleanName, choose)
+        return cleanName == choose
+      })
+    } catch (err) {
+      console.log(err)
+    } finally {
+      console.log(fetchDataNew)
+    }
+  }
+
+  const subCategoryFilter = async (val: any) => {
+    showCard = 20
+    try {
+      const choose = val.target.value.replace(/\s/g, '').toLowerCase()
+      currentSubCategory = choose
+      if (choose == 'all') {
+        fetchDataNew = fetchData.filter((data: any) => {
+          if (data['New Main-Category'] == undefined) return false
+          const cleanName = data['New Main-Category']
+            .replace(/_/g, '')
+            .toLowerCase()
+          return cleanName == currentCategory
+        })
+        return
+      }
+      fetchDataNew = await fetchData.filter((data: any) => {
+        if (data['Sub-category'] == undefined) {
+          return false
+        }
+        console.log(data)
+        const cleanName = data['Sub-category'].replace(/\s/g, '').toLowerCase()
+        // console.log(cleanName, choose)
+        return cleanName == choose
+      })
+    } catch (err) {
+      console.log(err)
+    } finally {
+      console.log(fetchDataNew)
+    }
+  }
 </script>
 
 <Alertbar />
@@ -119,35 +212,98 @@
       </div>
     </div>
   </div>
-  {#key fetchDataNew}
-    {#if !loading}
-      <div class="flex flex-row flex-wrap justify-center">
-        {#key fetchDataNew}
-          {#each fetchDataNew.slice(0, showCard) as data}
-            <Card {data} />
-            <!-- <div>Array {fetchData.length}</div> -->
-          {/each}
-        {/key}
-      </div>
-      {#if fetchDataNew.length > showCard}
-        <div class="flex flex-row justify-center">
+  <div class="flex flex-row justify-center w-full">
+    <div
+      class="{currentCategory != 'all'
+        ? 'border-b-2 pb-8'
+        : ''} flex flex-row flex-wrap justify-center mx-6 max-w-6xl"
+    >
+      {#key currentCategory}
+        {#each mainCategoryList as each}
           <button
-            class="bg-black px-4 py-2 rounded-lg w-fit text-white font-base"
-            on:click={loadMore}>Show More</button
+            on:click={mainCategoryFilter}
+            class=" {currentCategory == each.replace(/\s/g, '').toLowerCase()
+              ? 'bg-[#f03b3b] text-white font-medium'
+              : 'bg-[#e4e4e4] text-black'}
+           flex flex-row flex-grow mx-3 mt-3 px-5 py-2 rounded-lg"
+            value={each}>{each}</button
           >
-        </div>
-      {:else if fetchDataNew.length == 0}
-        <div class="flex flex-row justify-center">
-          <div class="">Not found the project, please try again.</div>
-        </div>
+        {/each}
+      {/key}
+    </div>
+  </div>
+  <div class="flex flex-row justify-center w-full">
+    <div class="flex flex-row flex-wrap justify-center mx-6 mt-4">
+      {#if currentCategory == 'opstack'}
+        {#each subCategoryListOPStack as each}
+          <button
+            on:click={subCategoryFilter}
+            class="{currentSubCategory == each.replace(/\s/g, '').toLowerCase()
+              ? 'border-black border-2 font-medium'
+              : ''} flex flex-row flex-grow mx-3 my-3 px-5 py-2 rounded-lg bg-[#e4e4e4]"
+            value={each}>{each}</button
+          >
+        {/each}
+      {:else if currentCategory == 'collectivegovernance'}
+        {#each subCategoryListGovernance as each}
+          <button
+            on:click={subCategoryFilter}
+            class="{currentSubCategory == each.replace(/\s/g, '').toLowerCase()
+              ? 'border-black border-2 font-medium'
+              : ''} flex flex-row flex-grow mx-3 my-3 px-5 py-2 rounded-lg bg-[#e4e4e4]"
+            value={each}>{each}</button
+          >
+        {/each}
+      {:else if currentCategory == 'developerecosystem'}
+        {#each subCategoryListDevEcosystem as each}
+          <button
+            on:click={subCategoryFilter}
+            class="{currentSubCategory == each.replace(/\s/g, '').toLowerCase()
+              ? 'border-black border-2 font-medium'
+              : ''} flex flex-row flex-grow mx-3 my-3 px-5 py-2 rounded-lg bg-[#e4e4e4]"
+            value={each}>{each}</button
+          >
+        {/each}
+      {:else if currentCategory == 'enduserexperienceadoption'}
+        {#each subCategoryListEndUserX as each}
+          <button
+            on:click={subCategoryFilter}
+            class="{currentSubCategory == each.replace(/\s/g, '').toLowerCase()
+              ? 'border-black border-2 font-medium'
+              : ''} flex flex-row flex-grow mx-3 my-3 px-5 py-2 rounded-lg bg-[#e4e4e4]"
+            value={each}>{each}</button
+          >
+        {/each}
       {/if}
-    {:else}
-      <div class="flex flex-row flex-wrap justify-center">
-        <CardSkeleton />
-        <CardSkeleton />
-        <CardSkeleton />
-        <CardSkeleton />
+    </div>
+  </div>
+  {#if !loading}
+    <div class="flex flex-row flex-wrap justify-center px-16">
+      {#key fetchDataNew}
+        {#each fetchDataNew.slice(0, showCard) as data}
+          <Card {data} />
+          <!-- <div>Array {fetchData.length}</div> -->
+        {/each}
+      {/key}
+    </div>
+    {#if fetchDataNew.length > showCard}
+      <div class="flex flex-row justify-center">
+        <button
+          class="bg-black px-4 py-2 rounded-lg w-fit text-white font-base"
+          on:click={loadMore}>Show More</button
+        >
+      </div>
+    {:else if fetchDataNew.length == 0}
+      <div class="flex flex-row justify-center">
+        <div class="">Not found the project, please try again.</div>
       </div>
     {/if}
-  {/key}
+  {:else}
+    <div class="flex flex-row flex-wrap justify-center">
+      <CardSkeleton />
+      <CardSkeleton />
+      <CardSkeleton />
+      <CardSkeleton />
+    </div>
+  {/if}
 </div>

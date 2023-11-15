@@ -1,15 +1,15 @@
 <script lang="ts">
+  import { controllers } from 'chart.js'
   import { onMount } from 'svelte'
   export let data: any = []
   let iconUrl: string = ''
   let bannerUrl: string = ''
   let totalBallots: number
+  const fileType = ['png', 'jpeg']
 
-  //   data['applicantType'] =
-  //     data['applicantType'] === 'PROJECT' ? 'Project' : 'Individual'
   data['New Main-Category'] = data['New Main-Category'].replace(/_/g, ' ')
-
   let newData: any = []
+
   const fetchIcon = async () => {
     try {
       const query = {
@@ -30,12 +30,12 @@
       })
       newData = await rawData.json()
       //   await console.log(newData)
-      iconUrl = (await newData.data.retroPGF.project.profile.profileImageUrl)
-        ? newData.data.retroPGF.project.profile.profileImageUrl
-        : undefined
-      bannerUrl = (await newData.data.retroPGF.project.profile.bannerImageUrl)
-        ? newData.data.retroPGF.project.profile.bannerImageUrl
-        : iconUrl
+      // iconUrl = (await newData.data.retroPGF.project.profile.profileImageUrl)
+      //   ? newData.data.retroPGF.project.profile.profileImageUrl
+      //   : undefined
+      // bannerUrl = (await newData.data.retroPGF.project.profile.bannerImageUrl)
+      //   ? newData.data.retroPGF.project.profile.bannerImageUrl
+      //   : iconUrl
       totalBallots = await newData.data.retroPGF.project.includedInBallots
       //   console.log(totalBallots)
     } catch (err) {
@@ -43,7 +43,38 @@
       setTimeout(fetchIcon, 2000)
     }
   }
+
   onMount(fetchIcon)
+  let flagIcon: boolean = false
+  let flagBanner: boolean = false
+
+  const fetchIconNew = async () => {
+    const address = data['metadataPtr'].slice(60, 102)
+    for (let each of fileType) {
+      const iconUrlTemp = `https://content.optimism.io/profile/v0/profile-image/10/${address}.${each}`
+      const checkIcon = await fetch(iconUrlTemp)
+      if (checkIcon.status === 200 && flagIcon == false) {
+        iconUrl = iconUrlTemp
+        flagIcon = true
+      } else if (flagIcon == false) {
+        iconUrl = ''
+      }
+    }
+    for (let each of fileType) {
+      const bannerUrlTemp = `https://content.optimism.io/profile/v0/banner-image/10/${address}.${each}`
+      const checkBanner = await fetch(bannerUrlTemp)
+      // bannerUrl = checkBanner.status !== 404 ? bannerUrl : iconUrl
+      if (checkBanner.status === 200 && flagBanner == false) {
+        bannerUrl = bannerUrlTemp
+        flagBanner = true
+      } else if (iconUrl && flagBanner == false) {
+        bannerUrl = iconUrl
+      }
+    }
+    console.log(bannerUrl)
+  }
+
+  onMount(fetchIconNew)
 </script>
 
 <div
@@ -62,11 +93,11 @@
     <div class="absolute top-0 left-0 -z-0 w-full max-h-24 overflow-hidden">
       <img
         class="w-fit z-0"
-        src={bannerUrl ? bannerUrl : '/img/retropgf_sun.svg'}
+        src={bannerUrl != '' ? bannerUrl : '/img/retropgf_sun.svg'}
         alt="icon"
       />
     </div>
-    {#if iconUrl}
+    {#if iconUrl !== ''}
       <div
         class="absolute top-14 my-1 bg-white rounded-xl overflow-hidden w-16 h-16"
       >
