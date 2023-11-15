@@ -1,15 +1,13 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   export let data: any = []
-  let loading: boolean = true
   let iconUrl: string = ''
   let bannerUrl: string = ''
-  let totalBallots: number = 0
+  let totalBallots: number
 
   //   data['applicantType'] =
   //     data['applicantType'] === 'PROJECT' ? 'Project' : 'Individual'
   data['New Main-Category'] = data['New Main-Category'].replace(/_/g, ' ')
-  loading = false
 
   let newData: any = []
   const fetchIcon = async () => {
@@ -42,9 +40,10 @@
       //   console.log(totalBallots)
     } catch (err) {
       console.log(err)
+      setTimeout(fetchIcon, 2000)
     }
   }
-  fetchIcon()
+  onMount(fetchIcon)
 </script>
 
 <div
@@ -54,8 +53,8 @@
     {#key data['applicantType']}
       <div
         class="absolute right-3 top-3 z-10 text-sm {bannerUrl
-          ? 'bg-[#ff0000] text-white font-medium'
-          : 'bg-black text-white'} w-fit px-3 py-1 rounded-md"
+          ? 'bg-[#ff0000] text-white'
+          : 'bg-black text-white'} font-medium w-fit px-3 py-1 rounded-md"
       >
         {data['applicantType'] === 'PROJECT' ? 'Project' : 'Individual'}
       </div>
@@ -106,10 +105,18 @@
       {data['Sub-category']}
     </div>
     <div class="text-sm mt-2 font-medium">Ballot Included</div>
-    <div
-      class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
-    >
-      {totalBallots} Vote
-    </div>
+    {#if totalBallots !== undefined}
+      <div
+        class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
+      >
+        {totalBallots + ' Vote'}
+      </div>
+    {:else}
+      <div
+        class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
+      >
+        Loading...
+      </div>
+    {/if}
   {/key}
 </div>

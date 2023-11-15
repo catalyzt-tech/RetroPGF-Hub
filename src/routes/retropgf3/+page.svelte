@@ -62,15 +62,17 @@
 
   const searchFilter = async (val: any) => {
     setTimeout(async () => {
-      console.log(val.target.value)
-      if (val.target.value === '') {
+      const prompt = await val.target.value.replace(/\s/g, '').toLowerCase()
+      console.log(prompt)
+      if (prompt === '') {
         fetchDataNew = fetchData
         return
       }
       fetchDataNew = await fetchData.filter((data: any) => {
         return data['displayName']
+          .replace(/\s/g, '')
           .toLowerCase()
-          .includes(val.target.value.toLowerCase())
+          .includes(prompt)
       })
       console.log(fetchDataNew)
     }, 2000)
@@ -91,16 +93,16 @@
     </h1>
     <div class="flex justify-center my-3">
       <div class="text-[20px] max-w-[50em] text-base text-center">
-        Laura, one of the badgeholders, is running an initiative where she's
+        LauNaMu, one of the badgeholders, is running an initiative where she's
         categorizing projects
       </div>
     </div>
     <a
-      href="https://docs.google.com/spreadsheets/d/1INxDsfVREhpo5J-558VfoZb0MmbvxpoVyuMzTNuVdLw/edit#gid=1407829580"
+      href="https://plaid-cement-e44.notion.site/b54253ffc6d749b2b8adf9035202fa10"
       target="_blank"
       class="flex justify-center text-base font-semibold my-2"
     >
-      View Data Sheet &gt
+      View Badgeholder Manual &gt
     </a>
   </div>
   <div class="flex flex-row justify-center">

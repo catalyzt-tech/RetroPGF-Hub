@@ -10,10 +10,7 @@
     />
   </div>
   <div class="mt-5 mb-3 w-16 h-16 rounded-xl bg-gray-200" />
-  <a
-    class="text-lg font-semibold bg-gray-200 h-2.5 rounded-lg"
-    target="_blank"
-  />
+  <div class="text-lg font-semibold bg-gray-200 h-2.5 rounded-lg" />
   <div class="text-sm text-gray-500 mt-2 bg-gray-200 h-2.5 rounded-lg" />
   <div class="text-sm text-gray-500 mt-2 bg-gray-200 h-2.5 rounded-lg" />
   <div class="text-sm text-gray-500 mt-2 bg-gray-200 h-2.5 rounded-lg" />
