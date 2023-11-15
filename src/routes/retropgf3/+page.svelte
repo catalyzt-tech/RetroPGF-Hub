@@ -278,7 +278,7 @@
     </div>
   </div>
   {#if !loading}
-    <div class="flex flex-row flex-wrap justify-center px-16">
+    <div class="flex flex-row flex-wrap justify-center lg:px-16">
       {#key fetchDataNew}
         {#each fetchDataNew.slice(0, showCard) as data}
           <Card {data} />
