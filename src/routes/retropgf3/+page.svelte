@@ -9,6 +9,23 @@
   let showCard = 20
   let currentCategory: string = 'all'
   let currentSubCategory: string = 'all'
+  let totalBallots: number
+  let dataNew: any = []
+
+  const handleBallotUpdate = (event: any) => {
+    totalBallots = event.detail.dataNew.totalBallots
+    // const tempBindData = event.detail.dataNew
+    // fetchDataNew = fetchDataNew.map((data: any) => {
+    //   if (data['Approval Attestation ID'] == data['Approval Attestation ID']) {
+    //     data = { ...data, totalBallots: totalBallots }
+    //   }
+    //   return data
+    // })
+    // // console.log('Parent', totalBallots)
+    console.log('Parent', event.detail.dataNew)
+    // console.log(fetchDataNew.slice(0, showCard))
+  }
+
   const mainCategoryList = [
     'All',
     'OP Stack',
@@ -39,7 +56,7 @@
   const subCategoryListEndUserX = [
     'All',
     'Applications (Defi, Social, NFTs, Gaming Etc)',
-    'Discovery tooling',
+    'Discovery Tooling',
     'Portfolio Tracker',
     'Wallets',
     'Evangelism & User Onboarding',
@@ -99,7 +116,9 @@
   const searchFilter = async (val: any) => {
     setTimeout(async () => {
       const prompt = await val.target.value.replace(/\s/g, '').toLowerCase()
-      console.log(prompt)
+      loading = true
+      console.log(loading)
+      // console.log(prompt)
       if (prompt === '') {
         fetchDataNew = fetchData
         return
@@ -112,6 +131,8 @@
       })
       console.log(fetchDataNew)
     }, 2000)
+    loading = await false
+    console.log(loading)
   }
 
   const mainCategoryFilter = async (val: any) => {
@@ -239,7 +260,7 @@
           <button
             on:click={subCategoryFilter}
             class="{currentSubCategory == each.replace(/\s/g, '').toLowerCase()
-              ? 'border-black border-2 font-medium'
+              ? 'border-black border font-medium'
               : ''} flex flex-row flex-grow mx-3 my-3 px-5 py-2 rounded-lg bg-[#e4e4e4]"
             value={each}>{each}</button
           >
@@ -277,33 +298,35 @@
       {/if}
     </div>
   </div>
-  {#if !loading}
-    <div class="flex flex-row flex-wrap justify-center lg:px-16">
-      {#key fetchDataNew}
-        {#each fetchDataNew.slice(0, showCard) as data}
-          <Card {data} />
-          <!-- <div>Array {fetchData.length}</div> -->
-        {/each}
-      {/key}
-    </div>
-    {#if fetchDataNew.length > showCard}
-      <div class="flex flex-row justify-center">
-        <button
-          class="bg-black px-4 py-2 rounded-lg w-fit text-white font-base"
-          on:click={loadMore}>Show More</button
-        >
+  {#key loading}
+    {#if loading !== true}
+      <div class="flex flex-row flex-wrap justify-center lg:px-16">
+        {#key fetchDataNew}
+          {#each fetchDataNew.slice(0, showCard) as data}
+            <Card {data} bind:dataNew on:ballotUpdate={handleBallotUpdate} />
+            <!-- <div>Array {fetchData.length}</div> -->
+          {/each}
+        {/key}
       </div>
-    {:else if fetchDataNew.length == 0}
-      <div class="flex flex-row justify-center">
-        <div class="">Not found the project, please try again.</div>
+      {#if fetchDataNew.length > showCard}
+        <div class="flex flex-row justify-center">
+          <button
+            class="bg-black px-4 py-2 rounded-lg w-fit text-white font-base"
+            on:click={loadMore}>Show More</button
+          >
+        </div>
+      {:else if fetchDataNew.length == 0}
+        <div class="flex flex-row justify-center">
+          <div class="">Not found the project, please try again.</div>
+        </div>
+      {/if}
+    {:else}
+      <div class="flex flex-row flex-wrap justify-center">
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
       </div>
     {/if}
-  {:else}
-    <div class="flex flex-row flex-wrap justify-center">
-      <CardSkeleton />
-      <CardSkeleton />
-      <CardSkeleton />
-      <CardSkeleton />
-    </div>
-  {/if}
+  {/key}
 </div>

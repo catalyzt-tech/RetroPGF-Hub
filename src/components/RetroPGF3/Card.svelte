@@ -1,16 +1,17 @@
 <script lang="ts">
-  import { controllers } from 'chart.js'
-  import { onMount } from 'svelte'
+  import { onMount, createEventDispatcher } from 'svelte'
   export let data: any = []
+  let totalBallots: number
+  export let dataNew: any = []
+  const dispatch = createEventDispatcher()
   let iconUrl: string = ''
   let bannerUrl: string = ''
-  let totalBallots: number
   const fileType = ['png', 'jpeg']
 
   data['New Main-Category'] = data['New Main-Category'].replace(/_/g, ' ')
   let newData: any = []
 
-  const fetchIcon = async () => {
+  const fetchBallot = async () => {
     try {
       const query = {
         query:
@@ -29,22 +30,16 @@
         body: JSON.stringify(query),
       })
       newData = await rawData.json()
-      //   await console.log(newData)
-      // iconUrl = (await newData.data.retroPGF.project.profile.profileImageUrl)
-      //   ? newData.data.retroPGF.project.profile.profileImageUrl
-      //   : undefined
-      // bannerUrl = (await newData.data.retroPGF.project.profile.bannerImageUrl)
-      //   ? newData.data.retroPGF.project.profile.bannerImageUrl
-      //   : iconUrl
       totalBallots = await newData.data.retroPGF.project.includedInBallots
-      //   console.log(totalBallots)
+      // console.log('Card', totalBallots)
+      dataNew = { ...data, totalBallots: totalBallots }
+      await dispatch('ballotUpdate', { dataNew })
     } catch (err) {
-      console.log(err)
-      setTimeout(fetchIcon, 2000)
+      setTimeout(fetchBallot, 2000)
     }
   }
 
-  onMount(fetchIcon)
+  onMount(fetchBallot)
   let flagIcon: boolean = false
   let flagBanner: boolean = false
 
@@ -63,7 +58,6 @@
     for (let each of fileType) {
       const bannerUrlTemp = `https://content.optimism.io/profile/v0/banner-image/10/${address}.${each}`
       const checkBanner = await fetch(bannerUrlTemp)
-      // bannerUrl = checkBanner.status !== 404 ? bannerUrl : iconUrl
       if (checkBanner.status === 200 && flagBanner == false) {
         bannerUrl = bannerUrlTemp
         flagBanner = true
@@ -71,9 +65,8 @@
         bannerUrl = iconUrl
       }
     }
-    console.log(bannerUrl)
+    // console.log(bannerUrl)
   }
-
   onMount(fetchIconNew)
 </script>
 
