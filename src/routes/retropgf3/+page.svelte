@@ -13,7 +13,7 @@
   let dataNew: any = []
 
   const handleBallotUpdate = (event: any) => {
-    totalBallots = event.detail.dataNew.totalBallots
+    totalBallots = event.detail.dataNew.totalBallots || undefined
     // const tempBindData = event.detail.dataNew
     // fetchDataNew = fetchDataNew.map((data: any) => {
     //   if (data['Approval Attestation ID'] == data['Approval Attestation ID']) {
@@ -130,19 +130,25 @@
           .includes(prompt)
       })
       console.log(fetchDataNew)
+      setTimeout(() => {
+        loading = false
+        console.log(loading)
+      }, 1500)
     }, 2000)
-    loading = await false
-    console.log(loading)
   }
 
   const mainCategoryFilter = async (val: any) => {
     showCard = 20
     try {
       const choose = val.target.value.replace(/\s/g, '').toLowerCase()
+      loading = true
       currentCategory = choose
       currentSubCategory = 'all'
       if (choose == 'all') {
-        fetchDataNew = fetchData
+        fetchDataNew = await fetchData
+        setTimeout(() => {
+          loading = false
+        }, 1500)
         return
       }
       fetchDataNew = await fetchData.filter((data: any) => {
@@ -154,6 +160,9 @@
         console.log(cleanName, choose)
         return cleanName == choose
       })
+      setTimeout(() => {
+        loading = false
+      }, 1500)
     } catch (err) {
       console.log(err)
     } finally {
@@ -165,6 +174,7 @@
     showCard = 20
     try {
       const choose = val.target.value.replace(/\s/g, '').toLowerCase()
+      loading = true
       currentSubCategory = choose
       if (choose == 'all') {
         fetchDataNew = fetchData.filter((data: any) => {
@@ -185,6 +195,9 @@
         // console.log(cleanName, choose)
         return cleanName == choose
       })
+      setTimeout(() => {
+        loading = false
+      }, 2000)
     } catch (err) {
       console.log(err)
     } finally {
