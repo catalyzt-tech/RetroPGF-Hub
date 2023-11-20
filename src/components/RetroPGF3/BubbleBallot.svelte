@@ -8,28 +8,28 @@
   onMount(async () => {
     // Define your chart option
     let opStack = await fetch(
-      '../../../static/data/retroPGF3-dataset/opStackData.json'
+      '../../../data/retroPGF3-dataset/opStackData.json'
     )
       .then((res) => res.json())
       .then((data) => {
         return data
       })
     let collectiveGovernance = await fetch(
-      '../../../static/data/retroPGF3-dataset/collectiveGovernanceData.json'
+      '../../../data/retroPGF3-dataset/collectiveGovernanceData.json'
     )
       .then((res) => res.json())
       .then((data) => {
         return data
       })
     let developer = await fetch(
-      '../../../static/data/retroPGF3-dataset/developerEcosystemData.json'
+      '../../../data/retroPGF3-dataset/developerEcosystemData.json'
     )
       .then((res) => res.json())
       .then((data) => {
         return data
       })
     let endUserExperience = await fetch(
-      '../../../static/data/retroPGF3-dataset/endUserExperienceAdoptionData.json'
+      '../../../data/retroPGF3-dataset/endUserExperienceAdoptionData.json'
     )
       .then((res) => res.json())
       .then((data) => {
