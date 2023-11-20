@@ -4,7 +4,6 @@
   import { onMount } from 'svelte'
 
   more(Highcharts)
-
   onMount(async () => {
     // Define your chart option
     let opStack = await fetch(
@@ -46,7 +45,7 @@
       },
       tooltip: {
         useHTML: true,
-        pointFormat: '<b>{point.name}:</b> {point.value} Bollot',
+        pointFormat: '<b>{point.name}:</b> {point.value} Ballot Received',
       },
       plotOptions: {
         packedbubble: {

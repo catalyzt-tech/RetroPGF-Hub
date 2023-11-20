@@ -1,7 +1,9 @@
 <script>
   import BubbleBallot from '@/components/RetroPGF3/BubbleBallot.svelte'
+  import Alertbar from '@/components/Alertbar.svelte'
 </script>
 
+<Alertbar />
 <div>
   <div class="px-10 lg:px-[10em]">
     <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
