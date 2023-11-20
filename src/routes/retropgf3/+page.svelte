@@ -2,6 +2,7 @@
   import Alertbar from '@/components/Alertbar.svelte'
   import Card from '@/components/RetroPGF3/Card.svelte'
   import CardSkeleton from '@/components/RetroPGF3/CardSkeleton.svelte'
+  import BubbleBallot from '@/components/RetroPGF3/BubbleBallot.svelte'
   import { onMount } from 'svelte'
   let fetchData: any = []
   let fetchDataNew: any = []
@@ -11,6 +12,7 @@
   let currentSubCategory: string = 'all'
   let totalBallots: number
   let dataNew: any = []
+  let viewBallot = false
 
   const handleBallotUpdate = (event: any) => {
     totalBallots = event.detail.dataNew.totalBallots || undefined
@@ -204,6 +206,10 @@
       console.log(fetchDataNew)
     }
   }
+
+  const viewBallotToggle = () => {
+    viewBallot = !viewBallot
+  }
 </script>
 
 <Alertbar />
@@ -234,15 +240,22 @@
   </div>
   <div class="flex flex-row justify-center">
     <div
-      class="flex flex-grow justify-center rounded-2xl mx-4 md:mx-0 lg:my-4 max-w-[35em]"
+      class="flex justify-center rounded-2xl mx-4 md:mx-0 lg:my-4 max-w-[40em]"
     >
       <div class="flex flex-grow mr-3">
         <input
           on:input={searchFilter}
           type="text"
           class=" bg-[#e4e4e4] flex-grow rounded-lg px-5 py-2 my-2 text-left transition ease-in-out duration-200"
-          placeholder="Search For Review Round"
+          placeholder="Search Application"
         />
+      </div>
+      <div class="flex flex-grow">
+        <button
+          class="bg-[#e4e4e4] flex-grow rounded-lg px-5 py-2 my-2 text-left transition ease-in-out duration-200"
+        >
+          <a href="/retropgf3/ballot"> View Ballot </a>
+        </button>
       </div>
     </div>
   </div>
@@ -317,7 +330,6 @@
         {#key fetchDataNew}
           {#each fetchDataNew.slice(0, showCard) as data}
             <Card {data} bind:dataNew on:ballotUpdate={handleBallotUpdate} />
-            <!-- <div>Array {fetchData.length}</div> -->
           {/each}
         {/key}
       </div>
@@ -343,3 +355,4 @@
     {/if}
   {/key}
 </div>
+<!-- <BubbleBallot /> -->

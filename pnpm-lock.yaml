@@ -26,6 +26,12 @@ dependencies:
   gridjs:
     specifier: ^6.0.6
     version: 6.0.6
+  highcharts:
+    specifier: ^11.2.0
+    version: 11.2.0
+  highcharts-more:
+    specifier: ^0.1.7
+    version: 0.1.7
   nanoid:
     specifier: ^4.0.2
     version: 4.0.2
@@ -40,6 +46,9 @@ devDependencies:
   '@sveltejs/kit':
     specifier: ^1.20.4
     version: 1.24.0(svelte@4.2.0)(vite@4.4.9)
+  '@types/highcharts':
+    specifier: ^7.0.0
+    version: 7.0.0
   '@types/node':
     specifier: ^20.5.0
     version: 20.5.7
@@ -941,6 +950,13 @@ packages:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
     dev: true
 
+  /@types/highcharts@7.0.0:
+    resolution: {integrity: sha512-YDevls0s9uqz6VEbchxp+NEaKssAPq5aDZgqEUpxOIUCQEncQtXxibp1w4lvgKyhM4qDejAcSZ+DKfA/kzqR0A==}
+    deprecated: This is a stub types definition. highcharts provides its own type definitions, so you do not need this installed.
+    dependencies:
+      highcharts: 11.2.0
+    dev: true
+
   /@types/node@20.5.7:
     resolution: {integrity: sha512-dP7f3LdZIysZnmvP3ANJYTSwg+wLLl8p7RqniVlV7j+oXSXAbt9h0WIBFmJy5inWZoX9wZN6eXx+YXd9Rh3RBA==}
 
@@ -1463,6 +1479,14 @@ packages:
     dependencies:
       function-bind: 1.1.1
     dev: true
+
+  /highcharts-more@0.1.7:
+    resolution: {integrity: sha512-3qK/gr5ZIJ/XJ+SeeazSlPttpsC5HWVN+bhYYDg+erZGJ3Kc1SFzoaZqozkrfNIccRoGlm1UQMouChHT3TG0jQ==}
+    deprecated: this package has been deprecated, just import modules from the highcharts folder
+    dev: false
+
+  /highcharts@11.2.0:
+    resolution: {integrity: sha512-9i650YK7ZBA1Mgtr3avMkLVCAI45RQvYnwi+eHsdFSaBGuQN6BHoa4j4lMkSJLv0V4LISTK1z7J7G82Lzd7zwg==}
 
   /http-parser-js@0.5.8:
     resolution: {integrity: sha512-SGeBX54F94Wgu5RH3X5jsDtf4eHyRogWX1XGT3b4HuW3tQPM4AaBzoUji/4AAJNXCEOWZ5O0DgZmJw1947gD5Q==}
