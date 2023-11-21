@@ -37,7 +37,7 @@
   ]
   const subCategoryListOPStack = [
     'All',
-    'Ethereum Development & Maintanance',
+    'Ethereum Development & Maintenance',
     'OP Stack tooling',
     'OP Stack development & research',
   ]
