@@ -4,6 +4,7 @@
   import { onMount } from 'svelte'
 
   more(Highcharts)
+  let maxBallot = 10
   onMount(async () => {
     // Define your chart option
     let opStack = await fetch(
@@ -11,6 +12,9 @@
     )
       .then((res) => res.json())
       .then((data) => {
+        if (data[0].value > maxBallot) {
+          maxBallot = data[0].value
+        }
         return data
       })
     let collectiveGovernance = await fetch(
@@ -18,6 +22,9 @@
     )
       .then((res) => res.json())
       .then((data) => {
+        if (data[0].value > maxBallot) {
+          maxBallot = data[0].value
+        }
         return data
       })
     let developer = await fetch(
@@ -25,6 +32,9 @@
     )
       .then((res) => res.json())
       .then((data) => {
+        if (data[0].value > maxBallot) {
+          maxBallot = data[0].value
+        }
         return data
       })
     let endUserExperience = await fetch(
@@ -32,6 +42,9 @@
     )
       .then((res) => res.json())
       .then((data) => {
+        if (data[0].value > maxBallot) {
+          maxBallot = data[0].value
+        }
         return data
       })
 
@@ -51,13 +64,14 @@
         packedbubble: {
           useSimulation: false,
           minSize: 0,
-          maxSize: 643,
+          maxSize: maxBallot,
           zMin: 0,
           zMax: 1000,
           layoutAlgorithm: {
             splitSeries: true,
             gravitationalConstant: 0.1,
           },
+          allowPointSelect: true,
           // filter: {
           //   property: 'y',
           //   operator: '>',
@@ -68,7 +82,9 @@
             // overflow: 'allow',
             // format: '{point.name}',
             formatter: function () {
-              return this.point.value >= 5 ? this.point.name : null
+              return this.point.value >= Math.floor(maxBallot / 2)
+                ? this.point.name
+                : null
             },
             style: {
               color: 'black',
