@@ -18,7 +18,7 @@
     <div
       class="flex flex-row flex-wrap justify-center text-[40px] font-bold mb-2"
     >
-      Statistic
+      Statistics
     </div>
 
     <div class="text-center my-6">
