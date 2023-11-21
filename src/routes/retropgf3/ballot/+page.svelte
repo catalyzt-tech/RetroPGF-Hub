@@ -2,6 +2,22 @@
   import BubbleBallot from '@/components/RetroPGF3/BubbleBallot.svelte'
   import Alertbar from '@/components/Alertbar.svelte'
   import { browser } from '$app/environment'
+
+  let Ballot
+  let maxBallot = 'Loading'
+  let minBallot = 'Loading'
+  let firstRange = 'Loading'
+  let lastRange = 'Loading'
+  let qualifyAmount = 'Loading'
+  const handlePassingData = (event) => {
+    minBallot = event.detail.Ballot[0]
+    maxBallot = event.detail.Ballot[1]
+    firstRange = event.detail.Ballot[2]
+    lastRange = event.detail.Ballot[3]
+    qualifyAmount = event.detail.Ballot[4]
+    // console.log('Min', event.detail.Ballot[0])
+    // console.log('Max', event.detail.Ballot[1])
+  }
 </script>
 
 <Alertbar />
@@ -18,8 +34,45 @@
         over each bubble to see the name of the project and the ballot count.
       </div>
     </div>
+    <div class="flex flex-row flex-wrap justify-center mt-5 mb-10">
+      <div
+        class="flex flex-col my-4 md:my-0 bg-white mr-5 px-6 py-3 border-2 border-black rounded-xl"
+      >
+        <div class="text-3xl">📌</div>
+        <div class="text-md">Min Ballot</div>
+        <div class="text-lg font-medium">{minBallot} Vote</div>
+      </div>
+      <div
+        class="flex flex-col my-4 md:my-0 bg-white mr-5 px-6 py-3 border-2 border-black rounded-xl"
+      >
+        <div class="text-3xl">🔥</div>
+        <div class="text-md">Max Ballot</div>
+        <div class="text-lg font-medium">{maxBallot} Vote</div>
+      </div>
+      <div
+        class="flex flex-col my-4 md:my-0 bg-white mr-5 px-6 py-3 border-2 border-black rounded-xl"
+      >
+        <div class="text-3xl">🌱</div>
+        <div class="text-md">&lt; 5 Ballots</div>
+        <div class="text-lg font-medium">{firstRange} Projects</div>
+      </div>
+      <div
+        class="flex flex-col my-4 md:my-0 bg-white mr-5 px-6 py-3 border-2 border-black rounded-xl"
+      >
+        <div class="text-3xl">💪</div>
+        <div class="text-md">&ge; 5 Ballots</div>
+        <div class="text-lg font-medium">{lastRange} Projects</div>
+      </div>
+      <div
+        class="flex flex-col my-4 md:my-0 bg-white mr-5 px-6 py-3 border-2 border-black rounded-xl"
+      >
+        <div class="text-3xl">🥰</div>
+        <div class="text-md">Qualify</div>
+        <div class="text-lg font-medium">{qualifyAmount} Projects</div>
+      </div>
+    </div>
   </div>
   {#if browser}
-    <BubbleBallot />
+    <BubbleBallot bind:Ballot on:sendData={handlePassingData} />
   {/if}
 </div>

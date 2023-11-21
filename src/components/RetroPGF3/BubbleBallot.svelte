@@ -1,10 +1,11 @@
 <script>
   import Highcharts from 'highcharts'
   import more from 'highcharts/highcharts-more'
-  import { onMount } from 'svelte'
+  import { onMount, createEventDispatcher } from 'svelte'
+  const dispatch = createEventDispatcher()
 
   more(Highcharts)
-  let maxBallot = 10
+  export let Ballot = [0, 0, 0, 0, 0]
   onMount(async () => {
     // Define your chart option
     let opStack = await fetch(
@@ -12,9 +13,21 @@
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data[0].value > maxBallot) {
-          maxBallot = data[0].value
-        }
+        data.forEach((each) => {
+          if (each.value > Ballot[1]) {
+            Ballot[1] = each.value //max
+          } else if (each.value < Ballot[0]) {
+            Ballot[0] = each.value //min
+          }
+          if (each.value >= 0 && each.value <= 5) {
+            Ballot[2]++ //range 1 - 5
+          } else if (each.value > 5) {
+            Ballot[3]++ //range > 5
+          }
+          if (each.value >= 17) {
+            Ballot[4]++
+          }
+        })
         return data
       })
     let collectiveGovernance = await fetch(
@@ -22,9 +35,21 @@
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data[0].value > maxBallot) {
-          maxBallot = data[0].value
-        }
+        data.forEach((each) => {
+          if (each.value > Ballot[1]) {
+            Ballot[1] = each.value
+          } else if (each.value < Ballot[0]) {
+            Ballot[0] = each.value
+          }
+          if (each.value >= 0 && each.value <= 5) {
+            Ballot[2]++ //range 1 - 5
+          } else if (each.value > 5) {
+            Ballot[3]++ //range > 5
+          }
+          if (each.value >= 17) {
+            Ballot[4]++
+          }
+        })
         return data
       })
     let developer = await fetch(
@@ -32,9 +57,21 @@
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data[0].value > maxBallot) {
-          maxBallot = data[0].value
-        }
+        data.forEach((each) => {
+          if (each.value > Ballot[1]) {
+            Ballot[1] = each.value
+          } else if (each.value < Ballot[0]) {
+            Ballot[0] = each.value
+          }
+          if (each.value >= 0 && each.value <= 5) {
+            Ballot[2]++ //range 1 - 5
+          } else if (each.value > 5) {
+            Ballot[3]++ //range > 5
+          }
+          if (each.value >= 17) {
+            Ballot[4]++
+          }
+        })
         return data
       })
     let endUserExperience = await fetch(
@@ -42,12 +79,25 @@
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data[0].value > maxBallot) {
-          maxBallot = data[0].value
-        }
+        data.forEach((each) => {
+          if (each.value > Ballot[1]) {
+            Ballot[1] = each.value
+          } else if (each.value < Ballot[0]) {
+            Ballot[0] = each.value
+          }
+          if (each.value >= 0 && each.value <= 5) {
+            Ballot[2]++ //range 1 - 5
+          } else if (each.value > 5) {
+            Ballot[3]++ //range > 5
+          }
+          if (each.value >= 17) {
+            Ballot[4]++
+          }
+        })
         return data
       })
-
+    console.log(Ballot)
+    await dispatch('sendData', { Ballot })
     // Create the chart
     let chart = await Highcharts.chart('chart-container', {
       chart: {
@@ -64,7 +114,7 @@
         packedbubble: {
           useSimulation: false,
           minSize: 0,
-          maxSize: maxBallot,
+          maxSize: Ballot[1],
           zMin: 0,
           zMax: 1000,
           layoutAlgorithm: {
@@ -82,7 +132,7 @@
             // overflow: 'allow',
             // format: '{point.name}',
             formatter: function () {
-              return this.point.value >= Math.floor(maxBallot / 2)
+              return this.point.value >= Math.floor(Ballot[1] / 2)
                 ? this.point.name
                 : null
             },
