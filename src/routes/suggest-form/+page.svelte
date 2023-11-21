@@ -26,7 +26,7 @@
   {:else}
     <div class="my-10 font-medium text-xl text-center">
       Please <a href="/login" class="underline hover:text-red-600">login</a> first
-      before fill the form
+      before filling out the form
     </div>
   {/if}
 </div>
