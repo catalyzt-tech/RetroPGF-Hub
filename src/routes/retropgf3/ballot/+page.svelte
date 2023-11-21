@@ -1,6 +1,7 @@
 <script>
   import BubbleBallot from '@/components/RetroPGF3/BubbleBallot.svelte'
   import Alertbar from '@/components/Alertbar.svelte'
+  import { browser } from '$app/environment'
 </script>
 
 <Alertbar />
@@ -12,11 +13,13 @@
     <div class="flex justify-center my-3">
       <div class="text-[20px] max-w-[50em] text-base text-center">
         This chart shows all the votes from the RetroPGF 3 ballot. The size of
-        bubble depends on the ballot count. The bigger the bubble, the more votes
-        it has. The category is defined by the color of the bubble. Mouse over
-        each bubble to see the name of the project and the ballot count.
+        bubble depends on the ballot count. The bigger the bubble, the more
+        votes it has. The category is defined by the color of the bubble. Mouse
+        over each bubble to see the name of the project and the ballot count.
       </div>
     </div>
   </div>
-  <BubbleBallot />
+  {#if browser}
+    <BubbleBallot />
+  {/if}
 </div>
