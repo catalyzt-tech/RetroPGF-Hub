@@ -2,7 +2,6 @@
   import Alertbar from '@/components/Alertbar.svelte'
   import Card from '@/components/RetroPGF3/Card.svelte'
   import CardSkeleton from '@/components/RetroPGF3/CardSkeleton.svelte'
-  import BubbleBallot from '@/components/RetroPGF3/BubbleBallot.svelte'
   import { onMount } from 'svelte'
   let fetchData: any = []
   let fetchDataNew: any = []
@@ -24,7 +23,7 @@
     //   return data
     // })
     // // console.log('Parent', totalBallots)
-    console.log('Parent', event.detail.dataNew)
+    // console.log('Parent', event.detail.dataNew)
     // console.log(fetchDataNew.slice(0, showCard))
   }
 
@@ -63,6 +62,7 @@
     'Wallets',
     'Evangelism & User Onboarding',
   ]
+
   const shuffle = (array: []) => {
     let currentIndex = array.length,
       randomIndex
@@ -245,17 +245,19 @@
       <div class="flex flex-grow mr-3">
         <input
           on:input={searchFilter}
-          type="text"
+          type="search"
           class=" bg-[#e4e4e4] flex-grow rounded-lg px-5 py-2 my-2 text-left transition ease-in-out duration-200"
           placeholder="Search Application"
         />
       </div>
       <div class="flex flex-grow">
-        <button
-          class="bg-[#e4e4e4] flex-grow rounded-lg px-5 py-2 my-2 text-left transition ease-in-out duration-200"
+        <a href="/retropgf3/ballot">
+          <button
+            class="bg-[#e4e4e4] flex-grow rounded-lg px-5 py-2 my-2 text-left transition ease-in-out duration-200"
+          >
+            View Ballot
+          </button></a
         >
-          <a href="/retropgf3/ballot"> View Ballot </a>
-        </button>
       </div>
     </div>
   </div>
