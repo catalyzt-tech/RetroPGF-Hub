@@ -5,9 +5,8 @@
   const dispatch = createEventDispatcher()
 
   more(Highcharts)
-  export let Ballot = [0, 0, 0, 0, 0]
+  export let Ballot = [0, 0, 0, 0, 0] //[min, max, range 1-5, range > 5, range >= 17]
   onMount(async () => {
-    // Define your chart option
     let opStack = await fetch(
       '../../../data/retroPGF3-dataset/opStackData.json'
     )
