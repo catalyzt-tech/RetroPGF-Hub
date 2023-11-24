@@ -3,6 +3,7 @@
   import ColumeBallot from '@/components/RetroPGF3/ColumeBallot.svelte'
   import EachBallot from '@/components/RetroPGF3/EachBallot.svelte'
   import TypeProjects from '@/components/RetroPGF3/TypeProjects.svelte'
+  import EachList from '@/components/RetroPGF3/EachList.svelte'
   import Alertbar from '@/components/Alertbar.svelte'
   import { browser } from '$app/environment'
 
@@ -56,14 +57,14 @@
         class="flex flex-col my-4 md:my-0 bg-white mr-5 px-6 py-3 border-2 border-black rounded-xl"
       >
         <div class="text-3xl">🌱</div>
-        <div class="text-md">&lt; 5 Ballots</div>
+        <div class="text-md">&lt; {Math.floor(maxBallot / 2)} Ballots</div>
         <div class="text-lg font-medium">{firstRange} Projects</div>
       </div>
       <div
         class="flex flex-col my-4 md:my-0 bg-white mr-5 px-6 py-3 border-2 border-black rounded-xl"
       >
         <div class="text-3xl">💪</div>
-        <div class="text-md">&ge; 5 Ballots</div>
+        <div class="text-md">&ge; {Math.floor(maxBallot / 2)} Ballots</div>
         <div class="text-lg font-medium">{lastRange} Projects</div>
       </div>
       <div
@@ -76,11 +77,14 @@
     </div>
   </div>
   {#if browser}
-    <BubbleBallot bind:Ballot on:sendData={handlePassingData} />
-    <!-- <div class="flex flex-row flex-wrap justify-center space-x-2">
+    <div
+      class="py-4 flex-none bg-white lg:py-0 lg:flex lg:flex-row lg:flex-wrap lg:justify-center"
+    >
       <ColumeBallot></ColumeBallot>
       <EachBallot></EachBallot>
+      <EachList></EachList>
       <TypeProjects></TypeProjects>
-    </div> -->
+    </div>
+    <BubbleBallot bind:Ballot on:sendData={handlePassingData} />
   {/if}
 </div>
