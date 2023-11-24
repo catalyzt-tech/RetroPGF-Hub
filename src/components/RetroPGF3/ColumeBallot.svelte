@@ -1,7 +1,7 @@
 <script>
   import Highcharts from 'highcharts'
   import more from 'highcharts/highcharts-more'
-  import { onMount, createEventDispatcher } from 'svelte'
+  import { onMount } from 'svelte'
 
   let ballotOPStack = [1000, 0, 0, 0] //min avg median max
   let ballotCollectiveGovernance = [1000, 0, 0, 0]
@@ -101,6 +101,7 @@
           (ballotEndUserExperience[1] / data.length).toFixed(2)
         )
         ballotEndUserExperience[2] = median(data)
+        console.log(data)
         return data
       })
 
@@ -109,8 +110,14 @@
         type: 'column',
       },
       title: {
-        text: 'Ballot For Each Category',
+        text: 'Ballot Each Category',
         align: 'center',
+      },
+      subtitle: {
+        text: 'The minimum, average, median, and maximum ballot of each category.',
+      },
+      credits: {
+        enabled: false,
       },
       //   subtitle: {
       //     text:
@@ -120,15 +127,13 @@
       //   },
       xAxis: {
         categories: [
-          'Min Ballot(s)',
-          'Average Ballots',
-          'Median Ballots',
-          'Max Ballots',
+          'Min Ballot',
+          'Average Ballot',
+          'Median Ballot',
+          'Max Ballot',
         ],
         crosshair: true,
-        accessibility: {
-          description: 'Countries',
-        },
+        accessibility: {},
       },
       yAxis: {
         min: 0,
@@ -137,7 +142,7 @@
         },
       },
       tooltip: {
-        valueSuffix: ' Ballot',
+        valueSuffix: ' Ballots Included',
       },
       plotOptions: {
         column: {
@@ -148,22 +153,18 @@
       series: [
         {
           name: 'OP Stack',
-
           data: ballotOPStack,
         },
         {
           name: 'Collective Governance',
-
           data: ballotCollectiveGovernance,
         },
         {
           name: 'Developer Ecosystem',
-
           data: ballotDeveloper,
         },
         {
           name: 'End User Experience & Adoption',
-
           data: ballotEndUserExperience,
         },
       ],
@@ -171,4 +172,6 @@
   })
 </script>
 
-<div id="container2" class="w-[40em]" />
+<div class="m-10">
+  <div id="container2" class="lg:h-[25em]" />
+</div>

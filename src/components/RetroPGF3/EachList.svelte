@@ -23,78 +23,91 @@
   let xLabel = createLabelArray(16)
   onMount(async () => {
     let opStack = await fetch(
-      '../../../data/retroPGF3-dataset/opStackData.json'
+      '../../../data/retroPGF3-dataset/listOpStackData.json'
     )
       .then((res) => res.json())
       .then((data) => {
         data.forEach((each) => {
-          ballotDistribution[each.value]++
+          ballotDistribution[each.lists]++
         })
         return data
       })
     let collectiveGovernance = await fetch(
-      '../../../data/retroPGF3-dataset/collectiveGovernanceData.json'
+      '../../../data/retroPGF3-dataset/listCollectiveGovernanceData.json'
     )
       .then((res) => res.json())
       .then((data) => {
         data.forEach((each) => {
-          ballotDistribution[each.value]++
+          ballotDistribution[each.lists]++
         })
         // ballotCollectiveGovernance[2] = data.length
         return data
       })
     let developer = await fetch(
-      '../../../data/retroPGF3-dataset/developerEcosystemData.json'
+      '../../../data/retroPGF3-dataset/listDeveloperEcosystemData.json'
     )
       .then((res) => res.json())
       .then((data) => {
         data.forEach((each) => {
-          ballotDistribution[each.value]++
+          ballotDistribution[each.lists]++
         })
         // ballotDeveloper[2] = data.length
         return data
       })
     let endUserExperience = await fetch(
-      '../../../data/retroPGF3-dataset/endUserExperienceAdoptionData.json'
+      '../../../data/retroPGF3-dataset/listEndUserExperienceAdoptionData.json'
     )
       .then((res) => res.json())
       .then((data) => {
         data.forEach((each) => {
-          ballotDistribution[each.value]++
+          ballotDistribution[each.lists]++
         })
         // ballotEndUserExperience[2] = data.length
         return data
       })
 
     console.log(ballotDistribution)
-    let chart = await Highcharts.chart('container1', {
+    let chart = await Highcharts.chart('container4', {
       chart: {
         type: 'column',
       },
-      colors: ['#ff0000'],
+      colors: ['#fe6a35'],
       title: {
-        text: 'Ballot Distribution',
+        text: 'List Included',
         align: 'center',
+      },
+      subtitle: {
+        text: 'The number of lists included in each project.',
       },
       credits: {
         enabled: false,
-      },
-      subtitle: {
-        text: 'The bar represent the distribution of ballot in each project.',
       },
       xAxis: {
         categories: xLabel,
         crosshair: true,
       },
-
       yAxis: {
         min: 0,
         title: {
           text: 'Projects',
         },
       },
+      //   responsive: {
+      //     rules: [
+      //       {
+      //         condition: {
+      //           maxWidth: 200,
+      //         },
+      //         chartOptions: {
+      //           legend: {
+      //             enabled: false,
+      //           },
+      //         },
+      //       },
+      //     ],
+      //   },
       tooltip: {
-        headerFormat: '{point.key} Ballots',
+        headerFormat: '{point.key} Lists',
         pointFormat:
           //   '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
           //   '<td style="padding:0"><b>{point.y:.1f} Projects</b></td></tr>',
@@ -102,20 +115,6 @@
         footerFormat: '</table>',
         shared: true,
         useHTML: true,
-      },
-      responsive: {
-        rules: [
-          {
-            condition: {
-              maxWidth: 200,
-            },
-            chartOptions: {
-              legend: {
-                enabled: false,
-              },
-            },
-          },
-        ],
       },
       plotOptions: {
         column: {
@@ -127,7 +126,7 @@
       },
       series: [
         {
-          name: 'Ballot Included',
+          name: 'Lists Included',
           data: ballotDistribution,
         },
       ],
@@ -136,5 +135,5 @@
 </script>
 
 <div class="m-10">
-  <div id="container1" class="lg:h-[25em]" />
+  <div id="container4" class="lg:h-[25em]" />
 </div>

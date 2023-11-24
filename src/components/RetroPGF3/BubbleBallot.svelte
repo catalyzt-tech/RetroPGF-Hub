@@ -2,29 +2,24 @@
   import Highcharts from 'highcharts'
   import more from 'highcharts/highcharts-more'
   import { onMount, createEventDispatcher } from 'svelte'
-  const dispatch = createEventDispatcher()
+  export let Ballot = [0, 0, 0, 0, 0] //[min, max, range 1-5, range > 5, range >= 17]
 
   more(Highcharts)
-  export let Ballot = [0, 0, 0, 0, 0] //[min, max, range 1-5, range > 5, range >= 17]
+  const dispatch = createEventDispatcher()
+  let allData = []
+
   onMount(async () => {
     let opStack = await fetch(
       '../../../data/retroPGF3-dataset/opStackData.json'
     )
       .then((res) => res.json())
       .then((data) => {
+        allData = [...allData, ...data]
         data.forEach((each) => {
           if (each.value > Ballot[1]) {
             Ballot[1] = each.value //max
           } else if (each.value < Ballot[0]) {
             Ballot[0] = each.value //min
-          }
-          if (each.value >= 0 && each.value <= 5) {
-            Ballot[2]++ //range 1 - 5
-          } else if (each.value > 5) {
-            Ballot[3]++ //range > 5
-          }
-          if (each.value >= 17) {
-            Ballot[4]++
           }
         })
         return data
@@ -34,19 +29,12 @@
     )
       .then((res) => res.json())
       .then((data) => {
+        allData = [...allData, ...data]
         data.forEach((each) => {
           if (each.value > Ballot[1]) {
             Ballot[1] = each.value
           } else if (each.value < Ballot[0]) {
             Ballot[0] = each.value
-          }
-          if (each.value >= 0 && each.value <= 5) {
-            Ballot[2]++ //range 1 - 5
-          } else if (each.value > 5) {
-            Ballot[3]++ //range > 5
-          }
-          if (each.value >= 17) {
-            Ballot[4]++
           }
         })
         return data
@@ -56,19 +44,12 @@
     )
       .then((res) => res.json())
       .then((data) => {
+        allData = [...allData, ...data]
         data.forEach((each) => {
           if (each.value > Ballot[1]) {
             Ballot[1] = each.value
           } else if (each.value < Ballot[0]) {
             Ballot[0] = each.value
-          }
-          if (each.value >= 0 && each.value <= 5) {
-            Ballot[2]++ //range 1 - 5
-          } else if (each.value > 5) {
-            Ballot[3]++ //range > 5
-          }
-          if (each.value >= 17) {
-            Ballot[4]++
           }
         })
         return data
@@ -78,24 +59,27 @@
     )
       .then((res) => res.json())
       .then((data) => {
+        allData = [...allData, ...data]
         data.forEach((each) => {
           if (each.value > Ballot[1]) {
             Ballot[1] = each.value
           } else if (each.value < Ballot[0]) {
             Ballot[0] = each.value
           }
-          if (each.value >= 0 && each.value <= 5) {
-            Ballot[2]++ //range 1 - 5
-          } else if (each.value > 5) {
-            Ballot[3]++ //range > 5
-          }
-          if (each.value >= 17) {
-            Ballot[4]++
-          }
         })
         return data
       })
-    console.log(Ballot)
+
+    allData.sort((a, b) => b.value - a.value)
+    Ballot[2] = allData[0].value
+    allData.forEach((each) => {
+      if (each.value >= Math.floor(Ballot[2] / 2)) {
+        Ballot[3]++
+      } else {
+        Ballot[2]++
+      }
+    })
+
     await dispatch('sendData', { Ballot })
     // Create the chart
     let chart = await Highcharts.chart('chart-container', {
@@ -103,7 +87,13 @@
         type: 'packedbubble',
       },
       title: {
-        text: '',
+        text: 'Ballots Overview',
+      },
+      subtitle: {
+        text: 'The size of the bubble represents the number of ballots and the color represents the category of the ballot.',
+      },
+      credits: {
+        enabled: false,
       },
       tooltip: {
         useHTML: true,
@@ -171,7 +161,7 @@
   })
 </script>
 
-<div id="chart-container" class="h-[80em]" />
+<div id="chart-container" class="h-[40em] md:h-[70em] lg:h-[80em]" />
 
 <style>
   /* #chart-container {
