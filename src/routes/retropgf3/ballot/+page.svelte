@@ -1,5 +1,8 @@
 <script>
   import BubbleBallot from '@/components/RetroPGF3/BubbleBallot.svelte'
+  import ColumeBallot from '@/components/RetroPGF3/ColumeBallot.svelte'
+  import EachBallot from '@/components/RetroPGF3/EachBallot.svelte'
+  import TypeProjects from '@/components/RetroPGF3/TypeProjects.svelte'
   import Alertbar from '@/components/Alertbar.svelte'
   import { browser } from '$app/environment'
 
@@ -74,5 +77,10 @@
   </div>
   {#if browser}
     <BubbleBallot bind:Ballot on:sendData={handlePassingData} />
+    <!-- <div class="flex flex-row flex-wrap justify-center space-x-2">
+      <ColumeBallot></ColumeBallot>
+      <EachBallot></EachBallot>
+      <TypeProjects></TypeProjects>
+    </div> -->
   {/if}
 </div>
