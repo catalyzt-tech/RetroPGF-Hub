@@ -2,25 +2,11 @@
   import Highcharts from 'highcharts'
   import { onMount, createEventDispatcher } from 'svelte'
   import histogram from 'highcharts/modules/histogram-bellcurve'
+
   histogram(Highcharts)
 
-  const createDynamicArray = (size) => {
-    let dynamicArray = []
-    for (let i = 0; i < size; i++) {
-      dynamicArray.push(0)
-    }
-    return dynamicArray
-  }
-
-  const createLabelArray = (size) => {
-    let labelArray = []
-    for (let i = 0; i < size; i++) {
-      labelArray.push(i)
-    }
-    return labelArray
-  }
-  let ballotDistribution = createDynamicArray(16)
-  let xLabel = createLabelArray(16)
+  let ballotDistribution = []
+  let xLabel
   onMount(async () => {
     let opStack = await fetch(
       '../../../data/retroPGF3-dataset/opStackData.json'
@@ -28,6 +14,9 @@
       .then((res) => res.json())
       .then((data) => {
         data.forEach((each) => {
+          while (ballotDistribution.length <= each.value) {
+            ballotDistribution.push(0)
+          }
           ballotDistribution[each.value]++
         })
         return data
@@ -38,6 +27,9 @@
       .then((res) => res.json())
       .then((data) => {
         data.forEach((each) => {
+          while (ballotDistribution.length <= each.value) {
+            ballotDistribution.push(0)
+          }
           ballotDistribution[each.value]++
         })
         // ballotCollectiveGovernance[2] = data.length
@@ -49,6 +41,9 @@
       .then((res) => res.json())
       .then((data) => {
         data.forEach((each) => {
+          while (ballotDistribution.length <= each.value) {
+            ballotDistribution.push(0)
+          }
           ballotDistribution[each.value]++
         })
         // ballotDeveloper[2] = data.length
@@ -60,12 +55,16 @@
       .then((res) => res.json())
       .then((data) => {
         data.forEach((each) => {
+          while (ballotDistribution.length <= each.value) {
+            ballotDistribution.push(0)
+          }
           ballotDistribution[each.value]++
         })
+        console.log(ballotDistribution)
         // ballotEndUserExperience[2] = data.length
         return data
       })
-
+    xLabel = ballotDistribution.length
     console.log(ballotDistribution)
     let chart = await Highcharts.chart('container1', {
       chart: {
