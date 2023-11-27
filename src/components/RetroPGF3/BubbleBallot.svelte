@@ -2,6 +2,7 @@
   import Highcharts from 'highcharts'
   import more from 'highcharts/highcharts-more'
   import { onMount, createEventDispatcher } from 'svelte'
+  import { localStorageStore } from '../../stores/localStorage.js'
   export let Ballot = [0, 0, 0, 0, 0] //[min, max, range 1-5, range > 5, range >= 17]
 
   more(Highcharts)
@@ -72,6 +73,7 @@
 
     allData.sort((a, b) => b.value - a.value)
     Ballot[2] = allData[0].value
+    localStorageStore.setItem('max_Ballot', Ballot[2])
     allData.forEach((each) => {
       if (each.value >= Math.floor(Ballot[2] / 2)) {
         Ballot[3]++
