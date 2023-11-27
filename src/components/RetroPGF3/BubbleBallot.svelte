@@ -80,6 +80,9 @@
       } else {
         Ballot[2]++
       }
+      if (each.value >= 17) {
+        Ballot[4]++
+      }
     })
 
     await dispatch('sendData', { Ballot })
