@@ -4,8 +4,8 @@
   import { onMount } from 'svelte'
 
   //   more(Highcharts)
-  let individual = 531
-  let project = 112
+  let individual = 112
+  let project = 531
 
   onMount(async () => {
     let chart = await Highcharts.chart('container3', {
