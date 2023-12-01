@@ -84,6 +84,29 @@
       xAxis: {
         categories: xLabel,
         crosshair: true,
+        plotLines: [
+          {
+            color: '#000000',
+            dashStyle: 'dash',
+            width: 2,
+            value: 17,
+            zIndex: 5,
+            label: {
+              text: 'Threshold',
+              rotation: 270,
+              textAlign: 'center',
+              x: -10,
+              y: +40,
+              // style: {
+              //   fontStyle: 'italic',
+              //   background: 'white',
+              //   backgroundColor: 'white',
+              //   fontSize: '12px',
+              //   padding: '20px',
+              // },
+            },
+          },
+        ],
       },
 
       yAxis: {
