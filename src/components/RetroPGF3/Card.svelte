@@ -1,9 +1,12 @@
 <script lang="ts">
   import { onMount, createEventDispatcher } from 'svelte'
   export let data: any = []
-  let totalBallots: number
   export let dataNew: any = []
   const dispatch = createEventDispatcher()
+
+  let totalBallots: number
+  let list: any = []
+  let opListAmount: number[] = []
   let iconUrl: string = ''
   let bannerUrl: string = ''
   const fileType = ['png', 'jpeg']
@@ -13,9 +16,16 @@
 
   const fetchBallot = async () => {
     try {
+      // const query = {
+      //   query:
+      //     'query RetroPGFApplicationPageRouteQuery(\n  $id: ID!\n) {\n  retroPGF {\n    project(id: $id) {\n      id\n      ...RetroPGFApplicationBannerFragment\n      ...RetroPGFApplicationContentFragment\n    }\n  }\n}\n\nfragment ENSAvatarFragment on ResolvedName {\n  name\n}\n\nfragment NounResolvedLinkFragment on ResolvedName {\n  address\n  ...NounResolvedNameFragment\n}\n\nfragment NounResolvedNameFragment on ResolvedName {\n  address\n  name\n}\n\nfragment RetroPGFAddProjectToBallotModalContentFragment on Project {\n  id\n  ...RetroPGFModalApplicationRowFragment\n}\n\nfragment RetroPGFApplicationBannerFragment on Project {\n  id\n  bio\n  impactCategory\n  displayName\n  websiteUrl\n  applicant {\n    address {\n      address\n      resolvedName {\n        ...NounResolvedLinkFragment\n      }\n    }\n    id\n  }\n  applicantType\n  profile {\n    profileImageUrl\n    bannerImageUrl\n    id\n  }\n  includedInBallots\n  ...RetroPGFAddProjectToBallotModalContentFragment\n}\n\nfragment RetroPGFApplicationContentContributionLinkFragment on ContributionLink {\n  type\n  url\n  description\n}\n\nfragment RetroPGFApplicationContentFragment on Project {\n  impactDescription\n  contributionDescription\n  contributionLinks {\n    ...RetroPGFApplicationContentContributionLinkFragment\n  }\n  impactMetrics {\n    ...RetroPGFApplicationContentImpactMetricFragment\n  }\n  ...RetroPGFApplicationContentFundingSourceFragment\n  ...RetroPGFApplicationListContainerFragment\n}\n\nfragment RetroPGFApplicationContentFundingSourceFragment on Project {\n  fundingSources {\n    type\n    currency\n    amount\n    description\n  }\n}\n\nfragment RetroPGFApplicationContentImpactMetricFragment on ImpactMetric {\n  description\n  number\n  url\n}\n\nfragment RetroPGFApplicationListContainerFragment on Project {\n  lists {\n    ...RetroPGFListRowFragment\n    id\n  }\n}\n\nfragment RetroPGFListRowFragment on List {\n  id\n  author {\n    resolvedName {\n      ...NounResolvedNameFragment\n      ...ENSAvatarFragment\n    }\n  }\n  listName\n  listDescription\n  categories\n  listContent {\n    project {\n      displayName\n      profile {\n        profileImageUrl\n        id\n      }\n      id\n    }\n  }\n}\n\nfragment RetroPGFModalApplicationRowFragment on Project {\n  displayName\n  bio\n  profile {\n    profileImageUrl\n    id\n  }\n}\n',
+      //   variables: {
+      //     id: data['Approval Attestation ID'],
+      //   },
+      // }
       const query = {
         query:
-          'query RetroPGFApplicationPageRouteQuery(\n  $id: ID!\n) {\n  retroPGF {\n    project(id: $id) {\n      id\n      ...RetroPGFApplicationBannerFragment\n      ...RetroPGFApplicationContentFragment\n    }\n  }\n}\n\nfragment ENSAvatarFragment on ResolvedName {\n  name\n}\n\nfragment NounResolvedLinkFragment on ResolvedName {\n  address\n  ...NounResolvedNameFragment\n}\n\nfragment NounResolvedNameFragment on ResolvedName {\n  address\n  name\n}\n\nfragment RetroPGFAddProjectToBallotModalContentFragment on Project {\n  id\n  ...RetroPGFModalApplicationRowFragment\n}\n\nfragment RetroPGFApplicationBannerFragment on Project {\n  id\n  bio\n  impactCategory\n  displayName\n  websiteUrl\n  applicant {\n    address {\n      address\n      resolvedName {\n        ...NounResolvedLinkFragment\n      }\n    }\n    id\n  }\n  applicantType\n  profile {\n    profileImageUrl\n    bannerImageUrl\n    id\n  }\n  includedInBallots\n  ...RetroPGFAddProjectToBallotModalContentFragment\n}\n\nfragment RetroPGFApplicationContentContributionLinkFragment on ContributionLink {\n  type\n  url\n  description\n}\n\nfragment RetroPGFApplicationContentFragment on Project {\n  impactDescription\n  contributionDescription\n  contributionLinks {\n    ...RetroPGFApplicationContentContributionLinkFragment\n  }\n  impactMetrics {\n    ...RetroPGFApplicationContentImpactMetricFragment\n  }\n  ...RetroPGFApplicationContentFundingSourceFragment\n  ...RetroPGFApplicationListContainerFragment\n}\n\nfragment RetroPGFApplicationContentFundingSourceFragment on Project {\n  fundingSources {\n    type\n    currency\n    amount\n    description\n  }\n}\n\nfragment RetroPGFApplicationContentImpactMetricFragment on ImpactMetric {\n  description\n  number\n  url\n}\n\nfragment RetroPGFApplicationListContainerFragment on Project {\n  lists {\n    ...RetroPGFListRowFragment\n    id\n  }\n}\n\nfragment RetroPGFListRowFragment on List {\n  id\n  author {\n    resolvedName {\n      ...NounResolvedNameFragment\n      ...ENSAvatarFragment\n    }\n  }\n  listName\n  listDescription\n  categories\n  listContent {\n    project {\n      displayName\n      profile {\n        profileImageUrl\n        id\n      }\n      id\n    }\n  }\n}\n\nfragment RetroPGFModalApplicationRowFragment on Project {\n  displayName\n  bio\n  profile {\n    profileImageUrl\n    id\n  }\n}\n',
+          '\n  query Project($id: ID!) {\n    retroPGF {\n      project(id: $id) {\n        \ndisplayName\npayoutAddress {\n  address\n}\nwebsiteUrl\napplicantType\nbio\ncontributionDescription\ncontributionLinks {\n  description\n  type\n  url\n}\nfundingSources {\n  currency\n  amount\n  description\n  type\n}\nid\nincludedInBallots\nimpactCategory\nimpactDescription\nimpactMetrics {\n  description\n  number\n  url\n}\nprofile {\n  id\n  name\n  profileImageUrl\n  bannerImageUrl\n  websiteUrl\n  bio\n}\nlists {\n  id\n  listName\n  listDescription\n  author {\n    address\n    resolvedName {\n      name\n    }\n  }\n  listContentCount\n  listContent {\n    OPAmount\n    project {\n      id\n      profile {\n        profileImageUrl\n      }\n    }\n  }\n}\n\n      }\n    }\n  }\n',
         variables: {
           id: data['Approval Attestation ID'],
         },
@@ -31,8 +41,27 @@
       })
       newData = await rawData.json()
       totalBallots = await newData.data.retroPGF.project.includedInBallots
+      list = await newData.data.retroPGF.project.lists
+      // console.log(newData.data.retroPGF.project.lists)
+      // console.log(list)
+      for (let each of list) {
+        // for (let subEach in each) {
+        //   console.log('subeach = ')
+        //   console.log(subEach)
+        // }
+        for (let subeach of each.listContent) {
+          const projectID = subeach.project.id.slice(8)
+          console.log(projectID)
+          if (projectID == data['Approval Attestation ID']) {
+            data['OPAmount'] = subeach.OPAmount
+            opListAmount.push(data['OPAmount'])
+          }
+        }
+      }
+      opListAmount = opListAmount.sort((a, b) => a - b)
+      // console.log(opListAmount)
       // console.log('Card', totalBallots)
-      dataNew = { ...data, totalBallots: totalBallots }
+      dataNew = { ...data, totalBallots: totalBallots, list: list }
       await dispatch('ballotUpdate', { dataNew })
     } catch (err) {
       setTimeout(fetchBallot, 2000)
