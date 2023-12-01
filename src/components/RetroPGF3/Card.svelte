@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { load } from '@/routes/archive/round1/[slug]/+page'
   import { onMount, createEventDispatcher } from 'svelte'
   export let data: any = []
   export let dataNew: any = []
@@ -9,10 +10,37 @@
   let opListAmount: number[] = []
   let iconUrl: string = ''
   let bannerUrl: string = ''
+  let minAllocate
+  let maxAllocate
+  let medianAllocate
+  let minAllocateString
+  let maxAllocateString
+  let medianAllocateString
+  let loading = true
+
+  let percent: any
   const fileType = ['png', 'jpeg']
 
   data['New Main-Category'] = data['New Main-Category'].replace(/_/g, ' ')
   let newData: any = []
+
+  const median = (array) => {
+    console.log('median', array)
+    if (array.length === 0) {
+      throw new Error('Input array is empty')
+    }
+
+    const sortedArray = [...array].sort((a, b) => a - b)
+    const half = Math.floor(sortedArray.length / 2)
+
+    const medianValue =
+      sortedArray.length % 2
+        ? sortedArray[half]
+        : (sortedArray[half - 1] + sortedArray[half]) / 2
+
+    console.log('median', medianValue)
+    return Number(medianValue.toFixed(2))
+  }
 
   const fetchBallot = async () => {
     try {
@@ -44,22 +72,39 @@
       list = await newData.data.retroPGF.project.lists
       // console.log(newData.data.retroPGF.project.lists)
       // console.log(list)
-      for (let each of list) {
-        // for (let subEach in each) {
-        //   console.log('subeach = ')
-        //   console.log(subEach)
-        // }
-        for (let subeach of each.listContent) {
-          const projectID = subeach.project.id.slice(8)
-          console.log(projectID)
-          if (projectID == data['Approval Attestation ID']) {
-            data['OPAmount'] = subeach.OPAmount
-            opListAmount.push(data['OPAmount'])
+      if (list.length != 0) {
+        for (let each of list) {
+          // for (let subEach in each) {
+          //   console.log('subeach = ')
+          //   console.log(subEach)
+          // }
+          for (let subeach of each.listContent) {
+            const projectID = subeach.project.id.slice(8)
+            // console.log(projectID)
+            if (projectID == data['Approval Attestation ID']) {
+              data['OPAmount'] = subeach.OPAmount
+              opListAmount.push(data['OPAmount'])
+            }
           }
         }
+      } else {
+        opListAmount.push(0)
       }
-      opListAmount = opListAmount.sort((a, b) => a - b)
-      // console.log(opListAmount)
+      opListAmount = await opListAmount.sort((a, b) => a - b)
+      minAllocate = opListAmount[0]
+      maxAllocate = opListAmount[opListAmount.length - 1]
+      medianAllocate = await median(opListAmount)
+      minAllocateString = minAllocate + ' OP'
+      maxAllocateString = maxAllocate + ' OP'
+      medianAllocateString = medianAllocate + ' OP'
+      if (maxAllocate && parseFloat(maxAllocate) !== 0) {
+        percent = (parseFloat(medianAllocate) / parseFloat(maxAllocate)) * 100
+      } else {
+        percent = 0 // or handle it differently based on your requirements
+      }
+      loading = false
+      console.log('percent', percent)
+      console.log(opListAmount)
       // console.log('Card', totalBallots)
       dataNew = { ...data, totalBallots: totalBallots, list: list }
       await dispatch('ballotUpdate', { dataNew })
@@ -171,5 +216,37 @@
         Loading...
       </div>
     {/if}
+    <div class="text-sm mt-2 font-medium">Lists Allocation</div>
+    <div class="mx-7 mt-2 pt-6 relative">
+      <div
+        class="absolute bg-[#ff0000] rounded top-5 h-4 w-1 flex flex-row justify-center items-center"
+        style="left: {loading ? 50 : percent}%;"
+      >
+        <div
+          class="absolute flex flex-row justify-center items-center whitespace-nowrap"
+        >
+          <div
+            class="absolute top-[-2.5em] text-xs text-red-500 text-center font-medium"
+          >
+            {medianAllocateString ?? 'Loading...'}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#000000] w-full h-2 rounded-md"></div>
+      <div class="mt-2 flex flex-row">
+        <div class="flex flex-row justify-start text-xs">
+          {minAllocateString ?? 'Loading...'}
+        </div>
+        <div class="flex flex-grow"></div>
+        <div class="flex flex-row justify-end text-xs">
+          {maxAllocateString ?? 'Loading...'}
+        </div>
+      </div>
+
+      <!-- <div class="">
+        <div class="bg-[#000000] w-10 h-3 rounded-md"></div>
+      </div> -->
+    </div>
   {/key}
 </div>
