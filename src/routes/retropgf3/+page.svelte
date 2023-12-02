@@ -122,15 +122,16 @@
       console.log(loading)
       // console.log(prompt)
       if (prompt === '') {
-        fetchDataNew = fetchData
-        return
+        fetchDataNew = await fetchData
+        // console.log(fetchDataNew)
+      } else {
+        fetchDataNew = await fetchData.filter((data: any) => {
+          return data['displayName']
+            .replace(/\s/g, '')
+            .toLowerCase()
+            .includes(prompt)
+        })
       }
-      fetchDataNew = await fetchData.filter((data: any) => {
-        return data['displayName']
-          .replace(/\s/g, '')
-          .toLowerCase()
-          .includes(prompt)
-      })
       console.log(fetchDataNew)
       setTimeout(() => {
         loading = false
