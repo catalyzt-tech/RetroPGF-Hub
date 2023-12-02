@@ -25,20 +25,19 @@
   let newData: any = []
 
   const median = (array) => {
-    console.log('median', array)
     if (array.length === 0) {
       throw new Error('Input array is empty')
     }
 
     const sortedArray = [...array].sort((a, b) => a - b)
-    const half = Math.floor(sortedArray.length / 2)
+    const middleIndex = Math.floor(sortedArray.length / 2)
 
     const medianValue =
       sortedArray.length % 2
-        ? sortedArray[half]
-        : (sortedArray[half - 1] + sortedArray[half]) / 2
+        ? sortedArray[middleIndex]
+        : (sortedArray[middleIndex - 1] + sortedArray[middleIndex]) / 2
 
-    console.log('median', medianValue)
+    console.log('medianValue', medianValue)
     return Number(medianValue.toFixed(2))
   }
 
@@ -93,22 +92,27 @@
       }
       opListAmount = await opListAmount.sort((a, b) => a - b)
       minAllocate = opListAmount[0]
-      minAllocate = Intl.NumberFormat('en-US').format(minAllocate)
-      maxAllocate = opListAmount[opListAmount.length - 1]
-      maxAllocate = Intl.NumberFormat('en-US').format(maxAllocate)
+      maxAllocate = await opListAmount[opListAmount.length - 1]
       medianAllocate = await median(opListAmount)
-      medianAllocate = Intl.NumberFormat('en-US').format(medianAllocate)
+
       // minAllocateString = minAllocate + ' OP'
       // maxAllocateString = maxAllocate + ' OP'
       // medianAllocateString = medianAllocate + ' OP'
-      if (maxAllocate && parseFloat(maxAllocate) !== 0 && list.length > 1) {
+      if (parseFloat(maxAllocate) !== 0 && list.length > 1) {
+        console.log(
+          'Check' + parseFloat(medianAllocate),
+          parseFloat(maxAllocate)
+        )
         percent = (parseFloat(medianAllocate) / parseFloat(maxAllocate)) * 100
-      } else if (list.length == 1) {
-        percent = 50 // or handle it differently based on your requirements
+      } else if (parseFloat(maxAllocate) !== 0 && list.length == 1) {
+        percent = 50
       } else {
         percent = 0
       }
       loading = false
+      minAllocate = Intl.NumberFormat('en-US').format(minAllocate)
+      maxAllocate = Intl.NumberFormat('en-US').format(maxAllocate)
+      medianAllocate = Intl.NumberFormat('en-US').format(medianAllocate)
       console.log('percent', percent)
       console.log(opListAmount)
       // console.log('Card', totalBallots)
@@ -242,12 +246,12 @@
           class="absolute flex flex-row justify-center items-center whitespace-nowrap"
         >
           <div
-            class="absolute top-[-2.5em] text-xs text-red-500 text-center font-medium"
+            class="absolute top-[-2.5em] text-xs text-red-500 text-center font-medium w-32"
           >
             {medianAllocate ?? 'Loading...'}
             <img
               src="/img/Optimism.png"
-              class="mb-1 w-4 h-4 inline"
+              class="mb-1 w-4 h-4 object-cover inline"
               alt="icon"
             />
           </div>
