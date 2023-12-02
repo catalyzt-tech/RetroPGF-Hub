@@ -104,10 +104,8 @@
           parseFloat(maxAllocate)
         )
         percent = (parseFloat(medianAllocate) / parseFloat(maxAllocate)) * 100
-      } else if (parseFloat(maxAllocate) !== 0 && list.length == 1) {
+      } else if (list.length == 1) {
         percent = 50
-      } else {
-        percent = 0
       }
       loading = false
       minAllocate = Intl.NumberFormat('en-US').format(minAllocate)
