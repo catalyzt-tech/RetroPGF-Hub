@@ -69,6 +69,7 @@
       newData = await rawData.json()
       totalBallots = await newData.data.retroPGF.project.includedInBallots
       totalLists = await newData.data.retroPGF.project.lists.length
+      console.log('totalLists', totalLists)
       list = await newData.data.retroPGF.project.lists
       // console.log(newData.data.retroPGF.project.lists)
       // console.log(list)
@@ -222,7 +223,7 @@
         <div
           class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
         >
-          {totalBallots ? totalBallots + ' Ballot' : 'Loading...'}
+          {totalBallots >= 0 ? totalBallots + ' Ballot' : 'Loading...'}
         </div>
       </div>
       <div>
@@ -230,7 +231,7 @@
         <div
           class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
         >
-          {totalLists ? totalLists + ' Lists' : 'Loading...'}
+          {totalLists >= 0 ? totalLists + ' Lists' : 'Loading...'}
         </div>
       </div>
     </div>
