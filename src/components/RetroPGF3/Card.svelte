@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { load } from '@/routes/archive/round1/[slug]/+page'
   import { onMount, createEventDispatcher } from 'svelte'
   export let data: any = []
   export let dataNew: any = []
   const dispatch = createEventDispatcher()
 
   let totalBallots: number
+  let totalLists: number
   let list: any = []
   let opListAmount: number[] = []
   let iconUrl: string = ''
@@ -69,6 +69,7 @@
       })
       newData = await rawData.json()
       totalBallots = await newData.data.retroPGF.project.includedInBallots
+      totalLists = await newData.data.retroPGF.project.lists.length
       list = await newData.data.retroPGF.project.lists
       // console.log(newData.data.retroPGF.project.lists)
       // console.log(list)
@@ -92,15 +93,20 @@
       }
       opListAmount = await opListAmount.sort((a, b) => a - b)
       minAllocate = opListAmount[0]
+      minAllocate = Intl.NumberFormat('en-US').format(minAllocate)
       maxAllocate = opListAmount[opListAmount.length - 1]
+      maxAllocate = Intl.NumberFormat('en-US').format(maxAllocate)
       medianAllocate = await median(opListAmount)
-      minAllocateString = minAllocate + ' OP'
-      maxAllocateString = maxAllocate + ' OP'
-      medianAllocateString = medianAllocate + ' OP'
-      if (maxAllocate && parseFloat(maxAllocate) !== 0) {
+      medianAllocate = Intl.NumberFormat('en-US').format(medianAllocate)
+      // minAllocateString = minAllocate + ' OP'
+      // maxAllocateString = maxAllocate + ' OP'
+      // medianAllocateString = medianAllocate + ' OP'
+      if (maxAllocate && parseFloat(maxAllocate) !== 0 && list.length > 1) {
         percent = (parseFloat(medianAllocate) / parseFloat(maxAllocate)) * 100
+      } else if (list.length == 1) {
+        percent = 50 // or handle it differently based on your requirements
       } else {
-        percent = 0 // or handle it differently based on your requirements
+        percent = 0
       }
       loading = false
       console.log('percent', percent)
@@ -157,19 +163,25 @@
         {data['applicantType'] === 'PROJECT' ? 'Project' : 'Individual'}
       </div>
     {/key}
-    <div class="absolute top-0 left-0 -z-0 w-full max-h-24 overflow-hidden">
+    <a
+      class="absolute top-0 left-0 -z-0 w-full max-h-24 overflow-hidden"
+      href={data['Agora URL']}
+      target="_blank"
+    >
       <img
         class="w-fit z-0"
         src={bannerUrl != '' ? bannerUrl : '/img/retropgf_sun.svg'}
         alt="icon"
       />
-    </div>
+    </a>
     {#if iconUrl !== ''}
-      <div
+      <a
         class="absolute top-14 my-1 bg-white rounded-xl overflow-hidden w-16 h-16"
+        href={data['Agora URL']}
+        target="_blank"
       >
         <img src={iconUrl} alt="icon" />
-      </div>
+      </a>
     {:else}
       <div class="absolute top-14 my-1 bg-[#ff0000] rounded-xl w-16">
         <img src="/img/retropgf_sun.svg" class="animate-pulse" alt="icon" />
@@ -202,21 +214,25 @@
     <div class="mt-2 text-xs bg-gray-200 w-fit px-3 py-1 rounded-md">
       {data['Sub-category']}
     </div>
-    <div class="text-sm mt-2 font-medium">Ballot Included</div>
-    {#if totalBallots !== undefined}
-      <div
-        class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
-      >
-        {totalBallots + ' Vote'}
+    <div class="grid grid-cols-2 mt-3">
+      <div>
+        <div class="text-sm font-medium">Ballot Included</div>
+        <div
+          class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
+        >
+          {totalBallots ? totalBallots + ' Ballot' : 'Loading...'}
+        </div>
       </div>
-    {:else}
-      <div
-        class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
-      >
-        Loading...
+      <div>
+        <div class="text-sm font-medium">List Included</div>
+        <div
+          class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
+        >
+          {totalLists ? totalLists + ' Lists' : 'Loading...'}
+        </div>
       </div>
-    {/if}
-    <div class="text-sm mt-2 font-medium">Lists Allocation</div>
+    </div>
+    <div class="text-sm mt-3 font-medium">Lists Allocation</div>
     <div class="mx-7 mt-2 pt-6 relative">
       <div
         class="absolute bg-[#ff0000] rounded top-5 h-4 w-1 flex flex-row justify-center items-center"
@@ -228,19 +244,26 @@
           <div
             class="absolute top-[-2.5em] text-xs text-red-500 text-center font-medium"
           >
-            {medianAllocateString ?? 'Loading...'}
+            {medianAllocate ?? 'Loading...'}
+            <img
+              src="/img/Optimism.png"
+              class="mb-1 w-4 h-4 inline"
+              alt="icon"
+            />
           </div>
         </div>
       </div>
 
-      <div class="bg-[#000000] w-full h-2 rounded-md"></div>
+      <div class="bg-[#000000] w-full h-[0.35em] rounded-md"></div>
       <div class="mt-2 flex flex-row">
         <div class="flex flex-row justify-start text-xs">
-          {minAllocateString ?? 'Loading...'}
+          {minAllocate ?? 'Loading...'}
+          <img src="/img/Optimism.png" class="ml-1 w-4 h-4" alt="icon" />
         </div>
         <div class="flex flex-grow"></div>
         <div class="flex flex-row justify-end text-xs">
-          {maxAllocateString ?? 'Loading...'}
+          {maxAllocate ?? 'Loading...'}
+          <img src="/img/Optimism.png" class="ml-1 w-4 h-4" alt="icon" />
         </div>
       </div>
 
