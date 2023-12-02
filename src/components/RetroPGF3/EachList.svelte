@@ -19,8 +19,8 @@
     }
     return labelArray
   }
-  let ballotDistribution = createDynamicArray(16)
-  let xLabel = createLabelArray(16)
+  let ballotDistribution = createDynamicArray(20)
+  let xLabel = createLabelArray(20)
   onMount(async () => {
     let opStack = await fetch(
       '../../../data/retroPGF3-dataset/listOpStackData.json'
