@@ -220,10 +220,29 @@
     <div class="grid grid-cols-2 mt-3">
       <div>
         <div class="text-sm font-medium">Ballot Included</div>
-        <div
-          class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
-        >
-          {totalBallots >= 0 ? totalBallots + ' Ballot' : 'Loading...'}
+        <div class="flex flex-row items-center">
+          <div
+            class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md whitespace-nowrap"
+          >
+            {totalBallots >= 0 ? totalBallots + ' Ballots' : 'Loading...'}
+          </div>
+          {#if totalBallots >= 0}
+            <div class="flex flex-row items-center">
+              {#if totalBallots >= 17}
+                <img
+                  src="/img/checked.png"
+                  class="ml-2 mt-2 w-5 h-5"
+                  alt="icon"
+                />
+              {:else}
+                <img
+                  src="/img/cross.png"
+                  class="ml-2 mt-2 w-5 h-5"
+                  alt="icon"
+                />
+              {/if}
+            </div>
+          {/if}
         </div>
       </div>
       <div>
