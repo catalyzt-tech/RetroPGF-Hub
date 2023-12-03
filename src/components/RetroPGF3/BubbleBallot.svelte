@@ -125,10 +125,13 @@
             enabled: true,
             // overflow: 'allow',
             // format: '{point.name}',
+            // formatter: function () {
+            //   return this.point.value >= Math.floor(Ballot[1] / 2)
+            //     ? this.point.name
+            //     : null
+            // },
             formatter: function () {
-              return this.point.value >= Math.floor(Ballot[1] / 2)
-                ? this.point.name
-                : null
+              return this.point.value >= 17 ? this.point.name : null
             },
             style: {
               color: 'black',
