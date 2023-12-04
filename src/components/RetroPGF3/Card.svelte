@@ -7,6 +7,7 @@
   let totalBallots: number
   let totalLists: number
   let list: any = []
+  let opListDetail: any = []
   let opListAmount: number[] = []
   let iconUrl: string = ''
   let bannerUrl: string = ''
@@ -84,9 +85,17 @@
             // console.log(projectID)
             if (projectID == data['Approval Attestation ID']) {
               data['OPAmount'] = subeach.OPAmount
+              let dataObj = {
+                OPAmount: subeach.OPAmount,
+                ListName: each.listName,
+                id: each.id.slice(5),
+              }
+              opListDetail.push(dataObj)
+
               opListAmount.push(data['OPAmount'])
             }
           }
+          console.log(opListDetail)
         }
       } else {
         opListAmount.push(0)
@@ -151,10 +160,18 @@
     // console.log(bannerUrl)
   }
   onMount(fetchIconNew)
+  let listContainer
+  const handleHover = () => {
+    listContainer.classList.remove('hidden')
+  }
+
+  const handleMouseLeave = () => {
+    listContainer.classList.add('hidden')
+  }
 </script>
 
 <div
-  class="flex flex-col relative w-80 m-5 p-4 bg-white border-black border-2 rounded-2xl overflow-hidden"
+  class="z-0 flex flex-col relative w-80 m-5 p-4 bg-white border-black border-2 rounded-2xl"
 >
   {#key data || iconUrl || bannerUrl}
     {#key data['applicantType']}
@@ -172,7 +189,7 @@
       target="_blank"
     >
       <img
-        class="w-fit z-0"
+        class="w-full z-0 rounded-[0.85em]"
         src={bannerUrl != '' ? bannerUrl : '/img/retropgf_sun.svg'}
         alt="icon"
       />
@@ -190,6 +207,7 @@
         <img src="/img/retropgf_sun.svg" class="animate-pulse" alt="icon" />
       </div>
     {/if}
+
     <!-- <img src={imgUrl} alt="banner" /> -->
     <div class="mt-28 text-lg font-bold">
       <a
@@ -246,11 +264,47 @@
         </div>
       </div>
       <div>
-        <div class="text-sm font-medium">List Included</div>
-        <div
-          class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
-        >
-          {totalLists >= 0 ? totalLists + ' Lists' : 'Loading...'}
+        <div class=" text-sm font-medium">List Included</div>
+        <div class="relative">
+          <div
+            class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
+            on:mouseenter={handleHover}
+            on:mouseleave={handleMouseLeave}
+          >
+            <div class="relative">
+              {totalLists >= 0 ? totalLists + ' Lists' : 'Loading...'}
+              <div
+                class="absolute w-72 p-4 rounded-md left-1/2 transform -translate-x-1/2 bg-gray-100 border border-black bottom-[3em] text-black hidden hover:block"
+                bind:this={listContainer}
+              >
+                {#if opListDetail.length > 0}
+                  {#each opListDetail as each}
+                    {#if each.ListName}
+                      <div class="flex flex-row">
+                        <div class="text-xs w-[60%] truncate">
+                          {each.ListName}
+                        </div>
+                        <div class="flex-grow"></div>
+                        <div class="text-end">
+                          {Intl.NumberFormat('en-US').format(each.OPAmount)}
+                          <img
+                            src="/img/Optimism.png"
+                            class="mb-1 ml-1 w-4 h-4 object-cover inline"
+                            alt="icon"
+                          />
+                        </div>
+                      </div>
+                    {/if}
+                    <!-- <div>test</div> -->
+                  {/each}
+                {:else if opListDetail.length == 0 && loading == false}
+                  <div class="text-xs mt-1">No List</div>
+                {:else}
+                  <div class="text-xs mt-1">Loading...</div>
+                {/if}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
