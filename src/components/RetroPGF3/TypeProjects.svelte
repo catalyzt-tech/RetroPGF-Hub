@@ -1,6 +1,6 @@
 <script>
   import Highcharts from 'highcharts'
-  import more from 'highcharts/highcharts-more'
+  // import more from 'highcharts/highcharts-more'
   import { onMount } from 'svelte'
 
   //   more(Highcharts)
