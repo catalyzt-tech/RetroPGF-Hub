@@ -4,8 +4,8 @@
   export let dataNew: any = []
   const dispatch = createEventDispatcher()
 
-  let totalBallots: number
-  let totalLists: number
+  let totalBallots: any
+  let totalLists: any
   let list: any = []
   let opListDetail: any = []
   let opListAmount: number[] = []
@@ -18,7 +18,7 @@
   let maxAllocateString
   let medianAllocateString
   let loading = true
-
+  let loadingLimit = 0
   let percent: any
   const fileType = ['png', 'jpeg']
 
@@ -121,13 +121,23 @@
       minAllocate = Intl.NumberFormat('en-US').format(minAllocate)
       maxAllocate = Intl.NumberFormat('en-US').format(maxAllocate)
       medianAllocate = Intl.NumberFormat('en-US').format(medianAllocate)
-      console.log('percent', percent)
-      console.log(opListAmount)
+      // console.log('loading count', loadingLimit)
+      // console.log('percent', percent)
+      // console.log(opListAmount)
       // console.log('Card', totalBallots)
       dataNew = { ...data, totalBallots: totalBallots, list: list }
       await dispatch('ballotUpdate', { dataNew })
     } catch (err) {
-      setTimeout(fetchBallot, 2000)
+      if (loadingLimit < 2) {
+        loadingLimit++
+        setTimeout(fetchBallot, 2000)
+      } else {
+        loading = false
+        totalBallots = 'Failed to load'
+        totalLists = 'Failed to load'
+        // console.log('totalLists', totalLists)
+        list = 'Failed to load'
+      }
     }
   }
 
