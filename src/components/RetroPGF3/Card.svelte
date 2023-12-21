@@ -274,8 +274,8 @@
         </div>
       </div>
       <div>
-        <div class=" text-sm font-medium">List Included</div>
-        <div class="relative">
+        <!-- <div class=" text-sm font-medium">List Included</div> -->
+        <!-- <div class="relative">
           <div
             class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md"
             on:mouseenter={handleHover}
@@ -305,7 +305,6 @@
                         </div>
                       </div>
                     {/if}
-                    <!-- <div>test</div> -->
                   {/each}
                 {:else if opListDetail.length == 0 && loading == false}
                   <div class="text-xs mt-1">No List</div>
@@ -315,11 +314,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
-    <div class="text-sm mt-3 font-medium">Lists Allocation</div>
-    <div class="mx-7 mt-2 pt-6 relative">
+    <!-- <div class="text-sm mt-3 font-medium">Lists Allocation</div> -->
+    <!-- <div class="mx-7 mt-2 pt-6 relative">
       <div
         class="absolute bg-[#ff0000] rounded top-5 h-4 w-1 flex flex-row justify-center items-center"
         style="left: {loading ? 50 : percent}%;"
@@ -352,10 +351,6 @@
           <img src="/img/Optimism.png" class="ml-1 w-4 h-4" alt="icon" />
         </div>
       </div>
-
-      <!-- <div class="">
-        <div class="bg-[#000000] w-10 h-3 rounded-md"></div>
-      </div> -->
-    </div>
+    </div> -->
   {/key}
 </div>

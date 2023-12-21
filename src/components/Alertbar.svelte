@@ -13,7 +13,7 @@
 </script>
 
 <div class=" bg-[#f03b3b] text-white text-center py-3 px-8 text-sm">
-  <div class="font-medium">RetroPGF3 is voting complete now!</div>
-  <div>The result will be announce on 11th Jan 2024</div>
+  <div class="font-medium">RetroPGF3 is now voting complete!</div>
+  <div>The result will be announced on January 11, 2024.</div>
   <div></div>
 </div>
