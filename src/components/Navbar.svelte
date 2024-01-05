@@ -46,7 +46,7 @@
     <nav class="container mx-auto md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between h-16">
         <a href="/" class="pl-6" on:click={selectPage}>
-          <img src="/img/hub-logo.png" alt="logo" height={100} class="w-40" />
+          <img src="/img/logo.svg" alt="logo" height={100} class="w-36" />
         </a>
         <div class="flex pr-6 md:hidden">
           <button
