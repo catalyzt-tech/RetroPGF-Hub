@@ -77,33 +77,40 @@
     return array
   }
 
+  // const fetchSheet = async () => {
+  //   try {
+  //     let query = encodeURIComponent('Select *')
+  //     let sheet = 'Metadata_full'
+  //     const sheetID = '13ihSoZycgH2h6ZvlARuj7q2zPvGtBqQ8LoNrJemTUU4'
+  //     let data: any = await fetch(
+  //       `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?tqx=out:json&sheet=${sheet}&tq=${query}`
+  //     )
+  //     data = await data.text()
+  //     let jsonData = await JSON.parse(data.slice(47, -2))
+  //     await jsonData.table.rows.forEach(async (row: any) => {
+  //       let obj: any = {}
+  //       row.c.forEach((cell: any, index: number) => {
+  //         if (cell) {
+  //           if (cell.v) {
+  //             obj[jsonData.table.cols[index].label] = cell.v
+  //           }
+  //         }
+  //       })
+  //       fetchData.push(obj)
+  //     })
+  //   } catch (err) {
+  //     console.log(err)
+  //   } finally {
+  //     fetchDataNew = fetchData
+  //     shuffle(fetchDataNew)
+  //   }
+  // }
+
   const fetchSheet = async () => {
-    try {
-      let query = encodeURIComponent('Select *')
-      let sheet = 'Metadata_full'
-      const sheetID = '13ihSoZycgH2h6ZvlARuj7q2zPvGtBqQ8LoNrJemTUU4'
-      let data: any = await fetch(
-        `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?tqx=out:json&sheet=${sheet}&tq=${query}`
-      )
-      data = await data.text()
-      let jsonData = await JSON.parse(data.slice(47, -2))
-      await jsonData.table.rows.forEach(async (row: any) => {
-        let obj: any = {}
-        row.c.forEach((cell: any, index: number) => {
-          if (cell) {
-            if (cell.v) {
-              obj[jsonData.table.cols[index].label] = cell.v
-            }
-          }
-        })
-        fetchData.push(obj)
-      })
-    } catch (err) {
-      console.log(err)
-    } finally {
-      fetchDataNew = fetchData
-      shuffle(fetchDataNew)
-    }
+    let result = await fetch('/data/retroPGF3-dataset/resultData.json')
+    result = await result.json()
+    fetchData = await shuffle(result)
+    fetchDataNew = await fetchData
   }
 
   onMount(async () => {

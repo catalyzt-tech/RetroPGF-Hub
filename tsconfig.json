@@ -21,7 +21,7 @@
     "src/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.svelte",
-    "src/stores/localStorage.js"
+    "src/stores/localStorage.ts"
   ]
   // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
   //
