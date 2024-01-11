@@ -29,7 +29,7 @@
 </script>
 
 <div
-  class="flex flex-col border-2 relative bg-white border-black w-[17em] m-3 overflow-hidden rounded-2xl shadow-xl transition ease-in duration-1000"
+  class="flex flex-col border-2 relative bg-white border-black w-72 h-80 m-3 overflow-hidden rounded-2xl shadow-xl transition ease-in duration-1000"
 >
   <div
     class="absolute right-3 top-2 font font-bold text-[12px] text-[#FF0000] border-black border-[1px] bg-white px-2.5 p-1.5 rounded-[10px]"
