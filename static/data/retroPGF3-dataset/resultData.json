@@ -25,7 +25,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 11,
     "median": 20000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 562
   },
   {
     "displayName": "Paul Burg",
@@ -54,7 +55,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 8,
     "median": 3388.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 503
   },
   {
     "displayName": "Public Assembly",
@@ -82,7 +84,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 33,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 188
   },
   {
     "displayName": "KudasaiJP",
@@ -110,7 +113,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 32,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 477
   },
   {
     "displayName": "Web3xplorer",
@@ -138,7 +142,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 27,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 388
   },
   {
     "displayName": "growthepie",
@@ -166,7 +171,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 66,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 118
   },
   {
     "displayName": "ERC-6551 Tooling",
@@ -194,7 +200,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 18,
     "median": 22255,
-    "scaled": 22116.85972344271
+    "scaled": 22116.85972344271,
+    "rank": 344
   },
   {
     "displayName": "Admiano",
@@ -223,7 +230,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 8,
     "median": 5750,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 509
   },
   {
     "displayName": "DeFi Africa",
@@ -251,7 +259,8 @@
     "Sub-category": "Developer Education",
     "ballot": 38,
     "median": 18544.5,
-    "scaled": 18429.39137907811
+    "scaled": 18429.39137907811,
+    "rank": 374
   },
   {
     "displayName": "Aestus Relay",
@@ -279,7 +288,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 22,
     "median": 97902,
-    "scaled": 97294.3069262857
+    "scaled": 97294.3069262857,
+    "rank": 97
   },
   {
     "displayName": "Onboard en Perú Optimistas e Indexer",
@@ -307,7 +317,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 31,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 485
   },
   {
     "displayName": "0xDeFiTH",
@@ -336,7 +347,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 23,
     "median": 8888,
-    "scaled": 8832.830789573525
+    "scaled": 8832.830789573525,
+    "rank": 446
   },
   {
     "displayName": "Ponder",
@@ -364,7 +376,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 39,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 211
   },
   {
     "displayName": "BasePaint",
@@ -392,7 +405,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 57,
     "median": 115777,
-    "scaled": 115058.35399690075
+    "scaled": 115058.35399690075,
+    "rank": 51
   },
   {
     "displayName": "raho & tnorm",
@@ -420,7 +434,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 37,
     "median": 17297,
-    "scaled": 17189.634807296723
+    "scaled": 17189.634807296723,
+    "rank": 381
   },
   {
     "displayName": "Sassal.eth",
@@ -448,7 +463,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 70,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 130
   },
   {
     "displayName": "Secureum",
@@ -476,7 +492,8 @@
     "Sub-category": "Developer Education",
     "ballot": 36,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 90
   },
   {
     "displayName": "Wagmi / Viem",
@@ -504,7 +521,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 88,
     "median": 200000,
-    "scaled": 198758.56862226652
+    "scaled": 198758.56862226652,
+    "rank": 28
   },
   {
     "displayName": "Web3bridge",
@@ -532,7 +550,8 @@
     "Sub-category": "Developer Education",
     "ballot": 36,
     "median": 29000,
-    "scaled": 28819.99245022865
+    "scaled": 28819.99245022865,
+    "rank": 299
   },
   {
     "displayName": "Llama Risk",
@@ -560,7 +579,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 25,
     "median": 30670,
-    "scaled": 30479.62649822457
+    "scaled": 30479.62649822457,
+    "rank": 289
   },
   {
     "displayName": "LXDAO",
@@ -588,7 +608,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 40,
     "median": 28000,
-    "scaled": 27826.19960711732
+    "scaled": 27826.19960711732,
+    "rank": 304
   },
   {
     "displayName": "Ethereum France",
@@ -616,7 +637,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 50,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 233
   },
   {
     "displayName": "Equalizer",
@@ -644,7 +666,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 30,
     "median": 51231,
-    "scaled": 50913.00114543669
+    "scaled": 50913.00114543669,
+    "rank": 185
   },
   {
     "displayName": "LexDAO",
@@ -672,7 +695,8 @@
     "Sub-category": "Developer Education",
     "ballot": 45,
     "median": 80000,
-    "scaled": 79503.42744890662
+    "scaled": 79503.42744890662,
+    "rank": 115
   },
   {
     "displayName": "Blockhead: track/visualize/explore all of crypto/DeFi/web3 in ONE interface!",
@@ -700,7 +724,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 38,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 266
   },
   {
     "displayName": "Token Engineering Academy",
@@ -728,7 +753,8 @@
     "Sub-category": "Developer Education",
     "ballot": 40,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 227
   },
   {
     "displayName": "StreamETH",
@@ -756,7 +782,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 38,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 80
   },
   {
     "displayName": "JEFE TOKEN",
@@ -784,7 +811,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 18,
     "median": 12500,
-    "scaled": 12422.41053889166
+    "scaled": 12422.41053889166,
+    "rank": 406
   },
   {
     "displayName": "eth.limo",
@@ -812,7 +840,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 50,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 60
   },
   {
     "displayName": "KManuS88",
@@ -840,7 +869,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 25,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 456
   },
   {
     "displayName": "Sourcify",
@@ -868,7 +898,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 77,
     "median": 200000,
-    "scaled": 198758.56862226652
+    "scaled": 198758.56862226652,
+    "rank": 29
   },
   {
     "displayName": "Taxman: The Web3 Income Tax Helper",
@@ -896,7 +927,8 @@
     "Sub-category": "Portfolio Tracker",
     "ballot": 18,
     "median": 21505,
-    "scaled": 21371.51509110921
+    "scaled": 21371.51509110921,
+    "rank": 347
   },
   {
     "displayName": "markg85",
@@ -925,7 +957,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 9,
     "median": 24978,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 552
   },
   {
     "displayName": "Grappa Finance",
@@ -953,7 +986,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 11,
     "median": 15000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 617
   },
   {
     "displayName": "WTF Academy",
@@ -981,7 +1015,8 @@
     "Sub-category": "Developer Education",
     "ballot": 43,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 193
   },
   {
     "displayName": "Funding the Commons",
@@ -1009,7 +1044,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 53,
     "median": 93235,
-    "scaled": 92656.2757274851
+    "scaled": 92656.2757274851,
+    "rank": 101
   },
   {
     "displayName": "TechNERD Program",
@@ -1037,7 +1073,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 37,
     "median": 50777,
-    "scaled": 50461.81919466415
+    "scaled": 50461.81919466415,
+    "rank": 186
   },
   {
     "displayName": "ETHSafari 2023",
@@ -1065,7 +1102,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 38,
     "median": 82743.5,
-    "scaled": 82229.89811398256
+    "scaled": 82229.89811398256,
+    "rank": 110
   },
   {
     "displayName": "Optimism Ambassadors",
@@ -1093,7 +1131,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 33,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 77
   },
   {
     "displayName": "ChainList",
@@ -1121,7 +1160,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 67,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 121
   },
   {
     "displayName": "Ospace Project",
@@ -1149,7 +1189,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 8,
     "median": 3250,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 523
   },
   {
     "displayName": "Optimism AI",
@@ -1178,7 +1219,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 7,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 544
   },
   {
     "displayName": "Alex Harley",
@@ -1206,7 +1248,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 31,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 206
   },
   {
     "displayName": "L2BEAT 💗",
@@ -1234,7 +1277,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 99,
     "median": 200000,
-    "scaled": 198758.56862226652
+    "scaled": 198758.56862226652,
+    "rank": 30
   },
   {
     "displayName": "Upnode Deploy | OP Stack Deployment UI",
@@ -1262,7 +1306,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 34,
     "median": 62500,
-    "scaled": 62112.052694458296
+    "scaled": 62112.052694458296,
+    "rank": 160
   },
   {
     "displayName": "Gadgeteer (nanobro)",
@@ -1290,7 +1335,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 34,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 395
   },
   {
     "displayName": "Findcaster",
@@ -1318,7 +1364,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 18,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 473
   },
   {
     "displayName": "Galxe",
@@ -1346,7 +1393,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 47,
     "median": 85846,
-    "scaled": 85313.14040973547
+    "scaled": 85313.14040973547,
+    "rank": 108
   },
   {
     "displayName": "Onchain Media Enthusiast",
@@ -1374,7 +1422,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 7,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 601
   },
   {
     "displayName": "draper",
@@ -1402,7 +1451,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 43,
     "median": 90000,
-    "scaled": 89441.35588001995
+    "scaled": 89441.35588001995,
+    "rank": 107
   },
   {
     "displayName": "Learning about OP through Gitcoin Grants",
@@ -1430,7 +1480,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 20,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 424
   },
   {
     "displayName": "QuantumFair",
@@ -1459,7 +1510,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 12,
     "median": 5750,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 515
   },
   {
     "displayName": "🐍 snekmate",
@@ -1487,7 +1539,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 49,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 210
   },
   {
     "displayName": "Peter Priew Sommon",
@@ -1515,7 +1568,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 27,
     "median": 2000,
-    "scaled": 1987.5856862226656
+    "scaled": 1987.5856862226656,
+    "rank": 501
   },
   {
     "displayName": "Coop Records Music",
@@ -1543,7 +1597,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 36,
     "median": 52000,
-    "scaled": 51677.2278417893
+    "scaled": 51677.2278417893,
+    "rank": 184
   },
   {
     "displayName": "Vyper",
@@ -1571,7 +1626,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 97,
     "median": 250000,
-    "scaled": 248448.2107778332
+    "scaled": 248448.2107778332,
+    "rank": 19
   },
   {
     "displayName": "IceBreak-R",
@@ -1600,7 +1656,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 6,
     "median": 2500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 543
   },
   {
     "displayName": "Hardhat Tracer",
@@ -1628,7 +1685,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 34,
     "median": 66558.5,
-    "scaled": 66145.36094822564
+    "scaled": 66145.36094822564,
+    "rank": 151
   },
   {
     "displayName": "DappRadar",
@@ -1656,7 +1714,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 54,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 123
   },
   {
     "displayName": "Andrew Hong (ilemi)",
@@ -1684,7 +1743,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 37,
     "median": 27717,
-    "scaled": 27544.95623251681
+    "scaled": 27544.95623251681,
+    "rank": 306
   },
   {
     "displayName": "Optimism Grant Analytics: Grant3",
@@ -1712,7 +1772,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 26,
     "median": 30243.5,
-    "scaled": 30055.773850637597
+    "scaled": 30055.773850637597,
+    "rank": 292
   },
   {
     "displayName": "The Ethernaut",
@@ -1740,7 +1801,8 @@
     "Sub-category": "Developer Education",
     "ballot": 56,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 63
   },
   {
     "displayName": "RetroPGF Community",
@@ -1768,7 +1830,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 35,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 222
   },
   {
     "displayName": "TrueBlocks / Unchained Index",
@@ -1796,7 +1859,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 70,
     "median": 137500,
-    "scaled": 136646.51592780824
+    "scaled": 136646.51592780824,
+    "rank": 42
   },
   {
     "displayName": "European Crypto Initiative",
@@ -1824,7 +1888,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 32,
     "median": 22042.5,
-    "scaled": 21905.67874428155
+    "scaled": 21905.67874428155,
+    "rank": 346
   },
   {
     "displayName": "Decentraclasses",
@@ -1852,7 +1917,8 @@
     "Sub-category": "Developer Education",
     "ballot": 10,
     "median": 30000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 582
   },
   {
     "displayName": "Ethereum Mexico",
@@ -1880,7 +1946,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 49,
     "median": 24510,
-    "scaled": 24357.862584658767
+    "scaled": 24357.862584658767,
+    "rank": 327
   },
   {
     "displayName": "cryptolawyer",
@@ -1909,7 +1976,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 21,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 462
   },
   {
     "displayName": "HER LATAM _ Optimistas Brillando en Blockchain",
@@ -1937,7 +2005,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 48,
     "median": 21500,
-    "scaled": 21366.546126893656
+    "scaled": 21366.546126893656,
+    "rank": 348
   },
   {
     "displayName": "Pyth Network",
@@ -1965,7 +2034,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 45,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 139
   },
   {
     "displayName": "Synapse Labs",
@@ -1993,7 +2063,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 29,
     "median": 24510,
-    "scaled": 24357.862584658767
+    "scaled": 24357.862584658767,
+    "rank": 332
   },
   {
     "displayName": "Lattice (OPCraft & MUD)",
@@ -2021,7 +2092,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 68,
     "median": 196500,
-    "scaled": 195280.2936713769
+    "scaled": 195280.2936713769,
+    "rank": 33
   },
   {
     "displayName": "Synpress",
@@ -2049,7 +2121,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 55,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 84
   },
   {
     "displayName": "Gaslite",
@@ -2077,7 +2150,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 41,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 203
   },
   {
     "displayName": "The Optimism Superchain Roundup",
@@ -2105,7 +2179,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 14,
     "median": 12500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 628
   },
   {
     "displayName": "UNWA",
@@ -2133,7 +2208,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 12,
     "median": 15000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 623
   },
   {
     "displayName": "Public HAUS",
@@ -2161,7 +2237,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 43,
     "median": 49505,
-    "scaled": 49197.714698226526
+    "scaled": 49197.714698226526,
+    "rank": 242
   },
   {
     "displayName": "DeFi Declassified (OptiNauts NFT collection)",
@@ -2189,7 +2266,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 6,
     "median": 12274,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 635
   },
   {
     "displayName": "dudedodut",
@@ -2217,7 +2295,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 7,
     "median": 7500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 597
   },
   {
     "displayName": "Webacy",
@@ -2245,7 +2324,8 @@
     "Sub-category": "Wallets",
     "ballot": 16,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 640
   },
   {
     "displayName": "Subli",
@@ -2273,7 +2353,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 30,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 319
   },
   {
     "displayName": "UTU",
@@ -2302,7 +2383,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 5,
     "median": 0,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 527
   },
   {
     "displayName": "Keccak hashing",
@@ -2330,7 +2412,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 52,
     "median": 82500,
-    "scaled": 81987.90955668496
+    "scaled": 81987.90955668496,
+    "rank": 111
   },
   {
     "displayName": "Carlos Melgar",
@@ -2358,7 +2441,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 28,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 398
   },
   {
     "displayName": "Optimism Vision Reservoir",
@@ -2386,7 +2470,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 28,
     "median": 11000,
-    "scaled": 10931.72127422466
+    "scaled": 10931.72127422466,
+    "rank": 414
   },
   {
     "displayName": "Remix CC",
@@ -2414,7 +2499,8 @@
     "Sub-category": "Developer Education",
     "ballot": 29,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 356
   },
   {
     "displayName": "MyFirstLayer2",
@@ -2442,7 +2528,8 @@
     "Sub-category": "Developer Education",
     "ballot": 24,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 458
   },
   {
     "displayName": "Builder Protocol",
@@ -2470,7 +2557,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 46,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 219
   },
   {
     "displayName": "APAC DAO",
@@ -2498,7 +2586,8 @@
     "Sub-category": "Developer Education",
     "ballot": 15,
     "median": 25612,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 550
   },
   {
     "displayName": "Hedgey",
@@ -2526,7 +2615,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 33,
     "median": 55777,
-    "scaled": 55430.78341022081
+    "scaled": 55430.78341022081,
+    "rank": 178
   },
   {
     "displayName": "Optimism Community Governance Calls (Michael)",
@@ -2554,7 +2644,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 49,
     "median": 48000,
-    "scaled": 47702.05646934397
+    "scaled": 47702.05646934397,
+    "rank": 245
   },
   {
     "displayName": "Another World",
@@ -2583,7 +2674,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 19,
     "median": 35000,
-    "scaled": 34782.749508896646
+    "scaled": 34782.749508896646,
+    "rank": 282
   },
   {
     "displayName": "Rollup Economics Dune Spell",
@@ -2611,7 +2703,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 33,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 390
   },
   {
     "displayName": "ACryptoS",
@@ -2641,7 +2734,8 @@
     "": "unsure",
     "ballot": 12,
     "median": 33010,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 629
   },
   {
     "displayName": "Travenesia",
@@ -2670,7 +2764,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 8,
     "median": 3500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 508
   },
   {
     "displayName": "Redacted Research",
@@ -2698,7 +2793,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 22,
     "median": 24755,
-    "scaled": 24601.34183122104
+    "scaled": 24601.34183122104,
+    "rank": 325
   },
   {
     "displayName": "Parsec Finance",
@@ -2726,7 +2822,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 25,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 351
   },
   {
     "displayName": "Sweetman",
@@ -2754,7 +2851,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 25,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 323
   },
   {
     "displayName": "Client Side Proofs",
@@ -2782,7 +2880,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 12,
     "median": 37255,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 576
   },
   {
     "displayName": "Metagov",
@@ -2810,7 +2909,8 @@
     "Sub-category": "Governance Research",
     "ballot": 58,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 68
   },
   {
     "displayName": "Ivan on Tech",
@@ -2838,7 +2938,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 9,
     "median": 3777,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 504
   },
   {
     "displayName": "Beam Wallet LLC",
@@ -2866,7 +2967,8 @@
     "Sub-category": "Wallets",
     "ballot": 39,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 129
   },
   {
     "displayName": "Jessy's Hacker House",
@@ -2895,7 +2997,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 38,
     "median": 54387,
-    "scaled": 54049.411358296056
+    "scaled": 54049.411358296056,
+    "rank": 181
   },
   {
     "displayName": "Clique",
@@ -2923,7 +3026,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 40,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 231
   },
   {
     "displayName": "Wildcards Protocol",
@@ -2951,7 +3055,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 25,
     "median": 40000,
-    "scaled": 39751.71372445331
+    "scaled": 39751.71372445331,
+    "rank": 258
   },
   {
     "displayName": "WASD",
@@ -2979,7 +3084,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 37,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 137
   },
   {
     "displayName": "prego",
@@ -3007,7 +3113,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 15,
     "median": 14247,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 630
   },
   {
     "displayName": "ITU Blockchain",
@@ -3035,7 +3142,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 55,
     "median": 30000,
-    "scaled": 29813.785293339984
+    "scaled": 29813.785293339984,
+    "rank": 297
   },
   {
     "displayName": "banterlytics",
@@ -3063,7 +3171,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 12,
     "median": 9274,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 613
   },
   {
     "displayName": "Doris Protocol",
@@ -3091,7 +3200,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 20,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 457
   },
   {
     "displayName": "Defi-lab.xyz",
@@ -3119,7 +3229,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 18,
     "median": 40335,
-    "scaled": 40084.6343268956
+    "scaled": 40084.6343268956,
+    "rank": 256
   },
   {
     "displayName": "jaxcoder",
@@ -3148,7 +3259,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 9,
     "median": 8326,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 572
   },
   {
     "displayName": "Grateful",
@@ -3176,7 +3288,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 27,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 207
   },
   {
     "displayName": "dm3 protocol.",
@@ -3204,7 +3317,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 23,
     "median": 30000,
-    "scaled": 29813.785293339984
+    "scaled": 29813.785293339984,
+    "rank": 295
   },
   {
     "displayName": "crate crypto",
@@ -3232,7 +3346,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 17,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 239
   },
   {
     "displayName": "EthernautDAO",
@@ -3260,7 +3375,8 @@
     "Sub-category": "Developer Education",
     "ballot": 60,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 93
   },
   {
     "displayName": "BMX by Morphex",
@@ -3288,7 +3404,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 28,
     "median": 32000,
-    "scaled": 31801.37097956265
+    "scaled": 31801.37097956265,
+    "rank": 286
   },
   {
     "displayName": "Spearbit",
@@ -3316,7 +3433,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 32,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 221
   },
   {
     "displayName": "libp2p",
@@ -3344,7 +3462,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 85,
     "median": 300000,
-    "scaled": 298137.85293339984
+    "scaled": 298137.85293339984,
+    "rank": 7
   },
   {
     "displayName": "Hats Protocol",
@@ -3372,7 +3491,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 39,
     "median": 80000,
-    "scaled": 79503.42744890662
+    "scaled": 79503.42744890662,
+    "rank": 114
   },
   {
     "displayName": "Diego",
@@ -3400,7 +3520,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 41,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 204
   },
   {
     "displayName": "Buildooor",
@@ -3428,7 +3549,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 25,
     "median": 39918,
-    "scaled": 39670.22271131818
+    "scaled": 39670.22271131818,
+    "rank": 261
   },
   {
     "displayName": "Polynomial Bytes",
@@ -3456,7 +3578,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 27,
     "median": 13457,
-    "scaled": 13373.470289749204
+    "scaled": 13373.470289749204,
+    "rank": 403
   },
   {
     "displayName": "Bware Labs",
@@ -3484,7 +3607,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 32,
     "median": 65995.5,
-    "scaled": 65585.85557755396
+    "scaled": 65585.85557755396,
+    "rank": 152
   },
   {
     "displayName": "0xs34n",
@@ -3512,7 +3636,8 @@
     "Sub-category": "Developer Education",
     "ballot": 31,
     "median": 24510,
-    "scaled": 24357.862584658767
+    "scaled": 24357.862584658767,
+    "rank": 331
   },
   {
     "displayName": "Xanny",
@@ -3540,7 +3665,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 28,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 470
   },
   {
     "displayName": "Ethereum Attestation Service",
@@ -3568,7 +3694,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 93,
     "median": 221130.22,
-    "scaled": 219757.6300316345
+    "scaled": 219757.6300316345,
+    "rank": 23
   },
   {
     "displayName": "Tally",
@@ -3596,7 +3723,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 65,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 83
   },
   {
     "displayName": "MesoReefDAO",
@@ -3625,7 +3753,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 16,
     "median": 15000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 618
   },
   {
     "displayName": "First NFT Agency",
@@ -3653,7 +3782,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 23,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 464
   },
   {
     "displayName": "The Rollup",
@@ -3681,7 +3811,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 22,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 460
   },
   {
     "displayName": "Dasy",
@@ -3709,7 +3840,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 26,
     "median": 38789.5,
-    "scaled": 38548.72748786704
+    "scaled": 38548.72748786704,
+    "rank": 262
   },
   {
     "displayName": "Interport Finance",
@@ -3737,7 +3869,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 5,
     "median": 9000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 614
   },
   {
     "displayName": "valio.xyz",
@@ -3765,7 +3898,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 19,
     "median": 20680,
-    "scaled": 20551.63599554236
+    "scaled": 20551.63599554236,
+    "rank": 350
   },
   {
     "displayName": "Blockscout Block Explorer",
@@ -3793,7 +3927,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 87,
     "median": 200000,
-    "scaled": 198758.56862226652
+    "scaled": 198758.56862226652,
+    "rank": 27
   },
   {
     "displayName": "Duct Tape",
@@ -3822,7 +3957,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 16,
     "median": 15000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 592
   },
   {
     "displayName": "OPChainList",
@@ -3850,7 +3986,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 19,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 426
   },
   {
     "displayName": "roll-op",
@@ -3878,7 +4015,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 55,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 138
   },
   {
     "displayName": "DeSchool",
@@ -3906,7 +4044,8 @@
     "Sub-category": "Developer Education",
     "ballot": 32,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 423
   },
   {
     "displayName": "Inbest Program",
@@ -3934,7 +4073,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 36,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 420
   },
   {
     "displayName": "Sinjun",
@@ -3963,7 +4103,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 12,
     "median": 7888.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 615
   },
   {
     "displayName": "ZEFIRIUM",
@@ -3991,7 +4132,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 23,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 492
   },
   {
     "displayName": "Eventcaster",
@@ -4019,7 +4161,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 37,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 313
   },
   {
     "displayName": "Arbiter",
@@ -4047,7 +4190,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 38,
     "median": 52500,
-    "scaled": 52174.12426334497
+    "scaled": 52174.12426334497,
+    "rank": 183
   },
   {
     "displayName": "ATK",
@@ -4076,7 +4220,8 @@
     "": "Not sure who'd use the hooks",
     "ballot": 18,
     "median": 6750,
-    "scaled": 6708.101691001496
+    "scaled": 6708.101691001496,
+    "rank": 450
   },
   {
     "displayName": "Agora",
@@ -4104,7 +4249,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 88,
     "median": 213636,
-    "scaled": 212309.9278309327
+    "scaled": 212309.9278309327,
+    "rank": 24
   },
   {
     "displayName": "Base Punk",
@@ -4132,7 +4278,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 13,
     "median": 15000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 595
   },
   {
     "displayName": "Nethermind",
@@ -4160,7 +4307,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 78,
     "median": 250000,
-    "scaled": 248448.2107778332
+    "scaled": 248448.2107778332,
+    "rank": 14
   },
   {
     "displayName": "The Noun Square Media Collective",
@@ -4188,7 +4336,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 33,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 228
   },
   {
     "displayName": "ApeWorX LTD",
@@ -4216,7 +4365,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 63,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 69
   },
   {
     "displayName": "geleeroyale",
@@ -4244,7 +4394,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 26,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 459
   },
   {
     "displayName": "Umbra",
@@ -4272,7 +4423,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 48,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 135
   },
   {
     "displayName": "Edge & Node / The Graph",
@@ -4300,7 +4452,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 58,
     "median": 67500,
-    "scaled": 67081.01691001497
+    "scaled": 67081.01691001497,
+    "rank": 150
   },
   {
     "displayName": "Invest in Music",
@@ -4328,7 +4481,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 20,
     "median": 22500,
-    "scaled": 22360.33897000499
+    "scaled": 22360.33897000499,
+    "rank": 338
   },
   {
     "displayName": "Keyring",
@@ -4356,7 +4510,8 @@
     "Sub-category": "Wallets",
     "ballot": 22,
     "median": 17826,
-    "scaled": 17715.35122130262
+    "scaled": 17715.35122130262,
+    "rank": 378
   },
   {
     "displayName": "Optimism Grants Council Season 4",
@@ -4384,7 +4539,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 47,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 230
   },
   {
     "displayName": "Marko",
@@ -4412,7 +4568,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 18,
     "median": 22255,
-    "scaled": 22116.85972344271
+    "scaled": 22116.85972344271,
+    "rank": 340
   },
   {
     "displayName": "Dapp-Learning",
@@ -4440,7 +4597,8 @@
     "Sub-category": "Developer Education",
     "ballot": 45,
     "median": 40000,
-    "scaled": 39751.71372445331
+    "scaled": 39751.71372445331,
+    "rank": 259
   },
   {
     "displayName": "L2 Planet",
@@ -4468,7 +4626,8 @@
     "Sub-category": "Developer Education",
     "ballot": 15,
     "median": 18000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 536
   },
   {
     "displayName": "ERC4337 Smart Accounts Dune Dashboard",
@@ -4496,7 +4655,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 48,
     "median": 75961.5,
-    "scaled": 75489.9950520015
+    "scaled": 75489.9950520015,
+    "rank": 131
   },
   {
     "displayName": "Conduit",
@@ -4524,7 +4684,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 43,
     "median": 90000,
-    "scaled": 89441.35588001995
+    "scaled": 89441.35588001995,
+    "rank": 105
   },
   {
     "displayName": "Seedle",
@@ -4552,7 +4713,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 9,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 605
   },
   {
     "displayName": "FA40Ziv",
@@ -4580,7 +4742,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 6,
     "median": 142,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 534
   },
   {
     "displayName": "joohhnnn",
@@ -4608,7 +4771,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 23,
     "median": 30000,
-    "scaled": 29813.785293339984
+    "scaled": 29813.785293339984,
+    "rank": 293
   },
   {
     "displayName": "Crew",
@@ -4636,7 +4800,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 12,
     "median": 5300,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 513
   },
   {
     "displayName": "Pidgin Parlour",
@@ -4664,7 +4829,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 25,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 465
   },
   {
     "displayName": "Kwenta",
@@ -4692,7 +4858,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 46,
     "median": 100500,
-    "scaled": 99876.18073268894
+    "scaled": 99876.18073268894,
+    "rank": 55
   },
   {
     "displayName": "NumbaNERDs",
@@ -4720,7 +4887,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 44,
     "median": 70000,
-    "scaled": 69565.49901779329
+    "scaled": 69565.49901779329,
+    "rank": 149
   },
   {
     "displayName": "grapebaba",
@@ -4748,7 +4916,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 36,
     "median": 63000,
-    "scaled": 62608.949116013966
+    "scaled": 62608.949116013966,
+    "rank": 159
   },
   {
     "displayName": "Modular Crypto",
@@ -4776,7 +4945,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 50,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 392
   },
   {
     "displayName": "Onchain Postcard",
@@ -4804,7 +4974,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 7,
     "median": 1777,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 533
   },
   {
     "displayName": "The Blockchain Report",
@@ -4833,7 +5004,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 4,
     "median": 557,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 529
   },
   {
     "displayName": "Cryptola",
@@ -4861,7 +5033,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 24,
     "median": 2750,
-    "scaled": 2732.9303185561653
+    "scaled": 2732.9303185561653,
+    "rank": 498
   },
   {
     "displayName": "Ethereum on ARM",
@@ -4889,7 +5062,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 60,
     "median": 134283.5,
-    "scaled": 133449.98124794065
+    "scaled": 133449.98124794065,
+    "rank": 43
   },
   {
     "displayName": "Ankr",
@@ -4917,7 +5091,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 23,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 208
   },
   {
     "displayName": "Raiden",
@@ -4945,7 +5120,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 8,
     "median": 14350,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 626
   },
   {
     "displayName": "Web3Native",
@@ -4974,7 +5150,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 14,
     "median": 21324,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 564
   },
   {
     "displayName": "Remix Project",
@@ -5002,7 +5179,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 90,
     "median": 250000,
-    "scaled": 248448.2107778332
+    "scaled": 248448.2107778332,
+    "rank": 12
   },
   {
     "displayName": "Mosaic",
@@ -5030,7 +5208,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 29,
     "median": 35000,
-    "scaled": 34782.749508896646
+    "scaled": 34782.749508896646,
+    "rank": 281
   },
   {
     "displayName": "Hitasyurek",
@@ -5058,7 +5237,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 25,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 495
   },
   {
     "displayName": "Launchcaster",
@@ -5087,7 +5267,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 38,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 275
   },
   {
     "displayName": "NFTEarth",
@@ -5115,7 +5296,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 20,
     "median": 0,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 643
   },
   {
     "displayName": "Soul Wallet",
@@ -5143,7 +5325,8 @@
     "Sub-category": "Wallets",
     "ballot": 39,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 94
   },
   {
     "displayName": "Fe",
@@ -5171,7 +5354,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 50,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 76
   },
   {
     "displayName": "Andino - Talent in technology",
@@ -5199,7 +5383,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 31,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 440
   },
   {
     "displayName": "Proof of Integrity",
@@ -5227,7 +5412,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 34,
     "median": 19426.5,
-    "scaled": 19305.916666702306
+    "scaled": 19305.916666702306,
+    "rank": 372
   },
   {
     "displayName": "Hope: A Curated AI Assistant for the Optimism Ecosystem",
@@ -5255,7 +5441,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 9,
     "median": 2000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 535
   },
   {
     "displayName": "RabbitHole",
@@ -5283,7 +5470,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 57,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 119
   },
   {
     "displayName": "Optimism Prices Contracts",
@@ -5311,7 +5499,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 25,
     "median": 30487,
-    "scaled": 30297.762407935203
+    "scaled": 30297.762407935203,
+    "rank": 291
   },
   {
     "displayName": "JiffyScan",
@@ -5339,7 +5528,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 44,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 140
   },
   {
     "displayName": "OpTracker",
@@ -5368,7 +5558,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 8,
     "median": 19973.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 555
   },
   {
     "displayName": "Optimism Resource Center",
@@ -5396,7 +5587,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 42,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 362
   },
   {
     "displayName": "Optimism University",
@@ -5424,7 +5616,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 35,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 359
   },
   {
     "displayName": "GreenPill Network",
@@ -5452,7 +5645,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 30,
     "median": 22500,
-    "scaled": 22360.33897000499
+    "scaled": 22360.33897000499,
+    "rank": 339
   },
   {
     "displayName": "beaconcha.in",
@@ -5480,7 +5674,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 94,
     "median": 225000,
-    "scaled": 223603.38970004988
+    "scaled": 223603.38970004988,
+    "rank": 22
   },
   {
     "displayName": "Forum",
@@ -5508,7 +5703,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 30,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 136
   },
   {
     "displayName": "Fugu Works",
@@ -5536,7 +5732,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 8,
     "median": 50746.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 583
   },
   {
     "displayName": "DecentrAgora",
@@ -5565,7 +5762,8 @@
     "Sub-category": "Developer Education",
     "ballot": 16,
     "median": 13199,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 632
   },
   {
     "displayName": "Patrick Workman",
@@ -5593,7 +5791,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 40,
     "median": 60995.5,
-    "scaled": 60616.891361997295
+    "scaled": 60616.891361997295,
+    "rank": 164
   },
   {
     "displayName": "DeepDAO",
@@ -5621,7 +5820,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 48,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 229
   },
   {
     "displayName": "Cryptoast",
@@ -5649,7 +5849,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 25,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 480
   },
   {
     "displayName": "Flexible Voting",
@@ -5677,7 +5878,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 42,
     "median": 45000,
-    "scaled": 44720.67794000998
+    "scaled": 44720.67794000998,
+    "rank": 253
   },
   {
     "displayName": "polynya",
@@ -5705,7 +5907,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 74,
     "median": 72500,
-    "scaled": 72049.98112557162
+    "scaled": 72049.98112557162,
+    "rank": 146
   },
   {
     "displayName": "Onchain Reads",
@@ -5734,7 +5937,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 10,
     "median": 15000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 549
   },
   {
     "displayName": "International Media Nodes (IMN)",
@@ -5762,7 +5966,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 463
   },
   {
     "displayName": "EIP-4824/ DAOstar",
@@ -5790,7 +5995,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 50,
     "median": 37447,
-    "scaled": 37214.56059599008
+    "scaled": 37214.56059599008,
+    "rank": 277
   },
   {
     "displayName": "Optimistic Academy",
@@ -5818,7 +6024,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 16,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 522
   },
   {
     "displayName": "sorryvrerror",
@@ -5847,7 +6054,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 17,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 391
   },
   {
     "displayName": "Bress",
@@ -5875,7 +6083,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 12,
     "median": 29884,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 586
   },
   {
     "displayName": "Boardroom",
@@ -5903,7 +6112,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 49,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 202
   },
   {
     "displayName": "Test in Prod",
@@ -5931,7 +6141,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 70,
     "median": 275000,
-    "scaled": 273293.0318556165
+    "scaled": 273293.0318556165,
+    "rank": 9
   },
   {
     "displayName": "Velocimeter",
@@ -5959,7 +6170,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 28,
     "median": 63731,
-    "scaled": 63335.41168432835
+    "scaled": 63335.41168432835,
+    "rank": 158
   },
   {
     "displayName": "BunnyAI",
@@ -5987,7 +6199,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 10,
     "median": 27553.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 570
   },
   {
     "displayName": "Giveth Web3 House",
@@ -6015,7 +6228,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 36,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 199
   },
   {
     "displayName": "Crypto Fundraising",
@@ -6043,7 +6257,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 14,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 634
   },
   {
     "displayName": "Flipside Crypto",
@@ -6071,7 +6286,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 47,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 234
   },
   {
     "displayName": "Giveth",
@@ -6099,7 +6315,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 78,
     "median": 150000,
-    "scaled": 149068.92646669992
+    "scaled": 149068.92646669992,
+    "rank": 37
   },
   {
     "displayName": "Erigon",
@@ -6127,7 +6344,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 92,
     "median": 341666.5,
-    "scaled": 339545.72243089817
+    "scaled": 339545.72243089817,
+    "rank": 4
   },
   {
     "displayName": "Splits",
@@ -6155,7 +6373,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 56,
     "median": 92743.5,
-    "scaled": 92167.82654509589
+    "scaled": 92167.82654509589,
+    "rank": 103
   },
   {
     "displayName": "0xSalman",
@@ -6183,7 +6402,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 19,
     "median": 24945,
-    "scaled": 24790.1624714122
+    "scaled": 24790.1624714122,
+    "rank": 324
   },
   {
     "displayName": "coinman",
@@ -6211,7 +6431,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 5,
     "median": 0,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 521
   },
   {
     "displayName": "Copin.io",
@@ -6239,7 +6460,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 25,
     "median": 28000,
-    "scaled": 27826.19960711732
+    "scaled": 27826.19960711732,
+    "rank": 305
   },
   {
     "displayName": "satorrr",
@@ -6267,7 +6489,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 31,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 430
   },
   {
     "displayName": "SEED Latam",
@@ -6295,7 +6518,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 47,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 363
   },
   {
     "displayName": "MetricsDAO",
@@ -6323,7 +6547,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 34,
     "median": 26876,
-    "scaled": 26709.17645146018
+    "scaled": 26709.17645146018,
+    "rank": 311
   },
   {
     "displayName": "Synthetix IPFS Node",
@@ -6351,7 +6576,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 32,
     "median": 40000,
-    "scaled": 39751.71372445331
+    "scaled": 39751.71372445331,
+    "rank": 257
   },
   {
     "displayName": "BanklessUA",
@@ -6379,7 +6605,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 29,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 467
   },
   {
     "displayName": "Artemis Analytics",
@@ -6407,7 +6634,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 16,
     "median": 29698.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 587
   },
   {
     "displayName": "Moso",
@@ -6435,7 +6663,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 30,
     "median": 65995.5,
-    "scaled": 65585.85557755396
+    "scaled": 65585.85557755396,
+    "rank": 154
   },
   {
     "displayName": "OP Reth",
@@ -6463,7 +6692,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 65,
     "median": 150000,
-    "scaled": 149068.92646669992
+    "scaled": 149068.92646669992,
+    "rank": 39
   },
   {
     "displayName": "BrightID",
@@ -6491,7 +6721,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 52,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 143
   },
   {
     "displayName": "Opti.domains | Connecting Web2&3 with ENS + Attestation",
@@ -6520,7 +6751,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 22,
     "median": 22255,
-    "scaled": 22116.85972344271
+    "scaled": 22116.85972344271,
+    "rank": 342
   },
   {
     "displayName": "Infinity Wallet",
@@ -6548,7 +6780,8 @@
     "Sub-category": "Wallets",
     "ballot": 23,
     "median": 24510,
-    "scaled": 24357.862584658767
+    "scaled": 24357.862584658767,
+    "rank": 333
   },
   {
     "displayName": "Lyra Research Collective",
@@ -6576,7 +6809,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 401
   },
   {
     "displayName": "Yearn",
@@ -6604,7 +6838,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 45,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 87
   },
   {
     "displayName": "UseDApp",
@@ -6632,7 +6867,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 41,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 71
   },
   {
     "displayName": "Solidity",
@@ -6660,7 +6896,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 109,
     "median": 425000,
-    "scaled": 422361.9583223164
+    "scaled": 422361.9583223164,
+    "rank": 3
   },
   {
     "displayName": "Optimism Türkiye",
@@ -6688,7 +6925,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 39,
     "median": 10514,
-    "scaled": 10448.737952472551
+    "scaled": 10448.737952472551,
+    "rank": 417
   },
   {
     "displayName": "Chaineye",
@@ -6715,7 +6953,8 @@
     "githubHandle": "null",
     "ballot": 12,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 627
   },
   {
     "displayName": "Crowdmuse",
@@ -6744,7 +6983,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 18,
     "median": 33000,
-    "scaled": 32795.16382267398
+    "scaled": 32795.16382267398,
+    "rank": 284
   },
   {
     "displayName": "6551 Studio",
@@ -6772,7 +7012,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 16,
     "median": 29247.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 607
   },
   {
     "displayName": "Synthetix",
@@ -6800,7 +7041,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 54,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 75
   },
   {
     "displayName": "The Red Guild",
@@ -6828,7 +7070,8 @@
     "Sub-category": "Developer Education",
     "ballot": 40,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 133
   },
   {
     "displayName": "Mrfti",
@@ -6856,7 +7099,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 24,
     "median": 5161,
-    "scaled": 5128.964863297589
+    "scaled": 5128.964863297589,
+    "rank": 454
   },
   {
     "displayName": "Sonne Finance",
@@ -6884,7 +7128,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 36,
     "median": 82500,
-    "scaled": 81987.90955668496
+    "scaled": 81987.90955668496,
+    "rank": 112
   },
   {
     "displayName": "WhatsABI",
@@ -6912,7 +7157,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 44,
     "median": 95000,
-    "scaled": 94410.3200955766
+    "scaled": 94410.3200955766,
+    "rank": 99
   },
   {
     "displayName": "P256Verifier",
@@ -6940,7 +7186,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 61,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 58
   },
   {
     "displayName": "Cryptoversidad",
@@ -6968,7 +7215,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 34,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 399
   },
   {
     "displayName": "gang",
@@ -6996,7 +7244,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 6,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 639
   },
   {
     "displayName": "Coordinape",
@@ -7024,7 +7273,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 52,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 78
   },
   {
     "displayName": "Iggy Social - Web3 Social for DAOs",
@@ -7052,7 +7302,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 31,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 272
   },
   {
     "displayName": "CompareNodes",
@@ -7080,7 +7331,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 8,
     "median": 31162,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 547
   },
   {
     "displayName": "ZORA",
@@ -7108,7 +7360,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 59,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 79
   },
   {
     "displayName": "Retrolist | RetroPGF Rubric-based List Creation UI",
@@ -7137,7 +7390,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 34,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 196
   },
   {
     "displayName": "Zengo: Decentralized Budget",
@@ -7165,7 +7419,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 27,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 316
   },
   {
     "displayName": "Bankless Malayalam",
@@ -7194,7 +7449,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 28,
     "median": 6500,
-    "scaled": 6459.653480223663
+    "scaled": 6459.653480223663,
+    "rank": 452
   },
   {
     "displayName": "yAcademy/yAudit",
@@ -7222,7 +7478,8 @@
     "Sub-category": "Developer Education",
     "ballot": 15,
     "median": 30000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 581
   },
   {
     "displayName": "Blocktorch",
@@ -7250,7 +7507,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 6,
     "median": 0,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 528
   },
   {
     "displayName": "GiveStation (youbuidl)",
@@ -7278,7 +7536,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 24,
     "median": 7500,
-    "scaled": 7453.446323334996
+    "scaled": 7453.446323334996,
+    "rank": 449
   },
   {
     "displayName": "Inverter Network",
@@ -7306,7 +7565,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 25,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 315
   },
   {
     "displayName": "Optimism Grants Changelog",
@@ -7334,7 +7594,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 41,
     "median": 30000,
-    "scaled": 29813.785293339984
+    "scaled": 29813.785293339984,
+    "rank": 298
   },
   {
     "displayName": "Vue Dapp",
@@ -7362,7 +7623,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 14,
     "median": 65995.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 590
   },
   {
     "displayName": "Rainie",
@@ -7390,7 +7652,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 7,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 518
   },
   {
     "displayName": "ETH Daily (OP News)",
@@ -7418,7 +7681,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 44,
     "median": 26000,
-    "scaled": 25838.61392089465
+    "scaled": 25838.61392089465,
+    "rank": 312
   },
   {
     "displayName": "RegenScore",
@@ -7446,7 +7710,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 44,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 352
   },
   {
     "displayName": "Holonym",
@@ -7474,7 +7739,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 36,
     "median": 65000,
-    "scaled": 64596.53480223663
+    "scaled": 64596.53480223663,
+    "rank": 156
   },
   {
     "displayName": "Banklessadria",
@@ -7502,7 +7768,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 21,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 488
   },
   {
     "displayName": "Revelo Intel",
@@ -7531,7 +7798,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 27,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 471
   },
   {
     "displayName": "ShapeShift DAO",
@@ -7559,7 +7827,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 36,
     "median": 60000,
-    "scaled": 59627.57058667997
+    "scaled": 59627.57058667997,
+    "rank": 170
   },
   {
     "displayName": "Faina",
@@ -7587,7 +7856,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 34,
     "median": 27500,
-    "scaled": 27329.30318556165
+    "scaled": 27329.30318556165,
+    "rank": 309
   },
   {
     "displayName": "Apetimism Launchpad",
@@ -7615,7 +7885,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 12,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 642
   },
   {
     "displayName": "PWN DAO",
@@ -7644,7 +7915,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 24,
     "median": 37500,
-    "scaled": 37267.23161667498
+    "scaled": 37267.23161667498,
+    "rank": 276
   },
   {
     "displayName": "Eternal Garden: ORIGINS",
@@ -7672,7 +7944,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 9,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 593
   },
   {
     "displayName": "Chronicle Labs",
@@ -7700,7 +7973,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 32,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 190
   },
   {
     "displayName": "RainbowKit",
@@ -7728,7 +8002,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 79,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 57
   },
   {
     "displayName": "Ipsilon",
@@ -7756,7 +8031,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 40,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 95
   },
   {
     "displayName": "Pocket Network",
@@ -7784,7 +8060,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 49,
     "median": 62157,
-    "scaled": 61771.18174927111
+    "scaled": 61771.18174927111,
+    "rank": 163
   },
   {
     "displayName": "Zuzalu",
@@ -7812,7 +8089,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 46,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 81
   },
   {
     "displayName": "Randomness Ceremony",
@@ -7840,7 +8118,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 20,
     "median": 14913.5,
-    "scaled": 14820.92956574086
+    "scaled": 14820.92956574086,
+    "rank": 402
   },
   {
     "displayName": "foundry",
@@ -7868,7 +8147,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 83,
     "median": 200000,
-    "scaled": 198758.56862226652
+    "scaled": 198758.56862226652,
+    "rank": 26
   },
   {
     "displayName": "Geo Web",
@@ -7896,7 +8176,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 29,
     "median": 32000,
-    "scaled": 31801.37097956265
+    "scaled": 31801.37097956265,
+    "rank": 287
   },
   {
     "displayName": "Arkham",
@@ -7925,7 +8206,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 15,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 604
   },
   {
     "displayName": "dForce",
@@ -7953,7 +8235,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 13,
     "median": 42000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 574
   },
   {
     "displayName": "zerokn0wledge",
@@ -7981,7 +8264,8 @@
     "Sub-category": "Developer Education",
     "ballot": 24,
     "median": 11653,
-    "scaled": 11580.66800077636
+    "scaled": 11580.66800077636,
+    "rank": 411
   },
   {
     "displayName": "RADAR",
@@ -8009,7 +8293,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 30,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 238
   },
   {
     "displayName": "Revolte",
@@ -8037,7 +8322,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 21,
     "median": 20777,
-    "scaled": 20648.03390132416
+    "scaled": 20648.03390132416,
+    "rank": 349
   },
   {
     "displayName": "Bankless Academy",
@@ -8065,7 +8351,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 45,
     "median": 24510,
-    "scaled": 24357.862584658767
+    "scaled": 24357.862584658767,
+    "rank": 328
   },
   {
     "displayName": "Pods",
@@ -8093,7 +8380,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 10,
     "median": 14000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 631
   },
   {
     "displayName": "Lighthouse",
@@ -8121,7 +8409,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 89,
     "median": 300000,
-    "scaled": 298137.85293339984
+    "scaled": 298137.85293339984,
+    "rank": 6
   },
   {
     "displayName": "Greg's Farcaster Projects",
@@ -8149,7 +8438,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 36,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 220
   },
   {
     "displayName": "Optimism_CIS",
@@ -8177,7 +8467,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 32,
     "median": 7500,
-    "scaled": 7453.446323334996
+    "scaled": 7453.446323334996,
+    "rank": 448
   },
   {
     "displayName": "Perelyn",
@@ -8205,7 +8496,8 @@
     "Sub-category": "Developer Education",
     "ballot": 7,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 606
   },
   {
     "displayName": "Cannon",
@@ -8233,7 +8525,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 54,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 85
   },
   {
     "displayName": "OP Governance Analytics Dashboard",
@@ -8261,7 +8554,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 48,
     "median": 91000,
-    "scaled": 90435.14872313128
+    "scaled": 90435.14872313128,
+    "rank": 104
   },
   {
     "displayName": "VitaDAO",
@@ -8290,7 +8584,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 36,
     "median": 22255,
-    "scaled": 22116.85972344271
+    "scaled": 22116.85972344271,
+    "rank": 343
   },
   {
     "displayName": "CrossAngle (“Xangle”)",
@@ -8318,7 +8613,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 17,
     "median": 30487,
-    "scaled": 30297.762407935203
+    "scaled": 30297.762407935203,
+    "rank": 290
   },
   {
     "displayName": "Validato",
@@ -8346,7 +8642,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 9,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 546
   },
   {
     "displayName": "Seamless Protocol",
@@ -8374,7 +8671,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 29,
     "median": 60000,
-    "scaled": 59627.57058667997
+    "scaled": 59627.57058667997,
+    "rank": 166
   },
   {
     "displayName": "Gravity DAO",
@@ -8402,7 +8700,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 44,
     "median": 27500,
-    "scaled": 27329.30318556165
+    "scaled": 27329.30318556165,
+    "rank": 307
   },
   {
     "displayName": "Kairos Research",
@@ -8431,7 +8730,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 36,
     "median": 17442,
-    "scaled": 17333.734769547867
+    "scaled": 17333.734769547867,
+    "rank": 380
   },
   {
     "displayName": "ERC1155 Bridge",
@@ -8459,7 +8759,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 12,
     "median": 34755,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 609
   },
   {
     "displayName": "Coinbold",
@@ -8488,7 +8789,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 9,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 638
   },
   {
     "displayName": "Prettier Solidity",
@@ -8516,7 +8818,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 73,
     "median": 93235,
-    "scaled": 92656.2757274851
+    "scaled": 92656.2757274851,
+    "rank": 102
   },
   {
     "displayName": "wslyvh",
@@ -8544,7 +8847,8 @@
     "Sub-category": "Developer Education",
     "ballot": 51,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 215
   },
   {
     "displayName": "Donate3",
@@ -8572,7 +8876,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 16,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 619
   },
   {
     "displayName": "LATASHÁ",
@@ -8600,7 +8905,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 24,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 367
   },
   {
     "displayName": "IntoTheBlock Optimism Analytics",
@@ -8628,7 +8934,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 13,
     "median": 38336,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 577
   },
   {
     "displayName": "Ronan Sandford",
@@ -8656,7 +8963,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 61,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 86
   },
   {
     "displayName": "Tokepad",
@@ -8684,7 +8992,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 28,
     "median": 28355.5,
-    "scaled": 28179.4929628434
+    "scaled": 28179.4929628434,
+    "rank": 303
   },
   {
     "displayName": "Account Abstraction - ERC-4337",
@@ -8712,7 +9021,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 85,
     "median": 250000,
-    "scaled": 248448.2107778332
+    "scaled": 248448.2107778332,
+    "rank": 16
   },
   {
     "displayName": "Superchain Eco",
@@ -8740,7 +9050,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 35,
     "median": 30000,
-    "scaled": 29813.785293339984
+    "scaled": 29813.785293339984,
+    "rank": 294
   },
   {
     "displayName": "EGG 🥚 RECORDS",
@@ -8768,7 +9079,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 6,
     "median": 3325,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 506
   },
   {
     "displayName": "Refi Phangan",
@@ -8796,7 +9108,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 13,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 641
   },
   {
     "displayName": "MarcoV",
@@ -8824,7 +9137,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 25,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 441
   },
   {
     "displayName": "EVM.Finance",
@@ -8852,7 +9166,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 7,
     "median": 20680,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 559
   },
   {
     "displayName": "Optimystics",
@@ -8880,7 +9195,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 32,
     "median": 30000,
-    "scaled": 29813.785293339984
+    "scaled": 29813.785293339984,
+    "rank": 296
   },
   {
     "displayName": "Private Retrieval Fund",
@@ -8908,7 +9224,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 7,
     "median": 20000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 561
   },
   {
     "displayName": "Crypto Sapiens",
@@ -8936,7 +9253,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 21,
     "median": 18000,
-    "scaled": 17888.27117600399
+    "scaled": 17888.27117600399,
+    "rank": 376
   },
   {
     "displayName": "Commons Stack",
@@ -8964,7 +9282,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 49,
     "median": 70000,
-    "scaled": 69565.49901779329
+    "scaled": 69565.49901779329,
+    "rank": 147
   },
   {
     "displayName": "Slugs",
@@ -8992,7 +9311,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 28,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 361
   },
   {
     "displayName": "Alpha Insiders",
@@ -9020,7 +9340,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 27,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 491
   },
   {
     "displayName": "ReFi Medellín",
@@ -9048,7 +9369,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 29,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 396
   },
   {
     "displayName": "JobStash",
@@ -9076,7 +9398,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 30,
     "median": 16600,
-    "scaled": 16496.961195648124
+    "scaled": 16496.961195648124,
+    "rank": 384
   },
   {
     "displayName": "AW House/Komorebi's Hacker House",
@@ -9104,7 +9427,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 46,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 125
   },
   {
     "displayName": "Brian Kim",
@@ -9132,7 +9456,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 16,
     "median": 18500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 565
   },
   {
     "displayName": "Bored Town NFT art community",
@@ -9160,7 +9485,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 20,
     "median": 12500,
-    "scaled": 12422.41053889166
+    "scaled": 12422.41053889166,
+    "rank": 408
   },
   {
     "displayName": "go-ethereum",
@@ -9188,7 +9514,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 101,
     "median": 500000,
-    "scaled": 496896.4215556664
+    "scaled": 496896.4215556664,
+    "rank": 2
   },
   {
     "displayName": "Frame",
@@ -9216,7 +9543,8 @@
     "Sub-category": "Wallets",
     "ballot": 79,
     "median": 124313,
-    "scaled": 123541.36970569912
+    "scaled": 123541.36970569912,
+    "rank": 49
   },
   {
     "displayName": "Thank Optimism | by ThriveCoin",
@@ -9244,7 +9572,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 14,
     "median": 22954.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 545
   },
   {
     "displayName": "AsymmetricDefi",
@@ -9272,7 +9601,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 9,
     "median": 1039,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 530
   },
   {
     "displayName": "DeFI Saint",
@@ -9300,7 +9630,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 27,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 436
   },
   {
     "displayName": "SpaghettETH",
@@ -9328,7 +9659,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 37,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 369
   },
   {
     "displayName": "Ethereum Lima",
@@ -9356,7 +9688,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 41,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 371
   },
   {
     "displayName": "Fire",
@@ -9384,7 +9717,8 @@
     "Sub-category": "Wallets",
     "ballot": 32,
     "median": 62500,
-    "scaled": 62112.052694458296
+    "scaled": 62112.052694458296,
+    "rank": 162
   },
   {
     "displayName": "Defigourmet",
@@ -9412,7 +9746,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 9,
     "median": 542,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 520
   },
   {
     "displayName": "Pin Save - decentralized Pinterest",
@@ -9441,7 +9776,8 @@
     "": "Block explorer",
     "ballot": 25,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 368
   },
   {
     "displayName": "Wallet Abstraction",
@@ -9469,7 +9805,8 @@
     "Sub-category": "Wallets",
     "ballot": 33,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 73
   },
   {
     "displayName": "Decent.xyz",
@@ -9497,7 +9834,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 35,
     "median": 56991,
-    "scaled": 56637.24792175797
+    "scaled": 56637.24792175797,
+    "rank": 176
   },
   {
     "displayName": "AyohTunde",
@@ -9525,7 +9863,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 13,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 512
   },
   {
     "displayName": "Ultra Sound Relay",
@@ -9553,7 +9892,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 42,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 92
   },
   {
     "displayName": "Wallet Guard",
@@ -9581,7 +9921,8 @@
     "Sub-category": "Wallets",
     "ballot": 25,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 226
   },
   {
     "displayName": "Optimism Español",
@@ -9609,7 +9950,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 46,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 400
   },
   {
     "displayName": "Mac Budkowski",
@@ -9637,7 +9979,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 14,
     "median": 15000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 596
   },
   {
     "displayName": "Rodrigo NuñΞz",
@@ -9666,7 +10009,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 30,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 442
   },
   {
     "displayName": "Index Supply",
@@ -9694,7 +10038,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 24,
     "median": 57500,
-    "scaled": 57143.08847890164
+    "scaled": 57143.08847890164,
+    "rank": 175
   },
   {
     "displayName": "Syke",
@@ -9723,7 +10068,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 6,
     "median": 60,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 541
   },
   {
     "displayName": "FilosofiaCodigo",
@@ -9751,7 +10097,8 @@
     "Sub-category": "Developer Education",
     "ballot": 24,
     "median": 12500,
-    "scaled": 12422.41053889166
+    "scaled": 12422.41053889166,
+    "rank": 405
   },
   {
     "displayName": "Castle Capital",
@@ -9779,7 +10126,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 29,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 475
   },
   {
     "displayName": "🏰 BuidlGuidl",
@@ -9807,7 +10155,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 88,
     "median": 229024.5,
-    "scaled": 227602.90899715145
+    "scaled": 227602.90899715145,
+    "rank": 20
   },
   {
     "displayName": "ETHBarcelona",
@@ -9835,7 +10184,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 41,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 197
   },
   {
     "displayName": "Covalent",
@@ -9863,7 +10213,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 39,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 235
   },
   {
     "displayName": "MultiBaas blockchain middleware",
@@ -9892,7 +10243,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 21,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 314
   },
   {
     "displayName": "Mike-Alphaday",
@@ -9920,7 +10272,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 13,
     "median": 50000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 620
   },
   {
     "displayName": "Optimistic Indexer",
@@ -9948,7 +10301,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 44,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 66
   },
   {
     "displayName": "NingNing",
@@ -9976,7 +10330,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 6,
     "median": 2350,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 507
   },
   {
     "displayName": "Across Protocol",
@@ -10004,7 +10359,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 42,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 267
   },
   {
     "displayName": "LNRZ",
@@ -10032,7 +10388,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 7,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 510
   },
   {
     "displayName": "Namespace",
@@ -10061,7 +10418,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 15,
     "median": 15335,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 569
   },
   {
     "displayName": "ARPA Randcast",
@@ -10089,7 +10447,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 13,
     "median": 20777,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 558
   },
   {
     "displayName": "arabianhorses",
@@ -10117,7 +10476,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 14,
     "median": 12500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 622
   },
   {
     "displayName": "Impersonator",
@@ -10145,7 +10505,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 36,
     "median": 72964,
-    "scaled": 72511.10100477528
+    "scaled": 72511.10100477528,
+    "rank": 145
   },
   {
     "displayName": "Kernel",
@@ -10173,7 +10534,8 @@
     "Sub-category": "Developer Education",
     "ballot": 67,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 89
   },
   {
     "displayName": "Nodies DLB",
@@ -10201,7 +10563,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 12,
     "median": 7500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 611
   },
   {
     "displayName": "Velodrome",
@@ -10229,7 +10592,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 44,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 65
   },
   {
     "displayName": "Optiland Quests",
@@ -10257,7 +10621,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 13,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 600
   },
   {
     "displayName": "Lemon",
@@ -10285,7 +10650,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 24,
     "median": 2750,
-    "scaled": 2732.9303185561653
+    "scaled": 2732.9303185561653,
+    "rank": 497
   },
   {
     "displayName": "simple-optimism-node (Maintaining my own fork)",
@@ -10313,7 +10679,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 24,
     "median": 17500,
-    "scaled": 17391.374754448323
+    "scaled": 17391.374754448323,
+    "rank": 379
   },
   {
     "displayName": "Clave (formerly Opclave)",
@@ -10341,7 +10708,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 42,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 132
   },
   {
     "displayName": "Gitcoin",
@@ -10369,7 +10737,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 78,
     "median": 177500,
-    "scaled": 176398.22965226157
+    "scaled": 176398.22965226157,
+    "rank": 34
   },
   {
     "displayName": "Candide",
@@ -10397,7 +10766,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 43,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 67
   },
   {
     "displayName": "Kromatika Finance",
@@ -10425,7 +10795,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 24,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 318
   },
   {
     "displayName": "monaditar",
@@ -10453,7 +10824,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 13,
     "median": 21289,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 557
   },
   {
     "displayName": "Summer of Protocols",
@@ -10481,7 +10853,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 52,
     "median": 27500,
-    "scaled": 27329.30318556165
+    "scaled": 27329.30318556165,
+    "rank": 308
   },
   {
     "displayName": "Node Guardians",
@@ -10509,7 +10882,8 @@
     "Sub-category": "Developer Education",
     "ballot": 40,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 205
   },
   {
     "displayName": "criptomommy",
@@ -10538,7 +10912,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 24,
     "median": 17250,
-    "scaled": 17142.92654367049
+    "scaled": 17142.92654367049,
+    "rank": 382
   },
   {
     "displayName": "State Channels",
@@ -10566,7 +10941,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 30,
     "median": 62500,
-    "scaled": 62112.052694458296
+    "scaled": 62112.052694458296,
+    "rank": 161
   },
   {
     "displayName": "Protocol Guild",
@@ -10594,7 +10970,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 95,
     "median": 668000,
-    "scaled": 663853.6191983703
+    "scaled": 663853.6191983703,
+    "rank": 1
   },
   {
     "displayName": "Vectorized",
@@ -10622,7 +10999,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 72,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 74
   },
   {
     "displayName": "Aerodrome Finance",
@@ -10650,7 +11028,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 51,
     "median": 105000,
-    "scaled": 104348.24852668996
+    "scaled": 104348.24852668996,
+    "rank": 54
   },
   {
     "displayName": "Golden Boys (GOLD)",
@@ -10679,7 +11058,8 @@
     "Sub-category": "Developer Education",
     "ballot": 15,
     "median": 7500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 610
   },
   {
     "displayName": "Pairwise",
@@ -10707,7 +11087,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 66,
     "median": 96809.5,
-    "scaled": 96208.58824518656
+    "scaled": 96208.58824518656,
+    "rank": 98
   },
   {
     "displayName": "DeFi France",
@@ -10735,7 +11116,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 25,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 479
   },
   {
     "displayName": "Reno",
@@ -10764,7 +11146,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 19,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 355
   },
   {
     "displayName": "LauNaMu",
@@ -10792,7 +11175,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 63,
     "median": 46618,
-    "scaled": 46328.63476016411
+    "scaled": 46328.63476016411,
+    "rank": 247
   },
   {
     "displayName": "WakeUp Labs",
@@ -10820,7 +11204,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 27,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 354
   },
   {
     "displayName": "Solow 🐽",
@@ -10848,7 +11233,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 45,
     "median": 12307,
-    "scaled": 12230.608520171172
+    "scaled": 12230.608520171172,
+    "rank": 410
   },
   {
     "displayName": "Superscan",
@@ -10876,7 +11262,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 45,
     "median": 65000,
-    "scaled": 64596.53480223663
+    "scaled": 64596.53480223663,
+    "rank": 155
   },
   {
     "displayName": "Bedrock Contracts Architecture Diagram",
@@ -10904,7 +11291,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 21,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 484
   },
   {
     "displayName": "Gitcoin Passport",
@@ -10932,7 +11320,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 60,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 82
   },
   {
     "displayName": "Lyra Finance",
@@ -10960,7 +11349,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 40,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 91
   },
   {
     "displayName": "Token Engineering Commons",
@@ -10988,7 +11378,8 @@
     "Sub-category": "Developer Education",
     "ballot": 56,
     "median": 60000,
-    "scaled": 59627.57058667997
+    "scaled": 59627.57058667997,
+    "rank": 171
   },
   {
     "displayName": "Accessible Education for Web3 Public Goods Changemakers",
@@ -11017,7 +11408,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 22,
     "median": 22255,
-    "scaled": 22116.85972344271
+    "scaled": 22116.85972344271,
+    "rank": 341
   },
   {
     "displayName": "Kredeum NFTs Factory",
@@ -11045,7 +11437,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 19,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 393
   },
   {
     "displayName": "Bob",
@@ -11074,7 +11467,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 22,
     "median": 2000,
-    "scaled": 1987.5856862226656
+    "scaled": 1987.5856862226656,
+    "rank": 500
   },
   {
     "displayName": "The Open X Project",
@@ -11102,7 +11496,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 10,
     "median": 28000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 566
   },
   {
     "displayName": "OurNetwork",
@@ -11130,7 +11525,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 28,
     "median": 10184,
-    "scaled": 10120.786314245814
+    "scaled": 10120.786314245814,
+    "rank": 418
   },
   {
     "displayName": "Collab.Land",
@@ -11158,7 +11554,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 50,
     "median": 60000,
-    "scaled": 59627.57058667997
+    "scaled": 59627.57058667997,
+    "rank": 168
   },
   {
     "displayName": "Public Goods Grant Management",
@@ -11186,7 +11583,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 26,
     "median": 59041,
-    "scaled": 58674.5232501362
+    "scaled": 58674.5232501362,
+    "rank": 172
   },
   {
     "displayName": "blst Cryptography Library",
@@ -11214,7 +11612,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 44,
     "median": 65000,
-    "scaled": 64596.53480223663
+    "scaled": 64596.53480223663,
+    "rank": 157
   },
   {
     "displayName": "Praise",
@@ -11242,7 +11641,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 62,
     "median": 60000,
-    "scaled": 59627.57058667997
+    "scaled": 59627.57058667997,
+    "rank": 167
   },
   {
     "displayName": "Layer3",
@@ -11270,7 +11670,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 51,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 198
   },
   {
     "displayName": "AyaHQ",
@@ -11298,7 +11699,8 @@
     "Sub-category": "Developer Education",
     "ballot": 32,
     "median": 28468,
-    "scaled": 28291.29465769342
+    "scaled": 28291.29465769342,
+    "rank": 302
   },
   {
     "displayName": "Based Nouns",
@@ -11326,7 +11728,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 31,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 225
   },
   {
     "displayName": "FOAM",
@@ -11354,7 +11757,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 31,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 322
   },
   {
     "displayName": "Dappnode",
@@ -11382,7 +11786,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 87,
     "median": 250000,
-    "scaled": 248448.2107778332
+    "scaled": 248448.2107778332,
+    "rank": 15
   },
   {
     "displayName": "CryptoZombies",
@@ -11410,7 +11815,8 @@
     "Sub-category": "Developer Education",
     "ballot": 70,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 61
   },
   {
     "displayName": "Cryptosquare",
@@ -11438,7 +11844,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 32,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 427
   },
   {
     "displayName": "Mirror Curator DAO",
@@ -11466,7 +11873,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 12,
     "median": 14497,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 637
   },
   {
     "displayName": "PR0",
@@ -11493,7 +11901,8 @@
     "githubHandle": "pr0toshi",
     "ballot": 28,
     "median": 65995.5,
-    "scaled": 65585.85557755396
+    "scaled": 65585.85557755396,
+    "rank": 153
   },
   {
     "displayName": "Interface",
@@ -11521,7 +11930,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 38,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 274
   },
   {
     "displayName": "Republik Rupiah",
@@ -11549,7 +11959,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 33,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 385
   },
   {
     "displayName": "Baseswap",
@@ -11577,7 +11988,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 36,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 317
   },
   {
     "displayName": "borderless",
@@ -11605,7 +12017,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 6,
     "median": 3740,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 517
   },
   {
     "displayName": "OptimismArabia",
@@ -11633,7 +12046,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 34,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 494
   },
   {
     "displayName": "Verso",
@@ -11661,7 +12075,8 @@
     "Sub-category": "Wallets",
     "ballot": 9,
     "median": 20000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 573
   },
   {
     "displayName": "ETHGlobal",
@@ -11689,7 +12104,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 90,
     "median": 255434.5,
-    "scaled": 253848.9779837217
+    "scaled": 253848.9779837217,
+    "rank": 10
   },
   {
     "displayName": "Thesleeper.eth Thai OP Educator",
@@ -11718,7 +12134,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 43,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 443
   },
   {
     "displayName": "CryptoMage",
@@ -11746,7 +12163,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 438
   },
   {
     "displayName": "Bankless DAO Magyar ( Hungarian )",
@@ -11774,7 +12192,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 25,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 487
   },
   {
     "displayName": "The Rug",
@@ -11802,7 +12221,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 10,
     "median": 19500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 556
   },
   {
     "displayName": "MaitreSarce",
@@ -11830,7 +12250,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 4,
     "median": 0,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 514
   },
   {
     "displayName": "CryptoStats & CryptoFees.info",
@@ -11858,7 +12279,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 34,
     "median": 35672.5,
-    "scaled": 35451.07519588902
+    "scaled": 35451.07519588902,
+    "rank": 279
   },
   {
     "displayName": "Zero Knowledge Podcast",
@@ -11886,7 +12308,8 @@
     "Sub-category": "Developer Education",
     "ballot": 47,
     "median": 90000,
-    "scaled": 89441.35588001995
+    "scaled": 89441.35588001995,
+    "rank": 106
   },
   {
     "displayName": "Joe",
@@ -11914,7 +12337,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 10,
     "median": 3924.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 516
   },
   {
     "displayName": "Cryptomind Research",
@@ -11942,7 +12366,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 437
   },
   {
     "displayName": "Bankless Africa",
@@ -11970,7 +12395,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 33,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 387
   },
   {
     "displayName": "Layer 2 Weekly Roundup",
@@ -11998,7 +12424,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 22,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 434
   },
   {
     "displayName": "DAC on OP Stack",
@@ -12027,7 +12454,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 44,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 224
   },
   {
     "displayName": "Immunefi",
@@ -12055,7 +12483,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 53,
     "median": 130000,
-    "scaled": 129193.06960447326
+    "scaled": 129193.06960447326,
+    "rank": 44
   },
   {
     "displayName": "Cardo",
@@ -12084,7 +12513,8 @@
     "Sub-category": "Developer Education",
     "ballot": 17,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 439
   },
   {
     "displayName": "solidity-analyzer",
@@ -12112,7 +12542,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 27,
     "median": 35000,
-    "scaled": 34782.749508896646
+    "scaled": 34782.749508896646,
+    "rank": 280
   },
   {
     "displayName": "Attest Fest",
@@ -12140,7 +12571,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 33,
     "median": 23000,
-    "scaled": 22857.23539156065
+    "scaled": 22857.23539156065,
+    "rank": 337
   },
   {
     "displayName": "Odos",
@@ -12168,7 +12600,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 35,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 195
   },
   {
     "displayName": "Fractal Visions",
@@ -12196,7 +12629,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 32,
     "median": 12500,
-    "scaled": 12422.41053889166
+    "scaled": 12422.41053889166,
+    "rank": 409
   },
   {
     "displayName": "Clipper",
@@ -12224,7 +12658,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 23,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 212
   },
   {
     "displayName": "abi-to-sol",
@@ -12252,7 +12687,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 36,
     "median": 58495.5,
-    "scaled": 58132.40925421897
+    "scaled": 58132.40925421897,
+    "rank": 173
   },
   {
     "displayName": "UXUY",
@@ -12281,7 +12717,8 @@
     "Sub-category": "Wallets",
     "ballot": 4,
     "median": 2500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 525
   },
   {
     "displayName": "Slither",
@@ -12309,7 +12746,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 68,
     "median": 122500,
-    "scaled": 121739.62328113828
+    "scaled": 121739.62328113828,
+    "rank": 50
   },
   {
     "displayName": "Divergent",
@@ -12337,7 +12775,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 26,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 445
   },
   {
     "displayName": "Blockchain_Space",
@@ -12366,7 +12805,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 7,
     "median": 0,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 553
   },
   {
     "displayName": "Mechanism Institute",
@@ -12394,7 +12834,8 @@
     "Sub-category": "Governance Research",
     "ballot": 38,
     "median": 27500,
-    "scaled": 27329.30318556165
+    "scaled": 27329.30318556165,
+    "rank": 310
   },
   {
     "displayName": "DefiLlama",
@@ -12422,7 +12863,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 93,
     "median": 250000,
-    "scaled": 248448.2107778332
+    "scaled": 248448.2107778332,
+    "rank": 17
   },
   {
     "displayName": "ghostlinkz",
@@ -12451,7 +12893,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 11,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 524
   },
   {
     "displayName": "Surreal",
@@ -12479,7 +12922,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 28,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 270
   },
   {
     "displayName": "DRAMA",
@@ -12507,7 +12951,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 6,
     "median": 2500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 540
   },
   {
     "displayName": "IC3",
@@ -12535,7 +12980,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 50,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 200
   },
   {
     "displayName": "0xKhmer",
@@ -12563,7 +13009,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 22,
     "median": 23956,
-    "scaled": 23807.30134957509
+    "scaled": 23807.30134957509,
+    "rank": 334
   },
   {
     "displayName": "Blockchain na Escola",
@@ -12591,7 +13038,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 30,
     "median": 10951,
-    "scaled": 10883.025424912204
+    "scaled": 10883.025424912204,
+    "rank": 416
   },
   {
     "displayName": "LlamaFolio",
@@ -12619,7 +13067,8 @@
     "Sub-category": "Portfolio Tracker",
     "ballot": 24,
     "median": 56388.5,
-    "scaled": 56038.48773378339
+    "scaled": 56038.48773378339,
+    "rank": 177
   },
   {
     "displayName": "mehran @ castle",
@@ -12647,7 +13096,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 6,
     "median": 2500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 542
   },
   {
     "displayName": "jordanmmck",
@@ -12675,7 +13125,8 @@
     "Sub-category": "Developer Education",
     "ballot": 33,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 432
   },
   {
     "displayName": "CII",
@@ -12704,7 +13155,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 25,
     "median": 8500,
-    "scaled": 8447.239166446328
+    "scaled": 8447.239166446328,
+    "rank": 447
   },
   {
     "displayName": "c2ba",
@@ -12732,7 +13184,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 4,
     "median": 2500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 539
   },
   {
     "displayName": "DackieSwap",
@@ -12760,7 +13213,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 30,
     "median": 48256,
-    "scaled": 47956.46743718047
+    "scaled": 47956.46743718047,
+    "rank": 244
   },
   {
     "displayName": "Small Brain Games",
@@ -12788,7 +13242,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 57,
     "median": 114999,
-    "scaled": 114285.18316496017
+    "scaled": 114285.18316496017,
+    "rank": 52
   },
   {
     "displayName": "Socket",
@@ -12816,7 +13271,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 46,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 124
   },
   {
     "displayName": "Blocknative | Web3 Onboard",
@@ -12844,7 +13300,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 44,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 96
   },
   {
     "displayName": "Mirror",
@@ -12872,7 +13329,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 73,
     "median": 139852,
-    "scaled": 138983.9166948061
+    "scaled": 138983.9166948061,
+    "rank": 41
   },
   {
     "displayName": "Token Terminal",
@@ -12901,7 +13359,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 46,
     "median": 43256,
-    "scaled": 42987.50322162381
+    "scaled": 42987.50322162381,
+    "rank": 254
   },
   {
     "displayName": "UniDex",
@@ -12929,7 +13388,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 16,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 602
   },
   {
     "displayName": "Squirtle0x",
@@ -12957,7 +13417,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 8,
     "median": 1638.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 532
   },
   {
     "displayName": "bh2smith",
@@ -12985,7 +13446,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 18,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 421
   },
   {
     "displayName": "Bankless Bengali",
@@ -13014,7 +13476,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 24,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 469
   },
   {
     "displayName": "far.quest",
@@ -13042,7 +13505,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 25,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 397
   },
   {
     "displayName": "Josh | The Blockchain Socialist",
@@ -13070,7 +13534,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 31,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 321
   },
   {
     "displayName": "anotherblock",
@@ -13099,7 +13564,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 33,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 216
   },
   {
     "displayName": "flink",
@@ -13127,7 +13593,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 17,
     "median": 24510,
-    "scaled": 24357.862584658767
+    "scaled": 24357.862584658767,
+    "rank": 330
   },
   {
     "displayName": "Sushi",
@@ -13155,7 +13622,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 38,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 72
   },
   {
     "displayName": "Brichis",
@@ -13183,7 +13651,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 47,
     "median": 24510,
-    "scaled": 24357.862584658767
+    "scaled": 24357.862584658767,
+    "rank": 329
   },
   {
     "displayName": "SupraOracles",
@@ -13212,7 +13681,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 4,
     "median": 5712,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 511
   },
   {
     "displayName": "Coinpassport",
@@ -13240,7 +13710,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 7,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 580
   },
   {
     "displayName": "Titanoboa",
@@ -13268,7 +13739,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 23,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 357
   },
   {
     "displayName": "Tockable.xyz",
@@ -13296,7 +13768,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 16,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 608
   },
   {
     "displayName": "Snapshot",
@@ -13324,7 +13797,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 77,
     "median": 200000,
-    "scaled": 198758.56862226652
+    "scaled": 198758.56862226652,
+    "rank": 31
   },
   {
     "displayName": "API3 DAO",
@@ -13352,7 +13826,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 9,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 636
   },
   {
     "displayName": "RetroPGF Hub",
@@ -13380,7 +13855,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 45,
     "median": 45000,
-    "scaled": 44720.67794000998
+    "scaled": 44720.67794000998,
+    "rank": 251
   },
   {
     "displayName": "Nimbus",
@@ -13408,7 +13884,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 64,
     "median": 200000,
-    "scaled": 198758.56862226652
+    "scaled": 198758.56862226652,
+    "rank": 32
   },
   {
     "displayName": "Spring Zhang",
@@ -13436,7 +13913,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 16,
     "median": 12500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 633
   },
   {
     "displayName": "Kiwi News",
@@ -13464,7 +13942,8 @@
     "Sub-category": "Developer Education",
     "ballot": 33,
     "median": 28495,
-    "scaled": 28318.127064457425
+    "scaled": 28318.127064457425,
+    "rank": 301
   },
   {
     "displayName": "Unitap",
@@ -13493,7 +13972,8 @@
     "": "Block Explorer",
     "ballot": 23,
     "median": 28495,
-    "scaled": 28318.127064457425
+    "scaled": 28318.127064457425,
+    "rank": 300
   },
   {
     "displayName": "Guild.xyz",
@@ -13521,7 +14001,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 62,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 56
   },
   {
     "displayName": "BanklessDAO Turkish",
@@ -13549,7 +14030,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 26,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 486
   },
   {
     "displayName": "Otterscan",
@@ -13577,7 +14059,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 99,
     "median": 171429,
-    "scaled": 170364.91330173265
+    "scaled": 170364.91330173265,
+    "rank": 35
   },
   {
     "displayName": "Lore",
@@ -13605,7 +14088,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 40,
     "median": 60000,
-    "scaled": 59627.57058667997
+    "scaled": 59627.57058667997,
+    "rank": 165
   },
   {
     "displayName": "Encriptados",
@@ -13633,7 +14117,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 30,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 468
   },
   {
     "displayName": "Archly",
@@ -13662,7 +14147,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 265
   },
   {
     "displayName": "Moonwell",
@@ -13690,7 +14176,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 39,
     "median": 55000,
-    "scaled": 54658.6063711233
+    "scaled": 54658.6063711233,
+    "rank": 179
   },
   {
     "displayName": "Ryan Berckmans",
@@ -13718,7 +14205,8 @@
     "Sub-category": "Developer Education",
     "ballot": 15,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 621
   },
   {
     "displayName": "Tenderly",
@@ -13746,7 +14234,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 74,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 120
   },
   {
     "displayName": "Yoki Finance",
@@ -13774,7 +14263,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 27,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 365
   },
   {
     "displayName": "Stable.fish",
@@ -13802,7 +14292,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 11,
     "median": 25000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 551
   },
   {
     "displayName": "JustCause",
@@ -13830,7 +14321,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 16,
     "median": 50000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 575
   },
   {
     "displayName": "Apetimism",
@@ -13858,7 +14350,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 9,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 526
   },
   {
     "displayName": "Rollup.codes",
@@ -13886,7 +14379,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 58,
     "median": 46371.5,
-    "scaled": 46083.66482433717
+    "scaled": 46083.66482433717,
+    "rank": 249
   },
   {
     "displayName": "Metagals",
@@ -13915,7 +14409,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 32,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 433
   },
   {
     "displayName": "Blue Norva",
@@ -13943,7 +14438,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 7,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 591
   },
   {
     "displayName": "Protofire Blockchain Learning Path",
@@ -13971,7 +14467,8 @@
     "Sub-category": "Developer Education",
     "ballot": 34,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 364
   },
   {
     "displayName": "Smart Onboarding SDK",
@@ -13999,7 +14496,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 18,
     "median": 22255,
-    "scaled": 22116.85972344271
+    "scaled": 22116.85972344271,
+    "rank": 345
   },
   {
     "displayName": "Downstream",
@@ -14027,7 +14525,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 16,
     "median": 41330.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 578
   },
   {
     "displayName": "ilyessghz",
@@ -14055,7 +14554,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 22,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 478
   },
   {
     "displayName": "Merkly",
@@ -14083,7 +14583,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 8,
     "median": 41330.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 579
   },
   {
     "displayName": "Bonding Curve Research Group",
@@ -14111,7 +14612,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 27,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 236
   },
   {
     "displayName": "CharmVerse",
@@ -14139,7 +14641,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 57,
     "median": 110000,
-    "scaled": 109317.2127422466
+    "scaled": 109317.2127422466,
+    "rank": 53
   },
   {
     "displayName": "Ultra Sound Money",
@@ -14167,7 +14670,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 54,
     "median": 55000,
-    "scaled": 54658.6063711233
+    "scaled": 54658.6063711233,
+    "rank": 180
   },
   {
     "displayName": "LearnWeb3",
@@ -14195,7 +14699,8 @@
     "Sub-category": "Developer Education",
     "ballot": 44,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 213
   },
   {
     "displayName": "Delegate",
@@ -14223,7 +14728,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 50,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 223
   },
   {
     "displayName": "Xofee",
@@ -14251,7 +14757,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 50389,
-    "scaled": 50076.22757153695
+    "scaled": 50076.22757153695,
+    "rank": 187
   },
   {
     "displayName": "PatrickAlphaC",
@@ -14279,7 +14786,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 47,
     "median": 85000,
-    "scaled": 84472.39166446328
+    "scaled": 84472.39166446328,
+    "rank": 109
   },
   {
     "displayName": "OptiChads",
@@ -14307,7 +14815,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 20,
     "median": 11500,
-    "scaled": 11428.617695780327
+    "scaled": 11428.617695780327,
+    "rank": 412
   },
   {
     "displayName": "Cryptotesters",
@@ -14335,7 +14844,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 16,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 625
   },
   {
     "displayName": "Nacion Bankless",
@@ -14363,7 +14873,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 40,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 482
   },
   {
     "displayName": "Picodes",
@@ -14391,7 +14902,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 11,
     "median": 28969,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 589
   },
   {
     "displayName": "Cielo",
@@ -14419,7 +14931,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 33,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 271
   },
   {
     "displayName": "WOOFi",
@@ -14447,7 +14960,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 28,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 273
   },
   {
     "displayName": "BlockchainOAU",
@@ -14475,7 +14989,8 @@
     "Sub-category": "Developer Education",
     "ballot": 13,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 599
   },
   {
     "displayName": "Layer2News",
@@ -14503,7 +15018,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 12,
     "median": 16500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 567
   },
   {
     "displayName": "GoPlus Security",
@@ -14531,7 +15047,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 18,
     "median": 37255,
-    "scaled": 37023.7523701127
+    "scaled": 37023.7523701127,
+    "rank": 278
   },
   {
     "displayName": "web3made",
@@ -14559,7 +15076,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 461
   },
   {
     "displayName": "Crust Network",
@@ -14587,7 +15105,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 24,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 142
   },
   {
     "displayName": "T2LATAM",
@@ -14615,7 +15134,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 38,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 428
   },
   {
     "displayName": "Thumbs Up",
@@ -14643,7 +15163,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 12,
     "median": 7500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 538
   },
   {
     "displayName": "EZKL",
@@ -14671,7 +15192,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 35,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 194
   },
   {
     "displayName": "Web3js",
@@ -14699,7 +15221,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 90,
     "median": 250000,
-    "scaled": 248448.2107778332
+    "scaled": 248448.2107778332,
+    "rank": 13
   },
   {
     "displayName": "MrCrypto Arabic",
@@ -14727,7 +15250,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 394
   },
   {
     "displayName": "rhino.fi",
@@ -14755,7 +15279,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 33,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 268
   },
   {
     "displayName": "Airstack",
@@ -14783,7 +15308,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 34,
     "median": 48256,
-    "scaled": 47956.46743718047
+    "scaled": 47956.46743718047,
+    "rank": 243
   },
   {
     "displayName": "OpenOcean",
@@ -14811,7 +15337,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 27,
     "median": 45000,
-    "scaled": 44720.67794000998
+    "scaled": 44720.67794000998,
+    "rank": 252
   },
   {
     "displayName": "LandTorn - Lorak",
@@ -14839,7 +15366,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 32,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 269
   },
   {
     "displayName": "daboyshine",
@@ -14868,7 +15396,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 32,
     "median": 6000,
-    "scaled": 5962.757058667997
+    "scaled": 5962.757058667997,
+    "rank": 453
   },
   {
     "displayName": "Rainbow Wallet",
@@ -14896,7 +15425,8 @@
     "Sub-category": "Wallets",
     "ballot": 58,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 122
   },
   {
     "displayName": "Open Source Observer",
@@ -14924,7 +15454,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 63,
     "median": 128713,
-    "scaled": 127914.05821538896
+    "scaled": 127914.05821538896,
+    "rank": 45
   },
   {
     "displayName": "OptiNames | ENS on Optimism 🔴",
@@ -14952,7 +15483,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 42,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 240
   },
   {
     "displayName": "go-ethereum-hdwallet",
@@ -14980,7 +15512,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 35,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 218
   },
   {
     "displayName": "Messari",
@@ -15008,7 +15541,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 39,
     "median": 25000,
-    "scaled": 24844.82107778332
+    "scaled": 24844.82107778332,
+    "rank": 320
   },
   {
     "displayName": "RoOptimism",
@@ -15037,7 +15571,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 35,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 489
   },
   {
     "displayName": "Pheasant Network",
@@ -15065,7 +15600,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 18,
     "median": 24733,
-    "scaled": 24579.478388672596
+    "scaled": 24579.478388672596,
+    "rank": 326
   },
   {
     "displayName": "ZachXBT",
@@ -15093,7 +15629,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 60,
     "median": 150388.5,
-    "scaled": 149455.01498624866
+    "scaled": 149455.01498624866,
+    "rank": 36
   },
   {
     "displayName": "indexed.xyz",
@@ -15122,7 +15659,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 46,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 263
   },
   {
     "displayName": "Venom & Fang",
@@ -15150,7 +15688,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 19,
     "median": 39918,
-    "scaled": 39670.22271131818
+    "scaled": 39670.22271131818,
+    "rank": 260
   },
   {
     "displayName": "EIP Fun",
@@ -15178,7 +15717,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 14,
     "median": 7500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 548
   },
   {
     "displayName": "Synapse DAO",
@@ -15206,7 +15746,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 33,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 191
   },
   {
     "displayName": "Revert",
@@ -15234,7 +15775,8 @@
     "Sub-category": "Portfolio Tracker",
     "ballot": 24,
     "median": 30670,
-    "scaled": 30479.62649822457
+    "scaled": 30479.62649822457,
+    "rank": 288
   },
   {
     "displayName": "Lodestar",
@@ -15262,7 +15804,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 84,
     "median": 250000,
-    "scaled": 248448.2107778332
+    "scaled": 248448.2107778332,
+    "rank": 18
   },
   {
     "displayName": "EtherScore",
@@ -15290,7 +15833,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 39,
     "median": 46512,
-    "scaled": 46223.29271879431
+    "scaled": 46223.29271879431,
+    "rank": 248
   },
   {
     "displayName": "Antoine",
@@ -15318,7 +15862,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 30,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 241
   },
   {
     "displayName": "XomNFT",
@@ -15346,7 +15891,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 28,
     "median": 5161,
-    "scaled": 5128.964863297589
+    "scaled": 5128.964863297589,
+    "rank": 455
   },
   {
     "displayName": "Revoke.cash",
@@ -15374,7 +15920,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 90,
     "median": 150000,
-    "scaled": 149068.92646669992
+    "scaled": 149068.92646669992,
+    "rank": 40
   },
   {
     "displayName": "NiceNode",
@@ -15402,7 +15949,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 39,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 134
   },
   {
     "displayName": "Web3ForGood",
@@ -15430,7 +15978,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 353
   },
   {
     "displayName": "r72.fi",
@@ -15458,7 +16007,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 11,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 603
   },
   {
     "displayName": "Hardhat",
@@ -15486,7 +16036,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 101,
     "median": 282000,
-    "scaled": 280249.5817573958
+    "scaled": 280249.5817573958,
+    "rank": 8
   },
   {
     "displayName": "OptimismGuru",
@@ -15514,7 +16065,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 8,
     "median": 4500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 519
   },
   {
     "displayName": "CryptoConexión",
@@ -15542,7 +16094,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 32,
     "median": 12500,
-    "scaled": 12422.41053889166
+    "scaled": 12422.41053889166,
+    "rank": 407
   },
   {
     "displayName": "RadicalxChange Foundation",
@@ -15570,7 +16123,8 @@
     "Sub-category": "Governance Research",
     "ballot": 58,
     "median": 53085.5,
-    "scaled": 52755.98997298665
+    "scaled": 52755.98997298665,
+    "rank": 182
   },
   {
     "displayName": "supernova",
@@ -15598,7 +16152,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 15,
     "median": 27717,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 537
   },
   {
     "displayName": "GasHawk",
@@ -15626,7 +16181,8 @@
     "Sub-category": "Wallets",
     "ballot": 38,
     "median": 45000,
-    "scaled": 44720.67794000998
+    "scaled": 44720.67794000998,
+    "rank": 250
   },
   {
     "displayName": "zenbit.eth",
@@ -15654,7 +16210,8 @@
     "Sub-category": "Developer Education",
     "ballot": 11,
     "median": 10000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 612
   },
   {
     "displayName": "Gelato",
@@ -15682,7 +16239,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 64,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 128
   },
   {
     "displayName": "RareSkills Book of Zero Knowledge Proofs",
@@ -15710,7 +16268,8 @@
     "Sub-category": "Developer Education",
     "ballot": 17,
     "median": 12777,
-    "scaled": 12697.6911564335
+    "scaled": 12697.6911564335,
+    "rank": 404
   },
   {
     "displayName": "TypeChain / DethCode",
@@ -15738,7 +16297,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 55,
     "median": 125000,
-    "scaled": 124224.1053889166
+    "scaled": 124224.1053889166,
+    "rank": 48
   },
   {
     "displayName": "OP Friday Twitter Thread Translation Contest",
@@ -15766,7 +16326,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 12,
     "median": 7500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 502
   },
   {
     "displayName": "Gov",
@@ -15794,7 +16355,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 18,
     "median": 18586.5,
-    "scaled": 18471.130678488786
+    "scaled": 18471.130678488786,
+    "rank": 373
   },
   {
     "displayName": "Optimism Guide",
@@ -15822,7 +16384,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 43,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 360
   },
   {
     "displayName": "Unruggable Names",
@@ -15850,7 +16413,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 11,
     "median": 20000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 560
   },
   {
     "displayName": "EthStaker",
@@ -15878,7 +16442,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 54,
     "median": 82500,
-    "scaled": 81987.90955668496
+    "scaled": 81987.90955668496,
+    "rank": 113
   },
   {
     "displayName": "vrypan",
@@ -15906,7 +16471,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 16,
     "median": 22489,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 563
   },
   {
     "displayName": "Department of Decentralization",
@@ -15934,7 +16500,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 62,
     "median": 125000,
-    "scaled": 124224.1053889166
+    "scaled": 124224.1053889166,
+    "rank": 46
   },
   {
     "displayName": "ruslanklinkov",
@@ -15962,7 +16529,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 28,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 483
   },
   {
     "displayName": "Bankless Japan",
@@ -15990,7 +16558,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 29,
     "median": 6679,
-    "scaled": 6637.542399140591
+    "scaled": 6637.542399140591,
+    "rank": 451
   },
   {
     "displayName": "CryptoDuck",
@@ -16019,7 +16588,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 490
   },
   {
     "displayName": "Paco Bytes",
@@ -16047,7 +16617,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 49,
     "median": 73710.07,
-    "scaled": 73252.54003123536
+    "scaled": 73252.54003123536,
+    "rank": 144
   },
   {
     "displayName": "EthereumETL",
@@ -16075,7 +16646,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 42,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 88
   },
   {
     "displayName": "Crypto Commons Association",
@@ -16103,7 +16675,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 22,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 389
   },
   {
     "displayName": "Awesome Optimism",
@@ -16131,7 +16704,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 24,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 419
   },
   {
     "displayName": "Ethereum Cat Herders",
@@ -16159,7 +16733,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 75,
     "median": 125000,
-    "scaled": 124224.1053889166
+    "scaled": 124224.1053889166,
+    "rank": 47
   },
   {
     "displayName": "Kristoph Galland",
@@ -16187,7 +16762,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 7,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 505
   },
   {
     "displayName": "Optimism Translators",
@@ -16215,7 +16791,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 41,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 62
   },
   {
     "displayName": "herocast",
@@ -16243,7 +16820,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 9,
     "median": 15000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 624
   },
   {
     "displayName": "Kaito/CoffeeTimes",
@@ -16271,7 +16849,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 23,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 472
   },
   {
     "displayName": "IDriss",
@@ -16299,7 +16878,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 22,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 237
   },
   {
     "displayName": "Cannon-rs",
@@ -16327,7 +16907,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 29,
     "median": 48000,
-    "scaled": 47702.05646934397
+    "scaled": 47702.05646934397,
+    "rank": 246
   },
   {
     "displayName": "Wonderland",
@@ -16355,7 +16936,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 40,
     "median": 57575.5,
-    "scaled": 57218.11983855654
+    "scaled": 57218.11983855654,
+    "rank": 174
   },
   {
     "displayName": "Hop DAO",
@@ -16383,7 +16965,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 50,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 189
   },
   {
     "displayName": "OptimismCIS",
@@ -16411,7 +16994,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 17,
     "median": 2000,
-    "scaled": 1987.5856862226656
+    "scaled": 1987.5856862226656,
+    "rank": 499
   },
   {
     "displayName": "Public Nouns",
@@ -16439,7 +17023,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 37,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 209
   },
   {
     "displayName": "Newtro Arts",
@@ -16467,7 +17052,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 31,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 358
   },
   {
     "displayName": "Holograph",
@@ -16495,7 +17081,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 25,
     "median": 80000,
-    "scaled": 79503.42744890662
+    "scaled": 79503.42744890662,
+    "rank": 116
   },
   {
     "displayName": "Taz",
@@ -16523,7 +17110,8 @@
     "Sub-category": "Developer Education",
     "ballot": 21,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 425
   },
   {
     "displayName": "Bankless DAO",
@@ -16551,7 +17139,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 47,
     "median": 23309,
-    "scaled": 23164.31738008205
+    "scaled": 23164.31738008205,
+    "rank": 336
   },
   {
     "displayName": "Definomics labs",
@@ -16579,7 +17168,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 31,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 431
   },
   {
     "displayName": "EthereansOS",
@@ -16608,7 +17198,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 38,
     "median": 17000,
-    "scaled": 16894.478332892657
+    "scaled": 16894.478332892657,
+    "rank": 383
   },
   {
     "displayName": "Endaoment",
@@ -16636,7 +17227,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 49,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 127
   },
   {
     "displayName": "Ethereum Colombia",
@@ -16664,7 +17256,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 39,
     "median": 18000,
-    "scaled": 17888.27117600399
+    "scaled": 17888.27117600399,
+    "rank": 377
   },
   {
     "displayName": "Waffle",
@@ -16692,7 +17285,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 57,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 64
   },
   {
     "displayName": "Espacio Cripto",
@@ -16720,7 +17314,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 39,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 422
   },
   {
     "displayName": "Basic course in blockchain and crypto literacy",
@@ -16748,7 +17343,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 25,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 474
   },
   {
     "displayName": "Blocktrend (區塊勢)",
@@ -16776,7 +17372,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 27,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 466
   },
   {
     "displayName": "Proofivy",
@@ -16804,7 +17401,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 10,
     "median": 15582,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 568
   },
   {
     "displayName": "ProMint",
@@ -16831,7 +17429,8 @@
     "githubHandle": "YaroslavShl",
     "ballot": 18,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 493
   },
   {
     "displayName": "Frens",
@@ -16859,7 +17458,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 22,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 192
   },
   {
     "displayName": "Eth-Volcano",
@@ -16888,7 +17488,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 35,
     "median": 15000,
-    "scaled": 14906.892646669992
+    "scaled": 14906.892646669992,
+    "rank": 386
   },
   {
     "displayName": "Blobscan",
@@ -16916,7 +17517,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 45,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 59
   },
   {
     "displayName": "Week in Ethereum News",
@@ -16944,7 +17546,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 75,
     "median": 60000,
-    "scaled": 59627.57058667997
+    "scaled": 59627.57058667997,
+    "rank": 169
   },
   {
     "displayName": "Alchemy",
@@ -16972,7 +17575,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 59,
     "median": 75000,
-    "scaled": 74534.46323334996
+    "scaled": 74534.46323334996,
+    "rank": 141
   },
   {
     "displayName": "ethers.js",
@@ -17000,7 +17604,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 107,
     "median": 300000,
-    "scaled": 298137.85293339984
+    "scaled": 298137.85293339984,
+    "rank": 5
   },
   {
     "displayName": "ETHAccra",
@@ -17028,7 +17633,8 @@
     "Sub-category": "Conferences, Events & Hackathons",
     "ballot": 48,
     "median": 23755,
-    "scaled": 23607.54898810971
+    "scaled": 23607.54898810971,
+    "rank": 335
   },
   {
     "displayName": "Bankless Publishing",
@@ -17056,7 +17662,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 20,
     "median": 11000,
-    "scaled": 10931.72127422466
+    "scaled": 10931.72127422466,
+    "rank": 415
   },
   {
     "displayName": "hildobby",
@@ -17084,7 +17691,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 42,
     "median": 32500,
-    "scaled": 32298.267401118315
+    "scaled": 32298.267401118315,
+    "rank": 285
   },
   {
     "displayName": "⚡️ TurboETH",
@@ -17112,7 +17720,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 47,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 214
   },
   {
     "displayName": "1W3",
@@ -17140,7 +17749,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 27,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 370
   },
   {
     "displayName": "DevRel Uni",
@@ -17168,7 +17778,8 @@
     "Sub-category": "Developer Education",
     "ballot": 12,
     "median": 5000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 571
   },
   {
     "displayName": "IPFS",
@@ -17196,7 +17807,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 77,
     "median": 227272,
-    "scaled": 225861.28703959883
+    "scaled": 225861.28703959883,
+    "rank": 21
   },
   {
     "displayName": "The Opimist",
@@ -17224,7 +17836,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 38,
     "median": 38462,
-    "scaled": 38223.26033174808
+    "scaled": 38223.26033174808,
+    "rank": 264
   },
   {
     "displayName": "DexKit",
@@ -17252,7 +17865,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 16,
     "median": 22643.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 554
   },
   {
     "displayName": "Alloy",
@@ -17281,7 +17895,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 39,
     "median": 78000,
-    "scaled": 77515.84176268395
+    "scaled": 77515.84176268395,
+    "rank": 117
   },
   {
     "displayName": "Modular Media",
@@ -17309,7 +17924,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 18,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 435
   },
   {
     "displayName": "Gajesh Naik",
@@ -17337,7 +17953,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 14,
     "median": 7849.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 616
   },
   {
     "displayName": "Hypercerts Foundation",
@@ -17365,7 +17982,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 49,
     "median": 95000,
-    "scaled": 94410.3200955766
+    "scaled": 94410.3200955766,
+    "rank": 100
   },
   {
     "displayName": "OpenZeppelin Contracts",
@@ -17393,7 +18011,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 93,
     "median": 250000,
-    "scaled": 248448.2107778332
+    "scaled": 248448.2107778332,
+    "rank": 11
   },
   {
     "displayName": "webOfTrust",
@@ -17421,7 +18040,8 @@
     "Sub-category": "Optimism Governance contributions (education)",
     "ballot": 40,
     "median": 20000,
-    "scaled": 19875.85686222665
+    "scaled": 19875.85686222665,
+    "rank": 366
   },
   {
     "displayName": "Vaults.fyi",
@@ -17449,7 +18069,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 20,
     "median": 34388.5,
-    "scaled": 34175.045185334064
+    "scaled": 34175.045185334064,
+    "rank": 283
   },
   {
     "displayName": "Grandine",
@@ -17477,7 +18098,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 24,
     "median": 42500,
-    "scaled": 42236.19583223164
+    "scaled": 42236.19583223164,
+    "rank": 255
   },
   {
     "displayName": "ChainPatrol - Real Time Security protecting the OP Collective",
@@ -17506,7 +18128,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 18,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 232
   },
   {
     "displayName": "Ivan Molto",
@@ -17534,7 +18157,8 @@
     "Sub-category": "Research & Analytics",
     "ballot": 19,
     "median": 18350,
-    "scaled": 18236.09867109296
+    "scaled": 18236.09867109296,
+    "rank": 375
   },
   {
     "displayName": "BitcoinAddict Thailand",
@@ -17563,7 +18187,8 @@
     "Sub-category": "Discovery tooling",
     "ballot": 27,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 481
   },
   {
     "displayName": "Hummingbot",
@@ -17591,7 +18216,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 15,
     "median": 28495,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 594
   },
   {
     "displayName": "VMEX Finance",
@@ -17619,7 +18245,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 9,
     "median": 28000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 585
   },
   {
     "displayName": "cryo",
@@ -17647,7 +18274,8 @@
     "Sub-category": "OP Stack tooling",
     "ballot": 41,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 201
   },
   {
     "displayName": "Defy Foundation",
@@ -17675,7 +18303,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 32,
     "median": 5000,
-    "scaled": 4968.964215556664
+    "scaled": 4968.964215556664,
+    "rank": 476
   },
   {
     "displayName": "Sphinx (formerly ChugSplash)",
@@ -17703,7 +18332,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 39,
     "median": 50000,
-    "scaled": 49689.64215556664
+    "scaled": 49689.64215556664,
+    "rank": 217
   },
   {
     "displayName": "OP Security Council Rehearsal Beta Testers",
@@ -17731,7 +18361,8 @@
     "Sub-category": "Optimism Governance contributions",
     "ballot": 18,
     "median": 11250,
-    "scaled": 11180.169485002494
+    "scaled": 11180.169485002494,
+    "rank": 413
   },
   {
     "displayName": "revm",
@@ -17759,7 +18390,8 @@
     "Sub-category": "Ethereum Development & Maintanance",
     "ballot": 89,
     "median": 200000,
-    "scaled": 198758.56862226652
+    "scaled": 198758.56862226652,
+    "rank": 25
   },
   {
     "displayName": "Bio.xyz",
@@ -17787,7 +18419,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 10,
     "median": 29247.5,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 588
   },
   {
     "displayName": "Karma",
@@ -17815,7 +18448,8 @@
     "Sub-category": "Governance tooling",
     "ballot": 57,
     "median": 70000,
-    "scaled": 69565.49901779329
+    "scaled": 69565.49901779329,
+    "rank": 148
   },
   {
     "displayName": "ethOS",
@@ -17843,7 +18477,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 55,
     "median": 76923,
-    "scaled": 76445.52687065305
+    "scaled": 76445.52687065305,
+    "rank": 126
   },
   {
     "displayName": "Ether.actor",
@@ -17871,7 +18506,8 @@
     "Sub-category": "Dev Tooling",
     "ballot": 16,
     "median": 51612,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 598
   },
   {
     "displayName": "donnoh.eth",
@@ -17899,7 +18535,8 @@
     "Sub-category": "OP Stack development & research",
     "ballot": 23,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 444
   },
   {
     "displayName": "ODTU Blockchain",
@@ -17928,7 +18565,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 34,
     "median": 10000,
-    "scaled": 9937.928431113329
+    "scaled": 9937.928431113329,
+    "rank": 429
   },
   {
     "displayName": "Support NERDs",
@@ -17956,7 +18594,8 @@
     "Sub-category": "Evangelism & User Onboarding",
     "ballot": 41,
     "median": 100000,
-    "scaled": 99379.28431113328
+    "scaled": 99379.28431113328,
+    "rank": 70
   },
   {
     "displayName": "Woosh",
@@ -17984,7 +18623,8 @@
     "Sub-category": "Applications (Defi, Social, NFTs, Gaming Etc)",
     "ballot": 14,
     "median": 50000,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 584
   },
   {
     "displayName": "simple8720",
@@ -18012,7 +18652,8 @@
     "Sub-category": "Dev Services & Support",
     "ballot": 9,
     "median": 1500,
-    "scaled": 0
+    "scaled": 0,
+    "rank": 531
   },
   {
     "displayName": "rotki",
@@ -18040,7 +18681,8 @@
     "Sub-category": "Portfolio Tracker",
     "ballot": 93,
     "median": 150000,
-    "scaled": 149068.92646669992
+    "scaled": 149068.92646669992,
+    "rank": 38
   },
   {
     "displayName": "KryptoSpace",
@@ -18068,6 +18710,7 @@
     "Sub-category": "Discovery tooling",
     "ballot": 22,
     "median": 4250,
-    "scaled": 4223.619583223164
+    "scaled": 4223.619583223164,
+    "rank": 496
   }
 ]
