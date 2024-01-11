@@ -25,7 +25,7 @@
     are making a positive impact to the world.
   </p>
   <div class="mt-5 flex flex-row justify-center">
-    <Button>Get Involved!</Button>
+    <Button><a href="/retropgf3">RetroPGF3 Results</a></Button>
   </div>
   <div class="flex justify-center mt-16 animate-bounce">
     <img src="/img/arrow_down2.png" class="w-6" alt="arrow" />

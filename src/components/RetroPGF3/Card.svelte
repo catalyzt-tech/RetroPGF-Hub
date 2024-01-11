@@ -195,7 +195,9 @@
       class="absolute right-3 top-3 bg-white px-3 py-1 rounded-lg border border-black z-10 text-sm"
     >
       <div class="flex flex-row justify-center items-center">
-        <div class="h-full text-[#ff0000] font-medium text-[13px]">xxx</div>
+        <div class="h-full text-[#ff0000] font-medium text-[13px]">
+          {result}
+        </div>
         <div class="flex flex-row justify-center items-center ml-1">
           <img src="/img/Optimism.png" alt="OP" class="w-5" />
         </div>
