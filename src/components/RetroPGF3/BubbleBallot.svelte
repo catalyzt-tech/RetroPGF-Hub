@@ -2,7 +2,7 @@
   import Highcharts from 'highcharts'
   import more from 'highcharts/highcharts-more'
   import { onMount, createEventDispatcher } from 'svelte'
-  import { localStorageStore } from '../../stores/localStorage.js'
+  import { localStorageStore } from '../../stores/localStorage.ts'
   export let Ballot = [0, 0, 0, 0, 0] //[min, max, range 1-5, range > 5, range >= 17]
 
   more(Highcharts)
