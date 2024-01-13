@@ -1,8 +1,6 @@
 <script lang="ts">
   import { onMount, createEventDispatcher } from 'svelte'
   export let data: any = []
-  export let dataNew: any = []
-  const dispatch = createEventDispatcher()
 
   let totalBallots: any = data.ballot
   let totalLists: any
@@ -42,6 +40,20 @@
     return Number(medianValue.toFixed(2))
   }
 
+  function ordinal_suffix_of(i: number) {
+    let j = i % 10,
+      k = i % 100
+    if (j === 1 && k !== 11) {
+      return i + ' st'
+    }
+    if (j === 2 && k !== 12) {
+      return i + ' nd'
+    }
+    if (j === 3 && k !== 13) {
+      return i + ' rd'
+    }
+    return i + ' th'
+  }
   // const fetchBallot = async () => {
   //   try {
   //     // const query = {
@@ -143,6 +155,7 @@
   let flagIcon: boolean = false
   let flagBanner: boolean = false
   let result = Intl.NumberFormat('en-US').format(data.scaled.toFixed(2))
+  let ranking = ordinal_suffix_of(data.rank)
   const fetchIconNew = async () => {
     const address = data['metadataPtr'].slice(60, 102)
     for (let each of fileType) {
@@ -237,6 +250,7 @@
         >{data['displayName']}</a
       >
     </div>
+
     <div class="flex flex-row my-2">
       <a href={data['websiteUrl']} target="_blank" class="w-4"
         ><img src="/img/web_logo.png" alt="agora" /></a
@@ -281,6 +295,14 @@
               {/if}
             </div>
           {/if}
+        </div>
+      </div>
+      <div>
+        <div class="text-sm font-medium">Award Ranking</div>
+        <div
+          class="mt-2 text-xs bg-[#000000] text-white w-fit px-3 py-1 rounded-md whitespace-nowrap"
+        >
+          {ranking}
         </div>
       </div>
       <div>
