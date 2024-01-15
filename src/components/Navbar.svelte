@@ -8,6 +8,37 @@
     showMenu = !showMenu
   }
 
+  const route: [] = [
+    {
+      name: 'RetroPGF 3',
+      url: '/retropgf3',
+    },
+    {
+      name: 'Projects',
+      url: '/projects',
+    },
+    {
+      name: 'History',
+      url: '/history',
+    },
+    {
+      name: 'Archive',
+      url: '/archive',
+    },
+    {
+      name: 'Suggest',
+      url: '/suggest-form',
+    },
+    {
+      name: 'Stats',
+      url: '/stats',
+    },
+    {
+      name: 'Review',
+      url: '/review',
+    },
+  ]
+
   onMount(async () => {
     try {
       const response = await Axios.get('/api/users', {})
@@ -81,105 +112,23 @@
             ? 'flex-col'
             : ''} flex mt-8 space-y-3 md:space-y-0 md:items-center md:h-16 md:mt-0"
         >
-          <a
-            class="{Page === 'retropgf3'
-              ? 'md:font-bold show-inset'
-              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
-            href="/retropgf3"
-            ><button
-              on:click={selectPage}
-              type="button"
-              category="retropgf3"
-              class="flex items-center"
+          {#each route as eachRoute}
+            <a
+              class="{Page === eachRoute.name
+                ? 'md:font-bold show-inset'
+                : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
+              href={eachRoute.url}
             >
-              RetroPGF 3
-            </button></a
-          >
-          <a
-            class="{Page === 'projects'
-              ? 'md:font-bold show-inset'
-              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
-            href="/projects"
-          >
-            <button
-              on:click={selectPage}
-              type="button"
-              category="projects"
-              class="flex items-center"
+              <button
+                on:click={selectPage}
+                type="button"
+                category={eachRoute.name}
+                class="flex items-center"
+              >
+                {eachRoute.name}
+              </button></a
             >
-              Projects
-            </button>
-          </a>
-          <a
-            class="{Page === 'history'
-              ? 'md:font-bold show-inset'
-              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
-            href="/history"
-            ><button
-              on:click={selectPage}
-              type="button"
-              category="history"
-              class="flex items-center"
-            >
-              History
-            </button></a
-          >
-          <a
-            class="{Page === 'archive'
-              ? 'md:font-bold show-inset'
-              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
-            href="/archive"
-            ><button
-              on:click={selectPage}
-              type="button"
-              category="archive"
-              class="flex items-center"
-            >
-              Archive
-            </button></a
-          >
-          <a
-            class="{Page === 'suggest-form'
-              ? 'md:font-bold show-inset'
-              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
-            href="/suggest-form"
-            ><button
-              on:click={selectPage}
-              type="button"
-              category="nominate-form"
-              class="flex items-center"
-            >
-              Suggest
-            </button></a
-          >
-          <a
-            class="{Page === 'stats'
-              ? 'md:font-bold show-inset'
-              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
-            href="/stats"
-            ><button
-              on:click={selectPage}
-              type="button"
-              category="stats"
-              class="flex items-center"
-            >
-              Stats
-            </button></a
-          >
-          <a
-            class="{Page === 'review'
-              ? 'md:font-bold show-inset'
-              : ''} md:flex text-gray-800 hover:bg-red-500 md:hover:bg-transparent md:bg-white hover:text-white md:hover:text-red-600 bg-gray-200 px-3 py-1 transition rounded-full md:rounded-none ease-linear duration-200 md:h-full shadow-inset"
-            href="/review"
-            ><button
-              on:click={selectPage}
-              type="button"
-              category="review"
-              class="flex items-center"
-            >
-              Review
-            </button></a
-          >
+          {/each}
         </ul>
         {#if !$User}
           <a
