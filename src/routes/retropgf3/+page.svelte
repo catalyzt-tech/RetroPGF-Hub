@@ -15,16 +15,6 @@
 
   const handleBallotUpdate = (event: any) => {
     totalBallots = event.detail.dataNew.totalBallots || undefined
-    // const tempBindData = event.detail.dataNew
-    // fetchDataNew = fetchDataNew.map((data: any) => {
-    //   if (data['Approval Attestation ID'] == data['Approval Attestation ID']) {
-    //     data = { ...data, totalBallots: totalBallots }
-    //   }
-    //   return data
-    // })
-    // // console.log('Parent', totalBallots)
-    // console.log('Parent', event.detail.dataNew)
-    // console.log(fetchDataNew.slice(0, showCard))
   }
 
   const mainCategoryList = [
@@ -127,17 +117,22 @@
       const prompt = await val.target.value.replace(/\s/g, '').toLowerCase()
       loading = true
       console.log(loading)
-      // console.log(prompt)
-      if (prompt === '') {
+      console.log(prompt)
+      if (prompt === '' || !prompt) {
         fetchDataNew = await fetchData
         // console.log(fetchDataNew)
       } else {
-        fetchDataNew = await fetchData.filter((data: any) => {
-          return data['displayName']
-            .replace(/\s/g, '')
-            .toLowerCase()
-            .includes(prompt)
-        })
+        setTimeout(async () => {
+          fetchDataNew = await fetchData.filter((data: any) => {
+            data['displayName'] = String(data['displayName'])
+            return data['displayName']
+              .replace(/\s/g, '')
+              .toLowerCase()
+              .includes(prompt)
+          })
+        }, 2000)
+
+        console.log(fetchDataNew.length)
       }
       console.log(fetchDataNew)
       setTimeout(() => {
@@ -167,7 +162,7 @@
           .replace(/[_\s]/g, '')
           .toLowerCase()
         // console.log(data)
-        console.log(cleanName, choose)
+        // console.log(cleanName, choose)
         return cleanName == choose
       })
       setTimeout(() => {
@@ -189,12 +184,10 @@
       if (choose == 'all') {
         fetchDataNew = fetchData.filter((data: any) => {
           if (data['New Main-Category'] == undefined) return false
-          const cleanName = data['New Main-Category']
-            .replace(/_/g, '')
-            .toLowerCase()
+          const cleanName =
+            data['New Main-Category'].replace(/_/g, '').toLowerCase() ?? 'all'
           return cleanName == currentCategory
         })
-        return
       }
       fetchDataNew = await fetchData.filter((data: any) => {
         if (data['Sub-category'] == undefined) {
@@ -227,7 +220,7 @@
   </div>
   <div class="px-10 lg:px-[10em]">
     <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
-      RetroPGF 3 Eligible Projects
+      RetroPGF 3 Projects
     </h1>
     <h1 class="flex justify-center font-bold text-[30px] text-center">
       (Recategorization)

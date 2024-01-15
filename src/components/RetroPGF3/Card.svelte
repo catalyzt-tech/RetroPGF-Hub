@@ -2,7 +2,7 @@
   import { onMount, createEventDispatcher } from 'svelte'
   export let data: any = []
 
-  let totalBallots: any = data.ballot
+  let totalBallots: any = data.ballot ? data.ballot : 0
   let totalLists: any
   let list: any = []
   let opListDetail: any = []
@@ -20,12 +20,14 @@
   let percent: any
   const fileType = ['png', 'jpeg']
 
-  data['New Main-Category'] = data['New Main-Category'].replace(/_/g, ' ')
+  data['New Main-Category'] = data['New Main-Category']
+    ? data['New Main-Category'].replace(/_/g, ' ')
+    : 'Ineligible Application'
   let newData: any = []
 
   const median = (array) => {
     if (array.length === 0) {
-      throw new Error('Input array is empty')
+      return 0
     }
 
     const sortedArray = [...array].sort((a, b) => a - b)
@@ -154,8 +156,10 @@
   // }
   let flagIcon: boolean = false
   let flagBanner: boolean = false
-  let result = Intl.NumberFormat('en-US').format(data.scaled.toFixed(2))
-  let ranking = ordinal_suffix_of(data.rank)
+  let result = data.scaled
+    ? Intl.NumberFormat('en-US').format(data.scaled.toFixed(2))
+    : 0
+  let ranking = data.rank ? ordinal_suffix_of(data.rank) : '-'
   const fetchIconNew = async () => {
     const address = data['metadataPtr'].slice(60, 102)
     for (let each of fileType) {
@@ -267,7 +271,7 @@
     </div>
     <div class="text-sm mt-2 font-medium">Sub Category</div>
     <div class="mt-2 text-xs bg-gray-200 w-fit px-3 py-1 rounded-md">
-      {data['Sub-category']}
+      {data['Sub-category'] ? data['Sub-category'] : '-'}
     </div>
     <div class="grid grid-cols-2 mt-3">
       <div>
