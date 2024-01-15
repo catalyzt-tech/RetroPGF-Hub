@@ -13,10 +13,10 @@
       name: 'RetroPGF 3',
       url: '/retropgf3',
     },
-    {
-      name: 'Projects',
-      url: '/projects',
-    },
+    // {
+    //   name: 'Projects',
+    //   url: '/projects',
+    // },
     {
       name: 'History',
       url: '/history',
@@ -25,14 +25,14 @@
       name: 'Archive',
       url: '/archive',
     },
-    {
-      name: 'Suggest',
-      url: '/suggest-form',
-    },
-    {
-      name: 'Stats',
-      url: '/stats',
-    },
+    // {
+    //   name: 'Suggest',
+    //   url: '/suggest-form',
+    // },
+    // {
+    //   name: 'Stats',
+    //   url: '/stats',
+    // },
     {
       name: 'Review',
       url: '/review',
