@@ -236,7 +236,7 @@
       target="_blank"
       class="flex justify-center text-base font-semibold my-2"
     >
-      View Badgeholder Manual &gt
+      Read Badgeholder Manual &gt
     </a>
   </div>
   <div class="flex flex-row justify-center">
