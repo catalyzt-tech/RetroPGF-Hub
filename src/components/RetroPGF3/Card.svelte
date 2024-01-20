@@ -19,7 +19,7 @@
   let loadingLimit = 0
   let percent: any
   const fileType = ['png', 'jpeg']
-
+  const newUrlEndpoint = `https://optimism-agora-prod.agora-prod.workers.dev/retropgf/3/application/${data['Approval Attestation ID']}`
   data['New Main-Category'] = data['New Main-Category']
     ? data['New Main-Category'].replace(/_/g, ' ')
     : 'Ineligible Application'
@@ -248,7 +248,7 @@
     <!-- <img src={imgUrl} alt="banner" /> -->
     <div class="mt-28 text-lg font-bold">
       <a
-        href={data['Agora URL']}
+        href={newUrlEndpoint}
         target="_blank"
         class=" hover:text-[#ff0000] transition duration-200 ease-in-out"
         >{data['displayName']}</a
