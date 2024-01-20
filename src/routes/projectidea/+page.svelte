@@ -16,7 +16,6 @@
   <div class="text-center text-xl font-semibold">
     Optimism Ecosystem Contributions
   </div>
-  <div>{issueData.length}</div>
   <div class="flex flex-row flex-wrap justify-center">
     {#each issueData as issue}
       <Card data={issue} />

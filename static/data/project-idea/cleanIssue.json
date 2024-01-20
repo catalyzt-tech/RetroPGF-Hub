@@ -32,33 +32,6 @@
     "status": "open"
   },
   {
-    "url": "https://github.com/ethereum-optimism/ecosystem-contributions/issues/119",
-    "issue_number": 119,
-    "title": "- Intentions of backend tools",
-    "user": {
-      "name": "philliprossii7",
-      "avatar": "https://avatars.githubusercontent.com/u/71346231?v=4"
-    },
-    "tag": [],
-    "body": "- Intentions of backend tools \n\n_Originally posted by @philliprossii7 in https://github.com/l2beat/l2beat/pull/2531#discussion_r1449948597_",
-    "created_at": "2024-01-12T07:34:11Z",
-    "updated_at": "2024-01-12T07:34:11Z",
-    "comment": 0,
-    "reaction": {
-      "url": "https://api.github.com/repos/ethereum-optimism/ecosystem-contributions/issues/119/reactions",
-      "total_count": 0,
-      "+1": 0,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 0,
-      "confused": 0,
-      "heart": 0,
-      "rocket": 0,
-      "eyes": 0
-    },
-    "status": "open"
-  },
-  {
     "url": "https://github.com/ethereum-optimism/ecosystem-contributions/issues/117",
     "issue_number": 117,
     "title": "RFP: Superchain Bridge",
@@ -191,33 +164,6 @@
     "status": "open"
   },
   {
-    "url": "https://github.com/ethereum-optimism/ecosystem-contributions/pull/113",
-    "issue_number": 113,
-    "title": "Create devcontainer.json",
-    "user": {
-      "name": "Abuchtela",
-      "avatar": "https://avatars.githubusercontent.com/u/84213452?v=4"
-    },
-    "tag": [],
-    "body": "<!-- Contributions welcome! See https://github.com/ethereum-optimism/.github/blob/master/CONTRIBUTING.md -->\r\n\r\n**Description**\r\n\r\nA clear and concise description of the features you're adding in this pull request.\r\n\r\n**Tests**\r\n\r\nPlease describe any tests you've added. If you've added no tests, or left important behavior untested, please explain why not.\r\n\r\n**Additional context**\r\n\r\nAdd any other context about the problem you're solving.\r\n\r\n**Metadata**\r\n\r\n- Fixes #[Link to Issue]\r\n",
-    "created_at": "2023-11-16T22:29:17Z",
-    "updated_at": "2024-01-12T07:53:40Z",
-    "comment": 0,
-    "reaction": {
-      "url": "https://api.github.com/repos/ethereum-optimism/ecosystem-contributions/issues/113/reactions",
-      "total_count": 0,
-      "+1": 0,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 0,
-      "confused": 0,
-      "heart": 0,
-      "rocket": 0,
-      "eyes": 0
-    },
-    "status": "open"
-  },
-  {
     "url": "https://github.com/ethereum-optimism/ecosystem-contributions/issues/110",
     "issue_number": 110,
     "title": "RFP: Optimism Ecosystem Investment Network",
@@ -261,7 +207,12 @@
       "name": "unifrarocks",
       "avatar": "https://avatars.githubusercontent.com/u/96854957?v=4"
     },
-    "tag": [],
+    "tag": [
+      {
+        "name": "Ecosystem Project Idea",
+        "desctiion": "Detailed project to build within the Optimism ecosystem."
+      }
+    ],
     "body": "### Summary\r\n\r\nOptimism's Superchain vision is to create a network of blockchains that provides the UX like a single blockchain, with OPstack being the essential tool for creating that vision. An important piece that is missing in the toolbox is an open-source, easy-to-use explorer that allows anyone to spin up an explorer easily while providing better than etherscan UX for their end users. \r\n\r\nL2scan is multi-chain by default. This allows users to monitor and analyze txs, assets, and other vital data without switching platforms. The open-source version of L2scan will provide developers who want to build on opstack an out-of-box, easy-to-use explorer with low maintenance cost. (blockscout alternative) \r\n\r\nAlso, we want to provide the hosted version of L2scan as the AI-powered blockchain explorer to the Optimism ecosystem. It will be a combination of an AI analytics platform + dev tools + user portal + Search Engine with the following feature: \r\n\r\n### Possible Features\r\n-Cross-chain search engine\r\n-Account System\r\n-Superchain ecosystem portal \r\n-Human-readable structured data presentation\r\n-AI-Powered\r\n  - Automatically classifies and labels transactions\r\n  - Aggregation and visualization of data\r\n  - Smart Contract Analysis\r\n  - Intelligent search and filtering (with natural language)\r\n  -Code reader/Code Search/Similar Search\r\n\r\n  \r\nFor example, L2scan for other chains already launched:\r\n - Home: https://linea.l2scan.co/\r\n - Txns List: https://linea.l2scan.co/txs\r\n - Blocks List: https://linea.l2scan.co/blocks\r\n - Batches List: https://linea.l2scan.co/batches\r\n - Bridge Info: https://linea.l2scan.co/bridge\r\n - Top Accounts: https://linea.l2scan.co/top-accounts\r\n - Token ERC-20: https://linea.l2scan.co/tokens\r\n - Token ERC-721: https://linea.l2scan.co/tokens-nft\r\n - Token ERC-1155: https://linea.l2scan.co/tokens-nft1155\r\n - Charts & Status: https://linea.l2scan.co/charts\r\n - Dev Tools: https://linea.l2scan.co/devtools\r\n - Dapps Ranking: https://linea.l2scan.co/dapps\r\n - Verify Contract: https://linea.l2scan.co/verifyContract\r\n - Account system with watch list(real-time notify), tag, etc. https://scroll.l2scan.co/account/watch-list\r\n\r\n**What we can offer:** \r\n--A unified multi-chain explorer for the superchain ecosystem providing seamless UX for the user. \r\n--An open-source version to support the opstack developers as a blockscout alternative ( with more popular programming choices which makes it easier to maintain) \r\n\r\n**What we need:** \r\n--A grant from OP Foundation to support the hosted version hosting cost  & open source initiative \r\n--Featuring our open-source version in the superchain dev docs as the recommended option \r\n--Introducing opstack developers to us so we can monetize and find a sustainable business model\r\n",
     "created_at": "2023-08-23T13:22:14Z",
     "updated_at": "2023-08-23T14:00:09Z",
@@ -764,7 +715,12 @@
       "name": "smartcontracts",
       "avatar": "https://avatars.githubusercontent.com/u/14298799?v=4"
     },
-    "tag": [],
+    "tag": [
+      {
+        "name": "Mad Science Project Idea",
+        "desctiion": "An experimental project concept"
+      }
+    ],
     "body": "**What is a Mad Science Project Idea?**\r\n\r\nA Mad Science Project Idea is an idea for a project within the Optimism ecosystem that may not have clear value but is generally cool as heck. Mad Science Project Ideas make great hackathon projects and tend to be a great way to explore Optimism, OP Mainnet, and the OP Stack.\r\n\r\n---\r\n\r\n\r\n## Summary\r\n\r\nIn the spirit of the 'I'm feeling lucky' feature made famous by Google, a similar functionality for OP Mainnet dapps would create a fun and interactive way to discover new projects. A website that allows users to either search or simply load a random dapp could increase exposure for a myriad of OP Mainnet applications.\r\n\r\n## Possible Features\r\n\r\n- Develop a website that optionally accepts a search term from users.\r\n- Upon button click, the site should load a random dapp relevant to the search term, if provided.\r\n- If no search term is provided, the site should be capable of loading a random dapp from the OP Mainnet ecosystem.\r\n\r\n## Impact\r\n\r\n- Adds an element of fun and discovery to the OP Mainnet ecosystem.\r\n- Helps to increase exposure and user interaction for a variety of OP Mainnet dapps.\r\n- Provides an easy and enjoyable way for users to explore new and existing OP Mainnet applications.\r\n",
     "created_at": "2023-06-27T03:54:56Z",
     "updated_at": "2023-10-18T18:04:22Z",
@@ -1387,7 +1343,12 @@
       "name": "smartcontracts",
       "avatar": "https://avatars.githubusercontent.com/u/14298799?v=4"
     },
-    "tag": [],
+    "tag": [
+      {
+        "name": "Contribution Opportunity",
+        "desctiion": ""
+      }
+    ],
     "body": "**What is a Contribution Opportunity?**\r\n\r\nA Contribution Opportunity is a concrete task that you can work on to contribute to the Optimism Collective.\r\n\r\n---\r\n\r\n## Summary\r\n\r\nThe blockchain that was formerly known as Optimism is now referred to as the \"OP Mainnet\". As part of this rebranding, we need to ensure the correct use of the term \"OP Mainnet\" in all our references to the blockchain. This is crucial for maintaining clear and consistent communication.\r\n\r\n## Possible Features\r\n\r\n- Go through existing documentation and identify places where the old name \"Optimism\" is being used to refer to the blockchain.\r\n- List these instances in this GitHub issue so that they can be updated.\r\n- Focus mainly on key resources such as official documentation and important external sites like L2Beat or DefiLlama. There's no need to worry about other types of ephemeral content like news articles at this stage.\r\n\r\n## Impact\r\n\r\n- Ensure consistent naming, which helps maintain a professional and cohesive image.\r\n- Prevent confusion among, making it clear what we're referring to when we say \"Optimism\" or \"OP Mainnet\".",
     "created_at": "2023-06-26T02:53:22Z",
     "updated_at": "2023-06-26T02:54:37Z",
@@ -1490,70 +1451,6 @@
       "confused": 0,
       "heart": 0,
       "rocket": 6,
-      "eyes": 0
-    },
-    "status": "open"
-  },
-  {
-    "url": "https://github.com/ethereum-optimism/ecosystem-contributions/issues/74",
-    "issue_number": 74,
-    "title": "Propose a new project here!",
-    "user": {
-      "name": "smartcontracts",
-      "avatar": "https://avatars.githubusercontent.com/u/14298799?v=4"
-    },
-    "tag": [
-      {
-        "name": "Internal",
-        "desctiion": ""
-      }
-    ],
-    "body": "# Surfacing new ideas\r\n\r\nThe power of the Optimism Ecosystem Contributions Dashboard is in its ability to surface potentially valuable tasks from all over the Optimism Collective ecosystem. As the Collective becomes increasingly decentralized, it'll be important to create a system that allows *anyone* to highlight new contribution opportunities that might be valuable.\r\n\r\nWe created this dashboard as a stepping stone towards a more decentralized system. GitHub isn't ideal for a free-for-all system because its limited filtering capabilities could potentially drown out high-quality projects. We have a top-priority project in works to move this dashboard to a standalone interface that would make entirely permissionless project proposals easy. We expect this interface to be live within the next 1-2 months.\r\n\r\nWe would still love to surface your project ideas and contribution opportunities within this dashboard. While we wait for the standalone dashboard interface, we'll be using this GitHub issue as the staging ground for new project proposals. If you have an idea of a task that someone could take on to improve the Optimism and Ethereum ecosystems, please feel free to drop that idea here.\r\n\r\n# Ideal project proposals\r\n\r\nThe ideal proposal is well-defined, highly detailed, and clearly impactful. A potential contributor should be able to easily understand the proposed task and start work with the resources that you've provided. Contributors should also be able to understand why the project is important and the potential impact that the project might have.\r\n\r\nProposed projects should generally positively impact the Optimism and Ethereum ecosystems, but this is a loose definition. Some projects might clearly benefit the ecosystem as a whole (see [🔴 Ecosystem Project Idea: List of Crypto Legal Public Goods](https://github.com/ethereum-optimism/ecosystem-contributions/issues/65)) but projects can also be proposed that help specific efforts within the Optimism ecosystem. For example, an application deployed to OP Mainnet may wish to propose that users review the user experience of their application.\r\n\r\nWhen in doubt, propose! If specific aspects of a proposed project are confusing or may not be perfectly appropriate for this dashboard, someone will help you make modifications.\r\n\r\n# Using the proposal template\r\n\r\nPlease use the following template when proposing a project idea or contribution opportunity. This helps keep proposals uniformly digestible by potential contributors and speeds up the process of turning your proposal into a live task. Please also make sure to include as much detail as possible so that a potential contributor knows exactly what to do with your project.\r\n\r\n---\r\n\r\n# Project Proposal Template\r\n\r\n## Metadata\r\n\r\n- Title: pick a short and descriptive title for your proposal\r\n- Contribution Category: [select one of the Contribution Categories defined in the README of this repository](https://github.com/ethereum-optimism/ecosystem-contributions#contribution-categories)\r\n- Tags: [select one or more of the tags defined in the README of this repository](https://github.com/ethereum-optimism/ecosystem-contributions#labels-by-tag)\r\n- Estimated Effort: [select one of the estimated effort sizes defined in the README of this repository](https://github.com/ethereum-optimism/ecosystem-contributions#labels-by-estimated-effort)\r\n- Estimated Impact: [select one of the estimated impact sizes defined in the README of this repository](https://github.com/ethereum-optimism/ecosystem-contributions#labels-by-estimated-impact)\r\n\r\n## Summary\r\n\r\nInclude a detailed summary of your proposed project idea or contribution opportunity. The more detail here, the better. A contributor should be able to clearly understand what your project is about and what needs to get done.\r\n\r\n## Potential Features\r\n\r\n- Bullet point list of potential features\r\n- Add as many features as you can think of\r\n- Anything not listed here may not be implemented\r\n\r\n## Impact\r\n\r\n- Bullet point list of ways this proposal is impactful\r\n- Clear impact statements help a contributor understand why they should work on this project\r\n\r\n## Resources\r\n\r\n- List of resources that may be needed to successfully complete this project\r\n- Each item should include a link to required resources\r\n- More resources are always better",
-    "created_at": "2023-06-01T18:52:30Z",
-    "updated_at": "2023-08-01T15:32:23Z",
-    "comment": 3,
-    "reaction": {
-      "url": "https://api.github.com/repos/ethereum-optimism/ecosystem-contributions/issues/74/reactions",
-      "total_count": 1,
-      "+1": 1,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 0,
-      "confused": 0,
-      "heart": 0,
-      "rocket": 0,
-      "eyes": 0
-    },
-    "status": "open"
-  },
-  {
-    "url": "https://github.com/ethereum-optimism/ecosystem-contributions/issues/73",
-    "issue_number": 73,
-    "title": "Confused? Start here.",
-    "user": {
-      "name": "smartcontracts",
-      "avatar": "https://avatars.githubusercontent.com/u/14298799?v=4"
-    },
-    "tag": [
-      {
-        "name": "Internal",
-        "desctiion": ""
-      }
-    ],
-    "body": "# Welcome!\r\n\r\nHello and welcome to the Optimism Ecosystem Contributions Dashboard! If you're new to this dashboard and you're feeling a bit confused, you've come to the right place.\r\n\r\n# Help create a better economy for humans\r\n\r\nThe Optimism Collective is a group of people, projects, and communities creating a better economy for humans.\r\n\r\nIt believes in the principle of [**impact=profit**](https://optimism.io/vision) and that the positive impact people create for the Collective should be recognized and rewarded with profit. Our economic systems today simply do not uphold this key tenet. Too many valuable projects go underfunded because they don't have a clear path to profitability. The Optimism Collective was founded on the idea that the advent of crypto is a key turning point in our ability to coordinate people from all over the internet towards the common goal of building a fairer economy for all of us.\r\n\r\n# We need to get $#!7 done\r\n\r\nWe know that our existing economies aren't fair, but it''s going to take an enormous amount of effort to change that reality. We *can* do it, but we need to do it *together*. We have a lot of work to get done, and we need your help. That's where the Optimism Ecosystem Contributions Dashboard comes into play.\r\n\r\nThe Optimism Ecosystem Contributions Dashboard is a common place where you (yes you!) can contribute to the Optimism Collective and help redefine what an economy can be. Here you'll find many different project ideas and contribution opportunities where you can make a real difference in the future of the Optimism Collective. \r\n\r\n# Impact deserves profit\r\n\r\nThe key guiding principle behind the Optimism Collective is the idea that impact for the Collective should be equally rewarded with profit to the individual. Volunteer work is important, but profit scales. We do not assume that everyone should want to, or even be able to, work without the ability to be rewarded for their work.\r\n\r\nThe primary incentive mechanism employed by the Optimism Collective is the model of [Retroactive Public Goods Funding](https://app.optimism.io/retropgf) (RetroPGF). Via RetroPGF, the Optimism Collective regularly votes to distribute OP tokens to people and projects who have had a positive impact on the Collective. Any project that has had a positive impact on the Collective is eligible for nomination for RetroPGF. That includes all of the projects included with this repository.\r\n\r\nUnlike traditional grants, RetroPGF is a retroactive mechanism, meaning that it rewards people for work that has already been completed. Although RetroPGF is always being improved to more accurately recognize this value, RetroPGF is never 100% guaranteed. One of the goals of this dashboard is to drive contributors towards projects that are likely to be recognized as valuable, but we acknowledge that this reward system may not work for everyone. [Optimism Collective governance also offers more traditional grant options for those who prefer that working style](https://github.com/ethereum-optimism/ecosystem-contributions#funding-and-rewards).\r\n\r\n# Find your perfect project\r\n\r\nOptimism is for everyone. This repository is filled with projects of all different shapes and sizes that cater to different skillsets. You don't need to be a developer to have a massive impact on the Optimism Collective. We want to help you find the perfect project.\r\n\r\nIn [the README for this repository](https://github.com/ethereum-optimism/ecosystem-contributions#readme), you'll find [a detailed description of the various different categories of projects](https://github.com/ethereum-optimism/ecosystem-contributions#contribution-categories) that you'll find within this dashboard. We highly recommend starting out by reading through the [README](https://github.com/ethereum-optimism/ecosystem-contributions#readme) carefully to get a sense for the types of projects might find.\r\n\r\nEvery project within this dashboard is also labeled with a series of tags that highlight the type of work involved in a project. For example, the [`Tag: Contracts`](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Contracts) label will show you every project that involves smart contracts while the [`Tag: Documentation`](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Tag%3A+Documentation%22) label will show you every project that involves writing or reviewing documentation. Projects are also labeled by their estimated required effort, such as [`Estimated Effort: Small`](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Estimated%20Effort%3A%20Small), and by their estimated impact, such as [`Estimated Impact: Large`](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Estimated%20Impact%3A%20Large).\r\n\r\n[You can find links to all of the different available labels within the README](https://github.com/ethereum-optimism/ecosystem-contributions#finding-a-project).\r\n\r\n# Let's get to work\r\n\r\nFound the perfect project? [Check out our guide for working on a project in this repository](https://github.com/ethereum-optimism/ecosystem-contributions#working-on-a-project). There you'll get a sense for how to tackle a project, how to keep us updated, and where to find the resources that you might need during the working process.\r\n\r\nMembers of the Optimism Collective are actively watching this repository every day and are available to support you when needed. If you have a question about a specific project, please don't hesitate to drop a comment. Someone will get back to you as soon as possible.\r\n\r\nLet's build a better economy for all of us, together. We're really glad you're here :red_circle::sparkles:",
-    "created_at": "2023-06-01T18:24:48Z",
-    "updated_at": "2023-09-21T10:22:42Z",
-    "comment": 2,
-    "reaction": {
-      "url": "https://api.github.com/repos/ethereum-optimism/ecosystem-contributions/issues/73/reactions",
-      "total_count": 16,
-      "+1": 0,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 3,
-      "confused": 0,
-      "heart": 11,
-      "rocket": 2,
       "eyes": 0
     },
     "status": "open"
