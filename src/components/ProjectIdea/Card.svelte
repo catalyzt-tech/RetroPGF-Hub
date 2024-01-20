@@ -16,7 +16,7 @@
 </script>
 
 <div
-  class="flex flex-col m-4 px-5 py-4 w-80 border-2 border-black bg-white rounded-lg"
+  class="flex flex-col m-4 px-5 py-4 w-80 border-2 border-black bg-white shadow-lg rounded-lg"
 >
   {#if status === 'Open'}
     <div
@@ -34,7 +34,14 @@
     <div>{status}</div>
   {/if}
 
-  <div class="font-medium">{title}</div>
+  <div class="text-lg font-medium">
+    <a
+      href={data.url}
+      target="_blank"
+      class=" hover:text-[#ff0000] transition ease-in-out duration-[250ms]"
+      >{title}</a
+    >
+  </div>
 
   <div class="flex flex-row items-center my-2">
     <img
@@ -49,31 +56,37 @@
     {#each data.tag as tag}
       {#if tag.name === 'Ecosystem Project Idea'}
         <div
-          class=" bg-[#ffd30c] rounded-full text-xs px-3 py-1 w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
+          class=" bg-[#ffe263] rounded-full text-xs px-3 py-[0.15rem] w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
         >
-          {tag.name}
+          🔴 {tag.name}
         </div>
       {:else if tag.name === 'Mad Science Project Idea'}
         <div
-          class=" bg-[#ffc7be] rounded-full text-xs px-3 py-1 w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
+          class=" bg-[#9bffda] rounded-full text-xs px-3 py-[0.15rem] w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
         >
-          {tag.name}
+          🧪 {tag.name}
         </div>
       {:else if tag.name === 'Contribution Opportunity'}
         <div
-          class=" bg-[#98e7ff] rounded-full text-xs px-3 py-1 w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
+          class=" bg-[#ff9898] rounded-full text-xs px-3 py-[0.15rem] w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
         >
-          {tag.name}
+          ✨ {tag.name}
         </div>
       {:else if tag.name === 'Draft Project Idea'}
         <div
-          class=" bg-[#e5f13e] rounded-full text-xs px-3 py-1 w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
+          class=" bg-[#e5f13e] rounded-full text-xs px-3 py-[0.15rem] w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
         >
-          {tag.name}
+          📝 {tag.name}
+        </div>
+      {:else if tag.name === 'Foundation Mission (RFP)'}
+        <div
+          class=" bg-[#ffccb1] rounded-full text-xs px-3 py-[0.15rem] w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
+        >
+          🏛️ {tag.name}
         </div>
       {:else}
         <div
-          class=" bg-gray-200 rounded-full text-xs px-3 py-1 w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
+          class=" bg-gray-200 rounded-full text-xs px-3 py-[0.15rem] w-fit text-sm font-normal text-gray-700 mr-2 mb-2"
         >
           {tag.name}
         </div>
@@ -81,7 +94,9 @@
     {/each}
   </div>
   <div class="flex-grow"></div>
-  <div class="mt-2">See more &gt</div>
+  <div class="mt-2 text-sm">
+    <a href={data.url} target="_blank">See more &gt </a>
+  </div>
   <!-- {#if data.body}
     <div class="text-sm">{data.body}</div>
   {/if} -->
