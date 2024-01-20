@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   import Card from '@/components/ProjectIdea/Card.svelte'
   import { onMount } from 'svelte'
-  let issueData = []
+  let issueData: string[] = []
   const syncData = async () => {
     const data = await fetch('/data/project-idea/cleanIssue.json')
     issueData = await data.json()
@@ -17,5 +17,9 @@
     Optimism Ecosystem Contributions
   </div>
   <div>{issueData.length}</div>
-  <Card></Card>
+  <div class="flex flex-row flex-wrap justify-center">
+    {#each issueData as issue}
+      <Card data={issue} />
+    {/each}
+  </div>
 </div>
