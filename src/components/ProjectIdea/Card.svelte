@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let data: string[] = []
+  export let data: string
 
   const getTime = (time: string) => {
     const date = new Date(time)
@@ -99,6 +99,6 @@
   </div>
   <!-- {#if data.body}
     <div class="text-sm">{data.body}</div>
-  {/if} -->
-  <!-- {createTime} -->
+  {/if}
+  {createTime} -->
 </div>
