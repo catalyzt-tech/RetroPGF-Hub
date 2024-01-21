@@ -26,7 +26,7 @@
   ]
   const subCategoryListOPStack = [
     'All',
-    'Ethereum Development & Maintenance',
+    'Ethereum Development & Maintanance',
     'OP Stack tooling',
     'OP Stack development & research',
   ]
@@ -134,7 +134,7 @@
 
         console.log(fetchDataNew.length)
       }
-      console.log(fetchDataNew)
+      // console.log(fetchDataNew)
       setTimeout(() => {
         loading = false
         console.log(loading)
@@ -157,12 +157,18 @@
         return
       }
       fetchDataNew = await fetchData.filter((data: any) => {
-        if (data['New Main-Category'] === undefined) return false
+        if (
+          data['New Main-Category'] === undefined ||
+          !data['New Main-Category']
+        )
+          return false
+
         const cleanName = data['New Main-Category']
           .replace(/[_\s]/g, '')
           .toLowerCase()
         // console.log(data)
         // console.log(cleanName, choose)
+        console.log(cleanName, choose)
         return cleanName == choose
       })
       setTimeout(() => {
@@ -183,19 +189,28 @@
       currentSubCategory = choose
       if (choose == 'all') {
         fetchDataNew = fetchData.filter((data: any) => {
-          if (data['New Main-Category'] == undefined) return false
+          if (
+            data['New Main-Category'] == undefined ||
+            !data['New Main-Category']
+          )
+            return false
           const cleanName =
             data['New Main-Category'].replace(/_/g, '').toLowerCase() ?? 'all'
           return cleanName == currentCategory
         })
       }
       fetchDataNew = await fetchData.filter((data: any) => {
-        if (data['Sub-category'] == undefined) {
+        if (data['Sub-category'] == undefined || !data['Sub-category']) {
           return false
         }
-        console.log(data)
-        const cleanName = data['Sub-category'].replace(/\s/g, '').toLowerCase()
-        // console.log(cleanName, choose)
+        // console.log(data)
+        const cleanName = data['Sub-category']
+          .replace(/\s/g, '')
+          .toLowerCase()
+          .trim()
+
+        console.log(cleanName, choose, choose == cleanName)
+
         return cleanName == choose
       })
       setTimeout(() => {

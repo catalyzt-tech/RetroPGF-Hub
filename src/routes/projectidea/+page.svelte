@@ -31,37 +31,38 @@
   })
 </script>
 
-<div class="flex flex-col min-h-screen mb-10">
-  <div class="w-full lg:h-[10em] overflow-hidden">
-    <img
-      src="./img/projectidea_banner.jpg"
-      alt="OPBanner"
-      class="object-cover object-center w-full h-full"
-    />
-  </div>
+{#if shuffleStatus}
+  <div class="flex flex-col min-h-screen mb-10">
+    <div class="w-full lg:h-[10em] overflow-hidden">
+      <img
+        src="./img/projectidea_banner.jpg"
+        alt="OPBanner"
+        class="object-cover object-center w-full h-full"
+      />
+    </div>
 
-  <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
-    Optimism Ecosystem Contributions
-  </h1>
-  <div class=" flex flex-col justify-center items-center my-3">
-    <div class="text-[20px] max-w-[50em] text-base text-center mb-3">
-      Welcome to the Optimism Collective Ecosystem Contributions repository.
-      Here you'll find various ways to contribute to the Optimism Collective so
-      that we can build an economy that works for humans, together.
+    <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
+      Optimism Ecosystem Contributions
+    </h1>
+    <div class=" flex flex-col justify-center items-center my-3">
+      <div class="text-[20px] max-w-[50em] text-base text-center mb-3">
+        Welcome to the Optimism Collective Ecosystem Contributions repository.
+        Here you'll find various ways to contribute to the Optimism Collective
+        so that we can build an economy that works for humans, together.
+      </div>
+      <div class="text-[20px] max-w-[50em] text-base text-center">
+        Different ways to contribute to the Optimism Collective are loosely
+        organized into "categories" which give a sense of the relative scope,
+        utility, and complexity of any given project. Refer to the sections
+        below to understand what each of these categories means and what type of
+        tasks or ideas you can expect to find within a category.
+      </div>
     </div>
-    <div class="text-[20px] max-w-[50em] text-base text-center">
-      Different ways to contribute to the Optimism Collective are loosely
-      organized into "categories" which give a sense of the relative scope,
-      utility, and complexity of any given project. Refer to the sections below
-      to understand what each of these categories means and what type of tasks
-      or ideas you can expect to find within a category.
-    </div>
-  </div>
-  {#if shuffleStatus}
+
     <div class="flex flex-row flex-wrap justify-center">
       {#each issueData as issue}
         <Card data={issue} />
       {/each}
     </div>
-  {/if}
-</div>
+  </div>
+{/if}
