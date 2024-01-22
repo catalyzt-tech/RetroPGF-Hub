@@ -13,6 +13,7 @@
       name: 'RetroPGF 3',
       url: '/retropgf3',
     },
+    { name: 'Project Ideas', url: '/projectidea' },
     // {
     //   name: 'Projects',
     //   url: '/projects',
