@@ -1,5 +1,6 @@
 <script lang="ts">
   import Card from '@/components/ProjectIdea/Card.svelte'
+  import Alertbar from '@/components/Alertbar.svelte'
   import { onMount } from 'svelte'
   let issueData: string[] = []
   let shuffleStatus = false
@@ -31,6 +32,7 @@
   })
 </script>
 
+<Alertbar />
 {#if shuffleStatus}
   <div class="flex flex-col min-h-screen mb-10">
     <div class="w-full lg:h-[10em] overflow-hidden">
@@ -42,13 +44,13 @@
     </div>
 
     <h1 class="flex justify-center font-bold mt-6 text-[40px] text-center">
-      Optimism Ecosystem Contributions
+      Contributions Ideas
     </h1>
     <div class=" flex flex-col justify-center items-center my-3">
       <div class="text-[20px] max-w-[50em] text-base text-center mb-3">
-        Welcome to the Optimism Collective Ecosystem Contributions repository.
-        Here you'll find various ways to contribute to the Optimism Collective
-        so that we can build an economy that works for humans, together.
+        Welcome to the Contributions Ideas! Here you'll find various ways to
+        contribute to the Optimism Collective so that we can build an economy
+        that works for humans, together.
       </div>
       <div class="text-[20px] max-w-[50em] text-base text-center">
         Different ways to contribute to the Optimism Collective are loosely
