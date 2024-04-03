@@ -1,5 +1,5 @@
 1.ทำ filter ตรง community ให้ reponsive (กลับมาทำทีหลัง)
-
+2.ทำ component RecentlyShareSection เป็นรอรับ data แล้วแยกประเภทใส่ card เอง
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
