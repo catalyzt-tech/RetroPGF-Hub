@@ -6,9 +6,11 @@ export default function Layout({
     children: React.ReactNode;
   }>) {
     return (
-      <div className="font-inter">
+      <div className="font-inter flex flex-col h-screen">
           <Navbar bgColor="bg-white"/>
-          {children}
+          <div className="flex-grow overflow-y-auto">
+            {children}
+          </div>
       </div>
     );
   }
