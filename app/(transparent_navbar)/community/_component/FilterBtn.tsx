@@ -58,12 +58,12 @@ return (
               <Menu.Item>
                 {({ active }) => (
                   <button
-                    className={`${filter.sort === "b" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
+                    className={`${filter.filter === "op" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
                       } group w-full items-center rounded-md px-2 py-2 text-sm flex justify-between hover:bg-gray-50`}
                       onClick={() => handleChangeSort("op")}
                   >
                     <h6>OP Stack</h6>
-                    {filter.sort === "b" && 
+                    {filter.filter === "op" && 
                     <Checkmark  size={24}/>
                     }
                   </button>
@@ -73,12 +73,12 @@ return (
               <Menu.Item>
                 {({ active }) => (
                   <button
-                    className={`${filter.sort === "mp" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
+                    className={`${filter.filter === "dc" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
                       } group flex justify-between w-full items-center rounded-md px-2 py-2 text-sm font-normal hover:bg-gray-50`}
                       onClick={() => handleChangeSort("dc")}
                   >
                     <h6>Developer Ecosystem</h6>
-                    {filter.sort === "mp" && 
+                    {filter.filter === "dc" && 
                    <Checkmark  size={24} />
                     }
                   </button>
@@ -88,12 +88,12 @@ return (
               <Menu.Item>
                 {({ active }) => (
                   <button
-                    className={`${filter.sort === "n" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
+                    className={`${filter.filter === "cg" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
                       } group flex justify-between w-full items-center rounded-md px-2 py-2 text-sm font-normal hover:bg-gray-50`}
                       onClick={() => handleChangeSort("cg")}
                   >
                     <h6>Collective Governance</h6>
-                    {filter.sort === "n" && 
+                    {filter.filter === "cg" && 
                     <Checkmark  size={24} />
                     }
                   </button>
@@ -103,12 +103,12 @@ return (
               <Menu.Item>
                 {({ active }) => (
                   <button
-                    className={`${filter.sort === "n" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
+                    className={`${filter.filter === "eu" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
                       } group flex justify-between w-full items-center rounded-md px-2 py-2 text-sm font-normal hover:bg-gray-50`}
                       onClick={() => handleChangeSort("eu")}
                   >
                     <h6 className="text-start">End User Experience Adoption</h6>
-                    {filter.sort === "n" && 
+                    {filter.filter === "eu" && 
                     <Checkmark  size={24} />
                     }
                   </button>

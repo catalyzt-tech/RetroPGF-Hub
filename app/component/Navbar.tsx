@@ -45,9 +45,11 @@ const Navbar = ({
         </div>
 
         <div className="hidden lg:flex items-center gap-4 h-full">
-          <button className="bg-white border py-3 px-7 h-10 flex items-center rounded-lg hover:bg-gray-50">
+          <Link  
+          href={"/signin"}
+          className="bg-white border py-3 px-7 h-10 flex items-center rounded-lg hover:bg-gray-50">
             <h6 className="text-sm font-semibold text-gray-800">Sign in</h6>
-          </button>
+          </Link>
           <button className="bg-primaryRed py-3 px-7 h-10 flex items-center rounded-lg hover:bg-primaryRed/90">
             <h6 className="text-sm font-semibold text-white">Get started</h6>
           </button>

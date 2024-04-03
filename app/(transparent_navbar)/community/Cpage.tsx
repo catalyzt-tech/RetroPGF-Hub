@@ -107,7 +107,7 @@ export default function Cpage({
                     </div>
 
                     <Tab.Panels>
-                        <Tab.Panel>
+                        <Tab.Panel className="outline-none">
                             <Transition appear show={selectedIndex == 0}
                                 enter="transition duration-200 ease-out"
                                 enterFrom="transform scale-95 opacity-0"
