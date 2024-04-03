@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Pin from '@carbon/icons-react/lib/Pin';
+import Link from "next/link";
+import Favorite from "@carbon/icons-react/lib/Favorite";
+import Chat from "@carbon/icons-react/lib/Chat";
 
 export default function ProjectFeedBackCard({
 
@@ -22,7 +25,11 @@ export default function ProjectFeedBackCard({
                     height={72}
                 />
                 <div className="flex flex-col gap-1">
-                    <h6 className="text-2xl font-semibold text-gray-800">Metamask</h6>
+                    <Link
+                    href={`/community/project/${1}`} 
+                    className="text-2xl font-semibold text-gray-800 hover:text-blue-500 hover:underline">
+                        Metamask
+                        </Link>
                     <div className="px-2 py-1 rounded-2xl bg-sky-50 cursor-pointer hover:bg-sky-100">
                         <p className="text-sky-600 text-xs font-medium">Developer Ecosystem</p>
                     </div>
@@ -34,18 +41,32 @@ export default function ProjectFeedBackCard({
                 A decentralized marketplace for buying and selling music NFTs. We envision a world where artists have more control over their distribution, revenue streams, and can directly connect with fans in new ways. Our platform features easy minting, transparent royalty structures, and we're exploring ways to incorporate fan-driven rewards and exclusive content tied to NFT ownership.
             </p>
 
-            <div className="flex gap-3">
-                <Image
-                    alt="small avatar"
-                    src={"/random/smallAvatar.png"}
-                    width={36}
-                    height={36}
-                />
-                <div className="flex gap-2">
-                    <h6 className="text-sm font-medium text-gray-800">
-                        @smartcontact
-                    </h6>
-                    <p className="text-sm font-normal text-gray-500">10 Feb 2024</p>
+            <div className="flex justify-between flex-wrap gap-4">
+
+                <div className="hidden md:flex gap-3">
+                    <Image
+                        alt="small avatar"
+                        src={"/random/smallAvatar.png"}
+                        width={36}
+                        height={36}
+                    />
+                    <div className="flex items-center gap-2">
+                        <h6 className="text-sm font-medium text-gray-800">
+                            @smartcontact
+                        </h6>
+                        <p className="text-sm font-normal text-gray-500">10 Feb 2024</p>
+                    </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4">
+                    <div className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5">
+                        <Favorite size={24} />
+                        <p className="text-base font-medium text-gray-800">12</p>
+                    </div>
+                    <div className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5">
+                        <Chat size={24} />
+                        <p className="text-base font-medium text-gray-800">12</p>
+                    </div>
                 </div>
             </div>
 
