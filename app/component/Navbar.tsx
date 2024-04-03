@@ -20,7 +20,7 @@ const Navbar = ({
   return (
     <>
     
-      <div className={`${bgColor} relative z-20 flex items-center lg:justify-between justify-between px-8 py-2 lg:px-12 lg:py-4 h-[4.5rem] w-full`}>
+      <div className={`${bgColor} relative z-20 flex items-center lg:justify-between justify-between px-8 py-2 lg:px-12 lg:py-4 h-[4.5rem] w-full shadow`}>
         <div className="flex justify-start items-center">
           <div className="mr-12">
             <Link

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Cpage from "./Cpage";
 
 export default function page({
@@ -18,12 +19,12 @@ export default function page({
                         <p className="mb-4 md:mb-8 text-base md:text-lg font-normal text-gray-800">Share your ideas, thoughts and feedback to help and grow together!</p>
 
                         <div className="flex flex-wrap items-center justify-center gap-3">
-                            <button className="w-44 h-10 bg-white hover:bg-gray-50 py-3 px-8 rounded-lg ">
-                                <h6 className="text-sm font-semibold text-gray-800">Ask question</h6>
-                            </button>
-                            <button className="w-44 h-10 bg-gray-800 hover:bg-gray-800/80 py-3 px-7 rounded-lg ">
-                                <h6 className="text-sm font-semibold text-white">Submit your idea</h6>
-                            </button>
+                            <Link href={"/community/ask-question"} className="w-44 h-10 bg-white hover:bg-gray-50 py-3 px-8 rounded-lg ">
+                                <h6 className="text-sm font-semibold text-gray-800 text-center self-center">Ask question</h6>
+                            </Link>
+                            <Link href="/community/submit-idea" className="w-44 h-10 bg-gray-800 hover:bg-gray-800/80 py-3 px-7 rounded-lg ">
+                                <h6 className="text-sm font-semibold text-white text-center self-center">Submit your idea</h6>
+                            </Link>
                         </div>
                     </div>
                 </div>
