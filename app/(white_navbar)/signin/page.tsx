@@ -49,7 +49,7 @@ export default function page({
                         type="email"
                         placeholder="Email"
                         ref={emailRef}
-                        className="border border-gray-200 placeholder-slate-700 bg-white text-slate-500 focus:ring focus:ring-primaryRed w-full px-5 py-3 rounded-md min-h-[40px]"
+                        className="border border-gray-200 placeholder-slate-600 bg-white text-slate-800 focus:ring focus:ring-primaryRed w-full px-5 py-3 rounded-md min-h-[40px]"
                     />
                 </div>
 
@@ -62,7 +62,7 @@ export default function page({
                         type="password"
                         placeholder="Password"
                         ref={passwordRef}
-                        className="border border-gray-200 placeholder-slate-700 bg-white text-slate-500 focus:ring focus:ring-primaryRed w-full px-5 py-3 rounded-md min-h-[40px]"
+                        className="border border-gray-200 placeholder-slate-600 bg-white text-slate-800 focus:ring focus:ring-primaryRed w-full px-5 py-3 rounded-md min-h-[40px]"
                     />
                 </div>
 

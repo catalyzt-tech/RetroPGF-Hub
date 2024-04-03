@@ -14,7 +14,7 @@ export default function Comment({
 return (
 
     <> 
-    <div className="flex flex-wrap gap-4 p-2 md:p-0">
+    <div className="flex flex-wrap min-[350px]:flex-nowrap gap-4 p-2 md:p-0">
                 <div className="min-w-12 min-h-12 max-w-12 max-h-12">
                     <Image
                         alt="small avatar"

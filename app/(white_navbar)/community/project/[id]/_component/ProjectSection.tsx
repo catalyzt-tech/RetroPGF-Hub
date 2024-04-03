@@ -129,10 +129,12 @@ export default function ProjectSection({
 
 
             {/* Show Comment Section */}
-            <Comment
-            handleFavorite={handleFavoriteComment}
-            handleReply={handleReplyComment}
-            />
+           {[1,2,3,4,5,6].map((item) => (
+             <Comment
+             handleFavorite={handleFavoriteComment}
+             handleReply={handleReplyComment}
+             />
+           ))}
 
 
         </div>

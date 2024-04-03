@@ -22,7 +22,9 @@ const InputRef = React.forwardRef<HTMLInputElement, InputProps>(
               : 'border-0 placeholder-slate-500 bg-white text-slate-500 focus:ring w-full px-1 py-3 rounded-md'
           } ${
             Icon ? 'pl-11' : ''
-          } transition-all ring-subPrimary outline-none focus:outline-none relative  text-base`}
+          } 
+          placeholder-gray-500 placeholder:text-sm placeholder:font-normal
+          transition-all ring-subPrimary outline-none focus:outline-none relative  text-base`}
           {...props}
         />
       </div>
