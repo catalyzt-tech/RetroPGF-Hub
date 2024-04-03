@@ -12,8 +12,8 @@ const Navbar = ({
   const [open, setOpen] = useState(false)
   const menu = [
     { name: 'Explore', link: '/explore' },
-    { name: 'Community', link: 'https://app.optimism.io/bridge/deposit' },
-    { name: 'Resources', link: 'https://app.optimism.io/airdrops' },
+    { name: 'Community', link: '/community' },
+    { name: 'Resources', link: '/resource' },
   ]
 
 
