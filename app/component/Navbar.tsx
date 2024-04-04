@@ -10,6 +10,8 @@ import Image from 'next/image'
 import User from '@carbon/icons-react/lib/User'
 import Chat from '@carbon/icons-react/lib/Chat'
 import Logout from '@carbon/icons-react/lib/Logout'
+import toast from 'react-hot-toast'
+import { LogoutUser } from '../hook/userRequest'
 
 const Navbar = ({
   bgColor="bg-transparent",
@@ -28,6 +30,26 @@ const Navbar = ({
     { name: 'Community', link: '/community' },
     { name: 'Resources', link: '/resource' },
   ]
+
+  async function SubmitLogout(e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) {
+    e.preventDefault();
+
+    // setLoading(true)
+    // const res = await LogoutUser()
+    // if(res.error?.status === 200){
+    //   toast.success("Logout successful")
+    //   setGlobalState(prev => ({...}))
+    // }
+    // if (res.data && 'user' in res.data) {
+    //     const { user, msg } = res.data;
+    //     setGlobalState(prev => ({ ...prev, usesr: user }))
+    //     setLoading(false)
+    // } else {
+    //     toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
+    //     setLoading(false)
+    // }
+
+  }
 
 
   return (
@@ -68,7 +90,7 @@ const Navbar = ({
           <Menu.Button className="">
               <Image
               alt='avatar image'
-              src={"/random/smallAvatar.png"}
+              src={globalState.user.profile ? globalState.user.profile : "/random/smallAvatar.png"}
               width={48}
               height={48}
               className="rounded-full"
@@ -89,7 +111,7 @@ const Navbar = ({
             <div className="flex items-center gap-2.5">
               <Image
                 alt='avatar image'
-                src={"/random/smallAvatar.png"}
+                src={globalState.user.profile ? globalState.user.profile : "/random/smallAvatar.png" }
                 width={64}
                 height={64}
                 className="rounded-full"

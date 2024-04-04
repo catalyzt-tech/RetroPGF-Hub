@@ -1,14 +1,14 @@
 "use client"
 import InputRef from "@/app/component/Input/InputRef";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import toast from "react-hot-toast";
 import Github from '@carbon/icons-react/lib/LogoGithub';
 import Link from "next/link";
-import Loading from "@/app/component/loading";
 import { Circular } from "@/app/component/Loading/Circular";
 import { RegisterUser } from "@/app/hook/userRequest";
 import { GlobalContextType, useGlobal } from "@/app/provider/globalContext";
-import axios from "axios";
+import { useRouter } from 'next/navigation';
+
 // import Github from '@carbon/icons-react/lib/LogoGithub';
 export default function page({
 
@@ -16,11 +16,16 @@ export default function page({
 
     }) {
 
-    const {setGlobalState}:GlobalContextType = useGlobal?.()!;
+    const router = useRouter();
+    const { globalState, setGlobalState }: GlobalContextType = useGlobal?.()!;
     const [loading, setLoading] = useState<boolean>(false)
 
-    // const [state, setState] = useState()
-    // const emailRef = useRef<React.Ref<HTMLInputElement>>()
+    // useEffect(() => {
+    //     if (typeof (globalState.user) === "object") {
+    //         router.push('/');
+    //     }
+    // }, [globalState.user])
+
     const emailRef = useRef<HTMLInputElement>(null);
     const firstNameRef = useRef<HTMLInputElement>(null);
     const lastNameRef = useRef<HTMLInputElement>(null);
@@ -30,37 +35,40 @@ export default function page({
     async function SubmitRegisterUser(e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) {
         e.preventDefault();
 
-        let {email, firstName, lastName, password, userName}  =  {
-            email:emailRef.current?.value,
+        let { email, firstName, lastName, password, userName } = {
+            email: emailRef.current?.value,
             firstName: firstNameRef.current?.value,
             lastName: lastNameRef.current?.value,
             password: passwordRef.current?.value,
             userName: userNameRef.current?.value
         }
 
-        if(!email){
+        if (!email) {
             toast.error("emai is required")
         }
-        else if(!firstName){
+        else if (!firstName) {
             toast.error("first name is required")
         }
-        else if(!lastName){
+        else if (!lastName) {
             toast.error("last name is required")
         }
-        else if(!userName){
+        else if (!userName) {
             toast.error("username is required")
         }
-        else if(!password){
+        else if (!password) {
             toast.error("password is required")
         }
         else {
+            setLoading(true)
             const res = await RegisterUser(email, userName, firstName, lastName, password, "web")
             if (res.data && 'user' in res.data) {
                 const { user, msg } = res.data;
-                setGlobalState(prev => ({...prev, usesr:user}))
-                toast.success("Register success full")
+                setGlobalState(prev => ({ ...prev, usesr: user }))
+                toast.success("Register successful")
+                setLoading(false)
             } else {
                 toast.error(res.error?.data.msg! || "Something went wrong when try to register your account")
+                setLoading(false)
             }
         }
     }
@@ -69,11 +77,13 @@ export default function page({
     return (
 
         <div className="w-full min-h-[calc(100vh-4.5rem)] bg-gray-100  flex justify-start items-center   ">
-           
+            <Circular
+            loading={loading}
+            />
             {/* w-[30rem] h-[39rem] */}
-            <form 
-            onSubmit={SubmitRegisterUser}
-            className="w-full h-auto sm:w-[30rem] px-4 py-8 sm:px-12  min-[250px]:mx-4 sm:mx-auto bg-white rounded-lg shadow-sm flex flex-col  gap-6">
+            <form
+                onSubmit={SubmitRegisterUser}
+                className="w-full h-auto sm:w-[30rem] px-4 py-8 sm:px-12  min-[250px]:mx-4 sm:mx-auto bg-white rounded-lg shadow-sm flex flex-col  gap-6">
                 <h5
                     className="text-3xl font-semibold mb-2 text-gray-800 text-center"
                 >
@@ -99,30 +109,30 @@ export default function page({
                     />
                 </div>
 
-               <div className="flex justify-between gap-4">
-               <div className="flex flex-col gap-2.5">
-                    <h6 className="text-sm font-semibold text-gray-800">Firstname</h6>
-                    <InputRef
-                        type="text"
-                        placeholder="Firstname"
-                        ref={firstNameRef}
-                        className="border border-gray-200 placeholder-slate-600 bg-white text-slate-800 focus:ring focus:ring-primaryRed w-full px-5 py-3 rounded-md min-h-[40px]"
-                    />
+                <div className="flex justify-between gap-4">
+                    <div className="flex flex-col gap-2.5">
+                        <h6 className="text-sm font-semibold text-gray-800">Firstname</h6>
+                        <InputRef
+                            type="text"
+                            placeholder="Firstname"
+                            ref={firstNameRef}
+                            className="border border-gray-200 placeholder-slate-600 bg-white text-slate-800 focus:ring focus:ring-primaryRed w-full px-5 py-3 rounded-md min-h-[40px]"
+                        />
+                    </div>
+
+                    <div className="flex flex-col gap-2.5">
+                        <h6 className="text-sm font-semibold text-gray-800">Lastname</h6>
+                        <InputRef
+                            type="text"
+                            placeholder="Lastname"
+                            ref={lastNameRef}
+                            className="border border-gray-200 placeholder-slate-600 bg-white text-slate-800 focus:ring focus:ring-primaryRed w-full px-5 py-3 rounded-md min-h-[40px]"
+                        />
+                    </div>
                 </div>
-                
-                <div className="flex flex-col gap-2.5">
-                    <h6 className="text-sm font-semibold text-gray-800">Lastname</h6>
-                    <InputRef
-                        type="text"
-                        placeholder="Lastname"
-                        ref={lastNameRef}
-                        className="border border-gray-200 placeholder-slate-600 bg-white text-slate-800 focus:ring focus:ring-primaryRed w-full px-5 py-3 rounded-md min-h-[40px]"
-                    />
-                </div>
-               </div>
 
                 <div className="flex flex-col gap-2.5">
-                        <h6 className="text-sm font-semibold text-gray-800">Password</h6>
+                    <h6 className="text-sm font-semibold text-gray-800">Password</h6>
                     <InputRef
                         type="password"
                         placeholder="Password"
@@ -132,7 +142,7 @@ export default function page({
                 </div>
 
                 <button
-                onSubmit={SubmitRegisterUser}
+                    onSubmit={SubmitRegisterUser}
                     className="px-8 py-3 h-12 flex items-center justify-center rounded-lg bg-gray-800 hover:bg-gray-800/90"
                 >
                     <h6 className="text-sm font-semibold text-white">Register</h6>
