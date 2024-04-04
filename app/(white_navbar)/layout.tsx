@@ -7,8 +7,10 @@ export default function Layout({
   }>) {
     return (
       <div className="font-inter flex flex-col h-screen">
-          <Navbar bgColor="bg-white"/>
-          <div className="flex-grow overflow-y-auto">
+          <Navbar 
+          shadow={true}
+          bgColor="bg-white"/>
+          <div className="">
             {children}
           </div>
       </div>

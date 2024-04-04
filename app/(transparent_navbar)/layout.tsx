@@ -7,7 +7,9 @@ export default function Layout({
   }>) {
     return (
       <div className="font-inter">
-          <Navbar/>
+          <Navbar
+          shadow={false}
+          />
           {children}
       </div>
     );

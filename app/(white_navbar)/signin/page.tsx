@@ -33,11 +33,11 @@ export default function page({
 
 
     return (
-
-        <div className="w-full h-full bg-gray-100 flex justify-start items-center">
+        
+        <div className="w-full min-h-[calc(100vh-4.5rem)] bg-gray-100  flex justify-start items-center   ">
 
             {/* w-[30rem] h-[39rem] */}
-            <div className="w-full h-auto md:w-[30rem] md:h-[39rem] px-4 py-2 md:px-12 md:py-8 min-[250px]:mx-4 md:mx-auto bg-white rounded-lg shadow-sm flex flex-col gap-6">
+            <div className="w-full h-auto sm:w-[30rem] md:h-[39rem] px-4 py-8 sm:px-12  min-[250px]:mx-4 sm:mx-auto bg-white rounded-lg shadow-sm flex flex-col gap-6">
                 <h5
                     className="text-3xl font-semibold mb-2 text-gray-800 text-center"
                 >
@@ -104,7 +104,6 @@ export default function page({
                 </div>
             </div>
         </div>
-        // <button onClick={notify}>Make me a toast</button>
 
     )
 

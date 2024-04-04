@@ -2,6 +2,14 @@
 2.ทำ component RecentlyShareSection เป็นรอรับ data แล้วแยกประเภทใส่ card เอง
 
 
+<!-- import {v2 as cloudinary} from 'cloudinary';
+          
+cloudinary.config({ 
+  cloud_name: process.env.NEXT_PUBLIC_CLOUD_NAME, 
+  api_key: process.env.NEXT_PUBLIC_API_KEY, 
+  api_secret:  process.env.NEXT_PUBLIC_API_SECRET
+}); -->
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
