@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Toaster } from "react-hot-toast";
+import { GlobalProvider } from "./provider/globalContext";
 
 const interFont = Inter({
   subsets: ["latin"],
@@ -34,7 +35,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${interFont.variable} ${rubikFont.variable} `}>
         <Toaster/>
-        {children}
+        <GlobalProvider>
+          {children}
+        </GlobalProvider>
       </body>
     </html>
   );

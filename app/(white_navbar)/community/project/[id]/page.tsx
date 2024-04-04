@@ -1,4 +1,3 @@
-import ChevronRight from "@carbon/icons-react/lib/ChevronRight";
 import ProjectSection from "./_component/ProjectSection";
 import RecentlyShareSection from "./_component/RecentlyShareSection";
 import BreadCumpCommunity from "@/app/component/BreadCump/BreadCumpCommunity";
