@@ -17,7 +17,7 @@ export default function page({
     }) {
 
     const {setGlobalState}:GlobalContextType = useGlobal?.()!;
-
+    const [loading, setLoading] = useState<boolean>(false)
 
     // const [state, setState] = useState()
     // const emailRef = useRef<React.Ref<HTMLInputElement>>()
