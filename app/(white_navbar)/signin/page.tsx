@@ -1,43 +1,74 @@
 "use client"
 import InputRef from "@/app/component/Input/InputRef";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import toast from "react-hot-toast";
 import Github from '@carbon/icons-react/lib/LogoGithub';
 import Link from "next/link";
+import { GlobalContextType, useGlobal } from "@/app/provider/globalContext";
+import { useRouter } from "next/navigation";
+import { LoginUser } from "@/app/hook/userRequest";
+import { Circular } from "@/app/component/Loading/Circular";
 // import Github from '@carbon/icons-react/lib/LogoGithub';
 export default function page({
 
 }: {
 
     }) {
+        
+    const router = useRouter();
+    const { globalState, setGlobalState }: GlobalContextType = useGlobal?.()!;
+    const [loading, setLoading] = useState<boolean>(false)
 
-    // const [state, setState] = useState()
-    // const emailRef = useRef<React.Ref<HTMLInputElement>>()
+    useEffect(() => {
+        if (typeof (globalState.user) === "object") {
+            router.push('/');
+        }
+    }, [globalState.user])
+
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
 
-    async function SubmitSentContact(e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) {
+    async function SubmitLogin(e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) {
         e.preventDefault();
 
-        // if (!nameRef.current?.value || !emailRef.current?.value || !messageRef.current?.value) {
-        //     toast.error("You need to fill all input");
-        //     return;
-        // }
-        // else {
-
-        // }
+        let { email, password } = {
+            email: emailRef.current?.value,
+            password: passwordRef.current?.value,
+        }
+        if (!email) {
+            toast.error("emai is required")
+        }
+        else if (!password) {
+            toast.error("password is required")
+        }
+        else {
+            setLoading(true)
+            const res = await LoginUser(email, password)
+            if (res.data && 'user' in res.data) {
+                const { user, msg } = res.data;
+                setGlobalState(prev => ({ ...prev, usesr: user }))
+                toast.success("Login successful")
+                setLoading(false)
+            } else {
+                toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
+                setLoading(false)
+            }
+        }
 
     }
 
-    const notify = () => toast.success('Successfully created!')
 
 
     return (
         
         <div className="w-full min-h-[calc(100vh-4.5rem)] bg-gray-100  flex justify-start items-center   ">
-
+            <Circular
+            loading={loading}
+            />
             {/* w-[30rem] h-[39rem] */}
-            <div className="w-full h-auto sm:w-[30rem] md:h-[39rem] px-4 py-8 sm:px-12  min-[250px]:mx-4 sm:mx-auto bg-white rounded-lg shadow-sm flex flex-col gap-6">
+            <form
+            onSubmit={SubmitLogin}
+            className="w-full h-auto sm:w-[30rem] md:h-[39rem] px-4 py-8 sm:px-12  min-[250px]:mx-4 sm:mx-auto bg-white rounded-lg shadow-sm flex flex-col gap-6">
                 <h5
                     className="text-3xl font-semibold mb-2 text-gray-800 text-center"
                 >
@@ -87,6 +118,7 @@ export default function page({
                     <h6 className="text-sm font-semibold text-gray-800">Sign in with Google</h6>
                 </button>
                 <button
+                onSubmit={SubmitLogin}
                     className="px-8 py-3 h-12 flex items-center justify-center rounded-lg bg-white hover:bg-gray-50 gap-2 border border-gray-200"
                 >
                     <Github size={20} />
@@ -102,7 +134,7 @@ export default function page({
                         Create Account
                     </Link>
                 </div>
-            </div>
+            </form>
         </div>
 
     )
