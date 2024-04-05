@@ -12,7 +12,7 @@ export async function GetCurrentUser(){
 }
 
 export async function LogoutUser(){
-    return await makeRequest<{ user: UserData; msg: string } | { msg: string } >(`/users_v1/logout`, {
+    return await makeRequest<{ msg: string } >(`/users_v1/logout`, {
         baseURL: userBaseUrl,
         method:"GET",
     })
@@ -30,6 +30,22 @@ export async function RegisterUser(email: string, userName:string, firstName:str
             lastname: lastName,
             source: source,
             profile: "https://res.cloudinary.com/ddtwsj6v7/image/upload/v1712220177/users/bbtywoswgo60jxh3ynis.png"
+        }
+    })
+}
+
+export async function AuthUserThirdParty(email: string, userName:string, firstName:string, lastName:string, password:string, profile:string | null, source:string){
+    return await makeRequest<{ user: UserData; msg: string } | { msg: string } >(`/users_v1/auth-third-party`, {
+        baseURL: userBaseUrl,
+        method:"POST",
+        data:{
+            email:email,
+            password:password,
+            username:userName,
+            firstname: firstName,
+            lastname: lastName,
+            source: source,
+            profile: profile || "https://res.cloudinary.com/ddtwsj6v7/image/upload/v1712220177/users/bbtywoswgo60jxh3ynis.png"
         }
     })
 }

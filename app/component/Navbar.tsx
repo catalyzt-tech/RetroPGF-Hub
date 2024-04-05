@@ -12,6 +12,9 @@ import Chat from '@carbon/icons-react/lib/Chat'
 import Logout from '@carbon/icons-react/lib/Logout'
 import toast from 'react-hot-toast'
 import { LogoutUser } from '../hook/userRequest'
+import { Circular } from './Loading/Circular'
+import {  getAuth, signOut } from "firebase/auth";
+import { app } from '../lib/firebase'
 
 const Navbar = ({
   bgColor="bg-transparent",
@@ -23,7 +26,7 @@ const Navbar = ({
 
   const {globalState ,setGlobalState}:GlobalContextType = useGlobal?.()!;
 
-
+  const [loading, setLoading] = useState<boolean>(false)
   const [open, setOpen] = useState(false)
   const menu = [
     { name: 'Explore', link: '/explore' },
@@ -31,30 +34,39 @@ const Navbar = ({
     { name: 'Resources', link: '/resource' },
   ]
 
+  console.log(process.env.TESTING_KEY)
+
   async function SubmitLogout(e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) {
     e.preventDefault();
 
-    // setLoading(true)
-    // const res = await LogoutUser()
-    // if(res.error?.status === 200){
-    //   toast.success("Logout successful")
-    //   setGlobalState(prev => ({...}))
-    // }
-    // if (res.data && 'user' in res.data) {
-    //     const { user, msg } = res.data;
-    //     setGlobalState(prev => ({ ...prev, usesr: user }))
-    //     setLoading(false)
-    // } else {
-    //     toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
-    //     setLoading(false)
-    // }
+    setLoading(true)
+    const res = await LogoutUser()
+    if(res.status === 200){
+      toast.success("Logout successful")
+      setGlobalState(prev => ({...prev, user:undefined}))
+      setLoading(false)
+    }
+    else {
+      toast.error(res.error?.data.msg! || "Something went wrong when try to logout")
+      setLoading(false)
+    }
+    signOut(getAuth(app)).then(() => {
+      // Sign-out successful.
+          // navigate("/");
+          console.log("Signed out successfully")
+      }).catch((error:any) => {
+        console.log(error)
+      });
+
 
   }
 
 
   return (
     <>
-    
+      <Circular
+      loading={loading}
+      />
       <div className={`${bgColor} ${shadow && "shadow"} relative z-20 flex items-center lg:justify-between justify-between px-8 py-2 lg:px-12 lg:py-4 h-[4.5rem] w-full`}>
         <div className="flex justify-start items-center">
           <div className="mr-12">
@@ -149,13 +161,15 @@ const Navbar = ({
 
             <hr/> 
 
-            <div className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
+            <button 
+            onClick={SubmitLogout}
+            className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg">
                 <Logout  
                 size={20}
                 className="fill-gray-800"
                 />
                 <p className="text-sm font-normal">Logout</p>
-              </div>
+              </button>
 
           </Menu.Items>
         </Transition>
