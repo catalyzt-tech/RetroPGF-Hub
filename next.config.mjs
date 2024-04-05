@@ -3,8 +3,18 @@ const nextConfig = {
     trailingSlash: true,
     reactStrictMode: false,
     images: {
-        domains: ['res.cloudinary.com'],
+        remotePatterns: [
+          {
+            protocol: "https",
+            hostname: "**",
+          },
+        ],
     },
+    // images: {
+    //     // domains: ['res.cloudinary.com', 'lh3.googleusercontent.com'],
+    //     domains: ['*'],
+
+    // },
 };
 
 export default nextConfig;
