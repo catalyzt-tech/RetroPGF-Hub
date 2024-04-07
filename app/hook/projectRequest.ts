@@ -1,6 +1,6 @@
 import { makeRequest } from "./makeRequest";
 import { UserData } from "../provider/globalContext";
-import { FullProjectRes, InsertProjectRes } from "./projectRequestType";
+import { FullProjectRes, FullProjectResNoComment, InsertProjectRes, RandomProject } from "./projectRequestType";
 
 export let projectBaseUrl = "http://localhost:5001"
 
@@ -66,7 +66,7 @@ export async function GetOneProject(
     id:string,
     token:string
 ){
-    return await makeRequest<{project:FullProjectRes, msg:string} | {msg:string}>(`/project_v1/project/${id}`, {
+    return await makeRequest<{project:FullProjectRes, msg:string, recently:RandomProject[]} | {msg:string}>(`/project_v1/project/${id}`, {
         baseURL: projectBaseUrl,
         method:"GET",
         headers: {
@@ -74,3 +74,26 @@ export async function GetOneProject(
         }
     })
 }
+
+
+export async function GetProjectsWithSearch(limit:number, skip:number, sort:string, category:string, type:string, search:string, token:string) {
+   if(token === ""){
+    console.log("no token")
+    return await makeRequest<{project:FullProjectResNoComment[] | null, msg:string, pageCount: number, status:number} | {msg:string}>(`/project_v1/projects?limit=${limit}&skip=${skip}&sort=${sort}&category=${category}&type=${type}&search=${search}`, {
+        baseURL: projectBaseUrl,
+        method: "GET",
+    })
+}
+else {
+       console.log("sended token")
+    return await makeRequest<{project:FullProjectResNoComment[] | null, msg:string, pageCount: number, status:number} | {msg:string}>(`/project_v1/projects?limit=${limit}&skip=${skip}&sort=${sort}&category=${category}&type=${type}&search=${search}`, {
+        baseURL: projectBaseUrl,
+        method: "GET",
+        headers: {
+            Authorization: `${token}`
+        }
+    })
+   }
+}
+
+

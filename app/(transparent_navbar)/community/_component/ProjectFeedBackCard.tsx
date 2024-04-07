@@ -3,70 +3,101 @@ import Pin from '@carbon/icons-react/lib/Pin';
 import Link from "next/link";
 import Favorite from "@carbon/icons-react/lib/Favorite";
 import Chat from "@carbon/icons-react/lib/Chat";
+import { Owner } from "@/app/hook/projectRequestType";
+import { ConvertStringToTime } from "@/app/lib/utils";
+import FavoriteFilled from "@carbon/icons-react/lib/FavoriteFilled";
 
 export default function ProjectFeedBackCard({
-
+    commentCount,
+    description,
+    favCount,
+    id,
+    title,
+    createdAt,
+    owner,
+    logoUrl,
+    category,
+    favOrNot
 }: {
-
-    }) {
+    id:string;
+    title:string;
+    description:string;
+    favCount:number;
+    commentCount:number;
+    createdAt: string;
+    logoUrl:string;
+    category:string;
+    owner: Owner;
+    favOrNot: boolean;
+}) {
 
     return (
 
-        <div className="flex flex-col gap-4 border rounded-lg p-6">
-            <div className="flex gap-1.5 bg-gray-100 px-2 py-1 rounded-2xl w-fit">
+        <div className="flex flex-col gap-4 border rounded-lg p-3 lg:p-6">
+            <div className="flex items-center gap-1.5 bg-gray-100 px-2 py-1 rounded-2xl w-fit">
                 <Pin size={20} className="fill-gray-500" />
                 <p className="text-sm font-medium text-gray-700">Feedback Request</p>
             </div>
             <div className="flex gap-3">
-                <Image
-                    src={"/random/metamask.png"}
-                    alt="avatar image"
-                    width={72}
-                    height={72}
-                />
+                <div className="relative min-w-16 min-h-16 max-w-16 max-h-16 lg:min-h-[4.5rem] lg:min-w-[4.5rem] lg:max-h-[4.5rem] lg:max-w-[4.5rem]">
+                    <Image
+                        src={logoUrl || "/random/metamask.png"}
+                        alt="avatar image"
+                        fill
+                        className="rounded-[4rem]"
+                        />
+                </div>
                 <div className="flex flex-col gap-1">
                     <Link
-                    href={`/community/project/${1}`} 
-                    className="text-2xl font-semibold text-gray-800 hover:text-blue-500 hover:underline">
-                        Metamask
+                    href={`/community/project/${id}`} 
+                    className="text-xl lg:text-2xl font-semibold text-gray-800 hover:text-blue-500 hover:underline">
+                        {title}
                         </Link>
-                    <div className="px-2 py-1 rounded-2xl bg-sky-50 cursor-pointer hover:bg-sky-100">
-                        <p className="text-sky-600 text-xs font-medium">Developer Ecosystem</p>
+                    <div className="px-2 py-1 rounded-2xl bg-sky-50 cursor-pointer hover:bg-sky-100 w-fit">
+                        <p className="text-sky-600 text-xs font-medium">{category}</p>
                     </div>
                 </div>
             </div>
             <p
                 className="text-base font-normal text-gray-600 line-clamp-2 mb-4"
             >
-                A decentralized marketplace for buying and selling music NFTs. We envision a world where artists have more control over their distribution, revenue streams, and can directly connect with fans in new ways. Our platform features easy minting, transparent royalty structures, and we're exploring ways to incorporate fan-driven rewards and exclusive content tied to NFT ownership.
+                {description}
             </p>
 
             <div className="flex justify-between flex-wrap gap-4">
 
                 <div className="hidden md:flex gap-3">
-                    <Image
-                        alt="small avatar"
-                        src={"/random/smallAvatar.png"}
-                        width={36}
-                        height={36}
-                    />
+                     <div className="relative min-w-9 min-h-9 max-w-9 max-h-9">
+                        <Image
+                        src={owner.profile || "/random/metamask.png"}
+                        alt="avatar image"
+                        fill
+                        className="rounded-[4rem]"
+                        />
+                    </div>
                     <div className="flex items-center gap-2">
                         <h6 className="text-sm font-medium text-gray-800">
-                            @smartcontact
+                            {owner.username}
                         </h6>
-                        <p className="text-sm font-normal text-gray-500">10 Feb 2024</p>
+                        <p className="text-sm font-normal text-gray-500">{ConvertStringToTime(createdAt)}</p>
                     </div>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-4">
                     <div className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5">
-                        <Favorite size={24} />
-                        <p className="text-base font-medium text-gray-800">12</p>
+                            {favOrNot ?
+                                <FavoriteFilled size={24} className="fill-primaryRed" />
+                                :
+                                <Favorite size={24} className="group-hover:fill-primaryRed fill-gray-800" />
+
+                            }
+                        <p className="text-base font-medium text-gray-800">{favCount}</p>
                     </div>
                     <div className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5">
                         <Chat size={24} />
-                        <p className="text-base font-medium text-gray-800">12</p>
+                        <p className="text-base font-medium text-gray-800">{commentCount}</p>
                     </div>
+                    
                 </div>
             </div>
 

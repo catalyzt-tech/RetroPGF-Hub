@@ -18,9 +18,14 @@ export interface FullProjectRes extends Project {
     favOrNot: boolean;
 }
 
+export interface FullProjectResNoComment extends Omit<FullProjectRes, "comment" | "createdBy"> {
+
+}
+
 export type Project = {
         _id: string;
         name: string;
+        type:string;
         logoUrl: string;
         githubUrl: string;
         websiteUrl: string;
@@ -35,3 +40,13 @@ export type Project = {
         updatedAt: string;
 }
 
+export type RandomProject = {
+    _id:string;
+    name:string;
+    type:string;
+    logoUrl:string;
+    category:string;
+    description:string;
+    favCount:number;
+    commentCount:number;
+}

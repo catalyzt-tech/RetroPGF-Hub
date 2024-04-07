@@ -1,9 +1,13 @@
 import Link from "next/link";
 
 export default function Error({
-
+    titleError="404 Error",
+    subTitle="Page not found",
+    desc="The page you were looking for have been moved, deleted or does not exist."
 }:{
-    
+    titleError?:string;
+    subTitle?:string;
+    desc?:string;
 })  {
 
 return (
@@ -11,10 +15,10 @@ return (
     <div className=" max-h-[calc(100vh-4.5rem)] relative overflow-hidden"> 
         <div className="overflow-hidden h-screen flex-grow flex flex-col justify-center items-center text-center px-8 lg:px-0">
             <div className="flex flex-col justify-center items-center">
-                <h6 className="text-xl lg:text-2xl font-medium text-gray-500">404 Error</h6>
-                <h6 className="text-4xl lg:text-7xl font-medium text-gray-900">Page not found</h6>
+                <h6 className="text-xl lg:text-2xl font-medium text-gray-500">{titleError}</h6>
+                <h6 className="text-4xl lg:text-7xl font-medium text-gray-900">{subTitle}</h6>
             </div>    
-            <h6 className="text-base font-normal my-12">The page you were looking for have been moved, deleted or does not exist.</h6>
+            <h6 className="text-base font-normal my-12">{desc}</h6>
             <Link 
             href={"/"}
             className="flex py-3 px-7 bg-gray-900 hover:bg-gray-900/90 rounded-lg ">
