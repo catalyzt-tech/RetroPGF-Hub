@@ -5,9 +5,17 @@ import Favorite from "@carbon/icons-react/lib/Favorite";
 import Chat from "@carbon/icons-react/lib/Chat";
 
 export default function QuestionSmallCard({
-
+    commentCount,
+    description,
+    favCount,
+    id,
+    title,
 }:{
-    
+    id:string;
+    title:string;
+    description:string;
+    favCount:number;
+    commentCount:number;
 })  {
 
 return (
@@ -18,23 +26,23 @@ return (
                 <p className="text-sm font-medium text-gray-700">Question</p>
             </div>
             <Link 
-            href={`/community/question/${1}`}
+            href={`/community/question/${id}`}
             className="textt-2xl font-semibold text-gray-800 hover:text-blue-500 hover:underline"
-            >Where do i even start with Web3</Link>
+            >{title}</Link>
             <p
                 className="text-base font-normal text-gray-600 line-clamp-2 mb-4"
             >
-                Okay, I want to get into this Web3 thing, but it feels like everyone's speaking a different language. Are there any newbie-friendly places to learn without getting overwhelmed?
+                {description}
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
                 <div className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5">
                     <Favorite size={24} />
-                    <p className="text-base font-medium text-gray-800">12</p>
+                    <p className="text-base font-medium text-gray-800">{favCount}</p>
                 </div>
                 <div className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5">
                     <Chat size={24} />
-                    <p className="text-base font-medium text-gray-800">12</p>
+                    <p className="text-base font-medium text-gray-800">{commentCount}</p>
                 </div>
             </div>
 

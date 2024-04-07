@@ -7,7 +7,7 @@ import Chat from "@carbon/icons-react/lib/Chat";
 import InputRef from "@/app/component/Input/InputRef";
 import CommentComponent from "@/app/component/Comment/Comment";
 import Image from "next/image";
-import { FullProjectRes } from "@/app/hook/projectRequestType";
+import { FullProjectRes, RandomProject } from "@/app/hook/projectRequestType";
 import { ConvertStringToTime } from "@/app/lib/utils";
 import { PushOrPullFav } from "@/app/hook/favorite";
 import { GlobalContextType, useGlobal } from "@/app/provider/globalContext";
@@ -23,9 +23,10 @@ export default function MainSection({
     type,
 }: {
     project: FullProjectRes;
-    type:"question" | "project",
+    type:"question" | "project";
 }) {
     
+
     const accessCheckerCookieValue: string | undefined = Cookies.get('accessChecker');
     const textComment = useRef<HTMLInputElement>(null);
     const [loading, setLoading] = useState<boolean>(false);
@@ -130,6 +131,8 @@ export default function MainSection({
                         logoUrl={project.logoUrl}
                         title={project.name}
                         feedback={project.feedback}
+                        githubLink={project.githubUrl}
+                        websiteLink={project.websiteUrl}
                         />
                     }
 

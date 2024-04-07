@@ -1,4 +1,7 @@
-export interface FilterStateType {
-    sort:  "b" | "mp" | "n" | string;
-    filter: "op" |"dc" |"cg" |"eu" | string;
+export interface StateCommunityType {
+    pageCount: number;
+    selectedIndex: number;
+    sort: string;
+    filter: string;
+    drawer: boolean;
 }

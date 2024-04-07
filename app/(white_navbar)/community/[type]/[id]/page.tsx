@@ -8,11 +8,11 @@ import Error from "./_component/Error";
 
 async function GetProjectData(id:string, token:string) {
     const res = await GetOneProject(id, token)
-    if (res.data && 'project' in res.data) {
-        const { project, msg } = res.data;
-        return {project, error:""}
+    if (res.data && 'project' in res.data && "recently" in res.data) {
+        const { project, msg, recently } = res.data;
+        return {project, error:"", recently}
     } else {
-        return {project:null, error:res.data && res.data.msg || "failed to fetch project"}
+        return {project:null, error:res.data && res.data.msg || "failed to fetch project", recently:null}
     }
 }
 
@@ -32,6 +32,7 @@ export default async function page({ params }: { params: { type:string, id: stri
         )
     }
 
+
     return (
 
     <> 
@@ -40,7 +41,6 @@ export default async function page({ params }: { params: { type:string, id: stri
             <BreadCumpCommunity
             secondText="question"
             />
-
             <div className="flex gap-4 md:gap-8 lg:gap-12 mt-6 lg:mt-10">
                 <div className="flex-grow">
                     <MainSection
@@ -50,7 +50,9 @@ export default async function page({ params }: { params: { type:string, id: stri
                 </div>
 
                <div className="hidden lg:block">
-                    <RecentlyShareSection/>
+                    <RecentlyShareSection
+                    recently={data.recently}
+                    />
                </div>
                
         </div>

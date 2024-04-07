@@ -153,13 +153,15 @@ const Navbar = ({
                 <p className="text-sm font-normal">Submit Feedback</p>
               </div>
               
-              <div className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
+              <Link
+              href={"/community/ask-question"}
+              className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg">
                 <Help  
                 size={20}
                 className="fill-gray-800"
                 />
                 <p className="text-sm font-normal">Ask Question</p>
-              </div>
+              </Link>
             </div>
 
             <hr/> 
