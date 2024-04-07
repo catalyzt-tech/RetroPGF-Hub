@@ -1,8 +1,21 @@
+import { Comment } from "./commentType";
+
 export type InsertProjectRes = {
     msg: string;
     project: Project
 } | {
     msg:string
+}
+
+export type Owner = {
+    profile:string;
+    username:string;
+}
+
+export interface FullProjectRes extends Project {
+    owner: Owner;
+    comment: Comment[];
+    favOrNot: boolean;
 }
 
 export type Project = {
@@ -11,11 +24,9 @@ export type Project = {
         logoUrl: string;
         githubUrl: string;
         websiteUrl: string;
-        cryptoCategory: string;
         description: string;
         feedback: string;
         category: string;
-        contact: string;
         favCount: number;
         commentCount: number;
         createdBy: string;
@@ -23,3 +34,4 @@ export type Project = {
         createdAt: string; 
         updatedAt: string;
 }
+

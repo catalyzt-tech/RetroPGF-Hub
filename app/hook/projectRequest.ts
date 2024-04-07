@@ -1,8 +1,8 @@
 import { makeRequest } from "./makeRequest";
 import { UserData } from "../provider/globalContext";
-import { InsertProjectRes } from "./projectRequestType";
+import { FullProjectRes, InsertProjectRes } from "./projectRequestType";
 
-let projectBaseUrl = "http://localhost:5001"
+export let projectBaseUrl = "http://localhost:5001"
 
 export async function GetCurrentUser(){
     return await makeRequest<{ user: UserData; msg: string } | { msg: string } >(`/project_v1/current-user`, {
@@ -12,8 +12,12 @@ export async function GetCurrentUser(){
 }
 
 
+
 export async function InsertProject(
     name:string,
+    // p stand for project
+    // q stand for question
+    type:"q" | "p",
     logoUrl:string,
     githubUrl:string,
     websiteUrl:string,
@@ -26,6 +30,7 @@ export async function InsertProject(
         method:"POST",
         data:{
             name:name,
+            type:type,
             logoUrl:logoUrl,
             githubUrl:githubUrl,
             websiteUrl:websiteUrl,
@@ -37,3 +42,35 @@ export async function InsertProject(
 }
 
   
+export async function InsertQuestion(
+    name:string,
+    // p stand for project
+    // q stand for question
+    type:"q" | "p",
+    description:string,
+    category:string,
+){
+    return await makeRequest<InsertProjectRes>(`/project_v1/create-question`, {
+        baseURL: projectBaseUrl,
+        method:"POST",
+        data:{
+            name:name,
+            type:type,
+            description:description,
+            category:category,
+        }
+    })
+}
+
+export async function GetOneProject(
+    id:string,
+    token:string
+){
+    return await makeRequest<{project:FullProjectRes, msg:string} | {msg:string}>(`/project_v1/project/${id}`, {
+        baseURL: projectBaseUrl,
+        method:"GET",
+        headers: {
+            Authorization: `${token}`
+        }
+    })
+}

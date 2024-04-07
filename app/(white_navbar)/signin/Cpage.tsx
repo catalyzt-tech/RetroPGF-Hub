@@ -78,25 +78,23 @@ export default function Cpage({
     }
     
     async function handleGithubLogin() {
-        console.log("running")
         const data = await SignInWithGoogle(githubProvider)
-        console.log(data)
-        // if(data && data.user.email && data.user.uid){
-        //     //@ts-ignore
-        //     const {firstName, lastName } = data._tokenResponse
-        //     const {email, displayName, photoURL } = data.user
-        //     const source:string = data.providerId || "third-party"
-        //     const res = await AuthUserThirdParty(email, displayName || firstName + lastName, firstName, lastName, data.user.uid, photoURL, source)
-        //     if (res.data && 'user' in res.data) {
-        //         const { user, msg } = res.data;
-        //         setGlobalState(prev => ({ ...prev, user: user }))
-        //         toast.success("Login successful")
-        //         setLoading(false)
-        //     } else {
-        //         toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
-        //         setLoading(false)
-        //     }
-        // }
+        if(data && data.user.email && data.user.uid){
+            //@ts-ignore
+            const {firstName, lastName } = data._tokenResponse
+            const {email, displayName, photoURL } = data.user
+            const source:string = data.providerId || "third-party"
+            const res = await AuthUserThirdParty(email, displayName || firstName + lastName, firstName, lastName, data.user.uid, photoURL, source)
+            if (res.data && 'user' in res.data) {
+                const { user, msg } = res.data;
+                setGlobalState(prev => ({ ...prev, user: user }))
+                toast.success("Login successful")
+                setLoading(false)
+            } else {
+                toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
+                setLoading(false)
+            }
+        }
     }
 
 

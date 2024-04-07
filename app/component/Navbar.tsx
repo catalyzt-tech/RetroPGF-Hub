@@ -34,8 +34,6 @@ const Navbar = ({
     { name: 'Resources', link: '/resource' },
   ]
 
-  console.log(process.env.TESTING_KEY)
-
   async function SubmitLogout(e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) {
     e.preventDefault();
 
@@ -74,7 +72,12 @@ const Navbar = ({
               className="text-custom-red font-rubik !font-semibold"
               href="https://optimism.io/join"
               >
-              OPTIMISM
+              <Image
+              src={"/logo/logo.svg"}
+            alt="logo"
+            width={144}
+            height={32}
+            />
             </Link>
           </div>
 

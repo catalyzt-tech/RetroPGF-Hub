@@ -9,7 +9,7 @@ export default function Layout({
       <div className="font-inter flex flex-col h-screen">
           <Navbar 
           shadow={true}
-          bgColor="bg-white"/>
+          bgColor="bg-white sticky top-0"/>
           <div className="">
             {children}
           </div>

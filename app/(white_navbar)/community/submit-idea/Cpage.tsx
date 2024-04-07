@@ -3,14 +3,16 @@ import BreadCumpCommunity from "@/app/component/BreadCump/BreadCumpCommunity";
 import InputRef from "@/app/component/Input/InputRef";
 import TextAreaRef from "@/app/component/Input/TextAreaRef";
 import ChevronDownOutline from "@carbon/icons-react/lib/ChevronDownOutline";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import toast from "react-hot-toast";
 import { CloudinaryAsset } from "./submit-idea";
-import { Listbox, Menu, Transition } from "@headlessui/react";
+import { Dialog, Listbox, Transition } from "@headlessui/react";
 import Checkmark from "@carbon/icons-react/lib/Checkmark";
 import { InsertProject } from "@/app/hook/projectRequest";
-import { name } from "@cloudinary/url-gen/actions/namedTransformation";
 import { Circular } from "@/app/component/Loading/Circular";
+import Link from "next/link";
+import { Project } from "@/app/hook/projectRequestType";
+
 const people = [
     { name: 'Wade Cooper' },
     { name: 'Arlene Mccoy' },
@@ -29,19 +31,41 @@ export default function Cpage({
     const [state, setState] = useState<{
         images: any[];
         imageURLs: string[];
+        res: Project | null
     }>({
         images: [],
         imageURLs: [],
+        res: {
+            "_id": "65b289ad8938d1684640e76f",
+            "name": "CryptoCompany Inc.",
+            "logoUrl": "https://example.com/logo.png",
+            "websiteUrl": "https://cryptocompany.com",
+            "description": "A leading company in the blockchain industry.",
+            "category": "Technology",
+            "createdBy": "65b22bdd9d60025ed5a82781",
+            "createdAt": "2024-01-25T16:17:49.201Z",
+            "updatedAt": "2024-01-25T16:17:49.201Z",
+            commentCount: 0,
+            favCount: 0,
+            favOrNot: false,
+            feedback: "sdafadsfds",
+            githubUrl: "asdasds"
+        }
     })
 
     const [category, setcategory] = useState(people[0])
     const [loading, setLoading] = useState<boolean>(false)
+    const [isOpen, setIsOpen] = useState<boolean>(false)
     const projectTitleRef = useRef<HTMLInputElement>(null);
     const descRef = useRef<HTMLTextAreaElement>(null);
     const websiteRef = useRef<HTMLInputElement>(null);
     const githubRef = useRef<HTMLInputElement>(null);
     const feedbackRef = useRef<HTMLTextAreaElement>(null);
 
+    function closeModal() {
+      setIsOpen(false)
+    }
+  
     // useEffect(() => {
     //     if (state.images.length < 1) return;
     //     //@ts-ignore
@@ -95,8 +119,6 @@ export default function Cpage({
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) {
         e.preventDefault()
-        console.log("running")
-
 
         let { projectName, description, website, github, feedback } = {
             projectName: projectTitleRef.current?.value,
@@ -118,7 +140,9 @@ export default function Cpage({
             toast.error("Feedback is required");
         } else if (!category) {
             toast.error("Feedback is required");
-        } else {
+        } 
+
+        else {
             setLoading(true)
             const logoUrl: string | null = await handleUploadImage()
             if (logoUrl === null) {
@@ -128,6 +152,7 @@ export default function Cpage({
 
             const res = await InsertProject(
                 projectName,
+                "p",
                 logoUrl,
                 github,
                 website,
@@ -138,13 +163,13 @@ export default function Cpage({
 
             if (res.data && 'project' in res.data) {
                 const { project, msg } = res.data;
-                toast.success("Create Project Success")
+                setState(prev => ({...prev, res:project}))
                 setLoading(false)
+                setIsOpen(true)
             } else {
                 toast.error(res.error?.data.msg! || "Something went wrong when try to create your project")
                 setLoading(false)
             }
-
         }
 
     }
@@ -325,6 +350,78 @@ export default function Cpage({
                     </div>
                 </div>
             </div>
+
+        {state.res && state.res?._id && 
+        <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-40" onClose={closeModal}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    Project idea have been submitted!
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <p className="text-sm text-gray-500">
+                      Your project idea has been successfully submitted. You can go back to community page or see your project idea page.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+                    <Link
+                      href={"/community"}
+                      type="button"
+                      className="bg-white border py-3 px-7 h-10 flex items-center rounded-lg hover:bg-gray-50 outline-none"
+                        //   onClick={closeModal}
+                    >
+                      <h6 className="text-sm font-semibold text-gray-800">
+                        Community
+                      </h6>
+                    </Link>
+                    <Link
+                      href={`/community/project/${state.res?._id}`}
+                      type="button"
+                      className="bg-primaryRed py-3 px-7 h-10 max-w-[10rem] flex items-center rounded-lg hover:bg-primaryRed/90"
+                    >
+                      <h6 className="text-sm font-semibold text-white line-clamp-1 ">
+                      Your page
+                      </h6>
+                    </Link>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
+        }
+
+
+        
+
         </>
 
     )
