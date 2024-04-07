@@ -1,8 +1,7 @@
+import React from 'react';
 
-export default function Page() {
-  return (
-    <>
-    
-    </>
-  );
-}
+const MainComponent = () => {
+  
+};
+
+export default MainComponent;

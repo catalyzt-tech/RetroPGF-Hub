@@ -10,6 +10,7 @@ export default function Layout({
           <Navbar/>
           {children}
       </div>
+      
     );
   }
   
