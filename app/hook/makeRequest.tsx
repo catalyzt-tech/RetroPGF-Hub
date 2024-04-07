@@ -1,4 +1,3 @@
-"use client"
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse, CancelTokenSource } from "axios"
 
 const source:CancelTokenSource = axios.CancelToken.source();

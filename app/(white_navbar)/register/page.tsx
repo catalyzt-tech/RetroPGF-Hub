@@ -8,7 +8,7 @@ import { Circular } from "@/app/component/Loading/Circular";
 import { AuthUserThirdParty, RegisterUser } from "@/app/hook/userRequest";
 import { GlobalContextType, useGlobal } from "@/app/provider/globalContext";
 import { useRouter } from 'next/navigation';
-import { googleProvider } from "@/app/lib/firebase";
+import { githubProvider, googleProvider } from "@/app/lib/firebase";
 
 export default function page({
 
@@ -74,7 +74,7 @@ export default function page({
     }
 
 
-    async function handleGoogleLogin() {
+    async function handleGoogleRegister() {
         const data = await SignInWithGoogle(googleProvider)
         if(data && data.user.email && data.user.uid){
             //@ts-ignore
@@ -85,7 +85,7 @@ export default function page({
             if (res.data && 'user' in res.data) {
                 const { user, msg } = res.data;
                 setGlobalState(prev => ({ ...prev, user: user }))
-                toast.success("Login successful")
+                toast.success("Register successful")
                 setLoading(false)
             } else {
                 toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
@@ -94,6 +94,25 @@ export default function page({
         }
     }
 
+    async function handleGithubRegister() {
+        const data = await SignInWithGoogle(githubProvider)
+        if(data && data.user.email && data.user.uid){
+            //@ts-ignore
+            const {firstName, lastName } = data._tokenResponse
+            const {email, displayName, photoURL } = data.user
+            const source:string = data.providerId || "third-party"
+            const res = await AuthUserThirdParty(email, displayName || firstName + lastName, firstName, lastName, data.user.uid, photoURL, source)
+            if (res.data && 'user' in res.data) {
+                const { user, msg } = res.data;
+                setGlobalState(prev => ({ ...prev, user: user }))
+                toast.success("Register successful")
+                setLoading(false)
+            } else {
+                toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
+                setLoading(false)
+            }
+        }
+    }
 
     return (
 
@@ -175,7 +194,7 @@ export default function page({
                 </div>
 
                 <button
-                onClick={() => handleGoogleLogin()}
+                onClick={() => handleGoogleRegister()}
                     className="px-8 py-3 h-12 flex items-center justify-center rounded-lg bg-white hover:bg-gray-50 gap-2 border border-gray-200"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
@@ -185,6 +204,7 @@ export default function page({
                 </button>
 
                 <button
+                onClick={() => handleGithubRegister()}
                     className="px-8 py-3 h-12 flex items-center justify-center rounded-lg bg-white hover:bg-gray-50 gap-2 border border-gray-200"
                 >
                     <Github size={20} />

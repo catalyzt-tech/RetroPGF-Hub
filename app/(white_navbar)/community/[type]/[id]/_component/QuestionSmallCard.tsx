@@ -1,5 +1,4 @@
 // this card not have the owner who create it
-import Image from "next/image";
 import Help from '@carbon/icons-react/lib/Help';
 import Link from "next/link";
 import Favorite from "@carbon/icons-react/lib/Favorite";
