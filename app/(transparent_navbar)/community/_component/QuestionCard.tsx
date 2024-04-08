@@ -16,7 +16,8 @@ export default function QuestionCard({
     title,
     createdAt,
     owner,
-    favOrNot
+    favOrNot,
+    handleFavoriteProject,
 }:{
     id:string;
     title:string;
@@ -26,6 +27,7 @@ export default function QuestionCard({
     createdAt: string;
     owner: Owner;
     favOrNot:boolean;
+    handleFavoriteProject(projectId: string): Promise<void>
 })  {
 
 return (
@@ -65,7 +67,9 @@ return (
                 </div>
 
                 <div className="flex flex-wrap items-center gap-4">
-                    <div className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5">
+                    <div 
+                    onClick={() => handleFavoriteProject(id)}
+                    className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5 cursor-pointer hover:bg-gray-200/80">
                             {favOrNot ?
                                 <FavoriteFilled size={24} className="fill-primaryRed" />
                                 :

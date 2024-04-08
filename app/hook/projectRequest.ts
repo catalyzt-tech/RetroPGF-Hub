@@ -78,14 +78,14 @@ export async function GetOneProject(
 
 export async function GetProjectsWithSearch(limit:number, skip:number, sort:string, category:string, type:string, search:string, token:string) {
    if(token === ""){
-    console.log("no token")
+    // console.log("no token")
     return await makeRequest<{project:FullProjectResNoComment[] | null, msg:string, pageCount: number, status:number} | {msg:string}>(`/project_v1/projects?limit=${limit}&skip=${skip}&sort=${sort}&category=${category}&type=${type}&search=${search}`, {
         baseURL: projectBaseUrl,
         method: "GET",
     })
 }
 else {
-       console.log("sended token")
+    //    console.log("sended token")
     return await makeRequest<{project:FullProjectResNoComment[] | null, msg:string, pageCount: number, status:number} | {msg:string}>(`/project_v1/projects?limit=${limit}&skip=${skip}&sort=${sort}&category=${category}&type=${type}&search=${search}`, {
         baseURL: projectBaseUrl,
         method: "GET",

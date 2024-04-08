@@ -47,6 +47,7 @@ export type RandomProject = {
     logoUrl:string;
     category:string;
     description:string;
+    favOrNot: boolean;
     favCount:number;
     commentCount:number;
 }

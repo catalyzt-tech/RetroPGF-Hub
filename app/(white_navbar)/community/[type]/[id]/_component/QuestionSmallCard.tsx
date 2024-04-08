@@ -3,6 +3,7 @@ import Help from '@carbon/icons-react/lib/Help';
 import Link from "next/link";
 import Favorite from "@carbon/icons-react/lib/Favorite";
 import Chat from "@carbon/icons-react/lib/Chat";
+import FavoriteFilled from '@carbon/icons-react/lib/FavoriteFilled';
 
 export default function QuestionSmallCard({
     commentCount,
@@ -10,12 +11,16 @@ export default function QuestionSmallCard({
     favCount,
     id,
     title,
+    handleFavoriteProject,
+    favOrNot
 }:{
     id:string;
     title:string;
     description:string;
     favCount:number;
     commentCount:number;
+    handleFavoriteProject(projectId: string): Promise<void>
+    favOrNot:boolean
 })  {
 
 return (
@@ -36,10 +41,17 @@ return (
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
-                <div className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5">
-                    <Favorite size={24} />
-                    <p className="text-base font-medium text-gray-800">{favCount}</p>
-                </div>
+            <div 
+                onClick={() => handleFavoriteProject(id)}
+                className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5 cursor-pointer hover:bg-gray-200/80">
+                            {favOrNot ?
+                                <FavoriteFilled size={24} className="fill-primaryRed" />
+                                :
+                                <Favorite size={24} className="group-hover:fill-primaryRed fill-gray-800" />
+
+                            }
+                        <p className="text-base font-medium text-gray-800">{favCount}</p>
+                    </div>
                 <div className="flex items-center gap-2 bg-gray-100 rounded-2xl px-3 py-1.5">
                     <Chat size={24} />
                     <p className="text-base font-medium text-gray-800">{commentCount}</p>
