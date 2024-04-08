@@ -27,8 +27,6 @@ export default function DrawerFilter({
     setState(prev => ({...prev, filter: char}))
   }
 
-  console.log(state)
-
   return (
     <Transition appear show={open} as={Fragment}>
       <Dialog

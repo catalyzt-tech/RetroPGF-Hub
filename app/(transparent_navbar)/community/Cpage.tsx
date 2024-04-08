@@ -53,44 +53,8 @@ export default function Cpage({
     const isMount = useIsMount();
     const [data, setData] = useState(rawD)
     const [loading, setLoading] = useState<boolean>(false)
-    const [currentPage, setCurrentPage] = useState<number>(0)
-    function handlePageClick (page: number) {
-        setCurrentPage((prev) => page)
-    }
+    const [search, setSearch] = useState("")
 
-    // async function handleFavoriteProject(e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) {
-    //     if (!globalState.user || !globalState.user.userId || typeof accessCheckerCookieValue !== "string") {
-    //         toast.error("You need to be authorized first")
-    //     }
-    //     else {
-    //         setLoading(true)
-    //         const res = await PushOrPullFav(project._id)
-    //         if (res.data && "opera" in res.data) {
-    //             const { opera, msg } = res.data
-    //             switch (opera) {
-    //                 case "pull":
-    //                     setState(prev => ({ ...prev, favCount: prev.favCount - 1, favOrNot: false }))
-    //                     toast.success("This project have been removed from your favorite")
-    //                     break;
-
-    //                 case "push":
-    //                     setState(prev => ({ ...prev, favCount: prev.favCount + 1, favOrNot: true }))
-    //                     toast.success("This project have been added to your favorite")
-    //                     break;
-
-    //                 default:
-    //                     break;
-    //             }
-    //             setLoading(false)
-    //         }
-    //         else {
-    //             toast.error(res.error?.data.msg! || "Something went wrong when try to added or removed favorite project")
-    //             setLoading(false)
-    //         }
-    //     }
-    // }
-
-    // console.log(rawD)
 
     const [state, setState] = useState<StateCommunityType>({
         pageCount: Math.ceil(pageCount/itemsPerpage),
@@ -100,8 +64,10 @@ export default function Cpage({
         // filter can be 4 options
         filter: "all",
         drawer: false,
+        currentPage: 0
     })
-    const [search, setSearch] = useState("")
+
+
     function handleChangeSearch(e: React.ChangeEvent<HTMLInputElement>) {
         setSearch(prev => e.target.value)
     }
@@ -142,12 +108,12 @@ export default function Cpage({
         if(!isMount){
             getData()
         }
-    }, [currentPage, state.filter, state.sort, state.selectedIndex])
+    }, [state.currentPage, state.filter, state.sort, state.selectedIndex])
     
 
     async function handleFilterProject(type:string): Promise<FullProjectResNoComment[] | undefined> {
         setLoading(true)
-        const res = await GetProjectsWithSearch(itemsPerpage, currentPage*itemsPerpage, state.sort, state.filter, type, search, "")
+        const res = await GetProjectsWithSearch(itemsPerpage, state.currentPage*itemsPerpage, state.sort, state.filter, type, search, "")
         if (res.data && 'project' in res.data) {
             const { project, msg, pageCount } = res.data;
             setState(prev => {
@@ -172,8 +138,51 @@ export default function Cpage({
     }
 
     function handleChangeSelectedIndex(index:number) {
-        setState(prev => ({...prev, selectedIndex:index}))
-        setCurrentPage(0)
+        setState(prev => ({...prev, selectedIndex:index, currentPage:0}))
+    }
+
+
+    async function handleFavoriteProject(projectId:string) {
+        if (!globalState.user || !globalState.user.userId || typeof accessCheckerCookieValue !== "string") {
+            toast.error("You need to be authorized first")
+        }
+        else {
+            const res = await PushOrPullFav(projectId)
+            if (res.data && "opera" in res.data) {
+                const { opera, msg } = res.data
+                switch (opera) {
+                    case "pull":
+                        setData(prev => {
+                            return prev.map(item => {
+                                if (item._id === projectId) {
+                                    return { ...item, favCount: item.favCount - 1, favOrNot:false };
+                                }
+                                return item;
+                            });
+                        })
+                        toast.success("This project have been removed from your favorite")
+                        break;
+                        
+                        case "push":
+                        setData(prev => {
+                            return prev.map(item => {
+                                if (item._id === projectId) {
+                                    return { ...item, favCount: item.favCount + 1, favOrNot:true };
+                                }
+                                return item;
+                            });
+                        })
+                        toast.success("This project have been added to your favorite")
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            else {
+                toast.error(res.error?.data.msg! || "Something went wrong when try to added or removed favorite project")
+            }
+        }
     }
 
 
@@ -281,6 +290,7 @@ export default function Cpage({
                                             owner={item.owner}
                                             title={item.name}
                                             favOrNot={item.favOrNot}
+                                            handleFavoriteProject={handleFavoriteProject}
                                             />
                                             )
                                         }
@@ -298,6 +308,7 @@ export default function Cpage({
                                             category={item.category}
                                             logoUrl={item.logoUrl}    
                                             favOrNot={item.favOrNot}
+                                            handleFavoriteProject={handleFavoriteProject}
                                             />
                                         )
                                     }
@@ -334,6 +345,7 @@ export default function Cpage({
                                             owner={item.owner}
                                             title={item.name}
                                             favOrNot={item.favOrNot}
+                                            handleFavoriteProject={handleFavoriteProject}
                                             />
                                             )
                                         }
@@ -351,6 +363,7 @@ export default function Cpage({
                                             category={item.category}
                                             logoUrl={item.logoUrl}    
                                             favOrNot={item.favOrNot}
+                                            handleFavoriteProject={handleFavoriteProject}
                                             />
                                         )
                                     }
@@ -386,6 +399,7 @@ export default function Cpage({
                                             owner={item.owner}
                                             title={item.name}
                                             favOrNot={item.favOrNot}
+                                            handleFavoriteProject={handleFavoriteProject}
                                             />
                                             )
                                         }
@@ -403,6 +417,7 @@ export default function Cpage({
                                             category={item.category}
                                             logoUrl={item.logoUrl}    
                                             favOrNot={item.favOrNot}
+                                            handleFavoriteProject={handleFavoriteProject}
                                             />
                                         )
                                     }
@@ -425,8 +440,8 @@ export default function Cpage({
             {state.pageCount !== 0 && 
                 <div className="mt-12 text-sm font-medium text-gray-500">
                     <Pagination
-                        currentPage={currentPage}
-                        setCurrentPage={handlePageClick}
+                        currentPage={state.currentPage}
+                        setCurrentPage={(page:number) => setState(prev => ({...prev, currentPage:page}))}
                         className="flex flex-wrap justify-center"
                         truncableText="..."
                         truncableClassName="border min-w-[2rem] min-h-[2rem] max-w-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50"

@@ -4,4 +4,5 @@ export interface StateCommunityType {
     sort: string;
     filter: string;
     drawer: boolean;
+    currentPage: number
 }
