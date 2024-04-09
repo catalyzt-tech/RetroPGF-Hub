@@ -7,3 +7,7 @@ export function ConvertStringToTime(time:string) {
         year:"numeric"
     });
 }
+
+export function classNames(...classes: any[]) {
+    return classes.filter(Boolean).join(' ')
+}

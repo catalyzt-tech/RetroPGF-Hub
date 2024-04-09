@@ -3,7 +3,7 @@ import React from 'react'
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   Icon?: React.JSX.Element
   iconClassName?: string
-  value: string
+  value: any
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
