@@ -1,4 +1,5 @@
-"use client";
+
+import Cpage from "./Cpage";
 
 export default function page({
 
@@ -6,11 +7,12 @@ export default function page({
     
 })  {
 
-return (
-
-    <> 
     
-    </>
+
+
+    return (
+
+    <Cpage/>
 
     )
 

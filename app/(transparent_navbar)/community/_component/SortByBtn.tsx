@@ -2,18 +2,33 @@
 import { Checkmark, SortAscending } from "@carbon/icons-react";
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import { FilterStateType } from "../CommunityTytpe";
+import { StateCommunityType } from "../CommunityTytpe";
+
+export const sorting = [
+  {
+    name:"Newest",
+    id:"newest",
+  },
+  {
+    name:"Most popular",
+    id:"most popular",
+  },
+  {
+    name:"Most comment",
+    id:"most comment",
+  },
+]
 
 export default function SortByBtn({
-    filter,
-    setFilter
+    state,
+    setState
 }:{
-    filter: FilterStateType;
-    setFilter: React.Dispatch<React.SetStateAction<FilterStateType>>
+    state: StateCommunityType;
+    setState: React.Dispatch<React.SetStateAction<StateCommunityType>>
 })  {
 
-    function handleChangeSort(char: "b" | "mp" | "n") {
-        setFilter(prev => ({...prev, sort: char}))
+    function handleChangeSort(char:  string) {
+        setState(prev => ({...prev, sort: char}))
     }
 
 return (
@@ -55,50 +70,26 @@ return (
 
             <div className="mt-4">
 
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${filter.sort === "b" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
-                      } group w-full items-center rounded-md px-2 py-2 text-sm flex justify-between hover:bg-gray-50`}
-                      onClick={() => handleChangeSort("b")}
-                  >
-                    <h6>Best</h6>
-                    {filter.sort === "b" && 
-                    <Checkmark  size={24}/>
-                    }
-                  </button>
-                )}
-              </Menu.Item>
 
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${filter.sort === "mp" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
-                      } group flex justify-between w-full items-center rounded-md px-2 py-2 text-sm font-normal hover:bg-gray-50`}
-                      onClick={() => handleChangeSort("mp")}
-                  >
-                    <h6>Most popular</h6>
-                    {filter.sort === "mp" && 
-                   <Checkmark  size={24} />
-                    }
-                  </button>
-                )}
-              </Menu.Item>
+           {sorting.map((item, i) => (
+             <Menu.Item key={i}>
+             {({ active }) => (
+               <button
+                 className={`${state.sort === item.id ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
+                   } group flex justify-between w-full items-center rounded-md px-2 py-2 text-sm font-normal hover:bg-gray-50`}
+                   onClick={() => handleChangeSort(item.id)}
+               >
+                 <h6>{item.name}</h6>
+                 {state.sort === item.id && 
+                 <Checkmark  size={24} />
+                 }
+               </button>
+             )}
+           </Menu.Item>
+           ))}
 
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${filter.sort === "n" ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
-                      } group flex justify-between w-full items-center rounded-md px-2 py-2 text-sm font-normal hover:bg-gray-50`}
-                      onClick={() => handleChangeSort("n")}
-                  >
-                    <h6>New</h6>
-                    {filter.sort === "n" && 
-                    <Checkmark  size={24} />
-                    }
-                  </button>
-                )}
-              </Menu.Item>
+
+            
             </div>
 
           </Menu.Items>

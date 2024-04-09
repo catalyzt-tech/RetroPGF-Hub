@@ -3,12 +3,10 @@ import React from 'react'
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   Icon?: React.JSX.Element
   iconClassName?: string
-  value: string
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ Icon, iconClassName, value, onChange, className, ...props }, ref) => {
+const InputRef = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ Icon, iconClassName, className, ...props }, ref) => {
     return (
       <div className="relative flex flex-wrap">
         {Icon && (
@@ -17,15 +15,16 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           </span>
         )}
         <input
-          value={value}
-          onChange={onChange}
+            ref={ref}
           className={`${
             className
               ? className
               : 'border-0 placeholder-slate-500 bg-white text-slate-500 focus:ring w-full px-1 py-3 rounded-md'
           } ${
             Icon ? 'pl-11' : ''
-          } transition-all ring-subPrimary outline-none focus:outline-none relative text-base`}
+          } 
+          placeholder-gray-500 placeholder:text-sm placeholder:font-normal
+          transition-all ring-subPrimary outline-none focus:outline-none relative  text-base`}
           {...props}
         />
       </div>
@@ -33,6 +32,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
   }
 )
 
-Input.displayName = 'Input'
+InputRef.displayName = 'InputRef'
 
-export default Input
+export default InputRef
