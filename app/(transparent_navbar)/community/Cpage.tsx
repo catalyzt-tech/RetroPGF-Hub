@@ -19,6 +19,7 @@ import DrawerFilter from './_component/Drawer'
 import { GlobalContextType, useGlobal } from '@/app/provider/globalContext'
 import Cookies from 'js-cookie';
 import { PushOrPullFav } from '@/app/hook/favorite'
+import { classNames } from '@/app/lib/utils'
 
 
 const tab = [
@@ -35,9 +36,6 @@ const tab = [
         index: 2,
     },
 ]
-function classNames(...classes: any[]) {
-    return classes.filter(Boolean).join(' ')
-}
 
 export default function Cpage({
     rawD,

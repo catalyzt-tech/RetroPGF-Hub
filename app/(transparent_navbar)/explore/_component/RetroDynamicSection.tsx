@@ -75,7 +75,7 @@ export default function RetroDynamicSection({
                 <Link
                 href={{
                     pathname:`/explore/${title}`,
-                    query:{round: [title, "test"]}
+                    // query:{round: [title, "test"]}
                 }}
                 className="lg:block h-8 group relative content-center
                     hover:bg-gray-50 hover:text-gray-500 hover:border hover:border-gray-600
