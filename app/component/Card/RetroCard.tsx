@@ -4,15 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function RetroCard({
-
+    marginX="mx-3"
 }: {
-
-    }) {
+    marginX?:string;
+}) {
 
     return (
 
 
-    <div className="flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[16rem] w-[14.25rem] relative mx-3"> 
+    <div className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[16rem] w-[14.25rem] relative ${marginX}`}> 
         
         {/* Background Image */}
         <div className="absolute top-0 left-0 w-full max-h-12 overflow-hidden">

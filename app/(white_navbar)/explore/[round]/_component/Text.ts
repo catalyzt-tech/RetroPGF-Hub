@@ -32,19 +32,44 @@ export const sorting = [
 
 export const category = [
   {
-    name:"OP STACK",
+    name:"OP Stack",
+    subCategory: [
+      "Ethereum Development & Maintanance",
+      "OP Stack tooling",
+      "OP Stack development & research"
+    ]
   },
   {
-    name:"COLLECTIVE GOVERNANCE Governance",
+    name:"Collective Governance",
+    subCategory: [
+      "Optimism Governance contributions",
+      "Governance tooling",
+      "Governance Research"
+    ]
   },
   {
-    name:"DEVELOPER ECOSYSTEM",
+    name:"Developer Ecosystem",
+    subCategory: [
+      "Dev Services & Support",
+      "Dev Tooling",
+      "Research & Analytics",
+      "Conferences, Events & Hackathons",
+      "Developer Education"
+    ]
   },
   {
-    name:"END USER EXPERIENCE AND ADOPTION",
+    name:"End User Experience Adoption",
+    subCategory: [
+      "Applications (Defi, Social, NFTs, Gaming Etc)",
+      "Discovery Tooling",
+      "Portfolio Tracker",
+      "Wallets",
+      "Evangelism & User Onboarding"
+    ]
   },
 ]
 
 
-export const min = 0
+export const min = -1
 export const max = 663855
+export const itemsPerPage = 16

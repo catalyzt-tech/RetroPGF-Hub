@@ -22,7 +22,8 @@ export default function InputAndFilterBtn({
     checkBox,
     state,
     handleClearFilter,
-    handleChangeCategory
+    handleChangeCategory,
+    handleChangeSort,
 }: {
     search: string;
     state: ExploreRoundState
@@ -31,7 +32,8 @@ export default function InputAndFilterBtn({
     setCheckBox: Dispatch<SetStateAction<CheckBoxStateType>>;
     checkBox: CheckBoxStateType;
     handleClearFilter(): void;
-    handleChangeCategory(value: string): void
+    handleChangeCategory(value: string): void;
+    handleChangeSort(char: string): void;
 }) {
 
     
@@ -44,7 +46,7 @@ export default function InputAndFilterBtn({
 
         <>
             <div className="flex flex-col gap-4 ">
-                <div className="flex items-center gap-3 lg:gap-4 mt-4">
+                <div className="flex flex-wrap items-center gap-3 lg:gap-4 mt-4">
                     <div className="flex-grow">
                         <Input
                             Icon={<Search size={24} className="fill-gray-500" />}
@@ -57,9 +59,19 @@ export default function InputAndFilterBtn({
                         />
                     </div>
                     <div className="">
+                        {/* Open drawer btn */}
+                        <div
+                            onClick={() => {
+                                setState((prev) => ({ ...prev, drawer: !prev.drawer }))
+                            }}
+                            className={`flex lg:hidden h-10 items-center gap-2 border  rounded-full px-3 py-2 cursor-pointer hover:bg-gray-100 ${state.drawer && 'bg-gray-50'}`}
+                        >
+                        <SettingsAdjust size={24} className="" />
+                        </div>
+
                         {/* Sort button */}
                         <SortExploreRound
-                            setState={setState}
+                            handleChangeSort={handleChangeSort}
                             state={state}
                         />
                     </div>
@@ -97,9 +109,7 @@ export default function InputAndFilterBtn({
                 <div className="hidden lg:flex gap-2 items-center flex-wrap mt-4">
                     <div
                         onClick={() => {
-                            state.view === 'g'
-                                ? setState((prev) => ({ ...prev, filter: !prev.filter }))
-                                : setState((prev) => ({ ...prev, dialog: true, filter: false }))
+                            setState((prev) => ({ ...prev, filter: !prev.filter }))
                         }}
                         className={`flex h-10 items-center gap-2 border  rounded-full px-3 py-2 cursor-pointer hover:bg-gray-100 ${state.filter && 'bg-gray-50'
                             }`}
@@ -118,7 +128,7 @@ export default function InputAndFilterBtn({
                             ${Object.keys(checkBox).every(
                             (key) =>
                                 checkBox[key as keyof CheckBoxStateType].length === 0
-                        )
+                            )
                                 ? 'bg-secondaryRed text-primaryRed border-secondaryRed'
                                 : 'text-slate-900 border'
                             }

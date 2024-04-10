@@ -65,7 +65,7 @@ const MultiRangeSlider: FC<MultiRangeSliderProps> = ({
 
 
   return (
-    <div className="flex items-center justify-center h-2">
+    <div className="flex items-center lg:justify-center h-2">
       <input
         type="range"
         min={min}

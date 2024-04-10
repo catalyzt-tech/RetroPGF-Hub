@@ -1,5 +1,4 @@
 export interface ExploreRoundState {
-    selectedIndex:number;
     drawer:boolean;
     sort:string;
     view:string;
@@ -8,6 +7,7 @@ export interface ExploreRoundState {
 
 export type CheckBoxStateType = {
     "category": string[]
+    "subCategory": string[]
     "receiveOP": number[];
     "ballot": string;
 }

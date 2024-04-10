@@ -7,21 +7,22 @@ import { ExploreRoundState } from "./ExploreRoundType";
 
 export default function SortExploreRound({
     state,
-    setState
+    handleChangeSort
 }: {
-    setState: React.Dispatch<React.SetStateAction<ExploreRoundState>>
-    state: ExploreRoundState
+    state: ExploreRoundState;
+    handleChangeSort:(char: string) => void
 }) {
 
-    function handleChangeSort(char: string) {
-        setState(prev => ({ ...prev, sort: char }))
-    }
+
 
     return (
 
         <>
+
+         
+
             <Menu
-                as="div" className="relative inline-block text-left">
+                as="div" className="relative hidden lg:inline-block text-left">
                 <div>
                     <Menu.Button className="">
                         <div
@@ -46,7 +47,7 @@ export default function SortExploreRound({
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                 >
-                    <Menu.Items className="absolute p-4 z-20 right-0 mt-2 w-56 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
+                    <Menu.Items className="absolute p-4 z-30 right-0 mt-2 w-56 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
                         <h6 className="text-sm font-bold text-center text-gray-900">
                             Sort By
                         </h6>

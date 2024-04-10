@@ -29,5 +29,6 @@ const TextAreaRef = React.forwardRef<HTMLTextAreaElement, InputProps>(
     </>
 );
 })
+TextAreaRef.displayName = 'TextAreaRef'
 
 export default TextAreaRef;
