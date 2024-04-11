@@ -1,35 +1,28 @@
 "use client"
 import Close from "@carbon/icons-react/lib/Close"
-import { Dialog, Disclosure, Transition } from "@headlessui/react"
+import { Dialog, Transition } from "@headlessui/react"
 import { Fragment } from "react"
-import CategoryDisclosure from "./CategoryDisclosure"
 import { CheckBoxStateType } from "../../ExploreRoundType"
 import MultiSliderDisclosure from "./MultiSliderDisclosure"
-import InBallotDisclosure from "./InBallotDisclosure"
-import ChevronDown from "@carbon/icons-react/lib/ChevronDown"
 
 export default function DialogFilter({
     onClose,
     open,
     checkBox,
-    handleChangeCategory,
-    handleChangeSubCategory,
     minVal,
     setMinVal,
     maxVal,
     setMaxVal,
-    handleChangeBallot
+    handleClearFilter
 }:{
     open: boolean
     onClose: () => void
     checkBox: CheckBoxStateType;
-    handleChangeCategory:(value: string) => void;
-    handleChangeSubCategory:(subCate: string) => void;
     minVal:number;
     maxVal:number;
     setMinVal:React.Dispatch<React.SetStateAction<number>>;
     setMaxVal:React.Dispatch<React.SetStateAction<number>>;
-    handleChangeBallot: (ballot: string) => void
+    handleClearFilter: () => void;
 })  {
 
 return (
@@ -66,30 +59,19 @@ return (
 
               <hr className="my-3 border-gray-200 m-0  w-full" />
                 <div className="flex flex-col gap-4">
-                    <CategoryDisclosure
-                    checkBox={checkBox}
-                    handleChangeCategory={handleChangeCategory}
-                    handleChangeSubCategory={handleChangeSubCategory}
-                    />
+                   
                     <MultiSliderDisclosure
                       maxVal={maxVal}
                       minVal={minVal}
                       setMaxVal={setMaxVal}
                       setMinVal={setMinVal}
                       />
-                    <InBallotDisclosure
-                      checkBox={checkBox}
-                      handleChangeBallot={handleChangeBallot}
-                      allProjectId="all-project-dialog"
-                      secondProjectId="more-than-17-dialog"
-                    />
-                   
                 </div>
               <div className="mt-8" />
 
               <div className="grid grid-cols-1 min-[305px]:grid-cols-2 gap-4 items-center content-center  w-full mt-auto ">
                 <div
-                //   onClick={handleClearFilter}
+                  onClick={handleClearFilter}
                   className="bg-inherit hover:bg-gray-100 hover:text-primaryRed text-gray-900 flex items-center justify-center rounded-lg py-3 px-7 cursor-pointer"
                 >
                   <h6 className="text-base font-semibold text-center ">

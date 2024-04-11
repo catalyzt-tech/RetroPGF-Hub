@@ -5,13 +5,15 @@ import { Tab, Transition } from "@headlessui/react";
 import { useState } from "react";
 import { tab } from "./_component/Text";
 import ProjectTab from "./_component/Tab/ProjectTab";
-import { RetroRound3 } from "@/app/RetroType";
+import { RetroRound2 } from "./RetroType2";
+import HistorySection from "@/app/component/HistorySection";
+import StatisticSection from "@/app/component/StatisticSection";
 
 
 export default function Cpage({
-    round3
+    round2
 }: {
-    round3: RetroRound3[]
+    round2: RetroRound2[]
 }) {
 
     const [selectedIndex, setSelectedIndex] = useState<number>(0)
@@ -55,11 +57,11 @@ export default function Cpage({
                             leaveTo="transform scale-95 opacity-0"
                         >
                             <ProjectTab
-                            round3={round3}
+                            round2={round2}
                             />
                         </Transition>
                     </Tab.Panel>
-                    <Tab.Panel className="outline-none">
+                    <Tab.Panel className="outline-none min-h-[70vh]">
                         <Transition appear show={selectedIndex === 1}
                             enter="transition duration-200 ease-out"
                             enterFrom="transform scale-95 opacity-0"
@@ -68,7 +70,19 @@ export default function Cpage({
                             leaveFrom="transform scale-100 opacity-100"
                             leaveTo="transform scale-95 opacity-0"
                         >
-                            History
+                             <HistorySection/>
+                        </Transition>
+                    </Tab.Panel>
+                    <Tab.Panel className="outline-none min-h-[70vh]">
+                        <Transition appear show={selectedIndex === 1}
+                            enter="transition duration-200 ease-out"
+                            enterFrom="transform scale-95 opacity-0"
+                            enterTo="transform scale-100 opacity-100"
+                            leave="transition duration-200 ease-out"
+                            leaveFrom="transform scale-100 opacity-100"
+                            leaveTo="transform scale-95 opacity-0"
+                            >
+                            <StatisticSection/>
                         </Transition>
                     </Tab.Panel>
                 </Tab.Panels>

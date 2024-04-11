@@ -2,8 +2,8 @@ import Trophy from "@carbon/icons-react/lib/Trophy";
 import Events from "@carbon/icons-react/lib/Events";
 import Image from "next/image";
 import Link from "next/link";
-import { ImpactCategory, NewCategory } from "@/app/RetroType";
-import { handleCategory } from "@/app/lib/InitialMount";
+import { ImpactCategory, NewCategory } from "@/app/(white_navbar)/explore/RetroPGF3/RetroType3";
+import { handleCategoryRound3 } from "@/app/lib/InitialMount";
 
 export default function DynamicCard({
     background,
@@ -71,7 +71,7 @@ return (
                     </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                    {handleCategory(category)}
+                    {handleCategoryRound3(category)}
                 </div>
                 <div className="flex-grow"></div>
                 <div className="flex gap-2">

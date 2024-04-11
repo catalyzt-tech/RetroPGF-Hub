@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { RetroRound3 } from '@/app/RetroType'
-import { handleCategory } from '@/app/lib/InitialMount'
+import { RetroRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
+import { handleCategoryRound3 } from '@/app/lib/InitialMount'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 
@@ -71,7 +71,7 @@ export default function ListCard({
 
                   <td className="py-4 px-3 ">
                     <div className="flex flex-col flex-wrap gap-2 ">
-                      {handleCategory(item["New Main-Category"])}
+                      {handleCategoryRound3(item["New Main-Category"])}
                       <div className="inline-flex px-2 py-1 rounded-full bg-slate-50 hover:bg-slate-100/75 cursor-pointer w-fit">
                         <h6 className="text-xs font-normal text-gray-600 line-clamp-1 break-all">
                           {item['Sub-category']}

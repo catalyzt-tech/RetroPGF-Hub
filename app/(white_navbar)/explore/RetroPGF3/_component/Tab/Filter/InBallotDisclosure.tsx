@@ -15,7 +15,6 @@ export default function InBallotDisclosure({
     secondProjectId:string;
 })  {
 
-    console.log(checkBox, checkBox.ballot === "All Project")
 
 return (
 

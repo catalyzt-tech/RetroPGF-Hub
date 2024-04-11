@@ -1,4 +1,4 @@
-import { RetroRound3 } from "@/app/RetroType";
+import { RetroRound3 } from "@/app/(white_navbar)/explore/RetroPGF3/RetroType3";
 import Cpage from "./Cpage";
 import BreadCumpExplore from "./_component/BreadCumpExplore";
 import fs from 'fs'
@@ -29,11 +29,8 @@ async function getJsonRound3(): Promise<RetroRound3[]> {
   
 
 export default async function page({
-    params
 }:{
-    params:{
-        round:string
-    }
+  
 })  {
 
     const round3 = await getJsonRound3()
@@ -41,16 +38,16 @@ export default async function page({
     return (
 
     <> 
-        <div className="bg-gradient-to-b from-slate-200 to-5% sm:to-10% to-[#E2E8F000">
+        <div className="bg-gradient-to-b from-slate-200 to-5% sm:to-10% to-[#E2E8F000]">
             <div className="flex flex-col gap-6 mx-2 sm:mx-4 md:mx-6 lg:mx-20">
                 <div className="mt-10">
                     <BreadCumpExplore
-                    secondText={params.round}
+                    secondText={"RetroPGF3"}
                     />
                 </div>
 
                 <div className="mt-4">
-                    <h6 className="text-5xl font-semibold text-gray-800 mb-3">{params.round}</h6>
+                    <h6 className="text-5xl font-semibold text-gray-800 mb-3">RetroPGF3</h6>
                 </div>
 
                 <Cpage

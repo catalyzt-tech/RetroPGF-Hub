@@ -2,31 +2,30 @@
 
 import React, { useMemo, useState } from "react";
 import { CheckBoxStateType, ExploreRoundState } from "../ExploreRoundType";
-import { category, itemsPerPage, max, min } from "../Text";
+import { itemsPerPage, max, min } from "../Text";
 import InputAndFilterBtn from "./InputAndFilterBtn";
 import CheckBoxFilter from "./CheckBoxFilter";
-import { RetroRound3 } from "@/app/RetroType";
 import { Pagination } from "react-headless-pagination";
 import DynamicCard from "../DynamicCard";
 import ListCard from "./ListCard";
 import DialogFilter from "./Filter/DialogFilter";
+import { RetroRound2 } from "../../RetroType2";
 
 
 export default function ProjectTab({
-    round3
+    round2
 }: {
-    round3: RetroRound3[]
+    round2: RetroRound2[]
 }) {
     const [search, setSearch] = useState("")
     const [state, setState] = useState<ExploreRoundState>({
         drawer: false,
-        // sort have 5 options 
-        // - Award Ranking
+        // sort have 4 options 
         // - Most in ballots
         // - Least in ballots
         // Project Name (A-Z)
         // Project Name (Z-A)
-        sort: "Award Ranking",
+        sort: "Most in ballots",
         // view have two option
         // - g stand for grid
         // - l stand for list
@@ -38,9 +37,7 @@ export default function ProjectTab({
     const [maxVal, setMaxVal] = useState(max);
     const [checkBox, setCheckBox] = useState<CheckBoxStateType>({
         category: [],
-        subCategory: [],
         receiveOP: [],
-        ballot: "All Project",
     })
 
     function handleClearFilter() {
@@ -50,8 +47,6 @@ export default function ProjectTab({
             // ballot can be two option
             // - > 17 vote
             // - All Project
-            ballot: "All Project",
-            subCategory: [],
         })
         setMinVal(min)
         setMaxVal(max)
@@ -59,9 +54,6 @@ export default function ProjectTab({
         setState(prev => ({...prev, sort:"Award Ranking"}))
     }
 
-    function handleChangeBallot(text:string) {
-        setCheckBox(prev => ({...prev, ballot: text}))
-    }
 
     function handleChangeCategory(value: string) {
         setCheckBox(prev => {
@@ -70,34 +62,11 @@ export default function ProjectTab({
             let index = temp.category.findIndex((elem) => elem === value)
             // add new category
             if (index === -1) {
-                temp.category = [value]
-                temp.subCategory = category.find((elem) => (
-                    elem.name === value
-                  ))?.subCategory || []
+                temp.category = [...temp.category, value]
             }
             // get rid off category
             else {
-                console.log("running")
                 temp.category = temp.category.filter((elem) => elem != value)
-                temp.subCategory = []
-            }
-
-            return temp
-        })
-    }
-
-
-    function handleChangeSubCategory(subCate:string){
-        setCheckBox(prev => {
-            let temp = { ...prev }
-
-            let index = temp.subCategory.findIndex((elem) => elem === subCate)
-
-            if (index === -1) {
-                temp.subCategory = [...temp.subCategory, subCate]
-            }
-            else {
-                temp.subCategory = temp.subCategory.filter((elem) => elem != subCate)
             }
 
             return temp
@@ -115,48 +84,31 @@ export default function ProjectTab({
     const filterJson = useMemo(() => {
         setCurrentPage(0)
         // console.log(round3.length)
-        return round3.filter((item) => {
+        return round2.filter((item) => {
             const searchCondition =
             search !== ''
-                ? typeof(item.displayName) === "string" && item.displayName.toLowerCase().includes(search.toLowerCase())
+                ? typeof(item.name) === "string" && item.name.toLowerCase().includes(search.toLowerCase())
                     : true
           
 
             let categoryCondition: boolean
             if (checkBox.category.length !== 0) {
-                categoryCondition = checkBox.category.some((elem) => elem === item["New Main-Category"])
+                categoryCondition = checkBox.category.some((elem) => elem === item.Category)
             } else {
                 categoryCondition = true
             }
+        
+            let recieveOP:boolean =  item["OP Received"] >= minVal && item["OP Received"] <= maxVal;;
             
-            let subCategoryCondition: boolean
-            if(checkBox.subCategory.length !== 0){
-                subCategoryCondition = checkBox.subCategory.some((elem) => elem === item["Sub-category"])
-            } else {
-                subCategoryCondition = true
-            }
-
-            let recieveOP:boolean =  item.scaled >= minVal && item.scaled <= maxVal;;
-            
-            let ballotCondition: boolean = true
-            if(checkBox.ballot === "> 17 vote"){
-                if(item.ballot > 17){
-                    ballotCondition = true
-                }
-                else {
-                    ballotCondition = false
-                }
-            }
+          
 
           return (
             searchCondition &&
             categoryCondition && 
-            subCategoryCondition &&
-            recieveOP &&
-            ballotCondition
+            recieveOP
           )
         })
-      }, [round3, search, checkBox, minVal, maxVal])
+      }, [round2, search, checkBox, minVal, maxVal])
 
     const pageCount = useMemo(() => {
         return Math.ceil(filterJson.length / itemsPerPage)
@@ -170,29 +122,29 @@ export default function ProjectTab({
         // - Least in ballots
         // Project Name (A-Z)
         // Project Name (Z-A)
-        if (state.sort === ' Award Ranking') {
-            sortedItems.sort((a, b) => {
-                if (a.rank === -1 && b.rank === -1) return 0;
-                if (a.rank === -1) return 1; 
-                if (b.rank === -1) return -1;
+        // if (state.sort === 'Award Ranking') {
+        //     // sortedItems.sort((a, b) => {
+        //     //     if (a.rank === -1 && b.rank === -1) return 0;
+        //     //     if (a.rank === -1) return 1; 
+        //     //     if (b.rank === -1) return -1;
                 
-                return a.rank - b.rank;
-            }); 
-        } 
-        else if(state.sort === "Most in ballots"){
+        //     //     return a.rank - b.rank;
+        //     // }); 
+        // } 
+        if(state.sort === "Most in ballots"){
             sortedItems.sort((a, b) => {
-                return b.ballot - a.ballot
+                return b.Vote_Recieved - a.Vote_Recieved
             })
         }
         else if(state.sort === "Least in ballots"){
             sortedItems.sort((a, b) => {
-                return a.ballot - b.ballot
+                return a.Vote_Recieved - b.Vote_Recieved
             })
         }
         else if(state.sort === "Project Name (A-Z)"){
             sortedItems.sort((a, b) => {
-                const nameA = a.displayName ?? '';
-                const nameB = b.displayName ?? '';
+                const nameA = (a.name ?? '').toLowerCase();
+                const nameB = (b.name ?? '').toLowerCase();
                 
                 for (let i = 0; i < Math.min(nameA.length, nameB.length); i++) {
                     const charCodeA = nameA.charCodeAt(i);
@@ -222,34 +174,37 @@ export default function ProjectTab({
         }
         else if(state.sort === "Project Name (Z-A)"){
             sortedItems.sort((a, b) => {
-                const nameA = a.displayName ?? '';
-                const nameB = b.displayName ?? '';
-                
+                const nameA = (a.name ?? '').toLowerCase();
+                const nameB = (b.name ?? '').toLowerCase();
+            
                 for (let i = 0; i < Math.min(nameA.length, nameB.length); i++) {
                     const charCodeA = nameA.charCodeAt(i);
                     const charCodeB = nameB.charCodeAt(i);
-                    
+            
                     // Check if both characters are letters
                     const isALetter = isLetter(nameA[i]);
                     const isBLetter = isLetter(nameB[i]);
-                    
-                    if (isALetter && isBLetter) {
-                        // Both characters are letters, compare them normally
-                        if (charCodeA !== charCodeB) {
-                            return charCodeA - charCodeB;
-                        }
-                    } else if (isALetter) {
-                        // Character in nameA is a letter, prioritize it
-                        return 1;
-                    } else if (isBLetter) {
-                        // Character in nameB is a letter, prioritize it
+            
+                    if (!isALetter && isBLetter) {
+                        // Special character in nameA, prioritize it
                         return -1;
+                    } else if (isALetter && !isBLetter) {
+                        // Special character in nameB, prioritize it
+                        return 1;
+                    } else if (isALetter && isBLetter) {
+                        // Both characters are letters
+                        if (charCodeA !== charCodeB) {
+                            // Compare letters in descending order (Z-A)
+                            return charCodeB - charCodeA;
+                        }
                     }
                 }
-                
+            
                 // If both names are equal so far, the shorter name should come first
-                return nameA.length - nameB.length;
+                return nameB.length - nameA.length; // Sort by length if everything else is equal
             });
+            
+            
         }
 
 
@@ -263,7 +218,6 @@ export default function ProjectTab({
         return c.toLowerCase() !== c.toUpperCase();
     }
 
-    console.log(checkBox.ballot)
     return (
 
         <>
@@ -298,8 +252,6 @@ export default function ProjectTab({
                             setMinVal={setMinVal}
                             maxVal={maxVal}
                             setMaxVal={setMaxVal}
-                            handleChangeBallot={handleChangeBallot}
-                            handleChangeSubCategory={handleChangeSubCategory}
                             />
                         )}
 
@@ -317,13 +269,13 @@ export default function ProjectTab({
                                     currentItems.map((item, i) => (
                                         <React.Fragment key={i}>
                                             <DynamicCard
-                                            category={item["New Main-Category"]}
-                                            description={item.contributionDescription}
-                                            title={item.displayName}
-                                            opRecieve={item.scaled}
-                                            round="3"
-                                            votes={item.ballot}
-                                            rank={item.rank}
+                                            category={item.Category}
+                                            description={item.about}
+                                            title={item.name}
+                                            opRecieve={item["OP Received"]}
+                                            round="2"
+                                            votes={item["Vote_Recieved"]}
+                                            rank={1}
                                             />
                                         </React.Fragment>
                                     ))
@@ -346,8 +298,6 @@ export default function ProjectTab({
                                 setMinVal={setMinVal}
                                 maxVal={maxVal}
                                 setMaxVal={setMaxVal}
-                                handleChangeBallot={handleChangeBallot}
-                                handleChangeSubCategory={handleChangeSubCategory}
                                 />
                            </div>
                         )}
@@ -359,13 +309,13 @@ export default function ProjectTab({
                             {currentItems.map((item, i) => (
                                 <React.Fragment key={i}>
                                     <DynamicCard
-                                    category={item["New Main-Category"]}
-                                    description={item.contributionDescription}
-                                    title={item.displayName}
-                                    opRecieve={item.scaled}
-                                    round="3"
-                                    votes={item.ballot}
-                                    rank={item.rank}
+                                    category={item.Category}
+                                    description={item.about}
+                                    title={item.name}
+                                    opRecieve={item["OP Received"]}
+                                    round="2"
+                                    votes={item.Vote_Recieved}
+                                    rank={0}
                                     />
                                 </React.Fragment>
                             ))}
@@ -417,12 +367,11 @@ export default function ProjectTab({
             open={state.drawer}
             checkBox={checkBox}
             handleChangeCategory={handleChangeCategory}
-            handleChangeSubCategory={handleChangeSubCategory}
             maxVal={maxVal}
             minVal={minVal}
             setMaxVal={setMaxVal}
             setMinVal={setMinVal}
-            handleChangeBallot={handleChangeBallot}
+            handleClearFilter={handleClearFilter}
             />
 
             </div>

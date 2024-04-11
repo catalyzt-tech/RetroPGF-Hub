@@ -70,7 +70,7 @@ const Navbar = ({
           <div className="mr-12">
             <Link
               className="text-custom-red font-rubik !font-semibold"
-              href="https://optimism.io/join"
+              href="/"
               >
               <Image
               src={"/logo/logo.svg"}
