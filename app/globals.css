@@ -10,22 +10,6 @@ body {
 }
 
 @layer base {
-  h1 {
-    @apply lg:text-5xl text-3xl text-gray-800;
-  }
-  h2 {
-    @apply lg:text-3xl text-2xl text-gray-800;
-  }
-  h3 {
-    @apply lg:text-2xl text-xl text-gray-800;
-  }
-  h4 {
-    @apply lg:text-xl text-lg text-gray-800;
-  }
-  h5 {
-    @apply lg:text-lg text-base text-gray-800;
-  }
-
 }
 
 .background {
