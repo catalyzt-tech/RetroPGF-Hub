@@ -59,7 +59,7 @@ return (
         <div className="w-full h-full">
             <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
                 <div className="flex flex-col gap-0.5">
-                    <Link href={"/explore"} className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1">{title}</Link>
+                    <Link href={`/explore/RetroPGF1/${title}`} className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1">{title}</Link>
                     <p className="text-sm font-normal text-gray-600 line-clamp-4 break-all">
                         {description}
                     </p>

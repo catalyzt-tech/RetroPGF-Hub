@@ -52,7 +52,7 @@ export default function ListCard({
                     </div>
                     <div className="flex flex-col">
                     <Link
-                      href={`/issue/${item.displayName}`}
+                      href={`/explore/RetroPGF3/${item.displayName}`}
                       className="flex gap-1 pb-2  items-center cursor-pointer hover:underline w-fit"
                     >
                       <h6 className="text-sm font-bold text-gray-900">

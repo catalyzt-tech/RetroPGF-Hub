@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Toaster } from "react-hot-toast";
 import { GlobalProvider } from "./provider/globalContext";
+import Footer from "./component/Footer";
 
 const interFont = Inter({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({
         <GlobalProvider>
           {children}
         </GlobalProvider>
+        <Footer/>
       </body>
     </html>
   );
