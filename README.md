@@ -1,14 +1,6 @@
-1.ทำ filter ตรง community ให้ reponsive (กลับมาทำทีหลัง)
-2.ทำ component RecentlyShareSection เป็นรอรับ data แล้วแยกประเภทใส่ card เอง
+"bannerPath": "http://res.cloudinary.com/dxoowohf8/image/upload/w_600,h_144,c_scale/v1713108616/retropgf3/Solidity_banner.png"
 
 
-<!-- import {v2 as cloudinary} from 'cloudinary';
-          
-cloudinary.config({ 
-  cloud_name: process.env.NEXT_PUBLIC_CLOUD_NAME, 
-  api_key: process.env.NEXT_PUBLIC_API_KEY, 
-  api_secret:  process.env.NEXT_PUBLIC_API_SECRET
-}); -->
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

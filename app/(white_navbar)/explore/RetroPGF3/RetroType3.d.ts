@@ -48,4 +48,6 @@ export interface RetroRound3 {
     median: number;
     scaled: number;
     rank: number;
+    iconPath: string;
+    bannerPath: string;
 }

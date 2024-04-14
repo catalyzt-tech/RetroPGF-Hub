@@ -6,9 +6,9 @@ import { ImpactCategory, NewCategory } from "@/app/(white_navbar)/explore/RetroP
 import { handleCategoryRound3 } from "@/app/lib/InitialMount";
 
 export default function DynamicCard({
-    background,
+    banner,
+    icon,
     round="3",
-    avatar="",
     title="",
     description="",
     category="OP Stack",
@@ -16,9 +16,9 @@ export default function DynamicCard({
     opRecieve=0,
     rank=0,
 }:{
-    background?:string;
+    banner?:string;
+    icon?:string;
     round?:string;
-    avatar?:string;
     title?:string;
     description?:string;
     category?:NewCategory;
@@ -36,7 +36,7 @@ return (
         {/* Background Image */}
         <div className="absolute top-0 left-0 w-full h-12 overflow-hidden">
             <Image
-            src={background || "/random/bgPic.png"}
+            src={banner || "/random/OP-Banner.png"}
             alt="background image"
             // Not sure about the aspect ratio, so using object-fit
             className="opacity-50 object-cover z-10"
@@ -53,7 +53,7 @@ return (
         {/* Avatar */}
         <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0 z-20">
             <Image
-                src={avatar || "/random/avatar.png"}
+                src={icon || "/random/OP-Logo.png"}
                 alt="avatar image"
                 className=""
                 width={48}
