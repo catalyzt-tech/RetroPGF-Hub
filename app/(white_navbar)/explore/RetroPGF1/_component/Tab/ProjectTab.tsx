@@ -293,40 +293,40 @@ export default function ProjectTab({
                 )}
 
 
-        {currentItems.length !== 0 && (
-          <div className="mt-12 text-sm font-medium text-gray-500">
-            <Pagination
-              currentPage={currentPage}
-              setCurrentPage={handlePageClick}
-              className="flex flex-wrap justify-end"
-              truncableText="..."
-              truncableClassName="border min-w-[2rem] min-h-[2rem] max-w-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50"
-              edgePageCount={2}
-              middlePagesSiblingCount={1}
-              totalPages={pageCount}
-            >
-              <Pagination.PrevButton className="px-2 border min-h-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50">
-                Previous
-              </Pagination.PrevButton>
+            {currentItems.length !== 0 && (
+            <div className="mt-12 text-sm font-medium text-gray-500">
+                <Pagination
+                currentPage={currentPage}
+                setCurrentPage={handlePageClick}
+                className="flex flex-wrap justify-end"
+                truncableText="..."
+                truncableClassName="border min-w-[2rem] min-h-[2rem] max-w-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50"
+                edgePageCount={2}
+                middlePagesSiblingCount={1}
+                totalPages={pageCount}
+                >
+                <Pagination.PrevButton className="px-2 border min-h-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50">
+                    Previous
+                </Pagination.PrevButton>
 
-              <div className="flex justify-center">
-                <div className="flex flex-wrap lg:items-center justify-start lg:justify-center list-none">
-                  <Pagination.PageButton
-                    as={<div />}
-                    activeClassName="bg-gray-100 cursor-pointer hover:bg-gray-50 list-none"
-                    inactiveClassName="list-none"
-                    className=" border min-w-[2rem] min-h-[2rem] max-w-[2rem] max-h-[2rem] flex items-center justify-center cursor-pointer hover:bg-gray-50 list-none"
-                    dataTestIdInactive="list-none"
-                  />
+                <div className="flex justify-center">
+                    <div className="flex flex-wrap lg:items-center justify-start lg:justify-center list-none">
+                    <Pagination.PageButton
+                        as={<div />}
+                        activeClassName="bg-gray-100 cursor-pointer hover:bg-gray-50 list-none"
+                        inactiveClassName="list-none"
+                        className=" border min-w-[2rem] min-h-[2rem] max-w-[2rem] max-h-[2rem] flex items-center justify-center cursor-pointer hover:bg-gray-50 list-none"
+                        dataTestIdInactive="list-none"
+                    />
+                    </div>
                 </div>
-              </div>
 
-              <Pagination.NextButton className="px-2 border  min-h-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50">
-                Next
-              </Pagination.NextButton>
-            </Pagination>
-          </div>
-        )}
+                <Pagination.NextButton className="px-2 border  min-h-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50">
+                    Next
+                </Pagination.NextButton>
+                </Pagination>
+            </div>
+            )}
 
 
 

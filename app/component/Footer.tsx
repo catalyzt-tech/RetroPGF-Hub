@@ -73,8 +73,7 @@ export default function Footer({
 
     return (
 
-        <footer className="w-full px-12 py-6 ">
-
+        <footer className="w-full px-12 py-6 mt-12">
 
             {/* Mobile Footer */}
 

@@ -89,7 +89,6 @@ return (
                         <p className="text-sm font-semibold text-gray-800">{opRecieve.toFixed(2)} OP</p>
                         <p className="text-sm font-light text-gray-600">#{rank}</p>
                     </div>
-
                 </div>
             </div>
         </div>

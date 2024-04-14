@@ -8,7 +8,7 @@ function isLetter(c: string) {
     return c.toLowerCase() !== c.toUpperCase();
 }
 
-async function getJsonRound1(): Promise<RetroRound1[]> {
+export async function getJsonRound1(): Promise<RetroRound1[]> {
     const directoryPath = path.join(
         process.cwd(),
         "public/static/rpgf1.json"

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { CheckBoxStateType, ExploreRoundState } from "../ExploreRoundType";
 import { category, itemsPerPage, max, min } from "../Text";
 import InputAndFilterBtn from "./InputAndFilterBtn";
@@ -10,6 +10,7 @@ import { Pagination } from "react-headless-pagination";
 import DynamicCard from "../DynamicCard";
 import ListCard from "./ListCard";
 import DialogFilter from "./Filter/DialogFilter";
+import { useSearchParams } from "next/navigation";
 
 
 export default function ProjectTab({
@@ -17,6 +18,11 @@ export default function ProjectTab({
 }: {
     round3: RetroRound3[]
 }) {
+
+    const searchParams = useSearchParams()
+
+    
+
     const [search, setSearch] = useState("")
     const [state, setState] = useState<ExploreRoundState>({
         drawer: false,
@@ -110,6 +116,21 @@ export default function ProjectTab({
     function handleChangeSort(char: string) {
         setState(prev => ({ ...prev, sort: char }))
     }
+
+    useEffect(() => {
+        const searchCategory = decodeURIComponent(searchParams.get("category") || "")
+        category.forEach(elem => {
+            if(elem.name === searchCategory){
+                setCheckBox(prev => {
+                    let tempSub = category.find((elem) => (
+                        elem.name === searchCategory
+                      ))?.subCategory || []
+                    return {...prev, category:[searchCategory], subCategory:tempSub}
+                })
+            }
+        });
+    }, [searchParams])
+    
 
     const filterJson = useMemo(() => {
         setCurrentPage(0)

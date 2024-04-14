@@ -1,8 +1,8 @@
 "use client"
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { CheckBoxStateType, ExploreRoundState } from "../ExploreRoundType";
-import { itemsPerPage, max, min } from "../Text";
+import { category, itemsPerPage, max, min } from "../Text";
 import InputAndFilterBtn from "./InputAndFilterBtn";
 import CheckBoxFilter from "./CheckBoxFilter";
 import { Pagination } from "react-headless-pagination";
@@ -10,6 +10,7 @@ import DynamicCard from "../DynamicCard";
 import ListCard from "./ListCard";
 import DialogFilter from "./Filter/DialogFilter";
 import { RetroRound2 } from "../../RetroType2";
+import { useSearchParams } from "next/navigation";
 
 
 export default function ProjectTab({
@@ -17,6 +18,9 @@ export default function ProjectTab({
 }: {
     round2: RetroRound2[]
 }) {
+
+    const searchParams = useSearchParams()
+
     const [search, setSearch] = useState("")
     const [state, setState] = useState<ExploreRoundState>({
         drawer: false,
@@ -213,6 +217,18 @@ export default function ProjectTab({
             (currentPage + 1) * itemsPerPage
         )
     }, [currentPage, filterJson, state.sort])
+
+
+    useEffect(() => {
+        const searchCategory = decodeURIComponent(searchParams.get("category") || "")
+        category.forEach(elem => {
+            if(elem.name === searchCategory){
+                setCheckBox(prev => {
+                    return {...prev, category:[searchCategory]}
+                })
+            }
+        });
+    }, [searchParams])
 
     function isLetter(c:string) {
         return c.toLowerCase() !== c.toUpperCase();

@@ -38,8 +38,8 @@ export default function RootLayout({
         <Toaster/>
         <GlobalProvider>
           {children}
+          <Footer/>
         </GlobalProvider>
-        <Footer/>
       </body>
     </html>
   );

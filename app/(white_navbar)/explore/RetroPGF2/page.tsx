@@ -4,7 +4,7 @@ import fs from 'fs'
 import path from 'path'
 import { RetroRound2 } from "./RetroType2";
 
-async function getJsonRound2(): Promise<RetroRound2[]> {
+export async function getJsonRound2(): Promise<RetroRound2[]> {
     const directoryPath = path.join(
       process.cwd(),
       "public/static/rpgf2.json"
@@ -20,7 +20,7 @@ async function getJsonRound2(): Promise<RetroRound2[]> {
     });
 
     return jsonData
-  }
+}
   
 
 export default async function page({

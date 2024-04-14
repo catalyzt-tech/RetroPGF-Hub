@@ -1,10 +1,10 @@
 import { RetroRound3 } from "@/app/(white_navbar)/explore/RetroPGF3/RetroType3";
 import Cpage from "./Cpage";
 import BreadCumpExplore from "./_component/BreadCumpExplore";
-    import fs from 'fs'
-    import path from 'path'
+import fs from 'fs'
+import path from 'path'
 
-async function getJsonRound3(): Promise<RetroRound3[]> {
+export async function getJsonRound3(): Promise<RetroRound3[]> {
     const directoryPath = path.join(
       process.cwd(),
       "public/static/rpgf3.json"
@@ -23,7 +23,7 @@ async function getJsonRound3(): Promise<RetroRound3[]> {
     });
   
     return jsonData
-  }
+}
   
 
 export default async function page({

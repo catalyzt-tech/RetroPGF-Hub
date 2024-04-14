@@ -1,6 +1,6 @@
 "use client";
 
-import RetroCard from "@/app/component/Card/RetroCard";
+import RetroCard from "@/app/component/Card/RetroCardRound3";
 import { useState } from "react";
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Pagination, Controller } from 'swiper/modules';
