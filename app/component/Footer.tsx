@@ -73,7 +73,7 @@ export default function Footer({
 
     return (
 
-        <footer className="w-full px-12 py-6 mt-12">
+        <footer className="w-full px-12  mt-12">
 
             {/* Mobile Footer */}
 
@@ -88,7 +88,7 @@ export default function Footer({
 
             {/* End Mobile Footer */}
 
-            <div className="hidden lg:flex flex-col gap-2">
+            <div className="hidden lg:flex flex-col gap-2 border-t border-gray-100 py-6">
 
                 <div className="flex justify-between">
                     <div className="flex gap-4 ">
