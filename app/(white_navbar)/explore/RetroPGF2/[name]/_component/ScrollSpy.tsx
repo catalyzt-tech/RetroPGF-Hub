@@ -3,27 +3,23 @@ import React, { useState, useEffect, useRef } from "react";
 export default function ScrollSpy({
   overViewRef,
   contributionRef,
-  impactRef,
-  fundingRef,
+  questionRef,
 }: {
   overViewRef: React.MutableRefObject<HTMLElement | null>;
   contributionRef: React.MutableRefObject<HTMLElement | null>;
-  impactRef: React.MutableRefObject<HTMLElement | null>;
-  fundingRef: React.MutableRefObject<HTMLElement | null>;
+  questionRef: React.MutableRefObject<HTMLElement | null>;
 }) {
-
   const [currentContent, setCurrentContent] = useState<string>("Overview");
   const [sections, setSections] = useState({
     Overview: false,
     Contribution: false,
-    Impact: false,
-    Funding: false,
+    Question: false,
   });
 
   const observerOptions = {
     root: null,
     rootMargin: "-30px",
-    threshold: 0.1, 
+    threshold: 0.1,
   };
 
 
@@ -31,6 +27,7 @@ export default function ScrollSpy({
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const sectionId = entry.target.getAttribute("id") || "Overview";
+        console.log(sectionId)
         setSections((prevSections) => ({
           ...prevSections,
           [sectionId]: entry.isIntersecting,
@@ -46,11 +43,10 @@ export default function ScrollSpy({
 
     observeSection(overViewRef);
     observeSection(contributionRef);
-    observeSection(impactRef);
-    observeSection(fundingRef);
+    observeSection(questionRef);
 
     return () => observer.disconnect();
-  }, [overViewRef, contributionRef, impactRef, fundingRef]);
+  }, [overViewRef, contributionRef, questionRef]);
 
   useEffect(() => {
     const visibleSections = Object.entries(sections)
@@ -62,6 +58,7 @@ export default function ScrollSpy({
     setCurrentContent(lastVisibleSection || "overview");
   }, [sections]);
 
+
   return (
     <div className="hidden lg:block bg-white h-fit p-4 rounded-md shadow-md w-full sticky top-24">
       <div className="mx-4 my-4 font-medium text-gray-500 flex flex-col items-start gap-4">
@@ -70,8 +67,7 @@ export default function ScrollSpy({
           {[
             { content: "Overview", ref: overViewRef },
             { content: "Contribution", ref: contributionRef },
-            { content: "Impact", ref: impactRef },
-            { content: "Funding Sources", ref: fundingRef },
+            { content: "Question", ref: questionRef },
           ].map(({ content, ref }) => (
             <li key={content} className="list-none">
               <a

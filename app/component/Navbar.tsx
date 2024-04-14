@@ -5,6 +5,7 @@ import './Navbar.css'
 import Link from 'next/link'
 import { GlobalContextType, useGlobal } from '../provider/globalContext'
 import Help from '@carbon/icons-react/lib/Help'
+import MenuIcon from '@carbon/icons-react/lib/Menu'
 import { Menu, Transition } from '@headlessui/react'
 import Image from 'next/image'
 import User from '@carbon/icons-react/lib/User'
@@ -55,8 +56,6 @@ const Navbar = ({
       }).catch((error:any) => {
         console.log(error)
       });
-
-
   }
 
 
@@ -99,7 +98,7 @@ const Navbar = ({
           <Help className="text-gray-800" size={28} />
           <Menu 
       
-      as="div" className="relative inline-block text-left">
+         as="div" className="relative inline-block text-left">
 
         <div>
           <Menu.Button className="">
@@ -195,20 +194,10 @@ const Navbar = ({
       }
 
         <div
-          className="flex lg:hidden Hamburger cursor-pointer"
+          className="flex lg:hidden items-center cursor-pointer"
           onClick={() => setOpen(true)}
         >
-          <a href="#">
-            <svg
-              fill="#424242"
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M2,4A1,1,0,0,1,3,3H21a1,1,0,0,1,0,2H3A1,1,0,0,1,2,4Zm1,9H21a1,1,0,0,0,0-2H3a1,1,0,0,0,0,2Zm0,8H21a1,1,0,0,0,0-2H3a1,1,0,0,0,0,2Z" />
-            </svg>
-          </a>
+            <MenuIcon size={24} className="fill-gray-800" />
         </div>
 
       </div>

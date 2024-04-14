@@ -25,7 +25,7 @@ return (
     <div className="flex mt-8 gap-10"> 
     {/* Scroll Spy */}
        
-        <div className="lg:flex-grow flex flex-col gap-4 lg:gap-12">
+        <div className="lg:flex-grow flex flex-col gap-4 lg:gap-16">
             <section className="w-full h-full flex flex-col gap-4 lg:gap-12 lg:flex-grow" id="Overview" ref={overViewRef}>
                 <ProjectDetailSection
                 data={data}

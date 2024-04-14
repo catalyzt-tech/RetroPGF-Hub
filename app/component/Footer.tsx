@@ -77,11 +77,17 @@ export default function Footer({
 
             {/* Mobile Footer */}
 
-            <div className="flex lg:hidden flex-col gap-4">
+            <div className="flex lg:hidden flex-col gap-4 border-t py-4 mt-6 border-gray-100">
                 <ReturnLinkLogo />
                 <div className="">
                     <h6 className="text-base font-normal text-gray-600">
-                        This open-source project built by @Catalyzt.
+                     © 2024 RetroPGF Hub. All rights reserved.
+                    </h6>
+                    <h6 className="flex gap-1 text-base font-normal text-gray-600">
+                        This open-source project built by 
+                        <p className="text-base font-semibold text-gray-600">
+                            @Catalyzt.
+                        </p>
                     </h6>
                 </div>
             </div>
@@ -112,10 +118,13 @@ export default function Footer({
                     </div>
                 </div>
                 <div className="flex justify-between">
-                        <ReturnLinkLogo/>
+                    <ReturnLinkLogo/>
                     <div className="">
-                        <h6 className="text-base font-normal text-gray-600">
-                            This open-source project built by @Catalyzt.
+                        <h6 className="flex gap-1 text-base font-normal text-gray-600">
+                            This open-source project built by 
+                            <p className="text-base font-semibold text-gray-600">
+                            @Catalyzt.
+                            </p>
                         </h6>
                     </div>
                 </div>

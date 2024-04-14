@@ -8,6 +8,7 @@ import PreviousOutline from "@carbon/icons-react/lib/PreviousOutline";
 import { RetroCard1 } from "@/app/component/Card/RetroCardRound1";
 import { RetroRound1 } from "@/app/(white_navbar)/explore/RetroPGF1/RetroType1";
 import Link from "next/link";
+import ChevronRight from "@carbon/icons-react/lib/ChevronRight";
 
 
 export default function CardRound1({
@@ -27,21 +28,19 @@ export default function CardRound1({
 return (
 
      <div className="flex flex-col gap-4 w-full">
-            <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
-            <div className="flex justify-between">
-                <div className=""></div>
+            <div className="flex justify-between items-center">
+                <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
                 <Link
                 href={{
                     pathname:`/explore/${title}`,
                 }}
-                className=" lg:block h-8
-                hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
-                rounded-full px-3 py-1.5 cursor-pointer transition-colors self-center shrink-0 text-slate-900 border
-                ">
-                        <p className=" text-sm font-normal ">See all</p>
+                className=" flex gap-2">
+                    <p className="text-sm font-semibold text-gray-600 hover:underline ">See all </p>
+                    <ChevronRight size={20} className="fill-gray-600" />
                 </Link>
-           </div>
-           
+            </div>
+
+            
             <div className="relative">
             <Swiper
                     onSwiper={setSwiper}
@@ -69,13 +68,13 @@ return (
                 </Swiper>
 
                 {!state.start &&
-                    <button className="hidden md:block absolute top-1/2 transform -translate-y-1/2 -left-4 md:-left-6 cursor-pointer z-50" onClick={() => swiper?.slidePrev()}>
+                    <button className="hidden md:block absolute top-1/2 transform -translate-y-1/2 -left-4 lg:-left-5 cursor-pointer z-50" onClick={() => swiper?.slidePrev()}>
                         <PreviousOutline size={32} />
                     </button>
                 }
 
                 {!state.end &&
-                    <button className="hidden md:block absolute top-1/2 transform -translate-y-1/2 -right-4 md:-right-6 cursor-pointer z-50" onClick={() => swiper?.slideNext()}>
+                    <button className="hidden md:block absolute top-1/2 transform -translate-y-1/2 -right-4 lg:-right-5 cursor-pointer z-50" onClick={() => swiper?.slideNext()}>
                         <NextOutline size={32} />
                     </button>
                 }

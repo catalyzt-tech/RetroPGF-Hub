@@ -8,6 +8,7 @@ import NextOutline from "@carbon/icons-react/lib/NextOutline";
 import PreviousOutline from "@carbon/icons-react/lib/PreviousOutline";
 import Link from "next/link";
 import { RetroRound2 } from "@/app/(white_navbar)/explore/RetroPGF2/RetroType2";
+import ChevronRight from "@carbon/icons-react/lib/ChevronRight";
 
 
 export default function CardRound2({
@@ -29,11 +30,20 @@ export default function CardRound2({
     return (
 
         <div className="flex flex-col gap-4 w-full">
-            <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
+            <div className="flex justify-between items-center">
+                <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
+                <Link
+                href={{
+                    pathname:`/explore/${title}`,
+                }}
+                className="md:hidden flex gap-2">
+                    <p className="text-sm font-semibold text-gray-600 hover:underline ">See all </p>
+                    <ChevronRight size={20} className="fill-gray-600" />
+                </Link>
+            </div>
 
-           <div className="flex justify-between">
-            <div className="flex gap-3">
-                    {/* {newFilter['category'].map((item, i) => ( */}
+           <div className="hidden md:flex justify-between">
+            <div className="hidden md:flex flex-wrap gap-3">
                     {Array.from(cateRound2).map(([category, count]) => (
                      <Link
                      href={`/explore/${title}?category=${category}`}

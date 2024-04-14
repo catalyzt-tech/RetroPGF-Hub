@@ -62,7 +62,7 @@ export default function RetroCard2({
         <div className="w-full h-full">
             <div className="p-4 flex flex-col justify-start items-start gap-3 h-full">
                 <div className="flex flex-col gap-0.5">
-                    <Link href={"/explore"} className="line-clamp-1 text-sm font-bold text-gray-800 z-30 hover:underline">{title}</Link>
+                    <Link href={`/explore/RetroPGF2/${title}`} className="line-clamp-1 text-sm font-bold text-gray-800 z-30 hover:underline">{title}</Link>
                     <p className="text-sm font-normal text-gray-600 line-clamp-2">
                         {description}
                     </p>
