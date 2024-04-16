@@ -280,6 +280,7 @@ export default function Cpage({
                                         return (
                                             <QuestionCard
                                             key={i}
+                                            category={item.category}
                                             commentCount={item.commentCount}
                                             createdAt={item.createdAt}
                                             description={item.description}
@@ -335,6 +336,7 @@ export default function Cpage({
                                         return (
                                             <QuestionCard
                                             key={i}
+                                            category={item.category}
                                             commentCount={item.commentCount}
                                             createdAt={item.createdAt}
                                             description={item.description}
@@ -389,6 +391,7 @@ export default function Cpage({
                                         return (
                                             <QuestionCard
                                             key={i}
+                                            category={item.category}
                                             commentCount={item.commentCount}
                                             createdAt={item.createdAt}
                                             description={item.description}

@@ -171,7 +171,7 @@ return (
                     <p className="text-sm font-normal text-gray-600">Dont have an account yet?</p>
                     <Link
                         href={"/register"}
-                        className="text-sm font-semibold text-gray-800 hover:text-blue-500 hover:underline"
+                        className="text-sm font-semibold text-gray-800 hover:text-red-500 hover:underline"
                     >
                         Create Account
                     </Link>

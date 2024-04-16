@@ -45,7 +45,7 @@ export default function ProjectSmallCard({
                 <div className="flex flex-col gap-1">
                     <Link
                         href={`/community/project/${id}`}
-                        className="text-xl font-semibold text-gray-800 hover:text-blue-500 hover:underline">
+                        className="text-xl font-semibold text-gray-800 hover:text-red-500 hover:underline">
                         {title}
                     </Link>
                     <div className="px-2 py-1 rounded-2xl bg-sky-50 cursor-pointer hover:bg-sky-100 w-fit">

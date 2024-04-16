@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 import Close from '@carbon/icons-react/lib/Close'
 import { StateCommunityType } from '../CommunityTytpe'
 import { sorting } from './SortByBtn'
-import { filter } from './FilterBtn'
+import { categoryFilter } from './FilterBtn'
 export default function DrawerFilter({
   open,
   onClose,
@@ -92,7 +92,7 @@ export default function DrawerFilter({
                       Filter
                     </h6>
                     <div className="flex gap-2 items-center flex-wrap">
-                      {filter.map((item, i) => (
+                      {categoryFilter.map((item, i) => (
                         <div
                           key={i}
                           className={` 

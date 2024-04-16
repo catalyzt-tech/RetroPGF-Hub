@@ -5,7 +5,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { StateCommunityType } from "../CommunityTytpe";
 
-export const filter = [
+export const categoryFilter = [
   {
     name:"All",
     id:"all",
@@ -26,7 +26,12 @@ export const filter = [
     name:"End User Experience Adoption",
     id:"End User Experience Adoption",
   },
+  {
+    name:"Other",
+    id:"Other",
+  },
 ]
+
 
 export default function FilterBtn({
   state,
@@ -71,19 +76,19 @@ return (
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute p-4 z-20 left-0 mt-2 w-64 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
+          <Menu.Items className="absolute p-4 z-20 left-0 mt-2 w-72 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
             <h6 className="text-sm font-bold text-center text-gray-900">
               Filter By
             </h6>
 
             <div className="mt-4">
 
-              {filter.map((item, i) => (
+              {categoryFilter.map((item, i) => (
                 <Menu.Item key={i}>
                 {({ active }) => (
                   <button
-                    className={`${state.filter === item.id ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900'
-                      } group w-full items-center rounded-md px-2 py-2 text-sm flex justify-between hover:bg-gray-50`}
+                    className={`${state.filter === item.id ? 'bg-gray-100 hover:bg-gray-200' : 'text-gray-900 '
+                      } group w-full items-center rounded-md px-2 py-2 text-sm flex  hover:bg-gray-50 justify-between`}
                       onClick={() => handleChangeFilter(item.id)}
                   >
                     <h6>{item.name}</h6>

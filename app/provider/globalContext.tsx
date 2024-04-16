@@ -2,11 +2,8 @@
 import React, { useState, createContext, useContext, useEffect } from 'react';
 import Cookies from 'js-cookie';
 import { GetCurrentUser } from '../hook/userRequest';
-import toast from 'react-hot-toast';
-import { getAuth, GoogleAuthProvider, signInWithPopup, UserCredential, GithubAuthProvider, User } from "firebase/auth";
-import { app, auth } from '../lib/firebase';
-import firebase from 'firebase/compat/app';
-import { AuthCredential } from 'firebase/auth/cordova';
+import { GoogleAuthProvider, signInWithPopup, UserCredential, GithubAuthProvider } from "firebase/auth";
+import { auth } from '../lib/firebase';
 
 
 const GlobalContext = createContext<GlobalContextType | null>(null);
@@ -126,7 +123,7 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
         // }
     }
 
-    console.log("global state => ", globalState)
+    // console.log("global state => ", globalState)
     
 
   return (

@@ -11,7 +11,7 @@ export const useIsMount = () => {
   return isMountRef.current;
 };
 
-export function handleCategoryRound3(category:NewCategory) {
+export function handleCategoryRound3(category:string) {
   if(category === "OP Stack"){
       return (
           <div className="px-2 py-1 bg-yellow-50 rounded-full w-fit">
@@ -39,6 +39,13 @@ export function handleCategoryRound3(category:NewCategory) {
               <p className="text-emerald-600 text-xs font-medium line-clamp-1 break-words">{category}</p>
           </div>
       )
+    }
+    else {
+      return (
+          <div className="px-2 py-1 bg-indigo-50 rounded-full w-fit">
+              <p className="text-indigo-600 text-xs font-medium line-clamp-1 break-words">{category}</p>
+          </div>
+      )
   }
 }
 
@@ -64,4 +71,11 @@ export function handleCategoryRound2(category:CategoryRound2) {
           </div>
       )
   }
+  else {
+    return (
+        <div className="px-2 py-1 bg-indigo-50 rounded-full w-fit">
+            <p className="text-indigo-600 text-xs font-medium line-clamp-1 break-words">{category}</p>
+        </div>
+    )
+}
 }
