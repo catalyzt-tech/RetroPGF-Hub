@@ -84,13 +84,29 @@ const Navbar = ({
 
           <div className="hidden lg:flex gap-8 items-center ">
             <ul className="flex gap-8 !font-inter  ">
+              {bgColor === "bg-transparent" ? 
+              <>
               {menu.map((item, index) => (
                 <a href={item.link} key={index}>
-                  <li className="NavMenu !font-medium transition ease-in-out duration-300">
-                    <ul className="text-base font-semibold text-gray-800">{item.name}</ul>
+                  <li className="flex items-center !font-medium relative group">
+                    <h6 className="text-base font-semibold text-gray-800">{item.name}</h6>
+                    <div className="hidden group-hover:block absolute border-t-2 border-red-600 -bottom-6 left-0 w-full h-4"></div>
                   </li>
                 </a>
               ))}
+              </>
+              :
+              <>
+              {menu.map((item, index) => (
+                <a href={item.link} key={index}>
+                  <li className="flex items-center !font-medium relative group">
+                    <h6 className="text-base font-semibold text-gray-800">{item.name}</h6>
+                    <div className="hidden group-hover:block absolute border-t-2 border-red-600 -bottom-10 left-0 w-full h-4"></div>
+                  </li>
+                </a>
+              ))}
+              </>
+              }
             </ul>
           </div>
         </div>
@@ -132,27 +148,29 @@ const Navbar = ({
                 height={64}
                 className="rounded-full"
                 />
-                <div className="flex flex-col  gap-1">
-                  <h6 className="text-sm font-semibold text-gray-800">@Smartcontact</h6>
-                  <p className="tex-sm font-normal text-gray-600">Smart Contact</p>
+                <div className="flex flex-col gap-1 overflow-hidden">
+                  <h6 className="text-sm font-semibold text-gray-800 line-clamp-1">{globalState.user.email}</h6>
+                  <p className="tex-sm font-normal text-gray-600 line-clamp-1">{globalState.user.username}</p>
                 </div>
             </div>
             <div className="flex flex-col gap-1">
-              <div className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
+              {/* <div className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <User  
                 size={20}
                 className="fill-gray-800"
                 />
                 <p className="text-sm font-normal">Account</p>
-              </div>
+              </div> */}
 
-              <div className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
+              <Link 
+              href={"/community/submit-idea"}
+              className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <Chat  
                 size={20}
                 className="fill-gray-800"
                 />
                 <p className="text-sm font-normal">Submit Feedback</p>
-              </div>
+              </Link>
               
               <Link
               href={"/community/ask-question"}
@@ -189,9 +207,11 @@ const Navbar = ({
           className="bg-white border py-3 px-7 h-10 flex items-center rounded-lg hover:bg-gray-50">
             <h6 className="text-sm font-semibold text-gray-800">Sign in</h6>
           </Link>
-          <button className="bg-primaryRed py-3 px-7 h-10 flex items-center rounded-lg hover:bg-primaryRed/90">
+          <Link 
+          href={"/"}
+          className="bg-primaryRed py-3 px-7 h-10 flex items-center rounded-lg hover:bg-primaryRed/90">
             <h6 className="text-sm font-semibold text-white">Get started</h6>
-          </button>
+          </Link>
         </div>  
       }
 

@@ -6,6 +6,7 @@ import Chat from "@carbon/icons-react/lib/Chat";
 import { Owner } from "@/app/hook/projectRequestType";
 import { ConvertStringToTime } from "@/app/lib/utils";
 import FavoriteFilled from "@carbon/icons-react/lib/FavoriteFilled";
+import { handleCategoryRound3 } from "@/app/lib/InitialMount";
 
 export default function ProjectFeedBackCard({
     commentCount,
@@ -52,12 +53,10 @@ export default function ProjectFeedBackCard({
                 <div className="flex flex-col gap-1">
                     <Link
                     href={`/community/project/${id}`} 
-                    className="text-xl lg:text-2xl font-semibold text-gray-800 hover:text-blue-500 hover:underline">
+                    className="text-xl lg:text-2xl font-semibold text-gray-800 hover:text-red-500 hover:underline">
                         {title}
                         </Link>
-                    <div className="px-2 py-1 rounded-2xl bg-sky-50 cursor-pointer hover:bg-sky-100 w-fit">
-                        <p className="text-sky-600 text-xs font-medium">{category}</p>
-                    </div>
+                    {handleCategoryRound3(category)}
                 </div>
             </div>
             <p

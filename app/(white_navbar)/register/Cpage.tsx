@@ -219,7 +219,7 @@ export default function Cpage({
                     <p className="text-sm font-normal text-gray-600">Already have an account?</p>
                     <Link
                         href={"/signin"}
-                        className="text-sm font-semibold text-gray-800 hover:text-blue-500 hover:underline"
+                        className="text-sm font-semibold text-gray-800 hover:text-red-500 hover:underline"
                     >
                         Signin
                     </Link>

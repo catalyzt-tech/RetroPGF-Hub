@@ -6,6 +6,7 @@ import Chat from "@carbon/icons-react/lib/Chat";
 import { ConvertStringToTime } from "@/app/lib/utils";
 import { Owner } from "@/app/hook/projectRequestType";
 import FavoriteFilled from "@carbon/icons-react/lib/FavoriteFilled";
+import { handleCategoryRound3 } from "@/app/lib/InitialMount";
 
 // this card will have the owner who create it
 export default function QuestionCard({
@@ -17,6 +18,7 @@ export default function QuestionCard({
     createdAt,
     owner,
     favOrNot,
+    category,
     handleFavoriteProject,
 }:{
     id:string;
@@ -27,6 +29,7 @@ export default function QuestionCard({
     createdAt: string;
     owner: Owner;
     favOrNot:boolean;
+    category:string;
     handleFavoriteProject(projectId: string): Promise<void>
 })  {
 
@@ -39,8 +42,9 @@ return (
             </div>
             <Link 
             href={`/community/question/${id}`}
-            className="text-xl lg:text-2xl font-semibold text-gray-800 hover:text-blue-500 hover:underline"
+            className="text-xl lg:text-2xl font-semibold text-gray-800 hover:text-red-500 hover:underline"
             >{title}</Link>
+            {handleCategoryRound3(category)}
             <p
                 className="text-base font-normal text-gray-600 line-clamp-2 mb-4"
             >

@@ -4,7 +4,7 @@ import { GetProjectsWithSearch } from "@/app/hook/projectRequest";
 import Error from "@/app/(white_navbar)/community/[type]/[id]/_component/Error";
 import { cookies } from "next/headers";
 
-const itemsPerpage = 2;
+const itemsPerpage = 10;
 
 async function handleGetProjects(token:string) {
     const res = await GetProjectsWithSearch(itemsPerpage, 0*itemsPerpage, "newest", "all", "", "", token)

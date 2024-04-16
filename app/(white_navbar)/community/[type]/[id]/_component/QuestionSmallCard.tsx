@@ -32,7 +32,7 @@ return (
             </div>
             <Link 
             href={`/community/question/${id}`}
-            className="textt-2xl font-semibold text-gray-800 hover:text-blue-500 hover:underline"
+            className="textt-2xl font-semibold text-gray-800 hover:text-red-500 hover:underline"
             >{title}</Link>
             <p
                 className="text-base font-normal text-gray-600 line-clamp-2 mb-4"

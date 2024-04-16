@@ -5,28 +5,24 @@ import TextAreaRef from "@/app/component/Input/TextAreaRef";
 import { Circular } from "@/app/component/Loading/Circular";
 import { InsertQuestion } from "@/app/hook/projectRequest";
 import { Project } from "@/app/hook/projectRequestType";
+import { insertCategory } from "@/app/lib/category";
 import Checkmark from "@carbon/icons-react/lib/Checkmark";
 import ChevronDownOutline from "@carbon/icons-react/lib/ChevronDownOutline";
 import { Dialog, Listbox, Transition } from "@headlessui/react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Fragment, useRef, useState } from "react";
 import toast from "react-hot-toast";
-
-const people = [
-    { name: 'Wade Cooper' },
-    { name: 'Arlene Mccoy' },
-    { name: 'Devon Webb' },
-    { name: 'Tom Cook' },
-    { name: 'Tanya Fox' },
-    { name: 'Hellen Schmidt' },
-]
 
 export default function Cpage({
 
 }: {
 
     }) {
-    const [category, setcategory] = useState(people[0])
+
+    const router = useRouter()
+
+    const [category, setcategory] = useState(insertCategory[0].name)
     const [loading, setLoading] = useState<boolean>(false)
     const [res, setRes] = useState<Project | null>(null);
 
@@ -59,7 +55,7 @@ export default function Cpage({
                 projectName,
                 "q",
                 description,
-                category.name
+                category
             )
 
             if (res.data && 'project' in res.data) {
@@ -124,7 +120,7 @@ export default function Cpage({
                                         placeholder="Select Category"
                                         // ref={projectTitleRef}
                                         readOnly={true}
-                                        value={category.name}
+                                        value={category}
                                         className="border border-gray-200 bg-gray-50 text-slate-800 w-full px-5 py-3 rounded-md min-h-[40px]"
                                     />
                                 </div>
@@ -137,14 +133,14 @@ export default function Cpage({
                                 leaveTo="opacity-0"
                             >
                                 <Listbox.Options className="absolute z-40 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
-                                    {people.map((person, personIdx) => (
+                                    {insertCategory.map((cate, i) => (
                                         <Listbox.Option
-                                            key={personIdx}
+                                            key={i}
                                             className={({ active }) =>
                                                 `relative cursor-default select-none py-2 pl-10 pr-4 ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-900'
                                                 }`
                                             }
-                                            value={person}
+                                            value={cate.name}
                                         >
                                             {({ selected }) => (
                                                 <>
@@ -152,7 +148,7 @@ export default function Cpage({
                                                         className={`block truncate ${selected ? 'font-medium' : 'font-normal'
                                                             }`}
                                                     >
-                                                        {person.name}
+                                                        {cate.name}
                                                     </span>
                                                     {selected ? (
                                                         <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-600">
@@ -237,15 +233,19 @@ export default function Cpage({
                   </div>
 
                   <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
-                    <Link
-                      href={"/community"}
-                      type="button"
+                    <div
+                    //   href={"/community"}
+                    //   type="button"
+                      onClick={() => {
+                        router.push("/community")
+                        router.refresh()
+                      }}
                       className="bg-white border py-3 px-7 h-10 flex items-center rounded-lg hover:bg-gray-50 outline-none"
                     >
                       <h6 className="text-sm font-semibold text-gray-800">
                         Community
                       </h6>
-                    </Link>
+                    </div>
                     <Link
                       href={`/community/question/${res?._id}`}
                       type="button"

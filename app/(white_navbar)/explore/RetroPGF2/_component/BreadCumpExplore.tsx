@@ -12,7 +12,7 @@ return (
     <div className="flex flex-wrap gap-2 p-2 md:p-0">
         <Link 
         href={"/community"}
-        className="text-xs font-normal text-gray-800 hover:text-blue-500 hover:underline"> Explore </Link>
+        className="text-xs font-normal text-gray-800 hover:text-red-500 hover:underline"> Explore </Link>
             <ChevronRight />
         <p className="text-xs font-normal text-gray-500"> {secondText} </p>
     </div>

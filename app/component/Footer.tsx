@@ -73,7 +73,7 @@ export default function Footer({
 
     return (
 
-        <footer className="w-full px-4 lg:px-12  mt-12">
+        <footer className="w-full px-4 lg:px-12 mt-6">
 
             {/* Mobile Footer */}
 
@@ -83,7 +83,7 @@ export default function Footer({
                     <h6 className="text-base font-normal text-gray-600">
                      © 2024 RetroPGF Hub. All rights reserved.
                     </h6>
-                    <div className="flex flex-wrap text-sm text-gray-600">
+                    <div className="flex gap-0.5 flex-wrap text-sm text-gray-600">
                         <span>This open-source project built by</span>
                         <span className="font-semibold">@Catalyzt</span>.
                     </div>
