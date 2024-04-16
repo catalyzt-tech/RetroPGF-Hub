@@ -112,7 +112,7 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
           LoadData();
         }
 
-    }, [])
+    }, [globalState.user])
     
     async function LoadData() {
         const userData = await GetCurrentUser()

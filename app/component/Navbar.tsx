@@ -5,6 +5,7 @@ import './Navbar.css'
 import Link from 'next/link'
 import { GlobalContextType, useGlobal } from '../provider/globalContext'
 import Help from '@carbon/icons-react/lib/Help'
+import MenuIcon from '@carbon/icons-react/lib/Menu'
 import { Menu, Transition } from '@headlessui/react'
 import Image from 'next/image'
 import User from '@carbon/icons-react/lib/User'
@@ -55,8 +56,6 @@ const Navbar = ({
       }).catch((error:any) => {
         console.log(error)
       });
-
-
   }
 
 
@@ -65,19 +64,21 @@ const Navbar = ({
       <Circular
       loading={loading}
       />
-      <div className={`${bgColor} ${shadow && "shadow"} relative z-20 flex items-center lg:justify-between justify-between px-8 py-2 lg:px-12 lg:py-4 h-[4.5rem] w-full`}>
+      <div className={`${bgColor} ${shadow && "shadow"} relative z-40 flex items-center lg:justify-between justify-between px-4 md:px-8 py-2 lg:px-12 lg:py-4 h-[4.5rem] w-full`}>
         <div className="flex justify-start items-center">
           <div className="mr-12">
             <Link
-              className="text-custom-red font-rubik !font-semibold"
-              href="https://optimism.io/join"
+            href={"/"}
+            >
+            <div
+              className="relative w-36 h-8 min-w-32 min-h-6 max-w-32 max-h-6 min-[300px]:min-w-36 min-[300px]:min-h-8 min-[300px]:max-w-36 min-[300px]:max-h-8"
               >
               <Image
               src={"/logo/logo.svg"}
-            alt="logo"
-            width={144}
-            height={32}
-            />
+              alt="logo"
+              fill
+              />
+            </div>
             </Link>
           </div>
 
@@ -99,7 +100,7 @@ const Navbar = ({
           <Help className="text-gray-800" size={28} />
           <Menu 
       
-      as="div" className="relative inline-block text-left">
+         as="div" className="relative inline-block text-left">
 
         <div>
           <Menu.Button className="">
@@ -195,20 +196,10 @@ const Navbar = ({
       }
 
         <div
-          className="flex lg:hidden Hamburger cursor-pointer"
+          className="flex lg:hidden items-center cursor-pointer"
           onClick={() => setOpen(true)}
         >
-          <a href="#">
-            <svg
-              fill="#424242"
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M2,4A1,1,0,0,1,3,3H21a1,1,0,0,1,0,2H3A1,1,0,0,1,2,4Zm1,9H21a1,1,0,0,0,0-2H3a1,1,0,0,0,0,2Zm0,8H21a1,1,0,0,0,0-2H3a1,1,0,0,0,0,2Z" />
-            </svg>
-          </a>
+            <MenuIcon size={24} className="fill-gray-800" />
         </div>
 
       </div>

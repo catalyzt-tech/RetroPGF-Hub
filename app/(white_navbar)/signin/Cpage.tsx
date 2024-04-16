@@ -23,7 +23,7 @@ export default function Cpage({
         if (typeof (globalState.user) === "object") {
             router.push('/');
         }
-    }, [globalState.user])
+    }, [globalState.user, router])
 
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
@@ -168,7 +168,7 @@ return (
                 </button>
 
                 <div className="flex flex-wrap gap-0.5 justify-center">
-                    <p className="text-sm font-normal text-gray-600">Don't have an account yet?</p>
+                    <p className="text-sm font-normal text-gray-600">Dont have an account yet?</p>
                     <Link
                         href={"/register"}
                         className="text-sm font-semibold text-gray-800 hover:text-blue-500 hover:underline"

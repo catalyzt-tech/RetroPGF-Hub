@@ -49,7 +49,8 @@ export default function Cpage({
             favCount: 0,
             favOrNot: false,
             feedback: "sdafadsfds",
-            githubUrl: "asdasds"
+            githubUrl: "asdasds",
+            type:"p",
         }
     })
 
@@ -224,7 +225,7 @@ export default function Cpage({
                                 ref={websiteRef}
                                 className="border border-gray-200 bg-gray-50 text-slate-800 focus:ring focus:ring-primaryRed w-full px-5 py-3 rounded-md min-h-[40px]"
                             />
-                            <h6 className="text-sm font-normal text-gray-500">Include the full URL to your project's main website.</h6>
+                            <h6 className="text-sm font-normal text-gray-500">Include the full URL to your projects main website.</h6>
                         </div>
 
                         <div className="flex flex-col gap-2.5">
