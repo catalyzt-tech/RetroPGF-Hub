@@ -86,13 +86,14 @@ export default function CardRound2({
                     {round2.map((item, i) => (
                         <SwiperSlide className="" key={i}>
                             <RetroCard2 
-                            avatar=""
                             title={item.name}
                             category={item.Category}
                             description={item.about}
                             opRecieve={item["OP Received"]}
                             round="RetroPGF 2"
                             vote={item.Vote_Recieved}
+                            icon={item.iconPath}
+                            banner={item.bannerPath}
                             />
                         </SwiperSlide>
                     ))}

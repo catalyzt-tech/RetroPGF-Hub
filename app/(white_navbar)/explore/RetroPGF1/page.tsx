@@ -3,10 +3,8 @@ import BreadCumpExplore from "./_component/BreadCumpExplore";
 import fs from 'fs'
 import path from 'path'
 import { RetroRound1 } from "./RetroType1";
+import { isLetter } from "@/app/lib/utils";
 
-function isLetter(c: string) {
-    return c.toLowerCase() !== c.toUpperCase();
-}
 
 export async function getJsonRound1(): Promise<RetroRound1[]> {
     const directoryPath = path.join(

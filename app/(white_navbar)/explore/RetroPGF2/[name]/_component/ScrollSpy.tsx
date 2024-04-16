@@ -27,7 +27,6 @@ export default function ScrollSpy({
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const sectionId = entry.target.getAttribute("id") || "Overview";
-        console.log(sectionId)
         setSections((prevSections) => ({
           ...prevSections,
           [sectionId]: entry.isIntersecting,

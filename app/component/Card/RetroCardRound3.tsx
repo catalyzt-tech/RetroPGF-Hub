@@ -7,7 +7,7 @@ import { NewCategory } from "@/app/(white_navbar)/explore/RetroPGF3/RetroType3";
 
 export default function RetroCard3({
     marginX="mx-3",
-    avatar,
+    icon,
     category,
     description,
     opRecieve,
@@ -15,11 +15,13 @@ export default function RetroCard3({
     round,
     title,
     vote,
+    banner,
 }: {
     marginX?:string;
     round?:string;
     title?:string;
-    avatar?:string;
+    icon?:string;
+    banner?:string;
     description?:string;
     category?:NewCategory;
     vote?:number;
@@ -35,10 +37,10 @@ export default function RetroCard3({
         {/* Background Image */}
         <div className="absolute top-0 left-0 w-full max-h-12 overflow-hidden">
             <Image
-            src="/random/bgPic.png"
+            src={`${banner || "/random/OP-Banner.png"}`}
             alt="background image"
             // not sure that this image background is all the same or not
-            className="-mt-20 opacity-50"
+            className="opacity-50 object-cover z-10"
             width={228}
             height={48}
             />
@@ -52,8 +54,8 @@ export default function RetroCard3({
         {/* Avatar */}
         <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0">
         <Image
-            src={avatar ? avatar : "/random/avatar.png"}
-            alt="avatar image"
+            src={icon || "/random/OP-Logo.png"}
+            alt="icon image"
             className=""
             width={48}
             height={48}

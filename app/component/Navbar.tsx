@@ -64,19 +64,21 @@ const Navbar = ({
       <Circular
       loading={loading}
       />
-      <div className={`${bgColor} ${shadow && "shadow"} relative z-40 flex items-center lg:justify-between justify-between px-8 py-2 lg:px-12 lg:py-4 h-[4.5rem] w-full`}>
+      <div className={`${bgColor} ${shadow && "shadow"} relative z-40 flex items-center lg:justify-between justify-between px-4 md:px-8 py-2 lg:px-12 lg:py-4 h-[4.5rem] w-full`}>
         <div className="flex justify-start items-center">
           <div className="mr-12">
             <Link
-              className="text-custom-red font-rubik !font-semibold"
-              href="/"
+            href={"/"}
+            >
+            <div
+              className="relative w-36 h-8 min-w-32 min-h-6 max-w-32 max-h-6 min-[300px]:min-w-36 min-[300px]:min-h-8 min-[300px]:max-w-36 min-[300px]:max-h-8"
               >
               <Image
               src={"/logo/logo.svg"}
               alt="logo"
-              width={144}
-              height={32}
+              fill
               />
+            </div>
             </Link>
           </div>
 

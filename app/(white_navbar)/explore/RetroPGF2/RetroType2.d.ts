@@ -13,6 +13,8 @@ export interface RetroRound2 {
     "Project Name": string;
     "OP Received": number;
     "Project Profile": string;
+    iconPath:string;
+    bannerPath:string;
 }
 
 export type CategoryRound2 = 'Education' | 'Tooling and utilities' | 'Infrastructure'

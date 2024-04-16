@@ -19,6 +19,7 @@ export default function ProjectTab({
     round2: RetroRound2[]
 }) {
 
+
     const searchParams = useSearchParams()
 
     const [search, setSearch] = useState("")
@@ -234,7 +235,9 @@ export default function ProjectTab({
         return c.toLowerCase() !== c.toUpperCase();
     }
 
+
     return (
+
 
         <>
         {/* // this file include
@@ -291,7 +294,8 @@ export default function ProjectTab({
                                             opRecieve={item["OP Received"]}
                                             round="2"
                                             votes={item["Vote_Recieved"]}
-                                            rank={1}
+                                            banner={item.bannerPath}
+                                            icon={item.iconPath}
                                             />
                                         </React.Fragment>
                                     ))
@@ -331,7 +335,6 @@ export default function ProjectTab({
                                     opRecieve={item["OP Received"]}
                                     round="2"
                                     votes={item.Vote_Recieved}
-                                    rank={0}
                                     />
                                 </React.Fragment>
                             ))}

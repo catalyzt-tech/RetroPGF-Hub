@@ -26,3 +26,7 @@ export function convertImageClodinary(url:string, width:number, height:number){
         return ""
     }
 }
+
+export function isLetter(c: string) {
+    return c.toLowerCase() !== c.toUpperCase();
+}

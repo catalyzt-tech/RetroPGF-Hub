@@ -43,7 +43,7 @@ export default function CardRound3({
             </div>
 
            <div className="hidden md:flex justify-between">
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2">
                 {Array.from(cateRound3).map(([category, count]) => (
                      <Link
                      href={`/explore/${title}?category=${category}`}
@@ -86,7 +86,6 @@ export default function CardRound3({
                     {round3.map((item, i) => (
                         <SwiperSlide className="" key={i}>
                             <RetroCard 
-                            avatar=""
                             title={item.displayName}
                             category={item["New Main-Category"]}
                             description={item.bio}
@@ -94,6 +93,8 @@ export default function CardRound3({
                             rank={item.rank}
                             round="RetroPGF 3"
                             vote={item.ballot}
+                            icon={item.iconPath}
+                            banner={item.bannerPath}
                             />
                         </SwiperSlide>
                     ))}

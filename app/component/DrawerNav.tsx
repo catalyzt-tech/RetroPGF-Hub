@@ -48,19 +48,21 @@ export default function DrawerNav({
               <Dialog.Panel className="w-full h-full transform overflow-hidden bg-white  text-left align-middle shadow-xl transition-all  overflow-y-auto">
                 <Dialog.Title
                   as="div"
-                  className="flex justify-between items-center h-[4.5em] px-8 py-2 lg:px-12 lg:py-4"
+                  className="flex justify-between items-center h-[4.5em] px-4 md:px-8 py-2 lg:px-12 lg:py-4"
                 >
-                 <Link
-                  className="text-custom-red font-rubik !font-semibold"
-                  href="/"
-                  >
-                  <Image
-                    src={"/logo/logo.svg"}
-                    alt="logo"
-                    width={144}
-                    height={32}
-                    />
-                </Link>
+                   <Link
+                    href={"/"}
+                    >
+                    <div
+                      className="relative w-36 h-8 min-w-32 min-h-6 max-w-32 max-h-6 min-[300px]:min-w-36 min-[300px]:min-h-8 min-[300px]:max-w-36 min-[300px]:max-h-8"
+                      >
+                      <Image
+                      src={"/logo/logo.svg"}
+                      alt="logo"
+                      fill
+                      />
+                    </div>
+                    </Link>
                   <div
                     className="cursor-pointer flex"
                     onClick={onClose}

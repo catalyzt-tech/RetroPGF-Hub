@@ -6,25 +6,23 @@ import { handleCategoryRound2, handleCategoryRound3 } from "@/app/lib/InitialMou
 import { CategoryRound2 } from "../RetroType2";
 
 export default function DynamicCard({
-    background,
     round="3",
-    avatar="",
+    icon,
+    banner,
     title="",
     description="",
     category="Education",
     votes=0,
     opRecieve=0,
-    rank=0,
 }:{
-    background?:string;
     round?:string;
-    avatar?:string;
+    icon?:string;
+    banner?:string;
     title?:string;
     description?:string;
     category?:CategoryRound2;
     votes?:number;
     opRecieve?:number;
-    rank?:number;
 })  {
 
   
@@ -36,7 +34,7 @@ return (
         {/* Background Image */}
         <div className="absolute top-0 left-0 w-full h-12 overflow-hidden">
             <Image
-            src={background || "/random/OP-Banner.png"}
+            src={banner || "/random/OP-Banner.png"}
             alt="background image"
             // Not sure about the aspect ratio, so using object-fit
             className="opacity-50 object-cover z-10"
@@ -53,8 +51,8 @@ return (
         {/* Avatar */}
         <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0 z-20">
             <Image
-                src={avatar || "/random/OP-Logo.png"}
-                alt="avatar image"
+                src={icon || "/random/OP-Logo.png"}
+                alt="icon image"
                 className=""
                 width={48}
                 height={48}

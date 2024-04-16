@@ -73,22 +73,21 @@ export default function Footer({
 
     return (
 
-        <footer className="w-full px-12  mt-12">
+        <footer className="w-full px-4 lg:px-12  mt-12">
 
             {/* Mobile Footer */}
 
-            <div className="flex lg:hidden flex-col gap-4 border-t py-4 mt-6 border-gray-100">
+            <div className="flex items-start min-[350px]:items-center lg:hidden flex-col gap-4 border-t py-4 mt-6 border-gray-100">
                 <ReturnLinkLogo />
                 <div className="">
                     <h6 className="text-base font-normal text-gray-600">
                      © 2024 RetroPGF Hub. All rights reserved.
                     </h6>
-                    <h6 className="flex gap-1 text-base font-normal text-gray-600">
-                        This open-source project built by 
-                        <p className="text-base font-semibold text-gray-600">
-                            @Catalyzt.
-                        </p>
-                    </h6>
+                    <div className="flex flex-wrap text-sm text-gray-600">
+                        <span>This open-source project built by</span>
+                        <span className="font-semibold">@Catalyzt</span>.
+                    </div>
+
                 </div>
             </div>
 

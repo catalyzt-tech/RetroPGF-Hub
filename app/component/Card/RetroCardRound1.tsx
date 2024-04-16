@@ -17,7 +17,7 @@ export function RetroCard1({
     <div className="flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[14rem] w-[14.25rem] relative mx-3">
         <div className="p-4 flex flex-col justify-start items-start gap-3 w-full h-full">
             <div className="flex flex-col gap-0.5">
-                <Link href={"/explore"} className="text-sm font-bold text-gray-800 z-30 hover:underline line-clamp-2">{title}</Link>
+                <Link href={`/explore/RetroPGF1/${title}`} className="text-sm font-bold text-gray-800 z-30 hover:underline line-clamp-2">{title}</Link>
                 <p className="text-sm font-normal text-gray-600 line-clamp-3 break-all">
                     {description}
                 </p>
