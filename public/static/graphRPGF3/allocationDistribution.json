@@ -1,0 +1,2574 @@
+[
+  {
+    "projectName": "Protocol Guild",
+    "amount": "663853.62"
+  },
+  {
+    "projectName": "go-ethereum",
+    "amount": "496896.42"
+  },
+  {
+    "projectName": "Solidity",
+    "amount": "422361.96"
+  },
+  {
+    "projectName": "Erigon",
+    "amount": "339545.72"
+  },
+  {
+    "projectName": "libp2p",
+    "amount": "298137.85"
+  },
+  {
+    "projectName": "Lighthouse",
+    "amount": "298137.85"
+  },
+  {
+    "projectName": "ethers.js",
+    "amount": "298137.85"
+  },
+  {
+    "projectName": "Hardhat",
+    "amount": "280249.58"
+  },
+  {
+    "projectName": "Test in Prod",
+    "amount": "273293.03"
+  },
+  {
+    "projectName": "ETHGlobal",
+    "amount": "253848.98"
+  },
+  {
+    "projectName": "Vyper",
+    "amount": "248448.21"
+  },
+  {
+    "projectName": "Nethermind",
+    "amount": "248448.21"
+  },
+  {
+    "projectName": "Remix Project",
+    "amount": "248448.21"
+  },
+  {
+    "projectName": "Account Abstraction - ERC-4337",
+    "amount": "248448.21"
+  },
+  {
+    "projectName": "Dappnode",
+    "amount": "248448.21"
+  },
+  {
+    "projectName": "DefiLlama",
+    "amount": "248448.21"
+  },
+  {
+    "projectName": "Web3js",
+    "amount": "248448.21"
+  },
+  {
+    "projectName": "Lodestar",
+    "amount": "248448.21"
+  },
+  {
+    "projectName": "OpenZeppelin Contracts",
+    "amount": "248448.21"
+  },
+  {
+    "projectName": "🏰 BuidlGuidl",
+    "amount": "227602.91"
+  },
+  {
+    "projectName": "IPFS",
+    "amount": "225861.29"
+  },
+  {
+    "projectName": "beaconcha.in",
+    "amount": "223603.39"
+  },
+  {
+    "projectName": "Ethereum Attestation Service",
+    "amount": "219757.63"
+  },
+  {
+    "projectName": "Agora",
+    "amount": "212309.93"
+  },
+  {
+    "projectName": "Wagmi / Viem",
+    "amount": "198758.57"
+  },
+  {
+    "projectName": "Sourcify",
+    "amount": "198758.57"
+  },
+  {
+    "projectName": "L2BEAT 💗",
+    "amount": "198758.57"
+  },
+  {
+    "projectName": "Blockscout Block Explorer",
+    "amount": "198758.57"
+  },
+  {
+    "projectName": "foundry",
+    "amount": "198758.57"
+  },
+  {
+    "projectName": "Snapshot",
+    "amount": "198758.57"
+  },
+  {
+    "projectName": "Nimbus",
+    "amount": "198758.57"
+  },
+  {
+    "projectName": "revm",
+    "amount": "198758.57"
+  },
+  {
+    "projectName": "Lattice (OPCraft & MUD)",
+    "amount": "195280.29"
+  },
+  {
+    "projectName": "Gitcoin",
+    "amount": "176398.23"
+  },
+  {
+    "projectName": "Otterscan",
+    "amount": "170364.91"
+  },
+  {
+    "projectName": "ZachXBT",
+    "amount": "149455.01"
+  },
+  {
+    "projectName": "Giveth",
+    "amount": "149068.93"
+  },
+  {
+    "projectName": "OP Reth",
+    "amount": "149068.93"
+  },
+  {
+    "projectName": "Revoke.cash",
+    "amount": "149068.93"
+  },
+  {
+    "projectName": "rotki",
+    "amount": "149068.93"
+  },
+  {
+    "projectName": "Mirror",
+    "amount": "138983.92"
+  },
+  {
+    "projectName": "TrueBlocks / Unchained Index",
+    "amount": "136646.52"
+  },
+  {
+    "projectName": "Ethereum on ARM",
+    "amount": "133449.98"
+  },
+  {
+    "projectName": "Immunefi",
+    "amount": "129193.07"
+  },
+  {
+    "projectName": "Open Source Observer",
+    "amount": "127914.06"
+  },
+  {
+    "projectName": "TypeChain / DethCode",
+    "amount": "124224.11"
+  },
+  {
+    "projectName": "Department of Decentralization",
+    "amount": "124224.11"
+  },
+  {
+    "projectName": "Ethereum Cat Herders",
+    "amount": "124224.11"
+  },
+  {
+    "projectName": "Frame",
+    "amount": "123541.37"
+  },
+  {
+    "projectName": "Slither",
+    "amount": "121739.62"
+  },
+  {
+    "projectName": "BasePaint",
+    "amount": "115058.35"
+  },
+  {
+    "projectName": "Small Brain Games",
+    "amount": "114285.18"
+  },
+  {
+    "projectName": "CharmVerse",
+    "amount": "109317.21"
+  },
+  {
+    "projectName": "Aerodrome Finance",
+    "amount": "104348.25"
+  },
+  {
+    "projectName": "Kwenta",
+    "amount": "99876.18"
+  },
+  {
+    "projectName": "Secureum",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "StreamETH",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "eth.limo",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Optimism Ambassadors",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "The Ethernaut",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Synpress",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Metagov",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "EthernautDAO",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Tally",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "ApeWorX LTD",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Soul Wallet",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Fe",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Yearn",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "UseDApp",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Synthetix",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "P256Verifier",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Coordinape",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "ZORA",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "RainbowKit",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Ipsilon",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Zuzalu",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Cannon",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Ronan Sandford",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Wallet Abstraction",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Ultra Sound Relay",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Optimistic Indexer",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Kernel",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Velodrome",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Candide",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Vectorized",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Gitcoin Passport",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Lyra Finance",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "CryptoZombies",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Blocknative | Web3 Onboard",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Sushi",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Guild.xyz",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "EthereumETL",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Optimism Translators",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Waffle",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Blobscan",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Support NERDs",
+    "amount": "99379.28"
+  },
+  {
+    "projectName": "Aestus Relay",
+    "amount": "97294.31"
+  },
+  {
+    "projectName": "Pairwise",
+    "amount": "96208.59"
+  },
+  {
+    "projectName": "WhatsABI",
+    "amount": "94410.32"
+  },
+  {
+    "projectName": "Hypercerts Foundation",
+    "amount": "94410.32"
+  },
+  {
+    "projectName": "Funding the Commons",
+    "amount": "92656.28"
+  },
+  {
+    "projectName": "Prettier Solidity",
+    "amount": "92656.28"
+  },
+  {
+    "projectName": "Splits",
+    "amount": "92167.83"
+  },
+  {
+    "projectName": "OP Governance Analytics Dashboard",
+    "amount": "90435.15"
+  },
+  {
+    "projectName": "draper",
+    "amount": "89441.36"
+  },
+  {
+    "projectName": "Conduit",
+    "amount": "89441.36"
+  },
+  {
+    "projectName": "Zero Knowledge Podcast",
+    "amount": "89441.36"
+  },
+  {
+    "projectName": "Galxe",
+    "amount": "85313.14"
+  },
+  {
+    "projectName": "PatrickAlphaC",
+    "amount": "84472.39"
+  },
+  {
+    "projectName": "ETHSafari 2023",
+    "amount": "82229.90"
+  },
+  {
+    "projectName": "Keccak hashing",
+    "amount": "81987.91"
+  },
+  {
+    "projectName": "Sonne Finance",
+    "amount": "81987.91"
+  },
+  {
+    "projectName": "EthStaker",
+    "amount": "81987.91"
+  },
+  {
+    "projectName": "LexDAO",
+    "amount": "79503.43"
+  },
+  {
+    "projectName": "Hats Protocol",
+    "amount": "79503.43"
+  },
+  {
+    "projectName": "Holograph",
+    "amount": "79503.43"
+  },
+  {
+    "projectName": "Alloy",
+    "amount": "77515.84"
+  },
+  {
+    "projectName": "growthepie",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "Sassal.eth",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "ChainList",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "DappRadar",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "Beam Wallet LLC",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "RabbitHole",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "AW House/Komorebi's Hacker House",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "Socket",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "Tenderly",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "Rainbow Wallet",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "Gelato",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "Endaoment",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "ethOS",
+    "amount": "76445.53"
+  },
+  {
+    "projectName": "ERC4337 Smart Accounts Dune Dashboard",
+    "amount": "75490.00"
+  },
+  {
+    "projectName": "Pyth Network",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "WASD",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "roll-op",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "Umbra",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "JiffyScan",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "Forum",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "BrightID",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "The Red Guild",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "Clave (formerly Opclave)",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "Crust Network",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "NiceNode",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "Alchemy",
+    "amount": "74534.46"
+  },
+  {
+    "projectName": "Paco Bytes",
+    "amount": "73252.54"
+  },
+  {
+    "projectName": "Impersonator",
+    "amount": "72511.10"
+  },
+  {
+    "projectName": "polynya",
+    "amount": "72049.98"
+  },
+  {
+    "projectName": "NumbaNERDs",
+    "amount": "69565.50"
+  },
+  {
+    "projectName": "Commons Stack",
+    "amount": "69565.50"
+  },
+  {
+    "projectName": "Karma",
+    "amount": "69565.50"
+  },
+  {
+    "projectName": "Edge & Node / The Graph",
+    "amount": "67081.02"
+  },
+  {
+    "projectName": "Hardhat Tracer",
+    "amount": "66145.36"
+  },
+  {
+    "projectName": "Bware Labs",
+    "amount": "65585.86"
+  },
+  {
+    "projectName": "Moso",
+    "amount": "65585.86"
+  },
+  {
+    "projectName": "PR0",
+    "amount": "65585.86"
+  },
+  {
+    "projectName": "Holonym",
+    "amount": "64596.53"
+  },
+  {
+    "projectName": "Superscan",
+    "amount": "64596.53"
+  },
+  {
+    "projectName": "blst Cryptography Library",
+    "amount": "64596.53"
+  },
+  {
+    "projectName": "Velocimeter",
+    "amount": "63335.41"
+  },
+  {
+    "projectName": "grapebaba",
+    "amount": "62608.95"
+  },
+  {
+    "projectName": "Upnode Deploy | OP Stack Deployment UI",
+    "amount": "62112.05"
+  },
+  {
+    "projectName": "Fire",
+    "amount": "62112.05"
+  },
+  {
+    "projectName": "State Channels",
+    "amount": "62112.05"
+  },
+  {
+    "projectName": "Pocket Network",
+    "amount": "61771.18"
+  },
+  {
+    "projectName": "Patrick Workman",
+    "amount": "60616.89"
+  },
+  {
+    "projectName": "ShapeShift DAO",
+    "amount": "59627.57"
+  },
+  {
+    "projectName": "Seamless Protocol",
+    "amount": "59627.57"
+  },
+  {
+    "projectName": "Token Engineering Commons",
+    "amount": "59627.57"
+  },
+  {
+    "projectName": "Collab.Land",
+    "amount": "59627.57"
+  },
+  {
+    "projectName": "Praise",
+    "amount": "59627.57"
+  },
+  {
+    "projectName": "Lore",
+    "amount": "59627.57"
+  },
+  {
+    "projectName": "Week in Ethereum News",
+    "amount": "59627.57"
+  },
+  {
+    "projectName": "Public Goods Grant Management",
+    "amount": "58674.52"
+  },
+  {
+    "projectName": "abi-to-sol",
+    "amount": "58132.41"
+  },
+  {
+    "projectName": "Wonderland",
+    "amount": "57218.12"
+  },
+  {
+    "projectName": "Index Supply",
+    "amount": "57143.09"
+  },
+  {
+    "projectName": "Decent.xyz",
+    "amount": "56637.25"
+  },
+  {
+    "projectName": "LlamaFolio",
+    "amount": "56038.49"
+  },
+  {
+    "projectName": "Hedgey",
+    "amount": "55430.78"
+  },
+  {
+    "projectName": "Moonwell",
+    "amount": "54658.61"
+  },
+  {
+    "projectName": "Ultra Sound Money",
+    "amount": "54658.61"
+  },
+  {
+    "projectName": "Jessy's Hacker House",
+    "amount": "54049.41"
+  },
+  {
+    "projectName": "RadicalxChange Foundation",
+    "amount": "52755.99"
+  },
+  {
+    "projectName": "Arbiter",
+    "amount": "52174.12"
+  },
+  {
+    "projectName": "Coop Records Music",
+    "amount": "51677.23"
+  },
+  {
+    "projectName": "Equalizer",
+    "amount": "50913.00"
+  },
+  {
+    "projectName": "TechNERD Program",
+    "amount": "50461.82"
+  },
+  {
+    "projectName": "Xofee",
+    "amount": "50076.23"
+  },
+  {
+    "projectName": "Public Assembly",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Ponder",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Ethereum France",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Token Engineering Academy",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "WTF Academy",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Alex Harley",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "🐍 snekmate",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "RetroPGF Community",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Gaslite",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Builder Protocol",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Clique",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Grateful",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "crate crypto",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Spearbit",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Diego",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "The Noun Square Media Collective",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Optimism Grants Council Season 4",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Ankr",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "DeepDAO",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Boardroom",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Giveth Web3 House",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Flipside Crypto",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Retrolist | RetroPGF Rubric-based List Creation UI",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Chronicle Labs",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "RADAR",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Greg's Farcaster Projects",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "wslyvh",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Wallet Guard",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "ETHBarcelona",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Covalent",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Node Guardians",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Layer3",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Based Nouns",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "DAC on OP Stack",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Odos",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Clipper",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "IC3",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "anotherblock",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Bonding Curve Research Group",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "LearnWeb3",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Delegate",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "EZKL",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "OptiNames | ENS on Optimism 🔴",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "go-ethereum-hdwallet",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Synapse DAO",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Antoine",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "IDriss",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Hop DAO",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Public Nouns",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Frens",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "⚡️ TurboETH",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "ChainPatrol - Real Time Security protecting the OP Collective",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "cryo",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Sphinx (formerly ChugSplash)",
+    "amount": "49689.64"
+  },
+  {
+    "projectName": "Public HAUS",
+    "amount": "49197.71"
+  },
+  {
+    "projectName": "DackieSwap",
+    "amount": "47956.47"
+  },
+  {
+    "projectName": "Airstack",
+    "amount": "47956.47"
+  },
+  {
+    "projectName": "Optimism Community Governance Calls (Michael)",
+    "amount": "47702.06"
+  },
+  {
+    "projectName": "Cannon-rs",
+    "amount": "47702.06"
+  },
+  {
+    "projectName": "LauNaMu",
+    "amount": "46328.63"
+  },
+  {
+    "projectName": "EtherScore",
+    "amount": "46223.29"
+  },
+  {
+    "projectName": "Rollup.codes",
+    "amount": "46083.66"
+  },
+  {
+    "projectName": "Flexible Voting",
+    "amount": "44720.68"
+  },
+  {
+    "projectName": "RetroPGF Hub",
+    "amount": "44720.68"
+  },
+  {
+    "projectName": "OpenOcean",
+    "amount": "44720.68"
+  },
+  {
+    "projectName": "GasHawk",
+    "amount": "44720.68"
+  },
+  {
+    "projectName": "Token Terminal",
+    "amount": "42987.50"
+  },
+  {
+    "projectName": "Grandine",
+    "amount": "42236.20"
+  },
+  {
+    "projectName": "Defi-lab.xyz",
+    "amount": "40084.63"
+  },
+  {
+    "projectName": "Wildcards Protocol",
+    "amount": "39751.71"
+  },
+  {
+    "projectName": "Dapp-Learning",
+    "amount": "39751.71"
+  },
+  {
+    "projectName": "Synthetix IPFS Node",
+    "amount": "39751.71"
+  },
+  {
+    "projectName": "Buildooor",
+    "amount": "39670.22"
+  },
+  {
+    "projectName": "Venom & Fang",
+    "amount": "39670.22"
+  },
+  {
+    "projectName": "Dasy",
+    "amount": "38548.73"
+  },
+  {
+    "projectName": "Blockhead: track/visualize/explore all of crypto/DeFi/web3 in ONE interface!",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "Launchcaster",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "Iggy Social - Web3 Social for DAOs",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "Across Protocol",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "Interface",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "Surreal",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "Archly",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "Cielo",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "WOOFi",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "rhino.fi",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "LandTorn - Lorak",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "indexed.xyz",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "The Opimist",
+    "amount": "38223.26"
+  },
+  {
+    "projectName": "PWN DAO",
+    "amount": "37267.23"
+  },
+  {
+    "projectName": "EIP-4824/ DAOstar",
+    "amount": "37214.56"
+  },
+  {
+    "projectName": "GoPlus Security",
+    "amount": "37023.75"
+  },
+  {
+    "projectName": "CryptoStats & CryptoFees.info",
+    "amount": "35451.08"
+  },
+  {
+    "projectName": "Another World",
+    "amount": "34782.75"
+  },
+  {
+    "projectName": "Mosaic",
+    "amount": "34782.75"
+  },
+  {
+    "projectName": "solidity-analyzer",
+    "amount": "34782.75"
+  },
+  {
+    "projectName": "Vaults.fyi",
+    "amount": "34175.05"
+  },
+  {
+    "projectName": "Crowdmuse",
+    "amount": "32795.16"
+  },
+  {
+    "projectName": "hildobby",
+    "amount": "32298.27"
+  },
+  {
+    "projectName": "BMX by Morphex",
+    "amount": "31801.37"
+  },
+  {
+    "projectName": "Geo Web",
+    "amount": "31801.37"
+  },
+  {
+    "projectName": "Llama Risk",
+    "amount": "30479.63"
+  },
+  {
+    "projectName": "Revert",
+    "amount": "30479.63"
+  },
+  {
+    "projectName": "Optimism Prices Contracts",
+    "amount": "30297.76"
+  },
+  {
+    "projectName": "CrossAngle (“Xangle”)",
+    "amount": "30297.76"
+  },
+  {
+    "projectName": "Optimism Grant Analytics: Grant3",
+    "amount": "30055.77"
+  },
+  {
+    "projectName": "ITU Blockchain",
+    "amount": "29813.79"
+  },
+  {
+    "projectName": "dm3 protocol.",
+    "amount": "29813.79"
+  },
+  {
+    "projectName": "joohhnnn",
+    "amount": "29813.79"
+  },
+  {
+    "projectName": "Optimism Grants Changelog",
+    "amount": "29813.79"
+  },
+  {
+    "projectName": "Superchain Eco",
+    "amount": "29813.79"
+  },
+  {
+    "projectName": "Optimystics",
+    "amount": "29813.79"
+  },
+  {
+    "projectName": "Web3bridge",
+    "amount": "28819.99"
+  },
+  {
+    "projectName": "Kiwi News",
+    "amount": "28318.13"
+  },
+  {
+    "projectName": "Unitap",
+    "amount": "28318.13"
+  },
+  {
+    "projectName": "AyaHQ",
+    "amount": "28291.29"
+  },
+  {
+    "projectName": "Tokepad",
+    "amount": "28179.49"
+  },
+  {
+    "projectName": "LXDAO",
+    "amount": "27826.20"
+  },
+  {
+    "projectName": "Copin.io",
+    "amount": "27826.20"
+  },
+  {
+    "projectName": "Andrew Hong (ilemi)",
+    "amount": "27544.96"
+  },
+  {
+    "projectName": "Faina",
+    "amount": "27329.30"
+  },
+  {
+    "projectName": "Gravity DAO",
+    "amount": "27329.30"
+  },
+  {
+    "projectName": "Summer of Protocols",
+    "amount": "27329.30"
+  },
+  {
+    "projectName": "Mechanism Institute",
+    "amount": "27329.30"
+  },
+  {
+    "projectName": "MetricsDAO",
+    "amount": "26709.18"
+  },
+  {
+    "projectName": "ETH Daily (OP News)",
+    "amount": "25838.61"
+  },
+  {
+    "projectName": "Subli",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "Sweetman",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "Eventcaster",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "Zengo: Decentralized Budget",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "Inverter Network",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "MultiBaas blockchain middleware",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "Kromatika Finance",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "FOAM",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "Baseswap",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "Josh | The Blockchain Socialist",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "Messari",
+    "amount": "24844.82"
+  },
+  {
+    "projectName": "0xSalman",
+    "amount": "24790.16"
+  },
+  {
+    "projectName": "Redacted Research",
+    "amount": "24601.34"
+  },
+  {
+    "projectName": "Pheasant Network",
+    "amount": "24579.48"
+  },
+  {
+    "projectName": "Ethereum Mexico",
+    "amount": "24357.86"
+  },
+  {
+    "projectName": "Synapse Labs",
+    "amount": "24357.86"
+  },
+  {
+    "projectName": "0xs34n",
+    "amount": "24357.86"
+  },
+  {
+    "projectName": "Infinity Wallet",
+    "amount": "24357.86"
+  },
+  {
+    "projectName": "Bankless Academy",
+    "amount": "24357.86"
+  },
+  {
+    "projectName": "flink",
+    "amount": "24357.86"
+  },
+  {
+    "projectName": "Brichis",
+    "amount": "24357.86"
+  },
+  {
+    "projectName": "0xKhmer",
+    "amount": "23807.30"
+  },
+  {
+    "projectName": "ETHAccra",
+    "amount": "23607.55"
+  },
+  {
+    "projectName": "Bankless DAO",
+    "amount": "23164.32"
+  },
+  {
+    "projectName": "Attest Fest",
+    "amount": "22857.24"
+  },
+  {
+    "projectName": "Invest in Music",
+    "amount": "22360.34"
+  },
+  {
+    "projectName": "GreenPill Network",
+    "amount": "22360.34"
+  },
+  {
+    "projectName": "ERC-6551 Tooling",
+    "amount": "22116.86"
+  },
+  {
+    "projectName": "Marko",
+    "amount": "22116.86"
+  },
+  {
+    "projectName": "Opti.domains | Connecting Web2&3 with ENS + Attestation",
+    "amount": "22116.86"
+  },
+  {
+    "projectName": "VitaDAO",
+    "amount": "22116.86"
+  },
+  {
+    "projectName": "Accessible Education for Web3 Public Goods Changemakers",
+    "amount": "22116.86"
+  },
+  {
+    "projectName": "Smart Onboarding SDK",
+    "amount": "22116.86"
+  },
+  {
+    "projectName": "European Crypto Initiative",
+    "amount": "21905.68"
+  },
+  {
+    "projectName": "Taxman: The Web3 Income Tax Helper",
+    "amount": "21371.52"
+  },
+  {
+    "projectName": "HER LATAM _ Optimistas Brillando en Blockchain",
+    "amount": "21366.55"
+  },
+  {
+    "projectName": "Revolte",
+    "amount": "20648.03"
+  },
+  {
+    "projectName": "valio.xyz",
+    "amount": "20551.64"
+  },
+  {
+    "projectName": "Remix CC",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Parsec Finance",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Optimism Resource Center",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Optimism University",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "SEED Latam",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "RegenScore",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "LATASHÁ",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Slugs",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "SpaghettETH",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Ethereum Lima",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Pin Save - decentralized Pinterest",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Reno",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "WakeUp Labs",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Titanoboa",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Yoki Finance",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Protofire Blockchain Learning Path",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Web3ForGood",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Optimism Guide",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Newtro Arts",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "1W3",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "webOfTrust",
+    "amount": "19875.86"
+  },
+  {
+    "projectName": "Proof of Integrity",
+    "amount": "19305.92"
+  },
+  {
+    "projectName": "Gov",
+    "amount": "18471.13"
+  },
+  {
+    "projectName": "DeFi Africa",
+    "amount": "18429.39"
+  },
+  {
+    "projectName": "Ivan Molto",
+    "amount": "18236.10"
+  },
+  {
+    "projectName": "Crypto Sapiens",
+    "amount": "17888.27"
+  },
+  {
+    "projectName": "Ethereum Colombia",
+    "amount": "17888.27"
+  },
+  {
+    "projectName": "Keyring",
+    "amount": "17715.35"
+  },
+  {
+    "projectName": "simple-optimism-node (Maintaining my own fork)",
+    "amount": "17391.37"
+  },
+  {
+    "projectName": "Kairos Research",
+    "amount": "17333.73"
+  },
+  {
+    "projectName": "raho & tnorm",
+    "amount": "17189.63"
+  },
+  {
+    "projectName": "criptomommy",
+    "amount": "17142.93"
+  },
+  {
+    "projectName": "EthereansOS",
+    "amount": "16894.48"
+  },
+  {
+    "projectName": "JobStash",
+    "amount": "16496.96"
+  },
+  {
+    "projectName": "Web3xplorer",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Gadgeteer (nanobro)",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Carlos Melgar",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Rollup Economics Dune Spell",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Modular Crypto",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "sorryvrerror",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Lyra Research Collective",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Cryptoversidad",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "ReFi Medellín",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Optimism Español",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Kredeum NFTs Factory",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Republik Rupiah",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Bankless Africa",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "far.quest",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "MrCrypto Arabic",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Crypto Commons Association",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Eth-Volcano",
+    "amount": "14906.89"
+  },
+  {
+    "projectName": "Randomness Ceremony",
+    "amount": "14820.93"
+  },
+  {
+    "projectName": "Polynomial Bytes",
+    "amount": "13373.47"
+  },
+  {
+    "projectName": "RareSkills Book of Zero Knowledge Proofs",
+    "amount": "12697.69"
+  },
+  {
+    "projectName": "JEFE TOKEN",
+    "amount": "12422.41"
+  },
+  {
+    "projectName": "Bored Town NFT art community",
+    "amount": "12422.41"
+  },
+  {
+    "projectName": "FilosofiaCodigo",
+    "amount": "12422.41"
+  },
+  {
+    "projectName": "Fractal Visions",
+    "amount": "12422.41"
+  },
+  {
+    "projectName": "CryptoConexión",
+    "amount": "12422.41"
+  },
+  {
+    "projectName": "Solow 🐽",
+    "amount": "12230.61"
+  },
+  {
+    "projectName": "zerokn0wledge",
+    "amount": "11580.67"
+  },
+  {
+    "projectName": "OptiChads",
+    "amount": "11428.62"
+  },
+  {
+    "projectName": "OP Security Council Rehearsal Beta Testers",
+    "amount": "11180.17"
+  },
+  {
+    "projectName": "Optimism Vision Reservoir",
+    "amount": "10931.72"
+  },
+  {
+    "projectName": "Bankless Publishing",
+    "amount": "10931.72"
+  },
+  {
+    "projectName": "Blockchain na Escola",
+    "amount": "10883.03"
+  },
+  {
+    "projectName": "Optimism Türkiye",
+    "amount": "10448.74"
+  },
+  {
+    "projectName": "OurNetwork",
+    "amount": "10120.79"
+  },
+  {
+    "projectName": "Learning about OP through Gitcoin Grants",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "OPChainList",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "DeSchool",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Inbest Program",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Andino - Talent in technology",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "satorrr",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "MarcoV",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "DeFI Saint",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Rodrigo NuñΞz",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Cryptosquare",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Thesleeper.eth Thai OP Educator",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "CryptoMage",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Cryptomind Research",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Layer 2 Weekly Roundup",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Cardo",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Divergent",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "jordanmmck",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "bh2smith",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Metagals",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "T2LATAM",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Awesome Optimism",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Taz",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Definomics labs",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Espacio Cripto",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "Modular Media",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "donnoh.eth",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "ODTU Blockchain",
+    "amount": "9937.93"
+  },
+  {
+    "projectName": "0xDeFiTH",
+    "amount": "8832.83"
+  },
+  {
+    "projectName": "CII",
+    "amount": "8447.24"
+  },
+  {
+    "projectName": "GiveStation (youbuidl)",
+    "amount": "7453.45"
+  },
+  {
+    "projectName": "Optimism_CIS",
+    "amount": "7453.45"
+  },
+  {
+    "projectName": "ATK",
+    "amount": "6708.10"
+  },
+  {
+    "projectName": "Bankless Japan",
+    "amount": "6637.54"
+  },
+  {
+    "projectName": "Bankless Malayalam",
+    "amount": "6459.65"
+  },
+  {
+    "projectName": "daboyshine",
+    "amount": "5962.76"
+  },
+  {
+    "projectName": "Mrfti",
+    "amount": "5128.96"
+  },
+  {
+    "projectName": "XomNFT",
+    "amount": "5128.96"
+  },
+  {
+    "projectName": "KudasaiJP",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Onboard en Perú Optimistas e Indexer",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "KManuS88",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Findcaster",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "cryptolawyer",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "MyFirstLayer2",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Doris Protocol",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Xanny",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "First NFT Agency",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "The Rollup",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "ZEFIRIUM",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "geleeroyale",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Pidgin Parlour",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Hitasyurek",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Cryptoast",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "International Media Nodes (IMN)",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "BanklessUA",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Banklessadria",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Revelo Intel",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Alpha Insiders",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Castle Capital",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "DeFi France",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Bedrock Contracts Architecture Diagram",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "OptimismArabia",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Bankless DAO Magyar ( Hungarian )",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Bankless Bengali",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "BanklessDAO Turkish",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Encriptados",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "ilyessghz",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Nacion Bankless",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "web3made",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "RoOptimism",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "ruslanklinkov",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "CryptoDuck",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Kaito/CoffeeTimes",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Basic course in blockchain and crypto literacy",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Blocktrend (區塊勢)",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "ProMint",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "BitcoinAddict Thailand",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "Defy Foundation",
+    "amount": "4968.96"
+  },
+  {
+    "projectName": "KryptoSpace",
+    "amount": "4223.62"
+  },
+  {
+    "projectName": "Cryptola",
+    "amount": "2732.93"
+  },
+  {
+    "projectName": "Lemon",
+    "amount": "2732.93"
+  },
+  {
+    "projectName": "Peter Priew Sommon",
+    "amount": "1987.59"
+  },
+  {
+    "projectName": "Bob",
+    "amount": "1987.59"
+  },
+  {
+    "projectName": "OptimismCIS",
+    "amount": "1987.59"
+  },
+  {
+    "projectName": "sunce86",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Paul Burg",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Admiano",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "markg85",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Grappa Finance",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Ospace Project",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Optimism AI",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Onchain Media Enthusiast",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "QuantumFair",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "IceBreak-R",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Decentraclasses",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "The Optimism Superchain Roundup",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "UNWA",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "DeFi Declassified (OptiNauts NFT collection)",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "dudedodut",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Webacy",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "UTU",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "APAC DAO",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "ACryptoS",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Travenesia",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Client Side Proofs",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Ivan on Tech",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "prego",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "banterlytics",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "jaxcoder",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "MesoReefDAO",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Interport Finance",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Duct Tape",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Sinjun",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Base Punk",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "L2 Planet",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Seedle",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "FA40Ziv",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Crew",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Onchain Postcard",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "The Blockchain Report",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Raiden",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Web3Native",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "NFTEarth",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Hope: A Curated AI Assistant for the Optimism Ecosystem",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "OpTracker",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Fugu Works",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "DecentrAgora",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Onchain Reads",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Optimistic Academy",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Bress",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "BunnyAI",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Crypto Fundraising",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "coinman",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Artemis Analytics",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Chaineye",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "6551 Studio",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "gang",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "CompareNodes",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "yAcademy/yAudit",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Blocktorch",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Vue Dapp",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Rainie",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Apetimism Launchpad",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Eternal Garden: ORIGINS",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Arkham",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "dForce",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Pods",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Perelyn",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Validato",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "ERC1155 Bridge",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Coinbold",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Donate3",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "IntoTheBlock Optimism Analytics",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "EGG 🥚 RECORDS",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Refi Phangan",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "EVM.Finance",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Private Retrieval Fund",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Brian Kim",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Thank Optimism | by ThriveCoin",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "AsymmetricDefi",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Defigourmet",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "AyohTunde",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Mac Budkowski",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Syke",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Mike-Alphaday",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "NingNing",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "LNRZ",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Namespace",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "ARPA Randcast",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "arabianhorses",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Nodies DLB",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Optiland Quests",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "monaditar",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Golden Boys (GOLD)",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "The Open X Project",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Mirror Curator DAO",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "borderless",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Verso",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "The Rug",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "MaitreSarce",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Joe",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "UXUY",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Blockchain_Space",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "ghostlinkz",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "DRAMA",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "mehran @ castle",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "c2ba",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "UniDex",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Squirtle0x",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "SupraOracles",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Coinpassport",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Tockable.xyz",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "API3 DAO",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Spring Zhang",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Ryan Berckmans",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Stable.fish",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "JustCause",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Apetimism",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Blue Norva",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Downstream",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Merkly",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Cryptotesters",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Picodes",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "BlockchainOAU",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Layer2News",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Thumbs Up",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "EIP Fun",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "r72.fi",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "OptimismGuru",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "supernova",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "zenbit.eth",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "OP Friday Twitter Thread Translation Contest",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Unruggable Names",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "vrypan",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Kristoph Galland",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "herocast",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Proofivy",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "DevRel Uni",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "DexKit",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Gajesh Naik",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Hummingbot",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "VMEX Finance",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Bio.xyz",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Ether.actor",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "Woosh",
+    "amount": "0.00"
+  },
+  {
+    "projectName": "simple8720",
+    "amount": "0.00"
+  }
+]

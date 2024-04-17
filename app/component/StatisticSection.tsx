@@ -1,6 +1,8 @@
 import StatsBox from '@/app/component/Statistic/StatsBox'
 import BallotDistributionChart from '@/app/component/Statistic/BallotDistributionChart'
 import BallotEachCategory from '@/app/component/Statistic/BallotEachCategory'
+import TypeOfProject from '@/app/component/Statistic/TypeOfProject'
+import AllocationDistribution from '@/app/component/Statistic/AllocationDistribution'
 import { ArrowDown, ArrowUp, Star, Growth, Rocket } from '@carbon/icons-react'
 import { FC } from 'react'
 
@@ -68,8 +70,10 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
           ))}
       </div>
       <div className="flex flex-wrap mt-8 gap-y-3">
-        <BallotDistributionChart />
+        <AllocationDistribution />
         <BallotEachCategory />
+        <BallotDistributionChart />
+        <TypeOfProject />
       </div>
     </>
   )

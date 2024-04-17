@@ -1,7 +1,8 @@
 import Highchart from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import data from '@/public/static/graphRPGF3/ballotDistribution.json'
-const BallotDistributionChart = () => {
+import { FC } from 'react'
+const BallotDistributionChart: FC = () => {
   const ballotDataset: number[] = data as number[]
   const option = {
     chart: {

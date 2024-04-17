@@ -1,15 +1,21 @@
 import Highchart from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import data from '@/public/static/graphRPGF3/ballotEachCategory.json'
+import { FC } from 'react'
+const BallotEachCategory: FC = () => {
+  let { opStack, collectiveGovernance, developerEcosystem, endUserExperience } =
+    data
 
-const BallotEachCategory = () => {
-  const {
-    opStack,
-    collectiveGovernance,
-    developerEcosystem,
-    endUserExperience,
-  } = data
-
+  opStack = opStack.map((item: number) => Number(item.toFixed(2)))
+  collectiveGovernance = collectiveGovernance.map((item: number) =>
+    Number(item.toFixed(2))
+  )
+  developerEcosystem = developerEcosystem.map((item: number) =>
+    Number(item.toFixed(2))
+  )
+  endUserExperience = endUserExperience.map((item: number) =>
+    Number(item.toFixed(2))
+  )
   const option = {
     chart: {
       type: 'column',
@@ -41,7 +47,7 @@ const BallotEachCategory = () => {
       },
     },
     tooltip: {
-      valueSuffix: ' Ballots Included',
+      valueSuffix: ' Ballots',
     },
     plotOptions: {
       column: {
