@@ -1,13 +1,15 @@
 import StatsBox from '@/app/component/Statistic/StatsBox'
+import BallotDistributionChart from '@/app/component/Statistic/BallotDistributionChart'
+import BallotEachCategory from '@/app/component/Statistic/BallotEachCategory'
 import { ArrowDown, ArrowUp, Star, Growth, Rocket } from '@carbon/icons-react'
 import { FC } from 'react'
-const StatisticSection: FC<{ data: any; round: number }> = ({
-  data,
-  round,
-}: {
+
+interface StatisticProps {
   data: any
   round: number
-}) => {
+}
+
+const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
   const round1 = [
     {
       title: 'Min Ballot 1',
@@ -50,13 +52,12 @@ const StatisticSection: FC<{ data: any; round: number }> = ({
       icon: <Growth size={25} />,
     },
   ]
-  console.log(round)
+  console.log(data)
   return (
     <>
-      <div className="text-xl font-bold ">RetroPGF 3 Analysis</div>
-
-      <div className="flex flex-row flex-wrap gap-5 mt-5">
-        {round3 &&
+      {/* <div className="text-xl font-bold ">RetroPGF 3 Analysis</div> */}
+      <div className="flex flex-row flex-wrap gap-5 mt-2">
+        {round === 3 &&
           round3.map((item, index) => (
             <StatsBox
               key={index}
@@ -65,6 +66,10 @@ const StatisticSection: FC<{ data: any; round: number }> = ({
               title={item.title}
             />
           ))}
+      </div>
+      <div className="flex mt-8 gap-y-3">
+        <BallotDistributionChart />
+        <BallotEachCategory />
       </div>
     </>
   )
