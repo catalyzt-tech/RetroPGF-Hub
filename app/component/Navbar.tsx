@@ -161,25 +161,27 @@ const Navbar = ({
                 <p className="text-sm font-normal">Account</p>
               </div> */}
 
-              <Link 
-              href={"/community/submit-idea"}
+              <a 
+              href={"https://github.com/catalyzt-tech/RetroPGF-Hub/issues"}
+              target="_blank" rel="noopener noreferrer" 
               className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <Chat  
                 size={20}
                 className="fill-gray-800"
                 />
                 <p className="text-sm font-normal">Submit Feedback</p>
-              </Link>
+              </a>
               
-              <Link
-              href={"/community/ask-question"}
+              <a
+              href={"https://github.com/catalyzt-tech/RetroPGF-Hub/issues"}
+              target="_blank" rel="noopener noreferrer" 
               className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg">
                 <Help  
                 size={20}
                 className="fill-gray-800"
                 />
                 <p className="text-sm font-normal">Ask Question</p>
-              </Link>
+              </a>
             </div>
 
             <hr/> 
