@@ -1,15 +1,4 @@
-export default function HistorySection({
-
-}:{
-    
-})  {
-
-return (
-
-    <> 
-    History
-    </>
-
-    )
-
+const HistorySection = ({}) => {
+  return <>//HistorySection</>
 }
+export default HistorySection
