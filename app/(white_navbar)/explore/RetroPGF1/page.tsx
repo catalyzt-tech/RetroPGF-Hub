@@ -20,6 +20,7 @@ export async function getJsonRound1(): Promise<RetroRound1[]> {
     // jsonData.sort((a, b) => {
     //     return b.allocation - a.allocation
     //  });
+    
     jsonData.sort((a, b) => {
         const nameA = (a["Project Name"] ?? '').toLowerCase();
         const nameB = (b["Project Name"] ?? '').toLowerCase();

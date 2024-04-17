@@ -17,7 +17,8 @@ export default function ProjectDetailSection({
         <div className="flex flex-col bg-white rounded-lg">
             <div className="block relative w-full h-36 mb-16">
                 <Image
-                    src={convertImageClodinary(data.bannerPath, 947, 150) || "/random/OP-Banner.png"}
+                    // convertImageClodinary(data.bannerPath, 947, 150)
+                    src={data.bannerPath || "/random/OP-Banner.png"}
                     alt="background"
                     fill
                     className="object-cover"

@@ -13,14 +13,16 @@ import CardRound2 from "./_component/CardRound2";
 
 async function getAllRound(): Promise<{round1:RetroRound1[], round2:RetroRound2[], round3:RetroRound3[], cateRound3: Map<string, number>, cateRound2: Map<string, number>}> {
     
-    const round1 = (await getJsonRound1());
+    const round1 = (await getJsonRound1()).sort((a, b) => {
+        return b.allocation - a.allocation
+    });
 
     const round2 = (await getJsonRound2());
 
     const round3 = (await getJsonRound3());
+
     const cateRound2Counter = new Map<string, number>();
     const cateRound3Counter = new Map<string, number>();
-
 
     round2.forEach(project => {
         const cateRound2 = project.Category;
@@ -56,7 +58,6 @@ export default async function page({
 }: {
 
 }) {
-
 
     const { round1, round2, round3, cateRound2, cateRound3 } = await getAllRound()
 
