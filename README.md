@@ -1,5 +1,6 @@
-"bannerPath": "http://res.cloudinary.com/dxoowohf8/image/upload/w_600,h_144,c_scale/v1713108616/retropgf3/Solidity_banner.png"
+เปลี่ยน navbar link ไป github issue
 
+แก้หน้า resource
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

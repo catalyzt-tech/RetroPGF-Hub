@@ -23,7 +23,7 @@ export default function ProjectDetailSection({
                     className="object-cover"
                 />
             </div>
-            <div className="relative flex flex-col gap-4 p-2 lg:p-6">
+            <div className="relative flex flex-col gap-4 p-2 sm:p-4 lg:p-6">
                 <div className="absolute -top-24 lg:-top-32 left-4 rounded-[0.25rem] flex flex-shrink-0 z-20">
                     <div className="relative w-16 h-16 lg:w-32 lg:h-32">
                         <Image

@@ -3,11 +3,11 @@ import React, { useState, useEffect, useRef } from "react";
 export default function ScrollSpy({
   overViewRef,
   contributionRef,
-  questionRef,
+  detailRef,
 }: {
   overViewRef: React.MutableRefObject<HTMLElement | null>;
   contributionRef: React.MutableRefObject<HTMLElement | null>;
-  questionRef: React.MutableRefObject<HTMLElement | null>;
+  detailRef: React.MutableRefObject<HTMLElement | null>;
 }) {
   const [currentContent, setCurrentContent] = useState<string>("Overview");
   const [sections, setSections] = useState({
@@ -42,10 +42,10 @@ export default function ScrollSpy({
 
     observeSection(overViewRef);
     observeSection(contributionRef);
-    observeSection(questionRef);
+    observeSection(detailRef);
 
     return () => observer.disconnect();
-  }, [overViewRef, contributionRef, questionRef]);
+  }, [overViewRef, contributionRef, detailRef]);
 
   useEffect(() => {
     const visibleSections = Object.entries(sections)
@@ -66,7 +66,7 @@ export default function ScrollSpy({
           {[
             { content: "Overview", ref: overViewRef },
             { content: "Contribution", ref: contributionRef },
-            { content: "Question", ref: questionRef },
+            { content: "Question", ref: detailRef },
           ].map(({ content, ref }) => (
             <li key={content} className="list-none">
               <a

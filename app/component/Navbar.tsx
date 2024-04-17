@@ -113,7 +113,6 @@ const Navbar = ({
 
         {globalState.user ? 
         <div className="hidden lg:flex items-center gap-6">
-          <Help className="text-gray-800" size={28} />
           <Menu 
       
          as="div" className="relative inline-block text-left">
@@ -139,7 +138,7 @@ const Navbar = ({
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute p-2 z-20 right-0 mt-2 w-56 origin-top-right flex flex-col gap-2  rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
+          <Menu.Items className="absolute p-4 pt-6 z-20 right-0 mt-2 w-80 origin-top-right flex flex-col gap-2  rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
             <div className="flex items-center gap-2.5">
               <Image
                 alt='avatar image'
@@ -149,11 +148,11 @@ const Navbar = ({
                 className="rounded-full"
                 />
                 <div className="flex flex-col gap-1 overflow-hidden">
-                  <h6 className="text-sm font-semibold text-gray-800 line-clamp-1">{globalState.user.email}</h6>
-                  <p className="tex-sm font-normal text-gray-600 line-clamp-1">{globalState.user.username}</p>
+                  <p className="tex-sm font-semibold text-gray-800 line-clamp-1">{globalState.user.username}</p>
+                  <h6 className="text-sm font-normal text-gray-600 line-clamp-1">{globalState.user.email}</h6>
                 </div>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 mt-4">
               {/* <div className="flex gap-1 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <User  
                 size={20}

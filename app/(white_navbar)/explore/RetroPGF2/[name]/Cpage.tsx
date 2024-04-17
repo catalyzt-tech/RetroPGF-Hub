@@ -5,7 +5,7 @@ import OverviewSection from "./_component/_Project/OverviewSection";
 import ContributionSection from "./_component/_Project/ContributionSection";
 import ScrollSpy from "./_component/ScrollSpy";
 import { RetroRound2 } from "../RetroType2";
-import QuestionSection from "./_component/_Project/ImpactSection";
+import QuestionSection from "./_component/_Project/DetailSection";
 
 
 export default function Cpage({
@@ -16,7 +16,7 @@ export default function Cpage({
 
     const overViewRef = useRef<HTMLElement | null>(null)
     const contributionRef = useRef<HTMLElement | null>(null)
-    const questionRef = useRef<HTMLElement | null>(null)
+    const detailRef = useRef<HTMLElement | null>(null)
 
 return (
 
@@ -33,13 +33,13 @@ return (
                 />
             </section>
             <ContributionSection data={data} contributionRef={contributionRef} />
-            <QuestionSection data={data} questionRef={questionRef} />
+            <QuestionSection data={data} detailRef={detailRef} />
         </div>
 
         <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">
             <ScrollSpy
             contributionRef={contributionRef}
-            questionRef={questionRef}
+            detailRef={detailRef}
             overViewRef={overViewRef}
             />
         </div>
