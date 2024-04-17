@@ -1,14 +1,8 @@
 import Highchart from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
-
+import data from '@/public/static/graphRPGF3/ballotDistribution.json'
 const BallotDistributionChart = () => {
-  const ballotDataset = [
-    0, 0, 0, 0, 5, 3, 11, 13, 11, 16, 9, 8, 17, 10, 10, 10, 18, 7, 17, 8, 9, 7,
-    14, 12, 19, 21, 6, 16, 14, 10, 13, 21, 18, 15, 13, 9, 15, 7, 14, 14, 12, 9,
-    8, 7, 12, 9, 8, 9, 6, 9, 9, 3, 4, 2, 5, 5, 3, 6, 5, 2, 4, 2, 3, 3, 2, 2, 2,
-    2, 2, 0, 4, 0, 1, 2, 2, 2, 0, 3, 3, 2, 0, 0, 0, 1, 1, 2, 0, 2, 3, 2, 4, 0,
-    1, 4, 1, 1, 0, 1, 0, 2, 0, 2, 0, 0, 0, 0, 0, 1, 0, 1,
-  ]
+  const ballotDataset: number[] = data as number[]
   const option = {
     chart: {
       type: 'column',
