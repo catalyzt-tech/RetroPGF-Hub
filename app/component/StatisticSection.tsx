@@ -1,8 +1,10 @@
-import StatsBox from '@/app/component/Statistic/StatsBox'
-import BallotDistributionChart from '@/app/component/Statistic/BallotDistributionChart'
-import BallotEachCategory from '@/app/component/Statistic/BallotEachCategory'
-import TypeOfProject from '@/app/component/Statistic/TypeOfProject'
-import AllocationDistribution from '@/app/component/Statistic/AllocationDistribution'
+import StatsBox from '@/app/component/Statistic/RetroPGF3/StatsBox'
+import BallotDistributionChart from '@/app/component/Statistic/RetroPGF3/BallotDistributionChart'
+import BallotEachCategory from '@/app/component/Statistic/RetroPGF3/BallotEachCategory'
+import TypeOfProject from '@/app/component/Statistic/RetroPGF3/TypeOfProject'
+import AllocationDistribution from '@/app/component/Statistic/RetroPGF3/AllocationDistribution'
+import AllocationDistributionR2 from '@/app/component/Statistic/RetroPGF2/AllocationDistribution'
+import CategoryDistribution from './Statistic/RetroPGF2/CategoryDistribution'
 import { ArrowDown, ArrowUp, Star, Growth, Rocket } from '@carbon/icons-react'
 import { FC } from 'react'
 
@@ -21,9 +23,24 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
   ]
   const round2 = [
     {
-      title: 'Min Ballot 2',
-      value: '0 Ballot',
-      icon: <ArrowDown size={25} />,
+      title: 'Least Awarded',
+      value: '594.26 OP',
+      icon: <Rocket size={25} />,
+    },
+    {
+      title: 'Average Awarded',
+      value: '51,282.05 OP',
+      icon: <Growth size={25} />,
+    },
+    {
+      title: 'Median Awarded',
+      value: '23,641.12 OP',
+      icon: <Star size={25} />,
+    },
+    {
+      title: 'Max Awarded',
+      value: '557,301 OP',
+      icon: <Growth size={25} />,
     },
   ]
   const round3 = [
@@ -56,8 +73,8 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
   ]
   console.log(data)
   return (
-    <>
-      {/* <div className="text-xl font-bold ">RetroPGF 3 Analysis</div> */}
+    <div>
+      {/* round3 */}
       <div className="flex flex-row flex-wrap gap-5 mt-2">
         {round === 3 &&
           round3.map((item, index) => (
@@ -68,14 +85,36 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
               title={item.title}
             />
           ))}
+        {round === 3 && (
+          <div className="flex flex-wrap mt-8 gap-y-3">
+            <AllocationDistribution />
+            <BallotEachCategory />
+            <BallotDistributionChart />
+            <TypeOfProject />
+          </div>
+        )}
       </div>
-      <div className="flex flex-wrap mt-8 gap-y-3">
-        <AllocationDistribution />
-        <BallotEachCategory />
-        <BallotDistributionChart />
-        <TypeOfProject />
+      <div>
+        {round2 && (
+          <div className="flex flex-row flex-wrap gap-5 mt-2">
+            {round2.map((item, index) => (
+              <StatsBox
+                key={index}
+                icon={item.icon}
+                value={item.value}
+                title={item.title}
+              />
+            ))}
+          </div>
+        )}
+        {round2 && (
+          <div className="flex flex-wrap mt-8 gap-y-3">
+            <AllocationDistributionR2 />
+            <CategoryDistribution />
+          </div>
+        )}
       </div>
-    </>
+    </div>
   )
 }
 export default StatisticSection
