@@ -1,8 +1,7 @@
 import Highchart from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import data from '@/public/static/graphRPGF2/allocationDistributionEachCategory.json'
-import { format } from 'path'
-const AllocationDistributionEducation = () => {
+const AllocationDistributionInfrastructure = () => {
   const allocationDataset = data
 
   const option = {
@@ -11,10 +10,10 @@ const AllocationDistributionEducation = () => {
     },
     // colors: ['#7cb5ec', '#8085e9', '#f7a35c'],
     title: {
-      text: 'Education Category Distribution',
+      text: 'Infrastructure Category Distribution',
     },
     subtitle: {
-      text: 'The allocation distribution OP in education category.',
+      text: 'The allocation distribution OP in infrastructure category.',
     },
     credits: {
       enabled: false,
@@ -74,7 +73,7 @@ const AllocationDistributionEducation = () => {
         //     y: data['Tooling and utilities'],
         //   },
         // ],
-        data: allocationDataset.Educaiton.map((item) => {
+        data: allocationDataset.Infrastructure.map((item) => {
           return {
             name: item['projectName'],
             y: item['amount'],
@@ -89,4 +88,4 @@ const AllocationDistributionEducation = () => {
     </div>
   )
 }
-export default AllocationDistributionEducation
+export default AllocationDistributionInfrastructure
