@@ -74,7 +74,7 @@ export default function Cpage({ round2 }: { round2: RetroRound2[] }) {
           <Tab.Panel className="outline-none min-h-[70vh]">
             <Transition
               appear
-              show={selectedIndex === 1}
+              show={selectedIndex === 2}
               enter="transition duration-200 ease-out"
               enterFrom="transform scale-95 opacity-0"
               enterTo="transform scale-100 opacity-100"
