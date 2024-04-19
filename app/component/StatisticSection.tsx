@@ -5,6 +5,7 @@ import TypeOfProject from '@/app/component/Statistic/RetroPGF3/TypeOfProject'
 import AllocationDistribution from '@/app/component/Statistic/RetroPGF3/AllocationDistribution'
 import AllocationDistributionR2 from '@/app/component/Statistic/RetroPGF2/AllocationDistribution'
 import CategoryDistribution from './Statistic/RetroPGF2/CategoryDistribution'
+import AllocationEachCategory from '@/app/component/Statistic/RetroPGF2/AllocationEachCategory'
 import { ArrowDown, ArrowUp, Star, Growth, Rocket } from '@carbon/icons-react'
 import { FC } from 'react'
 
@@ -71,7 +72,7 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
       icon: <Growth size={25} />,
     },
   ]
-  console.log(data)
+  console.log(round)
   return (
     <div>
       {/* round3 */}
@@ -95,7 +96,7 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
         )}
       </div>
       <div>
-        {round2 && (
+        {round === 2 && (
           <div className="flex flex-row flex-wrap gap-5 mt-2">
             {round2.map((item, index) => (
               <StatsBox
@@ -107,10 +108,11 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
             ))}
           </div>
         )}
-        {round2 && (
+        {round === 2 && (
           <div className="flex flex-wrap mt-8 gap-y-3">
             <AllocationDistributionR2 />
             <CategoryDistribution />
+            <AllocationEachCategory />
           </div>
         )}
       </div>
