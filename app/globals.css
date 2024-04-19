@@ -38,3 +38,7 @@ body {
   width: auto;
 }
 
+.swiper-grid-column > .swiper-wrapper{
+  flex-direction: unset !important;
+}
+

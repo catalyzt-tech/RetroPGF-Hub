@@ -20,7 +20,6 @@ export default function CardRound3({
     round3:RetroRound3[];
     cateRound3: Map<string, number>
 }) {
-
     const [swiper, setSwiper] = useState<SwiperClass | null>(null)
     const [state, setState] = useState({
         start: true,

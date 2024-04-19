@@ -3,6 +3,7 @@
 import { Disclosure } from "@headlessui/react";
 import ChevronDown from "@carbon/icons-react/lib/ChevronDown";
 import { Transition } from "@headlessui/react";
+import React from "react";
 
 
 export default function QuestionPage() {
@@ -11,11 +12,10 @@ export default function QuestionPage() {
     <>
       <div className="lg:w-auto w-full lg:mt-[3rem] mt-8">
         <hr className="flex border-t lg:border-gray-200 border-gray-100"></hr>
-        {questions.map((QID) => (
-          <>
+        {questions.map((i) => (
+          <React.Fragment key={i}>
             <div
               className="flex flex-col py-5 lg:w-[48rem] items-center"
-              key={QID}
             >
               <Disclosure>
                 {({ open }) => (
@@ -46,7 +46,7 @@ export default function QuestionPage() {
               </Disclosure>
             </div>
             <hr className="flex border-t lg:border-gray-200 border-gray-100"></hr>
-          </>
+          </React.Fragment>
         ))}
       </div>
     </>
