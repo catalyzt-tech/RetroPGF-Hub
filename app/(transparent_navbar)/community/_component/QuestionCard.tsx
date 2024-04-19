@@ -20,7 +20,9 @@ export default function QuestionCard({
     favOrNot,
     category,
     handleFavoriteProject,
+    background="bg-white",
 }:{
+    background?:string;
     id:string;
     title:string;
     description:string;
@@ -35,7 +37,7 @@ export default function QuestionCard({
 
 return (
 
-    <div className="flex flex-col gap-4 border rounded-lg  p-3 lg:p-6">
+    <div className={`flex flex-col gap-4 border rounded-lg  p-3 lg:p-6 ${background}`}>
             <div className="flex gap-1.5 bg-gray-100 px-2 py-1 rounded-2xl w-fit">
                 <Help size={20} className="fill-gray-500" />
                 <p className="text-sm font-medium text-gray-700">Question</p>
@@ -50,6 +52,8 @@ return (
             >
                 {description}
             </p>
+
+            <div className="max-[350px]:hidden flex flex-grow"></div>
 
             <div className="flex justify-between flex-wrap gap-4">
 

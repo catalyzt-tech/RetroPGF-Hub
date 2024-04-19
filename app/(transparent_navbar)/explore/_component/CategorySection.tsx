@@ -2,10 +2,10 @@
 
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Pagination, Controller } from 'swiper/modules';
-import NextOutline from "@carbon/icons-react/lib/NextOutline";
-import PreviousOutline from "@carbon/icons-react/lib/PreviousOutline";
 import { useState } from "react";
 import CategoryCard from './CategoryCard';
+import ArrowLeft from '@carbon/icons-react/lib/ArrowLeft';
+import ArrowRight from '@carbon/icons-react/lib/ArrowRight';
 
 export default function CategorySection({
 
@@ -31,6 +31,7 @@ export default function CategorySection({
                 <Swiper
                     onSwiper={setSwiper}
                     slidesPerView="auto"
+                    pagination={true}
                     modules={[Pagination, Controller]}
                     initialSlide={0}
                     direction="horizontal"
@@ -40,21 +41,29 @@ export default function CategorySection({
                     }}
                 >
                     {arr.map((item) => (
-                        <SwiperSlide key={item}>
+                        <SwiperSlide className="lg:mb-12" key={item}>
                             <CategoryCard i={item} />
                         </SwiperSlide>
                     ))}
 
                 </Swiper>
                 {!state.start &&
-                    <button className="hidden md:block absolute top-1/2 transform -translate-y-1/2 -left-4 lg:-left-5 cursor-pointer z-50" onClick={() => swiper?.slidePrev()}>
-                        <PreviousOutline size={32} />
+                    <button 
+                    className="
+                        rounded-full p-1 bg-slate-100 hover:bg-slate-200 
+                        hidden lg:block absolute top-1/2 transform -translate-y-1/2 -left-6 cursor-pointer z-50" 
+                        onClick={() => swiper?.slidePrev()}
+                        >
+                        <ArrowLeft size={24} className="fill-gray-900" />
                     </button>
                 }
 
                 {!state.end &&
-                    <button className="hidden md:block absolute top-1/2 transform -translate-y-1/2 -right-4 lg:-right-5 cursor-pointer z-50" onClick={() => swiper?.slideNext()}>
-                        <NextOutline size={32} />
+                    <button className="
+                    rounded-full p-1 bg-slate-100 hover:bg-slate-200 
+                    hidden lg:block absolute top-1/2 transform -translate-y-1/2 -right-8 cursor-pointer z-50" 
+                    onClick={() => swiper?.slideNext()}>
+                        <ArrowRight size={24} className="fill-gray-900"/>
                     </button>
                 }
 

@@ -17,13 +17,14 @@ export default function ProjectDetailSection({
         <div className="flex flex-col bg-white rounded-lg">
             <div className="block relative w-full h-36 mb-16">
                 <Image
-                    src={convertImageClodinary(data.bannerPath, 947, 150) || "/random/OP-Banner.png"}
+                    // convertImageClodinary(data.bannerPath, 947, 150)
+                    src={data.bannerPath || "/random/OP-Banner.png"}
                     alt="background"
                     fill
                     className="object-cover"
                 />
             </div>
-            <div className="relative flex flex-col gap-4 p-2 lg:p-6">
+            <div className="relative flex flex-col gap-4 p-2 sm:p-4 lg:p-6">
                 <div className="absolute -top-24 lg:-top-32 left-4 rounded-[0.25rem] flex flex-shrink-0 z-20">
                     <div className="relative w-16 h-16 lg:w-32 lg:h-32">
                         <Image

@@ -3,7 +3,6 @@ import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
 import {
-  ImpactCategory,
   NewCategory,
 } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { handleCategoryRound3 } from '@/app/lib/InitialMount'

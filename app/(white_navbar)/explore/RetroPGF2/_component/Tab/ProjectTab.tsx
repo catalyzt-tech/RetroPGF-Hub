@@ -11,6 +11,7 @@ import ListCard from "./ListCard";
 import DialogFilter from "./Filter/DialogFilter";
 import { RetroRound2 } from "../../RetroType2";
 import { useSearchParams } from "next/navigation";
+import { isLetter } from "@/app/lib/utils";
 
 
 export default function ProjectTab({
@@ -231,9 +232,7 @@ export default function ProjectTab({
         });
     }, [searchParams])
 
-    function isLetter(c:string) {
-        return c.toLowerCase() !== c.toUpperCase();
-    }
+
 
 
     return (

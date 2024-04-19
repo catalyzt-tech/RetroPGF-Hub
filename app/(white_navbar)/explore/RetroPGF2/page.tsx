@@ -31,7 +31,7 @@ export default async function page({}: {}) {
           </div>
 
           <div className="mt-4">
-            <h6 className="text-5xl font-semibold text-gray-800 mb-3">
+            <h6 className="text-3xl md:text-5xl font-semibold text-gray-800 mb-3">
               RetroPGF2
             </h6>
           </div>

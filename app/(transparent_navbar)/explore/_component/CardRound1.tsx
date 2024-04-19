@@ -9,7 +9,8 @@ import { RetroCard1 } from "@/app/component/Card/RetroCardRound1";
 import { RetroRound1 } from "@/app/(white_navbar)/explore/RetroPGF1/RetroType1";
 import Link from "next/link";
 import ChevronRight from "@carbon/icons-react/lib/ChevronRight";
-
+import ArrowLeft from "@carbon/icons-react/lib/ArrowLeft";
+import ArrowRight from "@carbon/icons-react/lib/ArrowRight";
 
 export default function CardRound1({
     title,
@@ -45,7 +46,7 @@ return (
             <Swiper
                     onSwiper={setSwiper}
                     slidesPerView="auto"
-                    // spaceBetween={24}
+                    pagination={true}
                     modules={[Pagination, Controller]}
                     initialSlide={0}
                     direction="horizontal"
@@ -55,7 +56,7 @@ return (
                     }}
                 >
                     {round1.map((item, i) => (
-                        <SwiperSlide className="" key={i}>
+                        <SwiperSlide className="lg:mb-12" key={i}>
                             <RetroCard1 
                              description={item.Question}
                              title={item["Project Name"]}
@@ -68,14 +69,22 @@ return (
                 </Swiper>
 
                 {!state.start &&
-                    <button className="hidden md:block absolute top-1/2 transform -translate-y-1/2 -left-4 lg:-left-5 cursor-pointer z-50" onClick={() => swiper?.slidePrev()}>
-                        <PreviousOutline size={32} />
+                    <button 
+                    className="
+                        rounded-full p-1 bg-slate-100 hover:bg-slate-200 
+                        hidden lg:block absolute top-1/2 transform -translate-y-1/2 -left-6 cursor-pointer z-50" 
+                        onClick={() => swiper?.slidePrev()}
+                        >
+                        <ArrowLeft size={24} className="fill-gray-900" />
                     </button>
                 }
 
                 {!state.end &&
-                    <button className="hidden md:block absolute top-1/2 transform -translate-y-1/2 -right-4 lg:-right-5 cursor-pointer z-50" onClick={() => swiper?.slideNext()}>
-                        <NextOutline size={32} />
+                    <button className="
+                    rounded-full p-1 bg-slate-100 hover:bg-slate-200 
+                    hidden lg:block absolute top-1/2 transform -translate-y-1/2 -right-8 cursor-pointer z-50" 
+                    onClick={() => swiper?.slideNext()}>
+                        <ArrowRight size={24} className="fill-gray-900"/>
                     </button>
                 }
             </div>

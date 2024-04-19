@@ -3,7 +3,6 @@ import axios, { AxiosError, AxiosRequestConfig, AxiosResponse, CancelTokenSource
 const source:CancelTokenSource = axios.CancelToken.source();
 
 export const api = axios.create({
-  // baseURL: "http://localhost",
   withCredentials: true,
   cancelToken : source.token,
 })

@@ -11,16 +11,18 @@ import CardRound3 from "./_component/CardRound3";
 import CardRound2 from "./_component/CardRound2";
 
 
-async function getAllRound(): Promise<{round1:RetroRound1[], round2:RetroRound2[], round3:RetroRound3[], cateRound3: Map<string, number>, cateRound2: Map<string, number>}> {
+export async function getAllRound(limit:number): Promise<{round1:RetroRound1[], round2:RetroRound2[], round3:RetroRound3[], cateRound3: Map<string, number>, cateRound2: Map<string, number>}> {
     
-    const round1 = (await getJsonRound1());
+    const round1 = (await getJsonRound1()).sort((a, b) => {
+        return b.allocation - a.allocation
+    });
 
     const round2 = (await getJsonRound2());
 
     const round3 = (await getJsonRound3());
+
     const cateRound2Counter = new Map<string, number>();
     const cateRound3Counter = new Map<string, number>();
-
 
     round2.forEach(project => {
         const cateRound2 = project.Category;
@@ -44,10 +46,8 @@ async function getAllRound(): Promise<{round1:RetroRound1[], round2:RetroRound2[
         }
     });
 
-    
 
-
-    return {round1:round1.slice(0, 20), round2:round2.slice(0, 20), round3:round3.slice(0, 20), cateRound3:cateRound3Counter, cateRound2:cateRound2Counter};
+    return {round1:round1.slice(0, limit), round2:round2.slice(0, limit), round3:round3.slice(0, limit), cateRound3:cateRound3Counter, cateRound2:cateRound2Counter};
 }
 
 
@@ -57,8 +57,7 @@ export default async function page({
 
 }) {
 
-
-    const { round1, round2, round3, cateRound2, cateRound3 } = await getAllRound()
+    const { round1, round2, round3, cateRound2, cateRound3 } = await getAllRound(20)
 
     return (
 

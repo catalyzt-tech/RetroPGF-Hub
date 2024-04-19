@@ -2,7 +2,7 @@ import Trophy from "@carbon/icons-react/lib/Trophy";
 import Events from "@carbon/icons-react/lib/Events";
 import Image from "next/image";
 import Link from "next/link";
-import { handleCategoryRound2, handleCategoryRound3 } from "@/app/lib/InitialMount";
+import { handleCategoryRound2} from "@/app/lib/InitialMount";
 import { CategoryRound2 } from "../RetroType2";
 
 export default function DynamicCard({
