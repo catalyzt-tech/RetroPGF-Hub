@@ -46,6 +46,11 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
       value: '557,301 OP',
       icon: <Growth size={25} />,
     },
+    {
+      title: 'Total Nomination',
+      value: '195 Projects',
+      icon: <ArrowUp size={25} />,
+    },
   ]
   const round3 = [
     {

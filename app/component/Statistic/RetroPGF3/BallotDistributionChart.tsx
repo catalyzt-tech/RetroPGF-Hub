@@ -7,6 +7,7 @@ const BallotDistributionChart: FC = () => {
   const option = {
     chart: {
       type: 'column',
+      zoomType: 'x',
     },
     colors: ['#ff0000'],
     title: {

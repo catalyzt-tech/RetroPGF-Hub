@@ -15,6 +15,7 @@ const AllocationDistribution: FC = () => {
 
     chart: {
       type: 'column',
+      zoomType: 'x',
     },
     title: {
       text: 'Allocation Distribution',
@@ -70,6 +71,13 @@ const AllocationDistribution: FC = () => {
       footerFormat: '</table>',
       shared: true,
       useHTML: true,
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0,
+        groupPadding: 0.1,
+        borderWidth: 0,
+      },
     },
     // responsive: {
     //   rules: [

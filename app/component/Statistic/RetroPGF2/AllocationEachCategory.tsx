@@ -13,6 +13,7 @@ const AllocationEachCategory: FC = () => {
 
     chart: {
       type: 'column',
+      zoomType: 'x',
     },
 
     title: {
@@ -99,7 +100,7 @@ const AllocationEachCategory: FC = () => {
     ],
   }
   return (
-    <div className="w-[45em]">
+    <div className="w-[50em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )
