@@ -1,6 +1,5 @@
 "use client";
 
-import RetroCard from "@/app/component/Card/RetroCardRound3";
 import { useState } from "react";
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Pagination, Controller } from 'swiper/modules';
@@ -9,6 +8,7 @@ import { RetroRound3 } from "@/app/(white_navbar)/explore/RetroPGF3/RetroType3";
 import ChevronRight from "@carbon/icons-react/lib/ChevronRight";
 import ArrowLeft from "@carbon/icons-react/lib/ArrowLeft";
 import ArrowRight from "@carbon/icons-react/lib/ArrowRight";
+import RetroCard3 from "@/app/component/Card/RetroCardRound3";
 
 
 export default function CardRound3({
@@ -85,7 +85,7 @@ export default function CardRound3({
                 >
                     {round3.map((item, i) => (
                         <SwiperSlide className="lg:mb-12" key={i}>
-                            <RetroCard 
+                            <RetroCard3
                             title={item.displayName}
                             category={item["New Main-Category"]}
                             description={item.bio}

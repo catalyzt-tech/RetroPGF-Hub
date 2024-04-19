@@ -77,7 +77,7 @@ export default function Footer({
 
             {/* Mobile Footer */}
 
-            <div className="flex items-start min-[350px]:items-center lg:hidden flex-col gap-4 border-t py-4 mt-6 border-gray-100">
+            <div className="flex items-start min-[450px]:items-center lg:hidden flex-col gap-4 border-t py-4 mt-6 border-gray-100">
                 <ReturnLinkLogo />
                 <div className="">
                     <h6 className="text-base font-normal text-gray-600">
