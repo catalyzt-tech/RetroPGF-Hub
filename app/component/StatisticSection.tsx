@@ -6,6 +6,7 @@ import AllocationDistribution from '@/app/component/Statistic/RetroPGF3/Allocati
 import AllocationDistributionR2 from '@/app/component/Statistic/RetroPGF2/AllocationDistribution'
 import CategoryDistribution from './Statistic/RetroPGF2/CategoryDistribution'
 import AllocationEachCategory from '@/app/component/Statistic/RetroPGF2/AllocationEachCategory'
+import AllocationDistributionEducation from '@/app/component/Statistic/RetroPGF2/AllocationDistributionEducation'
 import { ArrowDown, ArrowUp, Star, Growth, Rocket } from '@carbon/icons-react'
 import { FC } from 'react'
 
@@ -113,6 +114,7 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
             <AllocationDistributionR2 />
             <CategoryDistribution />
             <AllocationEachCategory />
+            <AllocationDistributionEducation />
           </div>
         )}
       </div>
