@@ -1,4 +1,4 @@
-import StatsBox from '@/app/component/Statistic/RetroPGF3/StatsBox'
+import StatsBox from '@/app/component/Statistic/StatsBox'
 import BallotDistributionChart from '@/app/component/Statistic/RetroPGF3/BallotDistributionChart'
 import BallotEachCategory from '@/app/component/Statistic/RetroPGF3/BallotEachCategory'
 import TypeOfProject from '@/app/component/Statistic/RetroPGF3/TypeOfProject'
@@ -9,11 +9,12 @@ import AllocationEachCategory from '@/app/component/Statistic/RetroPGF2/Allocati
 import AllocationDistributionEducation from '@/app/component/Statistic/RetroPGF2/AllocationDistributionEducation'
 import AllocationDistributionInfrastructure from '@/app/component/Statistic/RetroPGF2/AllocationDistributionInfrastructure'
 import AllocationDistributionTooling from '@/app/component/Statistic/RetroPGF2/AllocationDistributionTooling'
+import CentralValueEachCategory from '@/app/component/Statistic/RetroPGF2/CentralValueEachCategory'
 import { ArrowDown, ArrowUp, Star, Growth, Rocket } from '@carbon/icons-react'
 import { FC } from 'react'
 
 interface StatisticProps {
-  data: any
+  data?: any
   round: number
 }
 
@@ -84,7 +85,7 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
   return (
     <div>
       {/* round3 */}
-      <div className="flex flex-row flex-wrap gap-5 mt-2">
+      <div className="flex justify-center flex-row flex-wrap gap-5 mt-2">
         {round === 3 &&
           round3.map((item, index) => (
             <StatsBox
@@ -94,18 +95,18 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
               title={item.title}
             />
           ))}
-        {round === 3 && (
-          <div className="flex flex-wrap mt-8 gap-y-3">
-            <AllocationDistribution />
-            <BallotEachCategory />
-            <BallotDistributionChart />
-            <TypeOfProject />
-          </div>
-        )}
       </div>
+      {round === 3 && (
+        <div className="flex  flex-wrap mt-8 gap-y-12 gap-x-6">
+          <AllocationDistribution />
+          <BallotEachCategory />
+          <BallotDistributionChart />
+          <TypeOfProject />
+        </div>
+      )}
       <div>
         {round === 2 && (
-          <div className="flex flex-row flex-wrap gap-5 mt-2">
+          <div className="flex justify-center flex-row flex-wrap gap-5 mt-2">
             {round2.map((item, index) => (
               <StatsBox
                 key={index}
@@ -117,8 +118,9 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
           </div>
         )}
         {round === 2 && (
-          <div className="flex flex-wrap mt-8 gap-y-3">
+          <div className="flex justify-center flex-wrap mt-8 gap-y-12 gap-x-6">
             <AllocationDistributionR2 />
+            <CentralValueEachCategory />
             <CategoryDistribution />
             <AllocationEachCategory />
             <AllocationDistributionEducation />

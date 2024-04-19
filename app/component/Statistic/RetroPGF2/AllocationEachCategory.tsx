@@ -14,6 +14,9 @@ const AllocationEachCategory: FC = () => {
     chart: {
       type: 'column',
       zoomType: 'x',
+      style: {
+        fontFamily: 'Inter',
+      },
     },
 
     title: {
@@ -32,9 +35,9 @@ const AllocationEachCategory: FC = () => {
       crosshair: true,
       labels: {
         // rotation: 270,
-        style: {
-          fontSize: '8px',
-        },
+        // style: {
+        //   fontSize: '8px',
+        // },
         formatter: function () {
           return this.value.length > 10
             ? this.value.substring(0, 10) + '...'
@@ -76,7 +79,7 @@ const AllocationEachCategory: FC = () => {
       column: {
         // pointPadding: 0.2,
         // groupPadding: 0,
-        borderWidth: 6,
+        borderWidth: 0,
       },
     },
     // responsive: {
@@ -100,7 +103,7 @@ const AllocationEachCategory: FC = () => {
     ],
   }
   return (
-    <div className="w-[50em]">
+    <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )

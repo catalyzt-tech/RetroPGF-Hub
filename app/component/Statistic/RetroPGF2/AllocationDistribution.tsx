@@ -15,6 +15,9 @@ const AllocationDistribution: FC = () => {
     chart: {
       type: 'column',
       zoomType: 'x',
+      style: {
+        fontFamily: 'Inter',
+      },
     },
     title: {
       text: 'Allocation Distribution',
@@ -43,7 +46,9 @@ const AllocationDistribution: FC = () => {
       max: allocationDataset.length, // Add this line
     },
     yAxis: {
-      min: 0,
+      // min: 0,
+      //add type graph
+      // type: 'logarithmic',
       title: {
         text: 'OP',
       },
@@ -106,7 +111,7 @@ const AllocationDistribution: FC = () => {
     ],
   }
   return (
-    <div className="w-[50em]">
+    <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )

@@ -8,6 +8,9 @@ const AllocationDistributionEducation = () => {
   const option = {
     chart: {
       type: 'pie',
+      style: {
+        fontFamily: 'Inter',
+      },
     },
     // colors: ['#7cb5ec', '#8085e9', '#f7a35c'],
     title: {
@@ -84,7 +87,7 @@ const AllocationDistributionEducation = () => {
     ],
   }
   return (
-    <div className="w-[50em]">
+    <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )
