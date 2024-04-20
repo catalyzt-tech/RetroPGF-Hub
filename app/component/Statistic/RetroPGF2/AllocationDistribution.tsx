@@ -1,15 +1,23 @@
 import HighchartsReact from 'highcharts-react-official'
 import Highchart from 'highcharts'
-import { FC } from 'react'
+import { FC, use } from 'react'
 import data from '@/public/static/graphRPGF2/allocationDistribution.json'
+import { background } from '@cloudinary/url-gen/qualifiers/focusOn'
 
 const AllocationDistribution: FC = () => {
   const allocationDataset = data
+  const average = 51282.05
+  const median = 23641.12
+
   const option = {
     //column
 
     chart: {
       type: 'column',
+      zoomType: 'x',
+      style: {
+        fontFamily: 'Inter',
+      },
     },
     title: {
       text: 'Allocation Distribution',
@@ -35,29 +43,50 @@ const AllocationDistribution: FC = () => {
             : this.value
         },
       },
-
-      //   plotLines: [
-      //     {
-      //       color: '#000000',
-      //       dashStyle: 'dash',
-      //       width: 2,
-      //       value: 17,
-      //       zIndex: 5,
-      //       label: {
-      //         text: 'Threshold',
-      //         rotation: 270,
-      //         textAlign: 'center',
-      //         x: -10,
-      //         y: +40,
-      //       },
-      //     },
-      //   ],
+      max: allocationDataset.length, // Add this line
     },
     yAxis: {
-      min: 0,
+      // min: 0,
+      //add type graph
+      // type: 'logarithmic',
       title: {
         text: 'OP',
       },
+      plotLines: [
+        {
+          color: 'black',
+          width: 1.5,
+          value: average,
+          dashStyle: 'shortdash',
+          label: {
+            text: 'Average: ' + average + ' OP',
+            align: 'right', // Align to the right
+            y: -4, // Align with the line
+            x: 10, // Move the label to the right
+            style: {
+              fontSize: '10px',
+              //set background color for label
+            },
+          },
+        },
+        {
+          color: 'black',
+          width: 1.5,
+          value: median,
+          dashStyle: 'shortdash',
+          label: {
+            // useHTML: true,
+            text: 'Median: ' + median + ' OP',
+            align: 'right', // Align to the right
+            y: 8, // Align with the line
+            x: 10, // Move the label to the right
+            style: {
+              fontSize: '10px',
+              // backgroundColor: 'white',
+            },
+          },
+        },
+      ],
     },
     tooltip: {
       headerFormat: '{point.key}',
@@ -73,15 +102,6 @@ const AllocationDistribution: FC = () => {
         borderWidth: 0.2,
       },
     },
-    // responsive: {
-    //   rules: [
-    //     {
-    //       condition: {
-    //         maxWidth: 200,
-    //       },
-    //     },
-    //   ],
-    // },
     series: [
       {
         name: 'OP Awarded',
@@ -91,7 +111,7 @@ const AllocationDistribution: FC = () => {
     ],
   }
   return (
-    <div className="w-[45em]">
+    <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )

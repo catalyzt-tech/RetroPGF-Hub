@@ -15,6 +15,10 @@ const AllocationDistribution: FC = () => {
 
     chart: {
       type: 'column',
+      zoomType: 'x',
+      style: {
+        fontFamily: 'Inter',
+      },
     },
     title: {
       text: 'Allocation Distribution',
@@ -71,6 +75,13 @@ const AllocationDistribution: FC = () => {
       shared: true,
       useHTML: true,
     },
+    plotOptions: {
+      column: {
+        pointPadding: 0,
+        groupPadding: 0.1,
+        borderWidth: 0,
+      },
+    },
     // responsive: {
     //   rules: [
     //     {
@@ -89,7 +100,7 @@ const AllocationDistribution: FC = () => {
     ],
   }
   return (
-    <div className="w-[45em]">
+    <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )

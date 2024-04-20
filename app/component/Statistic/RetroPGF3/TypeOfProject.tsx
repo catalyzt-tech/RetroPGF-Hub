@@ -7,6 +7,9 @@ const TypeOfProject = () => {
   const option = {
     chart: {
       type: 'pie',
+      style: {
+        fontFamily: 'Inter',
+      },
     },
     colors: ['#7cb5ec', '#8085e9'],
     title: {
@@ -63,7 +66,7 @@ const TypeOfProject = () => {
   }
 
   return (
-    <div className="w-[45em]">
+    <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )

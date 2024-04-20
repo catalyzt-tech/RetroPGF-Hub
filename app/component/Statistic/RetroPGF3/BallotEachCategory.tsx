@@ -19,6 +19,10 @@ const BallotEachCategory: FC = () => {
   const option = {
     chart: {
       type: 'column',
+      zoomType: 'x',
+      style: {
+        fontFamily: 'Inter',
+      },
     },
     title: {
       text: 'Ballot Each Category',
@@ -76,7 +80,7 @@ const BallotEachCategory: FC = () => {
   }
 
   return (
-    <div className="w-[45em]">
+    <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )

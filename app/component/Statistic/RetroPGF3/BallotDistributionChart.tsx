@@ -7,6 +7,10 @@ const BallotDistributionChart: FC = () => {
   const option = {
     chart: {
       type: 'column',
+      zoomType: 'x',
+      style: {
+        fontFamily: 'Inter',
+      },
     },
     colors: ['#ff0000'],
     title: {
@@ -83,7 +87,7 @@ const BallotDistributionChart: FC = () => {
   }
 
   return (
-    <div className="w-[45em]">
+    <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )

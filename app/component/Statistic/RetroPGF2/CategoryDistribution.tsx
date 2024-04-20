@@ -1,24 +1,27 @@
 import HighchartsReact from 'highcharts-react-official'
 import Highchart from 'highcharts'
-import { FC } from 'react'
+import { FC, use } from 'react'
 import data from '@/public/static/graphRPGF2/categoryDistribution.json'
 const CategoryDistribution = () => {
   const option = {
     chart: {
       type: 'pie',
+      style: {
+        fontFamily: 'Inter',
+      },
     },
     colors: ['#7cb5ec', '#8085e9', '#f7a35c'],
     title: {
       text: 'Projects Category',
     },
     subtitle: {
-      text: 'The percentage of projects in each category.',
+      text: 'The amount of projects in each category.',
     },
     credits: {
       enabled: false,
     },
     tooltip: {
-      headerFormat: '',
+      // headerFormat: '',
       pointFormat:
         '{point.name}: <b>{point.y}</b> ({Number(point.percentage).toFixed(2)} %)',
       formatter: function () {
@@ -38,12 +41,17 @@ const CategoryDistribution = () => {
           },
           {
             enabled: true,
-            distance: -40,
-            format: '{point.percentage:.2f}%',
+            distance: -60,
+            // format: '{point.percentage:.2f}%',
+
+            formatter: function () {
+              return ` <b>${this.y} Projects</b> <br/>`
+            },
             style: {
-              fontSize: '0.8em',
+              fontSize: '0.7em',
               textOutline: 'none',
-              opacity: 1,
+
+              opacity: 0.8,
             },
           },
         ],
@@ -71,7 +79,7 @@ const CategoryDistribution = () => {
     ],
   }
   return (
-    <div className="w-[45em]">
+    <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />
     </div>
   )
