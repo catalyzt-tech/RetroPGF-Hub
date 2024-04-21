@@ -71,6 +71,12 @@ export default function CardRound2({
            </div>
 
             <div className="relative">
+            {round2.length === 0 ?
+            
+            <h6 className="text-xl text-gray-600 font-semibold text-center">0 Item Found</h6>
+            
+            :
+            <>
             <Swiper
                     onSwiper={setSwiper}
                     slidesPerView="auto"
@@ -85,7 +91,7 @@ export default function CardRound2({
                     }}
                 >
                     {round2.map((item, i) => (
-                        <SwiperSlide className="lg:mb-12" key={i}>
+                        <SwiperSlide className="mb-10 lg:mb-12" key={i}>
                             <RetroCard2 
                             title={item.name}
                             category={item.Category}
@@ -119,6 +125,8 @@ export default function CardRound2({
                         <ArrowRight size={24} className="fill-gray-900"/>
                     </button>
                 }
+            </>
+            }
             </div>
 
         </div>
