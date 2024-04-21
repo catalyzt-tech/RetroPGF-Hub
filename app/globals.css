@@ -5,6 +5,7 @@
 :root {
   
   --swiper-pagination-color: #DB3A28;
+
   /* --swiper-pagination-bullet-size: 8px;
   --swiper-pagination-bullet-width: 8px;
   --swiper-pagination-bullet-height: 8px;
@@ -14,6 +15,12 @@
   --swiper-pagination-bullet-horizontal-gap: 4px;
   --swiper-pagination-bullet-vertical-gap: 6px; */
  
+}
+
+@media (max-width: 450px) {
+  .swiper-pagination {
+    display: none !important;
+  }
 }
 
 body {

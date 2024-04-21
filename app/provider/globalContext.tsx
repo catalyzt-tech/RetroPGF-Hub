@@ -41,15 +41,15 @@ interface GlobalState {
 export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
     // const router = useRouter()
     const [globalState, setGlobalState] = useState<GlobalState>({
-        user: {
-          userId:"123",
-          email:"mix@gmail.com",
-          firstname:"chitsanupong",
-          lastname:"jateassavapirom",
-          profile:"https://res.cloudinary.com/ddtwsj6v7/image/upload/v1712220177/users/bbtywoswgo60jxh3ynis.png",
-          username:"mix",
-        }
-        // user:undefined
+        // user: {
+        //   userId:"123",
+        //   email:"mix@gmail.com",
+        //   firstname:"chitsanupong",
+        //   lastname:"jateassavapirom",
+        //   profile:"https://res.cloudinary.com/ddtwsj6v7/image/upload/v1712220177/users/bbtywoswgo60jxh3ynis.png",
+        //   username:"mix",
+        // }
+        user:undefined
     })
 
     async function SignInWithGoogle(provider: GoogleAuthProvider | GithubAuthProvider):Promise<UserCredential | any> {

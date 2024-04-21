@@ -31,8 +31,8 @@ export default function CategorySection({
                 <Swiper
                     onSwiper={setSwiper}
                     slidesPerView="auto"
-                    pagination={true}
                     modules={[Pagination, Controller]}
+                    pagination={true}
                     initialSlide={0}
                     direction="horizontal"
                     className="mt-4 swiper-container"
@@ -41,7 +41,7 @@ export default function CategorySection({
                     }}
                 >
                     {arr.map((item) => (
-                        <SwiperSlide className="lg:mb-12" key={item}>
+                        <SwiperSlide className="mb-10 lg:mb-12" key={item}>
                             <CategoryCard i={item} />
                         </SwiperSlide>
                     ))}
