@@ -16,9 +16,9 @@ const HistorySection: FC<HistorySectionProps> = ({ round }) => {
           <div className="font-semibold">On This Page</div>
         </div>
       ) : (
-        <>btahhahahashdakshdkf</>
+        <>Wait for authors</>
       )}
-      <div>Test</div>
+      {/* <div>Test</div> */}
     </>
   )
 }
