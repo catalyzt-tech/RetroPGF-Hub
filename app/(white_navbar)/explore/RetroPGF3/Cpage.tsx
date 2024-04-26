@@ -67,7 +67,7 @@ export default function Cpage({ round3 }: { round3: RetroRound3[] }) {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <HistorySection />
+              <HistorySection round={3} />
             </Transition>
           </Tab.Panel>
           <Tab.Panel className="outline-none min-h-[70vh]">

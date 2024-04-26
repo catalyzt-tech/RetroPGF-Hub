@@ -24,15 +24,16 @@ export default async function page({}: {}) {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-slate-200 to-5% sm:to-10% to-[#E2E8F000]">
+      {/* <div className="bg-gradient-to-b from-slate-200 to-5% sm:to-10% to-[#E2E8F000]"> */}
+      <div className="bg-gradient-to-b from-[#ffdede] to-5% sm:to-10% to-white">
         <div className="flex flex-col gap-6 mx-2 sm:mx-4 md:mx-6 lg:mx-20">
           <div className="mt-10">
             <BreadCumpExplore secondText={'RetroPGF2'} />
           </div>
 
           <div className="mt-4">
-            <h6 className="text-3xl md:text-5xl font-semibold text-gray-800 mb-3">
-              RetroPGF2
+            <h6 className="font-rubik text-3xl md:text-5xl font-semibold text-gray-800 mb-3">
+              RetroPGF 2
             </h6>
           </div>
 
