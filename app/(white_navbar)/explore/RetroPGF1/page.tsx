@@ -57,7 +57,7 @@ export default async function page({}: {}) {
       <div className="bg-gradient-to-b from-[#ffdcdc] to-5% sm:to-10% to-white">
         <div className="flex flex-col gap-6 mx-2 sm:mx-4 md:mx-6 lg:mx-20">
           <div className="mt-10">
-            <BreadCumpExplore secondText={'RetroPGF1'} />
+            <BreadCumpExplore secondText={'RetroPGF 1'} />
           </div>
 
           <div className="mt-4">
