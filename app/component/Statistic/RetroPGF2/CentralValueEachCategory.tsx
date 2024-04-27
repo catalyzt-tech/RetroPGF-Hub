@@ -2,7 +2,6 @@ import Highchart from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import data from '@/public/static/graphRPGF2/CentralValueEachCategory.json'
 import { FC } from 'react'
-import { format } from 'path'
 
 const CentralValueEachCategory: FC = () => {
   const centralValueDataset = data

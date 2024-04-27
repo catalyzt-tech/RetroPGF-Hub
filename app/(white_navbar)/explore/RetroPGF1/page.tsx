@@ -54,15 +54,15 @@ export default async function page({}: {}) {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-slate-200 to-5% sm:to-10% to-[#E2E8F000]">
+      <div className="bg-gradient-to-b from-[#ffdcdc] to-5% sm:to-10% to-white">
         <div className="flex flex-col gap-6 mx-2 sm:mx-4 md:mx-6 lg:mx-20">
           <div className="mt-10">
-            <BreadCumpExplore secondText={'RetroPGF1'} />
+            <BreadCumpExplore secondText={'RetroPGF 1'} />
           </div>
 
           <div className="mt-4">
-            <h6 className="text-3xl md:text-5xl font-semibold text-gray-800 mb-3">
-              RetroPGF1
+            <h6 className="font-rubik text-3xl md:text-5xl font-semibold text-gray-800 mb-3">
+              RetroPGF 1
             </h6>
           </div>
 

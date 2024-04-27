@@ -11,7 +11,7 @@ import AllocationDistributionInfrastructure from '@/app/component/Statistic/Retr
 import AllocationDistributionTooling from '@/app/component/Statistic/RetroPGF2/AllocationDistributionTooling'
 import CentralValueEachCategory from '@/app/component/Statistic/RetroPGF2/CentralValueEachCategory'
 import { ArrowDown, ArrowUp, Star, Growth, Rocket } from '@carbon/icons-react'
-import { FC } from 'react'
+import { FC, useState, memo } from 'react'
 
 interface StatisticProps {
   data?: any
@@ -81,11 +81,26 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
       icon: <Growth size={25} />,
     },
   ]
-  console.log(round)
+
+  // const MemoizedStatsBox = memo(StatsBox)
+  const [loading, setLoading] = useState(true)
+  // console.log(round)
+  const load = () => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000)
+  }
+  load()
+  if (loading)
+    return (
+      <div className="flex flex-row justify-center items-center animate-pulse h-[40em]">
+        Loading...
+      </div>
+    )
   return (
-    <div>
+    <div className="animate-slowfade">
       {/* round3 */}
-      <div className="flex justify-center flex-row flex-wrap gap-5 mt-2">
+      <div className="flex justify-center flex-row flex-wrap gap-5 mt-2 ">
         {round === 3 &&
           round3.map((item, index) => (
             <StatsBox

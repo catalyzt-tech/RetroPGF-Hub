@@ -271,6 +271,20 @@ export default function ProjectTab({ round3 }: { round3: RetroRound3[] }) {
     return c.toLowerCase() !== c.toUpperCase()
   }
 
+  const [loading, setLoading] = useState<boolean>(true)
+
+  const load = () => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000)
+  }
+  load()
+  if (loading)
+    return (
+      <div className="flex flex-row justify-center items-center animate-pulse h-[40em]">
+        Loading...
+      </div>
+    )
   return (
     <>
       {/* // this file include

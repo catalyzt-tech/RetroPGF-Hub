@@ -1,8 +1,7 @@
 import HighchartsReact from 'highcharts-react-official'
 import Highchart from 'highcharts'
-import { FC, use } from 'react'
+import { FC } from 'react'
 import data from '@/public/static/graphRPGF2/allocationDistribution.json'
-import { background } from '@cloudinary/url-gen/qualifiers/focusOn'
 
 const AllocationDistribution: FC = () => {
   const allocationDataset = data

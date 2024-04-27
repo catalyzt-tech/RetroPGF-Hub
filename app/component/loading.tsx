@@ -24,7 +24,7 @@ export default function Loading({}: {}) {
             </svg>
             <span className="sr-only">Loading...</span>
           </div>
-          <h6 className="text-xl lg:text-2xl font-medium text-gray-500 mt-2">
+          <h6 className="text-xl lg:text-2xl font-medium text-gray-700 mt-2">
             Loading
           </h6>
         </div>

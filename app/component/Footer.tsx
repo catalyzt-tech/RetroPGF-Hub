@@ -6,7 +6,10 @@ import Link from 'next/link'
 function ReturnLink() {
   return (
     <div className="flex items-center gap-8">
-      <Link href={'/explore'} className="text-base font-semibold text-gray-800 hover:underline hover:text-primaryRed">
+      <Link
+        href={'/explore'}
+        className="text-base font-semibold text-gray-800 hover:underline hover:text-primaryRed"
+      >
         Explore
       </Link>
       <Link
@@ -34,26 +37,29 @@ function ReturnLink() {
 function ReturnLinkLogo() {
   return (
     <div className="flex gap-2">
-      <a 
-      href="/" 
-      className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
-      target="_blank" rel="noopener noreferrer" 
+      <a
+        href="/"
+        className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <LinkIcon size={24} className="fill-gray-800" />
       </a>
-      
-      <a 
-      href="/" 
-      className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
-      target="_blank" rel="noopener noreferrer" 
+
+      <a
+        href="/"
+        className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <LogoTwitter size={24} className="fill-gray-800" />
       </a>
-      
-      <a 
-      href="/" 
-      className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
-      target="_blank" rel="noopener noreferrer" 
+
+      <a
+        href="/"
+        className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <LogoDiscord size={24} className="fill-gray-800" />
       </a>
@@ -66,19 +72,18 @@ export default function Footer({}: {}) {
     <footer className="w-full px-4 lg:px-12 mt-6">
       {/* Mobile Footer */}
 
-            <div className="flex items-start min-[450px]:items-center lg:hidden flex-col gap-4 border-t py-4 mt-6 border-gray-100">
-                <ReturnLinkLogo />
-                <div className="">
-                    <h6 className="text-base font-normal text-gray-600">
-                     © 2024 RetroPGF Hub. All rights reserved.
-                    </h6>
-                    <div className="flex gap-0.5 flex-wrap text-sm text-gray-600">
-                        <span>This open-source project built by</span>
-                        <span className="font-semibold">@Catalyzt</span>.
-                    </div>
-
-                </div>
-            </div>
+      <div className="flex items-start min-[450px]:items-center lg:hidden flex-col gap-4 border-t py-4 mt-6 border-gray-100">
+        <ReturnLinkLogo />
+        <div className="">
+          <h6 className="text-base font-normal text-gray-600">
+            © 2024 RetroPGF Hub. All rights reserved.
+          </h6>
+          <div className="flex gap-0.5 flex-wrap text-sm text-gray-600">
+            <span>This open-source project built by</span>
+            <span className="font-semibold">@Catalyzt</span>.
+          </div>
+        </div>
+      </div>
 
       {/* End Mobile Footer */}
 
