@@ -1,5 +1,7 @@
 import { FC, useState } from 'react'
+import RPGF1History from '@/app/component/History/RetroPGF1/RPGF1History'
 import RPGF2History from '@/app/component/History/RetroPGF2/RPGF2History'
+import RPGF3History from '@/app/component/History/RetroPGF3/RPGF3History'
 interface HistorySectionProps {
   round?: number
 }
@@ -19,17 +21,31 @@ const HistorySection: FC<HistorySectionProps> = ({ round }) => {
     )
   return (
     <>
-      {round === 2 ? (
+      {round === 1 && (
+        <div className="grid grid-cols-7 gap-x-10 animate-slowfade">
+          <div className="col-span-5">
+            <RPGF1History />
+          </div>
+          <div className="font-semibold">On This Page</div>
+        </div>
+      )}
+
+      {round === 2 && (
         <div className="grid grid-cols-7 gap-x-10 animate-slowfade">
           <div className="col-span-5">
             <RPGF2History />
           </div>
           <div className="font-semibold">On This Page</div>
         </div>
-      ) : (
-        <>Wait for authors</>
       )}
-      {/* <div>Test</div> */}
+      {round === 3 && (
+        <div className="grid grid-cols-7 gap-x-10 animate-slowfade">
+          <div className="col-span-5">
+            <RPGF3History />
+          </div>
+          <div className="font-semibold">On This Page</div>
+        </div>
+      )}
     </>
   )
 }
