@@ -68,7 +68,7 @@ export default function Cpage({ round2 }: { round2: RetroRound2[] }) {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <div className="font-rubik">
+              <div className="font-rubik ">
                 <HistorySection round={2} />
               </div>
             </Transition>

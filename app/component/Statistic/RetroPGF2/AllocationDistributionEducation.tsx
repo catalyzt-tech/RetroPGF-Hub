@@ -1,7 +1,6 @@
 import Highchart from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import data from '@/public/static/graphRPGF2/allocationDistributionEachCategory.json'
-import { format } from 'path'
 const AllocationDistributionEducation = () => {
   const allocationDataset = data
 
