@@ -67,7 +67,7 @@ export default async function Page() {
             Explore past projects and learn from awesome creators
           </h6>
           <p className="lg:text-center text-base font-normal text-gray-600 lg:text-gray-800">
-            Give autonomy to the whole team. With our drag-and-drop builder and AI-powered tools, anyone can carry out effective product research across the entire development process at scale. When you can build fast, you can learn fast.
+            Browse all the past round projects and learn from the experts. Here you can find all the details about each project since RetroPGF 1 such as allocation, ranking, and number of votes.
           </p>
         </div>
         <div className="px-0 min-[350px]:px-8 sm:px-4 md:px-10 lg:px-24 xl:px-36  w-full lg:w-[60rem] xl:w-[80rem]">
@@ -90,15 +90,12 @@ export default async function Page() {
               Help others and build lasting connections
             </h6>
             <div className="mb-2 text-base font-normal  text-gray-600">
-              Give autonomy to the whole team. With our drag-and-drop builder and
-              AI-powered tools, anyone can carry out effective product research
-              across the entire development process at scale. When you can build
-              fast, you can learn fast.
+              Building a project is tough. Get help from our community wether it is a technical question or a design feedback all can be asked. You can also help others by giving feedback or answering questions.
             </div>
             <ul className="l font-inter text-base font-normal text-gray-600 gap-2">
               <CheckListItem word="Request Feedback" />
-              <CheckListItem word="Ask Questions" />
               <CheckListItem word="Give Feedback" />
+              <CheckListItem word="Ask Questions" />
             </ul>
         </div>
     
@@ -124,19 +121,15 @@ export default async function Page() {
 
         <div className="lg:w-[31.875rem] flex flex-col">
           <div className="flex items-center justify-center font-inter text-sm font-bold tracking-wide text-left text-red-600 w-fit h-8 rounded-lg py-2 px-2.5 bg-red-50">
-            Build
+            Learn
           </div>
           <div className="lg:w-[28.375rem] font-rubik lg:text-3xl font-semibold lg:mt-4 mt-2 text-2xl">
-            Create your project and get support from our community
+            Don't know how to get started?
           </div>
           <div className="lg:w-[28.375rem] w-fit font-inter text-base font-normal lg:mt-6 mt-4 text-gray-600">
-            Give autonomy to the whole team. With our drag-and-drop builder and
-            AI-powered tools, anyone can carry out effective product research
-            across the entire development process at scale. When you can build
-            fast, you can learn fast.
+            We provided high quality resources for you to get started in RetroPGF. You can learn about the basics of RetroPGF, Where to get the ideas and how to calculate your impact.
           </div>
           <ul className="lg:mt-[1.53rem] mt-2 font-inter text-base font-normal text-gray-600 gap-2">
-            <CheckListItem word="RetroPGF 101" />
             <CheckListItem word="Learning Path" />
             <CheckListItem word="Impact Calculator" />
           </ul>
