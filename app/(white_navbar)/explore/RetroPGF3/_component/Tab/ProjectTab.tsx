@@ -11,6 +11,7 @@ import DynamicCard from '../DynamicCard'
 import ListCard from './ListCard'
 import DialogFilter from './Filter/DialogFilter'
 import { useSearchParams } from 'next/navigation'
+import Image from 'next/image'
 
 export default function ProjectTab({ round3 }: { round3: RetroRound3[] }) {
   const searchParams = useSearchParams()
@@ -270,9 +271,8 @@ export default function ProjectTab({ round3 }: { round3: RetroRound3[] }) {
   function isLetter(c: string) {
     return c.toLowerCase() !== c.toUpperCase()
   }
-
-  const [loading, setLoading] = useState<boolean>(true)
-
+ 
+  const [loading, setLoading] = useState(true)
   const load = () => {
     setTimeout(() => {
       setLoading(false)
@@ -281,8 +281,13 @@ export default function ProjectTab({ round3 }: { round3: RetroRound3[] }) {
   load()
   if (loading)
     return (
-      <div className="flex flex-row justify-center items-center animate-pulse h-[40em]">
-        Loading...
+      <div className="flex flex-col justify-center items-center animate-pulse h-[40em]">
+        <Image
+          src="/static/loading/small_sunny.svg"
+          width={55}
+          height={55}
+          alt="loading"
+        />
       </div>
     )
   return (
