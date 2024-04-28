@@ -12,6 +12,7 @@ import AllocationDistributionTooling from '@/app/component/Statistic/RetroPGF2/A
 import CentralValueEachCategory from '@/app/component/Statistic/RetroPGF2/CentralValueEachCategory'
 import { ArrowDown, ArrowUp, Star, Growth, Rocket } from '@carbon/icons-react'
 import { FC, useState, memo } from 'react'
+import Image from 'next/image'
 
 interface StatisticProps {
   data?: any
@@ -83,8 +84,7 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
   ]
 
   // const MemoizedStatsBox = memo(StatsBox)
-  const [loading, setLoading] = useState(true)
-  // console.log(round)
+  const [loading, setLoading] = useState<boolean>(true)
   const load = () => {
     setTimeout(() => {
       setLoading(false)
@@ -93,8 +93,13 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
   load()
   if (loading)
     return (
-      <div className="flex flex-row justify-center items-center animate-pulse h-[40em]">
-        Loading...
+      <div className="flex flex-col justify-center items-center animate-pulse h-[40em]">
+        <Image
+          src="/static/loading/small_sunny.svg"
+          width={55}
+          height={55}
+          alt="loading"
+        />
       </div>
     )
   return (
