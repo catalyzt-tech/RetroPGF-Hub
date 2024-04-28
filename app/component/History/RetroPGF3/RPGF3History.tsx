@@ -91,7 +91,11 @@ const RPGF3History = () => {
               Project Applications
             </div>
             <p className="text-gray-600 font-base">
-            During this phase, builders, creators, and educators had the chance to submit their applications, showcasing their positive impact within the Optimism Collective.Theres no nominations process in this round, instead projects sign-up directly. You can apply here through the sign-up period.
+              During this phase, builders, creators, and educators had the
+              chance to submit their applications, showcasing their positive
+              impact within the Optimism Collective.Theres no nominations
+              process in this round, instead projects sign-up directly. You can
+              apply here through the sign-up period.
             </p>
           </li>
           <li className="mb-6 ml-6">
