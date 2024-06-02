@@ -69,7 +69,7 @@ function ReturnLinkLogo() {
 
 export default function Footer({}: {}) {
   return (
-    <footer className="w-full px-4 lg:px-12 mt-6">
+    <footer className="w-full px-4 lg:px-8 xl:px-12 mt-6">
       {/* Mobile Footer */}
 
       <div className="flex items-start min-[450px]:items-center lg:hidden flex-col gap-4 border-t py-4 mt-6 border-gray-100">

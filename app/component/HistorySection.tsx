@@ -30,27 +30,18 @@ const HistorySection: FC<HistorySectionProps> = ({ round }) => {
     <>
       {round === 1 && (
         <div className="grid grid-cols-7 gap-x-10 animate-slowfade">
-          <div className="col-span-5">
             <RPGF1History />
-          </div>
-          <div className="font-semibold">On This Page</div>
         </div>
       )}
 
       {round === 2 && (
         <div className="grid grid-cols-7 gap-x-10 animate-slowfade">
-          <div className="col-span-5">
             <RPGF2History />
-          </div>
-          <div className="font-semibold">On This Page</div>
         </div>
       )}
       {round === 3 && (
         <div className="grid grid-cols-7 gap-x-10 animate-slowfade">
-          <div className="col-span-5">
             <RPGF3History />
-          </div>
-          <div className="font-semibold">On This Page</div>
         </div>
       )}
     </>

@@ -1,10 +1,27 @@
 import Image from 'next/image'
-import { FC } from 'react'
+import { FC, useRef } from 'react'
+import ScrollSpy from '../../ScrollSpy';
 
 const RPGF3History: FC = () => {
+
+  const introRef = useRef<HTMLElement | null>(null);
+  const experimentRef = useRef<HTMLElement | null>(null);
+  const timelineRef = useRef<HTMLElement | null>(null);
+  const scopeRef = useRef<HTMLElement | null>(null);
+  const designRef = useRef<HTMLElement | null>(null);
+
+  const sections = [
+    { name: "RetroPGF 3", ref: introRef },
+    { name: "Experiment Overview", ref: experimentRef },
+    { name: "Process and Timeline", ref: timelineRef },
+    { name: "Scope of Round", ref: scopeRef },
+    { name: "Round Design", ref: designRef },
+  ];
+
   return (
     <>
-      <section className="mb-10" id="intro">
+    <div className="col-span-5">
+      <section className="mb-10" id="RetroPGF 3" ref={introRef}>
         <div className="font-semibold text-3xl text-gray-800">RetroPGF 3</div>
         <div className="text-gray-600 text-base font-normal mt-4">
           RetroPGF Rounds 1 & 2 were a resounding success, benefitting numerous
@@ -31,7 +48,7 @@ const RPGF3History: FC = () => {
           alt="RetroPGF 3"
         />
       </section>
-      <section className="mb-10" id="experiment">
+      <section className="mb-10" id="Experiment Overview" ref={experimentRef}>
         <div className="font-semibold text-3xl text-gray-800">
           Experiment Overview
         </div>
@@ -59,7 +76,7 @@ const RPGF3History: FC = () => {
           alt="Experiment Overview"
         />
       </section>
-      <section className="mb-10" id="timeline">
+      <section className="mb-10" id="Process and Timeline" ref={timelineRef}>
         <div className="font-semibold text-3xl text-gray-800">
           Process and Timeline
         </div>
@@ -143,7 +160,7 @@ const RPGF3History: FC = () => {
           </li>
         </ol>
       </section>
-      <section className="mb-10" id="scope">
+      <section className="mb-10" id="Scope of Round" ref={scopeRef}>
         <div className="font-semibold text-3xl text-gray-800">
           Scope of Round
         </div>
@@ -280,7 +297,7 @@ const RPGF3History: FC = () => {
           </ol>
         </div>
       </section>
-      <section className="mb-10" id="design">
+      <section className="mb-10" id="Round Design" ref={designRef}>
         <div className="font-semibold text-3xl text-gray-800">Round Design</div>
         <div className="text-gray-600 text-base font-normal mt-4">
           Retroactive Public Goods Funding is a dynamic experiment, always
@@ -336,7 +353,7 @@ const RPGF3History: FC = () => {
           effectively. Our goal is to empower projects to quantify their
           contributions and give badgeholders the insights they need.
         </div>
-        <Image
+        <Image 
           src="/static/historyRPGF3/retropgf3_design_1.jpg"
           className="my-5 rounded-lg"
           width={1000}
@@ -584,6 +601,13 @@ const RPGF3History: FC = () => {
           Let's make RetroPGF even better, one vote at a time!
         </div>
       </section>
+      </div>
+      <div className=" flex flex-col gap-4 w-full col-span-2">
+          <ScrollSpy
+          defaultClass='border-l border-gray-100 hidden lg:block h-fit p-4 w-full sticky top-24'
+          sections={sections}
+          />
+      </div>
     </>
   )
 }

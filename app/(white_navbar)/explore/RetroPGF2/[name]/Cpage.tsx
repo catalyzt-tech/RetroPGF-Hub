@@ -3,9 +3,9 @@ import { useRef } from "react";
 import ProjectDetailSection from "./_component/_Project/ProjectDetailSection";
 import OverviewSection from "./_component/_Project/OverviewSection";
 import ContributionSection from "./_component/_Project/ContributionSection";
-import ScrollSpy from "./_component/ScrollSpy";
 import { RetroRound2 } from "../RetroType2";
 import QuestionSection from "./_component/_Project/DetailSection";
+import ScrollSpy from "@/app/component/ScrollSpy";
 
 
 export default function Cpage({
@@ -16,8 +16,13 @@ export default function Cpage({
 
     const overViewRef = useRef<HTMLElement | null>(null)
     const contributionRef = useRef<HTMLElement | null>(null)
-    const detailRef = useRef<HTMLElement | null>(null)
-
+    const questionRef = useRef<HTMLElement | null>(null)
+    const sections = [
+        { name: "Overview", ref: overViewRef },
+        { name: "Contribution", ref: contributionRef },
+        { name: "Question", ref: questionRef },
+      ];
+    
 return (
 
     <div className="flex mt-8 gap-10"> 
@@ -33,14 +38,12 @@ return (
                 />
             </section>
             <ContributionSection data={data} contributionRef={contributionRef} />
-            <QuestionSection data={data} detailRef={detailRef} />
+            <QuestionSection data={data} questionRef={questionRef} />
         </div>
 
         <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">
             <ScrollSpy
-            contributionRef={contributionRef}
-            detailRef={detailRef}
-            overViewRef={overViewRef}
+            sections={sections}
             />
         </div>
     </div>
