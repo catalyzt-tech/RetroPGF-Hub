@@ -584,6 +584,312 @@ const RPGF3History: FC = () => {
           Let's make RetroPGF even better, one vote at a time!
         </div>
       </section>
+      <section className="mb-10" id="tooling">
+        <div className="font-semibold text-3xl text-gray-800">Tooling</div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          The Optimism community is all about coming together to create amazing
+          tools that make Retroactive Public Goods Funding (RetroPGF) even
+          better for everyone involved. We believe that the more builders,
+          researchers, and regenerators who join in, the faster we'll reach our
+          goal of summoning Ether's Phoenix. And here's the exciting part: by
+          contributing to RetroPGF development, you not only help improve the
+          system but also earn RetroPGF rewards!
+        </div>
+
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          Core Applications
+        </div>
+        <ol className="list-disc ml-5 mt-5 text-gray-600">
+          <li>
+            <div className="text-gray-700 font-medium">RetroPGF Sign-up</div>
+            <p className="text-gray-600">
+              Our friends at OP Labs, EcoPod are crafting this gem. It makes it
+              a breeze for projects to sign up for RetroPGF 3.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Discovery & Voting</div>
+            <p className="text-gray-600">
+              Supermodular and Agora are hard at work on these apps. They will
+              empower badgeholders to review and vote on projects. Plus, they're
+              designing two different voting experiences, so badgeholders can
+              choose what suits them best.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">List Creation UI</div>
+            <p className="text-gray-600">
+              Supermodular is also cooking up a cool feature that lets
+              badgeholders create Lists.
+            </p>
+          </li>
+        </ol>
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          Community & Additional Tools
+        </div>
+        <ol className="list-disc ml-5 mt-5 text-gray-600">
+          <li>
+            <div className="text-gray-700 font-medium">OpenSource Observer</div>
+            <p className="text-gray-600">
+              This tool provides analytics to evaluate the impact of open-source
+              projects.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Pairwise</div>
+            <p className="text-gray-600">
+              Imagine a "Tinder-like" voting experience for badgeholders. It's
+              here!
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">RetroPGF Hub</div>
+            <p className="text-gray-600">
+              We're making it easy for community members to suggest projects
+              that should sign up for RetroPGF which is us!
+            </p>
+          </li>
+          <li className="mb-6">
+            <div className="text-gray-700 font-medium">BuidlGuidl</div>
+            <p className="text-gray-600">
+              They're experimenting with a RetroPGF voting application. Exciting
+              stuff! Got Ideas?
+            </p>
+          </li>
+        </ol>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          If you're want to contribute and need inspiration, head over to our
+          builder ideas or ecosystem contributions for some fantastic ideas. And
+          if you've got an experiment or project in mind, share it with the
+          community in the governance forum. Together, we're building RetroPGF
+          into something extraordinary. Join us in this exciting journey!
+        </div>
+      </section>
+      <section className="mb-10" id="faq">
+        <div className="font-semibold text-3xl text-gray-800">
+          Voting Badges
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          In RetroPGF 3, we're distributing voting badges to 208 community
+          members to ensure a fair and diverse voting process. If you're a
+          badgeholder, you can go to the badgeholder hub to find relevant
+          resources and stay up to date.
+        </div>
+        <Image
+          src="/static/historyRPGF3/retropgf3_voting_2.jpg"
+          className="my-5 rounded-lg"
+          width={1000}
+          height={400}
+          layout="responsive"
+          alt="Voting Badges"
+        />
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          Badge Distribution
+        </div>
+        <ol className="list-disc ml-5 mt-5 text-gray-600">
+          <li>
+            <div className="text-gray-700 font-medium">
+              Existing Badgeholders Choose
+            </div>
+            <p className="text-gray-600">
+              If you voted in RetroPGF 2, you'll receive a new voting badge.
+              Plus, you can give one to a community member of your choice.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Top 50 Recipients of RetroPGF 2
+            </div>
+            <p className="text-gray-600">
+              If you're a badgeholder, you can access the badgeholder hub to
+              find resources, updates, and other relevant information.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Optimism Foundation Choose
+            </div>
+            <p className="text-gray-600">
+              They have 10 voting badges to distribute to community members of
+              their choice who have made significant contributions to the
+              Optimism.
+            </p>
+          </li>
+        </ol>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          Just so you know, the criteria for citizenship may change in the
+          future, and it'll be decided by governance. Voting in RetroPGF 3
+          doesn't guarantee a permanent spot in the Citizens' House or future
+          RetroPGF rounds.
+        </div>
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          Rules & Code of Conduct
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          Badgeholders must abide by the following rules and the Code of
+          Conduct. In case of a violation, the voting badge that has been
+          distributed may be revoked.
+        </div>
+        <ol className="list-disc ml-5 mt-5 text-gray-600">
+          <li>
+            <div className="text-gray-700 font-medium">Untransferred Badge</div>
+            <p className="text-gray-600">
+              You’re not allowed to distribute your voting badge to a co-worker
+              with whom you work on your primary project. “Primary” is defined
+              as a project to which you dedicate &gt; 25% of working hours or
+              derive &gt;25% of your compensation. This rule is established to
+              counteract the concentration of voting badges among the members of
+              a small number of projects.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Be Independent</div>
+            <p className="text-gray-600">
+              You should vote independently and not be influenced by project,
+              company, and others. This rule is established to ensure that the
+              voting process is fair and transparent.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Use Your Badge Wisely
+            </div>
+            <p className="text-gray-600">
+              Your badge is a powerful tool. Use it wisely and responsibly.
+            </p>
+          </li>
+        </ol>
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          Guidelines for Sharing Badges
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          The Optimism Foundation has some handy guidelines for distributing
+          voting badges, and they encourage everyone to consider these criteria
+          when making their own choices. Here are some things to keep in mind:
+        </div>
+        <ol className="list-disc ml-5 mt-5 text-gray-600">
+          <li>
+            <div className="text-gray-700 font-medium">
+              Contribution to RetroPGF
+            </div>
+            <p className="text-gray-600">
+              Can this person help make RetroPGF even better as a funding
+              mechanism?
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Expertise</div>
+            <p className="text-gray-600">
+              Is this person a pro in any of the categories we're funding in
+              RetroPGF?
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Commitment</div>
+            <p className="text-gray-600">
+              Has this person shown a strong commitment to the long-term growth
+              of the Optimism ecosystem and our Collective's mission?
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Fresh Perspectives</div>
+            <p className="text-gray-600">
+              Can this person bring fresh perspectives and insights to the
+              table, enriching our evaluations?
+            </p>
+          </li>
+        </ol>
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          Why these badgeholder selection method?
+        </div>
+        <ol className="list-disc ml-5 mt-5 text-gray-600">
+          <li>
+            <div className="text-gray-700 font-medium">
+              Learning from RetroPGF 2
+            </div>
+            <p className="text-gray-600">
+              In RetroPGF 2, we noticed something cool. When we allowed each
+              badgeholder from the previous round to choose a new badgeholder,
+              it created a super-committed and value-aligned group of voters.
+              That's what we want!
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Steering Clear of Centralization
+            </div>
+            <p className="text-gray-600">
+              But here's the twist. Sometimes badgeholders tended to pass their
+              voting badges to their team members, which could lead to a bit too
+              much centralization. To keep things fair, we now have a rule that
+              stops badgeholders from picking their coworkers. We're all about
+              diversity!
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Top 50 Recipients Rock
+            </div>
+            <p className="text-gray-600">
+              Those awesome top 50 recipients from RetroPGF round 2? They've
+              shown they're totally on board with Optimism's values, and they're
+              committed to making RetroPGF a fair process. We're even
+              experimenting to see if getting a RetroPGF badge could be a way to
+              become a citizen in the future.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Optimism Foundation's Role
+            </div>
+            <p className="text-gray-600">
+              The Optimism Foundation has 10 voting badges to give out to
+              community members who've made a significant impact on the
+              Optimism. It's their way of recognizing and rewarding valuable
+              contributions. Note that, they won't be involved in picking
+              badgeholders or citizens in future rounds.
+            </p>
+          </li>
+        </ol>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          Remember, the criteria for citizenship may change in the future, and
+          it'll be decided by the community's governance. So, we're always
+          evolving and improving! Let's keep the RetroPGF spirit alive and make
+          this journey even more exciting together!
+        </div>
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          The Future of Becoming a Citizen
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          In the exciting future of the Optimism Collective, the responsibility
+          for selecting citizens will rest with our two-house governance system.
+          It's all about making sure that citizenship is earned based on the
+          reputation you build within our community.
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          But here's the best part: we want you, the badgeholders, and our
+          amazing community members, to be part of this decision-making process.
+          We invite you to join discussions about what reputation attributes
+          (kind of like endorsements) should be considered valuable when
+          selecting future citizens. You can share your thoughts and ideas in
+          this thread.
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          By doing this, we're getting ready for the day when citizenship
+          selection will be in the hands of the Collective. It's all about
+          making sure the process is fair, transparent, and aligned with our
+          collective values. So, let's keep the conversation going and shape the
+          future of the Optimism Collective.
+        </div>
+        <Image
+          src="/static/historyRPGF3/retropgf3_banner_5.png"
+          className="my-5 rounded-lg"
+          width={1000}
+          height={400}
+          layout="responsive"
+          alt="The Future of Becoming a Citizen"
+        />
+      </section>
     </>
   )
 }
