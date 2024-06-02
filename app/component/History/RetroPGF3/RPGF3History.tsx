@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import { FC } from 'react'
 
-const RPGF3History = () => {
+const RPGF3History: FC = () => {
   return (
     <>
       <section className="mb-10" id="intro">
@@ -393,6 +394,194 @@ const RPGF3History = () => {
           straightforward process. Join us in making RetroPGF even better, one
           step at a time! Together, we're building a brighter future for project
           evaluation!
+        </div>
+
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          Lists Application
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          Ever wondered how we can accurately assess the impact and
+          profitability of all the amazing projects nominated for Retroactive
+          Public Goods Funding (RetroPGF)? It's a big task, and no single
+          badgeholder can have all the answers. But fret not, because we have a
+          plan to make it happen! In previous rounds, we've seen badgeholders
+          sharing their project evaluations with each other. Now, in Round 3,
+          we're taking it up a notch. We're introducing a cool new feature
+          called "Lists."
+        </div>
+        <Image
+          src="/static/historyRPGF3/retropgf3_design_3.jpg"
+          className="my-5 rounded-lg"
+          width={1000}
+          height={400}
+          layout="responsive"
+          alt="Lists Application"
+        />
+        <div className="text-gray-600 text-base font-normal mt-4">
+          Think of Lists as a super flexible way to collaborate and delegate.
+          Each List consists of a group of projects carefully chosen from the
+          pool of RetroPGF applicants. Not only that, but it also comes with a
+          suggested allocation of OP token for each project.
+        </div>
+        <ol className="list-disc ml-5 mt-5 text-gray-600">
+          <li>
+            <div className="text-gray-700 font-medium">Knowledge Sharing</div>
+            <p className="text-gray-600">
+              Lists are all about sharing knowledge. Since no one can be an
+              expert on everything, Lists allow badgeholders to bring their
+              unique insights and expertise to the table within specific areas.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Collaboration Made Easy
+            </div>
+            <p className="text-gray-600">
+              With Lists, badgeholders can easily share their project
+              evaluations with others. You can replicate or tweak someone else's
+              votes if you find their approach appealing.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Methodology Matters</div>
+            <p className="text-gray-600">
+              Each List creator provides a methodology for distributing OP to
+              each project based on their expertise and data evaluation. It adds
+              transparency and trust to the process.
+            </p>
+          </li>
+        </ol>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          Lists empower badgeholders to tap into each other's expertise when
+          making their own voting decisions. It's a step toward transitioning
+          from subjective reviews to standardized impact evaluation frameworks.
+          We believe that Lists will become an invaluable tool for badgeholders
+          to collaborate and leverage each other's strengths. Our bet is that
+          this will lead to badgeholders supporting more projects than ever
+          before.
+        </div>
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          Impact Evaluation
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          Retroactive Funding is a pretty new and exciting concept in the world
+          of grant funding. It flips the script by rewarding projects for the
+          positive impact they've already made, rather than guessing at their
+          future contributions.
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          In Round 3, we're all about providing badgeholders with a clearer
+          roadmap for evaluating impact as
+        </div>
+        <ol className="list-disc ml-5 mt-5 text-gray-600">
+          <li>
+            <div className="text-gray-700 font-medium">Clearer Roles</div>
+            <p className="text-gray-600">
+              We're giving badgeholders a more defined role. Instead of just
+              sharing personal preferences or experiences, they're stepping into
+              the shoes of impact and profit judges. It's all about assessing
+              the real impact a project has had.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Impact Evaluation Frameworks
+            </div>
+            <p className="text-gray-600">
+              We're not leaving badgeholders in the dark. We're working together
+              to create frameworks that help us nail down what impact really
+              means. This isn't a solo effort; it's a team endeavor with
+              badgeholders playing a crucial role.
+            </p>
+          </li>
+        </ol>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          These changes benefit everyone. Badgeholders get a better
+          understanding of what they're voting for, and projects get a clearer
+          picture of what they'll be rewarded for. It's a win-win! But here's
+          the thing, defining impact and building these frameworks is an ongoing
+          journey. Round 3 is just the beginning of our mission to establish a
+          shared understanding of impact assessment.
+        </div>
+        <div className="text-gray-700 text-lg font-semibold mt-4">
+          Voting Application
+        </div>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          At RetroPGF, we're all about making the voting process smoother and
+          more enjoyable for our valued badgeholders. We've learned from past
+          rounds and are excited to introduce some exciting changes in Round 3.
+        </div>
+        <Image
+          src="/static/historyRPGF3/retropgf3_design_4.jpg"
+          className="my-5 rounded-lg"
+          width={1000}
+          height={400}
+          layout="responsive"
+          alt="Voting Application"
+        />
+
+        <ol className="list-disc ml-5 mt-5 text-gray-600">
+          <li>
+            <div className="text-gray-700 font-medium">
+              All-in-One Application
+            </div>
+            <p className="text-gray-600">
+              We get it, reviewing dozens or even hundreds of projects can be
+              overwhelming. That's why we've designed a single application that
+              lets badgeholders review projects, check out Lists, allocate their
+              votes, and submit their choices—all in one place.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Integration Made Easy
+            </div>
+            <p className="text-gray-600">
+              Project profiles and applications are seamlessly integrated with
+              additional tools. This simplifies the process and helps
+              badgeholders make informed decisions.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Role-Aligned Design</div>
+            <p className="text-gray-600">
+              Our voting design is now perfectly in sync with the role of our
+              badgeholders. It's designed to help them understand their
+              responsibilities and vote accordingly.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">
+              Flexible Voting Power
+            </div>
+            <p className="text-gray-600">
+              Each badgeholder can allocate up to 30 million OP token across
+              projects, but the beauty is that they can choose to use only a
+              portion of their voting power if they wish. It's all about giving
+              them flexibility.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Project Allocation</div>
+            <p className="text-gray-600">
+              Badgeholders can allocate up to 10 million OP per project,
+              allowing for more nuanced voting decisions.
+            </p>
+          </li>
+          <li>
+            <div className="text-gray-700 font-medium">Privacy Matters</div>
+            <p className="text-gray-600">
+              Your votes are kept private. Only the Optimism Foundation can
+              access them, and that's just to enforce our Code of Conduct.
+            </p>
+          </li>
+        </ol>
+        <div className="text-gray-600 text-base font-normal mt-4">
+          We believe these new voting applications will not only simplify the
+          life of our badgeholders but also encourage them to vote in a way that
+          aligns with RetroPGF's vision and goals. So, get ready for a more
+          user-friendly, efficient, and exciting voting experience in Round 3.
+          Let's make RetroPGF even better, one vote at a time!
         </div>
       </section>
     </>
