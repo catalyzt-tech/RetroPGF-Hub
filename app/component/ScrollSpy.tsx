@@ -7,10 +7,19 @@ interface Section {
 
 interface ScrollSpyProps {
   sections: Section[];
-  defaultClass?: string
+  defaultClass?: string;
+  observerOptions?: IntersectionObserverInit
 }
 
-export default function ScrollSpy({ sections, defaultClass="hidden lg:block bg-white h-fit p-4 rounded-md shadow-md w-full sticky top-24" }: ScrollSpyProps) {
+export default function ScrollSpy({ 
+  sections, 
+  defaultClass="hidden lg:block bg-white h-fit p-4 rounded-md shadow-md w-full sticky top-24",
+  observerOptions={
+    root: null,
+    rootMargin: "-30px",
+    threshold: 0.1,
+  }
+ }: ScrollSpyProps) {
   const [currentContent, setCurrentContent] = useState<string>(sections[0]?.name || "");
   const [visibleSections, setVisibleSections] = useState<Record<string, boolean>>(
     sections.reduce((acc, section) => {
@@ -19,11 +28,7 @@ export default function ScrollSpy({ sections, defaultClass="hidden lg:block bg-w
     }, {} as Record<string, boolean>)
   );
 
-  const observerOptions = {
-    root: null,
-    rootMargin: "-30px",
-    threshold: 0.1,
-  };
+
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -74,11 +79,18 @@ export default function ScrollSpy({ sections, defaultClass="hidden lg:block bg-w
                 }`}
                 onClick={() => {
                   if (ref.current) {
-                    ref.current.scrollIntoView({
-                      behavior: "smooth",
-                      block: "center",
-                      inline: "start",
+                    const topOffset = ref.current.getBoundingClientRect().top + window.pageYOffset;
+                    const navbarHeight = (4.5 * 16) + 10; 
+                    const scrollToPosition = topOffset - navbarHeight;
+
+                    window.scrollTo({
+                      top: scrollToPosition,
+                      behavior: "smooth"
                     });
+
+                    setTimeout(() => {
+                      setCurrentContent(name);
+                    }, 500);
                   }
                 }}
               >

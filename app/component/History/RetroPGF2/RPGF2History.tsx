@@ -26,8 +26,8 @@ const RPGF2History: FC = () => {
   ];
   return (
     <>
-      <div className="col-span-5">
-      <section className="mb-10" id="RetroPGF 2" ref={introRef}>
+      <div className="col-span-5 flex flex-col gap-10">
+      <section className="" id="RetroPGF 2" ref={introRef}>
         <div className="font-semibold text-3xl text-gray-800">RetroPGF 2</div>
         <div className="text-gray-600 text-base font-normal mt-4">
           The Citizens' House employs a unique approach called "retroactive
@@ -50,7 +50,7 @@ const RPGF2History: FC = () => {
           alt="RetroPGF 2"
         ></Image>
       </section>
-      <section className="mb-10" id="Experiment Overview" ref={experimentRef}>
+      <section className="" id="Experiment Overview" ref={experimentRef}>
         <div className="font-semibold text-3xl text-gray-800 mt-3">
           Experiment Overview
         </div>
@@ -76,7 +76,7 @@ const RPGF2History: FC = () => {
           alt="Bicameral"
         ></Image>
       </section>
-      <section className="mb-10" id="Process and Timeline" ref={timelineRef}>
+      <section className="" id="Process and Timeline" ref={timelineRef}>
         <div className="font-semibold text-3xl text-gray-800 mt-3">
           Process and Timeline
         </div>
@@ -187,7 +187,7 @@ const RPGF2History: FC = () => {
           </ol>
         </div>
       </section>
-      <section className="mb-10"  id="Scope of Round" ref={scopeRef}>
+      <section className=""  id="Scope of Round" ref={scopeRef}>
         <div className="font-semibold text-3xl text-gray-800 mt-3">
           Scope of Round
         </div>
@@ -234,7 +234,7 @@ const RPGF2History: FC = () => {
           alt="Scope of Round"
         />
       </section>
-      <section className="mb-10" id="Nominate Projects" ref={nominateRef}>
+      <section className="" id="Nominate Projects" ref={nominateRef}>
         <div className="font-semibold text-3xl text-gray-800 mt-3">
           Nominate Projects
         </div>
@@ -381,7 +381,7 @@ const RPGF2History: FC = () => {
         </div>
       </section>
 
-      <section className="mb-10" id="Voting Badges" ref={votingRef}>
+      <section className="" id="Voting Badges" ref={votingRef}>
         <div className="font-semibold text-3xl text-gray-800 mt-3">
           Voting Badges
         </div>
@@ -531,7 +531,7 @@ const RPGF2History: FC = () => {
           </li>
         </ol>
       </section>
-      <section className="mb-10" id="Results" ref={resultRef}>
+      <section className="" id="Results" ref={resultRef}>
         <div className="font-semibold text-3xl text-gray-800 mt-3">Results</div>
         <div className="text-gray-600 text-base font-normal mt-4">
           Retroactive Public Goods Funding (RetroPGF) fuels the growth of the
@@ -768,7 +768,7 @@ const RPGF2History: FC = () => {
           education, and operated in different languages and regions.
         </div>
       </section>
-      <section className="mb-10" id="Learnings & Reflections" ref={learningRef}>
+      <section className="" id="Learnings & Reflections" ref={learningRef}>
         <div className="font-semibold text-3xl text-gray-800 mt-3">
           Learnings & Reflections
         </div>
@@ -1230,7 +1230,7 @@ const RPGF2History: FC = () => {
           </li>
         </ol>
       </section>
-      <section className="mb-10" id="Journey" ref={journeyRef}>
+      <section className="" id="Journey" ref={journeyRef}>
         <div className="font-semibold text-3xl text-gray-800 mt-3">
           The Next Journey
         </div>

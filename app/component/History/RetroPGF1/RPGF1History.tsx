@@ -24,8 +24,8 @@ const RPGF1History: FC = () => {
 
   return (
     <>
-      <div className="col-span-5">
-        <section className="mb-10" id="RetroPGF 1" ref={introRef}>
+      <div className="col-span-5 flex flex-col gap-10">
+        <section className="" id="RetroPGF 1" ref={introRef}>
           <div className="font-semibold text-3xl text-gray-800">RetroPGF 1</div>
           <div className="text-gray-600 text-base font-normal mt-4">
             Welcome to RetroPGF Experiment #1, where we're pioneering a
@@ -46,7 +46,7 @@ const RPGF1History: FC = () => {
           ></Image>
         </section>
 
-        <section className="mb-10" id="Experiment Overview" ref={experimentRef} >
+        <section className="" id="Experiment Overview" ref={experimentRef} >
           <div className="font-semibold text-3xl text-gray-800">
             Experiment Overview
           </div>
@@ -70,7 +70,7 @@ const RPGF1History: FC = () => {
             alt="RetroPGF 1"
           ></Image>
         </section>
-        <section className="mb-10" id="Process and Timeline" ref={timelineRef}>
+        <section className="" id="Process and Timeline" ref={timelineRef}>
           <div className="font-semibold text-3xl text-gray-800">
             Process and Timeline
           </div>
@@ -140,7 +140,7 @@ const RPGF1History: FC = () => {
             </li>
           </ol>
         </section>
-        <section className="mb-10" id="Scope of Round" ref={scopeRef}>
+        <section className="" id="Scope of Round" ref={scopeRef}>
           <div className="font-semibold text-3xl text-gray-800">
             Scope of Round
           </div>
@@ -150,7 +150,7 @@ const RPGF1History: FC = () => {
             project must have contributed to the Ethereum ecosystem.
           </div>
         </section>
-        <section className="mb-10" id="Voting Badges" ref={votingRef}>
+        <section className="" id="Voting Badges" ref={votingRef}>
           <div className="font-semibold text-3xl text-gray-800">
             Voting Badges
           </div>
@@ -180,7 +180,7 @@ const RPGF1History: FC = () => {
             for nominating and distributing votes to nominees.
           </div>
         </section>
-        <section className="mb-10" id="Results" ref={resultRef}>
+        <section className="" id="Results" ref={resultRef}>
           <div className="font-semibold text-3xl text-gray-800">Results</div>
           <div className="text-gray-600 text-base font-normal mt-4">
             Probably the most obvious property of the RetroPGF 1 results that can
@@ -235,7 +235,7 @@ const RPGF1History: FC = () => {
             alt="RetroPGF 1"
           ></Image>
         </section>
-        <section className="mb-10" id="Learnings & Reflections" ref={learningRef}>
+        <section className="" id="Learnings & Reflections" ref={learningRef}>
           <div className="font-semibold text-3xl text-gray-800">
             Learnings & Reflections
           </div>
@@ -372,6 +372,11 @@ const RPGF1History: FC = () => {
           <ScrollSpy
           defaultClass='border-l border-gray-100 hidden lg:block h-fit p-4 w-full sticky top-24'
           sections={sections}
+          observerOptions={{
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.1,
+          }}
           />
       </div>
     </>
