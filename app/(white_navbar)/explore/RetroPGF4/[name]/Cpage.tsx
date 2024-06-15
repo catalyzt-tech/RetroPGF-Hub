@@ -5,10 +5,11 @@ import OverviewSection from './_component/_Project/OverviewSection'
 import ImpactSection from './_component/_Project/ImpactSection'
 import FundingSection from './_component/_Project/FundingSection'
 import ContributionSection from './_component/_Project/ContributionSection'
-import { RetroRound3 } from '../RetroType4'
+// import { iRetroPGF4Project } from '../RetroType4'
 import ScrollSpy from './_component/ScrollSpy'
+import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 
-export default function Cpage({ data }: { data: RetroRound3 }) {
+export default function Cpage({ data }: { data: iRetroPGF4Project }) {
   const overViewRef = useRef<HTMLElement | null>(null)
   const contributionRef = useRef<HTMLElement | null>(null)
   const impactRef = useRef<HTMLElement | null>(null)
@@ -28,7 +29,7 @@ export default function Cpage({ data }: { data: RetroRound3 }) {
           <OverviewSection data={data} />
         </section>
         <ContributionSection data={data} contributionRef={contributionRef} />
-        <ImpactSection data={data} impactRef={impactRef} />
+        {/* <ImpactSection data={data} impactRef={impactRef} /> */}
         <FundingSection data={data} fundingRef={fundingRef} />
       </div>
 

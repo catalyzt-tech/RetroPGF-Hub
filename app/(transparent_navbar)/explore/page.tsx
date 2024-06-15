@@ -6,16 +6,14 @@ import { getJsonRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/page'
 import { getJsonRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/page'
 import Cpage from './Cpage'
 
-export async function getAllRound(
-  limit: number
-): Promise<{
+export async function getAllRound(limit: number): Promise<{
   round1: RetroRound1[]
   round2: RetroRound2[]
   round3: RetroRound3[]
   cateRound3: Map<string, number>
   cateRound2: Map<string, number>
 }> {
-  const round1 = (await getJsonRound1()).sort((a, b) => {
+  const round1 = (await getJsonRound1()).sort((a: any, b: any) => {
     return b.allocation - a.allocation
   })
 
