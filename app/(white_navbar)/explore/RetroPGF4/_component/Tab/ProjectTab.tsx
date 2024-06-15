@@ -422,7 +422,6 @@ export default function ProjectTab({
             </Pagination>
           </div>
         )}
-
         <DialogFilter
           onClose={() => setState((prev) => ({ ...prev, drawer: false }))}
           open={state.drawer}
