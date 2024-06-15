@@ -5,7 +5,7 @@ import path from 'path'
 import { RetroRound1 } from './RetroType1'
 import { isLetter } from '@/app/lib/utils'
 
-async function getJsonRound1(): Promise<RetroRound1[]> {
+export async function getJsonRound1(): Promise<RetroRound1[]> {
   const directoryPath = path.join(process.cwd(), 'public/static/rpgf1.json')
 
   const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
