@@ -4,41 +4,42 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { iRetroPGF4Project } from '../RetroType4'
-import { handleCategoryRound3 } from '@/app/lib/InitialMount'
+import { handleCategoryRound4 } from '@/app/lib/InitialMount'
 
 export default function DynamicCard({
   banner,
   icon,
-  round = '3',
+  round = '4',
   title = '',
   description = '',
-  category = 'OP Stack',
-  votes = 0,
-  opRecieve = 0,
-  rank = 0,
-}: {
+  category = '',
+  teamSize = 0,
+}: // votes = 0,
+// opRecieve = 0,
+// rank = 0,
+{
   banner?: string
   icon?: string
   round?: string
   title?: string
   description?: string
   category?: string
-  votes?: number
-  opRecieve?: number
-  rank?: number
+  teamSize?: number
+  // votes?: number
+  // opRecieve?: number
+  // rank?: number
 }) {
-  console.log('DynamicCard', category)
   return (
     <div
-      className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[18rem] min-h-[18rem] relative bg-white`}
+      className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[18rem] min-h-[12rem] relative bg-white overflow-hidden`}
     >
       {/* Background Image */}
-      <div className="absolute top-0 left-0 w-full h-12 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-20 overflow-hidden">
         <Image
           src={banner || '/random/OP-Banner.png'}
           alt="background image"
           // Not sure about the aspect ratio, so using object-fit
-          className="opacity-50 object-cover z-10"
+          className="opacity-75 object-cover z-10"
           fill
         />
       </div>
@@ -51,7 +52,7 @@ export default function DynamicCard({
       </div>
 
       {/* Avatar */}
-      <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0 z-20">
+      <div className="absolute top-10 left-4 rounded-[0.25rem] bg-white flex flex-shrink-0 z-20 overflow-hidden">
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="avatar image"
@@ -61,12 +62,12 @@ export default function DynamicCard({
         />
       </div>
 
-      <div className="mt-14"></div>
+      <div className="mt-20"></div>
       <div className="w-full h-full">
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF3/${title}`}
+              href={`/explore/RetroPGF4/${title}`}
               className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1"
             >
               {title}
@@ -75,20 +76,19 @@ export default function DynamicCard({
               {description}
             </p>
           </div>
+
           <div className="flex flex-wrap gap-2">
-            {handleCategoryRound3(category)}
+            {handleCategoryRound4(category)}
           </div>
           <div className="flex-grow"></div>
           <div className="flex gap-2">
             <Events size={20} />
             <div className="flex gap-1">
-              <p className="text-sm font-semibold text-gray-800">
-                {Math.ceil(votes).toString()}
-              </p>
-              <p className="text-sm font-light text-gray-600">Votes</p>
+              <p className="text-sm font-semibold text-gray-800">{teamSize}</p>
+              <p className="text-sm font-light text-gray-600">People</p>
             </div>
           </div>
-          <div className="flex gap-2">
+          {/* <div className="flex gap-2">
             <Trophy size={20} />
             <div className="flex gap-1">
               <p className="text-sm font-semibold text-gray-800">
@@ -96,7 +96,7 @@ export default function DynamicCard({
               </p>
               <p className="text-sm font-light text-gray-600">#{rank}</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

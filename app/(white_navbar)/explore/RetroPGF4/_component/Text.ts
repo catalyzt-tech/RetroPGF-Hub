@@ -63,4 +63,4 @@ export const category = [
 
 export const min = -1
 export const max = 663855
-export const itemsPerPage = 16
+export const itemsPerPage = 24

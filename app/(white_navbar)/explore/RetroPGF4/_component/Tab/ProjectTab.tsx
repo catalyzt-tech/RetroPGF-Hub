@@ -174,7 +174,7 @@ export default function ProjectTab({
         // ballotCondition
       )
     })
-  }, [round4, search, checkBox, minVal, maxVal])
+  }, [round4, search, checkBox])
 
   const pageCount = useMemo(() => {
     return Math.ceil(filterJson.length / itemsPerPage)
@@ -336,10 +336,11 @@ export default function ProjectTab({
                       category={item.category}
                       description={item.description}
                       title={item.name}
-                      opRecieve={0}
+                      teamSize={item.team.length}
+                      // opRecieve={0}
                       round="4"
-                      votes={0}
-                      rank={0}
+                      // votes={0}
+                      // rank={0}
                     />
                   </React.Fragment>
                 ))
@@ -377,10 +378,10 @@ export default function ProjectTab({
                     category={item.category}
                     description={item.description}
                     title={item.name}
-                    opRecieve={0}
+                    // opRecieve={0}
                     round="4"
-                    votes={0}
-                    rank={0}
+                    // votes={0}
+                    // rank={0}
                   />
                 </React.Fragment>
               ))}
