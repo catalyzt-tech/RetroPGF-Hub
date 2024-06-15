@@ -1,5 +1,5 @@
+import { RetroRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import LinkIcon from '@carbon/icons-react/lib/Link'
-import { RetroRound3 } from '../../../RetroType4'
 export default function ImpactSection({
   data,
   impactRef,

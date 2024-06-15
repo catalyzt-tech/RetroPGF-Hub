@@ -4,7 +4,7 @@ import BreadCumpExplore from './_component/BreadCumpExplore'
 import fs from 'fs'
 import path from 'path'
 
-export async function getJsonRound4(): Promise<iRetroPGF4Project[]> {
+async function getJsonRound4(): Promise<iRetroPGF4Project[]> {
   const directoryPath = path.join(process.cwd(), 'public/static/rpgf4.json')
 
   const fileContents = await fs.promises.readFile(directoryPath, 'utf8')

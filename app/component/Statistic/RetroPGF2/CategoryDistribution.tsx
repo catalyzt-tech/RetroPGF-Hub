@@ -24,10 +24,13 @@ const CategoryDistribution = () => {
       // headerFormat: '',
       pointFormat:
         '{point.name}: <b>{point.y}</b> ({Number(point.percentage).toFixed(2)} %)',
-      formatter: function () {
-        return `${this.point.name}: <b>${this.y}  Projects</b> (${Number(
-          this.percentage
-        ).toFixed(2)}%)`
+      // formatter: function () {
+      //   return `${this.point.name}: <b>${this.y}  Projects</b> (${Number(
+      //     this.percentage
+      //   ).toFixed(2)}%)`
+      // },
+      formatter: function (this: Highcharts.TooltipFormatterContextObject) {
+        return `${this.point.name}: <b>${this.y} Projects</b> (${this.percentage.toFixed(2)}%)`;
       },
     },
     plotOptions: {
@@ -44,7 +47,7 @@ const CategoryDistribution = () => {
             distance: -60,
             // format: '{point.percentage:.2f}%',
 
-            formatter: function () {
+            formatter: function (this: Highcharts.TooltipFormatterContextObject) {
               return ` <b>${this.y} Projects</b> <br/>`
             },
             style: {

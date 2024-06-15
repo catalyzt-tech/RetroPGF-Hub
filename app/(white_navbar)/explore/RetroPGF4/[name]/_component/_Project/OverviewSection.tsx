@@ -6,7 +6,7 @@ export default function OverviewSection({ data }: { data: iRetroPGF4Project }) {
         <h3 className="text-3xl font-semibold">Overview</h3>
         <hr className="border-t-gray-100" />
         <p className="mb-1 text-base font-normal text-gray-600 break-all break-words">
-          {data.bio ?? 'No description'}
+          {data.description ?? 'No description'}
         </p>
 
         <div className="flex flex-col gap-1">
