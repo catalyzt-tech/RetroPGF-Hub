@@ -6,7 +6,12 @@ import { handleCategoryRound4 } from '@/app/lib/InitialMount'
 
 // import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 
-const formatDescriptionExploreCard = (description: string) => {
+const formatDescriptionExploreCard = (
+  description: string | undefined
+): string => {
+  if (!description) {
+    return '' // or any default string you wish to return when description is undefined
+  }
   if (description.length > 100) {
     return description.slice(0, 100) + '...'
   }
@@ -31,7 +36,7 @@ export default function RetroCard4({
   title?: string
   icon?: string
   banner?: string
-  description?: string
+  description?: string | undefined
   category?: string
   teamSize?: number
   //   vote?: number
