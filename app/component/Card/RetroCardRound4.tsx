@@ -50,7 +50,7 @@ export default function RetroCard4({
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full max-h-12 overflow-hidden">
         <Image
-          src={`${banner || '/random/OP-Banner.png'}`}
+          src={banner || '/random/OP-Banner.png'}
           alt="background image"
           // not sure that this image background is all the same or not
           className="opacity-50 object-cover z-10"
