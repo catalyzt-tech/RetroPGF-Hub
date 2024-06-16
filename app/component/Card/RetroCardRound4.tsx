@@ -45,7 +45,7 @@ export default function RetroCard4({
 }) {
   return (
     <div
-      className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[15rem] w-[14.25rem] relative ${marginX}`}
+      className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[15rem] w-[14.25rem] relative ${marginX} overflow-hidden`}
     >
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full max-h-12 overflow-hidden">
@@ -53,7 +53,7 @@ export default function RetroCard4({
           src={banner || '/random/OP-Banner.png'}
           alt="background image"
           // not sure that this image background is all the same or not
-          className="opacity-50 object-cover z-10"
+          className="opacity-50 object-cover z-10 "
           width={228}
           height={48}
         />
@@ -67,11 +67,11 @@ export default function RetroCard4({
       </div>
 
       {/* Avatar */}
-      <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0">
+      <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0 overflow-hidden">
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="icon image"
-          className=""
+          className="bg-white"
           width={48}
           height={48}
         />

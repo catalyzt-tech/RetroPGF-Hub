@@ -7,7 +7,7 @@ import { getJsonRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/page'
 import { getJsonRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/page'
 import { getJsonRound4 } from '@/app/(white_navbar)/explore/RetroPGF4/page'
 import Cpage from './Cpage'
-import { category } from '../../(white_navbar)/explore/RetroPGF3/_component/Text'
+// import { category } from '../../(white_navbar)/explore/RetroPGF3/_component/Text'
 
 export async function getAllRound(limit: number): Promise<{
   round1: RetroRound1[]

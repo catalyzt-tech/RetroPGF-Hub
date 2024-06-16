@@ -88,21 +88,25 @@ export default function Cpage({
       </div>
 
       <div className="lg:px-20 px-4 flex flex-col gap-12 mt-12">
-        <CategorySection />
-        <CardRound4 title="RetroPGF4" round4={round4} cateRound4={cateRound4} />
+        {/* <CategorySection /> */}
+        <CardRound4
+          title="RetroPGF 4"
+          round4={round4}
+          cateRound4={cateRound4}
+        />
         <CardRound3
-          title="RetroPGF3"
+          title="RetroPGF 3"
           round3={round3Data}
           cateRound3={cateRound3}
         />
 
         <CardRound2
-          title="RetroPGF2"
+          title="RetroPGF 2"
           cateRound2={cateRound2}
           round2={round2Data}
         />
 
-        <CardRound1 title="RetroPGF1" round1={round1Data} />
+        <CardRound1 title="RetroPGF 1" round1={round1Data} />
       </div>
     </div>
   )
