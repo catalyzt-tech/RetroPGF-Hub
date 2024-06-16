@@ -1,15 +1,20 @@
 import { RetroRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { RetroRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/RetroType2'
 import { RetroRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/RetroType1'
+import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import { getJsonRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/page'
 import { getJsonRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/page'
 import { getJsonRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/page'
+import { getJsonRound4 } from '@/app/(white_navbar)/explore/RetroPGF4/page'
 import Cpage from './Cpage'
+import { category } from '../../(white_navbar)/explore/RetroPGF3/_component/Text'
 
 export async function getAllRound(limit: number): Promise<{
   round1: RetroRound1[]
   round2: RetroRound2[]
   round3: RetroRound3[]
+  round4: iRetroPGF4Project[]
+  cateRound4: Map<string, number>
   cateRound3: Map<string, number>
   cateRound2: Map<string, number>
 }> {
@@ -18,11 +23,12 @@ export async function getAllRound(limit: number): Promise<{
   })
 
   const round2 = await getJsonRound2()
-
   const round3 = await getJsonRound3()
+  const round4 = await getJsonRound4()
 
   const cateRound2Counter = new Map<string, number>()
   const cateRound3Counter = new Map<string, number>()
+  const cateRound4Counter = new Map<string, number>()
 
   round2.forEach((project) => {
     const cateRound2 = project.Category
@@ -52,27 +58,45 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
+  round4.forEach((project) => {
+    console.log(project.category)
+    const cateRound4 = project.category
+    if (cateRound4) {
+      if (cateRound4Counter.has(cateRound4)) {
+        cateRound4Counter.set(
+          cateRound4,
+          cateRound4Counter.get(cateRound4)! + 1
+        )
+      } else {
+        cateRound4Counter.set(cateRound4, 1)
+      }
+    }
+  })
+
   return {
     round1: round1.slice(0, limit),
     round2: round2.slice(0, limit),
     round3: round3.slice(0, limit),
+    round4: round4.slice(0, limit),
+    cateRound4: cateRound4Counter,
     cateRound3: cateRound3Counter,
     cateRound2: cateRound2Counter,
   }
 }
 
 export default async function page({}: {}) {
-  const { round1, round2, round3, cateRound2, cateRound3 } = await getAllRound(
-    20
-  )
+  const { round1, round2, round3, round4, cateRound2, cateRound3, cateRound4 } =
+    await getAllRound(20)
 
   return (
     <Cpage
       cateRound2={cateRound2}
       cateRound3={cateRound3}
+      cateRound4={cateRound4}
       round1={round1}
       round2={round2}
       round3={round3}
+      round4={round4}
     />
   )
 }

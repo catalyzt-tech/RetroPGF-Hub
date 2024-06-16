@@ -97,43 +97,6 @@
     }
   },
   {
-    "name": "Another one ",
-    "description": "This is another test. ANOTHER ONE",
-    "projectAvatarUrl": "https://storage.googleapis.com/op-atlas/e13a5830-9a8a-4216-a5bf-e3d3407e2299.png",
-    "proejctCoverImageUrl": "https://storage.googleapis.com/op-atlas/9891b347-8c88-4559-9adb-fe980f4c641b.png",
-    "category": "CeFi",
-    "osoSlug": "jonas-cool-project",
-    "socialLinks": {
-      "website": ["https://op-atlas.vercel.app/projects/new"],
-      "farcaster": ["https://op-atlas.vercel.app/projects/new"],
-      "twitter": null,
-      "mirror": null
-    },
-    "team": ["191212"],
-    "github": ["https://github.com/JSeiferth/Testing_cool_Stuff"],
-    "packages": [],
-    "contracts": [],
-    "grantsAndFunding": {
-      "ventureFunding": [
-        {
-          "amount": "above-5m",
-          "year": "2020",
-          "details": "Lots of evil VC money here!"
-        }
-      ],
-      "grants": [
-        {
-          "grant": "foundation-grant",
-          "link": "https://retrofunding.optimism.io/projects/0xb8ea29378df33c1bcb64c221a1e2e342a99d3fad8233dcec94eddd137a3eab05/grants",
-          "amount": "1000000",
-          "date": "2023-09-22",
-          "details": "yes"
-        }
-      ],
-      "revenue": []
-    }
-  },
-  {
     "name": "Gaslite Drop",
     "description": "Gaslite Drop is the easiest and most efficient way to airdrop ERC20, ERC721, and ERC1155 tokens to your community.\n\nGaslite Drop is the leading airdrop platform on Base, responsible for over 25,000 individual airdrops to nearly 15,000,000 recipients in total.\n\nWith just a few clicks, you can distribute tokens to thousands of recipients per transaction with ZERO additional fees.\n\nGaslite Drop is 100% open source and has powered some of the largest airdrop campaigns in existence (Own The Doge, ebasetoken, Toshi, and many more).\n\nBasescan: https://basescan.org/address/0x09350F89e2D7B6e96bA730783c2d76137B045FEF\nGithub: https://github.com/PopPunkLLC/GasliteDrop",
     "projectAvatarUrl": "https://storage.googleapis.com/op-atlas/a8897c6c-1013-40c5-adec-77cf005f160d.png",
