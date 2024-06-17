@@ -28,7 +28,7 @@ export default function CardRound1({
         <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
         <Link
           href={{
-            pathname: `/explore/${title}`,
+            pathname: `/explore/RetroPGF1`,
           }}
           className=" flex gap-2"
         >

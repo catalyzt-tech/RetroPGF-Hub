@@ -32,7 +32,7 @@ export default function CardRound3({
         <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
         <Link
           href={{
-            pathname: `/explore/${title}`,
+            pathname: `/explore/RetroPGF4`,
           }}
           className="md:hidden flex gap-2"
         >
@@ -63,7 +63,7 @@ export default function CardRound3({
 
         <Link
           href={{
-            pathname: `/explore/${title}`,
+            pathname: `/explore/RetroPGF4`,
           }}
           className=" lg:block h-8
                 hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
