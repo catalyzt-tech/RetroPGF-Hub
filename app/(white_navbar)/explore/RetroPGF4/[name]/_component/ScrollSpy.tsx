@@ -1,66 +1,69 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from 'react'
 
 export default function ScrollSpy({
   overViewRef,
   contributionRef,
-  impactRef,
+  // impactRef,
   fundingRef,
 }: {
-  overViewRef: React.MutableRefObject<HTMLElement | null>;
-  contributionRef: React.MutableRefObject<HTMLElement | null>;
-  impactRef: React.MutableRefObject<HTMLElement | null>;
-  fundingRef: React.MutableRefObject<HTMLElement | null>;
+  overViewRef: React.MutableRefObject<HTMLElement | null>
+  contributionRef: React.MutableRefObject<HTMLElement | null>
+  // impactRef: React.MutableRefObject<HTMLElement | null>
+  fundingRef: React.MutableRefObject<HTMLElement | null>
 }) {
-
-  const [currentContent, setCurrentContent] = useState<string>("Overview");
+  const [currentContent, setCurrentContent] = useState<string>('Overview')
   const [sections, setSections] = useState({
     Overview: false,
     Contribution: false,
     Impact: false,
     Funding: false,
-  });
+  })
 
   const observerOptions = {
     root: null,
-    rootMargin: "-30px",
-    threshold: 0.1, 
-  };
-
+    rootMargin: '-30px',
+    threshold: 0.1,
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const sectionId = entry.target.getAttribute("id") || "Overview";
+        const sectionId = entry.target.getAttribute('id') || 'Overview'
         setSections((prevSections) => ({
           ...prevSections,
           [sectionId]: entry.isIntersecting,
-        }));
-      });
-    }, observerOptions);
+        }))
+      })
+    }, observerOptions)
 
-    const observeSection = (sectionRef: React.MutableRefObject<HTMLElement | null>) => {
+    const observeSection = (
+      sectionRef: React.MutableRefObject<HTMLElement | null>
+    ) => {
       if (sectionRef.current) {
-        observer.observe(sectionRef.current);
+        observer.observe(sectionRef.current)
       }
-    };
+    }
 
-    observeSection(overViewRef);
-    observeSection(contributionRef);
-    observeSection(impactRef);
-    observeSection(fundingRef);
+    observeSection(overViewRef)
+    observeSection(contributionRef)
+    // observeSection(impactRef)
+    observeSection(fundingRef)
 
-    return () => observer.disconnect();
-  }, [overViewRef, contributionRef, impactRef, fundingRef]);
+    return () => observer.disconnect()
+  }, [overViewRef, contributionRef, fundingRef])
 
   useEffect(() => {
     const visibleSections = Object.entries(sections)
       .filter(([key, visible]) => visible)
-      .map(([key]) => key);
+      .map(([key]) => key)
 
-    const lastVisibleSection = visibleSections.length > 0 ? visibleSections[visibleSections.length - 1] : null;
+    const lastVisibleSection =
+      visibleSections.length > 0
+        ? visibleSections[visibleSections.length - 1]
+        : null
 
-    setCurrentContent(lastVisibleSection || "overview");
-  }, [sections]);
+    setCurrentContent(lastVisibleSection || 'overview')
+  }, [sections])
 
   return (
     <div className="hidden lg:block bg-white h-fit p-4 rounded-md shadow-md w-full sticky top-24">
@@ -68,25 +71,25 @@ export default function ScrollSpy({
         <div className="text-base text-gray-900 font-bold">ON THIS PAGE</div>
         <ul className="flex flex-col items-start gap-4">
           {[
-            { content: "Overview", ref: overViewRef },
-            { content: "Contribution", ref: contributionRef },
-            { content: "Impact", ref: impactRef },
-            { content: "Funding Sources", ref: fundingRef },
+            { content: 'Overview', ref: overViewRef },
+            { content: 'Contribution', ref: contributionRef },
+            // { content: "Impact", ref: impactRef },
+            { content: 'Funding Sources', ref: fundingRef },
           ].map(({ content, ref }) => (
             <li key={content} className="list-none">
               <a
                 className={`active flex cursor-pointer hover:text-primaryRed ${
                   currentContent === content
-                    ? "pl-2 text-red-600 border-l-[3px] border-primaryRed"
-                    : ""
+                    ? 'pl-2 text-red-600 border-l-[3px] border-primaryRed'
+                    : ''
                 }`}
                 onClick={() => {
                   if (ref && ref.current) {
                     ref.current.scrollIntoView({
-                      behavior: "smooth",
-                      block: "center",
-                      inline: "start",
-                    });
+                      behavior: 'smooth',
+                      block: 'center',
+                      inline: 'start',
+                    })
                   }
                 }}
               >
@@ -97,5 +100,5 @@ export default function ScrollSpy({
         </ul>
       </div>
     </div>
-  );
+  )
 }
