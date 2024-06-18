@@ -1,5 +1,5 @@
 import { iRetroPGF4Project } from '../../../RetroType4'
-
+import Image from 'next/image'
 export default function GithubSection({
   data,
   githubRef,
@@ -26,8 +26,20 @@ export default function GithubSection({
       {data.github.length != 0 &&
         data.github.map((item, i) => (
           <div className="flex flex-col gap-1" key={i}>
-            <div className="flex flex-wrap gap-3 items-center">
-              <p className="mb-1 text-base font-normal text-gray-500">{item}</p>
+            <div className="flex flex-row flex-wrap gap-3 items-center">
+              <Image
+                src="/logo/github.svg"
+                alt="github logo"
+                className="rounded-full"
+                width={24}
+                height={24}
+              />
+              <p className="text-base font-normal text-gray-500">{item}</p>
+
+              <p className="text-base font-semibold text-gray-600">Star</p>
+              <p className="text-base font-semibold text-gray-600">Watch</p>
+              <p className="text-base font-semibold text-gray-600">Fork</p>
+              <p className="text-base font-semibold text-gray-600">isFork</p>
             </div>
           </div>
         ))}
