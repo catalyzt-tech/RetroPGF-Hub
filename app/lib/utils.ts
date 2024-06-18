@@ -37,17 +37,17 @@ export function isLetter(c: string) {
 export function mapChainId(chainId: number) {
   switch (chainId) {
     case 10:
-      return 'Optimism'
+      return 'optimism'
     case 252:
-      return 'Fraxtal'
+      return 'fraxtal'
     case 1750:
-      return 'Metal'
+      return 'metal'
     case 8453:
-      return 'Base'
+      return 'base'
     case 34443:
-      return 'Mode'
+      return 'mode'
     case 7777777:
-      return 'Zora'
+      return 'zora'
     default:
       return 'Unknown'
   }
