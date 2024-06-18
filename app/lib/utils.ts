@@ -33,3 +33,22 @@ export function convertImageClodinary(
 export function isLetter(c: string) {
   return c.toLowerCase() !== c.toUpperCase()
 }
+
+export function mapChainId(chainId: number) {
+  switch (chainId) {
+    case 10:
+      return 'Optimism'
+    case 252:
+      return 'Fraxtal'
+    case 1750:
+      return 'Metal'
+    case 8453:
+      return 'Base'
+    case 34443:
+      return 'Mode'
+    case 7777777:
+      return 'Zora'
+    default:
+      return 'Unknown'
+  }
+}
