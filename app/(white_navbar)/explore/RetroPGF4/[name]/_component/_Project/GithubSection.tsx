@@ -7,14 +7,19 @@ export default function GithubSection({
   data: iRetroPGF4Project
   githubRef: React.MutableRefObject<HTMLElement | null>
 }) {
-  // const grantsAndFundingArray = Object.entries(data.grantsAndFunding).flatMap(
-  //   ([type, items]) => {
-  //     return items.map((item) => ({
-  //       type,
-  //       ...item,
-  //     }))
-  //   }
-  // )
+  function formatGithubLink(inputString: string): string {
+    // Split the input string by '/'
+    const parts = inputString.split('/')
+
+    // Capitalize each part and join them with ' - '
+    const formattedString = parts
+      .map((part) =>
+        part.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase())
+      )
+      .join(' - ')
+
+    return formattedString
+  }
   return (
     <section
       id="Github"
@@ -34,7 +39,9 @@ export default function GithubSection({
                 width={24}
                 height={24}
               />
-              <p className="text-base font-normal text-gray-500">{item}</p>
+              <p className="text-base font-normal text-gray-500">
+                {formatGithubLink(item.slice(19))}
+              </p>
 
               <p className="text-base font-semibold text-gray-600">Star</p>
               <p className="text-base font-semibold text-gray-600">Watch</p>
