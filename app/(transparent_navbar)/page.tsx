@@ -160,11 +160,11 @@ export default async function Page() {
             className="flex items-center justify-center w-44 h-10 bg-gray-800 hover:bg-gray-800/80 rounded-lg "
           >
             <h6 className="text-sm font-semibold text-white text-center">
-              Join Discord
+              Discord (coming soon)
             </h6>
           </Link>
           <Link
-            href=""
+            href={'/community'}
             className="flex items-center justify-center w-44 h-10 bg-red-600 hover:bg-red-600/80 rounded-lg "
           >
             <h6 className="text-sm font-semibold text-white text-center">
