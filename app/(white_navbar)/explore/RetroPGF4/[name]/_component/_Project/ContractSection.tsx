@@ -22,7 +22,7 @@ export default function GithubSection({
       ref={contractRef}
       className="flex flex-col gap-6 bg-white rounded-lg p-2 lg:p-6"
     >
-      <h3 className="text-3xl font-semibold">Contract Addresses</h3>
+      <h3 className="text-2xl font-semibold">Contract Addresses</h3>
       <hr className="border-t-gray-100" />
       {data.contracts.map((item, i) => (
         <div className="flex flex-col gap-1" key={i}>
@@ -34,9 +34,7 @@ export default function GithubSection({
               width={24}
               height={24}
             />
-            <p className="text-base font-normal text-gray-500">
-              {item.address}
-            </p>
+            <p className="text-sm font-normal text-gray-500">{item.address}</p>
             <p className="text-base font-semibold text-gray-600">
               {/* Chain ID: {item.chainId} */}
               {/* {mapChainId(item.chainId) || ''} */}

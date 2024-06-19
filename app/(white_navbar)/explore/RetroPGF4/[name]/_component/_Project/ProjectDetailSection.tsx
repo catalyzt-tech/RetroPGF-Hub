@@ -34,11 +34,9 @@ export default function ProjectDetailSection({
             </div>
           </div>
 
-          <h3 className="text-3xl lg:text-5xl font-semibold text-gray-800">
+          <h3 className="text-3xl lg:text-4xl font-semibold text-gray-800">
             {data.name}
           </h3>
-
-          {/* Link */}
           <div className="flex flex-wrap gap-6 mt-3">
             <a
               href={data.socialLinks.website[0]}

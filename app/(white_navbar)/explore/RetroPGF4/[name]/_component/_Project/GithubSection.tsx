@@ -3,6 +3,7 @@ import Image from 'next/image'
 import star from '@/public/static/githubCardSection/star'
 import watch from '@/public/static/githubCardSection/watch'
 import fork from '@/public/static/githubCardSection/fork'
+import Link from 'next/link'
 
 export default function GithubSection({
   data,
@@ -30,40 +31,48 @@ export default function GithubSection({
       ref={githubRef}
       className="flex flex-col gap-6 bg-white rounded-lg p-2 lg:p-6"
     >
-      <h3 className="text-3xl font-semibold">Github</h3>
+      <h3 className="text-2xl font-semibold">Github</h3>
       <hr className="border-t-gray-100" />
-      {data.github.length != 0 &&
-        data.github.map((item, i) => (
-          <div className="flex flex-col gap-1 w-72" key={i}>
-            <div className="flex flex-col flex-wrap gap-3 justify-center border rounded-md px-6 py-4 ">
+      <div className="flex flex-row flex-wrap gap-4">
+        {data.github.length != 0 &&
+          data.github.map((item, i) => (
+            <div
+              className="flex flex-col  gap-2  border rounded-md px-6 py-4 min-w-64  flex-grow h-36"
+              key={i}
+            >
               <Image
                 src="/logo/github.svg"
                 alt="github logo"
-                className="rounded-full"
+                className="rounded-full mb-1"
                 width={30}
                 height={24}
               />
-              <p className="text-base font-normal text-gray-600">
+              <Link
+                href={item}
+                target="_blank"
+                className="text-base font-medium text-gray-600 line-clamp-2"
+              >
                 {formatGithubLink(item.slice(19))}
-              </p>
-              <p className="flex flex-row justify-start items-center gap-x-4">
-                <p className="flex flex-row justify-start items-center text-base  text-gray-500 gap-1">
+              </Link>
+              <div className="flex flex-row flex-grow"></div>
+              <div className="flex flex-row justify-start items-center gap-x-4">
+                <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
                   {star()}
-                  Star
-                </p>
-                <p className="flex flex-row justify-start items-center text-base  text-gray-500 gap-1">
+                  <div> 69 Stars</div>
+                </div>
+                <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
                   {watch()}
-                  Watch
-                </p>
-                <p className="flex flex-row justify-start items-center text-base  text-gray-500 gap-1">
+                  <div>231 Watch</div>
+                </div>
+                <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
                   {fork()}
-                  Fork
-                </p>
+                  <div>41 Forks</div>
+                </div>
                 {/* <p className="text-base  text-gray-500">isFork</p> */}
-              </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+      </div>
     </section>
   )
 }
