@@ -1,5 +1,9 @@
 import { iRetroPGF4Project } from '../../../RetroType4'
 import Image from 'next/image'
+import star from '@/public/static/githubCardSection/star'
+import watch from '@/public/static/githubCardSection/watch'
+import fork from '@/public/static/githubCardSection/fork'
+
 export default function GithubSection({
   data,
   githubRef,
@@ -30,23 +34,33 @@ export default function GithubSection({
       <hr className="border-t-gray-100" />
       {data.github.length != 0 &&
         data.github.map((item, i) => (
-          <div className="flex flex-col gap-1" key={i}>
-            <div className="flex flex-row flex-wrap gap-3 items-center">
+          <div className="flex flex-col gap-1 w-72" key={i}>
+            <div className="flex flex-col flex-wrap gap-3 justify-center border rounded-md px-6 py-4 ">
               <Image
                 src="/logo/github.svg"
                 alt="github logo"
                 className="rounded-full"
-                width={24}
+                width={30}
                 height={24}
               />
-              <p className="text-base font-normal text-gray-500">
+              <p className="text-base font-normal text-gray-600">
                 {formatGithubLink(item.slice(19))}
               </p>
-
-              <p className="text-base font-semibold text-gray-600">Star</p>
-              <p className="text-base font-semibold text-gray-600">Watch</p>
-              <p className="text-base font-semibold text-gray-600">Fork</p>
-              <p className="text-base font-semibold text-gray-600">isFork</p>
+              <p className="flex flex-row justify-start items-center gap-x-4">
+                <p className="flex flex-row justify-start items-center text-base  text-gray-500 gap-1">
+                  {star()}
+                  Star
+                </p>
+                <p className="flex flex-row justify-start items-center text-base  text-gray-500 gap-1">
+                  {watch()}
+                  Watch
+                </p>
+                <p className="flex flex-row justify-start items-center text-base  text-gray-500 gap-1">
+                  {fork()}
+                  Fork
+                </p>
+                {/* <p className="text-base  text-gray-500">isFork</p> */}
+              </p>
             </div>
           </div>
         ))}
