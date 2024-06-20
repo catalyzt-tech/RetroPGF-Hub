@@ -6,6 +6,13 @@ import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { iRetroPGF4Project } from '../RetroType4'
 import { handleCategoryRound4 } from '@/app/lib/InitialMount'
 
+function cleanParamsName(name: string) {
+  // Adjust the pattern to also replace slashes
+  const cleanName = name.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '')
+
+  return cleanName
+}
+
 export default function DynamicCard({
   banner,
   icon,
@@ -67,7 +74,7 @@ export default function DynamicCard({
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF4/${title}`}
+              href={`/explore/RetroPGF4/${cleanParamsName(title)}`}
               className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1"
             >
               {title}

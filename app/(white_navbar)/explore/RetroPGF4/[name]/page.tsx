@@ -4,6 +4,12 @@ import path from 'path'
 import { iRetroPGF4Project } from '../RetroType4'
 import BreadCump from './_component/BreadCump'
 import Error from '@/app/component/Error'
+function cleanParamsName(name: string) {
+  // Adjust the pattern to also replace slashes
+  const cleanName = name.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '')
+
+  return cleanName
+}
 
 async function getSingleJson(
   projectName: string
@@ -13,7 +19,10 @@ async function getSingleJson(
   const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
   const jsonData: iRetroPGF4Project[] = JSON.parse(fileContents)
 
-  return jsonData.find((elem) => elem.name === projectName)
+  return jsonData.find((elem) => {
+    console.log(cleanParamsName(elem.name) + '  //  ' + elem.name)
+    return cleanParamsName(elem.name) === projectName
+  })
 }
 
 export default async function page({
@@ -24,10 +33,11 @@ export default async function page({
   }
 }) {
   const decodedString = decodeURIComponent(params.name)
-  console.log(params)
+
   const res = await getSingleJson(decodedString)
 
   if (!res) {
+    console.log(params)
     console.log('err')
     return <Error />
   }
