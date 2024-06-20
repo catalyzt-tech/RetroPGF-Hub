@@ -17,7 +17,7 @@ function formatGrant(amount: string): string {
 }
 
 function formatName(name: string): string {
-  if ((name = '')) {
+  if (name == '') {
     return 'Not Disclosed'
   }
   return name
