@@ -20,7 +20,6 @@ async function getSingleJson(
   const jsonData: iRetroPGF4Project[] = JSON.parse(fileContents)
 
   return jsonData.find((elem) => {
-    console.log(cleanParamsName(elem.name) + '  //  ' + elem.name)
     return cleanParamsName(elem.name) === projectName
   })
 }

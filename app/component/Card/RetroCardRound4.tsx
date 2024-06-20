@@ -82,7 +82,7 @@ export default function RetroCard4({
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF4/${title}`}
+              href={`/explore/RetroPGF4/${title?.replaceAll(' ', '-')}`}
               className="line-clamp-1 text-sm font-bold text-gray-800 z-30 hover:underline"
             >
               {title}
