@@ -48,7 +48,7 @@ export default function RetroCard4({
       className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[16rem] w-[14.25rem] relative ${marginX} overflow-hidden`}
     >
       {/* Background Image */}
-      <div className="absolute top-0 left-0 w-full max-h-12 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full max-h-14 overflow-hidden">
         <Image
           src={banner || '/random/OP-Banner.png'}
           alt="background image"
@@ -59,15 +59,14 @@ export default function RetroCard4({
         />
       </div>
 
-      {/* Round Indicator */}
-      <div className="absolute top-1 right-1 bg-white px-1 py-0.5 rounded-[0.25rem]">
-        <p className="text-gray-600 text-[0.5rem] font-semibold leading-4 tracking-[0.05rem]">
-          {round}
-        </p>
+      {/* Eligibility Status */}
+      <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem]">
+        {/* <div className='flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div> */}
+        <div className='flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div>
       </div>
 
       {/* Avatar */}
-      <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0 overflow-hidden">
+      <div className="absolute top-6 left-4 rounded-[0.25rem] flex flex-shrink-0 overflow-hidden">
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="icon image"
@@ -104,10 +103,6 @@ export default function RetroCard4({
               </p>
               <p className="text-sm font-light text-gray-600">People</p>
             </div>
-
-            {/* Eligibility Status */}
-            {/* <div className='flex items-center text-sm bg-green-50 border border-green-600 text-green-600 px-2 py-1 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div> */}
-            {/* <div className='flex items-center text-sm bg-green-50 border border-red-600 text-red-600 px-2 py-1 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div> */}
           </div>
           {/* <div className="flex gap-2">
             <Trophy size={20} />
