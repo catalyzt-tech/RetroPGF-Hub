@@ -1,7 +1,7 @@
 import { iRetroPGF4Project } from '../../../RetroType4'
 import { mapChainId } from '@/app/lib/utils'
 import Image from 'next/image'
-export default function GithubSection({
+export default function ContractSection({
   data,
   contractRef,
 }: {
