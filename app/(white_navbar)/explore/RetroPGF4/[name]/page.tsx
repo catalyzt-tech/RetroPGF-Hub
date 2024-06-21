@@ -4,12 +4,7 @@ import path from 'path'
 import { iRetroPGF4Project } from '../RetroType4'
 import BreadCump from './_component/BreadCump'
 import Error from '@/app/component/Error'
-function cleanParamsName(name: string) {
-  // Adjust the pattern to also replace slashes
-  const cleanName = name.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '')
-
-  return cleanName
-}
+import { cleanParamsName } from '@/app/lib/utils'
 
 async function getSingleJson(
   projectName: string

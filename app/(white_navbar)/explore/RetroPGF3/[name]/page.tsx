@@ -4,11 +4,8 @@ import path from 'path'
 import { RetroRound3 } from '../RetroType3'
 import BreadCump from './_component/BreadCump'
 import Error from '@/app/component/Error'
+import { cleanParamsName } from '@/app/lib/utils'
 
-function cleanParamsName(name: string) {
-  const cleanName = name.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '')
-  return cleanName
-}
 async function getSingleJson(
   projectName: string
 ): Promise<RetroRound3 | undefined> {

@@ -4,11 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { handleCategoryRound3 } from '@/app/lib/InitialMount'
+import { cleanParamsName } from '@/app/lib/utils'
 
-function cleanParamsName(name: string) {
-  const cleanName = name.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '')
-  return cleanName
-}
 export default function DynamicCard({
   banner,
   icon,

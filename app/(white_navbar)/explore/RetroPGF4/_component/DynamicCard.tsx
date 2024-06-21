@@ -5,13 +5,7 @@ import Link from 'next/link'
 import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { iRetroPGF4Project } from '../RetroType4'
 import { handleCategoryRound4 } from '@/app/lib/InitialMount'
-
-function cleanParamsName(name: string) {
-  // Adjust the pattern to also replace slashes
-  const cleanName = name.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '')
-
-  return cleanName
-}
+import { cleanParamsName } from '@/app/lib/utils'
 
 export default function DynamicCard({
   banner,

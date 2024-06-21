@@ -4,11 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { handleCategoryRound2 } from '@/app/lib/InitialMount'
 import { CategoryRound2 } from '../RetroType2'
+import { cleanParamsName } from '@/app/lib/utils'
 
-function cleanParamsName(name: string) {
-  const cleanName = name.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '')
-  return cleanName
-}
 export default function DynamicCard({
   round = '3',
   icon,
