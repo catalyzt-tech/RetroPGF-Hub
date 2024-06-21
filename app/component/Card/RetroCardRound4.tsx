@@ -45,7 +45,7 @@ export default function RetroCard4({
 }) {
   return (
     <div
-      className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[15rem] w-[14.25rem] relative ${marginX} overflow-hidden`}
+      className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[16rem] w-[14.25rem] relative ${marginX} overflow-hidden`}
     >
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full max-h-12 overflow-hidden">
@@ -95,15 +95,19 @@ export default function RetroCard4({
             {handleCategoryRound4(category!)}
           </div>
           <div className="flex flex-grow"></div>
-          <div className="flex gap-2">
-            <Events size={20} />
+          <div className='flex justify-between items-center w-full'>
             <div className="flex gap-1">
+              <Events size={20} />
               <p className="text-sm font-semibold text-gray-800">
                 {/* {Math.ceil(vote || 0).toString()} */}
                 {teamSize}
               </p>
               <p className="text-sm font-light text-gray-600">People</p>
             </div>
+
+            {/* Eligibility Status */}
+            {/* <div className='flex items-center text-sm bg-green-50 border border-green-600 text-green-600 px-2 py-1 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div> */}
+            {/* <div className='flex items-center text-sm bg-green-50 border border-red-600 text-red-600 px-2 py-1 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div> */}
           </div>
           {/* <div className="flex gap-2">
             <Trophy size={20} />
