@@ -10,6 +10,7 @@ import ScrollSpy from './_component/ScrollSpy'
 import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import GithubSection from './_component/_Project/GithubSection'
 import ContractSection from './_component/_Project/ContractSection'
+import AppealSection from './_component/_Project/AppealSection'
 
 export default function Cpage({ data }: { data: iRetroPGF4Project }) {
   const overViewRef = useRef<HTMLElement | null>(null)
@@ -28,6 +29,9 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
           ref={overViewRef}
         >
           <ProjectDetailSection data={data} />
+          {/* (data.appealed == "Yes") ?? (
+            <AppealSection data={data} />
+          )   */}
           <OverviewSection data={data} />
         </section>
         <ContributionSection data={data} contributionRef={contributionRef} />

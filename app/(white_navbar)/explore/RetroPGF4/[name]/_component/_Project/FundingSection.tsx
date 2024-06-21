@@ -51,7 +51,7 @@ export default function FundingSection({
     <section
       id="Funding Sources"
       ref={fundingRef}
-      className="flex flex-col gap-6 bg-white rounded-lg p-2 lg:p-6"
+      className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6"
     >
       <h3 className="text-2xl font-semibold">Funding Sources</h3>
       <hr className="border-t-gray-100" />

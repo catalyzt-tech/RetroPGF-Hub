@@ -29,7 +29,7 @@ export default function GithubSection({
     <section
       id="Github"
       ref={githubRef}
-      className="flex flex-col bg-white rounded-lg p-2 lg:p-6"
+      className="flex flex-col bg-white rounded-lg p-4 lg:p-6"
     >
       <h3 className="text-2xl font-semibold mb-4">Github</h3>
       <div className="flex flex-row flex-wrap gap-4">
