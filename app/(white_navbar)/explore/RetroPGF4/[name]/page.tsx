@@ -4,6 +4,7 @@ import path from 'path'
 import { iRetroPGF4Project } from '../RetroType4'
 import BreadCump from './_component/BreadCump'
 import Error from '@/app/component/Error'
+import { cleanParamsName } from '@/app/lib/utils'
 
 async function getSingleJson(
   projectName: string
@@ -13,7 +14,9 @@ async function getSingleJson(
   const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
   const jsonData: iRetroPGF4Project[] = JSON.parse(fileContents)
 
-  return jsonData.find((elem) => elem.name === projectName)
+  return jsonData.find((elem) => {
+    return cleanParamsName(elem.name) === projectName
+  })
 }
 
 export default async function page({
@@ -24,10 +27,11 @@ export default async function page({
   }
 }) {
   const decodedString = decodeURIComponent(params.name)
-  console.log(params)
+
   const res = await getSingleJson(decodedString)
 
   if (!res) {
+    console.log(params)
     console.log('err')
     return <Error />
   }

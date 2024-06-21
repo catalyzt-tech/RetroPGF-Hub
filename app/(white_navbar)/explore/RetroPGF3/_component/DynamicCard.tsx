@@ -2,10 +2,9 @@ import Trophy from '@carbon/icons-react/lib/Trophy'
 import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
-import {
-  NewCategory,
-} from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
+import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { handleCategoryRound3 } from '@/app/lib/InitialMount'
+import { cleanParamsName } from '@/app/lib/utils'
 
 export default function DynamicCard({
   banner,
@@ -66,7 +65,7 @@ export default function DynamicCard({
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF3/${title}`}
+              href={`/explore/RetroPGF3/${cleanParamsName(title)}`}
               className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1"
             >
               {title}

@@ -33,7 +33,7 @@ export default function RetroCard3({
       className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[17rem] w-[14.25rem] relative ${marginX} overflow-hidden`}
     >
       {/* Background Image */}
-      <div className="absolute top-0 left-0 w-full max-h-12 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full max-h-14 overflow-hidden">
         <Image
           src={`${banner || '/random/OP-Banner.png'}`}
           alt="background image"
@@ -52,7 +52,7 @@ export default function RetroCard3({
       </div>
 
       {/* Avatar */}
-      <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0 overflow-hidden">
+      <div className="absolute top-6 left-4 rounded-[0.25rem] flex flex-shrink-0 overflow-hidden">
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="icon image"

@@ -3,8 +3,6 @@ import Error from '@/app/component/Error'
 import BreadCump from './_component/BreadCump'
 import { getSpecifigJsonRound1 } from '../page'
 
-
-
 export default async function page({
   params,
 }: {

@@ -34,6 +34,11 @@ export function isLetter(c: string) {
   return c.toLowerCase() !== c.toUpperCase()
 }
 
+export function cleanParamsName(name: string) {
+  const cleanName = name.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '')
+  return cleanName
+}
+
 export function mapChainId(chainId: number) {
   switch (chainId) {
     case 10:

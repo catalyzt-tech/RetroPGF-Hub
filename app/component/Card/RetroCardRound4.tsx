@@ -45,10 +45,10 @@ export default function RetroCard4({
 }) {
   return (
     <div
-      className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[15rem] w-[14.25rem] relative ${marginX} overflow-hidden`}
+      className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[16rem] w-[14.25rem] relative ${marginX} overflow-hidden`}
     >
       {/* Background Image */}
-      <div className="absolute top-0 left-0 w-full max-h-12 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full max-h-14 overflow-hidden">
         <Image
           src={banner || '/random/OP-Banner.png'}
           alt="background image"
@@ -59,15 +59,14 @@ export default function RetroCard4({
         />
       </div>
 
-      {/* Round Indicator */}
-      <div className="absolute top-1 right-1 bg-white px-1 py-0.5 rounded-[0.25rem]">
-        <p className="text-gray-600 text-[0.5rem] font-semibold leading-4 tracking-[0.05rem]">
-          {round}
-        </p>
+      {/* Eligibility Status */}
+      <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem]">
+        {/* <div className='flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div> */}
+        <div className='flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div>
       </div>
 
       {/* Avatar */}
-      <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0 overflow-hidden">
+      <div className="absolute top-6 left-4 rounded-[0.25rem] flex flex-shrink-0 overflow-hidden">
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="icon image"
@@ -82,7 +81,7 @@ export default function RetroCard4({
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF4/${title}`}
+              href={`/explore/RetroPGF4/${title?.replaceAll(' ', '-')}`}
               className="line-clamp-1 text-sm font-bold text-gray-800 z-30 hover:underline"
             >
               {title}
@@ -95,9 +94,9 @@ export default function RetroCard4({
             {handleCategoryRound4(category!)}
           </div>
           <div className="flex flex-grow"></div>
-          <div className="flex gap-2">
-            <Events size={20} />
+          <div className='flex justify-between items-center w-full'>
             <div className="flex gap-1">
+              <Events size={20} />
               <p className="text-sm font-semibold text-gray-800">
                 {/* {Math.ceil(vote || 0).toString()} */}
                 {teamSize}

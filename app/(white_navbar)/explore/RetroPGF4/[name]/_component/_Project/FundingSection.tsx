@@ -17,6 +17,9 @@ function formatGrant(amount: string): string {
 }
 
 function formatName(name: string): string {
+  if (name == '') {
+    return 'Not Disclosed'
+  }
   return name
     .split(/[-_ .,]/)
     .map((word, index) =>
@@ -50,14 +53,14 @@ export default function FundingSection({
       ref={fundingRef}
       className="flex flex-col gap-6 bg-white rounded-lg p-2 lg:p-6"
     >
-      <h3 className="text-3xl font-semibold">Funding Sources</h3>
+      <h3 className="text-2xl font-semibold">Funding Sources</h3>
       <hr className="border-t-gray-100" />
       {data.grantsAndFunding.ventureFunding.length != 0 &&
         data.grantsAndFunding.ventureFunding.map((item, i) => (
           <div className="flex flex-col gap-1" key={i}>
             <div className="flex flex-wrap gap-3 items-center">
               <p className="mb-1 text-base font-normal text-gray-500">
-                {formatName(item.ventureFunding) as string} :
+                {'Venture Funding'} :
               </p>
               <p className="mb-1 text-base font-semibold text-gray-600">
                 {containsOnlyDigits(item.amount)

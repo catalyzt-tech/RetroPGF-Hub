@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { iRetroPGF4Project } from '../RetroType4'
 import { handleCategoryRound4 } from '@/app/lib/InitialMount'
+import { cleanParamsName } from '@/app/lib/utils'
 
 export default function DynamicCard({
   banner,
@@ -34,7 +35,7 @@ export default function DynamicCard({
       className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[18rem] min-h-[12rem] relative bg-white overflow-hidden`}
     >
       {/* Background Image */}
-      <div className="absolute top-0 left-0 w-full h-20 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-16 lg:h-20 overflow-hidden">
         <Image
           src={banner || '/random/OP-Banner.png'}
           alt="background image"
@@ -44,15 +45,14 @@ export default function DynamicCard({
         />
       </div>
 
-      {/* Round Indicator */}
-      <div className="absolute top-1 right-1 bg-white px-1 py-0.5 rounded-[0.25rem] z-20">
-        <p className="text-gray-600 text-[0.5rem] font-semibold leading-4 tracking-[0.05rem]">
-          RetroPGF {round}
-        </p>
+      {/* Eligibility Status */}
+      <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem] z-20">
+        {/* <div className='flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div> */}
+        <div className='flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div>
       </div>
 
       {/* Avatar */}
-      <div className="absolute top-10 left-4 rounded-[0.25rem] bg-white flex flex-shrink-0 z-20 overflow-hidden">
+      <div className="absolute top-10 lg:top-12 left-4 rounded-[0.25rem] bg-white flex flex-shrink-0 z-20 overflow-hidden">
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="avatar image"
@@ -62,12 +62,12 @@ export default function DynamicCard({
         />
       </div>
 
-      <div className="mt-20"></div>
+      <div className="mt-20 lg:mt-[5.5rem]"></div>
       <div className="w-full h-full">
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF4/${title}`}
+              href={`/explore/RetroPGF4/${cleanParamsName(title)}`}
               className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1"
             >
               {title}
