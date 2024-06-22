@@ -7,7 +7,6 @@ import Link from "next/link";
 import { Circular } from "@/app/component/Loading/Circular";
 import { AuthUserThirdParty, RegisterUser } from "@/app/hook/userRequest";
 import { GlobalContextType, useGlobal } from "@/app/provider/globalContext";
-import { useRouter } from 'next/navigation';
 import { githubProvider, googleProvider } from "@/app/lib/firebase";
 import { Dialog, Transition } from "@headlessui/react";
 
@@ -18,16 +17,15 @@ export default function Cpage({
 })  {
 
 
-    const router = useRouter();
     const { globalState, setGlobalState, SignInWithGoogle }: GlobalContextType = useGlobal?.()!;
     const [loading, setLoading] = useState<boolean>(false)
     const [open, setOpen] = useState<boolean>(false)
     
-    useEffect(() => {
-        if (typeof (globalState.user) === "object") {
-            router.push('/');
-        }
-    }, [globalState.user, router])
+    // useEffect(() => {
+    //     if (typeof (globalState.user) === "object") {
+    //         router.push('/');
+    //     }
+    // }, [globalState.user, router])
 
     const emailRef = useRef<HTMLInputElement>(null);
     const firstNameRef = useRef<HTMLInputElement>(null);

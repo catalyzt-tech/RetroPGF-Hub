@@ -5,7 +5,6 @@ import toast from "react-hot-toast";
 import Github from '@carbon/icons-react/lib/LogoGithub';
 import Link from "next/link";
 import { GlobalContextType, useGlobal } from "@/app/provider/globalContext";
-import { useRouter } from "next/navigation";
 import { AuthUserThirdParty, LoginUser } from "@/app/hook/userRequest";
 import { Circular } from "@/app/component/Loading/Circular";
 import { githubProvider, googleProvider } from "@/app/lib/firebase";
@@ -16,15 +15,16 @@ export default function Cpage({
     
 })  {
 
-    const router = useRouter();
+    // const router = useRouter();
     const { globalState, setGlobalState, SignInWithGoogle }: GlobalContextType = useGlobal?.()!;
     const [loading, setLoading] = useState<boolean>(false)
     const [open, setOpen] =  useState<boolean>(false)
-    useEffect(() => {
-        if (typeof (globalState.user) === "object") {
-            router.push('/');
-        }
-    }, [globalState.user, router])
+
+    // useEffect(() => {
+    //     if (typeof (globalState.user) === "object") {
+    //         router.push('/');
+    //     }
+    // }, [globalState.user, router])
 
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
