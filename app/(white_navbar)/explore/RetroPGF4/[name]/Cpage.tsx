@@ -29,9 +29,8 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
           ref={overViewRef}
         >
           <ProjectDetailSection data={data} />
-          {/* (data.appealed == "Yes") ?? (
-            <AppealSection data={data} />
-          )   */}
+          {data.appealed && <AppealSection data={data} />}
+
           <OverviewSection data={data} />
         </section>
         <ContributionSection data={data} contributionRef={contributionRef} />

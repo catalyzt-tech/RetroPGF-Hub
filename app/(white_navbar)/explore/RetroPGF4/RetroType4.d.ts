@@ -42,4 +42,10 @@ export interface iRetroPGF4Project {
   packages: any[]
   contracts: any[]
   grantsAndFunding: GrantsAndFunding
+  eligibilityRules: string | null
+  eigibilityRejectReason: string | null
+  appealed: string | null
+  appealDecision: string | null
+  reason: null
+  links: null
 }

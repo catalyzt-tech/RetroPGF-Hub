@@ -29,9 +29,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 391.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -63,9 +65,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -128,9 +132,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -190,9 +196,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 224.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4. We don't consider `to_addresses` towards our count of unique addresses interacting with a project.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4. We don't consider `to_addresses` towards our count of unique addresses interacting with a project.",
     "links": null
   },
   {
@@ -243,9 +251,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -338,9 +348,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -407,9 +419,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -441,9 +455,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -516,9 +532,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 6",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -568,9 +586,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 3",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -627,9 +647,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -711,9 +733,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -759,9 +783,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -858,9 +884,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -902,9 +930,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -942,9 +972,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1018,9 +1050,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1053,9 +1087,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1100,9 +1136,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1155,9 +1193,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-15",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1222,9 +1262,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-04",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1276,9 +1318,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1372,9 +1416,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1425,9 +1471,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1465,9 +1513,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 1.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1505,9 +1555,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 1.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1560,9 +1612,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "Flagged for manufactured activity",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -1627,9 +1681,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1682,9 +1738,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -1787,9 +1845,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2444,9 +2504,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2490,9 +2552,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2543,9 +2607,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2605,9 +2671,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2647,9 +2715,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 1",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2684,9 +2754,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2726,9 +2798,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-04",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2768,9 +2842,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2808,9 +2884,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 1",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2850,9 +2928,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 0",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2901,9 +2981,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2939,9 +3021,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -2977,9 +3061,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3048,9 +3134,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3091,9 +3179,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 55.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3133,9 +3223,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 0",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3175,9 +3267,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-02",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3228,9 +3322,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-14",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3270,9 +3366,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3353,9 +3451,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3412,9 +3512,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3457,9 +3559,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 134.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3499,9 +3603,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-05-24",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3566,9 +3672,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3608,9 +3716,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3650,9 +3760,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3692,9 +3804,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-05-24",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3740,9 +3854,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3810,9 +3926,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "Flagged for manufactured activity",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3854,9 +3972,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -3908,9 +4028,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 2.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "Unfortunately, we don't treat NFT holders the same as users performing their own interaction.",
+    "appealDecision": "Rejected",
+    "reason": "Unfortunately, we don't treat NFT holders the same as users performing their own interaction.",
     "links": null
   },
   {
@@ -3982,9 +4104,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4054,9 +4178,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4101,9 +4227,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 51.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4144,9 +4272,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4261,9 +4391,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4311,9 +4443,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 362.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "Please see attached sheet with all transactions we've considered to be valid during the RF4 period.",
+    "appealDecision": "Rejected",
+    "reason": "Please see attached sheet with all transactions we've considered to be valid during the RF4 period.",
     "links": "GiveStation"
   },
   {
@@ -4371,9 +4505,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 2.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4453,9 +4589,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4531,9 +4669,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 102.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "Please see attached sheet with all transactions we've considered to be valid during the RF4 period.",
+    "appealDecision": "Rejected",
+    "reason": "Please see attached sheet with all transactions we've considered to be valid during the RF4 period.",
     "links": "EFIHub"
   },
   {
@@ -4587,9 +4727,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4631,9 +4773,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4719,9 +4863,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4762,9 +4908,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 387.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -4826,9 +4974,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5198,9 +5348,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5479,9 +5631,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5541,9 +5695,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-05-15",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5588,9 +5744,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5632,9 +5790,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-04",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5691,9 +5851,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-01",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5757,9 +5919,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5797,9 +5961,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 17.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5847,9 +6013,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -5955,9 +6123,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6081,9 +6251,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6129,9 +6301,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 82.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6230,9 +6404,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6310,9 +6486,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6364,9 +6542,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6403,9 +6583,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 16.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6475,9 +6657,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-18",
     "appealed": "Yes",
-    "appeadDecision": "Approved",
-    "reasom": "Confirmed protocol is interacted with 4337 contract and has transactions before 2024-04-30",
+    "appealDecision": "Approved",
+    "reason": "Confirmed protocol is interacted with 4337 contract and has transactions before 2024-04-30",
     "links": null
   },
   {
@@ -6541,9 +6725,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6598,9 +6784,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6694,9 +6882,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6742,9 +6932,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6798,9 +6990,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6846,9 +7040,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -6911,9 +7107,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7031,9 +7229,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7077,9 +7277,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7152,9 +7354,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 240.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7196,9 +7400,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-24",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7258,9 +7464,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7331,9 +7539,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7405,9 +7615,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 12.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "Unfortunately, we only have limited support for 4337 transactions in this round. To be considered, a project's contracts must interact directly with an EntryPoint contract. Then, we look at the number of SCWs created by the project and add that to their address total. We weren't able to identify any contract interactions of that pattern associated with your project's contracts.",
+    "appealDecision": "Rejected",
+    "reason": "Unfortunately, we only have limited support for 4337 transactions in this round. To be considered, a project's contracts must interact directly with an EntryPoint contract. Then, we look at the number of SCWs created by the project and add that to their address total. We weren't able to identify any contract interactions of that pattern associated with your project's contracts.",
     "links": null
   },
   {
@@ -7561,9 +7773,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7639,9 +7853,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7720,9 +7936,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7780,9 +7998,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7822,9 +8042,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -7878,9 +8100,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -8029,9 +8253,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -8149,9 +8375,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -8214,9 +8442,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -8245,9 +8475,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -8292,9 +8524,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -8340,9 +8574,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 243.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -8465,9 +8701,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 88.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -8556,9 +8794,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -9485,9 +9725,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -9585,9 +9827,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 137.",
     "appealed": "Yes",
-    "appeadDecision": "Approved",
-    "reasom": "Confirmed protocol is interacted with 4337 contract and has transactions before 2024-04-30",
+    "appealDecision": "Approved",
+    "reason": "Confirmed protocol is interacted with 4337 contract and has transactions before 2024-04-30",
     "links": null
   },
   {
@@ -9657,9 +9901,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -9736,9 +9982,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -9793,9 +10041,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -9844,9 +10094,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -9924,9 +10176,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -9980,9 +10234,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 394.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -10025,9 +10281,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 40.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -10075,9 +10333,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 9.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10144,9 +10404,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10198,9 +10460,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10250,9 +10514,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10292,9 +10558,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 19.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10391,9 +10659,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10431,9 +10701,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 9.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10547,9 +10819,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10710,9 +10984,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 7.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10755,9 +11031,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10797,9 +11075,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 3",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10891,9 +11171,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -10933,9 +11215,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -11012,9 +11296,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -11083,9 +11369,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -12183,9 +12471,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -12422,9 +12712,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -12485,9 +12777,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -12601,9 +12895,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -12673,9 +12969,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 282.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "Please see attached sheet with all transactions we've considered to be valid during the RF4 period.",
+    "appealDecision": "Rejected",
+    "reason": "Please see attached sheet with all transactions we've considered to be valid during the RF4 period.",
     "links": "Webhash"
   },
   {
@@ -12734,9 +13032,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 4.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -12772,9 +13072,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -12854,9 +13156,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13015,9 +13319,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13067,9 +13373,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13151,9 +13459,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "Yes",
-    "appeadDecision": "Approved",
-    "reasom": "Unique case: as bridge is an EOA, we don't calculate any metrics related to it. But the applicant is correct in their appeal.",
+    "appealDecision": "Approved",
+    "reason": "Unique case: as bridge is an EOA, we don't calculate any metrics related to it. But the applicant is correct in their appeal.",
     "links": null
   },
   {
@@ -13213,9 +13523,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 218.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4. We don't consider `to_addresses` towards our count of unique addresses interacting with a project.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4. We don't consider `to_addresses` towards our count of unique addresses interacting with a project.",
     "links": null
   },
   {
@@ -13255,9 +13567,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 276.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13331,9 +13645,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 5.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13381,9 +13697,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13445,9 +13763,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 14.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13485,9 +13805,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13527,9 +13849,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 397.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13569,9 +13893,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 391.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13624,9 +13950,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13683,9 +14011,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13732,9 +14062,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13779,9 +14111,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13872,9 +14206,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -13962,9 +14298,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -14034,9 +14372,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -14363,9 +14703,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -14532,9 +14874,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -14584,9 +14928,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -14635,9 +14981,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -14713,9 +15061,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -14757,9 +15107,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -14804,9 +15156,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -14863,9 +15217,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15286,9 +15642,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15321,9 +15679,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15356,9 +15716,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15489,9 +15851,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15547,9 +15911,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 33.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15625,9 +15991,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15720,9 +16088,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15782,9 +16152,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15853,9 +16225,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -15937,9 +16311,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16064,9 +16440,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16185,9 +16563,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16242,9 +16622,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16315,9 +16697,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16372,9 +16756,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16500,9 +16886,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16632,9 +17020,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16731,9 +17121,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16777,9 +17169,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 32.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16916,9 +17310,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -16959,9 +17355,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 56.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17004,9 +17402,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 70.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17047,9 +17447,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 56.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17199,9 +17601,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17244,9 +17648,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 70.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17376,9 +17782,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17429,9 +17837,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 239.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17481,9 +17891,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17563,9 +17975,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 341.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17618,9 +18032,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 12.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17680,9 +18096,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17821,9 +18239,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17871,9 +18291,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 115.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -17944,9 +18366,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18004,9 +18428,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 160.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18070,9 +18496,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 11.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18115,9 +18543,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 9",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18277,9 +18707,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18330,9 +18762,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 7.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18382,9 +18816,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18436,9 +18872,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18485,9 +18923,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 242.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18532,9 +18972,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18824,9 +19266,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18882,9 +19326,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -18976,9 +19422,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19080,9 +19528,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19217,9 +19667,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19284,9 +19736,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 96.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19338,9 +19792,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 2",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -19402,9 +19858,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19470,9 +19928,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19539,9 +19999,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19728,9 +20190,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19811,9 +20275,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19853,9 +20319,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-05-28",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -19901,9 +20369,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20095,9 +20565,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20137,9 +20609,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-08",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20179,9 +20653,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20272,9 +20748,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20320,9 +20798,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 120.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "Unfortunately, we can't implement custom logic to decode traces or parse a project-specific subgraph",
+    "appealDecision": "Rejected",
+    "reason": "Unfortunately, we can't implement custom logic to decode traces or parse a project-specific subgraph",
     "links": null
   },
   {
@@ -20380,9 +20860,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 11.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20420,9 +20902,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20469,9 +20953,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20519,9 +21005,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20557,9 +21045,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20604,9 +21094,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 80.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20688,9 +21180,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20749,9 +21243,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 5",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20787,9 +21283,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 5",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20912,9 +21410,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -20963,9 +21463,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21057,9 +21559,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21109,9 +21613,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 3",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21228,9 +21734,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21291,9 +21799,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21415,9 +21925,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21465,9 +21977,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21723,9 +22237,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21757,9 +22273,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21876,9 +22394,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21916,9 +22436,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-21",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -21990,9 +22512,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22047,9 +22571,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 267.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22098,9 +22624,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 27.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22149,9 +22677,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22221,9 +22751,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 8",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22267,9 +22799,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-25",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22313,9 +22847,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22372,9 +22908,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22410,9 +22948,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 336.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22482,9 +23022,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22524,9 +23066,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -22976,9 +23520,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23049,9 +23595,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23185,9 +23733,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23407,9 +23957,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23463,9 +24015,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23506,9 +24060,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 3",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23561,9 +24117,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 17.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23610,9 +24168,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23717,9 +24277,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23889,9 +24451,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23937,9 +24501,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -23980,9 +24546,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "Flagged for manufactured activity",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24084,9 +24652,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24144,9 +24714,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 229.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4. Only transactions which are initiated by unique addresses are considered. We don't consider `to_addresses` towards our count of unique addresses interacting with a project.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4. Only transactions which are initiated by unique addresses are considered. We don't consider `to_addresses` towards our count of unique addresses interacting with a project.",
     "links": null
   },
   {
@@ -24177,9 +24749,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24234,9 +24808,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24279,9 +24855,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24324,9 +24902,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 242.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24366,9 +24946,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24443,9 +25025,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24583,9 +25167,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 93.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24634,9 +25220,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-22",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24677,9 +25265,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 36.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24720,9 +25310,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 36.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24763,9 +25355,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 36.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24808,9 +25402,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -24867,9 +25463,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-18",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -25145,9 +25743,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -25515,9 +26115,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -25558,9 +26160,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -25617,9 +26221,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -25668,9 +26274,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -25722,9 +26330,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -25788,9 +26398,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-18",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -25846,9 +26458,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -25905,9 +26519,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -26538,9 +27154,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -26590,9 +27208,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -26944,9 +27564,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -27081,9 +27703,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -27756,9 +28380,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -27821,9 +28447,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 211.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -27945,9 +28573,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28005,9 +28635,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-05-07",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28056,9 +28688,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28125,9 +28759,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-06",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28210,9 +28846,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28248,9 +28886,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28396,9 +29036,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 13.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "There are two challenges here. First, we don't treat NFT airdrop recipients the same as users performing their own interaction. Second, we have limited support for 4337 transactions given there is a variety of possible UserOps. Currently we are only able to credit 4337 interactions that create Smart Contract Wallets for projects. We analyzed the list of contracts you provided, but we were not able to identify SCW account creation events; these all seemed to be specific ERC1155 drops. If there is a contract you control that creates SCWs for users, please share and we will reconsider. Otherwise it is very difficult to decode custom logic and ensure a project is performing legitimate actions on behalf of users vs airdropping indiscriminately. There are multiple cases of this that we've had to mark as ineligible for this specific round.",
+    "appealDecision": "Rejected",
+    "reason": "There are two challenges here. First, we don't treat NFT airdrop recipients the same as users performing their own interaction. Second, we have limited support for 4337 transactions given there is a variety of possible UserOps. Currently we are only able to credit 4337 interactions that create Smart Contract Wallets for projects. We analyzed the list of contracts you provided, but we were not able to identify SCW account creation events; these all seemed to be specific ERC1155 drops. If there is a contract you control that creates SCWs for users, please share and we will reconsider. Otherwise it is very difficult to decode custom logic and ensure a project is performing legitimate actions on behalf of users vs airdropping indiscriminately. There are multiple cases of this that we've had to mark as ineligible for this specific round.",
     "links": null
   },
   {
@@ -28443,9 +29085,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28485,9 +29129,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 324.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28554,9 +29200,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28632,9 +29280,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 134.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28683,9 +29333,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 1",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28746,9 +29398,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28852,9 +29506,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -28971,9 +29627,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29039,9 +29697,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29086,9 +29746,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 15.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "Please see attached sheet with all transactions we've considered to be valid during the RF4 period.",
+    "appealDecision": "Rejected",
+    "reason": "Please see attached sheet with all transactions we've considered to be valid during the RF4 period.",
     "links": "Beware of Shadows"
   },
   {
@@ -29148,9 +29810,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29248,9 +29912,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29301,9 +29967,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-28",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29348,9 +30016,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 27.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -29445,9 +30115,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 2.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "Unfortunately, we don't treat NFT airdrop recipients the same as users performing their own interaction. It is very difficult to decode custom logic and ensure a project is performing legitimate actions on behalf of users vs airdropping indiscriminately. There are multiple cases of this that we've had to mark as ineligible for this specific round.",
+    "appealDecision": "Rejected",
+    "reason": "Unfortunately, we don't treat NFT airdrop recipients the same as users performing their own interaction. It is very difficult to decode custom logic and ensure a project is performing legitimate actions on behalf of users vs airdropping indiscriminately. There are multiple cases of this that we've had to mark as ineligible for this specific round.",
     "links": null
   },
   {
@@ -29581,9 +30253,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29648,9 +30322,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 9",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29695,9 +30371,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 0",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29737,9 +30415,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 0",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29828,9 +30508,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29871,9 +30553,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 2",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29914,9 +30598,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 8",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -29957,9 +30643,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 2",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30002,9 +30690,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4. We don't consider `to_addresses` towards our count of unique addresses interacting with a project.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4. We don't consider `to_addresses` towards our count of unique addresses interacting with a project.",
     "links": null
   },
   {
@@ -30048,9 +30738,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-05-27",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30116,9 +30808,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30174,9 +30868,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 54.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30229,9 +30925,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-16",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30272,9 +30970,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 26.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30315,9 +31015,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 26.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30358,9 +31060,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 26.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30401,9 +31105,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 26.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30467,9 +31173,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30527,9 +31235,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30581,9 +31291,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30659,9 +31371,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30710,9 +31424,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 15.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30779,9 +31495,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30845,9 +31563,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30894,9 +31614,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -30988,9 +31710,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-05-08",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31034,9 +31758,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 82.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31428,9 +32154,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31487,9 +32215,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31535,9 +32265,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-12",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31575,9 +32307,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31668,9 +32402,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31736,9 +32472,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 1.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31818,9 +32556,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31866,9 +32606,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31917,9 +32659,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 19.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -31964,9 +32708,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32201,9 +32947,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32252,9 +33000,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 14.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32303,9 +33053,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 14.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32349,9 +33101,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32391,9 +33145,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32432,9 +33188,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 1",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "There was a typo in the rejection reason. The cutoff date is 2024-01-01 not 2023-01-01. The RF4 eligibility window does not include 2023.",
+    "appealDecision": "Rejected",
+    "reason": "There was a typo in the rejection reason. The cutoff date is 2024-01-01 not 2023-01-01. The RF4 eligibility window does not include 2023.",
     "links": null
   },
   {
@@ -32480,9 +33238,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32561,9 +33321,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 42.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -32618,9 +33380,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32683,9 +33447,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32750,9 +33516,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 10.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4. Contracts deployed through Zora are not considered",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4. Contracts deployed through Zora are not considered",
     "links": null
   },
   {
@@ -32837,9 +33605,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -32982,9 +33752,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33045,9 +33817,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33101,9 +33875,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33161,9 +33937,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33212,9 +33990,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 14.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33266,9 +34046,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 5",
     "appealed": "Yes",
-    "appeadDecision": "Approved",
-    "reasom": "Correct. It appears these deployments from your factory were not picked up.",
+    "appealDecision": "Approved",
+    "reason": "Correct. It appears these deployments from your factory were not picked up.",
     "links": null
   },
   {
@@ -33345,9 +34127,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 4",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "These contracts will be added but will not be treated as a standalone project. They will be merged into Reservoir.",
+    "appealDecision": "Rejected",
+    "reason": "These contracts will be added but will not be treated as a standalone project. They will be merged into Reservoir.",
     "links": null
   },
   {
@@ -33398,9 +34182,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 0",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33441,9 +34227,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-11",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33743,9 +34531,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33785,9 +34575,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 16.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33833,9 +34625,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 108.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33871,9 +34665,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 16.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -33963,9 +34759,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34010,9 +34808,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 60.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34099,9 +34899,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 26.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -34144,9 +34946,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34286,9 +35090,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34337,9 +35143,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 14.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34382,9 +35190,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34422,9 +35232,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34466,9 +35278,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34517,9 +35331,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 14.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34717,9 +35533,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34755,9 +35573,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34806,9 +35626,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 14.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34880,9 +35702,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34920,9 +35744,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "Project did not control deployer keys, but instead used Zora and other protocols",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -34978,9 +35804,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35047,9 +35875,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35127,9 +35957,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 148.",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -35178,9 +36010,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35226,9 +36060,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-05-25",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35268,9 +36104,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35417,9 +36255,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 9.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35478,9 +36318,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35543,9 +36385,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35586,9 +36430,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 6",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35624,9 +36470,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35679,9 +36527,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35747,9 +36597,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35818,9 +36670,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 45.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35860,9 +36714,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35928,9 +36784,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -35963,9 +36821,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36022,9 +36882,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 48.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36101,9 +36963,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 1",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36143,9 +37007,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36180,9 +37046,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36248,9 +37116,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36333,9 +37203,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36374,9 +37246,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36419,9 +37293,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 8",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36468,9 +37344,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 207.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36521,9 +37399,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36572,9 +37452,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 22.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36625,9 +37507,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 212.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36667,9 +37551,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-04-06",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36718,9 +37604,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 6",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36769,9 +37657,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 10.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36805,9 +37695,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36856,9 +37748,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 3",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -36907,9 +37801,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 7",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37002,9 +37898,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 181.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37051,9 +37949,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 177.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37102,9 +38002,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 2",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37153,9 +38055,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 9",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37198,9 +38102,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 19.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37255,9 +38161,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37355,9 +38263,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37420,9 +38330,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have more than 10 days of activity between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " days of activity is 2",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37486,9 +38398,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37530,9 +38444,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": "Project must have its first transaction before 2024-04-01",
+    "eigibilityRejectReason": " earliest transaction is 2024-05-17",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37572,9 +38488,11 @@
       "grants": [],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eigibilityRejectReason": "No relevant onchain activity detected",
     "appealed": "Yes",
-    "appeadDecision": "Rejected",
-    "reasom": "See Eligibility criteria of Retro Funding 4.",
+    "appealDecision": "Rejected",
+    "reason": "See Eligibility criteria of Retro Funding 4.",
     "links": null
   },
   {
@@ -37637,9 +38555,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37691,9 +38611,11 @@
         }
       ]
     },
+    "eligibilityRules": "Project must have interactions from 420 unique addresses between 2023-01-01 and 2024-05-01",
+    "eigibilityRejectReason": " unique address count is 86.",
     "appealed": "No",
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37763,9 +38685,11 @@
         }
       ]
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   },
   {
@@ -37879,9 +38803,11 @@
       ],
       "revenue": []
     },
+    "eligibilityRules": null,
+    "eligibilityRejectReason": null,
     "appealed": null,
-    "appeadDecision": null,
-    "reasom": null,
+    "appealDecision": null,
+    "reason": null,
     "links": null
   }
 ]

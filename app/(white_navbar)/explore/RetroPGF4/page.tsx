@@ -6,19 +6,8 @@ import path from 'path'
 
 export async function getJsonRound4(): Promise<iRetroPGF4Project[]> {
   const directoryPath = path.join(process.cwd(), 'public/static/rpgf4.json')
-
   const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
   const jsonData: iRetroPGF4Project[] = JSON.parse(fileContents)
-
-  // sort เปลี่ยน -1 ให้เป็นต่ำสุด
-  // jsonData.sort((a, b) => {
-  //   if (a.rank === -1 && b.rank === -1) return 0
-  //   if (a.rank === -1) return 1
-  //   if (b.rank === -1) return -1
-
-  //   return a.rank - b.rank
-  // })
-
   return jsonData
 }
 

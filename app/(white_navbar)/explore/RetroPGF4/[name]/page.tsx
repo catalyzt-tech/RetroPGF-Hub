@@ -6,6 +6,12 @@ import BreadCump from './_component/BreadCump'
 import Error from '@/app/component/Error'
 import { cleanParamsName } from '@/app/lib/utils'
 
+interface pageProps {
+  params: {
+    name: string
+  }
+}
+
 async function getSingleJson(
   projectName: string
 ): Promise<iRetroPGF4Project | undefined> {
@@ -19,19 +25,11 @@ async function getSingleJson(
   })
 }
 
-export default async function page({
-  params,
-}: {
-  params: {
-    name: string
-  }
-}) {
+export default async function page({ params }: pageProps) {
   const decodedString = decodeURIComponent(params.name)
-
   const res = await getSingleJson(decodedString)
 
   if (!res) {
-    console.log(params)
     console.log('err')
     return <Error />
   }
