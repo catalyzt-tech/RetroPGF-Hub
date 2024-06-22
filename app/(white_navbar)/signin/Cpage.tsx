@@ -1,6 +1,6 @@
 "use client"
 import InputRef from "@/app/component/Input/InputRef";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import toast from "react-hot-toast";
 import Github from '@carbon/icons-react/lib/LogoGithub';
 import Link from "next/link";
@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { AuthUserThirdParty, LoginUser } from "@/app/hook/userRequest";
 import { Circular } from "@/app/component/Loading/Circular";
 import { githubProvider, googleProvider } from "@/app/lib/firebase";
+import { Dialog, Transition } from "@headlessui/react";
 export default function Cpage({
 
 }:{
@@ -18,7 +19,7 @@ export default function Cpage({
     const router = useRouter();
     const { globalState, setGlobalState, SignInWithGoogle }: GlobalContextType = useGlobal?.()!;
     const [loading, setLoading] = useState<boolean>(false)
-
+    const [open, setOpen] =  useState<boolean>(false)
     useEffect(() => {
         if (typeof (globalState.user) === "object") {
             router.push('/');
@@ -49,6 +50,8 @@ export default function Cpage({
                 setGlobalState(prev => ({ ...prev, user: user }))
                 toast.success("Login successful")
                 setLoading(false)
+                setOpen(true)
+
             } else {
                 toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
                 setLoading(false)
@@ -70,6 +73,8 @@ export default function Cpage({
                 setGlobalState(prev => ({ ...prev, user: user }))
                 toast.success("Login successful")
                 setLoading(false)
+                setOpen(true)
+
             } else {
                 toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
                 setLoading(false)
@@ -90,6 +95,8 @@ export default function Cpage({
                 setGlobalState(prev => ({ ...prev, user: user }))
                 toast.success("Login successful")
                 setLoading(false)
+                setOpen(true)
+
             } else {
                 toast.error(res.error?.data.msg! || "Something went wrong when try to login to your account")
                 setLoading(false)
@@ -177,6 +184,56 @@ return (
                     </Link>
                 </div>
             </div>
+
+        <Transition appear show={open} as={Fragment}>
+        <Dialog as="div" className="relative z-40" onClose={(value) => setOpen(value)}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    Authentication success!
+                  </Dialog.Title>
+                  <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+                    <Link
+                      href={`/`}
+                      type="button"
+                      className="bg-primaryRed py-3 px-7 h-10 max-w-[10rem] flex items-center rounded-lg hover:bg-primaryRed/90"
+                    >
+                      <h6 className="text-sm font-semibold text-white line-clamp-1 ">
+                        Back to home
+                      </h6>
+                    </Link>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
         </div>
 
     )
