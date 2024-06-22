@@ -123,7 +123,9 @@ export default function Cpage({
 
     <> 
 
-        <div className="w-full min-h-[calc(100vh-4.5rem)] bg-gray-100  flex justify-start items-center   ">
+        <div 
+        id="register-page"
+        className="w-full min-h-[calc(100vh-4.5rem)] bg-gray-100  flex justify-start items-center   ">
             <Circular
             loading={loading}
             />
