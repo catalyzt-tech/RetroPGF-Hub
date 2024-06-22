@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { handleCategoryRound3 } from '@/app/lib/InitialMount'
 import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
+import { cleanParamsName } from '@/app/lib/utils'
 
 export default function RetroCard3({
   marginX = 'mx-3',
@@ -67,7 +68,7 @@ export default function RetroCard3({
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF3/${title}`}
+              href={`/explore/RetroPGF3/${cleanParamsName(title!)}`}
               className="line-clamp-1 text-sm font-bold text-gray-800 z-30 hover:underline"
             >
               {title}

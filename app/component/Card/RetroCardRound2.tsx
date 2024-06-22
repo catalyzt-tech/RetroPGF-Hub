@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { handleCategoryRound2 } from "@/app/lib/InitialMount";
 import { CategoryRound2 } from "@/app/(white_navbar)/explore/RetroPGF2/RetroType2";
+import { cleanParamsName } from "@/app/lib/utils";
 
 export default function RetroCard2({
     marginX="mx-3",
@@ -64,7 +65,7 @@ export default function RetroCard2({
         <div className="w-full h-full">
             <div className="p-4 flex flex-col justify-start items-start gap-3 h-full">
                 <div className="flex flex-col gap-0.5">
-                    <Link href={`/explore/RetroPGF2/${title}`} className="line-clamp-1 text-sm font-bold text-gray-800 z-30 hover:underline">{title}</Link>
+                    <Link href={`/explore/RetroPGF2/${cleanParamsName(title!)}`} className="line-clamp-1 text-sm font-bold text-gray-800 z-30 hover:underline">{title}</Link>
                     <p className="text-sm font-normal text-gray-600 line-clamp-2">
                         {description}
                     </p>

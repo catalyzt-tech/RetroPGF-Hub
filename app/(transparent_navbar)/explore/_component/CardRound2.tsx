@@ -9,6 +9,7 @@ import { RetroRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/RetroType2'
 import ChevronRight from '@carbon/icons-react/lib/ChevronRight'
 import ArrowLeft from '@carbon/icons-react/lib/ArrowLeft'
 import ArrowRight from '@carbon/icons-react/lib/ArrowRight'
+import { cleanParamsName } from '@/app/lib/utils'
 
 export default function CardRound2({
   title,
@@ -31,7 +32,7 @@ export default function CardRound2({
         <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
         <Link
           href={{
-            pathname: `/explore/${title}`,
+            pathname: `/explore/${cleanParamsName(title)}`,
           }}
           className="md:hidden flex gap-2"
         >

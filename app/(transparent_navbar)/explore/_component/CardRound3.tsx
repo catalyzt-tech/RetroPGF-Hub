@@ -9,6 +9,7 @@ import ChevronRight from '@carbon/icons-react/lib/ChevronRight'
 import ArrowLeft from '@carbon/icons-react/lib/ArrowLeft'
 import ArrowRight from '@carbon/icons-react/lib/ArrowRight'
 import RetroCard3 from '@/app/component/Card/RetroCardRound3'
+import { cleanParamsName } from '@/app/lib/utils'
 
 export default function CardRound3({
   title,
@@ -47,7 +48,7 @@ export default function CardRound3({
         <div className="flex flex-wrap gap-2">
           {Array.from(cateRound3).map(([category, count]) => (
             <Link
-              href={`/explore/${title}?category=${category}`}
+              href={`/explore/${cleanParamsName(title)}?category=${category}`}
               key={category}
               className={` lg:block h-8
                      hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
