@@ -18,7 +18,7 @@ export default function Cpage({
     // const router = useRouter();
     const { globalState, setGlobalState, SignInWithGoogle }: GlobalContextType = useGlobal?.()!;
     const [loading, setLoading] = useState<boolean>(false)
-    const [open, setOpen] =  useState<boolean>(false)
+    const [open, setOpen] =  useState<boolean>(true)
 
     // useEffect(() => {
     //     if (typeof (globalState.user) === "object") {
