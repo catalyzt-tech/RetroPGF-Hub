@@ -29,6 +29,14 @@ export interface GrantsAndFunding {
   revenue: any[]
 }
 
+export interface Github {
+  githubLink: string
+  star: number | null
+  watch: number | null
+  fork: number | null
+  isFork: string
+}
+
 export interface iRetroPGF4Project {
   name: string
   description: string
@@ -38,7 +46,7 @@ export interface iRetroPGF4Project {
   osoSlug: string
   socialLinks: SocialLinks
   team: string[]
-  github: string[]
+  github: Github[]
   packages: any[]
   contracts: any[]
   grantsAndFunding: GrantsAndFunding

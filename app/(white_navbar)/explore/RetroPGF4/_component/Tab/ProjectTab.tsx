@@ -339,6 +339,8 @@ export default function ProjectTab({
                       teamSize={item.team.length}
                       // opRecieve={0}
                       round="4"
+                      appealed={item.appealed}
+                      appealDecision={item.appealDecision}
                       // votes={0}
                       // rank={0}
                     />

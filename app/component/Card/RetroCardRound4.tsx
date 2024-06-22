@@ -3,6 +3,7 @@ import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
 import { handleCategoryRound4 } from '@/app/lib/InitialMount'
+import { cleanParamsName } from '@/app/lib/utils'
 
 // import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 
@@ -30,6 +31,8 @@ export default function RetroCard4({
   title,
   //   vote,
   banner,
+  appealed,
+  appealDecision
 }: {
   marginX?: string
   round?: string
@@ -39,6 +42,8 @@ export default function RetroCard4({
   description?: string | undefined
   category?: string
   teamSize?: number
+  appealed?: string | null
+  appealDecision?: string | null
   //   vote?: number
   //   opRecieve?: number
   //   rank?: number
@@ -61,8 +66,11 @@ export default function RetroCard4({
 
       {/* Eligibility Status */}
       <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem]">
-        {/* <div className='flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div> */}
-        <div className='flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div>
+      {(appealed === null && appealDecision === null) || (appealed === "Yes" && appealDecision === "Approved") ? (
+          <div className='flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div>
+        ) : (
+          <div className='flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div>
+        ) }    
       </div>
 
       {/* Avatar */}
@@ -81,7 +89,7 @@ export default function RetroCard4({
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF4/${title?.replaceAll(' ', '-')}`}
+              href={`/explore/RetroPGF4/${cleanParamsName(title!)}`}
               className="line-clamp-1 text-sm font-bold text-gray-800 z-30 hover:underline"
             >
               {title}

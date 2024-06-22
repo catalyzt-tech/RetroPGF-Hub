@@ -13,17 +13,8 @@ export default function GithubSection({
   githubRef: React.MutableRefObject<HTMLElement | null>
 }) {
   function formatGithubLink(inputString: string): string {
-    // Split the input string by '/'
-    const parts = inputString.split('/')
-
-    // Capitalize each part and join them with ' - '
-    const formattedString = parts
-      .map((part) =>
-        part.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase())
-      )
-      .join(' - ')
-
-    return formattedString
+    const formattedString = inputString.split('https://github.com/')[1] 
+    return formattedString 
   }
   return (
     <section
@@ -36,7 +27,7 @@ export default function GithubSection({
         {data.github.length != 0 &&
           data.github.map((item, i) => (
             <div
-              className="flex flex-col  gap-2  border rounded-md px-6 py-4 min-w-64  flex-grow h-36"
+              className={`flex flex-col gap-2 border rounded-md px-6 py-4 min-w-64 flex-grow h-36"`}
               key={i}
             >
               <Image
@@ -47,25 +38,27 @@ export default function GithubSection({
                 height={24}
               />
               <Link
-                href={item}
+                href={item.githubLink}
                 target="_blank"
                 className="text-base font-medium text-gray-600 line-clamp-2"
               >
-                {formatGithubLink(item.slice(19))}
+                {/* {formatGithubLink(item.)} */}
+                {formatGithubLink(item.githubLink)}
+                
               </Link>
               <div className="flex flex-row flex-grow"></div>
               <div className="flex flex-row justify-start items-center gap-x-4">
                 <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
                   {star()}
-                  <div> 69 Stars</div>
+                  <div>{item.star} Stars</div>
                 </div>
                 <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
                   {watch()}
-                  <div>231 Watch</div>
+                  <div>{item.watch} Watch</div>
                 </div>
                 <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
                   {fork()}
-                  <div>41 Forks</div>
+                  <div>{item.fork} Forks</div>
                 </div>
                 {/* <p className="text-base  text-gray-500">isFork</p> */}
               </div>

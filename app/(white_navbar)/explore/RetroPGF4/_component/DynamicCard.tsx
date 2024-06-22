@@ -15,6 +15,8 @@ export default function DynamicCard({
   description = '',
   category = '',
   teamSize = 0,
+  appealed = "",
+  appealDecision = ""
 }: // votes = 0,
 // opRecieve = 0,
 // rank = 0,
@@ -26,6 +28,8 @@ export default function DynamicCard({
   description?: string
   category?: string
   teamSize?: number
+  appealed?: string | null
+  appealDecision?: string | null
   // votes?: number
   // opRecieve?: number
   // rank?: number
@@ -47,8 +51,11 @@ export default function DynamicCard({
 
       {/* Eligibility Status */}
       <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem] z-20">
-        {/* <div className='flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div> */}
-        <div className='flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div>
+        {(appealed === null && appealDecision === null) || (appealed === "Yes" && appealDecision === "Approved") ? (
+          <div className='flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div>
+        ) : (
+          <div className='flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div>
+        ) }        
       </div>
 
       {/* Avatar */}
