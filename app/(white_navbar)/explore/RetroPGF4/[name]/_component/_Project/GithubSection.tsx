@@ -13,8 +13,8 @@ export default function GithubSection({
   githubRef: React.MutableRefObject<HTMLElement | null>
 }) {
   function formatGithubLink(inputString: string): string {
-    const formattedString = inputString.split('https://github.com/')[1] 
-    return formattedString 
+    const formattedString = inputString.split('https://github.com/')[1]
+    return formattedString
   }
   return (
     <section
@@ -44,21 +44,20 @@ export default function GithubSection({
               >
                 {/* {formatGithubLink(item.)} */}
                 {formatGithubLink(item.githubLink)}
-                
               </Link>
               <div className="flex flex-row flex-grow"></div>
               <div className="flex flex-row justify-start items-center gap-x-4">
                 <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
                   {star()}
-                  <div>{item.star} Stars</div>
+                  <div>{item.star ?? '-'} Stars</div>
                 </div>
-                <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
+                {/* <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
                   {watch()}
                   <div>{item.watch} Watch</div>
-                </div>
+                </div> */}
                 <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
                   {fork()}
-                  <div>{item.fork} Forks</div>
+                  <div>{item.fork ?? '-'} Forks</div>
                 </div>
                 {/* <p className="text-base  text-gray-500">isFork</p> */}
               </div>
