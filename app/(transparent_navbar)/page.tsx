@@ -41,7 +41,7 @@ export default async function Page() {
               <Link
                 href="/community/submit-idea"
                 className=" bg-white hover:bg-gray-50 py-3 px-8 rounded-lg "
-                >
+              >
                 <h6 className="text-sm font-semibold text-gray-800 text-center self-center">
                   Submit Your Project Idea
                 </h6>
