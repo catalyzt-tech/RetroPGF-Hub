@@ -217,7 +217,7 @@ const Navbar = ({
               <h6 className="text-sm font-semibold text-gray-800">Sign in</h6>
             </Link>
             <Link
-              href={'/'}
+              href={'/register'}
               className="bg-primaryRed py-3 px-7 h-10 flex items-center rounded-lg hover:bg-primaryRed/90"
             >
               <h6 className="text-sm font-semibold text-white">Get started</h6>
