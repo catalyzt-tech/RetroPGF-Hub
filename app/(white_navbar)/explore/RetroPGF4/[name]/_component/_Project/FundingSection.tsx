@@ -39,22 +39,21 @@ export default function FundingSection({
   data: iRetroPGF4Project
   fundingRef: React.MutableRefObject<HTMLElement | null>
 }) {
-  // const grantsAndFundingArray = Object.entries(data.grantsAndFunding).flatMap(
-  //   ([type, items]) => {
-  //     return items.map((item) => ({
-  //       type,
-  //       ...item,
-  //     }))
-  //   }
-  // )
   return (
     <section
       id="Funding Sources"
       ref={fundingRef}
-      className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6"
+      className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border"
     >
       <h3 className="text-2xl font-semibold">Funding Sources</h3>
       <hr className="border-t-gray-100" />
+      {data.grantsAndFunding.ventureFunding.length == 0 &&
+        data.grantsAndFunding.grants.length == 0 &&
+        data.grantsAndFunding.revenue.length == 0 && (
+          <p className="text-base font-normal text-gray-600">
+            There is no funding sources or revenue information for this project.
+          </p>
+        )}
       {data.grantsAndFunding.ventureFunding.length != 0 &&
         data.grantsAndFunding.ventureFunding.map((item, i) => (
           <div className="flex flex-col gap-1" key={i}>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 // import { RetroRound3 } from '../../../RetroType4'
 import { iRetroPGF4Project } from '../../../RetroType4'
 import { ThumbsUp } from '@carbon/icons-react'
-import { convertImageClodinary } from '@/app/lib/utils'
+// import { convertImageClodinary } from '@/app/lib/utils'
 export default function ProjectDetailSection({
   data,
 }: {
@@ -12,7 +12,7 @@ export default function ProjectDetailSection({
 }) {
   return (
     <>
-      <div className="flex flex-col bg-white rounded-lg overflow-hidden">
+      <div className="flex flex-col bg-white rounded-lg overflow-hidden border">
         <div className="block relative w-full h-60 mb-16">
           <Image
             // convertImageClodinary(data.bannerPath, 947, 150)

@@ -18,9 +18,9 @@ export default function ContractSection({
   // )
   return (
     <section
-      id="Contract"
+      id="Contract Addresses"
       ref={contractRef}
-      className="flex flex-col gap-6 bg-white rounded-lg p-2 lg:p-6"
+      className="flex flex-col gap-6 bg-white rounded-lg p-2 lg:p-6 border"
     >
       <h3 className="text-2xl font-semibold">Contract Addresses</h3>
       <hr className="border-t-gray-100" />

@@ -14,10 +14,11 @@ import AppealSection from './_component/_Project/AppealSection'
 
 export default function Cpage({ data }: { data: iRetroPGF4Project }) {
   const overViewRef = useRef<HTMLElement | null>(null)
-  const contributionRef = useRef<HTMLElement | null>(null)
-  const impactRef = useRef<HTMLElement | null>(null)
+  // const contributionRef = useRef<HTMLElement | null>(null)
+  // const impactRef = useRef<HTMLElement | null>(null)
   const fundingRef = useRef<HTMLElement | null>(null)
-
+  const githubRef = useRef<HTMLElement | null>(null)
+  const contractRef = useRef<HTMLElement | null>(null)
   return (
     <div className="flex mt-8 gap-10">
       {/* Scroll Spy */}
@@ -33,19 +34,21 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
 
           <OverviewSection data={data} />
         </section>
-        <ContributionSection data={data} contributionRef={contributionRef} />
+        {/* <ContributionSection data={data} contributionRef={contributionRef} /> */}
         {/* <ImpactSection data={data} impactRef={impactRef} /> */}
         <FundingSection data={data} fundingRef={fundingRef} />
-        <GithubSection data={data} githubRef={fundingRef} />
-        <ContractSection data={data} contractRef={fundingRef} />
+        <GithubSection data={data} githubRef={githubRef} />
+        <ContractSection data={data} contractRef={contractRef} />
       </div>
 
       <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">
         <ScrollSpy
-          contributionRef={contributionRef}
+          // contributionRef={contributionRef}
           fundingRef={fundingRef}
           // impactRef={impactRef}
           overViewRef={overViewRef}
+          githubRef={githubRef}
+          contractRef={contractRef}
         />
       </div>
     </div>

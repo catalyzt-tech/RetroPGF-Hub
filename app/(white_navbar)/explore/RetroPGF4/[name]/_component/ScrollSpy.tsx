@@ -1,22 +1,29 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-export default function ScrollSpy({
-  overViewRef,
-  contributionRef,
-  // impactRef,
-  fundingRef,
-}: {
+interface ScrollSpyProps {
   overViewRef: React.MutableRefObject<HTMLElement | null>
-  contributionRef: React.MutableRefObject<HTMLElement | null>
+  // contributionRef: React.MutableRefObject<HTMLElement | null>
   // impactRef: React.MutableRefObject<HTMLElement | null>
   fundingRef: React.MutableRefObject<HTMLElement | null>
-}) {
+  githubRef: React.MutableRefObject<HTMLElement | null>
+  contractRef: React.MutableRefObject<HTMLElement | null>
+}
+export default function ScrollSpy({
+  overViewRef,
+  // contributionRef,
+  // impactRef,
+  fundingRef,
+  githubRef,
+  contractRef,
+}: ScrollSpyProps) {
   const [currentContent, setCurrentContent] = useState<string>('Overview')
   const [sections, setSections] = useState({
     Overview: false,
-    Contribution: false,
-    Impact: false,
+    // Contribution: false,
+    // Impact: false,
     Funding: false,
+    Github: false,
+    Contract: false,
   })
 
   const observerOptions = {
@@ -45,12 +52,14 @@ export default function ScrollSpy({
     }
 
     observeSection(overViewRef)
-    observeSection(contributionRef)
+    // observeSection(contributionRef)
     // observeSection(impactRef)
     observeSection(fundingRef)
+    observeSection(githubRef)
+    observeSection(contractRef)
 
     return () => observer.disconnect()
-  }, [overViewRef, contributionRef, fundingRef])
+  }, [overViewRef, fundingRef, githubRef, contractRef])
 
   useEffect(() => {
     const visibleSections = Object.entries(sections)
@@ -66,15 +75,17 @@ export default function ScrollSpy({
   }, [sections])
 
   return (
-    <div className="hidden lg:block bg-white h-fit p-4 rounded-md shadow-md w-full sticky top-24">
+    <div className="hidden lg:block bg-white h-fit p-4 rounded-lg w-full sticky top-24">
       <div className="mx-4 my-4 font-medium text-gray-500 flex flex-col items-start gap-4">
-        <div className="text-base text-gray-900 font-bold">ON THIS PAGE</div>
+        <div className="text-base text-gray-900 font-bold">On This Page</div>
         <ul className="flex flex-col items-start gap-4">
           {[
             { content: 'Overview', ref: overViewRef },
-            { content: 'Contribution', ref: contributionRef },
+            // { content: 'Contribution', ref: contributionRef },
             // { content: "Impact", ref: impactRef },
             { content: 'Funding Sources', ref: fundingRef },
+            { content: 'Github', ref: githubRef },
+            { content: 'Contract Addresses', ref: contractRef },
           ].map(({ content, ref }) => (
             <li key={content} className="list-none">
               <a

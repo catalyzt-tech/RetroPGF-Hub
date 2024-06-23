@@ -40,7 +40,7 @@ export default function AppealSection({ data }: { data: iRetroPGF4Project }) {
           <div className="mb-1 text-base">
             <div className="font-semibold text-gray-600">Project Has:</div>
             <div className="font-normal text-gray-500">
-              {data.appealed === 'Yes'
+              {data.eligibilityRules
                 ? data.eigibilityRejectReason
                 : 'This application not appealed'}
             </div>
