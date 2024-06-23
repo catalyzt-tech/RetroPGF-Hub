@@ -20,6 +20,7 @@ export default function ScrollSpy({
     threshold: 0.1,
   }
  }: ScrollSpyProps) {
+  
   const [currentContent, setCurrentContent] = useState<string>(sections[0]?.name || "");
   const [visibleSections, setVisibleSections] = useState<Record<string, boolean>>(
     sections.reduce((acc, section) => {

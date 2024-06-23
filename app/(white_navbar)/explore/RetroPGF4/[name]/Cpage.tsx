@@ -6,19 +6,27 @@ import ImpactSection from './_component/_Project/ImpactSection'
 import FundingSection from './_component/_Project/FundingSection'
 import ContributionSection from './_component/_Project/ContributionSection'
 // import { iRetroPGF4Project } from '../RetroType4'
-import ScrollSpy from './_component/ScrollSpy'
+// import ScrollSpy from './_component/ScrollSpy'
 import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import GithubSection from './_component/_Project/GithubSection'
 import ContractSection from './_component/_Project/ContractSection'
 import AppealSection from './_component/_Project/AppealSection'
+import ScrollSpy from '@/app/component/ScrollSpy'
 
 export default function Cpage({ data }: { data: iRetroPGF4Project }) {
+
   const overViewRef = useRef<HTMLElement | null>(null)
-  // const contributionRef = useRef<HTMLElement | null>(null)
-  // const impactRef = useRef<HTMLElement | null>(null)
-  const fundingRef = useRef<HTMLElement | null>(null)
+  const contributionRef = useRef<HTMLElement | null>(null)
   const githubRef = useRef<HTMLElement | null>(null)
   const contractRef = useRef<HTMLElement | null>(null)
+  const sections = [
+    { name: 'Overview', ref: overViewRef },
+    { name: 'Funding Sources', ref: contributionRef },
+    { name: 'Github', ref: githubRef },
+    { name: 'Contract Addresses', ref: contractRef },
+  ]
+
+
   return (
     <div className="flex mt-8 gap-10">
       {/* Scroll Spy */}
@@ -36,19 +44,14 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
         </section>
         {/* <ContributionSection data={data} contributionRef={contributionRef} /> */}
         {/* <ImpactSection data={data} impactRef={impactRef} /> */}
-        <FundingSection data={data} fundingRef={fundingRef} />
+        <FundingSection data={data} fundingRef={contributionRef} />
         <GithubSection data={data} githubRef={githubRef} />
         <ContractSection data={data} contractRef={contractRef} />
       </div>
 
       <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">
         <ScrollSpy
-          // contributionRef={contributionRef}
-          fundingRef={fundingRef}
-          // impactRef={impactRef}
-          overViewRef={overViewRef}
-          githubRef={githubRef}
-          contractRef={contractRef}
+        sections={sections}
         />
       </div>
     </div>
