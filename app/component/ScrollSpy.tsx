@@ -83,14 +83,14 @@ export default function ScrollSpy({
                     const topOffset = ref.current.getBoundingClientRect().top + window.pageYOffset;
                     const navbarHeight = (4.5 * 16) + 10; 
                     const scrollToPosition = topOffset - navbarHeight;
-
+                    
                     window.scrollTo({
                       top: scrollToPosition,
                       behavior: "smooth"
                     });
 
                     setTimeout(() => {
-                      setCurrentContent(name);
+                      setCurrentContent(ref.current ? ref.current.id : name);
                     }, 500);
                   }
                 }}

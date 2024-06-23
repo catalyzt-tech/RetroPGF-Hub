@@ -26,7 +26,6 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
     { name: 'Contract Addresses', ref: contractRef },
   ]
 
-
   return (
     <div className="flex mt-8 gap-10">
       {/* Scroll Spy */}
@@ -51,8 +50,9 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
 
       <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">
         <ScrollSpy
-        sections={sections}
+          sections={sections}
         />
+
       </div>
     </div>
   )

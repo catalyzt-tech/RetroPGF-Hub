@@ -39,19 +39,19 @@ export default async function Page() {
 
             <div className="flex flex-wrap lg:flex-row flex-col items-center justify-center lg:gap-x-10 lg:gap-y-0 gap-y-6">
               <Link
-                href={'/community/ask-question'}
+                href="/community/submit-idea"
                 className=" bg-white hover:bg-gray-50 py-3 px-8 rounded-lg "
-              >
+                >
                 <h6 className="text-sm font-semibold text-gray-800 text-center self-center">
                   Submit Your Project Idea
                 </h6>
               </Link>
               <Link
-                href="/community/submit-idea"
+                href={'/explore'}
                 className=" bg-gray-800 hover:bg-gray-800/80 py-3 px-7 rounded-lg "
               >
                 <h6 className="text-sm font-semibold text-white text-center self-center">
-                  Explore Funded Projcets
+                  Explore Funded Projects
                 </h6>
               </Link>
             </div>
