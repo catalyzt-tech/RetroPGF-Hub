@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "https://retropgfhub.com/cover-community.png",
       }],
     },
-    twitter: { card: "summary_large_image", site: "https://retropgfhub.com", creator: "Catalyzt.tech", "images": "https://retropgfhub.com/cover-community.png" }
+    twitter: { card: "summary_large_image", site: "https://retropgfhub.com", creator: "Catalyzt.tech", images: ["https://retropgfhub.com/cover-community.png"] }
   }
 
 async function handleGetProjects(token:string) {

@@ -46,6 +46,8 @@ export const metadata: Metadata = {
     images: {
       url: 'https://retropgfhub.com/cover-landing.png',
       alt: 'RetroPGF Hub',
+      width: 1200,
+      height: 630
     },
   },
 }
