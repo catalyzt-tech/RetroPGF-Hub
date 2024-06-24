@@ -1,12 +1,5 @@
-import Cpage from "./Cpage";
+import Cpage from './Cpage'
 
-export default async function page(){
-    
-
-    return (
-        
-       <Cpage/>
-
-    )
-
+export default async function page() {
+  return <Cpage />
 }

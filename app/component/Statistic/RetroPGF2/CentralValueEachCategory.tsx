@@ -44,17 +44,18 @@ const CentralValueEachCategory: FC = () => {
     },
     tooltip: {
       //   valueSuffix: ' Ballots'
-      formatter: function () {
+      formatter: function (this: Highcharts.TooltipFormatterContextObject) {
         return (
           '<b>' +
           this.series.name +
           '</b><br/><br/>' +
-          this.x +
+          this.key +
           ': <b>' +
-          this.y.toFixed(2) +
+          // NOTE: can be underfined here not sure is the y will always have value
+          this.y!.toFixed(2) +
           ' OP' +
           '</b><br/>'
-        )
+        );
       },
     },
     plotOptions: {

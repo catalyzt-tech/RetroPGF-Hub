@@ -36,10 +36,10 @@ const AllocationDistribution: FC = () => {
         style: {
           fontSize: '8px',
         },
-        formatter: function () {
-          return this.value.length > 10
-            ? this.value.substring(0, 10) + '...'
-            : this.value
+        formatter: function (this: Highcharts.AxisLabelsFormatterContextObject) {
+          return this.value.toString().length  > 10
+            ? this.value.toString().substring(0, 10) + '...'
+            : this.value.toString();
         },
       },
       max: allocationDataset.length, // Add this line

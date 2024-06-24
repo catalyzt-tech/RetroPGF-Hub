@@ -38,7 +38,7 @@ function ReturnLinkLogo() {
   return (
     <div className="flex gap-2">
       <a
-        href="/"
+        href="https://catalyzt.tech/"
         className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
         target="_blank"
         rel="noopener noreferrer"
@@ -47,7 +47,7 @@ function ReturnLinkLogo() {
       </a>
 
       <a
-        href="/"
+        href="https://twitter.com/catalyzt_tech"
         className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
         target="_blank"
         rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export default function Footer({}: {}) {
           </h6>
           <div className="flex gap-0.5 flex-wrap text-sm text-gray-600">
             <span>This open-source project built by</span>
-            <span className="font-semibold">@Catalyzt</span>.
+            <Link href="https://catalyzt.tech/" className="font-semibold">@Catalyzt</Link>.
           </div>
         </div>
       </div>
@@ -111,9 +111,9 @@ export default function Footer({}: {}) {
           <div className="">
             <h6 className="flex gap-1 text-base font-normal text-gray-600">
               This open-source project built by
-              <p className="text-base font-semibold text-gray-600">
+              <Link href="https://catalyzt.tech/" className="text-base font-semibold text-gray-600">
                 @Catalyzt.
-              </p>
+              </Link>
             </h6>
           </div>
         </div>

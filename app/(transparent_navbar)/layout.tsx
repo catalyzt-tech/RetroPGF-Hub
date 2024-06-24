@@ -1,17 +1,14 @@
-import Navbar from "../component/Navbar";
+import Navbar from '../component/Navbar'
 
 export default function Layout({
-    children,
-  }: Readonly<{
-    children: React.ReactNode;
-  }>) {
-    return (
-      <div className="font-inter">
-          <Navbar
-          shadow={false}
-          />
-          {children}
-      </div>
-    );
-  }
-  
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <div className="font-inter">
+      <Navbar shadow={false} />
+      {children}
+    </div>
+  )
+}

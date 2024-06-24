@@ -3,6 +3,8 @@ const nextConfig = {
   trailingSlash: true,
   reactStrictMode: false,
   images: {
+    // optimizeImages: true,
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,6 +13,10 @@ const nextConfig = {
       {
         protocol: 'http',
         hostname: 'res.cloudinary.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
       },
     ],
     // domains: ['res.cloudinary.com'],

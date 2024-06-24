@@ -25,10 +25,13 @@ const AllocationDistributionEducation = () => {
       headerFormat: '',
       pointFormat:
         '{point.name}: <b>{point.y}</b> ({Number(point.percentage).toFixed(2)} %)',
-      formatter: function () {
-        return `${this.point.name}: <b>${this.y}  OP</b> (${Number(
-          this.percentage
-        ).toFixed(2)}%)`
+      // formatter: function () {
+      //   return `${this.point.name}: <b>${this.y}  OP</b> (${Number(
+      //     this.percentage
+      //   ).toFixed(2)}%)`
+      // },
+      formatter: function (this: Highcharts.TooltipFormatterContextObject) {
+        return `${this.point.name}: <b>${this.y} OP</b> (${this.percentage.toFixed(2)}%)`;
       },
     },
     plotOptions: {
@@ -39,10 +42,15 @@ const AllocationDistributionEducation = () => {
           {
             enabled: true,
             distance: 20,
-            formatter: function () {
-              return this.point.name.length > 10
-                ? this.point.name.substring(0, 10) + '...'
-                : this.point.name
+            // formatter: function (this: Highcharts.AxisLabelsFormatterContextObject) {
+            //   console.log(this.value)
+            //   return this.value.toString().length  > 10
+            //     ? this.value.toString().substring(0, 10) + '...'
+            //     : this.value.toString();
+            // },
+            formatter: function (this:any) {
+              const name = this.point.name;
+              return name.length > 10 ? name.substring(0, 10) + '...' : name;
             },
           },
           //   {
@@ -78,13 +86,15 @@ const AllocationDistributionEducation = () => {
         // ],
         data: allocationDataset.Educaiton.map((item) => {
           return {
-            name: item['projectName'],
-            y: item['amount'],
+            name: item.projectName,
+            y: item.amount,
           }
         }),
       },
     ],
   }
+
+
   return (
     <div className="w-[40em]">
       <HighchartsReact highcharts={Highchart} options={option} />

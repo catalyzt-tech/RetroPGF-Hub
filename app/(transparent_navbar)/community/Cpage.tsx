@@ -106,7 +106,7 @@ export default function Cpage({
         if(!isMount){
             getData()
         }
-    }, [state.currentPage, state.filter, state.sort, state.selectedIndex, isMount])
+    }, [state.currentPage, state.filter, state.sort, state.selectedIndex])
     
 
     async function handleFilterProject(type:string): Promise<FullProjectResNoComment[] | undefined> {

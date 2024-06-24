@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './Section';
+import Error from '@/app/component/Error';
 
 const page = () => {
   const sections = [
@@ -35,8 +36,9 @@ const page = () => {
   const sectionLength = sections.length;
   return (
     <>
+      <Error titleError='This page is' subTitle='Coming Soon' desc='RetroPGFHub is still under development, We will try our best to deliver this page to you soon!'/>
 
-      <div className="relative max-h-[19rem] min-h-[19rem] ">
+      {/* <div className="relative max-h-[19rem] min-h-[19rem] ">
         <div className="bg-gradient-to-br from-[#FFFEEA] to-100% via-[#FFDAAF] to-[#FFAB9F] w-full absolute -top-[4.5rem] left-0 h-[28rem] min-[300px]:h-[25rem] sm:h-[18rem] lg:h-[23.5rem]">
           <div className="mt-[4.5rem] lg:mt-24" />
           <div className=" py-4 md:py-8 px-4 lg:px-16 xl:px-64 flex flex-col justify-start  font-rubik  h-[19rem] w-full">
@@ -61,7 +63,8 @@ const page = () => {
             </React.Fragment>
           ))}
         </div>
-      </div>
+      </div> */}
+      
     </>
   );
 };

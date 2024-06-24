@@ -1,5 +1,4 @@
 import Image from "next/image";
-import User from "@carbon/icons-react/lib/User";
 import { CommentType } from "@/app/hook/commentType";
 import { ConvertStringToTime } from "@/app/lib/utils";
 
@@ -36,10 +35,10 @@ return (
                             </h6>    
 
                         </div>    
-                        <div className="flex items-center justify-center w-fit  gap-1 px-2 py-1 bg-red-50 hover:bg-red-100/70 rounded-2xl">
+                        {/* <div className="flex items-center justify-center w-fit  gap-1 px-2 py-1 bg-red-50 hover:bg-red-100/70 rounded-2xl">
                             <User size={16} className="fill-red-700"/>
                             <h6 className="text-red-700 text-xs font-medium">RetroPGF3</h6>
-                        </div>
+                        </div> */}
                    </div>
 
                     <p className="text-base font-normal text-gray-800">

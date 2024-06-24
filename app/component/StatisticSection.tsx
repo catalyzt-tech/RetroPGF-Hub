@@ -117,7 +117,7 @@ const StatisticSection: FC<StatisticProps> = ({ data, round }) => {
           ))}
       </div>
       {round === 3 && (
-        <div className="flex  flex-wrap mt-8 gap-y-12 gap-x-6">
+        <div className="flex justify-center flex-wrap mt-8 gap-y-12 gap-x-6">
           <AllocationDistribution />
           <BallotEachCategory />
           <BallotDistributionChart />

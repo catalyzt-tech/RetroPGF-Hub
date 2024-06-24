@@ -2,7 +2,8 @@ import { makeRequest } from "./makeRequest";
 import { UserData } from "../provider/globalContext";
 import { FullProjectRes, FullProjectResNoComment, InsertProjectRes, RandomProject } from "./projectRequestType";
 
-export let projectBaseUrl = "http://localhost:5001"
+export let projectBaseUrl = process.env.NEXT_PUBLIC_PROJECT_BASE_URL as string
+// export let projectBaseUrl = "http://localhost:5001"
 
 export async function GetCurrentUser(){
     return await makeRequest<{ user: UserData; msg: string } | { msg: string } >(`/project_v1/current-user`, {

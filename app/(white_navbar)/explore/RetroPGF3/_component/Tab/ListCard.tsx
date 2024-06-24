@@ -72,11 +72,11 @@ export default function ListCard({
                   <td className="py-4 px-3 ">
                     <div className="flex flex-col flex-wrap gap-2 ">
                       {handleCategoryRound3(item["New Main-Category"])}
-                      <div className="inline-flex px-2 py-1 rounded-full bg-slate-50 hover:bg-slate-100/75 cursor-pointer w-fit">
+                      {/* <div className="inline-flex px-2 py-1 rounded-full bg-slate-50 hover:bg-slate-100/75 cursor-pointer w-fit">
                         <h6 className="text-xs font-normal text-gray-600 line-clamp-1 break-all">
                           {item['Sub-category']}
                         </h6>
-                      </div>
+                      </div> */}
                     </div>
                   </td>
                   <td className="py-4 px-3">

@@ -26,7 +26,7 @@ const RPGF2History: FC = () => {
   ];
   return (
     <>
-      <div className="col-span-5 flex flex-col gap-10">
+      <div className="col-span-7 lg:col-span-5 flex flex-col gap-10">
       <section className="" id="RetroPGF 2" ref={introRef}>
         <div className="font-semibold text-3xl text-gray-800">RetroPGF 2</div>
         <div className="text-gray-600 text-base font-normal mt-4">

@@ -25,10 +25,13 @@ const AllocationDistributionInfrastructure = () => {
       headerFormat: '',
       pointFormat:
         '{point.name}: <b>{point.y}</b> ({Number(point.percentage).toFixed(2)} %)',
-      formatter: function () {
-        return `${this.point.name}: <b>${this.y}  OP</b> (${Number(
-          this.percentage
-        ).toFixed(2)}%)`
+      // formatter: function () {
+      //   return `${this.point.name}: <b>${this.y}  OP</b> (${Number(
+      //     this.percentage
+      //   ).toFixed(2)}%)`
+      // },
+      formatter: function (this: Highcharts.TooltipFormatterContextObject) {
+        return `${this.point.name}: <b>${this.y} OP</b> (${this.percentage.toFixed(2)}%)`;
       },
     },
     plotOptions: {
@@ -39,10 +42,9 @@ const AllocationDistributionInfrastructure = () => {
           {
             enabled: true,
             distance: 20,
-            formatter: function () {
-              return this.point.name.length > 10
-                ? this.point.name.substring(0, 10) + '...'
-                : this.point.name
+            formatter: function (this:any) {
+              const name = this.point.name;
+              return name.length > 10 ? name.substring(0, 10) + '...' : name;
             },
           },
           //   {

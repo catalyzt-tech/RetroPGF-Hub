@@ -1,7 +1,8 @@
 import { makeRequest } from "./makeRequest";
 import { UserData } from "../provider/globalContext";
 
-let userBaseUrl = "http://localhost:5000"
+let userBaseUrl = process.env.NEXT_PUBLIC_USER_BASE_URL as string
+// let userBaseUrl = "http://localhost:5000"
 
 
 export async function GetCurrentUser(){
