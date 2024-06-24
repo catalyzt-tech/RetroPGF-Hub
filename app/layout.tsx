@@ -44,12 +44,7 @@ export const metadata: Metadata = {
     creator: 'Catalyzt.tech',
 
     // images: ['https://retropgfhub.com/cover-landing.png'],
-    images: {
-      url: 'https://retropgfhub.com/cover-landing.png',
-      alt: 'RetroPGF Hub',
-      width: 1200,
-      height: 630,
-    },
+    images: ['https://retropgfhub.com/cover-landing.png'],
   },
 }
 
