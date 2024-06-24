@@ -7,12 +7,21 @@ import React from "react";
 
 
 export default function QuestionPage() {
-  const questions = [1, 2, 3, 4, 5];
+  const questions = [
+    {
+      question: "Can we receive funding through RetroPGF Hub?",
+      answer: "No, RetroPGF Hub is a platform for project creators to submit their project ideas and get feedback. RetroPGF Hub does not provide funding to projects. However, if you are looking for funding, you can submit your project idea to RetroPGF (by Optimism) and if your project is selected, you will receive funding.",
+    },
+    {
+      question: "Is Retro PGF Hub built by Optimism?",
+      answer: "No, RetroPGF Hub is not built by Optimism. RetroPGF Hub is a community-driven platform.",
+    }
+  ];
   return (
     <>
       <div className="lg:w-auto w-full lg:mt-[3rem] mt-8">
         <hr className="flex border-t lg:border-gray-200 border-gray-100"></hr>
-        {questions.map((i) => (
+        {questions.map((item, i) => (
           <React.Fragment key={i}>
             <div
               className="flex flex-col py-5 lg:w-[48rem] items-center"
@@ -21,7 +30,7 @@ export default function QuestionPage() {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="w-full flex lg:w-[48rem] justify-between items-center font-inter text-base font-semibold text-left text-gray-800">
-                      Question text goes here
+                      {item.question}
                       <ChevronDown size={24}
                         className={`${
                           open ? "rotate-180" : ""
@@ -38,7 +47,7 @@ export default function QuestionPage() {
                       leaveTo="transform scale-95 opacity-0"
                     >
                       <Disclosure.Panel>
-                        Question here
+                        {item.answer}
                       </Disclosure.Panel>
                     </Transition>
                   </>
