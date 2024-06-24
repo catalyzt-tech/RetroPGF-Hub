@@ -13,7 +13,7 @@ interface ScrollSpyProps {
 
 export default function ScrollSpy({
   sections,
-  defaultClass = 'hidden lg:block bg-white h-fit p-4 rounded-md shadow-md w-full sticky top-24',
+  defaultClass = 'hidden lg:block bg-white h-fit p-4 rounded-lg border w-full sticky top-24',
   observerOptions = {
     root: null,
     rootMargin: '-30px',
@@ -71,7 +71,7 @@ export default function ScrollSpy({
   return (
     <div className={defaultClass}>
       <div className="mx-4 my-4 font-medium text-gray-500 flex flex-col items-start gap-4 font-inter">
-        <div className="text-base text-gray-800 font-bold">ON THIS PAGE</div>
+        <div className="text-base text-gray-800 font-bold">On This Page</div>
         <ul className="flex flex-col items-start gap-4">
           {sections.map(({ name, ref }) => (
             <li key={name} className="list-none">
