@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       url: "https://retropgfhub.com/cover-landing.png",
     }],
   },
-  twitter: { card: "summary_large_image", site: "https://retropgfhub.com", creator: "Catalyzt.tech", "images": "https://retropgfhub.com/cover-landing.png" }
+  twitter: { card: "summary_large_image", site: "https://retropgfhub.com", creator: "Catalyzt.tech", images: ["https://retropgfhub.com/cover-landing.png"] }
 }
 
 export default function RootLayout({
