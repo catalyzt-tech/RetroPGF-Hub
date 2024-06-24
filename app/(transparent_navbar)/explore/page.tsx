@@ -12,18 +12,27 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Explore | RetroPGF Hub',
-  description: 'Community-driven platform for project creators to submit their project ideas and get feedback.',
+  description:
+    'Community-driven platform for project creators to submit their project ideas and get feedback.',
   openGraph: {
-    type: "website",
-    url: "https://retropgfhub.com",
-    title: "Explore | RetroPGF Hub",
-    description: "Community-driven platform for project creators to submit their project ideas and get feedback.",
-    siteName: "retropgfhub.com",
-    images: [{
-      url: "https://retropgfhub.com/cover-explore.png",
-    }],
+    type: 'website',
+    url: 'https://retropgfhub.com',
+    title: 'Explore | RetroPGF Hub',
+    description:
+      'Community-driven platform for project creators to submit their project ideas and get feedback.',
+    siteName: 'retropgfhub.com',
+    images: [
+      {
+        url: 'https://retropgfhub.com/cover-explore.png',
+      },
+    ],
   },
-  twitter: { card: "summary_large_image", site: "https://retropgfhub.com", creator: "Catalyzt.tech", images: ["https://retropgfhub.com/cover-explore.png"] }
+  twitter: {
+    card: 'summary_large_image',
+    site: 'https://retropgfhub.com',
+    creator: 'Catalyzt.tech',
+    images: ['https://retropgfhub.com/cover-community.png'],
+  },
 }
 
 export async function getAllRound(limit: number): Promise<{
