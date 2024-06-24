@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: 'https://retropgfhub.com',
     creator: 'Catalyzt.tech',
-    images: ['https://retropgfhub.com/cover-community.png'],
+    images: ['https://retropgfhub.com/cover-explore.png'],
   },
 }
 
