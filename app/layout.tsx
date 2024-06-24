@@ -22,7 +22,18 @@ const rubikFont = Rubik({
 
 export const metadata: Metadata = {
   title: 'RetroPGF Hub',
-  description: '| All things RetroPGF',
+  description: 'Community-driven platform for project creators to submit their project ideas and get feedback.',
+  openGraph: {
+    type: "website",
+    url: "https://retropgfhub.com",
+    title: "RetroPGF Hub",
+    description: "Community-driven platform for project creators to submit their project ideas and get feedback.",
+    siteName: "retropgfhub.com",
+    images: [{
+      url: "https://retropgfhub.com/cover-landing.png",
+    }],
+  },
+  twitter: { card: "summary_large_image", site: "https://retropgfhub.com", creator: "Catalyzt.tech", "images": "https://retropgfhub.com/cover-landing.png" }
 }
 
 export default function RootLayout({

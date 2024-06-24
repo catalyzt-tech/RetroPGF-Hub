@@ -7,7 +7,24 @@ import { getJsonRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/page'
 import { getJsonRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/page'
 import { getJsonRound4 } from '@/app/(white_navbar)/explore/RetroPGF4/page'
 import Cpage from './Cpage'
+import { Metadata } from 'next'
 // import { category } from '../../(white_navbar)/explore/RetroPGF3/_component/Text'
+
+export const metadata: Metadata = {
+  title: 'Explore | RetroPGF Hub',
+  description: 'Community-driven platform for project creators to submit their project ideas and get feedback.',
+  openGraph: {
+    type: "website",
+    url: "https://retropgfhub.com",
+    title: "Explore | RetroPGF Hub",
+    description: "Community-driven platform for project creators to submit their project ideas and get feedback.",
+    siteName: "retropgfhub.com",
+    images: [{
+      url: "https://retropgfhub.com/cover-explore.png",
+    }],
+  },
+  twitter: { card: "summary_large_image", site: "https://retropgfhub.com", creator: "Catalyzt.tech", "images": "https://retropgfhub.com/cover-explore.png" }
+}
 
 export async function getAllRound(limit: number): Promise<{
   round1: RetroRound1[]

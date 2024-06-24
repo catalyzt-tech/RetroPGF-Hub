@@ -3,8 +3,25 @@ import Cpage from "./Cpage";
 import { GetProjectsWithSearch } from "@/app/hook/projectRequest";
 import Error from "@/app/(white_navbar)/community/[type]/[id]/_component/Error";
 import { cookies } from "next/headers";
+import { Metadata } from "next";
 
 const itemsPerpage = 10;
+
+export const metadata: Metadata = {
+    title: 'Community | RetroPGF Hub',
+    description: 'Community-driven platform for project creators to submit their project ideas and get feedback.',
+    openGraph: {
+      type: "website",
+      url: "https://retropgfhub.com",
+      title: "Community | RetroPGF Hub",
+      description: "Community-driven platform for project creators to submit their project ideas and get feedback.",
+      siteName: "retropgfhub.com",
+      images: [{
+        url: "https://retropgfhub.com/cover-community.png",
+      }],
+    },
+    twitter: { card: "summary_large_image", site: "https://retropgfhub.com", creator: "Catalyzt.tech", "images": "https://retropgfhub.com/cover-community.png" }
+  }
 
 async function handleGetProjects(token:string) {
     const res = await GetProjectsWithSearch(itemsPerpage, 0*itemsPerpage, "newest", "all", "", "", token)
