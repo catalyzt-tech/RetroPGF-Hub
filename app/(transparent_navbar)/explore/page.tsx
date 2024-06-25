@@ -8,7 +8,6 @@ import { getJsonRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/page'
 import { getJsonRound4 } from '@/app/(white_navbar)/explore/RetroPGF4/page'
 import Cpage from './Cpage'
 import { Metadata } from 'next'
-// import { category } from '../../(white_navbar)/explore/RetroPGF3/_component/Text'
 
 export const metadata: Metadata = {
   title: 'Explore | RetroPGF Hub',
