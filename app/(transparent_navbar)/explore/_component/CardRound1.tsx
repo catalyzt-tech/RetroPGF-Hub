@@ -32,10 +32,17 @@ export default function CardRound1({
           }}
           className=" flex gap-2"
         >
-          <p className="text-sm font-semibold text-gray-600 hover:underline ">
-            See all{' '}
-          </p>
-          <ChevronRight size={20} className="fill-gray-600" />
+          <Link
+            href={{
+              pathname: `/explore/RetroPGF2`,
+            }}
+            className=" lg:block h-8
+                hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
+                rounded-full px-3 py-1.5 cursor-pointer transition-colors self-center shrink-0 text-slate-900 border
+                "
+          >
+            <p className=" text-sm font-normal ">See all</p>
+          </Link>
         </Link>
       </div>
 

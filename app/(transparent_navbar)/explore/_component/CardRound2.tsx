@@ -47,7 +47,7 @@ export default function CardRound2({
         <div className="flex flex-wrap gap-3">
           {Array.from(cateRound2).map(([category, count]) => (
             <Link
-              href={`/explore/${title}?category=${category}`}
+              href={`/explore/RetroPGF2?category=${category}`}
               key={category}
               className={` lg:block h-8
                      hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
