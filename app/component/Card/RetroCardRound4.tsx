@@ -32,7 +32,7 @@ export default function RetroCard4({
   //   vote,
   banner,
   appealed,
-  appealDecision
+  appealDecision,
 }: {
   marginX?: string
   round?: string
@@ -66,11 +66,19 @@ export default function RetroCard4({
 
       {/* Eligibility Status */}
       <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem]">
-      {(appealed === null && appealDecision === null) || (appealed === "Yes" && appealDecision === "Approved") ? (
-          <div className='flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-green-500 mr-1'></div>Eligible</div>
+        {(appealed === null && appealDecision === null) ||
+        (appealed === 'Yes' && appealDecision === 'Approved') ? (
+          <div className="flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg">
+            {' '}
+            <div className="w-2 h-2 rounded-full bg-green-500 mr-1"></div>
+            Eligible
+          </div>
         ) : (
-          <div className='flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg'> <div className='w-2 h-2 rounded-full bg-red-500 mr-1'></div>Rejected</div>
-        ) }    
+          <div className="flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg">
+            {' '}
+            <div className="w-2 h-2 rounded-full bg-red-500 mr-1"></div>Rejected
+          </div>
+        )}
       </div>
 
       {/* Avatar */}
@@ -102,7 +110,7 @@ export default function RetroCard4({
             {handleCategoryRound4(category!)}
           </div>
           <div className="flex flex-grow"></div>
-          <div className='flex justify-between items-center w-full'>
+          <div className="flex justify-between items-center w-full">
             <div className="flex gap-1">
               <Events size={20} />
               <p className="text-sm font-semibold text-gray-800">

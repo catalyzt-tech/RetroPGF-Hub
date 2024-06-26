@@ -55,7 +55,7 @@ export async function getAllRound(limit: number): Promise<{
   const cateRound3Counter = new Map<string, number>()
   const cateRound4Counter = new Map<string, number>()
 
-  round2.forEach((project) => {
+  round2.forEach((project: RetroRound2) => {
     const cateRound2 = project.Category
     if (cateRound2) {
       if (cateRound2Counter.has(cateRound2)) {
@@ -69,7 +69,7 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
-  round3.forEach((project) => {
+  round3.forEach((project: RetroRound3) => {
     const cateRound3 = project['New Main-Category']
     if (cateRound3) {
       if (cateRound3Counter.has(cateRound3)) {
@@ -83,8 +83,7 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
-  round4.forEach((project) => {
-    console.log(project.category)
+  round4.forEach((project: iRetroPGF4Project) => {
     const cateRound4 = project.category
     if (cateRound4) {
       if (cateRound4Counter.has(cateRound4)) {
