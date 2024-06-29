@@ -44,7 +44,7 @@ export interface iRetroPGF4Project {
     isEligibilityResultStatus: boolean
     eligibilityRules: null | any // Specify the type if eligibilityRules have a defined structure
     eligibilityRejectReason: null | string
-    appealed: null | boolean
+    appealed: null | string
     appealDecision: null | string
     reason: null | string
     links: null | any // Specify the type if links have a defined structure

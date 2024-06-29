@@ -36,7 +36,7 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
           ref={overViewRef}
         >
           <ProjectDetailSection data={data} />
-          {/* {data.appealed && <AppealSection data={data} />} */}
+          {data.eligibilityReview?.appealed && <AppealSection data={data} />}
 
           <OverviewSection data={data} />
         </section>

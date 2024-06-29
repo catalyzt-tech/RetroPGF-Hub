@@ -5,7 +5,7 @@ export default function AppealSection({ data }: { data: iRetroPGF4Project }) {
     <>
       <div
         className={`flex flex-col ${
-          data.appealDecision === 'Approved'
+          data.eligibilityReview.appealDecision === 'Approved'
             ? 'bg-green-50 border border-green-500'
             : 'bg-red-50 border border-red-500'
         } rounded-lg p-4 lg:p-6`}
@@ -29,27 +29,29 @@ export default function AppealSection({ data }: { data: iRetroPGF4Project }) {
             Project Status:
             <div
               className={`ml-2 ${
-                data.appealDecision == 'Approved'
+                data.eligibilityReview.appealDecision == 'Approved'
                   ? 'text-green-700'
                   : 'text-red-700'
               } `}
             >
-              {data.appealDecision == 'Approved' ? 'Eligible' : 'Ineligible'}
+              {data.eligibilityReview.appealDecision == 'Approved'
+                ? 'Eligible'
+                : 'Ineligible'}
             </div>
           </h3>
           <div className="mb-1 text-base">
             <div className="font-semibold text-gray-600">Project Has:</div>
             <div className="font-normal text-gray-500">
-              {data.eligibilityRules
-                ? data.eigibilityRejectReason
+              {data.eligibilityReview.eligibilityRules
+                ? data.eligibilityReview.eligibilityRejectReason
                 : 'This application not appealed'}
             </div>
           </div>
           <div className="mb-1 text-base">
             <div className="font-semibold text-gray-600">Eligiblity Rule: </div>
             <div className="font-normal text-gray-500">
-              {data.appealed
-                ? data.eligibilityRules
+              {data.eligibilityReview.appealed
+                ? data.eligibilityReview.eligibilityRules
                 : 'This application not appealed'}
             </div>
           </div>
@@ -73,15 +75,15 @@ export default function AppealSection({ data }: { data: iRetroPGF4Project }) {
                 Appeal Statement:{' '}
               </div>
               <div className="font-normal text-gray-500">
-                {data.appealed === 'Yes'
-                  ? data.reason
+                {data.eligibilityReview?.appealed === 'Yes'
+                  ? data.eligibilityReview.reason
                   : 'This application not appealed'}
-                <Link
+                {/* <Link
                   className="ml-2 underline text-primaryRed"
                   href="https://docs.google.com/spreadsheets/d/1H_gJJlOujJMZjDpagaGkrQQ7nlOln3Am5PxfjId0rtE/edit#gid=0"
                 >
                   Learn More
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
