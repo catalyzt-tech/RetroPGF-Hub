@@ -14,7 +14,6 @@ import AppealSection from './_component/_Project/AppealSection'
 import ScrollSpy from '@/app/component/ScrollSpy'
 
 export default function Cpage({ data }: { data: iRetroPGF4Project }) {
-
   const overViewRef = useRef<HTMLElement | null>(null)
   const contributionRef = useRef<HTMLElement | null>(null)
   const githubRef = useRef<HTMLElement | null>(null)
@@ -37,7 +36,7 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
           ref={overViewRef}
         >
           <ProjectDetailSection data={data} />
-          {data.appealed && <AppealSection data={data} />}
+          {/* {data.appealed && <AppealSection data={data} />} */}
 
           <OverviewSection data={data} />
         </section>
@@ -49,10 +48,7 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
       </div>
 
       <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">
-        <ScrollSpy
-          sections={sections}
-        />
-
+        <ScrollSpy sections={sections} />
       </div>
     </div>
   )
