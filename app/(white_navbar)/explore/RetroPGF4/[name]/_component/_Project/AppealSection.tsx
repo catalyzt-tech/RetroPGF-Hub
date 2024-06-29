@@ -61,12 +61,12 @@ export default function AppealSection({ data }: { data: iRetroPGF4Project }) {
             Appeal Decision:
             <div
               className={`ml-2 ${
-                data.appealDecision == 'Approved'
+                data.eligibilityReview.appealDecision == 'Approved'
                   ? 'text-green-700'
                   : 'text-red-700'
               } `}
             >
-              {data.appealDecision ?? 'No Appeal'}
+              {data.eligibilityReview.appealDecision ?? 'No Appeal'}
             </div>
           </h3>
           <div>
