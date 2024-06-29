@@ -1,15 +1,3 @@
-export type ImpactCategory =
-  | 'Developer Ecosystem'
-  | 'End User Experience And Adoption'
-  | 'Op Stack'
-  | 'Collective Governance'
-
-export type NewCategory =
-  | 'OP Stack'
-  | 'Collective Governance'
-  | 'Developer Ecosystem'
-  | 'End User Experience Adoption'
-
 export interface ContributionLink {
   type: string
   url: string
@@ -35,6 +23,8 @@ export interface Github {
   watch: number | null
   fork: number | null
   isFork: string
+  openSourceResult: string
+  openSourceRejectComment: string
 }
 
 export interface iRetroPGF4Project {
@@ -50,10 +40,21 @@ export interface iRetroPGF4Project {
   packages: any[]
   contracts: any[]
   grantsAndFunding: GrantsAndFunding
-  eligibilityRules: string | null
-  eigibilityRejectReason: string | null
-  appealed: string | null
-  appealDecision: string | null
-  reason: null
-  links: null
+  eligibilityReview: {
+    isEligibilityResultStatus: boolean
+    eligibilityRules: null | any // Specify the type if eligibilityRules have a defined structure
+    eligibilityRejectReason: null | string
+    appealed: null | string
+    appealDecision: null | string
+    reason: null | string
+    links: null | any // Specify the type if links have a defined structure
+  }
+  applicationReview: {
+    isApplicationReviewApproved: boolean
+    applicationRejectReason: null | string
+    appealed: boolean
+    appealStatement: null | string
+    appealDecision: null | string
+  }
+  isEligibleFinal: boolean
 }

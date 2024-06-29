@@ -48,7 +48,7 @@ export default function CardRound3({
         <div className="flex flex-wrap gap-2">
           {Array.from(cateRound4).map(([category, count]) => (
             <Link
-              href={`/explore/${cleanParamsName(title)}?category=${category}`}
+              href={`/explore/RetroPGF4/?category=${category}`}
               key={category}
               className={` lg:block h-8
                      hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
@@ -111,8 +111,7 @@ export default function CardRound3({
                     // vote={0}
                     icon={item.projectAvatarUrl}
                     banner={item.proejctCoverImageUrl}
-                    appealDecision={item.appealDecision}
-                    appealed={item.appealed}
+                    isEligible={item.isEligibleFinal}
                   />
                 </SwiperSlide>
               ))}
