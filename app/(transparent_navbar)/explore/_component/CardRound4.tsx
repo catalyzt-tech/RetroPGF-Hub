@@ -111,8 +111,7 @@ export default function CardRound3({
                     // vote={0}
                     icon={item.projectAvatarUrl}
                     banner={item.proejctCoverImageUrl}
-                    appealDecision={item.appealDecision}
-                    appealed={item.appealed}
+                    isEligible={item.isEligibleFinal}
                   />
                 </SwiperSlide>
               ))}
