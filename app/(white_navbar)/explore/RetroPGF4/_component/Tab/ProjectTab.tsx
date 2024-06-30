@@ -161,35 +161,20 @@ export default function ProjectTab({ round4 }: ProjectTabProps) {
       } else {
         subCategoryCondition = true
       }
-      let eligibilityCondition: boolean
+      let eligibilityCondition: boolean = false
       if (checkBox.eligibility === 'All') {
         eligibilityCondition = true
       } else if (checkBox.eligibility === 'Eligible') {
         eligibilityCondition = item.isEligibleFinal
-      } else if (item.isEligibleFinal === undefined) {
-        eligibilityCondition = false
-      } else {
+      } else if (checkBox.eligibility === 'Rejected') {
         eligibilityCondition = !item.isEligibleFinal
       }
-
-      // let recieveOP: boolean = item.scaled >= minVal && item.scaled <= maxVal
-
-      // let ballotCondition: boolean = true
-      // if (checkBox.ballot === '> 17 vote') {
-      //   if (item.ballot > 17) {
-      //     ballotCondition = true
-      //   } else {
-      //     ballotCondition = false
-      //   }
-      // }
 
       return (
         searchCondition &&
         categoryCondition &&
         subCategoryCondition &&
         eligibilityCondition
-        // recieveOP &&
-        // ballotCondition
       )
     })
   }, [round4, search, checkBox])
