@@ -5,6 +5,7 @@ import MultiSliderDisclosure from './Filter/MultiSliderDisclosure'
 import InBallotDisclosure from './Filter/InBallotDisclosure'
 import { Disclosure, Transition } from '@headlessui/react'
 import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
+import EligibilityDisclosure from './Filter/EligibilityDisclosure'
 
 export default function CheckBoxFilter({
   checkBox,
@@ -16,6 +17,7 @@ export default function CheckBoxFilter({
   setMaxVal,
   handleChangeBallot,
   handleChangeSubCategory,
+  handleChangeEligibility,
 }: {
   checkBox: CheckBoxStateType
   handleChangeCategory: (value: string) => void
@@ -26,6 +28,7 @@ export default function CheckBoxFilter({
   setMinVal: React.Dispatch<React.SetStateAction<number>>
   setMaxVal: React.Dispatch<React.SetStateAction<number>>
   handleChangeSubCategory: (subCate: string) => void
+  handleChangeEligibility: (eligibility: string) => void
 }) {
   return (
     <>
@@ -41,32 +44,15 @@ export default function CheckBoxFilter({
         </div>
         <hr className="h-[0.0625rem] bg-gray-200" />
 
-        {/* Category Disclosure */}
         <CategoryDisclosure
           checkBox={checkBox}
           handleChangeCategory={handleChangeCategory}
           handleChangeSubCategory={handleChangeSubCategory}
         />
-        {/* End Category Disclosure */}
-
-        {/* Multi Slider Input */}
-        {/* <MultiSliderDisclosure
-          maxVal={maxVal}
-          minVal={minVal}
-          setMaxVal={setMaxVal}
-          setMinVal={setMinVal}
-        /> */}
-        {/* End Multi Slider Input */}
-
-        {/* In Ballot */}
-        {/* <InBallotDisclosure
+        <EligibilityDisclosure
           checkBox={checkBox}
-          handleChangeBallot={handleChangeBallot}
-          allProjectId="all-project"
-          secondProjectId="more-than-17"
-        /> */}
-
-        {/* End In Ballot */}
+          handleChangeEligibility={handleChangeEligibility}
+        />
       </div>
     </>
   )

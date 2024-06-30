@@ -13,13 +13,13 @@ import ListCard from './ListCard'
 import DialogFilter from './Filter/DialogFilter'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
-
-export default function ProjectTab({
-  round4,
-}: {
+import { Project } from '../../../../../hook/projectRequestType'
+import { isLetter } from '@/app/lib/utils'
+interface ProjectTabProps {
   round4: iRetroPGF4Project[]
-}) {
-  // console.log('ProjectTab', round4)
+}
+
+export default function ProjectTab({ round4 }: ProjectTabProps) {
   const searchParams = useSearchParams()
 
   const [search, setSearch] = useState('')
@@ -45,6 +45,7 @@ export default function ProjectTab({
     category: [],
     subCategory: [],
     receiveOP: [],
+    eligibility: 'All',
     ballot: 'All Project',
   })
 
@@ -55,6 +56,7 @@ export default function ProjectTab({
       // ballot can be two option
       // - > 17 vote
       // - All Project
+      eligibility: 'All',
       ballot: 'All Project',
       subCategory: [],
     })
@@ -87,6 +89,10 @@ export default function ProjectTab({
 
       return temp
     })
+  }
+
+  function handleChangeEligibility(text: string) {
+    setCheckBox((prev) => ({ ...prev, eligibility: text }))
   }
 
   function handleChangeSubCategory(subCate: string) {
@@ -131,7 +137,6 @@ export default function ProjectTab({
 
   const filterJson = useMemo(() => {
     setCurrentPage(0)
-    // console.log(round3.length)
     return round4.filter((item) => {
       const searchCondition =
         search !== ''
@@ -156,6 +161,16 @@ export default function ProjectTab({
       } else {
         subCategoryCondition = true
       }
+      let eligibilityCondition: boolean
+      if (checkBox.eligibility === 'All') {
+        eligibilityCondition = true
+      } else if (checkBox.eligibility === 'Eligible') {
+        eligibilityCondition = item.isEligibleFinal
+      } else if (item.isEligibleFinal === undefined) {
+        eligibilityCondition = false
+      } else {
+        eligibilityCondition = !item.isEligibleFinal
+      }
 
       // let recieveOP: boolean = item.scaled >= minVal && item.scaled <= maxVal
 
@@ -169,7 +184,10 @@ export default function ProjectTab({
       // }
 
       return (
-        searchCondition && categoryCondition && subCategoryCondition
+        searchCondition &&
+        categoryCondition &&
+        subCategoryCondition &&
+        eligibilityCondition
         // recieveOP &&
         // ballotCondition
       )
@@ -182,7 +200,7 @@ export default function ProjectTab({
 
   const currentItems = useMemo(() => {
     let sortedItems = filterJson
-
+    console.log(filterJson)
     // - Award Ranking
     // - Most in ballots
     // - Least in ballots
@@ -258,10 +276,6 @@ export default function ProjectTab({
     )
   }, [currentPage, filterJson, state.sort])
 
-  function isLetter(c: string) {
-    return c.toLowerCase() !== c.toUpperCase()
-  }
-
   const [loading, setLoading] = useState(true)
   const load = () => {
     setTimeout(() => {
@@ -314,6 +328,7 @@ export default function ProjectTab({
                 setMaxVal={setMaxVal}
                 handleChangeBallot={handleChangeBallot}
                 handleChangeSubCategory={handleChangeSubCategory}
+                handleChangeEligibility={handleChangeEligibility}
               />
             )}
 

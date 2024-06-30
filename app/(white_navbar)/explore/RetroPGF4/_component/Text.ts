@@ -61,6 +61,18 @@ export const category = [
   },
 ]
 
+export const eligibilityStatus = [
+  {
+    name: 'All',
+  },
+  {
+    name: 'Eligible',
+  },
+  {
+    name: 'Rejected',
+  },
+]
+
 export const min = -1
 export const max = 663855
 export const itemsPerPage = 24
