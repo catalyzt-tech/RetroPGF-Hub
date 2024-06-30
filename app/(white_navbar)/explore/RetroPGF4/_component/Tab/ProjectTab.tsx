@@ -366,6 +366,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps) {
                   setMaxVal={setMaxVal}
                   handleChangeBallot={handleChangeBallot}
                   handleChangeSubCategory={handleChangeSubCategory}
+                  handleChangeEligibility={handleChangeEligibility}
                 />
               </div>
             )}
