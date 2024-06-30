@@ -4,20 +4,16 @@ import { category } from '../../Text'
 import Checkbox from '@/app/component/Checkbox/Checkbox'
 import { CheckBoxStateType } from '../../ExploreRoundType'
 
+interface ICategoryDisclosure {
+  checkBox: CheckBoxStateType
+  handleChangeCategory: (value: string) => void
+  handleChangeSubCategory: (subCate: string) => void
+}
 export default function CategoryDisclosure({
   checkBox,
   handleChangeCategory,
   handleChangeSubCategory,
-}: {
-  checkBox: CheckBoxStateType
-  handleChangeCategory: (value: string) => void
-  handleChangeSubCategory: (subCate: string) => void
-}) {
-  function returnSubCategory(): string[] | undefined {
-    return category.find((elem) => elem.name === checkBox.category[0])
-      ?.subCategory
-  }
-
+}: ICategoryDisclosure) {
   return (
     <>
       <Disclosure defaultOpen={true}>
@@ -42,7 +38,7 @@ export default function CategoryDisclosure({
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <Disclosure.Panel className="text-sm text-gray-500 flex gap-1 flex-col">
+              <Disclosure.Panel className="text-sm text-gray-500 flex gap-1 flex-col gap-y-1.5">
                 {category.map((item, i) => (
                   <div key={i}>
                     <Checkbox
@@ -55,7 +51,7 @@ export default function CategoryDisclosure({
                         handleChangeCategory(e.target.value)
                       }}
                     />
-                    <div className=" ml-4 flex flex-col gap-1 mt-2 mb-0.5">
+                    {/* <div className=" ml-4 flex flex-col gap-1 mt-2 mb-0.5">
                       {item.name === checkBox.category[0] &&
                         returnSubCategory() &&
                         returnSubCategory()?.map((item, i) => (
@@ -72,19 +68,14 @@ export default function CategoryDisclosure({
                             }}
                           />
                         ))}
-                    </div>
-                    {/* {i !== category.length -1 && 
-                            <hr className="mb-2 h-[0.0625rem] bg-gray-200" />
-                            } */}
+                    </div> */}
                   </div>
                 ))}
-                {/* {checkBox.category[0]} */}
               </Disclosure.Panel>
             </Transition>
           </>
         )}
       </Disclosure>
-      {/* <hr className="h-[0.0625rem] bg-gray-200" /> */}
     </>
   )
 }
