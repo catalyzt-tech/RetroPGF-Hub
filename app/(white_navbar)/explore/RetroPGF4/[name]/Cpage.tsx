@@ -1,5 +1,5 @@
 'use client'
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import ProjectDetailSection from './_component/_Project/ProjectDetailSection'
 import OverviewSection from './_component/_Project/OverviewSection'
 import ImpactSection from './_component/_Project/ImpactSection'
@@ -16,24 +16,35 @@ import ScrollSpy from '@/app/component/ScrollSpy'
 
 export default function Cpage({ data }: { data: iRetroPGF4Project }) {
   const overViewRef = useRef<HTMLElement | null>(null)
-  const contributionRef = useRef<HTMLElement | null>(null)
+  const fundingRef = useRef<HTMLElement | null>(null)
   const githubRef = useRef<HTMLElement | null>(null)
   const contractRef = useRef<HTMLElement | null>(null)
   const impactRef = useRef<HTMLElement | null>(null)
-  const sections = [
+  const [sections, setSections] = useState([
     { name: 'Overview', ref: overViewRef },
-    { name: 'Funding Sources', ref: contributionRef },
-
-    { name: 'Github', ref: githubRef },
+    { name: 'Funding Sources', ref: fundingRef },
+    { name: 'GitHub', ref: githubRef },
     { name: 'Contract Addresses', ref: contractRef },
-  ]
+  ])
   const insertAtPosition = 2
-  if (data.impactMetrics) {
-    sections.splice(insertAtPosition, 0, {
-      name: 'Impact Metrics',
-      ref: impactRef,
-    })
-  }
+  useEffect(() => {
+    if (data.impactMetrics) {
+      setSections((prevSections) => {
+        const impactMetricsExists = prevSections.find(
+          (section) => section.name === 'Impact Metrics'
+        )
+        if (!impactMetricsExists) {
+          return [
+            ...prevSections.slice(0, insertAtPosition),
+            { name: 'Impact Metrics', ref: impactRef },
+            ...prevSections.slice(insertAtPosition),
+          ]
+        }
+        return prevSections
+      })
+    }
+  }, [data.impactMetrics])
+
   return (
     <div className="flex mt-8 gap-10">
       {/* Scroll Spy */}
@@ -51,7 +62,7 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
         </section>
         {/* <ContributionSection data={data} contributionRef={contributionRef} /> */}
         {/* <ImpactSection data={data} impactRef={impactRef} /> */}
-        <FundingSection data={data} fundingRef={contributionRef} />
+        <FundingSection data={data} fundingRef={fundingRef} />
         {data.impactMetrics && (
           <ImpactMetricSection data={data} impactRef={impactRef} />
         )}

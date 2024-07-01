@@ -53,7 +53,7 @@ export default function ScrollSpy({
     return () => {
       observer.disconnect()
     }
-  }, [sections])
+  }, [sections, observerOptions])
 
   useEffect(() => {
     const visibleSectionNames = Object.entries(visibleSections)
@@ -64,7 +64,7 @@ export default function ScrollSpy({
       visibleSectionNames.length > 0
         ? visibleSectionNames[visibleSectionNames.length - 1]
         : sections[0]?.name || ''
-
+    console.log(lastVisibleSection)
     setCurrentContent(lastVisibleSection)
   }, [visibleSections, sections])
 
@@ -96,7 +96,7 @@ export default function ScrollSpy({
 
                     setTimeout(() => {
                       setCurrentContent(ref.current ? ref.current.id : name)
-                    }, 10)
+                    }, 1500)
                   }
                 }}
               >

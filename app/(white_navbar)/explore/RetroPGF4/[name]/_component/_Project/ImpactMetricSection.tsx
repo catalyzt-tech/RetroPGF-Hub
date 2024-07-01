@@ -10,7 +10,7 @@ const ImpactMetricSection = ({
 }) => {
   return (
     <section
-      id="Github"
+      id="Impact Metrics"
       ref={impactRef}
       className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border"
     >

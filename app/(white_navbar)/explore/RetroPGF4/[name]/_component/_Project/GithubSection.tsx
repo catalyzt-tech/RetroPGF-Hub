@@ -4,7 +4,6 @@ import star from '@/public/static/githubCardSection/star'
 // import watch from '@/public/static/githubCardSection/watch'
 import fork from '@/public/static/githubCardSection/fork'
 import Link from 'next/link'
-import { classNames } from '@/app/lib/utils'
 
 export default function GithubSection({
   data,
@@ -19,11 +18,11 @@ export default function GithubSection({
   }
   return (
     <section
-      id="Github"
+      id="GitHub"
       ref={githubRef}
       className="flex flex-col gap-5 bg-white rounded-lg p-4 lg:p-6 border"
     >
-      <h3 className="text-2xl font-semibold ">Github</h3>
+      <h3 className="text-2xl font-semibold ">GitHub</h3>
       <hr className="border-t-gray-100" />
       <div className="flex flex-row flex-wrap gap-4">
         {data.github.length == 0 && (
@@ -57,15 +56,11 @@ export default function GithubSection({
                   {star()}
                   <div>{item.star ?? '-'} Stars</div>
                 </div>
-                {/* <div className="flex flex-row justify-start items-center text-sm  text-gray-500 gap-1">
-                  {watch()}
-                  <div>{item.watch} Watch</div>
-                </div> */}
+
                 <div className="flex flex-row justify-start items-center text-sm  text-gray-600 gap-1">
                   {fork()}
                   <div>{item.fork ?? '-'} Forks</div>
                 </div>
-                {/* <p className="text-base  text-gray-500">isFork</p> */}
               </div>
             </div>
           ))}
