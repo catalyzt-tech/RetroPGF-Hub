@@ -1,19 +1,24 @@
 import { iRetroPGF4Project } from '../../../RetroType4'
 import { mapImpactMetrics } from '../../Text'
-const ImpactMetricSection = ({ data }: { data: iRetroPGF4Project }) => {
+import { Help } from '@carbon/icons-react'
+const ImpactMetricSection = ({
+  data,
+  impactRef,
+}: {
+  data: iRetroPGF4Project
+  impactRef: React.MutableRefObject<HTMLElement | null>
+}) => {
   return (
     <section
       id="Github"
-      //   ref={githubRef}
+      ref={impactRef}
       className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border"
     >
       <h3 className="text-2xl font-semibold ">Impact Metrics</h3>
       <hr className="border-t-gray-100" />
       <div className="text-gray-500">
-        Retro Funding 4 experiments with Metrics-based Evaluation, citizens are
-        able to more accurately express their preferences for the types of
-        impact they want to reward, as well as make more accurate judgements of
-        the impact delivered by individual contributors.
+        These metrics are collected based on the data provided on-chain by Open
+        Source Observer (OSO).
       </div>
       <div className="flex flex-row flex-wrap gap-5  ">
         {Object.entries(data.impactMetrics)
@@ -31,8 +36,9 @@ const ImpactMetricSection = ({ data }: { data: iRetroPGF4Project }) => {
                 <div className="text-lg font-semibold font-rubik">
                   {displayValue}
                 </div>
-                <div className="text-base mt-2 text-gray-600">
-                  {mapImpactMetrics(impactName)}
+                <div className="flex flex-row flex-wrap items-center text-base mt-2 text-gray-600">
+                  {mapImpactMetrics(impactName)}{' '}
+                  {/* <Help className="text-gray-600" /> */}
                 </div>
               </div>
             )

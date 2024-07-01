@@ -24,24 +24,27 @@ export default function ContractSection({
     >
       <h3 className="text-2xl font-semibold">Contract Addresses</h3>
       <hr className="border-t-gray-100" />
-      {data.contracts.map((item, i) => (
-        <div className="flex flex-col gap-1" key={i}>
-          <div className="flex flex-row flex-wrap gap-3 items-center ">
-            <Image
-              src={`/static/superchainLogo/${mapChainId(item.chainId)}.webp`}
-              alt="chain"
-              className="rounded-full"
-              width={24}
-              height={24}
-            />
-            <p className="text-sm font-normal text-gray-500">{item.address}</p>
-            <p className="text-base font-semibold text-gray-600">
-              {/* Chain ID: {item.chainId} */}
-              {/* {mapChainId(item.chainId) || ''} */}
-            </p>
+
+      {data.contracts.length == 0 && (
+        <p className="text-base font-normal text-gray-600">
+          There is no contract address for this project.
+        </p>
+      )}
+      {data.contracts.length !== 0 &&
+        data.contracts.map((item, i) => (
+          <div className="flex flex-col gap-1" key={i}>
+            <div className="flex flex-row flex-wrap gap-3 items-center ">
+              <Image
+                src={`/static/superchainLogo/${mapChainId(item.chainId)}.webp`}
+                alt="chain"
+                className="rounded-full"
+                width={30}
+                height={30}
+              />
+              <p className="text-base text-gray-500">{item.address}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
     </section>
   )
 }

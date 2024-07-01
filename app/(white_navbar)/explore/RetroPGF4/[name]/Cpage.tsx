@@ -19,13 +19,16 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
   const contributionRef = useRef<HTMLElement | null>(null)
   const githubRef = useRef<HTMLElement | null>(null)
   const contractRef = useRef<HTMLElement | null>(null)
+  const impactRef = useRef<HTMLElement | null>(null)
   const sections = [
     { name: 'Overview', ref: overViewRef },
     { name: 'Funding Sources', ref: contributionRef },
     { name: 'Github', ref: githubRef },
     { name: 'Contract Addresses', ref: contractRef },
   ]
-
+  if (data.impactMetrics) {
+    sections.push({ name: 'Impact Metrics', ref: impactRef })
+  }
   return (
     <div className="flex mt-8 gap-10">
       {/* Scroll Spy */}
@@ -44,9 +47,12 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
         {/* <ContributionSection data={data} contributionRef={contributionRef} /> */}
         {/* <ImpactSection data={data} impactRef={impactRef} /> */}
         <FundingSection data={data} fundingRef={contributionRef} />
+        {data.impactMetrics && (
+          <ImpactMetricSection data={data} impactRef={impactRef} />
+        )}
         <GithubSection data={data} githubRef={githubRef} />
         <ContractSection data={data} contractRef={contractRef} />
-        {data.impactMetrics && <ImpactMetricSection data={data} />}
+
         {/* <ImpactMetricSection data={data} /> */}
       </div>
 
