@@ -23,11 +23,16 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
   const sections = [
     { name: 'Overview', ref: overViewRef },
     { name: 'Funding Sources', ref: contributionRef },
+
     { name: 'Github', ref: githubRef },
     { name: 'Contract Addresses', ref: contractRef },
   ]
+  const insertAtPosition = 2
   if (data.impactMetrics) {
-    sections.push({ name: 'Impact Metrics', ref: impactRef })
+    sections.splice(insertAtPosition, 0, {
+      name: 'Impact Metrics',
+      ref: impactRef,
+    })
   }
   return (
     <div className="flex mt-8 gap-10">

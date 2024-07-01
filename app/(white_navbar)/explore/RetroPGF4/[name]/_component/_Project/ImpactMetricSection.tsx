@@ -21,7 +21,7 @@ const ImpactMetricSection = ({
         Source Observer (OSO).
       </div>
       <div className="flex flex-row flex-wrap gap-5  ">
-        {Object.entries(data.impactMetrics)
+        {Object.entries(data.impactMetrics ?? {})
           .filter(([key]) => key !== 'application_id' && key !== 'is_oss')
           .map(([impactName, impactValue], index) => {
             // Check if impactValue is a number before rendering
