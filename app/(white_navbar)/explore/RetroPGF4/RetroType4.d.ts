@@ -26,6 +26,26 @@ export interface Github {
   openSourceResult: string
   openSourceRejectComment: string
 }
+export interface ImpactMetrics {
+  application_id: string
+  is_oss: boolean
+  gas_fees: number
+  transaction_count: number
+  trusted_transaction_count: number
+  trusted_transaction_share: number
+  trusted_users_onboarded: number
+  daily_active_addresses: number
+  trusted_daily_active_users: number
+  monthly_active_addresses: number
+  trusted_monthly_active_users: number
+  recurring_addresses: number
+  trusted_recurring_users: number
+  power_user_addresses: number
+  openrank_trusted_users_count: number
+  log_gas_fees: number
+  log_transaction_count: number
+  log_trusted_transaction_count: number
+}
 
 export interface iRetroPGF4Project {
   name: string
@@ -57,4 +77,5 @@ export interface iRetroPGF4Project {
     appealDecision: null | string
   }
   isEligibleFinal: boolean
+  impactMetrics: ImpactMetrics | null
 }

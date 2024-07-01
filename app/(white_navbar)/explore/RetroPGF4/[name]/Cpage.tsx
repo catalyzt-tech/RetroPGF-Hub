@@ -11,6 +11,7 @@ import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroT
 import GithubSection from './_component/_Project/GithubSection'
 import ContractSection from './_component/_Project/ContractSection'
 import AppealSection from './_component/_Project/AppealSection'
+import ImpactMetricSection from './_component/_Project/ImpactMetricSection'
 import ScrollSpy from '@/app/component/ScrollSpy'
 
 export default function Cpage({ data }: { data: iRetroPGF4Project }) {
@@ -45,6 +46,8 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
         <FundingSection data={data} fundingRef={contributionRef} />
         <GithubSection data={data} githubRef={githubRef} />
         <ContractSection data={data} contractRef={contractRef} />
+        {data.impactMetrics && <ImpactMetricSection data={data} />}
+        {/* <ImpactMetricSection data={data} /> */}
       </div>
 
       <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">
