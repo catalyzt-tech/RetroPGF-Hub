@@ -185,7 +185,6 @@ export default function ProjectTab({ round4 }: ProjectTabProps) {
 
   const currentItems = useMemo(() => {
     let sortedItems = filterJson
-    console.log(filterJson)
     // - Award Ranking
     // - Most in ballots
     // - Least in ballots

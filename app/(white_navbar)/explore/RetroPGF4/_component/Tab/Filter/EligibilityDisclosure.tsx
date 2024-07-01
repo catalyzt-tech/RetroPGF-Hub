@@ -43,7 +43,7 @@ export default function EligibilityDisclosure({
                     <div key={i}>
                       <Checkbox
                         key={i}
-                        label={item.name}
+                        label={`${item.name} (${item.value})`}
                         value={item.name}
                         className="cursor-pointer"
                         checked={checkBox.eligibility === item.name}

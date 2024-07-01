@@ -11,6 +11,7 @@ import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroT
 import GithubSection from './_component/_Project/GithubSection'
 import ContractSection from './_component/_Project/ContractSection'
 import AppealSection from './_component/_Project/AppealSection'
+import ImpactMetricSection from './_component/_Project/ImpactMetricSection'
 import ScrollSpy from '@/app/component/ScrollSpy'
 
 export default function Cpage({ data }: { data: iRetroPGF4Project }) {
@@ -18,13 +19,21 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
   const contributionRef = useRef<HTMLElement | null>(null)
   const githubRef = useRef<HTMLElement | null>(null)
   const contractRef = useRef<HTMLElement | null>(null)
+  const impactRef = useRef<HTMLElement | null>(null)
   const sections = [
     { name: 'Overview', ref: overViewRef },
     { name: 'Funding Sources', ref: contributionRef },
+
     { name: 'Github', ref: githubRef },
     { name: 'Contract Addresses', ref: contractRef },
   ]
-
+  const insertAtPosition = 2
+  if (data.impactMetrics) {
+    sections.splice(insertAtPosition, 0, {
+      name: 'Impact Metrics',
+      ref: impactRef,
+    })
+  }
   return (
     <div className="flex mt-8 gap-10">
       {/* Scroll Spy */}
@@ -43,8 +52,13 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
         {/* <ContributionSection data={data} contributionRef={contributionRef} /> */}
         {/* <ImpactSection data={data} impactRef={impactRef} /> */}
         <FundingSection data={data} fundingRef={contributionRef} />
+        {data.impactMetrics && (
+          <ImpactMetricSection data={data} impactRef={impactRef} />
+        )}
         <GithubSection data={data} githubRef={githubRef} />
         <ContractSection data={data} contractRef={contractRef} />
+
+        {/* <ImpactMetricSection data={data} /> */}
       </div>
 
       <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">

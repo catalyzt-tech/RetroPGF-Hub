@@ -64,12 +64,15 @@ export const category = [
 export const eligibilityStatus = [
   {
     name: 'All',
+    value: 463,
   },
   {
     name: 'Eligible',
+    value: 230,
   },
   {
     name: 'Rejected',
+    value: 233,
   },
 ]
 

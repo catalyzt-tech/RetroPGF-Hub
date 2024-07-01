@@ -19,7 +19,7 @@ export default function ProjectDetailSection({
             src={data.proejctCoverImageUrl || '/random/OP-Banner.png'}
             alt="background"
             fill
-            className="object-cover"
+            className="w-fit object-cover"
           />
         </div>
         <div className="relative flex flex-col gap-4 p-2 sm:p-4 lg:p-6">
