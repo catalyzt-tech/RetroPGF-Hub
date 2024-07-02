@@ -30,9 +30,7 @@ const BadgeholderSection = () => {
   ]
   return (
     <div className="xl:mx-10">
-      <div className="font-rubik text-black text-2xl">
-        Searchbar and sorting
-      </div>
+      <div className="font-rubik text-black text-2xl">Search Bar & Filter</div>
       <div className="grid grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-4 flex-col gap-6">
         {currentItems.map((item, i) => (
           <React.Fragment key={i}>
