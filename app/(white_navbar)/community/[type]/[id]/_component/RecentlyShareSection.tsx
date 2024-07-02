@@ -65,7 +65,7 @@ export default function RecentlyShareSection({
 
         <div className="max-w-[21rem] min-w-[21rem] flex flex-col gap-6 px-6 rounded-lg">
             <h6 className="text-2xl font-semibold text-gray-800">Recently Shared</h6>
-            {data.length !== 0 &&
+            {data.length !== 0 && data &&
             data.map((item, i) => {
                 if(item.type === "q") {
                     return (
