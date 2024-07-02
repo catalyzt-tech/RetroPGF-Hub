@@ -51,7 +51,7 @@ export default async function page({ params }: { params: { type:string, id: stri
 
                <div className="hidden lg:block">
                     <RecentlyShareSection
-                    recently={data.recently}
+                    recently={data.recently.length !== 0 ? data.recently : []}
                     />
                </div>
                
