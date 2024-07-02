@@ -11,6 +11,10 @@ export const tab = [
     text: 'Statistics',
     index: 2,
   },
+  {
+    text: 'Badgeholder',
+    index: 3,
+  }
 ]
 export const sorting = [
   // {
