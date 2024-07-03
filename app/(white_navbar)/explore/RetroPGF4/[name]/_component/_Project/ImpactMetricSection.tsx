@@ -1,6 +1,7 @@
 import { iRetroPGF4Project } from '../../../RetroType4'
 import { mapImpactMetrics } from '../../Text'
 import { Help } from '@carbon/icons-react'
+import { numberWithCommas } from '@/app/lib/utils'
 const ImpactMetricSection = ({
   data,
   impactRef,
@@ -34,11 +35,10 @@ const ImpactMetricSection = ({
                 className="flex flex-col flex-grow w-72 bg-slate-50 rounded-lg px-8 py-6"
               >
                 <div className="text-lg font-semibold font-rubik">
-                  {displayValue}
+                  {numberWithCommas(displayValue)}
                 </div>
                 <div className="flex flex-row flex-wrap items-center text-base mt-2 text-gray-600">
                   {mapImpactMetrics(impactName)}{' '}
-                  {/* <Help className="text-gray-600" /> */}
                 </div>
               </div>
             )
