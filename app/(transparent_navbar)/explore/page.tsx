@@ -8,6 +8,7 @@ import { getJsonRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/page'
 import { getJsonRound4 } from '@/app/(white_navbar)/explore/RetroPGF4/page'
 import Cpage from './Cpage'
 import { Metadata } from 'next'
+import { shuffle } from '@/app/lib/utils'
 
 export const metadata: Metadata = {
   title: 'Explore | RetroPGF Hub',
@@ -97,11 +98,16 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
+  const shuffledRound1 = shuffle([...round1])
+  const shuffledRound2 = shuffle([...round2])
+  const shuffledRound3 = shuffle([...round3])
+  const shuffledRound4 = shuffle([...round4])
+
   return {
-    round1: round1.slice(0, limit),
-    round2: round2.slice(0, limit),
-    round3: round3.slice(0, limit),
-    round4: round4.slice(0, limit),
+    round1: shuffledRound1.slice(0, limit),
+    round2: shuffledRound2.slice(0, limit),
+    round3: shuffledRound3.slice(0, limit),
+    round4: shuffledRound4.slice(0, limit),
     cateRound4: cateRound4Counter,
     cateRound3: cateRound3Counter,
     cateRound2: cateRound2Counter,
