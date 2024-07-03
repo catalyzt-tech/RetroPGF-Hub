@@ -68,8 +68,6 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
         )}
         <GithubSection data={data} githubRef={githubRef} />
         <ContractSection data={data} contractRef={contractRef} />
-
-        {/* <ImpactMetricSection data={data} /> */}
       </div>
 
       <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">

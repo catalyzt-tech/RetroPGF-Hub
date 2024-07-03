@@ -59,9 +59,9 @@ export default function FundingSection({
           <div className="flex flex-col gap-1" key={i}>
             <div className="flex flex-wrap gap-3 items-center">
               <p className="mb-1 text-base font-normal text-gray-500">
-                {'Venture Funding'} :
+                {'Venture Funding'}
               </p>
-              <p className="mb-1 text-base font-semibold text-gray-600">
+              <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
                 {containsOnlyDigits(item.amount)
                   ? Number(item.amount).toLocaleString('en-US', {
                       maximumFractionDigits: 2,
@@ -69,20 +69,24 @@ export default function FundingSection({
                   : formatGrant(item.amount) + ' USD'}
                 {item.currency || ''}
               </p>
-              {item.details && (
-                <p className="text-sm text-gray-500">{item.details}</p>
-              )}
             </div>
+            {item.details && (
+              <p className="text-sm text-gray-500">{item.details}</p>
+            )}
           </div>
         ))}
       {data.grantsAndFunding.grants.length != 0 &&
         data.grantsAndFunding.grants.map((item, i) => (
-          <div className="flex flex-col gap-1" key={i}>
+          <div
+            className="flex flex-col gap-1 px-8 py-6 bg-slate-50 rounded-lg"
+            key={i}
+          >
             <div className="flex flex-wrap gap-3 items-center">
-              <p className="mb-1 text-base font-normal text-gray-500">
-                {formatName(item.grant) as string} :
+              <p className="mb-1 text-lg font-semibold font-rubik">
+                {formatName(item.grant) as string}
               </p>
-              <p className="mb-1 text-base font-semibold text-gray-600">
+              <p className="flex flex-grow"></p>
+              <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
                 {containsOnlyDigits(item.amount)
                   ? Number(item.amount).toLocaleString('en-US', {
                       maximumFractionDigits: 2,
@@ -90,20 +94,24 @@ export default function FundingSection({
                   : formatGrant(item.amount) + ' USD'}
                 {item.currency || ''}
               </p>
-              {item.details && (
-                <p className="text-sm text-gray-500">{item.details}</p>
-              )}
             </div>
+            {item.details && (
+              <p className="text-sm text-gray-500">{item.details}</p>
+            )}
           </div>
         ))}
       {data.grantsAndFunding.revenue.length != 0 &&
         data.grantsAndFunding.revenue.map((item, i) => (
-          <div className="flex flex-col gap-1" key={i}>
+          <div
+            className="flex flex-col gap-1 px-8 py-6 bg-slate-50 rounded-lg"
+            key={i}
+          >
             <div className="flex flex-wrap gap-3 items-center">
-              <p className="mb-1 text-base font-normal text-gray-500">
-                {'Revenue'} :
+              <p className="mb-1 text-lg font-semibold font-rubik">
+                {'Revenue'}
               </p>
-              <p className="mb-1 text-base font-semibold text-gray-600">
+              <p className="flex flex-grow"></p>
+              <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
                 {containsOnlyDigits(item.amount)
                   ? Number(item.amount).toLocaleString('en-US', {
                       maximumFractionDigits: 2,
@@ -111,10 +119,10 @@ export default function FundingSection({
                   : formatGrant(item.amount) + ' USD'}
                 {item.currency || ''}
               </p>
-              {item.details && (
-                <p className="text-sm text-gray-500">{item.details}</p>
-              )}
             </div>
+            {item.details && (
+              <p className="text-sm text-gray-500">{item.details}</p>
+            )}
           </div>
         ))}
     </section>
