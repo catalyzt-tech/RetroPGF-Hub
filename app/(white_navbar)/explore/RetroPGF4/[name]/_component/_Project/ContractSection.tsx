@@ -1,30 +1,24 @@
 import { iRetroPGF4Project } from '../../../RetroType4'
-import { mapChainId } from '@/app/lib/utils'
+import { mapChainId, getNameByChainId } from '@/app/lib/utils'
 import Image from 'next/image'
-export default function ContractSection({
-  data,
-  contractRef,
-}: {
+
+interface iContract {
   data: iRetroPGF4Project
   contractRef: React.MutableRefObject<HTMLElement | null>
-}) {
-  // const grantsAndFundingArray = Object.entries(data.grantsAndFunding).flatMap(
-  //   ([type, items]) => {
-  //     return items.map((item) => ({
-  //       type,
-  //       ...item,
-  //     }))
-  //   }
-  // )
+}
+export default function ContractSection({ data, contractRef }: iContract) {
   return (
     <section
-      id="Contract Addresses"
+      id="Contract Address"
       ref={contractRef}
-      className="flex flex-col gap-6 bg-white rounded-lg p-2 lg:p-6 border"
+      className="flex flex-col gap-x-6 gap-y-4 bg-white rounded-lg p-2 lg:p-6 border"
     >
-      <h3 className="text-2xl font-semibold">Contract Addresses</h3>
+      <h3 className="text-2xl font-semibold">Contract Address</h3>
       <hr className="border-t-gray-100" />
-
+      <div className="text-gray-500">
+        Conntract’s onchain metrics will help badgeholders make objective
+        decisions during voting.
+      </div>
       {data.contracts.length == 0 && (
         <p className="text-base font-normal text-gray-600">
           There is no contract address for this project.
@@ -32,16 +26,27 @@ export default function ContractSection({
       )}
       {data.contracts.length !== 0 &&
         data.contracts.map((item, i) => (
-          <div className="flex flex-col gap-1" key={i}>
+          <div
+            className="flex flex-col gap-1 rounded-lg bg-slate-50 px-6 py-4"
+            key={i}
+          >
             <div className="flex flex-row flex-wrap gap-3 items-center ">
-              <Image
-                src={`/static/superchainLogo/${mapChainId(item.chainId)}.webp`}
-                alt="chain"
-                className="rounded-full"
-                width={30}
-                height={30}
-              />
-              <p className="text-base text-gray-500">{item.address}</p>
+              <div className="flex gap-3">
+                <Image
+                  src={`/static/superchainLogo/${mapChainId(
+                    item.chainId
+                  )}.webp`}
+                  alt="chain"
+                  className="rounded-full"
+                  width={25}
+                  height={25}
+                />
+                <p className="font-medium">{getNameByChainId(item.chainId)}</p>
+              </div>
+              {/* <div>|</div> */}
+              <p className="text-base text-gray-500 font-rubik">
+                {item.address}
+              </p>
             </div>
           </div>
         ))}
