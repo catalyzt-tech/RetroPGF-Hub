@@ -27,6 +27,7 @@ export interface Github {
   openSourceRejectComment: string
 }
 export interface ImpactMetrics {
+  project_name: string
   application_id: string
   is_oss: boolean
   gas_fees: number
