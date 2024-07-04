@@ -2,13 +2,12 @@ import { iRetroPGF4Project } from '../../../RetroType4'
 import { mapImpactMetrics } from '../../Text'
 import { Help } from '@carbon/icons-react'
 import { numberWithCommas } from '@/app/lib/utils'
-const ImpactMetricSection = ({
-  data,
-  impactRef,
-}: {
+
+interface iImpactMetric {
   data: iRetroPGF4Project
   impactRef: React.MutableRefObject<HTMLElement | null>
-}) => {
+}
+const ImpactMetricSection = ({ data, impactRef }: iImpactMetric) => {
   return (
     <section
       id="Impact Metrics"
@@ -23,9 +22,13 @@ const ImpactMetricSection = ({
       </div>
       <div className="flex flex-row flex-wrap gap-5  ">
         {Object.entries(data.impactMetrics ?? {})
-          .filter(([key]) => key !== 'application_id' && key !== 'is_oss')
+          .filter(
+            ([key]) =>
+              key !== 'application_id' &&
+              key !== 'is_oss' &&
+              key !== 'project_name'
+          )
           .map(([impactName, impactValue], index) => {
-            // Check if impactValue is a number before rendering
             const displayValue =
               typeof impactValue === 'number' ? impactValue.toFixed(2) : 'N/A'
 
