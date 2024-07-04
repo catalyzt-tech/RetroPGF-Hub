@@ -333,10 +333,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Slugs",
       "application_id": "0xc9976099df2ee3d1b71e966f8e80ef907846f36152f2e5957fb31890f18cf76f",
       "is_oss": false,
-      "gas_fees": 0.20739636519010538,
+      "gas_fees": 0.2073963651901051,
       "transaction_count": 33139,
       "trusted_transaction_count": 2926,
       "trusted_transaction_share": 0.0882947584417152,
@@ -349,7 +348,7 @@
       "trusted_recurring_users": 20,
       "power_user_addresses": 3053,
       "openrank_trusted_users_count": 57,
-      "log_gas_fees": 0.0818498640963376,
+      "log_gas_fees": 0.08184986409633752,
       "log_transaction_count": 4.520352504083318,
       "log_trusted_transaction_count": 3.466422722433792
     }
@@ -505,10 +504,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "SwapMode",
       "application_id": "0x491ffd3c2e4c25ab7fbdbefe0f5fc8dc2beee5ab801287b9c6c93c9c3c810463",
       "is_oss": false,
-      "gas_fees": 5.6921291220045305,
+      "gas_fees": 5.692129122004541,
       "transaction_count": 465351,
       "trusted_transaction_count": 64951,
       "trusted_transaction_share": 0.139574213872969,
@@ -521,7 +519,7 @@
       "trusted_recurring_users": 807,
       "power_user_addresses": 15999,
       "openrank_trusted_users_count": 85,
-      "log_gas_fees": 0.8255643119127516,
+      "log_gas_fees": 0.8255643119127523,
       "log_transaction_count": 5.667781584773207,
       "log_trusted_transaction_count": 4.812592528397359
     }
@@ -616,25 +614,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Kim Exchange",
       "application_id": "0x69f13f6351489812a9052412e273ba726383744c8c482ac877c6a4e9f3b1d3ad",
       "is_oss": false,
-      "gas_fees": 51.51504675908121,
+      "gas_fees": 51.515046759081194,
       "transaction_count": 707994,
-      "trusted_transaction_count": 148495,
-      "trusted_transaction_share": 0.20974047802664994,
+      "trusted_transaction_count": 148498,
+      "trusted_transaction_share": 0.20974471535069505,
       "trusted_users_onboarded": 1310,
       "daily_active_addresses": 1082.561475409836,
-      "trusted_daily_active_users": 224.73360655737704,
+      "trusted_daily_active_users": 224.74590163934425,
       "monthly_active_addresses": 16192.0987654321,
-      "trusted_monthly_active_users": 3243.456790123457,
+      "trusted_monthly_active_users": 3243.703703703704,
       "recurring_addresses": 11065,
       "trusted_recurring_users": 2732,
       "power_user_addresses": 29658,
       "openrank_trusted_users_count": 189,
       "log_gas_fees": 1.7202837565140758,
       "log_transaction_count": 5.850030190627513,
-      "log_trusted_transaction_count": 5.171714755327814
+      "log_trusted_transaction_count": 5.171723529101419
     }
   },
   {
@@ -699,25 +696,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Loot2",
       "application_id": "0x7fd77f963d3383d7aa4dd67652c6554ce6f0661aad01afdbeaef33c3e5957a69",
       "is_oss": true,
-      "gas_fees": 0.3264073119366705,
+      "gas_fees": 0.3264073119366704,
       "transaction_count": 75928,
-      "trusted_transaction_count": 5793,
-      "trusted_transaction_share": 0.07629596459804025,
+      "trusted_transaction_count": 5794,
+      "trusted_transaction_share": 0.07630913496997155,
       "trusted_users_onboarded": 20,
       "daily_active_addresses": 244.58196721311475,
-      "trusted_daily_active_users": 20.15983606557377,
+      "trusted_daily_active_users": 20.16393442622951,
       "monthly_active_addresses": 4734.938271604939,
-      "trusted_monthly_active_users": 290.74074074074076,
+      "trusted_monthly_active_users": 290.8641975308642,
       "recurring_addresses": 713,
       "trusted_recurring_users": 0,
       "power_user_addresses": 7279,
       "openrank_trusted_users_count": 46,
       "log_gas_fees": 0.12267690729922852,
       "log_transaction_count": 4.880407680171058,
-      "log_trusted_transaction_count": 3.762978490867743
+      "log_trusted_transaction_count": 3.7630534402996147
     }
   },
   {
@@ -955,10 +951,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "DackieNFT",
       "application_id": "0x44ca2c89a912ec7e3f2a38aaecde63044fcaa3024839eb628081a3bcba9c0490",
       "is_oss": false,
-      "gas_fees": 0.6002073172467343,
+      "gas_fees": 0.6002073172467344,
       "transaction_count": 4060,
       "trusted_transaction_count": 824,
       "trusted_transaction_share": 0.20295566502463055,
@@ -1081,25 +1076,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Alien Base",
       "application_id": "0x4bf2ac1013cbae40d5fd671442d4bf276e389de415b4b070c5038b3e9851667d",
       "is_oss": false,
-      "gas_fees": 11.843794352106354,
+      "gas_fees": 11.843794352106363,
       "transaction_count": 448654,
-      "trusted_transaction_count": 12642,
-      "trusted_transaction_share": 0.028177615712776438,
-      "trusted_users_onboarded": 131,
+      "trusted_transaction_count": 12483,
+      "trusted_transaction_share": 0.027823222349516553,
+      "trusted_users_onboarded": 130,
       "daily_active_addresses": 719.1926229508197,
-      "trusted_daily_active_users": 14.01639344262295,
+      "trusted_daily_active_users": 13.901639344262295,
       "monthly_active_addresses": 14427.407407407409,
-      "trusted_monthly_active_users": 248.14814814814815,
+      "trusted_monthly_active_users": 247.7777777777778,
       "recurring_addresses": 6092,
-      "trusted_recurring_users": 117,
+      "trusted_recurring_users": 116,
       "power_user_addresses": 6911,
       "openrank_trusted_users_count": 35,
-      "log_gas_fees": 1.1086933432616068,
+      "log_gas_fees": 1.1086933432616073,
       "log_transaction_count": 5.651912512074316,
-      "log_trusted_transaction_count": 4.101850137938126
+      "log_trusted_transaction_count": 4.0963537599932955
     }
   },
   {
@@ -1178,10 +1172,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "DackieSwap",
       "application_id": "0x18e7582de42dd9a7fd2cb69fb6566b8bcb3e86b936b229b0c5af78fa1de791a4",
       "is_oss": false,
-      "gas_fees": 3.595265483274509,
+      "gas_fees": 3.595265483274511,
       "transaction_count": 165476,
       "trusted_transaction_count": 15548,
       "trusted_transaction_share": 0.09395924484517393,
@@ -1194,7 +1187,7 @@
       "trusted_recurring_users": 279,
       "power_user_addresses": 3926,
       "openrank_trusted_users_count": 19,
-      "log_gas_fees": 0.662310607036717,
+      "log_gas_fees": 0.6623106070367172,
       "log_transaction_count": 5.218737638793115,
       "log_trusted_transaction_count": 4.191702463559194
     }
@@ -1347,10 +1340,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "BaseSwap",
       "application_id": "0xca3f26e1c876e821d2384a5cb699c6be494f9810301c2e2be49c232656262642",
       "is_oss": false,
-      "gas_fees": 26.53959742162726,
+      "gas_fees": 26.53959742162732,
       "transaction_count": 789210,
       "trusted_transaction_count": 18204,
       "trusted_transaction_share": 0.023066104078762306,
@@ -1363,7 +1355,7 @@
       "trusted_recurring_users": 275,
       "power_user_addresses": 11359,
       "openrank_trusted_users_count": 62,
-      "log_gas_fees": 1.4399575873790127,
+      "log_gas_fees": 1.4399575873790136,
       "log_transaction_count": 5.897193129806216,
       "log_trusted_transaction_count": 4.260190683269963
     }
@@ -1495,10 +1487,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Crypto Composite",
       "application_id": "0x6b8cc2b8d8f7a051927d058af2e742fb940a248c4de357e2a7a6b58f01831d44",
       "is_oss": false,
-      "gas_fees": 0.004814843073858758,
+      "gas_fees": 0.004814843073858753,
       "transaction_count": 2208,
       "trusted_transaction_count": 519,
       "trusted_transaction_share": 0.23505434782608695,
@@ -1620,7 +1611,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Gitcoin",
       "application_id": "0x6aa80764b6082947c3b2de86fe12804eb475b0afb719de50b9eed60b86f20535",
       "is_oss": true,
       "gas_fees": 0.3193836453808412,
@@ -1758,10 +1748,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Basic Dog Meme",
       "application_id": "0xbdca9dd029e6fcfbe269429f1db7a0e7f73334e253995f68146fc88fc17cdb3f",
       "is_oss": false,
-      "gas_fees": 0.05122867098863294,
+      "gas_fees": 0.051228670988632874,
       "transaction_count": 7900,
       "trusted_transaction_count": 1039,
       "trusted_transaction_share": 0.13151898734177214,
@@ -2004,10 +1993,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Drakula.app",
       "application_id": "0x54ff216c822bda60476028563e056b6aa5d48aeffa73173267cb988a340c5332",
       "is_oss": true,
-      "gas_fees": 0.48779267529637177,
+      "gas_fees": 0.4877926752963717,
       "transaction_count": 1013,
       "trusted_transaction_count": 0,
       "trusted_transaction_share": 0,
@@ -2142,10 +2130,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Scry Protocol",
       "application_id": "0x278442aa60cfdfad09d58112baecb05486dde654b47db21fb3d2274a2639bd47",
       "is_oss": true,
-      "gas_fees": 0.3126990532580551,
+      "gas_fees": 0.3126990532580554,
       "transaction_count": 2709,
       "trusted_transaction_count": 79,
       "trusted_transaction_share": 0,
@@ -2158,7 +2145,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 142,
       "openrank_trusted_users_count": 4,
-      "log_gas_fees": 0.11816517202231877,
+      "log_gas_fees": 0.11816517202231884,
       "log_transaction_count": 3.432969290874406,
       "log_trusted_transaction_count": 1.9030899869919435
     }
@@ -2237,10 +2224,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "sudoswap",
       "application_id": "0x73899e48df9f895ffbffc36d53ce970c1454c8eeb0700ed20f303bf936b6a0f5",
       "is_oss": true,
-      "gas_fees": 0.8310907071872714,
+      "gas_fees": 0.8310907071872728,
       "transaction_count": 3835,
       "trusted_transaction_count": 1677,
       "trusted_transaction_share": 0.43728813559322033,
@@ -2253,7 +2239,7 @@
       "trusted_recurring_users": 30,
       "power_user_addresses": 346,
       "openrank_trusted_users_count": 115,
-      "log_gas_fees": 0.2627098585863272,
+      "log_gas_fees": 0.2627098585863275,
       "log_transaction_count": 3.583878598498626,
       "log_trusted_transaction_count": 3.2247919564926812
     }
@@ -2523,10 +2509,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Copin.io",
       "application_id": "0x8fa98773f72474172c2fe75fb7ad3ae2274edd1bc1635b77dd175259dbfde5bd",
       "is_oss": true,
-      "gas_fees": 0.4880413483527683,
+      "gas_fees": 0.48804134835276813,
       "transaction_count": 1579,
       "trusted_transaction_count": 68,
       "trusted_transaction_share": 0,
@@ -2539,7 +2524,7 @@
       "trusted_recurring_users": 1,
       "power_user_addresses": 6,
       "openrank_trusted_users_count": 1,
-      "log_gas_fees": 0.17261499916143871,
+      "log_gas_fees": 0.17261499916143863,
       "log_transaction_count": 3.1986570869544226,
       "log_trusted_transaction_count": 1.8388490907372552
     }
@@ -2627,25 +2612,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Ionic Protocol",
       "application_id": "0xbcb5c437d5347be21add3972512679054416805274f80e85ab8053ae79340a69",
       "is_oss": false,
-      "gas_fees": 73.22222570289848,
+      "gas_fees": 73.22222570289853,
       "transaction_count": 790452,
-      "trusted_transaction_count": 147265,
-      "trusted_transaction_share": 0.1863047977612809,
+      "trusted_transaction_count": 147268,
+      "trusted_transaction_share": 0.186308593058149,
       "trusted_users_onboarded": 1613,
       "daily_active_addresses": 1272.6803278688524,
-      "trusted_daily_active_users": 246.45901639344262,
+      "trusted_daily_active_users": 246.4672131147541,
       "monthly_active_addresses": 22315.925925925927,
-      "trusted_monthly_active_users": 3961.2345679012346,
+      "trusted_monthly_active_users": 3961.3580246913584,
       "recurring_addresses": 18500,
       "trusted_recurring_users": 4063,
       "power_user_addresses": 33550,
       "openrank_trusted_users_count": 209,
-      "log_gas_fees": 1.8705339734026072,
+      "log_gas_fees": 1.8705339734026074,
       "log_transaction_count": 5.897876052070281,
-      "log_trusted_transaction_count": 5.168102490788298
+      "log_trusted_transaction_count": 5.1681113378417605
     }
   },
   {
@@ -2781,7 +2765,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Nogem",
       "application_id": "0x91b002c41ae45979dda4d66becc0d83fe92a20af00b59c1c5ab443492b896a0b",
       "is_oss": false,
       "gas_fees": 1.0205613209775257,
@@ -3501,7 +3484,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "SwapBased",
       "application_id": "0x8595f830f4d1716621d19bca6394f304837133fb473d8fcd1699e84402df1409",
       "is_oss": false,
       "gas_fees": 7.455004431448761,
@@ -3664,10 +3646,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "PRINT3R",
       "application_id": "0x351158069e6f06eb4a2fa36878e653ecee7089db3ed4a1e2af1d0fdeb6670e6a",
       "is_oss": false,
-      "gas_fees": 2.4222341066639776,
+      "gas_fees": 2.4222341066639768,
       "transaction_count": 56467,
       "trusted_transaction_count": 1557,
       "trusted_transaction_share": 0.02757362707422034,
@@ -3680,7 +3661,7 @@
       "trusted_recurring_users": 8,
       "power_user_addresses": 176,
       "openrank_trusted_users_count": 1,
-      "log_gas_fees": 0.534309715244451,
+      "log_gas_fees": 0.5343097152444509,
       "log_transaction_count": 4.751802406041366,
       "log_trusted_transaction_count": 3.1925674533365456
     }
@@ -3768,10 +3749,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Pyth Network",
       "application_id": "0x892cf9449b4046f9b68efe6ffccfcd8df1322b1a9ffc65a2bbfe1207c4ceba8d",
       "is_oss": true,
-      "gas_fees": 0.08494982319626436,
+      "gas_fees": 0.08494982319626439,
       "transaction_count": 28751,
       "trusted_transaction_count": 0,
       "trusted_transaction_share": 0,
@@ -4805,10 +4785,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Basepaint",
       "application_id": "0xc0901c8f9503f0bf91a1cca0c6c90e55af8719cc2237fb4a0bf0770b307cbd11",
       "is_oss": true,
-      "gas_fees": 1.7435659943012884,
+      "gas_fees": 1.7435659943012873,
       "transaction_count": 270552,
       "trusted_transaction_count": 70730,
       "trusted_transaction_share": 0.2614284869452083,
@@ -4821,7 +4800,7 @@
       "trusted_recurring_users": 770,
       "power_user_addresses": 6033,
       "openrank_trusted_users_count": 638,
-      "log_gas_fees": 0.43831541126662543,
+      "log_gas_fees": 0.4383154112666252,
       "log_transaction_count": 5.432252353926417,
       "log_trusted_transaction_count": 4.849609798212687
     }
@@ -4906,10 +4885,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Hypersub",
       "application_id": "0x6435c8574014275b1d554a3ab9dd85f775fa3563258ce855d6aeb07e7918f6e5",
       "is_oss": false,
-      "gas_fees": 0.28699047100145975,
+      "gas_fees": 0.28699047100145963,
       "transaction_count": 12754,
       "trusted_transaction_count": 9600,
       "trusted_transaction_share": 0.7527050337149129,
@@ -5137,10 +5115,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "far.quest - Farcaster Super App",
       "application_id": "0x182f5a5c04ccdc4739ee9f362af72d7a0f55d6b410cc9dc2b52dc7f99f06f3f9",
       "is_oss": true,
-      "gas_fees": 0.4293672850236825,
+      "gas_fees": 0.429367285023683,
       "transaction_count": 77422,
       "trusted_transaction_count": 25439,
       "trusted_transaction_share": 0.3285758569915528,
@@ -5153,7 +5130,7 @@
       "trusted_recurring_users": 356,
       "power_user_addresses": 11907,
       "openrank_trusted_users_count": 341,
-      "log_gas_fees": 0.15514383786289365,
+      "log_gas_fees": 0.1551438378628938,
       "log_transaction_count": 4.888869995427824,
       "log_trusted_transaction_count": 4.405517106976376
     }
@@ -5285,10 +5262,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Your Brians",
       "application_id": "0xe85701181a20c498c1521e35d203247a7ed0a54e496d52119eccc2e28e8cf078",
       "is_oss": false,
-      "gas_fees": 0.06370263730404663,
+      "gas_fees": 0.06370263730404666,
       "transaction_count": 5472,
       "trusted_transaction_count": 677,
       "trusted_transaction_share": 0.12372076023391813,
@@ -5581,25 +5557,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "PAWS Wildlife Room Onchain Vote in a Frame",
       "application_id": "0xa20b4eaab24516b287792b0d45c2cb890561f2db5910a6b9a2507bb4c8d84455",
       "is_oss": false,
-      "gas_fees": 0.03137801306213781,
+      "gas_fees": 0.03137801306213783,
       "transaction_count": 3922,
-      "trusted_transaction_count": 930,
-      "trusted_transaction_share": 0.23712391636919938,
+      "trusted_transaction_count": 929,
+      "trusted_transaction_share": 0.23686894441611422,
       "trusted_users_onboarded": 64,
       "daily_active_addresses": 11.360655737704919,
-      "trusted_daily_active_users": 3.737704918032787,
+      "trusted_daily_active_users": 3.7336065573770494,
       "monthly_active_addresses": 313.7037037037037,
-      "trusted_monthly_active_users": 99.75308641975309,
+      "trusted_monthly_active_users": 99.62962962962963,
       "recurring_addresses": 12,
       "trusted_recurring_users": 7,
       "power_user_addresses": 644,
       "openrank_trusted_users_count": 37,
       "log_gas_fees": 0.013417868870611077,
       "log_transaction_count": 3.593618308129536,
-      "log_trusted_transaction_count": 2.9689496809813427
+      "log_trusted_transaction_count": 2.9684829485539352
     }
   },
   {
@@ -5765,10 +5740,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Zerius",
       "application_id": "0x6dde8a1ab47a68ec31d112a28ed9777d5d753b3aee17ea2452bc7d787f944974",
       "is_oss": false,
-      "gas_fees": 1.1102610643951467,
+      "gas_fees": 1.1102610643951452,
       "transaction_count": 139080,
       "trusted_transaction_count": 1047,
       "trusted_transaction_share": 0.0075280414150129425,
@@ -5781,7 +5755,7 @@
       "trusted_recurring_users": 8,
       "power_user_addresses": 1151,
       "openrank_trusted_users_count": 3,
-      "log_gas_fees": 0.3243361860146545,
+      "log_gas_fees": 0.3243361860146543,
       "log_transaction_count": 5.143267804623535,
       "log_trusted_transaction_count": 3.0203612826477078
     }
@@ -5886,10 +5860,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "ORA Onchain AI Oracle on Optimism",
       "application_id": "0x87c29aa0ad226c7f20cf3f37842ced2a795ad38a03a18f0829d1c09dbc77f51a",
       "is_oss": false,
-      "gas_fees": 0.3673723357693409,
+      "gas_fees": 0.36737233576934053,
       "transaction_count": 1632,
       "trusted_transaction_count": 75,
       "trusted_transaction_share": 0,
@@ -5902,7 +5875,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 44,
       "openrank_trusted_users_count": 4,
-      "log_gas_fees": 0.13588678914873725,
+      "log_gas_fees": 0.1358867891487372,
       "log_transaction_count": 3.212986184736668,
       "log_trusted_transaction_count": 1.8808135922807914
     }
@@ -6178,10 +6151,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Sturdy",
       "application_id": "0x4b987d79912367ada6c3fa1bf6ad1daa6d164078f8c5efc8db2128b9231087a9",
       "is_oss": true,
-      "gas_fees": 0.08795118417894213,
+      "gas_fees": 0.08795118417894211,
       "transaction_count": 88230,
       "trusted_transaction_count": 18649,
       "trusted_transaction_share": 0.21136801541425818,
@@ -6475,10 +6447,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "RubyScore",
       "application_id": "0x482720e73e91229b5f7d5e2d80a54eb8a722309c26dba03355359788b18f4373",
       "is_oss": true,
-      "gas_fees": 0.7797956729520882,
+      "gas_fees": 0.7797956729520884,
       "transaction_count": 317382,
       "trusted_transaction_count": 44900,
       "trusted_transaction_share": 0.14146990062448406,
@@ -6679,25 +6650,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Bored Town",
       "application_id": "0x5316b19c17eba417d70b924baa6a1c467b14069968424d14fcf1409f2a308873",
       "is_oss": true,
-      "gas_fees": 0.28852947874490054,
+      "gas_fees": 0.28852947874490065,
       "transaction_count": 77833,
-      "trusted_transaction_count": 9126,
-      "trusted_transaction_share": 0.11725103747767657,
+      "trusted_transaction_count": 9120,
+      "trusted_transaction_share": 0.11717394935310216,
       "trusted_users_onboarded": 86,
       "daily_active_addresses": 236.45901639344262,
-      "trusted_daily_active_users": 24.192622950819672,
+      "trusted_daily_active_users": 24.18032786885246,
       "monthly_active_addresses": 5058.271604938272,
-      "trusted_monthly_active_users": 511.60493827160496,
+      "trusted_monthly_active_users": 511.358024691358,
       "recurring_addresses": 858,
       "trusted_recurring_users": 360,
       "power_user_addresses": 4299,
       "openrank_trusted_users_count": 110,
       "log_gas_fees": 0.11009435871136788,
       "log_transaction_count": 4.89116935003362,
-      "log_trusted_transaction_count": 3.9603280505301433
+      "log_trusted_transaction_count": 3.9600424557268417
     }
   },
   {
@@ -6896,10 +6866,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "RMRK",
       "application_id": "0x2b6c413a5b076f917ada28ac44b0995daee75f06678705d1eb75ff5da38bdd3b",
       "is_oss": true,
-      "gas_fees": 0.3112007472391194,
+      "gas_fees": 0.31120074723911917,
       "transaction_count": 9417,
       "trusted_transaction_count": 848,
       "trusted_transaction_share": 0,
@@ -6912,7 +6881,7 @@
       "trusted_recurring_users": 9,
       "power_user_addresses": 164,
       "openrank_trusted_users_count": 3,
-      "log_gas_fees": 0.1176691880622396,
+      "log_gas_fees": 0.11766918806223953,
       "log_transaction_count": 3.9739586861067036,
       "log_trusted_transaction_count": 2.928907690243953
     }
@@ -7066,10 +7035,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Glo Dollar",
       "application_id": "0xe13ef8130233ba5feca029110f3abf30cb33f7efe2d915ba7e536200b67fe0bf",
-      "is_oss": true,
-      "gas_fees": 0.014531279162390647,
+      "is_oss": false,
+      "gas_fees": 0.014531279162390678,
       "transaction_count": 1983,
       "trusted_transaction_count": 226,
       "trusted_transaction_share": 0,
@@ -7480,10 +7448,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Hedgey",
       "application_id": "0x928dcd931ff2bc44a5d3b15c500adfbf8d3e3a89e4936823e0b3f053c38f978c",
       "is_oss": false,
-      "gas_fees": 1.0014496024550728,
+      "gas_fees": 1.001449602455071,
       "transaction_count": 21095,
       "trusted_transaction_count": 8029,
       "trusted_transaction_share": 0.3806115193173738,
@@ -7496,7 +7463,7 @@
       "trusted_recurring_users": 48,
       "power_user_addresses": 9449,
       "openrank_trusted_users_count": 788,
-      "log_gas_fees": 0.3013446588172274,
+      "log_gas_fees": 0.301344658817227,
       "log_transaction_count": 4.324200116785378,
       "log_trusted_transaction_count": 3.904715545278681
     }
@@ -7831,10 +7798,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Let's Get HAI",
       "application_id": "0x447b6819a0fa334f2429f86c022cf75ef3cad7e6e96078cb361ab961514b5125",
       "is_oss": true,
-      "gas_fees": 1.0645389316064469,
+      "gas_fees": 1.064538931606446,
       "transaction_count": 24577,
       "trusted_transaction_count": 2840,
       "trusted_transaction_share": 0.11555519388045733,
@@ -7847,7 +7813,7 @@
       "trusted_recurring_users": 40,
       "power_user_addresses": 1385,
       "openrank_trusted_users_count": 96,
-      "log_gas_fees": 0.31482307690431893,
+      "log_gas_fees": 0.3148230769043187,
       "log_transaction_count": 4.390546539888802,
       "log_trusted_transaction_count": 3.4534712337229356
     }
@@ -8003,10 +7969,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Catalog Radio",
       "application_id": "0x8c0d39ff0da67bf02e286f0d9e92da3470476333f185cc72c1db4923ace41901",
       "is_oss": true,
-      "gas_fees": 0.062173944404483775,
+      "gas_fees": 0.06217394440448377,
       "transaction_count": 9287,
       "trusted_transaction_count": 4196,
       "trusted_transaction_share": 0.4518143641649618,
@@ -8242,10 +8207,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Multicaller",
       "application_id": "0xfc54b4a9c537be25238cba3f05100b733aeee83a3eb3fdae60d651b3b913390c",
       "is_oss": true,
-      "gas_fees": 11.667568375612138,
+      "gas_fees": 11.667568375612136,
       "transaction_count": 980032,
       "trusted_transaction_count": 626,
       "trusted_transaction_share": 0.0006387546529092928,
@@ -8510,10 +8474,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Whale",
       "application_id": "0x9ee9c906642c79f905691d25a3bac3627b2f709e8bc20883afda1c4f2b76ef7e",
       "is_oss": false,
-      "gas_fees": 0.42883819648486027,
+      "gas_fees": 0.428838196484861,
       "transaction_count": 38876,
       "trusted_transaction_count": 716,
       "trusted_transaction_share": 0.018417532667969957,
@@ -8526,7 +8489,7 @@
       "trusted_recurring_users": 6,
       "power_user_addresses": 1040,
       "openrank_trusted_users_count": 1,
-      "log_gas_fees": 0.15498305149749064,
+      "log_gas_fees": 0.15498305149749092,
       "log_transaction_count": 4.589692744584641,
       "log_trusted_transaction_count": 2.8555191556678
     }
@@ -8692,10 +8655,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Opti.Domains",
       "application_id": "0x66cce776ce6eaa99192120fc25b91ecc7b98e03210a08f0d3bfda82f542d3e1a",
       "is_oss": true,
-      "gas_fees": 0.40599687879066637,
+      "gas_fees": 0.40599687879066665,
       "transaction_count": 3684,
       "trusted_transaction_count": 935,
       "trusted_transaction_share": 0.253800217155266,
@@ -8708,7 +8670,7 @@
       "trusted_recurring_users": 7,
       "power_user_addresses": 469,
       "openrank_trusted_users_count": 23,
-      "log_gas_fees": 0.1479843565831686,
+      "log_gas_fees": 0.14798435658316866,
       "log_transaction_count": 3.56643749219507,
       "log_trusted_transaction_count": 2.971275848738105
     }
@@ -8999,9 +8961,8 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Speedtracer",
       "application_id": "0xf1d424db61a36ef7e1bef62f6c62f00b2e5ff74ce12c9ca3d11d3dc39e7f14ea",
-      "is_oss": false,
+      "is_oss": true,
       "gas_fees": 0.28224221081698586,
       "transaction_count": 19413,
       "trusted_transaction_count": 8536,
@@ -9095,10 +9056,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "INT",
       "application_id": "0x3db32e85563bfe1014acc9da5b0d3ff6b802e8205cfce45dd7157c901ece5f36",
       "is_oss": false,
-      "gas_fees": 0.05110202077062923,
+      "gas_fees": 0.051102020770629246,
       "transaction_count": 2341,
       "trusted_transaction_count": 238,
       "trusted_transaction_share": 0,
@@ -9262,7 +9222,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Talent Protocol",
       "application_id": "0x2e0e80846b4d52b126f3c9a20a01876bbcb80de67befe916870c5d8736af6c2a",
       "is_oss": true,
       "gas_fees": 0.000009895767262442,
@@ -9370,10 +9329,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "builder.fi",
       "application_id": "0x7d7720ffd4c1ba8e67473a24a14ab4fab47486102436e14edf63ed2070669d49",
       "is_oss": false,
-      "gas_fees": 0.25712846727810973,
+      "gas_fees": 0.2571284672781095,
       "transaction_count": 9420,
       "trusted_transaction_count": 32,
       "trusted_transaction_share": 0,
@@ -9386,7 +9344,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 9,
       "openrank_trusted_users_count": 1,
-      "log_gas_fees": 0.09937966096291667,
+      "log_gas_fees": 0.0993796609629166,
       "log_transaction_count": 3.9740970037941312,
       "log_trusted_transaction_count": 1.5185139398778875
     }
@@ -9469,10 +9427,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Based Onchain Dinos",
       "application_id": "0xb9b7f1175044c211555b5589ee389263d2e455f99c1505e6b121cf6e3f5caaff",
       "is_oss": false,
-      "gas_fees": 0.04874085182367579,
+      "gas_fees": 0.04874085182367578,
       "transaction_count": 1777,
       "trusted_transaction_count": 577,
       "trusted_transaction_share": 0.32470455824423183,
@@ -9614,25 +9571,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Paragraph",
       "application_id": "0x9da706c1c51cd59ee70b5814c10246ed1a786cb1a77339e84d96ed006b5792ce",
       "is_oss": false,
-      "gas_fees": 2.8536620144395215,
+      "gas_fees": 2.853662014439522,
       "transaction_count": 327180,
-      "trusted_transaction_count": 46538,
-      "trusted_transaction_share": 0.14223974570572773,
+      "trusted_transaction_count": 46542,
+      "trusted_transaction_share": 0.14225197139189438,
       "trusted_users_onboarded": 1585,
       "daily_active_addresses": 1110.97131147541,
-      "trusted_daily_active_users": 171.05737704918033,
+      "trusted_daily_active_users": 171.06967213114754,
       "monthly_active_addresses": 22578.765432098768,
-      "trusted_monthly_active_users": 3241.7283950617284,
+      "trusted_monthly_active_users": 3241.9753086419755,
       "recurring_addresses": 9477,
       "trusted_recurring_users": 2320,
       "power_user_addresses": 32479,
       "openrank_trusted_users_count": 666,
       "log_gas_fees": 0.5858736221770902,
       "log_transaction_count": 5.514788075455447,
-      "log_trusted_transaction_count": 4.667817047211394
+      "log_trusted_transaction_count": 4.667854372965648
     }
   },
   {
@@ -9704,10 +9660,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Guac (Farcaster)",
       "application_id": "0x07bbe4af3099fbf9f18fb4ac7078ee836c5d0d3cc2c29f192dd366455671e2a5",
       "is_oss": false,
-      "gas_fees": 0.04426237430944494,
+      "gas_fees": 0.04426237430944498,
       "transaction_count": 28167,
       "trusted_transaction_count": 5041,
       "trusted_transaction_share": 0.17896829623318067,
@@ -9802,10 +9757,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Tiny Based Frogs",
       "application_id": "0xf1358b33be174954b454aebca311fc83753dc1d8c743e25c829091ccd69fedd0",
       "is_oss": false,
-      "gas_fees": 0.008675003292666161,
+      "gas_fees": 0.008675003292666158,
       "transaction_count": 558,
       "trusted_transaction_count": 118,
       "trusted_transaction_share": 0,
@@ -9892,10 +9846,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Based Onchain Cubes",
       "application_id": "0xa45ebed9267cf10226c68abc98b1871bdfa611ee51050c161e316be1dbf7e696",
       "is_oss": false,
-      "gas_fees": 0.004840640080042927,
+      "gas_fees": 0.0048406400800429265,
       "transaction_count": 220,
       "trusted_transaction_count": 87,
       "trusted_transaction_share": 0,
@@ -9999,10 +9952,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Ham",
       "application_id": "0xe2cffffc3c00303412781c879691480a5e6e91f936ca073321babb01c6969080",
       "is_oss": false,
-      "gas_fees": 1.0939066930759225,
+      "gas_fees": 1.0939066930759236,
       "transaction_count": 102023,
       "trusted_transaction_count": 13440,
       "trusted_transaction_share": 0.13173500093116258,
@@ -10015,7 +9967,7 @@
       "trusted_recurring_users": 357,
       "power_user_addresses": 3477,
       "openrank_trusted_users_count": 388,
-      "log_gas_fees": 0.3209573251054282,
+      "log_gas_fees": 0.3209573251054284,
       "log_transaction_count": 5.008702346678729,
       "log_trusted_transaction_count": 4.128431581093246
     }
@@ -10168,25 +10120,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "WOOFi",
       "application_id": "0x000c2ce4773defb3010a58d3800d0ec9d432189c574ba26d3103f1db44a5af6d",
       "is_oss": true,
-      "gas_fees": 15.702386867552338,
-      "transaction_count": 1128567,
-      "trusted_transaction_count": 15766,
-      "trusted_transaction_share": 0.013969928236427257,
-      "trusted_users_onboarded": 487,
-      "daily_active_addresses": 1274.0245901639344,
-      "trusted_daily_active_users": 47.59836065573771,
-      "monthly_active_addresses": 31558.641975308645,
-      "trusted_monthly_active_users": 1115.0617283950617,
+      "gas_fees": 16.743455507606356,
+      "transaction_count": 1201662,
+      "trusted_transaction_count": 25748,
+      "trusted_transaction_share": 0.021426990285121773,
+      "trusted_users_onboarded": 693,
+      "daily_active_addresses": 1525.889344262295,
+      "trusted_daily_active_users": 81.81147540983606,
+      "monthly_active_addresses": 37539.38271604938,
+      "trusted_monthly_active_users": 1823.7037037037037,
       "recurring_addresses": 14610,
-      "trusted_recurring_users": 529,
-      "power_user_addresses": 17077,
-      "openrank_trusted_users_count": 79,
-      "log_gas_fees": 1.2227785387724444,
-      "log_transaction_count": 6.0525277318985395,
-      "log_trusted_transaction_count": 4.197749067622612
+      "trusted_recurring_users": 1363,
+      "power_user_addresses": 23121,
+      "openrank_trusted_users_count": 100,
+      "log_gas_fees": 1.2490382018399004,
+      "log_transaction_count": 6.079782689163361,
+      "log_trusted_transaction_count": 4.410760367244587
     }
   },
   {
@@ -10501,25 +10452,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "OpenOcean",
       "application_id": "0x24ff0fb2933e55b169a80d9bd35a00a7011795387717b27445ccdc0f8660d740",
       "is_oss": true,
       "gas_fees": 5.121021936409476,
       "transaction_count": 131511,
-      "trusted_transaction_count": 6933,
-      "trusted_transaction_share": 0.05271802358738052,
+      "trusted_transaction_count": 6934,
+      "trusted_transaction_share": 0.05272562751404825,
       "trusted_users_onboarded": 191,
       "daily_active_addresses": 354.9467213114754,
-      "trusted_daily_active_users": 23.131147540983605,
+      "trusted_daily_active_users": 23.135245901639344,
       "monthly_active_addresses": 7804.567901234568,
-      "trusted_monthly_active_users": 540.7407407407408,
+      "trusted_monthly_active_users": 540.8641975308642,
       "recurring_addresses": 2039,
       "trusted_recurring_users": 204,
       "power_user_addresses": 9602,
       "openrank_trusted_users_count": 127,
       "log_gas_fees": 0.7868239359188112,
       "log_transaction_count": 5.1189653824532195,
-      "log_trusted_transaction_count": 3.840983837320378
+      "log_trusted_transaction_count": 3.8410464654093035
     }
   },
   {
@@ -10616,10 +10566,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Extra Finance",
       "application_id": "0x512f97f1de28ad530f752d53bf4f56ed16d34a3121f0512cd5a0485c2074b312",
-      "is_oss": false,
-      "gas_fees": 49.74350467106293,
+      "is_oss": true,
+      "gas_fees": 49.74350467106283,
       "transaction_count": 634466,
       "trusted_transaction_count": 28401,
       "trusted_transaction_share": 0.044763627995826415,
@@ -10632,7 +10581,7 @@
       "trusted_recurring_users": 414,
       "power_user_addresses": 5744,
       "openrank_trusted_users_count": 68,
-      "log_gas_fees": 1.7053804590768968,
+      "log_gas_fees": 1.7053804590768962,
       "log_transaction_count": 5.802409038423461,
       "log_trusted_transaction_count": 4.453348923088627
     }
@@ -10916,10 +10865,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "NFT HOOK",
       "application_id": "0x37c2292c6316d1f9b796c3eeac2049e38f31eb3dee37db0e7987854de1b001d0",
-      "is_oss": false,
-      "gas_fees": 2.4168630119523264,
+      "is_oss": true,
+      "gas_fees": 2.416863011952326,
       "transaction_count": 466684,
       "trusted_transaction_count": 3037,
       "trusted_transaction_share": 0.006507615431426833,
@@ -10932,7 +10880,7 @@
       "trusted_recurring_users": 22,
       "power_user_addresses": 4688,
       "openrank_trusted_users_count": 8,
-      "log_gas_fees": 0.5336275675181752,
+      "log_gas_fees": 0.5336275675181751,
       "log_transaction_count": 5.669023842192378,
       "log_trusted_transaction_count": 3.4825877695267677
     }
@@ -11036,25 +10984,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Boost",
       "application_id": "0x5c4cbf1cf48fea0f82cfdf33b94f43910f3062b6cca1fbfe46d4ee7e1f5506d1",
       "is_oss": true,
-      "gas_fees": 7.0906860854884775,
+      "gas_fees": 7.090686085488496,
       "transaction_count": 1008652,
-      "trusted_transaction_count": 204716,
-      "trusted_transaction_share": 0.2029599901650916,
+      "trusted_transaction_count": 204719,
+      "trusted_transaction_share": 0.20296296443173661,
       "trusted_users_onboarded": 361,
       "daily_active_addresses": 1954.6311475409836,
-      "trusted_daily_active_users": 306.6844262295082,
+      "trusted_daily_active_users": 306.6967213114754,
       "monthly_active_addresses": 18467.777777777777,
-      "trusted_monthly_active_users": 2082.222222222222,
+      "trusted_monthly_active_users": 2082.4691358024693,
       "recurring_addresses": 11532,
       "trusted_recurring_users": 2035,
       "power_user_addresses": 14713,
       "openrank_trusted_users_count": 323,
-      "log_gas_fees": 0.9079853510940834,
+      "log_gas_fees": 0.9079853510940844,
       "log_transaction_count": 6.003741784567509,
-      "log_trusted_transaction_count": 5.3111539086108985
+      "log_trusted_transaction_count": 5.311160272879129
     }
   },
   {
@@ -11159,25 +11106,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Beefy",
       "application_id": "0x30769523b16315b6404ce3c6dbaf610028acdf3133dca8a4d427e0d19d3628c9",
       "is_oss": false,
-      "gas_fees": 5.894676949703798,
+      "gas_fees": 5.894676949703796,
       "transaction_count": 152922,
-      "trusted_transaction_count": 14415,
-      "trusted_transaction_share": 0.09426374229999608,
+      "trusted_transaction_count": 14416,
+      "trusted_transaction_share": 0.09427028158145984,
       "trusted_users_onboarded": 331,
       "daily_active_addresses": 323.2745901639344,
-      "trusted_daily_active_users": 42.872950819672134,
+      "trusted_daily_active_users": 42.877049180327866,
       "monthly_active_addresses": 6189.0123456790125,
-      "trusted_monthly_active_users": 1036.6666666666667,
+      "trusted_monthly_active_users": 1036.79012345679,
       "recurring_addresses": 3311,
       "trusted_recurring_users": 365,
       "power_user_addresses": 12138,
       "openrank_trusted_users_count": 139,
       "log_gas_fees": 0.8385139221075433,
       "log_transaction_count": 5.184472809296414,
-      "log_trusted_transaction_count": 4.158844773634987
+      "log_trusted_transaction_count": 4.158874898455997
     }
   },
   {
@@ -11325,25 +11271,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "doginme memecoin",
       "application_id": "0xeecfa614f020c2ea4c2eb431246befedf35ddc6c52cfaa83d0c4caf2f580f9f4",
       "is_oss": false,
-      "gas_fees": 0.7450825081893228,
+      "gas_fees": 0.7450825081893231,
       "transaction_count": 46623,
-      "trusted_transaction_count": 3025,
-      "trusted_transaction_share": 0.06488213971644896,
+      "trusted_transaction_count": 3018,
+      "trusted_transaction_share": 0.06473199922784892,
       "trusted_users_onboarded": 243,
       "daily_active_addresses": 123.62295081967213,
-      "trusted_daily_active_users": 9.995901639344263,
+      "trusted_daily_active_users": 9.971311475409836,
       "monthly_active_addresses": 2826.0493827160494,
-      "trusted_monthly_active_users": 218.76543209876544,
+      "trusted_monthly_active_users": 218.51851851851853,
       "recurring_addresses": 274,
       "trusted_recurring_users": 34,
       "power_user_addresses": 2945,
       "openrank_trusted_users_count": 203,
-      "log_gas_fees": 0.24181596539504147,
+      "log_gas_fees": 0.24181596539504155,
       "log_transaction_count": 4.668609530089896,
-      "log_trusted_transaction_count": 3.4808689236871677
+      "log_trusted_transaction_count": 3.479863113023098
     }
   },
   {
@@ -11423,10 +11368,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Mintify",
       "application_id": "0xb41e32621e56fbe7d89052f3c852ff70c6bfe21ba5a91910ef2fd548eb6e4e8a",
       "is_oss": false,
-      "gas_fees": 0.20620639605986193,
+      "gas_fees": 0.20620639605986207,
       "transaction_count": 4661,
       "trusted_transaction_count": 457,
       "trusted_transaction_share": 0.09804762926410641,
@@ -11439,7 +11383,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 136,
       "openrank_trusted_users_count": 6,
-      "log_gas_fees": 0.08142162704169838,
+      "log_gas_fees": 0.08142162704169846,
       "log_transaction_count": 3.668572269184558,
       "log_trusted_transaction_count": 2.660865478003869
     }
@@ -11651,10 +11595,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Balancer",
       "application_id": "0x1c33980ce1d1290b5300719114dbe2cade0b820cb2b45321b715fd53d7abc8d2",
       "is_oss": true,
-      "gas_fees": 3.2618116421577987,
+      "gas_fees": 3.2618116421577947,
       "transaction_count": 194522,
       "trusted_transaction_count": 16127,
       "trusted_transaction_share": 0.08290578957650034,
@@ -11667,7 +11610,7 @@
       "trusted_recurring_users": 330,
       "power_user_addresses": 8363,
       "openrank_trusted_users_count": 93,
-      "log_gas_fees": 0.6295942514365668,
+      "log_gas_fees": 0.6295942514365663,
       "log_transaction_count": 5.288970958785297,
       "log_trusted_transaction_count": 4.207580514765431
     }
@@ -11813,25 +11756,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Party.app + Party Protocol",
       "application_id": "0x850df51e29f2846a5f085d88e6b6fc13fad51ad7161f8a825ed09d470668161a",
       "is_oss": true,
-      "gas_fees": 6.996440529161373,
+      "gas_fees": 6.996440529161369,
       "transaction_count": 354541,
-      "trusted_transaction_count": 81048,
-      "trusted_transaction_share": 0.22859979522819646,
-      "trusted_users_onboarded": 1630,
+      "trusted_transaction_count": 81055,
+      "trusted_transaction_share": 0.22861953906600366,
+      "trusted_users_onboarded": 1631,
       "daily_active_addresses": 748.2581967213115,
-      "trusted_daily_active_users": 162.83196721311475,
+      "trusted_daily_active_users": 162.85655737704917,
       "monthly_active_addresses": 13889.382716049384,
-      "trusted_monthly_active_users": 2152.345679012346,
+      "trusted_monthly_active_users": 2152.4691358024693,
       "recurring_addresses": 4252,
       "trusted_recurring_users": 1304,
       "power_user_addresses": 13256,
       "openrank_trusted_users_count": 1252,
-      "log_gas_fees": 0.9028967116734242,
+      "log_gas_fees": 0.9028967116734239,
       "log_transaction_count": 5.549667690260399,
-      "log_trusted_transaction_count": 4.9087476607988325
+      "log_trusted_transaction_count": 4.9087851681104535
     }
   },
   {
@@ -11920,10 +11862,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Omnisea",
       "application_id": "0x4373578c03f67b70d7f3e49681e901e66dc705efa292343c2370569cbb3245c5",
       "is_oss": false,
-      "gas_fees": 1.5237809566650067,
+      "gas_fees": 1.523780956665006,
       "transaction_count": 51480,
       "trusted_transaction_count": 6537,
       "trusted_transaction_share": 0.126981351981352,
@@ -11936,7 +11877,7 @@
       "trusted_recurring_users": 66,
       "power_user_addresses": 5651,
       "openrank_trusted_users_count": 81,
-      "log_gas_fees": 0.40205165903493945,
+      "log_gas_fees": 0.40205165903493933,
       "log_transaction_count": 4.7116469743291605,
       "log_trusted_transaction_count": 3.81544491624435
     }
@@ -12054,10 +11995,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Streameth",
       "application_id": "0x848488156d9bfc5356583da57253193a258acebcdbc3ba2a10dc8ef81bd815fe",
       "is_oss": true,
-      "gas_fees": 0.014105378309022202,
+      "gas_fees": 0.014105378309022223,
       "transaction_count": 11007,
       "trusted_transaction_count": 899,
       "trusted_transaction_share": 0.0816752975379304,
@@ -12668,10 +12608,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Smol",
       "application_id": "0x79fa54d6c030c7803827e96933fc93b092f638079c738d13a27a08b3905b95ec",
       "is_oss": true,
-      "gas_fees": 13.305819751789207,
+      "gas_fees": 13.305819751789212,
       "transaction_count": 35069,
       "trusted_transaction_count": 1050,
       "trusted_transaction_share": 0.02994097350936725,
@@ -12684,7 +12623,7 @@
       "trusted_recurring_users": 27,
       "power_user_addresses": 239,
       "openrank_trusted_users_count": 37,
-      "log_gas_fees": 1.1555127487877856,
+      "log_gas_fees": 1.1555127487877859,
       "log_transaction_count": 4.544935765881503,
       "log_trusted_transaction_count": 3.021602716028242
     }
@@ -13639,10 +13578,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Gamma",
       "application_id": "0x20528d941017e017af28e86bd57bec2c7c5467e6ed952941502e04493a966cb3",
       "is_oss": true,
-      "gas_fees": 6.855095853121636,
+      "gas_fees": 6.855095853121637,
       "transaction_count": 38170,
       "trusted_transaction_count": 1060,
       "trusted_transaction_share": 0.027770500392978778,
@@ -13655,7 +13593,7 @@
       "trusted_recurring_users": 29,
       "power_user_addresses": 697,
       "openrank_trusted_users_count": 8,
-      "log_gas_fees": 0.8951514889594179,
+      "log_gas_fees": 0.895151488959418,
       "log_transaction_count": 4.581733537701078,
       "log_trusted_transaction_count": 3.025715383901341
     }
@@ -13788,10 +13726,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "ZKP2P",
       "application_id": "0x941cd8e246098a5392e47379f6353f6e37c769b022546b640aa5c6c78f91119e",
       "is_oss": true,
-      "gas_fees": 0.03144472427833016,
+      "gas_fees": 0.03144472427833012,
       "transaction_count": 1764,
       "trusted_transaction_count": 612,
       "trusted_transaction_share": 0,
@@ -13902,25 +13839,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "LI.FI",
       "application_id": "0x517eaa9c56951de89261f2d7830ea49aae92f2a903104a17d9c5c2edd4959806",
       "is_oss": true,
-      "gas_fees": 41.48424292027209,
+      "gas_fees": 41.48424292027212,
       "transaction_count": 1872267,
-      "trusted_transaction_count": 265614,
-      "trusted_transaction_share": 0.14186758619363585,
+      "trusted_transaction_count": 265620,
+      "trusted_transaction_share": 0.14187079086476448,
       "trusted_users_onboarded": 3470,
       "daily_active_addresses": 4756.606557377049,
-      "trusted_daily_active_users": 728.655737704918,
+      "trusted_daily_active_users": 728.6762295081967,
       "monthly_active_addresses": 81520.86419753087,
-      "trusted_monthly_active_users": 9224.074074074075,
+      "trusted_monthly_active_users": 9224.567901234568,
       "recurring_addresses": 57232,
-      "trusted_recurring_users": 11244,
+      "trusted_recurring_users": 11245,
       "power_user_addresses": 58131,
       "openrank_trusted_users_count": 595,
-      "log_gas_fees": 1.6282278834228425,
+      "log_gas_fees": 1.628227883422843,
       "log_transaction_count": 6.272368014589342,
-      "log_trusted_transaction_count": 5.424252597176709
+      "log_trusted_transaction_count": 5.424262407381182
     }
   },
   {
@@ -14109,10 +14045,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Aragon",
       "application_id": "0xa08c7ab7824d147d6cb87ffb4e86cec454a030d48b8c395bad6d64456be3d911",
       "is_oss": true,
-      "gas_fees": 0.06509420897104902,
+      "gas_fees": 0.06509420897104896,
       "transaction_count": 2404,
       "trusted_transaction_count": 179,
       "trusted_transaction_share": 0,
@@ -14125,7 +14060,7 @@
       "trusted_recurring_users": 3,
       "power_user_addresses": 72,
       "openrank_trusted_users_count": 11,
-      "log_gas_fees": 0.027388023386729722,
+      "log_gas_fees": 0.027388023386729632,
       "log_transaction_count": 3.3811150807098507,
       "log_trusted_transaction_count": 2.255272505103306
     }
@@ -14325,7 +14260,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Synonym Finance",
       "application_id": "0xd9bec9d0ab1167eb2d3618afac3145cb8a88b60d64b119c2b4cc8d822f4b8208",
       "is_oss": false,
       "gas_fees": 0.015783205919239148,
@@ -14664,10 +14598,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Ambire",
       "application_id": "0xb908ea18fd164cf089649ba95887c221f5e8b93a08235dff43e33bd6617239dc",
       "is_oss": false,
-      "gas_fees": 0.024270149649836953,
+      "gas_fees": 0.02427014964983693,
       "transaction_count": 1049,
       "trusted_transaction_count": 0,
       "trusted_transaction_share": 0,
@@ -14760,7 +14693,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Oku Trade",
       "application_id": "0xb926ab918147d2264dba94a429eb07986aa533fd6062a78736d3eda4e0b4a69b",
       "is_oss": false,
       "gas_fees": 0.04237116044439242,
@@ -14854,10 +14786,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Phi",
       "application_id": "0xfb9c6b3dcd75e0d0f4e0b0d4b27a4e1398ec6147eb1af3499eb8b87145bfa709",
       "is_oss": false,
-      "gas_fees": 6.255534594013062,
+      "gas_fees": 6.255534594013056,
       "transaction_count": 131734,
       "trusted_transaction_count": 12938,
       "trusted_transaction_share": 0.0982130657233516,
@@ -14870,7 +14801,7 @@
       "trusted_recurring_users": 1,
       "power_user_addresses": 20404,
       "openrank_trusted_users_count": 315,
-      "log_gas_fees": 0.8606694171426634,
+      "log_gas_fees": 0.8606694171426631,
       "log_transaction_count": 5.119701175777591,
       "log_trusted_transaction_count": 4.111900712865614
     }
@@ -15065,10 +14996,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "NFTs2Me",
       "application_id": "0xd54e1032bf16d649f8f8f0a7da42a249966ad4a270b4c17b24ded1e32c97b2bf",
       "is_oss": false,
-      "gas_fees": 20.3152889329055,
+      "gas_fees": 20.315288932905496,
       "transaction_count": 1807419,
       "trusted_transaction_count": 83189,
       "trusted_transaction_share": 0.04602640560932468,
@@ -15326,10 +15256,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Kiwi News",
       "application_id": "0x5b054742b09f8ce4092a15700ef9781520a6ff2928ba5ee09c78ad4dd8817b85",
       "is_oss": false,
-      "gas_fees": 0.002628082679058586,
+      "gas_fees": 0.002628082679058587,
       "transaction_count": 898,
       "trusted_transaction_count": 668,
       "trusted_transaction_share": 0.7438752783964365,
@@ -15590,10 +15519,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Whimsical Euphoria: A White Inflatable Sheep",
       "application_id": "0x79611ec31e5cee4ed9ca01aa92bb709c045ff0e0bc59ad1c03ca1df50fcb5880",
       "is_oss": false,
-      "gas_fees": 0.1840455625909635,
+      "gas_fees": 0.18404556259096347,
       "transaction_count": 41252,
       "trusted_transaction_count": 190,
       "trusted_transaction_share": 0.004605837292737322,
@@ -15789,10 +15717,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "L2Pass",
       "application_id": "0xe20f59eb1c8f9cb72e07b8d0f067bac997614fd6db06d8c031c5c9235f760dcc",
       "is_oss": true,
-      "gas_fees": 5.225852441077315,
+      "gas_fees": 5.225852441077308,
       "transaction_count": 492017,
       "trusted_transaction_count": 4142,
       "trusted_transaction_share": 0.008418408307030043,
@@ -15805,7 +15732,7 @@
       "trusted_recurring_users": 52,
       "power_user_addresses": 4960,
       "openrank_trusted_users_count": 23,
-      "log_gas_fees": 0.7941988232553787,
+      "log_gas_fees": 0.7941988232553782,
       "log_transaction_count": 5.691980991299227,
       "log_trusted_transaction_count": 3.6173149332982937
     }
@@ -15980,10 +15907,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Superfluid",
       "application_id": "0x3ecbf66c1b21342b26acb0f7d4c6b8bbbef168ffafff3f425de3503fd8dfa535",
       "is_oss": true,
-      "gas_fees": 9.893901627730157,
+      "gas_fees": 9.893901627730134,
       "transaction_count": 41018,
       "trusted_transaction_count": 4046,
       "trusted_transaction_share": 0.0986396216295285,
@@ -15996,7 +15922,7 @@
       "trusted_recurring_users": 89,
       "power_user_addresses": 1314,
       "openrank_trusted_users_count": 171,
-      "log_gas_fees": 1.0371834492621677,
+      "log_gas_fees": 1.0371834492621668,
       "log_transaction_count": 4.612985068519532,
       "log_trusted_transaction_count": 3.6071332043915665
     }
@@ -16093,10 +16019,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Blob Farm",
       "application_id": "0xdfad16356f7cf4f0550787eae192ef0d7a8bde878b765e8fa302dc7e20ff360c",
       "is_oss": false,
-      "gas_fees": 0.3297025268377684,
+      "gas_fees": 0.3297025268377679,
       "transaction_count": 30454,
       "trusted_transaction_count": 5182,
       "trusted_transaction_share": 0.1701582714914297,
@@ -16109,7 +16034,7 @@
       "trusted_recurring_users": 89,
       "power_user_addresses": 533,
       "openrank_trusted_users_count": 56,
-      "log_gas_fees": 0.12375449404775436,
+      "log_gas_fees": 0.12375449404775415,
       "log_transaction_count": 4.48365860383744,
       "log_trusted_transaction_count": 3.7145812088395314
     }
@@ -17517,25 +17442,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Slice",
       "application_id": "0x79159d9bd4981ce68651fb4d585fd5827215309e503f46209adb0ec438f71b30",
       "is_oss": true,
-      "gas_fees": 0.1876096884417449,
+      "gas_fees": 0.18760968844174467,
       "transaction_count": 44675,
-      "trusted_transaction_count": 2402,
-      "trusted_transaction_share": 0.05376608841634024,
-      "trusted_users_onboarded": 215,
+      "trusted_transaction_count": 2401,
+      "trusted_transaction_share": 0.05374370453273643,
+      "trusted_users_onboarded": 214,
       "daily_active_addresses": 26.315573770491802,
-      "trusted_daily_active_users": 7.409836065573771,
+      "trusted_daily_active_users": 7.405737704918033,
       "monthly_active_addresses": 693.7037037037037,
-      "trusted_monthly_active_users": 188.0246913580247,
+      "trusted_monthly_active_users": 187.90123456790124,
       "recurring_addresses": 61,
       "trusted_recurring_users": 38,
       "power_user_addresses": 961,
       "openrank_trusted_users_count": 327,
-      "log_gas_fees": 0.07467373188428421,
+      "log_gas_fees": 0.07467373188428413,
       "log_transaction_count": 4.650074282266017,
-      "log_trusted_transaction_count": 3.3807537708039
+      "log_trusted_transaction_count": 3.3805730030668872
     }
   },
   {
@@ -17622,10 +17546,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Liquidify",
       "application_id": "0xb0c8fe8e359a91bc2fa4b7498e2c7f6a50f730ee1dc821bee016a4b7feb7639e",
       "is_oss": false,
-      "gas_fees": 0.16576893571707269,
+      "gas_fees": 0.16576893571707277,
       "transaction_count": 7204,
       "trusted_transaction_count": 884,
       "trusted_transaction_share": 0.12270960577456969,
@@ -17638,7 +17561,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 375,
       "openrank_trusted_users_count": 17,
-      "log_gas_fees": 0.06661247847835991,
+      "log_gas_fees": 0.06661247847836001,
       "log_transaction_count": 3.857633985150008,
       "log_trusted_transaction_count": 2.9469432706978256
     }
@@ -17780,10 +17703,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Omni X",
       "application_id": "0x6a39702efd7d2658c0b26f05397ea9802317e40404e9c5f3f37ceb9b3dfc71b9",
       "is_oss": false,
-      "gas_fees": 1.5591056939766752,
+      "gas_fees": 1.5591056939766754,
       "transaction_count": 252284,
       "trusted_transaction_count": 5314,
       "trusted_transaction_share": 0.021063563285820742,
@@ -17796,7 +17718,7 @@
       "trusted_recurring_users": 162,
       "power_user_addresses": 3006,
       "openrank_trusted_users_count": 11,
-      "log_gas_fees": 0.40808822311380466,
+      "log_gas_fees": 0.4080882231138047,
       "log_transaction_count": 5.401891429626226,
       "log_trusted_transaction_count": 3.7255032688593155
     }
@@ -18042,10 +17964,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Ethereum Attestation Service (EAS)",
       "application_id": "0xa88844cea135382e3484e39c3172033437121b35ca0bc8b10b9b8253984876b5",
       "is_oss": true,
-      "gas_fees": 4.807074623663114,
+      "gas_fees": 4.807074623663113,
       "transaction_count": 89280,
       "trusted_transaction_count": 10664,
       "trusted_transaction_share": 0.11944444444444445,
@@ -18058,7 +17979,7 @@
       "trusted_recurring_users": 65,
       "power_user_addresses": 6163,
       "openrank_trusted_users_count": 268,
-      "log_gas_fees": 0.7639574069592543,
+      "log_gas_fees": 0.7639574069592542,
       "log_transaction_count": 4.950759045975781,
       "log_trusted_transaction_count": 4.0279608597854475
     }
@@ -18166,25 +18087,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Rainbow (Rainbow Router)",
       "application_id": "0xffffeb1d3576c1e847701c225975ee1a10259e05366b477e98fea7a47c5e5896",
       "is_oss": true,
-      "gas_fees": 4.676067573374617,
+      "gas_fees": 4.676067573374614,
       "transaction_count": 211842,
-      "trusted_transaction_count": 64851,
-      "trusted_transaction_share": 0.3061290962132155,
-      "trusted_users_onboarded": 1326,
+      "trusted_transaction_count": 64871,
+      "trusted_transaction_share": 0.3062235061980155,
+      "trusted_users_onboarded": 1327,
       "daily_active_addresses": 374.3606557377049,
-      "trusted_daily_active_users": 142.10655737704917,
+      "trusted_daily_active_users": 142.14344262295083,
       "monthly_active_addresses": 5687.777777777778,
-      "trusted_monthly_active_users": 1619.7530864197531,
+      "trusted_monthly_active_users": 1619.8765432098767,
       "recurring_addresses": 3531,
       "trusted_recurring_users": 1657,
       "power_user_addresses": 6867,
       "openrank_trusted_users_count": 889,
-      "log_gas_fees": 0.7540475570759637,
+      "log_gas_fees": 0.7540475570759635,
       "log_transaction_count": 5.326014118034437,
-      "log_trusted_transaction_count": 4.811923374029509
+      "log_trusted_transaction_count": 4.812057287410331
     }
   },
   {
@@ -18397,25 +18317,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Exactly Protocol",
       "application_id": "0x89216c66f45f82595fddb810c78df46fcee9be72181e9c92b26b0ce31bd6f413",
       "is_oss": false,
-      "gas_fees": 1.3211174905430296,
+      "gas_fees": 1.3211174905430294,
       "transaction_count": 25471,
-      "trusted_transaction_count": 2702,
-      "trusted_transaction_share": 0.10608142593537749,
+      "trusted_transaction_count": 2703,
+      "trusted_transaction_share": 0.10612068627066075,
       "trusted_users_onboarded": 3,
       "daily_active_addresses": 40.307377049180324,
-      "trusted_daily_active_users": 5.991803278688525,
+      "trusted_daily_active_users": 5.995901639344262,
       "monthly_active_addresses": 737.9012345679013,
-      "trusted_monthly_active_users": 143.82716049382717,
+      "trusted_monthly_active_users": 143.95061728395063,
       "recurring_addresses": 288,
       "trusted_recurring_users": 56,
       "power_user_addresses": 1778,
       "openrank_trusted_users_count": 25,
       "log_gas_fees": 0.3656971241711633,
       "log_transaction_count": 4.406063046057575,
-      "log_trusted_transaction_count": 3.4318460456987254
+      "log_trusted_transaction_count": 3.4320066872695985
     }
   },
   {
@@ -18491,10 +18410,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Multicall3",
       "application_id": "0xf1d9b05abe0f41beab3e5f4b829afd9a7ba3679829d4be72c45e0d340f7bffaa",
       "is_oss": true,
-      "gas_fees": 20.6542530708756,
+      "gas_fees": 20.654253070875587,
       "transaction_count": 140252,
       "trusted_transaction_count": 2460,
       "trusted_transaction_share": 0.017539981889612196,
@@ -18507,7 +18425,7 @@
       "trusted_recurring_users": 54,
       "power_user_addresses": 813,
       "openrank_trusted_users_count": 241,
-      "log_gas_fees": 1.335543208024686,
+      "log_gas_fees": 1.3355432080246858,
       "log_transaction_count": 5.146912159550383,
       "log_trusted_transaction_count": 3.3911116137028023
     }
@@ -18617,10 +18535,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "MiniBridge",
       "application_id": "0x15b210abdc6acfd99e60255792b2b78714f4e8c92c4c5e91b898d48d046212a4",
       "is_oss": true,
-      "gas_fees": 0.051267840819560324,
+      "gas_fees": 0.051267840819560276,
       "transaction_count": 51932,
       "trusted_transaction_count": 7017,
       "trusted_transaction_share": 0.1351190017715474,
@@ -18945,10 +18862,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "zkBob smart contract privacy wallet",
       "application_id": "0x61d2e05f988e678b240a7f00c5f722a5a69f06f085f4ff33199e835a46949469",
       "is_oss": false,
-      "gas_fees": 0.3773646100317887,
+      "gas_fees": 0.37736461003178945,
       "transaction_count": 18176,
       "trusted_transaction_count": 354,
       "trusted_transaction_share": 0.019476232394366196,
@@ -18961,7 +18877,7 @@
       "trusted_recurring_users": 13,
       "power_user_addresses": 231,
       "openrank_trusted_users_count": 7,
-      "log_gas_fees": 0.13904892004224373,
+      "log_gas_fees": 0.139048920042244,
       "log_transaction_count": 4.259522207216192,
       "log_trusted_transaction_count": 2.550228353055094
     }
@@ -19286,10 +19202,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Sonne Finance",
       "application_id": "0x636ce56a00ff90ba0bbe96b4d581a09414da0d3ed44b71ae38b29b9be7ff20a6",
       "is_oss": true,
-      "gas_fees": 6.243807263611622,
+      "gas_fees": 6.243807263611613,
       "transaction_count": 290193,
       "trusted_transaction_count": 17636,
       "trusted_transaction_share": 0.06077334739294194,
@@ -19302,7 +19217,7 @@
       "trusted_recurring_users": 326,
       "power_user_addresses": 5870,
       "openrank_trusted_users_count": 51,
-      "log_gas_fees": 0.8599668864979721,
+      "log_gas_fees": 0.8599668864979717,
       "log_transaction_count": 5.462688428798376,
       "log_trusted_transaction_count": 4.246424714908744
     }
@@ -19387,10 +19302,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "XSwap",
       "application_id": "0x895299e2f466a5b500fbd80b8da1d2d2a9be6a71bcf772aed795aa0457e8baaa",
       "is_oss": false,
-      "gas_fees": 7.651421211234011,
+      "gas_fees": 7.651421211234005,
       "transaction_count": 212605,
       "trusted_transaction_count": 44759,
       "trusted_transaction_share": 0.21052656334517061,
@@ -19403,7 +19317,7 @@
       "trusted_recurring_users": 723,
       "power_user_addresses": 9975,
       "openrank_trusted_users_count": 47,
-      "log_gas_fees": 0.9370874570019884,
+      "log_gas_fees": 0.937087457001988,
       "log_transaction_count": 5.327575516678915,
       "log_trusted_transaction_count": 4.650890077856312
     }
@@ -19547,10 +19461,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "MYSTCL ($MYST)",
       "application_id": "0x640b373ea180a464679db947b03f611766e2fb911206470e3e041ad34c1ad7c2",
       "is_oss": false,
-      "gas_fees": 0.764360556637494,
+      "gas_fees": 0.7643605566374948,
       "transaction_count": 24090,
       "trusted_transaction_count": 1098,
       "trusted_transaction_share": 0.04557907845579078,
@@ -19563,7 +19476,7 @@
       "trusted_recurring_users": 18,
       "power_user_addresses": 954,
       "openrank_trusted_users_count": 30,
-      "log_gas_fees": 0.24658734029535248,
+      "log_gas_fees": 0.24658734029535265,
       "log_transaction_count": 4.381854827622592,
       "log_trusted_transaction_count": 3.0409976924234905
     }
@@ -19682,10 +19595,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "LogX",
       "application_id": "0x6af74a9a8d1b53bc559f1341fdc76464ad4624641f9c5749ab327040b6319d2a",
       "is_oss": false,
-      "gas_fees": 26.15059885174978,
+      "gas_fees": 26.15059885174973,
       "transaction_count": 814220,
       "trusted_transaction_count": 137605,
       "trusted_transaction_share": 0.16900223526810937,
@@ -19698,7 +19610,7 @@
       "trusted_recurring_users": 1927,
       "power_user_addresses": 17285,
       "openrank_trusted_users_count": 97,
-      "log_gas_fees": 1.4337794131197887,
+      "log_gas_fees": 1.433779413119788,
       "log_transaction_count": 5.910742299304136,
       "log_trusted_transaction_count": 5.138637370746014
     }
@@ -19828,10 +19740,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "ModeChat.xyz | Onchain Social on Mode",
       "application_id": "0x83dcff4c909bbcc0a141c180a7a282180e14dbc11f3de8d288932a6b017cb86a",
       "is_oss": true,
-      "gas_fees": 0.5641894287684542,
+      "gas_fees": 0.5641894287684541,
       "transaction_count": 5609,
       "trusted_transaction_count": 2136,
       "trusted_transaction_share": 0.3808165448386522,
@@ -19844,7 +19755,7 @@
       "trusted_recurring_users": 21,
       "power_user_addresses": 944,
       "openrank_trusted_users_count": 30,
-      "log_gas_fees": 0.1942893464777871,
+      "log_gas_fees": 0.194289346477787,
       "log_transaction_count": 3.748962861256161,
       "log_trusted_transaction_count": 3.3298045221640695
     }
@@ -19949,10 +19860,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Get Mint",
       "application_id": "0xdc8c675a16e135a3518852b240cde44e9105622473623bf86725a9abb8d18847",
       "is_oss": false,
-      "gas_fees": 0.6534574663280476,
+      "gas_fees": 0.6534574663280472,
       "transaction_count": 53064,
       "trusted_transaction_count": 6707,
       "trusted_transaction_share": 0.12639454243931855,
@@ -19965,7 +19875,7 @@
       "trusted_recurring_users": 32,
       "power_user_addresses": 3917,
       "openrank_trusted_users_count": 11,
-      "log_gas_fees": 0.218393027567465,
+      "log_gas_fees": 0.21839302756746493,
       "log_transaction_count": 4.724808168565719,
       "log_trusted_transaction_count": 3.8265930539340482
     }
@@ -20320,10 +20230,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Thales Protocol",
       "application_id": "0x32544f86ae24d37df67bb6e7eb98eca5003932567225ed85e34f72bd0dc859db",
       "is_oss": true,
-      "gas_fees": 12.969265641761554,
+      "gas_fees": 12.969265641761545,
       "transaction_count": 276856,
       "trusted_transaction_count": 19357,
       "trusted_transaction_share": 0.06991721328055017,
@@ -20336,7 +20245,7 @@
       "trusted_recurring_users": 215,
       "power_user_addresses": 2553,
       "openrank_trusted_users_count": 66,
-      "log_gas_fees": 1.1451735760416337,
+      "log_gas_fees": 1.1451735760416335,
       "log_transaction_count": 5.442255508606272,
       "log_trusted_transaction_count": 4.286860485522373
     }
@@ -20552,10 +20461,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Sequence",
       "application_id": "0x62408999652f3bfa1be746d256bf5a4eb4719b993d40f07d2d60aaebee015018",
       "is_oss": true,
-      "gas_fees": 0.04765171946855672,
+      "gas_fees": 0.047651719468556744,
       "transaction_count": 367,
       "trusted_transaction_count": 11,
       "trusted_transaction_share": 0,
@@ -20568,7 +20476,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 3,
       "openrank_trusted_users_count": 2,
-      "log_gas_fees": 0.02021693011723002,
+      "log_gas_fees": 0.02021693011723011,
       "log_transaction_count": 2.5658478186735176,
       "log_trusted_transaction_count": 1.0791812460476249
     }
@@ -20653,10 +20561,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "DappLearning ZK redpacket",
       "application_id": "0xa03ec02831ddba6f92dee26ff03642e07aa6085c3c6e2b403119dde5566fa740",
       "is_oss": true,
-      "gas_fees": 0.017489477526092537,
+      "gas_fees": 0.01748947752609256,
       "transaction_count": 1158,
       "trusted_transaction_count": 14,
       "trusted_transaction_share": 0,
@@ -20774,10 +20681,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Gitcoin Passport",
       "application_id": "0x120cdd8e43ae1efbafdf02eda876e1952c05a52870c8d5a8f56d9ec0f79f586d",
       "is_oss": true,
-      "gas_fees": 2.6196832905296077,
+      "gas_fees": 2.619683290529611,
       "transaction_count": 47435,
       "trusted_transaction_count": 12792,
       "trusted_transaction_share": 0.2696742911352377,
@@ -20790,7 +20696,7 @@
       "trusted_recurring_users": 420,
       "power_user_addresses": 12084,
       "openrank_trusted_users_count": 272,
-      "log_gas_fees": 0.5586705729661656,
+      "log_gas_fees": 0.5586705729661661,
       "log_transaction_count": 4.676108060390596,
       "log_trusted_transaction_count": 4.106972399886674
     }
@@ -20901,10 +20807,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Morkie",
       "application_id": "0x2a2d2dbfa03619094fbeb6474776f2f3b5f6be443c8576abc6f3caa2c18dc45e",
       "is_oss": false,
-      "gas_fees": 0.10572775396959853,
+      "gas_fees": 0.10572775396959862,
       "transaction_count": 33187,
       "trusted_transaction_count": 3673,
       "trusted_transaction_share": 0.11124235265612696,
@@ -20917,7 +20822,7 @@
       "trusted_recurring_users": 11,
       "power_user_addresses": 4590,
       "openrank_trusted_users_count": 37,
-      "log_gas_fees": 0.04364821060059716,
+      "log_gas_fees": 0.043648210600597245,
       "log_transaction_count": 4.520981081419298,
       "log_trusted_transaction_count": 3.5651391519697895
     }
@@ -20987,10 +20892,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "0x Protocol",
       "application_id": "0x0fad18f37ecec4f4f4ca18e60c353eb11462363e8aa14562b5d96af54108d106",
       "is_oss": true,
-      "gas_fees": 75.06608293488003,
+      "gas_fees": 75.06608293488004,
       "transaction_count": 1739387,
       "trusted_transaction_count": 88370,
       "trusted_transaction_share": 0.0508052549547628,
@@ -20998,12 +20902,12 @@
       "daily_active_addresses": 3728.6352459016393,
       "trusted_daily_active_users": 240.3360655737705,
       "monthly_active_addresses": 67667.77777777778,
-      "trusted_monthly_active_users": 3766.41975308642,
+      "trusted_monthly_active_users": 3766.543209876543,
       "recurring_addresses": 31404,
       "trusted_recurring_users": 3502,
       "power_user_addresses": 24012,
       "openrank_trusted_users_count": 1094,
-      "log_gas_fees": 1.8811910525956634,
+      "log_gas_fees": 1.8811910525956637,
       "log_transaction_count": 6.240396469560786,
       "log_trusted_transaction_count": 4.946309769466992
     }
@@ -21076,10 +20980,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Building Blocks",
       "application_id": "0x1c1bb58707493e944e721acf773ee77405f8eb4c82070e6425e34b03c7a206ce",
       "is_oss": false,
-      "gas_fees": 0.006829483663637901,
+      "gas_fees": 0.006829483663637895,
       "transaction_count": 1266,
       "trusted_transaction_count": 213,
       "trusted_transaction_share": 0.16824644549763032,
@@ -21177,10 +21080,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Pheasant Network",
       "application_id": "0x2d5167181143298e3d002d318d8b1d2917b8c3205a5634549c95cab0ff32cbdf",
       "is_oss": false,
-      "gas_fees": 0.524214366309884,
+      "gas_fees": 0.5242143663098844,
       "transaction_count": 21849,
       "trusted_transaction_count": 2443,
       "trusted_transaction_share": 0.1118128976154515,
@@ -21193,7 +21095,7 @@
       "trusted_recurring_users": 84,
       "power_user_addresses": 2362,
       "openrank_trusted_users_count": 32,
-      "log_gas_fees": 0.18304605070338378,
+      "log_gas_fees": 0.1830460507033839,
       "log_transaction_count": 4.339451441306441,
       "log_trusted_transaction_count": 3.3881012015705165
     }
@@ -21642,25 +21544,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "pods.media",
       "application_id": "0x098fca4a62159ddfc2c45dc2931a727d56f039b8f68e31222b927aaf2ce75b9e",
       "is_oss": false,
-      "gas_fees": 1.2855783032058128,
+      "gas_fees": 1.2855783032058115,
       "transaction_count": 139573,
-      "trusted_transaction_count": 53343,
-      "trusted_transaction_share": 0.38218709922406197,
+      "trusted_transaction_count": 53347,
+      "trusted_transaction_share": 0.38221575806208935,
       "trusted_users_onboarded": 1352,
       "daily_active_addresses": 428.8155737704918,
-      "trusted_daily_active_users": 180.58196721311475,
+      "trusted_daily_active_users": 180.5983606557377,
       "monthly_active_addresses": 9250.74074074074,
-      "trusted_monthly_active_users": 3003.703703703704,
+      "trusted_monthly_active_users": 3003.9506172839506,
       "recurring_addresses": 311,
       "trusted_recurring_users": 195,
       "power_user_addresses": 29792,
       "openrank_trusted_users_count": 449,
-      "log_gas_fees": 0.35899610467486365,
+      "log_gas_fees": 0.3589961046748635,
       "log_transaction_count": 5.144804524962104,
-      "log_trusted_transaction_count": 4.7270855781479115
+      "log_trusted_transaction_count": 4.727118142500036
     }
   },
   {
@@ -21915,10 +21816,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Avantis",
       "application_id": "0x6371518c95cfa543514e01a77d470c695fac36691cffa3a45e992b2c0cc6ba72",
       "is_oss": false,
-      "gas_fees": 17.64316967380188,
+      "gas_fees": 17.643169673801875,
       "transaction_count": 584536,
       "trusted_transaction_count": 28243,
       "trusted_transaction_share": 0.04831695567082267,
@@ -21931,7 +21831,7 @@
       "trusted_recurring_users": 262,
       "power_user_addresses": 6940,
       "openrank_trusted_users_count": 58,
-      "log_gas_fees": 1.2705197521603437,
+      "log_gas_fees": 1.2705197521603435,
       "log_transaction_count": 5.766812006322932,
       "log_trusted_transaction_count": 4.450926202822742
     }
@@ -22114,25 +22014,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Astaria",
       "application_id": "0xda73a17b6b38aafcdcd684f5e10dbb5aad0b114ced4bf87c91afadf362df17f3",
       "is_oss": false,
-      "gas_fees": 0.088242136886214,
+      "gas_fees": 0.08824213688621403,
       "transaction_count": 3517,
-      "trusted_transaction_count": 982,
-      "trusted_transaction_share": 0.27921524026158656,
-      "trusted_users_onboarded": 16,
+      "trusted_transaction_count": 980,
+      "trusted_transaction_share": 0.2786465737844754,
+      "trusted_users_onboarded": 15,
       "daily_active_addresses": 7.012295081967213,
-      "trusted_daily_active_users": 2.1844262295081966,
+      "trusted_daily_active_users": 2.1762295081967213,
       "monthly_active_addresses": 97.1604938271605,
-      "trusted_monthly_active_users": 26.666666666666668,
+      "trusted_monthly_active_users": 26.543209876543212,
       "recurring_addresses": 23,
       "trusted_recurring_users": 15,
       "power_user_addresses": 227,
       "openrank_trusted_users_count": 36,
       "log_gas_fees": 0.036725537837922005,
       "log_transaction_count": 3.5462958351214424,
-      "log_trusted_transaction_count": 2.9925535178321354
+      "log_trusted_transaction_count": 2.9916690073799486
     }
   },
   {
@@ -22251,25 +22150,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Layer3",
       "application_id": "0x91a4420e2fcc8311e97dad480f201a8ce221f2cd64c2de77280cbcc6ce193752",
       "is_oss": true,
-      "gas_fees": 106.9178745827467,
+      "gas_fees": 106.91787458274658,
       "transaction_count": 5441875,
-      "trusted_transaction_count": 1586536,
-      "trusted_transaction_share": 0.29154216147926953,
+      "trusted_transaction_count": 1586672,
+      "trusted_transaction_share": 0.2915671528655105,
       "trusted_users_onboarded": 4613,
       "daily_active_addresses": 6498.1557377049185,
-      "trusted_daily_active_users": 2031.4098360655737,
+      "trusted_daily_active_users": 2031.6188524590164,
       "monthly_active_addresses": 60444.320987654326,
-      "trusted_monthly_active_users": 10846.172839506173,
+      "trusted_monthly_active_users": 10846.666666666668,
       "recurring_addresses": 59079,
-      "trusted_recurring_users": 18292,
+      "trusted_recurring_users": 18293,
       "power_user_addresses": 57146,
       "openrank_trusted_users_count": 425,
-      "log_gas_fees": 2.0330933834200144,
+      "log_gas_fees": 2.033093383420014,
       "log_transaction_count": 6.735748641609615,
-      "log_trusted_transaction_count": 6.200450204837601
+      "log_trusted_transaction_count": 6.200487431525765
     }
   },
   {
@@ -22355,25 +22253,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "ODOS",
       "application_id": "0xd5b4c54b12bf86f6eb67fec81032809a16ff1c4b4c7f0d5898fc86367db86ca6",
       "is_oss": true,
-      "gas_fees": 70.41881960854053,
+      "gas_fees": 70.4188196085405,
       "transaction_count": 2507660,
-      "trusted_transaction_count": 115686,
-      "trusted_transaction_share": 0.04613304833988659,
+      "trusted_transaction_count": 115704,
+      "trusted_transaction_share": 0.046140226346474404,
       "trusted_users_onboarded": 1184,
       "daily_active_addresses": 4711.5,
-      "trusted_daily_active_users": 247.09426229508196,
+      "trusted_daily_active_users": 247.13934426229508,
       "monthly_active_addresses": 91704.32098765433,
-      "trusted_monthly_active_users": 3729.0123456790125,
+      "trusted_monthly_active_users": 3729.62962962963,
       "recurring_addresses": 66458,
-      "trusted_recurring_users": 3750,
+      "trusted_recurring_users": 3751,
       "power_user_addresses": 39593,
       "openrank_trusted_users_count": 370,
-      "log_gas_fees": 1.8538126680111502,
+      "log_gas_fees": 1.85381266801115,
       "log_transaction_count": 6.399268825707191,
-      "log_trusted_transaction_count": 5.063284559077334
+      "log_trusted_transaction_count": 5.063352126674226
     }
   },
   {
@@ -22468,10 +22365,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Gloom",
       "application_id": "0xaf344305f30af57f984af95f7c8570fdfcf7520b55e605bb34095ba49f8a385a",
       "is_oss": true,
-      "gas_fees": 0.17173412820071537,
+      "gas_fees": 0.17173412820071565,
       "transaction_count": 16910,
       "trusted_transaction_count": 5907,
       "trusted_transaction_share": 0.34931992903607334,
@@ -22484,7 +22380,7 @@
       "trusted_recurring_users": 76,
       "power_user_addresses": 2586,
       "openrank_trusted_users_count": 231,
-      "log_gas_fees": 0.06882907946851662,
+      "log_gas_fees": 0.0688290794685167,
       "log_transaction_count": 4.22816928953985,
       "log_trusted_transaction_count": 3.771440486639912
     }
@@ -22594,10 +22490,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "TITLES",
       "application_id": "0x8b480f19bf914a4f811346b85a9410af55aa52622b745cbc46d4507c28838821",
       "is_oss": false,
-      "gas_fees": 0.24833382727610287,
+      "gas_fees": 0.24833382727610256,
       "transaction_count": 41125,
       "trusted_transaction_count": 5112,
       "trusted_transaction_share": 0.12430395136778115,
@@ -22610,7 +22505,7 @@
       "trusted_recurring_users": 69,
       "power_user_addresses": 2756,
       "openrank_trusted_users_count": 376,
-      "log_gas_fees": 0.0963307391582074,
+      "log_gas_fees": 0.09633073915820733,
       "log_transaction_count": 4.614116471181783,
       "log_trusted_transaction_count": 3.708675792726537
     }
@@ -22763,25 +22658,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Holograph Foundation",
       "application_id": "0x1a6ff49fed19e164fd6b39f668f391cfc7fc493906e942c74997aacee91be632",
       "is_oss": true,
-      "gas_fees": 26.270333053157326,
+      "gas_fees": 26.270333053157316,
       "transaction_count": 1037071,
-      "trusted_transaction_count": 139003,
-      "trusted_transaction_share": 0.1340342175222333,
+      "trusted_transaction_count": 139005,
+      "trusted_transaction_share": 0.1340361460305032,
       "trusted_users_onboarded": 811,
       "daily_active_addresses": 2032.1147540983607,
-      "trusted_daily_active_users": 208.73360655737704,
+      "trusted_daily_active_users": 208.7377049180328,
       "monthly_active_addresses": 43118.88888888889,
-      "trusted_monthly_active_users": 3732.098765432099,
+      "trusted_monthly_active_users": 3732.222222222222,
       "recurring_addresses": 32481,
       "trusted_recurring_users": 3886,
       "power_user_addresses": 31423,
       "openrank_trusted_users_count": 264,
       "log_gas_fees": 1.4356904420217595,
       "log_transaction_count": 6.015808908864663,
-      "log_trusted_transaction_count": 5.143027297757208
+      "log_trusted_transaction_count": 5.143033546373904
     }
   },
   {
@@ -22926,25 +22820,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Sound.xyz",
       "application_id": "0x70a31809b59034a137b8ba57b092412879e779f0ea527f091776dca521edc7af",
       "is_oss": true,
-      "gas_fees": 7.342171547499356,
+      "gas_fees": 7.3421715474993565,
       "transaction_count": 540503,
-      "trusted_transaction_count": 129804,
-      "trusted_transaction_share": 0.24015407870076577,
+      "trusted_transaction_count": 129814,
+      "trusted_transaction_share": 0.24017257998568,
       "trusted_users_onboarded": 2777,
       "daily_active_addresses": 1563.6598360655737,
-      "trusted_daily_active_users": 393.5614754098361,
+      "trusted_daily_active_users": 393.5983606557377,
       "monthly_active_addresses": 34159.135802469136,
-      "trusted_monthly_active_users": 6005.432098765433,
+      "trusted_monthly_active_users": 6005.802469135802,
       "recurring_addresses": 11655,
-      "trusted_recurring_users": 5693,
+      "trusted_recurring_users": 5694,
       "power_user_addresses": 41133,
       "openrank_trusted_users_count": 969,
-      "log_gas_fees": 0.9212791163856603,
+      "log_gas_fees": 0.9212791163856604,
       "log_transaction_count": 5.732798912297654,
-      "log_trusted_transaction_count": 5.1132914215135585
+      "log_trusted_transaction_count": 5.1133248776788855
     }
   },
   {
@@ -23025,10 +22918,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Receipts",
       "application_id": "0x78aa10e4a035b703753c0b399a608d22520a932ae7b7554f6ed148928a0a016a",
       "is_oss": false,
-      "gas_fees": 0.010898895470579872,
+      "gas_fees": 0.010898895470579865,
       "transaction_count": 1425,
       "trusted_transaction_count": 842,
       "trusted_transaction_share": 0.5908771929824561,
@@ -23041,7 +22933,7 @@
       "trusted_recurring_users": 17,
       "power_user_addresses": 519,
       "openrank_trusted_users_count": 136,
-      "log_gas_fees": 0.004707722025299533,
+      "log_gas_fees": 0.004707722025299438,
       "log_transaction_count": 3.154119525515847,
       "log_trusted_transaction_count": 2.9258275746247424
     }
@@ -23140,10 +23032,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "OptiChads NFT Community",
       "application_id": "0xad43dc524ae73ce9398d0378c5ba9fa53c3394ac9e90f7b60df7b4a7d028f476",
-      "is_oss": false,
-      "gas_fees": 0.09731687653471846,
+      "is_oss": true,
+      "gas_fees": 0.09731687653471839,
       "transaction_count": 14422,
       "trusted_transaction_count": 1750,
       "trusted_transaction_share": 0.12134239356538622,
@@ -23156,7 +23047,7 @@
       "trusted_recurring_users": 46,
       "power_user_addresses": 1391,
       "openrank_trusted_users_count": 83,
-      "log_gas_fees": 0.04033205862152222,
+      "log_gas_fees": 0.040332058621522136,
       "log_transaction_count": 4.159055603513488,
       "log_trusted_transaction_count": 3.243286146083446
     }
@@ -23239,7 +23130,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "dHEDGE",
       "application_id": "0x0c327d5f07a0abc24d646de807a9768619a34ba5277b24fc935b1edf57fa6244",
       "is_oss": false,
       "gas_fees": 2.895892380932092,
@@ -23409,10 +23299,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Router Protocol",
       "application_id": "0x4d71401a0dbd9b3dd890fbc70baaf872d16db80af149e20f7ef1805fc94f6df6",
       "is_oss": false,
-      "gas_fees": 2.4415204310329703,
+      "gas_fees": 2.441520431032971,
       "transaction_count": 271186,
       "trusted_transaction_count": 10573,
       "trusted_transaction_share": 0.03898800085550139,
@@ -23704,10 +23593,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Base on Rarible",
       "application_id": "0x7a13acc03022c7f42347006fd95d2aeeadd0a0e7411ae6405c645814814fd093",
       "is_oss": false,
-      "gas_fees": 0.17454544100525404,
+      "gas_fees": 0.1745454410052539,
       "transaction_count": 6839,
       "trusted_transaction_count": 517,
       "trusted_transaction_share": 0.07559584734610324,
@@ -23720,7 +23608,7 @@
       "trusted_recurring_users": 1,
       "power_user_addresses": 312,
       "openrank_trusted_users_count": 24,
-      "log_gas_fees": 0.06986982349427845,
+      "log_gas_fees": 0.06986982349427837,
       "log_transaction_count": 3.835056101720116,
       "log_trusted_transaction_count": 2.714329759745233
     }
@@ -23945,25 +23833,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "fxhash",
       "application_id": "0xa2a580dae44336df1cbcb7a5303880f393068fb96116e10e180e10f5745dccd4",
       "is_oss": true,
-      "gas_fees": 3.6973493115102483,
+      "gas_fees": 3.6973493115102514,
       "transaction_count": 137549,
-      "trusted_transaction_count": 25466,
-      "trusted_transaction_share": 0.18514129510210905,
+      "trusted_transaction_count": 25467,
+      "trusted_transaction_share": 0.18514856523856954,
       "trusted_users_onboarded": 820,
       "daily_active_addresses": 215.78688524590163,
-      "trusted_daily_active_users": 51.34426229508197,
+      "trusted_daily_active_users": 51.34836065573771,
       "monthly_active_addresses": 6163.456790123457,
-      "trusted_monthly_active_users": 1435.1851851851852,
+      "trusted_monthly_active_users": 1435.3086419753088,
       "recurring_addresses": 129,
       "trusted_recurring_users": 68,
       "power_user_addresses": 20237,
       "openrank_trusted_users_count": 268,
-      "log_gas_fees": 0.6718528570579776,
+      "log_gas_fees": 0.6718528570579779,
       "log_transaction_count": 5.138460594725703,
-      "log_trusted_transaction_count": 4.405977788301573
+      "log_trusted_transaction_count": 4.405994841191804
     }
   },
   {
@@ -24319,10 +24206,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Polynomial Trade",
       "application_id": "0x3e2458fd10201c3e66960a93e2a94e95861450bd29d040f6a077581fce165e29",
       "is_oss": false,
-      "gas_fees": 1.7427253869730508,
+      "gas_fees": 1.7427253869730484,
       "transaction_count": 55088,
       "trusted_transaction_count": 10390,
       "trusted_transaction_share": 0.1886073191983735,
@@ -24335,7 +24221,7 @@
       "trusted_recurring_users": 93,
       "power_user_addresses": 4411,
       "openrank_trusted_users_count": 76,
-      "log_gas_fees": 0.43818232641874294,
+      "log_gas_fees": 0.43818232641874255,
       "log_transaction_count": 4.741064888938512,
       "log_trusted_transaction_count": 4.016657344822202
     }
@@ -24580,25 +24466,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "deBridge",
       "application_id": "0xf24315614063278ba3543e1717791132a9afa79b0e65baa01a85bcccbdfa215f",
       "is_oss": false,
-      "gas_fees": 89.14795419191272,
+      "gas_fees": 89.14795419191275,
       "transaction_count": 1472362,
-      "trusted_transaction_count": 82153,
-      "trusted_transaction_share": 0.055796740203835744,
-      "trusted_users_onboarded": 757,
+      "trusted_transaction_count": 82158,
+      "trusted_transaction_share": 0.055800136107832174,
+      "trusted_users_onboarded": 758,
       "daily_active_addresses": 1353.2868852459017,
-      "trusted_daily_active_users": 174.7377049180328,
+      "trusted_daily_active_users": 174.74590163934425,
       "monthly_active_addresses": 21623.58024691358,
-      "trusted_monthly_active_users": 2191.9753086419755,
+      "trusted_monthly_active_users": 2192.098765432099,
       "recurring_addresses": 10166,
       "trusted_recurring_users": 1797,
       "power_user_addresses": 20639,
       "openrank_trusted_users_count": 223,
       "log_gas_fees": 1.9549558753374576,
       "log_transaction_count": 6.168014895233654,
-      "log_trusted_transaction_count": 4.914628713670486
+      "log_trusted_transaction_count": 4.914655144596952
     }
   },
   {
@@ -24755,10 +24640,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Supswap",
       "application_id": "0x89d5dbc8003e6b6919273e991bba7d6a951491a408e47978a22baa046d225941",
       "is_oss": false,
-      "gas_fees": 15.1093987722561,
+      "gas_fees": 15.109398772256107,
       "transaction_count": 823102,
       "trusted_transaction_count": 48768,
       "trusted_transaction_share": 0.05924903596395101,
@@ -24771,7 +24655,7 @@
       "trusted_recurring_users": 880,
       "power_user_addresses": 17373,
       "openrank_trusted_users_count": 105,
-      "log_gas_fees": 1.207079332178126,
+      "log_gas_fees": 1.2070793321781261,
       "log_transaction_count": 5.915454184583718,
       "log_trusted_transaction_count": 4.688143850548826
     }
@@ -25031,10 +24915,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "IntentX",
       "application_id": "0x2ddf5b9dc64f873d6557b4f63de936cf278f8851deda857244a1be44d1a1e950",
       "is_oss": false,
-      "gas_fees": 0.32627288365315366,
+      "gas_fees": 0.3262728836531539,
       "transaction_count": 9826,
       "trusted_transaction_count": 0,
       "trusted_transaction_share": 0,
@@ -25047,7 +24930,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 0,
       "openrank_trusted_users_count": 0,
-      "log_gas_fees": 0.12263289033714612,
+      "log_gas_fees": 0.1226328903371462,
       "log_transaction_count": 3.9924209560520243,
       "log_trusted_transaction_count": 0
     }
@@ -25214,10 +25097,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Pika Protocol",
       "application_id": "0xc30088981419c79a913acb4d63a47fa6813a00d7419cdcfefde4a0f89b24b864",
       "is_oss": false,
-      "gas_fees": 3.0422330644929985,
+      "gas_fees": 3.0422330644930002,
       "transaction_count": 122851,
       "trusted_transaction_count": 11498,
       "trusted_transaction_share": 0.09359305174561054,
@@ -25230,7 +25112,7 @@
       "trusted_recurring_users": 94,
       "power_user_addresses": 2008,
       "openrank_trusted_users_count": 40,
-      "log_gas_fees": 0.6066213501751243,
+      "log_gas_fees": 0.6066213501751244,
       "log_transaction_count": 5.089382231079783,
       "log_trusted_transaction_count": 4.060660073974015
     }
@@ -25393,10 +25275,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Aura Finance",
       "application_id": "0x32a687fa8ed3dc2679b9be5653dc7b0765a5099064501ad183d2d8a1509f4871",
       "is_oss": true,
-      "gas_fees": 0.33155347449068817,
+      "gas_fees": 0.3315534744906877,
       "transaction_count": 14809,
       "trusted_transaction_count": 1086,
       "trusted_transaction_share": 0.07333378351002769,
@@ -25409,7 +25290,7 @@
       "trusted_recurring_users": 25,
       "power_user_addresses": 647,
       "openrank_trusted_users_count": 7,
-      "log_gas_fees": 0.12435861216429299,
+      "log_gas_fees": 0.12435861216429285,
       "log_transaction_count": 4.170555058521209,
       "log_trusted_transaction_count": 3.0362295440862948
     }
@@ -25908,10 +25789,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "PoolTogether",
       "application_id": "0x45064f78302aeee0d4ea3667a39d3cffa25157b131aba8b1c0d9cfb7c085f87d",
       "is_oss": true,
-      "gas_fees": 0.48901973846160646,
+      "gas_fees": 0.4890197384616069,
       "transaction_count": 33759,
       "trusted_transaction_count": 4317,
       "trusted_transaction_share": 0.1278770105749578,
@@ -25924,7 +25804,7 @@
       "trusted_recurring_users": 100,
       "power_user_addresses": 1903,
       "openrank_trusted_users_count": 122,
-      "log_gas_fees": 0.1729004548026391,
+      "log_gas_fees": 0.17290045480263927,
       "log_transaction_count": 4.528402437953617,
       "log_trusted_transaction_count": 3.635282637998212
     }
@@ -26076,10 +25956,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Circle.tech",
       "application_id": "0x46ca6c364e7a7bc7dd79db1f22a66b305a77f8c912636b00a4b9a6b28c423e8f",
       "is_oss": false,
-      "gas_fees": 2.879917674375377,
+      "gas_fees": 2.8799176743753834,
       "transaction_count": 18039,
       "trusted_transaction_count": 688,
       "trusted_transaction_share": 0,
@@ -26092,7 +25971,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 13,
       "openrank_trusted_users_count": 1,
-      "log_gas_fees": 0.5888225106602364,
+      "log_gas_fees": 0.5888225106602372,
       "log_transaction_count": 4.256236533205923,
       "log_trusted_transaction_count": 2.8382192219076257
     }
@@ -26172,25 +26051,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Aave",
       "application_id": "0x3061b642db56c507e265f03029735b0413a613bda43456a31e78128baeb18754",
       "is_oss": true,
-      "gas_fees": 10.354093297184738,
+      "gas_fees": 10.354093297184727,
       "transaction_count": 622906,
-      "trusted_transaction_count": 57100,
-      "trusted_transaction_share": 0.09166712152395386,
+      "trusted_transaction_count": 57104,
+      "trusted_transaction_share": 0.09167354303859651,
       "trusted_users_onboarded": 831,
       "daily_active_addresses": 1263.372950819672,
-      "trusted_daily_active_users": 126.94262295081967,
+      "trusted_daily_active_users": 126.95491803278688,
       "monthly_active_addresses": 24398.14814814815,
-      "trusted_monthly_active_users": 2339.8765432098767,
+      "trusted_monthly_active_users": 2340.246913580247,
       "recurring_addresses": 10650,
-      "trusted_recurring_users": 1777,
+      "trusted_recurring_users": 1778,
       "power_user_addresses": 24816,
       "openrank_trusted_users_count": 230,
-      "log_gas_fees": 1.055152458524768,
+      "log_gas_fees": 1.0551524585247678,
       "log_transaction_count": 5.794423211343385,
-      "log_trusted_transaction_count": 4.756643714037074
+      "log_trusted_transaction_count": 4.756674135870049
     }
   },
   {
@@ -26806,10 +26684,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Hats Protocol",
       "application_id": "0x8967594d2978692a35fea137ba640bb42f11cad907ca6b0bd01f3718fc4c7f5b",
       "is_oss": true,
-      "gas_fees": 0.011571433735850001,
+      "gas_fees": 0.011571433735850019,
       "transaction_count": 1221,
       "trusted_transaction_count": 718,
       "trusted_transaction_share": 0.588042588042588,
@@ -26822,7 +26699,7 @@
       "trusted_recurring_users": 13,
       "power_user_addresses": 57,
       "openrank_trusted_users_count": 67,
-      "log_gas_fees": 0.0049965565896671615,
+      "log_gas_fees": 0.004996556589667257,
       "log_transaction_count": 3.0870712059065353,
       "log_trusted_transaction_count": 2.8567288903828825
     }
@@ -26906,10 +26783,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "EthXY",
       "application_id": "0x030d3b4efdbeb15c8c70bbb4c4fe194c1893ef126148146235412a5d1eed3b97",
       "is_oss": false,
-      "gas_fees": 5.319695359741883,
+      "gas_fees": 5.319695359741876,
       "transaction_count": 346918,
       "trusted_transaction_count": 1350,
       "trusted_transaction_share": 0.003891409497345194,
@@ -26922,7 +26798,7 @@
       "trusted_recurring_users": 6,
       "power_user_addresses": 1069,
       "openrank_trusted_users_count": 31,
-      "log_gas_fees": 0.8006961436665851,
+      "log_gas_fees": 0.8006961436665847,
       "log_transaction_count": 5.540228085858754,
       "log_trusted_transaction_count": 3.130655349022031
     }
@@ -27042,10 +26918,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "BSX",
       "application_id": "0xc938557155993da8f33857e52d7deb04421d1bb341fc24216563aae64fe32d36",
       "is_oss": false,
-      "gas_fees": 7.868028575285777,
+      "gas_fees": 7.868028575285767,
       "transaction_count": 12494,
       "trusted_transaction_count": 180,
       "trusted_transaction_share": 0,
@@ -27058,7 +26933,7 @@
       "trusted_recurring_users": 2,
       "power_user_addresses": 137,
       "openrank_trusted_users_count": 4,
-      "log_gas_fees": 0.9478270838638463,
+      "log_gas_fees": 0.9478270838638457,
       "log_transaction_count": 4.096736260462468,
       "log_trusted_transaction_count": 2.2576785748691846
     }
@@ -27195,10 +27070,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Union",
       "application_id": "0x59a9c9e954400f540020b2c61bbdac4d4bf1582c902fe7d49fa9fc0907ee3f4a",
       "is_oss": false,
-      "gas_fees": 0.14505060567556982,
+      "gas_fees": 0.1450506056755701,
       "transaction_count": 7855,
       "trusted_transaction_count": 3258,
       "trusted_transaction_share": 0.41476766390833864,
@@ -27211,7 +27085,7 @@
       "trusted_recurring_users": 22,
       "power_user_addresses": 1210,
       "openrank_trusted_users_count": 24,
-      "log_gas_fees": 0.05882468080690292,
+      "log_gas_fees": 0.058824680806903,
       "log_transaction_count": 3.8952014747788932,
       "log_trusted_transaction_count": 3.513084360465144
     }
@@ -27416,7 +27290,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Pixotchi",
       "application_id": "0x43c0bbbedc1c04715c3fb34b9387a0779a0d43092c716c29949e7099429eccdb",
       "is_oss": false,
       "gas_fees": 0.8904908399130229,
@@ -27685,10 +27558,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Tarot",
       "application_id": "0x526522707f6c225a9bc7ea54e572f995eb3c794f34756f514d976c61729e8a8d",
       "is_oss": true,
-      "gas_fees": 27.52755810221027,
+      "gas_fees": 27.52755810221029,
       "transaction_count": 1414632,
       "trusted_transaction_count": 10636,
       "trusted_transaction_share": 0.007518563131613028,
@@ -27701,7 +27573,7 @@
       "trusted_recurring_users": 132,
       "power_user_addresses": 3341,
       "openrank_trusted_users_count": 37,
-      "log_gas_fees": 1.455264598571814,
+      "log_gas_fees": 1.4552645985718142,
       "log_transaction_count": 6.150643784914772,
       "log_trusted_transaction_count": 4.026819159241227
     }
@@ -27802,10 +27674,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Coordinape",
       "application_id": "0x8809b8e6597cfc24a10313db53a1e7b102790160cb803bc47e07848b14fd0b5e",
       "is_oss": true,
-      "gas_fees": 0.2451532492473394,
+      "gas_fees": 0.24515324924733928,
       "transaction_count": 38783,
       "trusted_transaction_count": 7682,
       "trusted_transaction_share": 0.19807647680684837,
@@ -27913,25 +27784,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Ironclad Finance",
       "application_id": "0x01d8c3bc48ed5f94c260dcc8698eb61f48b06f70b0596c65fbcb1f369c092be9",
       "is_oss": false,
-      "gas_fees": 0.7892089531347867,
+      "gas_fees": 0.7892089531347869,
       "transaction_count": 361090,
-      "trusted_transaction_count": 75283,
-      "trusted_transaction_share": 0.2084881885402531,
+      "trusted_transaction_count": 75285,
+      "trusted_transaction_share": 0.20849372732559748,
       "trusted_users_onboarded": 503,
       "daily_active_addresses": 410.5204918032787,
-      "trusted_daily_active_users": 76.29098360655738,
+      "trusted_daily_active_users": 76.29508196721312,
       "monthly_active_addresses": 8144.691358024692,
-      "trusted_monthly_active_users": 1534.1975308641977,
+      "trusted_monthly_active_users": 1534.320987654321,
       "recurring_addresses": 3946,
       "trusted_recurring_users": 536,
       "power_user_addresses": 20391,
       "openrank_trusted_users_count": 95,
-      "log_gas_fees": 0.2526610626994261,
+      "log_gas_fees": 0.25266106269942623,
       "log_transaction_count": 5.557616664004098,
-      "log_trusted_transaction_count": 4.876702686027287
+      "log_trusted_transaction_count": 4.876714223371565
     }
   },
   {
@@ -28144,10 +28014,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Ethos Reserve",
       "application_id": "0x753735dcf81ae3bd485765a433f7d9fd93f704bc8713d873b4cacfbbec060c0d",
       "is_oss": true,
-      "gas_fees": 0.1547769798700414,
+      "gas_fees": 0.15477697987004146,
       "transaction_count": 16468,
       "trusted_transaction_count": 1145,
       "trusted_transaction_share": 0.06952878309448628,
@@ -28160,7 +28029,7 @@
       "trusted_recurring_users": 39,
       "power_user_addresses": 852,
       "openrank_trusted_users_count": 8,
-      "log_gas_fees": 0.06249811776578212,
+      "log_gas_fees": 0.0624981177657822,
       "log_transaction_count": 4.216667229548209,
       "log_trusted_transaction_count": 3.059184617631371
     }
@@ -28269,10 +28138,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Equalizer",
       "application_id": "0x3065db37b2feaa39fe11e313726e38fc14f461c174629174e2f434f2cfc938f9",
       "is_oss": false,
-      "gas_fees": 3.759844540199659,
+      "gas_fees": 3.7598445401996625,
       "transaction_count": 153424,
       "trusted_transaction_count": 10240,
       "trusted_transaction_share": 0.06674314318489936,
@@ -28285,7 +28153,7 @@
       "trusted_recurring_users": 102,
       "power_user_addresses": 2714,
       "openrank_trusted_users_count": 8,
-      "log_gas_fees": 0.6775927685952867,
+      "log_gas_fees": 0.677592768595287,
       "log_transaction_count": 5.185896131955969,
       "log_trusted_transaction_count": 4.010342366139568
     }
@@ -28415,10 +28283,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "HOMES",
       "application_id": "0x4bb52210fd390559dc9757138ea8ce189d7bd73f15314209775a9c6fecb969fa",
       "is_oss": false,
-      "gas_fees": 0.2082905774703537,
+      "gas_fees": 0.2082905774703536,
       "transaction_count": 12821,
       "trusted_transaction_count": 4485,
       "trusted_transaction_share": 0.34981670696513534,
@@ -28714,10 +28581,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Splits",
       "application_id": "0xb6266f3d955040aa7583f2f346db87abe0649f545389af3cc8fe302aacfc850b",
       "is_oss": true,
-      "gas_fees": 0.19781277136202524,
+      "gas_fees": 0.19781277136202544,
       "transaction_count": 11384,
       "trusted_transaction_count": 3240,
       "trusted_transaction_share": 0.2903746191073669,
@@ -28730,7 +28596,7 @@
       "trusted_recurring_users": 62,
       "power_user_addresses": 2321,
       "openrank_trusted_users_count": 382,
-      "log_gas_fees": 0.07838893932298094,
+      "log_gas_fees": 0.07838893932298102,
       "log_transaction_count": 4.0563330349511615,
       "log_trusted_transaction_count": 3.51067903103221
     }
@@ -28969,10 +28835,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "CyberConnect Protocol",
       "application_id": "0xf0e2abf650dc97b4223f82ef94fc6251942fff0f4d75d49d63a4017610045907",
       "is_oss": false,
-      "gas_fees": 12.139138834893513,
+      "gas_fees": 12.139138834893512,
       "transaction_count": 274821,
       "trusted_transaction_count": 14940,
       "trusted_transaction_share": 0.11431369698453628,
@@ -28985,7 +28850,7 @@
       "trusted_recurring_users": 946,
       "power_user_addresses": 10544,
       "openrank_trusted_users_count": 124,
-      "log_gas_fees": 1.1185669016385404,
+      "log_gas_fees": 1.1185669016385402,
       "log_transaction_count": 5.439051495840806,
       "log_trusted_transaction_count": 4.174379665748987
     }
@@ -29265,10 +29130,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Wombat Exchange",
       "application_id": "0x1d585df770de05257717b33075f6d32e79fb60ec507cff35e51a0e478a4a54a0",
       "is_oss": false,
-      "gas_fees": 0.20347332841219198,
+      "gas_fees": 0.2034733284121919,
       "transaction_count": 16282,
       "trusted_transaction_count": 2019,
       "trusted_transaction_share": 0.12400196536052083,
@@ -29364,10 +29228,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Keng Lernitas",
       "application_id": "0x62043b7744f559522f071821d2a062e2135c21a7759c685cf72ad03f9774b123",
       "is_oss": false,
-      "gas_fees": 0.4034596461138453,
+      "gas_fees": 0.4034596461138449,
       "transaction_count": 45428,
       "trusted_transaction_count": 6629,
       "trusted_transaction_share": 0.14592321915998943,
@@ -29380,7 +29243,7 @@
       "trusted_recurring_users": 20,
       "power_user_addresses": 6727,
       "openrank_trusted_users_count": 112,
-      "log_gas_fees": 0.1471999298154639,
+      "log_gas_fees": 0.14719992981546376,
       "log_transaction_count": 4.657333177068604,
       "log_trusted_transaction_count": 3.821513528404773
     }
@@ -29444,7 +29307,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "CreateMyToken",
       "application_id": "0xdf3eb6b429b2150c71241de0c591b18c98a3528ad0e8d838d069b6fff291d803",
       "is_oss": false,
       "gas_fees": 0.000019588143598524,
@@ -29925,25 +29787,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Fractal Visions",
       "application_id": "0x808b31862cec6dccf3894bb0e76ce4ca298e4c2820e2ccbf4816da740463b220",
       "is_oss": false,
-      "gas_fees": 0.03363335326031335,
-      "transaction_count": 2690,
-      "trusted_transaction_count": 554,
+      "gas_fees": 0.02567624280561444,
+      "transaction_count": 2125,
+      "trusted_transaction_count": 290,
       "trusted_transaction_share": 0,
-      "trusted_users_onboarded": 2,
-      "daily_active_addresses": 6.405737704918033,
-      "trusted_daily_active_users": 0.7254098360655737,
-      "monthly_active_addresses": 179.1358024691358,
-      "trusted_monthly_active_users": 14.567901234567902,
-      "recurring_addresses": 6,
-      "trusted_recurring_users": 4,
+      "trusted_users_onboarded": 1,
+      "daily_active_addresses": 6.168032786885246,
+      "trusted_daily_active_users": 0.6147540983606558,
+      "monthly_active_addresses": 177.1604938271605,
+      "trusted_monthly_active_users": 13.950617283950617,
+      "recurring_addresses": 5,
+      "trusted_recurring_users": 3,
       "power_user_addresses": 142,
       "openrank_trusted_users_count": 6,
-      "log_gas_fees": 0.014366514682744507,
-      "log_transaction_count": 3.4299136977637543,
-      "log_trusted_transaction_count": 2.7442929831226763
+      "log_gas_fees": 0.011010296300192974,
+      "log_transaction_count": 3.327563260187278,
+      "log_trusted_transaction_count": 2.4638929889859074
     }
   },
   {
@@ -30018,10 +29879,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Beam",
       "application_id": "0x67267b69dc7950fdd49dc0b78a8bdeefa234992190bc3b81e1d1c735086c033a",
       "is_oss": false,
-      "gas_fees": 0.0017022739552322102,
+      "gas_fees": 0.00170227395523221,
       "transaction_count": 5027,
       "trusted_transaction_count": 34,
       "trusted_transaction_share": 0,
@@ -30168,10 +30028,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "UNCX Network",
       "application_id": "0x396426679c3986320a3aa0c23b69857c06cb41ff0c92ac81aaa0332e5200ec9c",
       "is_oss": false,
-      "gas_fees": 0.3750210043684609,
+      "gas_fees": 0.37502100436846103,
       "transaction_count": 3101,
       "trusted_transaction_count": 110,
       "trusted_transaction_share": 0,
@@ -30402,10 +30261,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Virtuals Protocol",
       "application_id": "0x780cf3d5aa4e3c94b8a4157f4b06a3f92ebcc20813585e20e3fe0271bf76b7a9",
       "is_oss": false,
-      "gas_fees": 1.687796451476195,
+      "gas_fees": 1.6877964514761938,
       "transaction_count": 134455,
       "trusted_transaction_count": 1098,
       "trusted_transaction_share": 0.008166300992897252,
@@ -30418,7 +30276,7 @@
       "trusted_recurring_users": 11,
       "power_user_addresses": 1850,
       "openrank_trusted_users_count": 32,
-      "log_gas_fees": 0.4293963762315281,
+      "log_gas_fees": 0.42939637623152793,
       "log_transaction_count": 5.1285801870632275,
       "log_trusted_transaction_count": 3.0409976924234905
     }
@@ -30507,10 +30365,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Gangster Arena",
       "application_id": "0x87d49ebca1bda6345aada7953ff55aa18acd69bf97caecdcedfac93b506ef0d6",
       "is_oss": false,
-      "gas_fees": 0.7363863749391772,
+      "gas_fees": 0.7363863749391766,
       "transaction_count": 14895,
       "trusted_transaction_count": 26,
       "trusted_transaction_share": 0,
@@ -30523,7 +30380,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 30,
       "openrank_trusted_users_count": 0,
-      "log_gas_fees": 0.23964636936203967,
+      "log_gas_fees": 0.2396463693620395,
       "log_transaction_count": 4.173069663637268,
       "log_trusted_transaction_count": 1.4313637641589874
     }
@@ -30673,10 +30530,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "TLX",
       "application_id": "0x6bd6aba90e1e5cb41236bc52a96f5ce65686568ff95fe535c865658c73947198",
       "is_oss": false,
-      "gas_fees": 1.7632793660045418,
+      "gas_fees": 1.7632793660045403,
       "transaction_count": 27764,
       "trusted_transaction_count": 2130,
       "trusted_transaction_share": 0.07671805215386832,
@@ -30689,7 +30545,7 @@
       "trusted_recurring_users": 49,
       "power_user_addresses": 751,
       "openrank_trusted_users_count": 26,
-      "log_gas_fees": 0.44142479406632873,
+      "log_gas_fees": 0.4414247940663285,
       "log_transaction_count": 4.443497677808585,
       "log_trusted_transaction_count": 3.328583449714202
     }
@@ -30772,10 +30628,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Biconomy",
       "application_id": "0x220685a4514003f22cbf18a7ddd9c09f88c2383daed6cbfa3437b22a51c07c26",
       "is_oss": false,
-      "gas_fees": 0.6807007585646322,
+      "gas_fees": 0.6807007585646324,
       "transaction_count": 3668646,
       "trusted_transaction_count": 103,
       "trusted_transaction_share": 0,
@@ -31072,10 +30927,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "OmniHub",
       "application_id": "0xd7a8e115b2b3772d7d5656d7798e349dcdedf2463302c78528c9e9686ab4efe3",
       "is_oss": false,
-      "gas_fees": 0.3747163593984245,
+      "gas_fees": 0.37471635939842496,
       "transaction_count": 32761,
       "trusted_transaction_count": 5258,
       "trusted_transaction_share": 0.16049571136412197,
@@ -31088,7 +30942,7 @@
       "trusted_recurring_users": 48,
       "power_user_addresses": 2152,
       "openrank_trusted_users_count": 6,
-      "log_gas_fees": 0.13821310088973052,
+      "log_gas_fees": 0.13821310088973066,
       "log_transaction_count": 4.515370405983716,
       "log_trusted_transaction_count": 3.7209031708134575
     }
@@ -31445,10 +31299,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Linkdrop",
       "application_id": "0xd765664dd27255f1ba341fbb3375439a57fb6a92313df2f7af7856233f415ed7",
       "is_oss": true,
-      "gas_fees": 1.1390575959349543,
+      "gas_fees": 1.1390575959349538,
       "transaction_count": 69110,
       "trusted_transaction_count": 653,
       "trusted_transaction_share": 0.009448704963102302,
@@ -31674,10 +31527,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "DappRadar",
       "application_id": "0x742a9a3a6a97c94f087aa389617407779349416fd68a05dba1a3ef27bb7ec0e4",
       "is_oss": false,
-      "gas_fees": 0.04208021164520653,
+      "gas_fees": 0.04208021164520656,
       "transaction_count": 1043,
       "trusted_transaction_count": 47,
       "trusted_transaction_share": 0,
@@ -31922,10 +31774,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "DefiLlama",
       "application_id": "0xae07bfec2c3c90937679f8c8c5c32e80407c09903aa03d1b5e5a075e67592b86",
       "is_oss": false,
-      "gas_fees": 0.17172517093963988,
+      "gas_fees": 0.1717251709396397,
       "transaction_count": 38731,
       "trusted_transaction_count": 3854,
       "trusted_transaction_share": 0.09950685497405179,
@@ -31938,7 +31789,7 @@
       "trusted_recurring_users": 211,
       "power_user_addresses": 3995,
       "openrank_trusted_users_count": 73,
-      "log_gas_fees": 0.06882575951407191,
+      "log_gas_fees": 0.06882575951407183,
       "log_transaction_count": 4.588069923181224,
       "log_trusted_transaction_count": 3.5860243823869755
     }
@@ -32030,10 +31881,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "LlamaPay",
       "application_id": "0x93decae913f62c0a86519d0b0798e4a10c46c541bfc14dcff0193d6b026e9532",
       "is_oss": false,
-      "gas_fees": 0.03312182136704809,
+      "gas_fees": 0.03312182136704806,
       "transaction_count": 3480,
       "trusted_transaction_count": 342,
       "trusted_transaction_share": 0,
@@ -32733,10 +32583,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Reserve Protocol",
       "application_id": "0xab1ddf597f6539acc5ad601c2a6d2899c0475cfd9cc3b837939b1084ba5d7a36",
       "is_oss": true,
-      "gas_fees": 0.45956832190869806,
+      "gas_fees": 0.4595683219086978,
       "transaction_count": 28625,
       "trusted_transaction_count": 10667,
       "trusted_transaction_share": 0.372646288209607,
@@ -32749,7 +32598,7 @@
       "trusted_recurring_users": 176,
       "power_user_addresses": 6351,
       "openrank_trusted_users_count": 46,
-      "log_gas_fees": 0.16422442898039877,
+      "log_gas_fees": 0.16422442898039874,
       "log_transaction_count": 4.45676066694257,
       "log_trusted_transaction_count": 4.028083007017838
     }
@@ -32848,10 +32697,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Orderly Network",
       "application_id": "0x52d9a9709aeb50c10afb0f67a35f1a538bc6897c9f45161d39c37fd566fbe19a",
       "is_oss": true,
-      "gas_fees": 1.0485944051399754,
+      "gas_fees": 1.0485944051399756,
       "transaction_count": 73122,
       "trusted_transaction_count": 9982,
       "trusted_transaction_share": 0.13651158338119854,
@@ -33040,10 +32888,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Overnight Finance",
       "application_id": "0xf900c29f3adf3153dbfbd974303e590850c0d2ced1966490c705290a63ffea1b",
       "is_oss": true,
-      "gas_fees": 4.388704771488593,
+      "gas_fees": 4.388704771488588,
       "transaction_count": 114213,
       "trusted_transaction_count": 6007,
       "trusted_transaction_share": 0.05259471338639209,
@@ -33056,7 +32903,7 @@
       "trusted_recurring_users": 232,
       "power_user_addresses": 7310,
       "openrank_trusted_users_count": 65,
-      "log_gas_fees": 0.7314843907540141,
+      "log_gas_fees": 0.7314843907540136,
       "log_transaction_count": 5.057719341651423,
       "log_trusted_transaction_count": 3.778729923996112
     }
@@ -33311,10 +33158,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Velocimeter/Graphene",
       "application_id": "0xe8e098fcf95bef2c282b75014bf8ea46231896a4ba19fc17be3bc186d43dbb07",
       "is_oss": false,
-      "gas_fees": 1.1937225867385746,
+      "gas_fees": 1.1937225867385752,
       "transaction_count": 50817,
       "trusted_transaction_count": 3696,
       "trusted_transaction_share": 0.07273156620815868,
@@ -33327,7 +33173,7 @@
       "trusted_recurring_users": 43,
       "power_user_addresses": 512,
       "openrank_trusted_users_count": 4,
-      "log_gas_fees": 0.34118170680018794,
+      "log_gas_fees": 0.3411817068001881,
       "log_transaction_count": 4.706017568899007,
       "log_trusted_transaction_count": 3.5678494505731067
     }
@@ -33409,10 +33255,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "👑 King of the Degens 🎩 - Farcaster Frame Game",
       "application_id": "0xded5569a48e46a8b71d2b347d90b0319a7dc8f2f599fcf902afb032877b5561e",
       "is_oss": false,
-      "gas_fees": 0.2625405585561436,
+      "gas_fees": 0.26254055855614367,
       "transaction_count": 11547,
       "trusted_transaction_count": 8648,
       "trusted_transaction_share": 0.7617369858187263,
@@ -33640,10 +33485,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Sushiswap",
       "application_id": "0x41b2ae8a2ead458ff7c85549a9a11380353e1ae4b234666312d495326636f77a",
       "is_oss": true,
-      "gas_fees": 45.50934034109122,
+      "gas_fees": 45.50934034109119,
       "transaction_count": 921162,
       "trusted_transaction_count": 28835,
       "trusted_transaction_share": 0.03130285443819871,
@@ -33656,7 +33500,7 @@
       "trusted_recurring_users": 669,
       "power_user_addresses": 18003,
       "openrank_trusted_users_count": 267,
-      "log_gas_fees": 1.6675401797984293,
+      "log_gas_fees": 1.667540179798429,
       "log_transaction_count": 5.964336485503067,
       "log_trusted_transaction_count": 4.459935016851525
     }
@@ -33796,10 +33640,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Harvest Finance",
       "application_id": "0x41cf185bd4ee6592c65edcb7360e2e56e069fe50ea4adeb7aaee243f7a515c92",
       "is_oss": true,
-      "gas_fees": 0.5096781109606924,
+      "gas_fees": 0.5096781109606914,
       "transaction_count": 16110,
       "trusted_transaction_count": 743,
       "trusted_transaction_share": 0.04612042209807573,
@@ -33812,7 +33655,7 @@
       "trusted_recurring_users": 13,
       "power_user_addresses": 509,
       "openrank_trusted_users_count": 5,
-      "log_gas_fees": 0.17888435819661735,
+      "log_gas_fees": 0.17888435819661708,
       "log_transaction_count": 4.207122497650964,
       "log_trusted_transaction_count": 2.8715729355458786
     }
@@ -34010,10 +33853,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "QiDao - Mai.Finance",
       "application_id": "0x797dbac78f23a0c01378b0803063fe70618e7744ca516e5aef1e7ee244fded51",
       "is_oss": false,
-      "gas_fees": 0.09414012254851592,
+      "gas_fees": 0.09414012254851595,
       "transaction_count": 24493,
       "trusted_transaction_count": 2229,
       "trusted_transaction_share": 0.09100559343485894,
@@ -34289,25 +34131,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Highlight",
       "application_id": "0x331511dd6300baf10a35b2d3f3953fd7160412b970049b3a63b64564ce26c347",
       "is_oss": false,
-      "gas_fees": 2.3831881871166427,
+      "gas_fees": 2.3831881871166445,
       "transaction_count": 119556,
-      "trusted_transaction_count": 45471,
-      "trusted_transaction_share": 0.3803322292482184,
-      "trusted_users_onboarded": 2153,
+      "trusted_transaction_count": 45474,
+      "trusted_transaction_share": 0.38035732209173945,
+      "trusted_users_onboarded": 2154,
       "daily_active_addresses": 321.58196721311475,
-      "trusted_daily_active_users": 160.2827868852459,
+      "trusted_daily_active_users": 160.29098360655738,
       "monthly_active_addresses": 7918.395061728395,
-      "trusted_monthly_active_users": 3516.172839506173,
+      "trusted_monthly_active_users": 3516.41975308642,
       "recurring_addresses": 2638,
       "trusted_recurring_users": 2049,
       "power_user_addresses": 22447,
       "openrank_trusted_users_count": 1451,
-      "log_gas_fees": 0.5293261557404596,
+      "log_gas_fees": 0.5293261557404598,
       "log_transaction_count": 5.07757500891164,
-      "log_trusted_transaction_count": 4.657744056247376
+      "log_trusted_transaction_count": 4.657772707735521
     }
   },
   {
@@ -34782,10 +34623,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Unlonely",
       "application_id": "0x27eb7d5d11ce5a3cca4358a8a6b2ea65fdac15655fb1d29d2d47908999586ad2",
       "is_oss": false,
-      "gas_fees": 0.06754707648019438,
+      "gas_fees": 0.06754707648019433,
       "transaction_count": 5260,
       "trusted_transaction_count": 3869,
       "trusted_transaction_share": 0.7355513307984791,
@@ -35259,10 +35099,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Tokepad",
       "application_id": "0x0d1810bae195eec71762b45236d0b9fd0a37c3089f7c466453b86e961326f8a7",
       "is_oss": false,
-      "gas_fees": 0.24365253963087186,
+      "gas_fees": 0.24365253963087205,
       "transaction_count": 5747,
       "trusted_transaction_count": 52,
       "trusted_transaction_share": 0,
@@ -35673,10 +35512,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Vesper Finance",
       "application_id": "0xfa434705204825a48e5f4a8dd34e548cc54988c592c2aaae54faf8da0a139ffd",
       "is_oss": true,
-      "gas_fees": 0.13206745617251206,
+      "gas_fees": 0.1320674561725121,
       "transaction_count": 9018,
       "trusted_transaction_count": 1152,
       "trusted_transaction_share": 0.1277445109780439,
@@ -36085,10 +35923,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Metronome",
       "application_id": "0x6c4b5386ddf396c088d3a96a65fb8a928a2a9edeb6eeb46ec6179acb5eaa23fe",
       "is_oss": true,
-      "gas_fees": 0.1948523804661632,
+      "gas_fees": 0.19485238046616313,
       "transaction_count": 15303,
       "trusted_transaction_count": 3066,
       "trusted_transaction_share": 0.2003528719858851,
@@ -36101,7 +35938,7 @@
       "trusted_recurring_users": 57,
       "power_user_addresses": 2037,
       "openrank_trusted_users_count": 35,
-      "log_gas_fees": 0.0773142531426502,
+      "log_gas_fees": 0.07731425314265011,
       "log_transaction_count": 4.18480495701924,
       "log_trusted_transaction_count": 3.4867137759824853
     }
@@ -36170,10 +36007,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Based Bodega",
       "application_id": "0xdbfb85445c76c4dc1f6f3992098713ba07857f3417951184bfb6a7e65f14807c",
       "is_oss": false,
-      "gas_fees": 0.0026221915811461363,
+      "gas_fees": 0.0026221915811461376,
       "transaction_count": 348,
       "trusted_transaction_count": 126,
       "trusted_transaction_share": 0,
@@ -36271,25 +36107,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "tanX - The World's Leading Institutional DEX",
       "application_id": "0xa8213245a57be579692ead3a2381364f5942a68afd17b41a3ec1079e50af1a26",
       "is_oss": false,
-      "gas_fees": 0.005960418336166716,
+      "gas_fees": 0.005960418336166714,
       "transaction_count": 17607,
-      "trusted_transaction_count": 5434,
-      "trusted_transaction_share": 0.3086272505253592,
+      "trusted_transaction_count": 5435,
+      "trusted_transaction_share": 0.30868404611802125,
       "trusted_users_onboarded": 267,
       "daily_active_addresses": 44.60655737704918,
-      "trusted_daily_active_users": 16.30327868852459,
+      "trusted_daily_active_users": 16.307377049180328,
       "monthly_active_addresses": 1289.8765432098767,
-      "trusted_monthly_active_users": 484.0740740740741,
+      "trusted_monthly_active_users": 484.1975308641976,
       "recurring_addresses": 12,
       "trusted_recurring_users": 0,
       "power_user_addresses": 6790,
       "openrank_trusted_users_count": 44,
       "log_gas_fees": 0.0025808928109886456,
       "log_transaction_count": 4.245710029545291,
-      "log_trusted_transaction_count": 3.7351995484223135
+      "log_trusted_transaction_count": 3.7352794480604565
     }
   },
   {
@@ -36440,10 +36275,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Sablier",
       "application_id": "0x7262ed9c020b3b41ac7ba405aab4ff37575f8b6f975ebed2e65554a08419f8f4",
       "is_oss": false,
-      "gas_fees": 0.01026123018463469,
+      "gas_fees": 0.010261230184634696,
       "transaction_count": 901,
       "trusted_transaction_count": 131,
       "trusted_transaction_share": 0,
@@ -36620,25 +36454,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Compound Finance",
       "application_id": "0xd3d00c946f62ac8cf49a85e3ab7d295d3b56f68d0b9f1fa4d595742fa372cf78",
       "is_oss": false,
-      "gas_fees": 4.1276963995910325,
-      "transaction_count": 557604,
-      "trusted_transaction_count": 73430,
-      "trusted_transaction_share": 0.13168843838996852,
-      "trusted_users_onboarded": 1643,
-      "daily_active_addresses": 839.1680327868852,
-      "trusted_daily_active_users": 115.57786885245902,
-      "monthly_active_addresses": 20257.037037037036,
-      "trusted_monthly_active_users": 2768.2716049382716,
-      "recurring_addresses": 3992,
-      "trusted_recurring_users": 1015,
-      "power_user_addresses": 35492,
-      "openrank_trusted_users_count": 168,
-      "log_gas_fees": 0.7099223035845551,
-      "log_transaction_count": 5.746326659391735,
-      "log_trusted_transaction_count": 4.865879442568767
+      "gas_fees": 3.8447452956272854,
+      "transaction_count": 531322,
+      "trusted_transaction_count": 71470,
+      "trusted_transaction_share": 0.13451353416572248,
+      "trusted_users_onboarded": 1590,
+      "daily_active_addresses": 808.1762295081967,
+      "trusted_daily_active_users": 112.10245901639344,
+      "monthly_active_addresses": 19645.555555555555,
+      "trusted_monthly_active_users": 2698.7654320987654,
+      "recurring_addresses": 3881,
+      "trusted_recurring_users": 996,
+      "power_user_addresses": 34480,
+      "openrank_trusted_users_count": 154,
+      "log_gas_fees": 0.6852709496816697,
+      "log_transaction_count": 5.725358616129731,
+      "log_trusted_transaction_count": 4.854129858656975
     }
   },
   {
@@ -37375,10 +37208,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Archly",
       "application_id": "0x54c8768e4b6c2ac3d3df596b5dc9d1dc81cb879d83a65a0e50f0270fe24fa2cd",
       "is_oss": false,
-      "gas_fees": 0.050073492422602894,
+      "gas_fees": 0.0500734924226029,
       "transaction_count": 5580,
       "trusted_transaction_count": 166,
       "trusted_transaction_share": 0,
@@ -37845,25 +37677,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Seamless Protocol",
       "application_id": "0x7539f43dc91f9c406c83a06339708e4033cdbf630916c6dfb9de2b5ef811affd",
       "is_oss": true,
-      "gas_fees": 11.267553488906708,
+      "gas_fees": 11.267553488906714,
       "transaction_count": 588988,
-      "trusted_transaction_count": 42971,
-      "trusted_transaction_share": 0.07295734378289541,
+      "trusted_transaction_count": 42972,
+      "trusted_transaction_share": 0.0729590416103554,
       "trusted_users_onboarded": 1363,
       "daily_active_addresses": 938.0983606557377,
-      "trusted_daily_active_users": 93.38524590163935,
+      "trusted_daily_active_users": 93.38934426229508,
       "monthly_active_addresses": 21733.086419753086,
-      "trusted_monthly_active_users": 2212.098765432099,
+      "trusted_monthly_active_users": 2212.222222222222,
       "recurring_addresses": 5073,
       "trusted_recurring_users": 704,
       "power_user_addresses": 31767,
       "openrank_trusted_users_count": 153,
-      "log_gas_fees": 1.0887579602650488,
+      "log_gas_fees": 1.088757960265049,
       "log_transaction_count": 5.770107183948544,
-      "log_trusted_transaction_count": 4.633185567059527
+      "log_trusted_transaction_count": 4.633195673394554
     }
   },
   {
@@ -38024,25 +37855,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Zora",
       "application_id": "0x9102357674825ed224734387fbefbf41c16fe5d9764c2f7f3e897ad3325d3990",
       "is_oss": true,
-      "gas_fees": 151.94804428677773,
+      "gas_fees": 151.94804428677762,
       "transaction_count": 7188671,
-      "trusted_transaction_count": 1530598,
-      "trusted_transaction_share": 0.21291807623411893,
-      "trusted_users_onboarded": 13879,
+      "trusted_transaction_count": 1530701,
+      "trusted_transaction_share": 0.2129324043345425,
+      "trusted_users_onboarded": 13880,
       "daily_active_addresses": 15854.868852459016,
-      "trusted_daily_active_users": 2888.9139344262294,
+      "trusted_daily_active_users": 2889.0163934426228,
       "monthly_active_addresses": 250599.8765432099,
-      "trusted_monthly_active_users": 22738.271604938273,
+      "trusted_monthly_active_users": 22738.395061728395,
       "recurring_addresses": 283629,
-      "trusted_recurring_users": 31708,
+      "trusted_recurring_users": 31707,
       "power_user_addresses": 71681,
       "openrank_trusted_users_count": 3172,
       "log_gas_fees": 2.1845439281275567,
       "log_transaction_count": 6.856648668360486,
-      "log_trusted_transaction_count": 6.184861425252009
+      "log_trusted_transaction_count": 6.184890649644941
     }
   },
   {
@@ -38748,25 +38578,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Synthetix",
       "application_id": "0xcf10a15439ef8c56e1b6c22641544012bfd032c7b584d1160a7d743cb770875b",
       "is_oss": true,
-      "gas_fees": 161.60047660916322,
+      "gas_fees": 161.60047660916325,
       "transaction_count": 488457,
-      "trusted_transaction_count": 61654,
-      "trusted_transaction_share": 0.12622196017254333,
+      "trusted_transaction_count": 61656,
+      "trusted_transaction_share": 0.12622605469877593,
       "trusted_users_onboarded": 395,
       "daily_active_addresses": 953.655737704918,
-      "trusted_daily_active_users": 148.81967213114754,
+      "trusted_daily_active_users": 148.8237704918033,
       "monthly_active_addresses": 13728.395061728395,
-      "trusted_monthly_active_users": 2220.4938271604938,
+      "trusted_monthly_active_users": 2220.6172839506175,
       "recurring_addresses": 10456,
       "trusted_recurring_users": 1988,
       "power_user_addresses": 16650,
       "openrank_trusted_users_count": 281,
-      "log_gas_fees": 2.2111218142496005,
+      "log_gas_fees": 2.211121814249601,
       "log_transaction_count": 5.688827226903481,
-      "log_trusted_transaction_count": 4.789968302089217
+      "log_trusted_transaction_count": 4.789982389752443
     }
   },
   {
@@ -39028,25 +38857,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Velodrome Finance",
       "application_id": "0x08df6e20a3cfabbaf8f34d4f4d048fe7da40447c24be0f3ad513db6f13c755dd",
       "is_oss": false,
-      "gas_fees": 36.729953746282085,
+      "gas_fees": 36.729953746282135,
       "transaction_count": 2224818,
-      "trusted_transaction_count": 216223,
-      "trusted_transaction_share": 0.09718682606846941,
+      "trusted_transaction_count": 216225,
+      "trusted_transaction_share": 0.097187725018406,
       "trusted_users_onboarded": 443,
       "daily_active_addresses": 2436.1639344262294,
-      "trusted_daily_active_users": 345.1885245901639,
+      "trusted_daily_active_users": 345.1967213114754,
       "monthly_active_addresses": 28323.703703703704,
-      "trusted_monthly_active_users": 3644.1975308641977,
+      "trusted_monthly_active_users": 3644.444444444445,
       "recurring_addresses": 20505,
       "trusted_recurring_users": 3562,
       "power_user_addresses": 29402,
       "openrank_trusted_users_count": 367,
-      "log_gas_fees": 1.576686272793183,
+      "log_gas_fees": 1.5766862727931834,
       "log_transaction_count": 6.347294684755744,
-      "log_trusted_transaction_count": 5.334903897244881
+      "log_trusted_transaction_count": 5.334907914305646
     }
   },
   {
@@ -39216,25 +39044,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Aerodrome Finance",
       "application_id": "0x4288aacdda65af69c03b2c9b9d057e2b93ed1b7671e481b03c6a7b33349d2365",
       "is_oss": false,
-      "gas_fees": 118.97895016061554,
+      "gas_fees": 118.9789501606155,
       "transaction_count": 3959551,
-      "trusted_transaction_count": 336960,
-      "trusted_transaction_share": 0.08510055811883721,
-      "trusted_users_onboarded": 1942,
+      "trusted_transaction_count": 336614,
+      "trusted_transaction_share": 0.08501317447357036,
+      "trusted_users_onboarded": 1941,
       "daily_active_addresses": 4183.7827868852455,
-      "trusted_daily_active_users": 385.6188524590164,
+      "trusted_daily_active_users": 385.48770491803276,
       "monthly_active_addresses": 58219.87654320988,
-      "trusted_monthly_active_users": 4374.197530864198,
+      "trusted_monthly_active_users": 4374.074074074074,
       "recurring_addresses": 37191,
-      "trusted_recurring_users": 4020,
+      "trusted_recurring_users": 4019,
       "power_user_addresses": 39330,
       "openrank_trusted_users_count": 701,
       "log_gas_fees": 2.079105057456026,
       "log_transaction_count": 6.597646050841078,
-      "log_trusted_transaction_count": 5.527579638364122
+      "log_trusted_transaction_count": 5.527133464795126
     }
   },
   {
@@ -39461,10 +39288,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "🏰 BuidlGuidl",
       "application_id": "0x79196c0af1a1f78fe5a009a4753c46d2271b17fc2836e1f6635822f8f4cb3b61",
       "is_oss": true,
-      "gas_fees": 0.4090219635899655,
+      "gas_fees": 0.40902196358996523,
       "transaction_count": 25015,
       "trusted_transaction_count": 2301,
       "trusted_transaction_share": 0.09198480911453129,
@@ -39477,7 +39303,7 @@
       "trusted_recurring_users": 2,
       "power_user_addresses": 1990,
       "openrank_trusted_users_count": 86,
-      "log_gas_fees": 0.1489177628691725,
+      "log_gas_fees": 0.14891776286917244,
       "log_transaction_count": 4.398217868234877,
       "log_trusted_transaction_count": 3.362105319293773
     }
@@ -39764,10 +39590,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Base Runners",
       "application_id": "0x63c40ab7a0dca87506b015935db8c37b12e5246661be84364920ec151b48a4e7",
       "is_oss": false,
-      "gas_fees": 0.025662672549686745,
+      "gas_fees": 0.025662672549686794,
       "transaction_count": 1330,
       "trusted_transaction_count": 185,
       "trusted_transaction_share": 0.13909774436090225,
@@ -39938,10 +39763,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "NiftyKit",
       "application_id": "0x3890b8264147dbeaaefc6ba0eb6df0fca5fb7ebe508fa1ed87065c58387ead92",
       "is_oss": false,
-      "gas_fees": 0.48122131702557136,
+      "gas_fees": 0.4812213170255721,
       "transaction_count": 16705,
       "trusted_transaction_count": 3545,
       "trusted_transaction_share": 0.21221191260101765,
@@ -39954,7 +39778,7 @@
       "trusted_recurring_users": 44,
       "power_user_addresses": 3674,
       "openrank_trusted_users_count": 145,
-      "log_gas_fees": 0.1706199535799154,
+      "log_gas_fees": 0.1706199535799157,
       "log_transaction_count": 4.222872477069839,
       "log_trusted_transaction_count": 3.549738731264899
     }
@@ -40200,25 +40024,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Zerion",
       "application_id": "0xd61084147c0e08c9a304348584c6bd0e9974a4073bff55f6b1728730b6ce07f7",
       "is_oss": true,
-      "gas_fees": 3.9705982655102856,
+      "gas_fees": 3.970598265510288,
       "transaction_count": 121976,
-      "trusted_transaction_count": 34665,
-      "trusted_transaction_share": 0.28419525152489017,
+      "trusted_transaction_count": 34657,
+      "trusted_transaction_share": 0.28412966485210206,
       "trusted_users_onboarded": 374,
       "daily_active_addresses": 307.77868852459017,
-      "trusted_daily_active_users": 92.48360655737704,
+      "trusted_daily_active_users": 92.4672131147541,
       "monthly_active_addresses": 6000.37037037037,
-      "trusted_monthly_active_users": 1440.1234567901236,
+      "trusted_monthly_active_users": 1439.8765432098767,
       "recurring_addresses": 3755,
       "trusted_recurring_users": 1367,
       "power_user_addresses": 8800,
       "openrank_trusted_users_count": 245,
-      "log_gas_fees": 0.6964086639391505,
+      "log_gas_fees": 0.6964086639391508,
       "log_transaction_count": 5.086277947766823,
-      "log_trusted_transaction_count": 4.539903732681851
+      "log_trusted_transaction_count": 4.5398034973846775
     }
   },
   {
@@ -40348,10 +40171,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Crowdmuse",
       "application_id": "0x46b434953909491a2555ccb9cdaee3417765721a33a302a470b25aa6926cae61",
       "is_oss": true,
-      "gas_fees": 0.031099320871710013,
+      "gas_fees": 0.03109932087171004,
       "transaction_count": 11174,
       "trusted_transaction_count": 425,
       "trusted_transaction_share": 0.03803472346518704,
@@ -40516,10 +40338,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "BMX by Morphex",
       "application_id": "0xe5c133e05956a3939b9a78f4ad5d0a897a027da60a7d5e1b6276a2266211f69f",
       "is_oss": true,
-      "gas_fees": 2.9013826212675045,
+      "gas_fees": 2.901382621267505,
       "transaction_count": 168301,
       "trusted_transaction_count": 2236,
       "trusted_transaction_share": 0.01328572022744963,
@@ -40532,7 +40353,7 @@
       "trusted_recurring_users": 32,
       "power_user_addresses": 869,
       "openrank_trusted_users_count": 20,
-      "log_gas_fees": 0.5912185450711963,
+      "log_gas_fees": 0.5912185450711964,
       "log_transaction_count": 5.226089276901569,
       "log_trusted_transaction_count": 3.34966598409663
     }
@@ -40626,10 +40447,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Infusion",
       "application_id": "0xf234dd929b802645332b513bc9ecc47d83ea513fff791f3a9c6788bbd8229db0",
       "is_oss": false,
-      "gas_fees": 0.9834955886667408,
+      "gas_fees": 0.983495588666741,
       "transaction_count": 29339,
       "trusted_transaction_count": 421,
       "trusted_transaction_share": 0.01434950066464433,
@@ -40642,7 +40462,7 @@
       "trusted_recurring_users": 2,
       "power_user_addresses": 329,
       "openrank_trusted_users_count": 2,
-      "log_gas_fees": 0.29743123893176104,
+      "log_gas_fees": 0.29743123893176115,
       "log_transaction_count": 4.467460109507264,
       "log_trusted_transaction_count": 2.625312450961674
     }
@@ -40791,10 +40611,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Account Abstraction - ERC-4337",
       "application_id": "0xb98778ca9ff41446e2bc304f7b5d27f0fa7c2bcd11df19e22d1352c06698a1f6",
       "is_oss": true,
-      "gas_fees": 203.2287742157505,
+      "gas_fees": 203.22877421575032,
       "transaction_count": 2455463,
       "trusted_transaction_count": 11,
       "trusted_transaction_share": 0,
@@ -40807,7 +40626,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 2,
       "openrank_trusted_users_count": 4,
-      "log_gas_fees": 2.3101169307124607,
+      "log_gas_fees": 2.3101169307124603,
       "log_transaction_count": 6.390133571244671,
       "log_trusted_transaction_count": 1.0791812460476249
     }
@@ -40940,10 +40759,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Revert",
       "application_id": "0x8016ec0d5302d0347a567897083883e11e112d7ed17319f88682213470a3ac49",
       "is_oss": true,
-      "gas_fees": 0.8049355988737873,
+      "gas_fees": 0.8049355988737864,
       "transaction_count": 30155,
       "trusted_transaction_count": 591,
       "trusted_transaction_share": 0,
@@ -40956,7 +40774,7 @@
       "trusted_recurring_users": 13,
       "power_user_addresses": 271,
       "openrank_trusted_users_count": 23,
-      "log_gas_fees": 0.2564617106446061,
+      "log_gas_fees": 0.25646171064460593,
       "log_transaction_count": 4.479373734640201,
       "log_trusted_transaction_count": 2.77232170672292
     }
@@ -41378,25 +41196,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "iZUMi Finance",
       "application_id": "0x229cb4bd0c69afd89939b1e1364be950a79045c8233ee9278a6224814873c314",
       "is_oss": false,
-      "gas_fees": 4.212965515909457,
+      "gas_fees": 4.212965515909459,
       "transaction_count": 332565,
-      "trusted_transaction_count": 30976,
-      "trusted_transaction_share": 0.09314269390946131,
+      "trusted_transaction_count": 30977,
+      "trusted_transaction_share": 0.0931457008404372,
       "trusted_users_onboarded": 685,
       "daily_active_addresses": 757.0327868852459,
-      "trusted_daily_active_users": 86.3688524590164,
+      "trusted_daily_active_users": 86.37295081967213,
       "monthly_active_addresses": 18412.962962962964,
-      "trusted_monthly_active_users": 1929.382716049383,
+      "trusted_monthly_active_users": 1929.5061728395062,
       "recurring_addresses": 2774,
       "trusted_recurring_users": 475,
       "power_user_addresses": 27389,
       "openrank_trusted_users_count": 94,
-      "log_gas_fees": 0.7170848520515596,
+      "log_gas_fees": 0.7170848520515597,
       "log_transaction_count": 5.521877846906461,
-      "log_trusted_transaction_count": 4.491039355755879
+      "log_trusted_transaction_count": 4.491053375430866
     }
   },
   {
@@ -41723,25 +41540,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Synapse Protocol",
       "application_id": "0xefaeef1446de875ab6e50d31c8dbe776f99d884cb8cb68d50b1384067e4aeb6b",
       "is_oss": true,
-      "gas_fees": 9.80539858776022,
+      "gas_fees": 9.805398587760221,
       "transaction_count": 290932,
-      "trusted_transaction_count": 34605,
-      "trusted_transaction_share": 0.11894532055600622,
-      "trusted_users_onboarded": 1675,
+      "trusted_transaction_count": 34607,
+      "trusted_transaction_share": 0.1189521950146426,
+      "trusted_users_onboarded": 1674,
       "daily_active_addresses": 513.8852459016393,
-      "trusted_daily_active_users": 116.72950819672131,
+      "trusted_daily_active_users": 116.73770491803279,
       "monthly_active_addresses": 13024.074074074075,
-      "trusted_monthly_active_users": 2803.703703703704,
+      "trusted_monthly_active_users": 2803.8271604938273,
       "recurring_addresses": 1643,
       "trusted_recurring_users": 484,
       "power_user_addresses": 30512,
       "openrank_trusted_users_count": 753,
       "log_gas_fees": 1.0336407916979324,
       "log_transaction_count": 5.463792985272709,
-      "log_trusted_transaction_count": 4.539151403445493
+      "log_trusted_transaction_count": 4.5391765020950166
     }
   },
   {
@@ -42123,10 +41939,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "3DNS",
       "application_id": "0x08d4923c8047ec8856f54a1d6e0763d41eaced38e621b2f15284437918defe1f",
       "is_oss": false,
-      "gas_fees": 0.27371233957141544,
+      "gas_fees": 0.2737123395714155,
       "transaction_count": 36270,
       "trusted_transaction_count": 2223,
       "trusted_transaction_share": 0.06129032258064516,
@@ -42139,7 +41954,7 @@
       "trusted_recurring_users": 21,
       "power_user_addresses": 549,
       "openrank_trusted_users_count": 79,
-      "log_gas_fees": 0.1050713562230273,
+      "log_gas_fees": 0.10507135622302737,
       "log_transaction_count": 4.559559529346496,
       "log_trusted_transaction_count": 3.34713478291002
     }
@@ -42621,10 +42436,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Idle",
       "application_id": "0x4feb65733264313314056d99958c55902bd2e77139123e73090f46249603ae18",
       "is_oss": false,
-      "gas_fees": 0.24117690668918204,
+      "gas_fees": 0.24117690668918212,
       "transaction_count": 5548,
       "trusted_transaction_count": 1033,
       "trusted_transaction_share": 0.18619322278298486,
@@ -42637,7 +42451,7 @@
       "trusted_recurring_users": 4,
       "power_user_addresses": 571,
       "openrank_trusted_users_count": 7,
-      "log_gas_fees": 0.09383368651351467,
+      "log_gas_fees": 0.09383368651351476,
       "log_transaction_count": 3.744214724814166,
       "log_trusted_transaction_count": 3.0145205387579237
     }
@@ -42723,7 +42537,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Owlto Finance",
       "application_id": "0x5bf4cb9356352d8d123d9925d213594088a16a5aacb407030a2b25de728217bd",
       "is_oss": true,
       "gas_fees": 0.874803867716144,
@@ -42826,10 +42639,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Bodhi",
       "application_id": "0xe173916be16955177d6b6380f50cc2e943e906c3e337736b361b5dbe477e7685",
       "is_oss": false,
-      "gas_fees": 0.3010114438956317,
+      "gas_fees": 0.30101144389563184,
       "transaction_count": 36643,
       "trusted_transaction_count": 1773,
       "trusted_transaction_share": 0.04838577627377671,
@@ -42946,25 +42758,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Coinvise",
       "application_id": "0xc7bd0b2faaf873e06066c2a986c2b657ee4c9b31a61bfb5e91825e1dee546dbc",
       "is_oss": false,
-      "gas_fees": 3.2656310836209013,
+      "gas_fees": 3.265631083620905,
       "transaction_count": 69540,
-      "trusted_transaction_count": 16926,
-      "trusted_transaction_share": 0.2433994823123382,
-      "trusted_users_onboarded": 1234,
+      "trusted_transaction_count": 16927,
+      "trusted_transaction_share": 0.24341386252516536,
+      "trusted_users_onboarded": 1235,
       "daily_active_addresses": 240.4877049180328,
-      "trusted_daily_active_users": 52.282786885245905,
+      "trusted_daily_active_users": 52.28688524590164,
       "monthly_active_addresses": 6069.876543209877,
-      "trusted_monthly_active_users": 1237.1604938271605,
+      "trusted_monthly_active_users": 1237.283950617284,
       "recurring_addresses": 1735,
       "trusted_recurring_users": 537,
       "power_user_addresses": 6867,
       "openrank_trusted_users_count": 312,
-      "log_gas_fees": 0.6299832924458455,
+      "log_gas_fees": 0.6299832924458458,
       "log_transaction_count": 4.842240931549416,
-      "log_trusted_transaction_count": 4.22857999420492
+      "log_trusted_transaction_count": 4.2286056503550915
     }
   },
   {
@@ -43122,10 +42933,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Perp V2 - Curie",
       "application_id": "0x4cf98b5dec7f0f51eb6b88ecb15639bafc7320bdc6e21ac443f4c58ebeb1245b",
       "is_oss": true,
-      "gas_fees": 119.54092134919435,
+      "gas_fees": 119.54092134919438,
       "transaction_count": 670618,
       "trusted_transaction_count": 7041,
       "trusted_transaction_share": 0.010499270821838961,
@@ -43301,10 +43111,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Portals",
       "application_id": "0xc13c7f458b87400b3d435c48c9536276073ba4c2038bac2af8d9c40a6a9dcd14",
       "is_oss": false,
-      "gas_fees": 0.3333037918539013,
+      "gas_fees": 0.33330379185390113,
       "transaction_count": 6805,
       "trusted_transaction_count": 526,
       "trusted_transaction_share": 0.07729610580455547,
@@ -43317,7 +43126,7 @@
       "trusted_recurring_users": 9,
       "power_user_addresses": 392,
       "openrank_trusted_users_count": 18,
-      "log_gas_fees": 0.1249291142255738,
+      "log_gas_fees": 0.12492911422557373,
       "log_transaction_count": 3.8328919447597904,
       "log_trusted_transaction_count": 2.7218106152125467
     }
@@ -44255,10 +44064,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Giveth",
       "application_id": "0xe434930e189c807b137ff0d8e2fa6a95eaa57dde574143a02ca0d7fb31a40bea",
       "is_oss": true,
-      "gas_fees": 0.019131157377736553,
+      "gas_fees": 0.019131157377736543,
       "transaction_count": 3728,
       "trusted_transaction_count": 1902,
       "trusted_transaction_share": 0.5101931330472103,
@@ -44370,25 +44178,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Across Protocol",
       "application_id": "0x72723e07fe409557489a6643b43d9493a94c10ba68230b0527f01834cb6a550f",
       "is_oss": false,
-      "gas_fees": 26.09279358628706,
+      "gas_fees": 26.09279358628704,
       "transaction_count": 1036884,
-      "trusted_transaction_count": 26676,
-      "trusted_transaction_share": 0.025727082296573195,
+      "trusted_transaction_count": 26677,
+      "trusted_transaction_share": 0.025728046724609502,
       "trusted_users_onboarded": 840,
       "daily_active_addresses": 804.0122950819672,
-      "trusted_daily_active_users": 89.27049180327869,
+      "trusted_daily_active_users": 89.27459016393442,
       "monthly_active_addresses": 21254.444444444445,
-      "trusted_monthly_active_users": 2229.2592592592596,
+      "trusted_monthly_active_users": 2229.382716049383,
       "recurring_addresses": 3858,
       "trusted_recurring_users": 933,
       "power_user_addresses": 28947,
       "openrank_trusted_users_count": 321,
-      "log_gas_fees": 1.432853788220965,
+      "log_gas_fees": 1.4328537882209647,
       "log_transaction_count": 6.015730591842337,
-      "log_trusted_transaction_count": 4.426136988786424
+      "log_trusted_transaction_count": 4.426153268215979
     }
   },
   {
@@ -44514,25 +44321,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Stargate Finance",
       "application_id": "0x62e37e96aa6e1cbfb6bd24b97c4b8f1e12cc3fe35d5388d2f041c42a12b40745",
       "is_oss": false,
-      "gas_fees": 102.92245716552989,
+      "gas_fees": 102.92245716552998,
       "transaction_count": 5109259,
-      "trusted_transaction_count": 252585,
-      "trusted_transaction_share": 0.04943671871009084,
+      "trusted_transaction_count": 252609,
+      "trusted_transaction_share": 0.049441416064443,
       "trusted_users_onboarded": 3087,
       "daily_active_addresses": 13042.065573770491,
-      "trusted_daily_active_users": 639.4713114754098,
+      "trusted_daily_active_users": 639.5450819672132,
       "monthly_active_addresses": 273823.950617284,
-      "trusted_monthly_active_users": 10068.271604938273,
+      "trusted_monthly_active_users": 10069.012345679013,
       "recurring_addresses": 232228,
-      "trusted_recurring_users": 12894,
+      "trusted_recurring_users": 12895,
       "power_user_addresses": 62035,
       "openrank_trusted_users_count": 441,
-      "log_gas_fees": 2.016709406741019,
+      "log_gas_fees": 2.0167094067410196,
       "log_transaction_count": 6.708358003620255,
-      "log_trusted_transaction_count": 5.4024092753909505
+      "log_trusted_transaction_count": 5.402450538851364
     }
   },
   {
@@ -44649,10 +44455,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Umbra",
       "application_id": "0x6c7990e08e4fbbb37b7df628116d66e53a14dcc3328bbf124be3245bca366068",
       "is_oss": true,
-      "gas_fees": 0.06802373015746761,
+      "gas_fees": 0.0680237301574676,
       "transaction_count": 22006,
       "trusted_transaction_count": 189,
       "trusted_transaction_share": 0,
@@ -44862,10 +44667,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Summer.fi",
       "application_id": "0xf9a4e3b240bf6d40ee533e5ed63a8288b1a739ee382b1f23ccc5229b7bc8a498",
       "is_oss": false,
-      "gas_fees": 0.2719980215334487,
+      "gas_fees": 0.2719980215334486,
       "transaction_count": 5096,
       "trusted_transaction_count": 670,
       "trusted_transaction_share": 0,
@@ -44878,7 +44682,7 @@
       "trusted_recurring_users": 13,
       "power_user_addresses": 148,
       "openrank_trusted_users_count": 16,
-      "log_gas_fees": 0.10448643581100037,
+      "log_gas_fees": 0.10448643581100028,
       "log_transaction_count": 3.707314633588708,
       "log_trusted_transaction_count": 2.826722520168992
     }
@@ -44952,10 +44756,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Onchain Blobs - Randomly generated onchain blobs minted via a Farcaster frame",
       "application_id": "0x3ea87586a0d82cb8824a045fdd1a95b0397a02a7534dab5e4b3538afe43ddf39",
       "is_oss": false,
-      "gas_fees": 0.06904165557762723,
+      "gas_fees": 0.06904165557762731,
       "transaction_count": 4195,
       "trusted_transaction_count": 1717,
       "trusted_transaction_share": 0.4092967818831943,
@@ -45120,10 +44923,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Based Onchain Punks",
       "application_id": "0x75a73ce0588cac3b0ee8953163b64f9449330d39e30efe4288b4f00be04ecc71",
       "is_oss": false,
-      "gas_fees": 0.027486610629785337,
+      "gas_fees": 0.02748661062978535,
       "transaction_count": 1268,
       "trusted_transaction_count": 255,
       "trusted_transaction_share": 0.20110410094637224,
@@ -45399,25 +45201,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Moonwell",
       "application_id": "0xd4f0252e6ac2408099cd40d213fb6f42e8fa129b446d6e8da55e673598ef14c0",
       "is_oss": true,
-      "gas_fees": 14.99100084647218,
+      "gas_fees": 14.991000846472197,
       "transaction_count": 699739,
-      "trusted_transaction_count": 12111,
-      "trusted_transaction_share": 0.017307881938837196,
+      "trusted_transaction_count": 12099,
+      "trusted_transaction_share": 0.017290732687473474,
       "trusted_users_onboarded": 159,
       "daily_active_addresses": 1041.795081967213,
-      "trusted_daily_active_users": 17.84426229508197,
+      "trusted_daily_active_users": 17.81967213114754,
       "monthly_active_addresses": 22317.654320987655,
-      "trusted_monthly_active_users": 270.3703703703704,
+      "trusted_monthly_active_users": 270.24691358024694,
       "recurring_addresses": 5844,
       "trusted_recurring_users": 132,
       "power_user_addresses": 6990,
       "openrank_trusted_users_count": 49,
-      "log_gas_fees": 1.2038756462664022,
+      "log_gas_fees": 1.2038756462664026,
       "log_transaction_count": 5.844936700670388,
-      "log_trusted_transaction_count": 4.083215862155997
+      "log_trusted_transaction_count": 4.08278537031645
     }
   },
   {
@@ -45617,25 +45418,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "BLOCKS",
       "application_id": "0x306977dfc31135826a031cca8ffcb1f82d8f14c9371f0362274be1dfa984f373",
       "is_oss": false,
-      "gas_fees": 6.1716911800587475,
+      "gas_fees": 6.171691180058743,
       "transaction_count": 386548,
-      "trusted_transaction_count": 16426,
-      "trusted_transaction_share": 0.04249407576808055,
+      "trusted_transaction_count": 16427,
+      "trusted_transaction_share": 0.04249666276891874,
       "trusted_users_onboarded": 202,
       "daily_active_addresses": 1246.7868852459017,
-      "trusted_daily_active_users": 55.09426229508197,
+      "trusted_daily_active_users": 55.09836065573771,
       "monthly_active_addresses": 26393.827160493827,
-      "trusted_monthly_active_users": 776.1728395061729,
+      "trusted_monthly_active_users": 776.2962962962963,
       "recurring_addresses": 16713,
       "trusted_recurring_users": 510,
       "power_user_addresses": 11902,
       "openrank_trusted_users_count": 69,
-      "log_gas_fees": 0.8556215801533928,
+      "log_gas_fees": 0.8556215801533925,
       "log_transaction_count": 5.587204554090757,
-      "log_trusted_transaction_count": 4.215558257141162
+      "log_trusted_transaction_count": 4.215584694181615
     }
   },
   {
@@ -45818,10 +45618,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Lido Finance",
       "application_id": "0x7747e26c3538f93bc67d9e13f343464996624e96fe549e3be484e848a1f61732",
       "is_oss": true,
-      "gas_fees": 0.07501184294641644,
+      "gas_fees": 0.07501184294641645,
       "transaction_count": 32439,
       "trusted_transaction_count": 3930,
       "trusted_transaction_share": 0.12115046703042634,
@@ -46047,10 +45846,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Alchemix",
       "application_id": "0x12d482385e2c26d37da1f30c513d66c1fa39e9ed4980a49a51b23caa7b2ce0bc",
       "is_oss": true,
-      "gas_fees": 0.02613680304770431,
+      "gas_fees": 0.026136803047704316,
       "transaction_count": 4523,
       "trusted_transaction_count": 492,
       "trusted_transaction_share": 0.10877736015918638,
@@ -46154,10 +45952,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Egg Wars: A Game on Base",
       "application_id": "0xa4d3729a488eeabcc3a59de70b760391db50e9bf488d5942e704089c58825c24",
       "is_oss": false,
-      "gas_fees": 0.10923371292626101,
+      "gas_fees": 0.10923371292626104,
       "transaction_count": 2520,
       "trusted_transaction_count": 1027,
       "trusted_transaction_share": 0,
@@ -46371,25 +46168,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Maverick Protocol",
       "application_id": "0xeb377d41abbae2f67ac73ca422839208377f5823d189b3435874946e194324ea",
       "is_oss": false,
-      "gas_fees": 10.834189258979787,
+      "gas_fees": 10.834189258979803,
       "transaction_count": 741695,
-      "trusted_transaction_count": 32255,
-      "trusted_transaction_share": 0.04348822629247871,
+      "trusted_transaction_count": 32263,
+      "trusted_transaction_share": 0.043499012397279206,
       "trusted_users_onboarded": 1617,
       "daily_active_addresses": 1854.3647540983607,
-      "trusted_daily_active_users": 97.68442622950819,
+      "trusted_daily_active_users": 97.71311475409836,
       "monthly_active_addresses": 43406.41975308642,
-      "trusted_monthly_active_users": 2499.7530864197533,
+      "trusted_monthly_active_users": 2500.246913580247,
       "recurring_addresses": 19605,
-      "trusted_recurring_users": 740,
+      "trusted_recurring_users": 741,
       "power_user_addresses": 36824,
       "openrank_trusted_users_count": 145,
-      "log_gas_fees": 1.0731385104770181,
+      "log_gas_fees": 1.0731385104770188,
       "log_transaction_count": 5.87022593684837,
-      "log_trusted_transaction_count": 4.5086105104294125
+      "log_trusted_transaction_count": 4.5087182089995625
     }
   },
   {
@@ -46558,10 +46354,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Preon Finance",
       "application_id": "0xd2c16680d3c90d9a121723d437ee7aaf7a13ec5e0c72a0ab032fc1ee8b928105",
       "is_oss": false,
-      "gas_fees": 0.12787803947689452,
+      "gas_fees": 0.1278780394768946,
       "transaction_count": 2859,
       "trusted_transaction_count": 128,
       "trusted_transaction_share": 0,
@@ -46663,10 +46458,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Noggles ($NOGS)",
       "application_id": "0xc8aefb795901b721da74124680a1ab4021a8753f474daaf351667c974d8bc72d",
       "is_oss": false,
-      "gas_fees": 0.10770574112536545,
+      "gas_fees": 0.10770574112536549,
       "transaction_count": 13195,
       "trusted_transaction_count": 3479,
       "trusted_transaction_share": 0.2636604774535809,
@@ -46761,10 +46555,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Hyperlane",
       "application_id": "0xa47182d330bd0c5c69b1418462f3f742099138f09bff057189cdd19676a6acd1",
       "is_oss": true,
-      "gas_fees": 11.586571262440064,
+      "gas_fees": 11.586571262440055,
       "transaction_count": 352440,
       "trusted_transaction_count": 13,
       "trusted_transaction_share": 0,
@@ -46777,7 +46570,7 @@
       "trusted_recurring_users": 1,
       "power_user_addresses": 5,
       "openrank_trusted_users_count": 0,
-      "log_gas_fees": 1.0999074390351142,
+      "log_gas_fees": 1.0999074390351138,
       "log_transaction_count": 5.547086424819505,
       "log_trusted_transaction_count": 1.146128035678238
     }
@@ -46863,10 +46656,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Cygnus Finance",
       "application_id": "0x3f11bc2231f22056737d8bc5338c06bbb1637de54c71a65eed9d6500a8fbd1bc",
       "is_oss": false,
-      "gas_fees": 0.1392065462524215,
+      "gas_fees": 0.13920654625242135,
       "transaction_count": 8679,
       "trusted_transaction_count": 87,
       "trusted_transaction_share": 0,
@@ -46879,7 +46671,7 @@
       "trusted_recurring_users": 1,
       "power_user_addresses": 103,
       "openrank_trusted_users_count": 0,
-      "log_gas_fees": 0.05660247189771037,
+      "log_gas_fees": 0.05660247189771028,
       "log_transaction_count": 3.938519725176492,
       "log_trusted_transaction_count": 1.9444826721501687
     }
@@ -47579,25 +47371,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "LayerZero",
       "application_id": "0x3230536d9c471231698a0fe66daeeda963282f2b594ce5a47d3dbfa53ac9d4a5",
       "is_oss": false,
-      "gas_fees": 115.87134327233721,
+      "gas_fees": 115.87134327233728,
       "transaction_count": 11660448,
-      "trusted_transaction_count": 22352,
-      "trusted_transaction_share": 0.0019169074807417349,
+      "trusted_transaction_count": 22353,
+      "trusted_transaction_share": 0.0019169932407399784,
       "trusted_users_onboarded": 555,
       "daily_active_addresses": 1681.8073770491803,
-      "trusted_daily_active_users": 79.57786885245902,
+      "trusted_daily_active_users": 79.58196721311475,
       "monthly_active_addresses": 46249.629629629635,
-      "trusted_monthly_active_users": 1933.5802469135804,
+      "trusted_monthly_active_users": 1933.7037037037037,
       "recurring_addresses": 9058,
       "trusted_recurring_users": 1084,
       "power_user_addresses": 23934,
       "openrank_trusted_users_count": 114,
-      "log_gas_fees": 2.0677080356753113,
+      "log_gas_fees": 2.0677080356753117,
       "log_transaction_count": 7.066715273790749,
-      "log_trusted_transaction_count": 4.349335818117248
+      "log_trusted_transaction_count": 4.349355246595203
     }
   },
   {
@@ -47897,10 +47688,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Unitap",
       "application_id": "0x2e7c3fcaca4cfa15199cba38b7f5ee0e18377e069dc8237d03fa7620d44d3cd3",
       "is_oss": true,
-      "gas_fees": 0.015319300750287847,
+      "gas_fees": 0.015319300750287845,
       "transaction_count": 2348,
       "trusted_transaction_count": 245,
       "trusted_transaction_share": 0.10434412265758092,
@@ -48176,10 +47966,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Mochimons",
       "application_id": "0xaec46d1927be76868345f3c076c66b9991d6e2cb1f0589dabd768cf14638b34e",
       "is_oss": false,
-      "gas_fees": 0.15373270464620914,
+      "gas_fees": 0.1537327046462093,
       "transaction_count": 3618,
       "trusted_transaction_count": 336,
       "trusted_transaction_share": 0.09286898839137644,
@@ -48192,7 +47981,7 @@
       "trusted_recurring_users": 4,
       "power_user_addresses": 216,
       "openrank_trusted_users_count": 15,
-      "log_gas_fees": 0.06210520366949297,
+      "log_gas_fees": 0.062105203669493056,
       "log_transaction_count": 3.5585885831081994,
       "log_trusted_transaction_count": 2.5276299008713385
     }
@@ -48381,10 +48170,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Arcadia Finance",
       "application_id": "0xdd35cc4641c3c35bee5782fc0442b2a1b88a058ec0a7b90ba32c70347e4e9194",
       "is_oss": false,
-      "gas_fees": 0.6837674428549376,
+      "gas_fees": 0.6837674428549381,
       "transaction_count": 4162,
       "trusted_transaction_count": 642,
       "trusted_transaction_share": 0.154252763094666,
@@ -48397,7 +48185,7 @@
       "trusted_recurring_users": 6,
       "power_user_addresses": 261,
       "openrank_trusted_users_count": 9,
-      "log_gas_fees": 0.22628210779349778,
+      "log_gas_fees": 0.22628210779349786,
       "log_transaction_count": 3.619406410886777,
       "log_trusted_transaction_count": 2.808210972924222
     }
@@ -48587,10 +48375,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "BaseDoge",
       "application_id": "0x69e36f30f2a21afb2eb61156ca00f303434ba8868315abec3eb8780b812fe976",
       "is_oss": false,
-      "gas_fees": 0.02623288759877698,
+      "gas_fees": 0.026232887598776983,
       "transaction_count": 3306,
       "trusted_transaction_count": 349,
       "trusted_transaction_share": 0.10556563823351482,
@@ -48673,25 +48460,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "$ENJOY",
       "application_id": "0x3fd997714a3a9df6dce8a21992dcae361b34432d39b7fd7e04e52eaf0aeaa588",
       "is_oss": false,
-      "gas_fees": 0.38870043523984216,
+      "gas_fees": 0.38870043523984227,
       "transaction_count": 435608,
-      "trusted_transaction_count": 147302,
-      "trusted_transaction_share": 0.33815265100732766,
-      "trusted_users_onboarded": 843,
+      "trusted_transaction_count": 147386,
+      "trusted_transaction_share": 0.3383454849314062,
+      "trusted_users_onboarded": 844,
       "daily_active_addresses": 379.7704918032787,
-      "trusted_daily_active_users": 148.22131147540983,
+      "trusted_daily_active_users": 148.30737704918033,
       "monthly_active_addresses": 5252.469135802469,
-      "trusted_monthly_active_users": 1593.5802469135804,
+      "trusted_monthly_active_users": 1593.8271604938273,
       "recurring_addresses": 715,
       "trusted_recurring_users": 538,
       "power_user_addresses": 13306,
       "openrank_trusted_users_count": 826,
       "log_gas_fees": 0.14260857161699186,
       "log_transaction_count": 5.639096844017527,
-      "log_trusted_transaction_count": 5.168211591854024
+      "log_trusted_transaction_count": 5.1684591790640955
     }
   },
   {
@@ -49008,10 +48794,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Kwenta",
       "application_id": "0x945e356d400d37b4cd548ca3b53d4ee41a075c8b4befd0b8589947b6d8721ad4",
       "is_oss": true,
-      "gas_fees": 102.91619866839406,
+      "gas_fees": 102.91619866839403,
       "transaction_count": 697405,
       "trusted_transaction_count": 51998,
       "trusted_transaction_share": 0.07455925896717115,
@@ -49024,7 +48809,7 @@
       "trusted_recurring_users": 415,
       "power_user_addresses": 3245,
       "openrank_trusted_users_count": 99,
-      "log_gas_fees": 2.016683251541343,
+      "log_gas_fees": 2.0166832515413424,
       "log_transaction_count": 5.843485679426081,
       "log_trusted_transaction_count": 4.715994991737532
     }
@@ -49269,10 +49054,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "The Open X Project",
       "application_id": "0xc935089f9c7b01bef6ca8deade91e04ffa79f7e6fbe7141d4c30c3a76a855e5d",
       "is_oss": false,
-      "gas_fees": 0.40772525012380106,
+      "gas_fees": 0.4077252501238004,
       "transaction_count": 15630,
       "trusted_transaction_count": 1319,
       "trusted_transaction_share": 0.08438899552143314,
@@ -49285,7 +49069,7 @@
       "trusted_recurring_users": 29,
       "power_user_addresses": 1175,
       "openrank_trusted_users_count": 20,
-      "log_gas_fees": 0.1485179005457051,
+      "log_gas_fees": 0.14851790054570488,
       "log_transaction_count": 4.193986763085695,
       "log_trusted_transaction_count": 3.12057393120585
     }
@@ -49423,10 +49207,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Trash NFTs",
       "application_id": "0x935315db8c17993464cfb28337442ad60c6cd434305130a1d5d898e92d6d8123",
       "is_oss": true,
-      "gas_fees": 0.021006345060047813,
+      "gas_fees": 0.021006345060047803,
       "transaction_count": 1322,
       "trusted_transaction_count": 730,
       "trusted_transaction_share": 0.5521936459909228,
@@ -49541,10 +49324,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Decent.xyz",
       "application_id": "0x38c38455bb0fd71d2929fcf799279569ab5f5c5d3e1f92f8642ce87aa25accdf",
       "is_oss": false,
-      "gas_fees": 8.899988148055149,
+      "gas_fees": 8.899988148055154,
       "transaction_count": 150529,
       "trusted_transaction_count": 27773,
       "trusted_transaction_share": 0.18450265397365292,
@@ -49557,7 +49339,7 @@
       "trusted_recurring_users": 299,
       "power_user_addresses": 13343,
       "openrank_trusted_users_count": 1313,
-      "log_gas_fees": 0.9956346746745873,
+      "log_gas_fees": 0.9956346746745875,
       "log_transaction_count": 5.177623061631356,
       "log_trusted_transaction_count": 4.4436384311664545
     }
@@ -49728,10 +49510,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "PiraNFT",
       "application_id": "0x28e90d2194452d0b959d1729eb5bc9183681bd891efb59aea2383b0ac7fd53f7",
       "is_oss": false,
-      "gas_fees": 0.028005195205816846,
+      "gas_fees": 0.028005195205816864,
       "transaction_count": 4292,
       "trusted_transaction_count": 1135,
       "trusted_transaction_share": 0.26444547996272133,
@@ -50120,10 +49901,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Builder Protocol",
       "application_id": "0x46cd8d30b17201a2c573336842ad0e4ee866eb51d885027efe9dff78bff1c086",
       "is_oss": true,
-      "gas_fees": 1.325085864447491,
+      "gas_fees": 1.3250858644474892,
       "transaction_count": 15200,
       "trusted_transaction_count": 8962,
       "trusted_transaction_share": 0.5896052631578947,
@@ -50136,7 +49916,7 @@
       "trusted_recurring_users": 139,
       "power_user_addresses": 762,
       "openrank_trusted_users_count": 336,
-      "log_gas_fees": 0.3664389958355074,
+      "log_gas_fees": 0.36643899583550704,
       "log_transaction_count": 4.181872159010333,
       "log_trusted_transaction_count": 3.9524533964230333
     }
@@ -50241,25 +50021,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "ParaSwap",
       "application_id": "0x40666399bef533ba8b13292f910c26f5523b057ed33a51d3d90d2fe0079a1c9e",
       "is_oss": false,
-      "gas_fees": 9.17071171358966,
+      "gas_fees": 9.170711713589668,
       "transaction_count": 304193,
-      "trusted_transaction_count": 35143,
-      "trusted_transaction_share": 0.11552862820643472,
+      "trusted_transaction_count": 35145,
+      "trusted_transaction_share": 0.11553520297968724,
       "trusted_users_onboarded": 612,
       "daily_active_addresses": 755.344262295082,
-      "trusted_daily_active_users": 102.29918032786885,
+      "trusted_daily_active_users": 102.30737704918033,
       "monthly_active_addresses": 16341.481481481482,
-      "trusted_monthly_active_users": 2045.925925925926,
+      "trusted_monthly_active_users": 2046.0493827160494,
       "recurring_addresses": 6844,
       "trusted_recurring_users": 1453,
       "power_user_addresses": 22379,
       "openrank_trusted_users_count": 314,
-      "log_gas_fees": 1.0073513445126911,
+      "log_gas_fees": 1.0073513445126916,
       "log_transaction_count": 5.483150643666389,
-      "log_trusted_transaction_count": 4.545851190257264
+      "log_trusted_transaction_count": 4.545875904696417
     }
   },
   {
@@ -50468,10 +50247,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Wormhole Foundation",
       "application_id": "0x35e2308213d675d5c25463a80fd318c2ae2478f47c4fabc854f23ac40df196c5",
       "is_oss": false,
-      "gas_fees": 2.6142314867608922,
+      "gas_fees": 2.6142314867608927,
       "transaction_count": 245136,
       "trusted_transaction_count": 18815,
       "trusted_transaction_share": 0.07675331244696822,
@@ -51219,10 +50997,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Zeronym",
       "application_id": "0xf7669f10edbb4ca465f6a6b5ec7e90521a0011e8b3233c43e3cd0dd22633d67f",
       "is_oss": true,
-      "gas_fees": 27.98619563259393,
+      "gas_fees": 27.986195632593947,
       "transaction_count": 156601,
       "trusted_transaction_count": 60,
       "trusted_transaction_share": 0,
@@ -51235,7 +51012,7 @@
       "trusted_recurring_users": 0,
       "power_user_addresses": 71,
       "openrank_trusted_users_count": 0,
-      "log_gas_fees": 1.4621912190048254,
+      "log_gas_fees": 1.4621912190048256,
       "log_transaction_count": 5.194797304231614,
       "log_trusted_transaction_count": 1.7853298350107671
     }
@@ -51346,25 +51123,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Manifold",
       "application_id": "0x8e60d35b5b545cfb3a2264c6f95024c0359b00a3febcb7a56967934ce917783c",
       "is_oss": false,
-      "gas_fees": 13.291849860217537,
+      "gas_fees": 13.29184986021756,
       "transaction_count": 200625,
-      "trusted_transaction_count": 49896,
-      "trusted_transaction_share": 0.24870280373831777,
-      "trusted_users_onboarded": 2257,
+      "trusted_transaction_count": 49889,
+      "trusted_transaction_share": 0.24866791277258568,
+      "trusted_users_onboarded": 2256,
       "daily_active_addresses": 660.2295081967213,
-      "trusted_daily_active_users": 151.70081967213116,
+      "trusted_daily_active_users": 151.6844262295082,
       "monthly_active_addresses": 16443.827160493827,
-      "trusted_monthly_active_users": 3072.4691358024693,
+      "trusted_monthly_active_users": 3072.222222222222,
       "recurring_addresses": 1703,
       "trusted_recurring_users": 1007,
       "power_user_addresses": 18961,
       "openrank_trusted_users_count": 1372,
-      "log_gas_fees": 1.1550884451723324,
+      "log_gas_fees": 1.1550884451723333,
       "log_transaction_count": 5.30238721445125,
-      "log_trusted_transaction_count": 4.698074434949801
+      "log_trusted_transaction_count": 4.6980135039391815
     }
   },
   {
@@ -52592,25 +52368,24 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Dmail Network",
       "application_id": "0xcbfdcf8f724d73504d1518d5ecd7d7256b12d37e68cd84569b383bfb6e2eeea4",
       "is_oss": false,
-      "gas_fees": 4.411599701528524,
+      "gas_fees": 4.411599701528527,
       "transaction_count": 2559757,
-      "trusted_transaction_count": 288579,
-      "trusted_transaction_share": 0.11273687307037347,
+      "trusted_transaction_count": 288601,
+      "trusted_transaction_share": 0.11274546763618577,
       "trusted_users_onboarded": 1507,
       "daily_active_addresses": 8389.13524590164,
-      "trusted_daily_active_users": 961.0491803278688,
+      "trusted_daily_active_users": 961.1311475409836,
       "monthly_active_addresses": 64144.1975308642,
-      "trusted_monthly_active_users": 4224.074074074074,
+      "trusted_monthly_active_users": 4224.3209876543215,
       "recurring_addresses": 52520,
       "trusted_recurring_users": 4777,
       "power_user_addresses": 34050,
       "openrank_trusted_users_count": 144,
-      "log_gas_fees": 0.7333256641549084,
+      "log_gas_fees": 0.7333256641549086,
       "log_transaction_count": 6.408198908971023,
-      "log_trusted_transaction_count": 5.460266229076885
+      "log_trusted_transaction_count": 5.4602993364108166
     }
   },
   {
@@ -52734,10 +52509,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Guild.xyz",
       "application_id": "0x3d009f8f7c1e8a3bcbc81ca8ed60d2e86b956dd0fa68c4595f851be37052a2b5",
       "is_oss": false,
-      "gas_fees": 0.6666843968364702,
+      "gas_fees": 0.6666843968364697,
       "transaction_count": 29093,
       "trusted_transaction_count": 16571,
       "trusted_transaction_share": 0.5695871859210119,
@@ -52750,7 +52524,7 @@
       "trusted_recurring_users": 53,
       "power_user_addresses": 7992,
       "openrank_trusted_users_count": 286,
-      "log_gas_fees": 0.2218533696607275,
+      "log_gas_fees": 0.22185336966072733,
       "log_transaction_count": 4.463803434499168,
       "log_trusted_transaction_count": 4.219374924626256
     }
@@ -52949,7 +52723,6 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Poster",
       "application_id": "0x8a0f263d8dca18ceca0615836a5401c9dd31c7141ee439cd7020b4907e0b6c2e",
       "is_oss": true,
       "gas_fees": 0.00007193539600482,
@@ -53170,10 +52943,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "/send",
       "application_id": "0x5614d129eba060ce7d224e8e8f9f29aeddfdb572b0dd45edc81f18f5307bc01a",
       "is_oss": true,
-      "gas_fees": 0.03274858228452094,
+      "gas_fees": 0.03274858228452093,
       "transaction_count": 2962,
       "trusted_transaction_count": 210,
       "trusted_transaction_share": 0,
@@ -53186,7 +52958,7 @@
       "trusted_recurring_users": 8,
       "power_user_addresses": 216,
       "openrank_trusted_users_count": 6,
-      "log_gas_fees": 0.013994607467135439,
+      "log_gas_fees": 0.013994607467135345,
       "log_transaction_count": 3.471731651480051,
       "log_trusted_transaction_count": 2.3242824552976926
     }
@@ -53352,10 +53124,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Clipper DEX",
       "application_id": "0x702aae08d1f82c410a51fe243bd662d5639543c4706deb3dd2932e5909552afc",
       "is_oss": false,
-      "gas_fees": 0.16766471989738357,
+      "gas_fees": 0.16766471989738382,
       "transaction_count": 22773,
       "trusted_transaction_count": 4082,
       "trusted_transaction_share": 0.17924735432310193,
@@ -53368,7 +53139,7 @@
       "trusted_recurring_users": 52,
       "power_user_addresses": 1821,
       "openrank_trusted_users_count": 29,
-      "log_gas_fees": 0.06731815852849356,
+      "log_gas_fees": 0.06731815852849364,
       "log_transaction_count": 4.357439316313899,
       "log_trusted_transaction_count": 3.610979379922997
     }
@@ -53531,10 +53302,9 @@
     },
     "isEligibleFinal": true,
     "impactMetrics": {
-      "project_name": "Daimo",
       "application_id": "0x31ad5901da0dd56bc4e1649645365b03443ac0712c72431bf6132b121b8b96eb",
       "is_oss": true,
-      "gas_fees": 0.15027693714625098,
+      "gas_fees": 0.1502769371462509,
       "transaction_count": 9205,
       "trusted_transaction_count": 37,
       "trusted_transaction_share": 0,
