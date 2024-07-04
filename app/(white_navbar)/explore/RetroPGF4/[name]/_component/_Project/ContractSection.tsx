@@ -42,7 +42,9 @@ export default function ContractSection({ data, contractRef }: iContract) {
                   width={25}
                   height={25}
                 />
-                <p className="font-medium">{getNameByChainId(item.chainId)}</p>
+                <p className="font-medium font-rubik">
+                  {getNameByChainId(item.chainId)}
+                </p>
               </div>
               {/* <div>|</div> */}
               <p className="text-base text-gray-500 font-rubik">
