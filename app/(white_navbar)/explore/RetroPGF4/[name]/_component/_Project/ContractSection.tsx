@@ -16,7 +16,7 @@ export default function ContractSection({ data, contractRef }: iContract) {
       <h3 className="text-2xl font-semibold">Contract Address</h3>
       <hr className="border-t-gray-100" />
       <div className="text-gray-500">
-        Conntract’s onchain metrics will help badgeholders make objective
+        Contract’s onchain metrics will help badgeholders make objective
         decisions during voting.
       </div>
       {data.contracts.length == 0 && (
