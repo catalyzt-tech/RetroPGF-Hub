@@ -11,13 +11,14 @@ export default function ContractSection({ data, contractRef }: iContract) {
     <section
       id="Contract Address"
       ref={contractRef}
-      className="flex flex-col gap-x-6 gap-y-4 bg-white rounded-lg p-2 lg:p-6 border"
+      className="flex flex-col gap-6 bg-white rounded-lg p-2 lg:p-6 border"
     >
       <h3 className="text-2xl font-semibold">Contract Address</h3>
       <hr className="border-t-gray-100" />
       <div className="text-gray-500">
-        Contract’s onchain metrics will help badgeholders make objective
-        decisions during voting.
+        Project contract addresses on different chains are listed below. All
+        contracts are verified for ownership on-chain, and off-chain
+        verification is conducted by Open Source Observer (OSO).
       </div>
       {data.contracts.length == 0 && (
         <p className="text-base font-normal text-gray-600">
