@@ -56,11 +56,15 @@ export default function FundingSection({
         )}
       {data.grantsAndFunding.ventureFunding.length != 0 &&
         data.grantsAndFunding.ventureFunding.map((item, i) => (
-          <div className="flex flex-col gap-1" key={i}>
+          <div
+            className="flex flex-col gap-1 px-8 py-6 bg-slate-50 rounded-lg"
+            key={i}
+          >
             <div className="flex flex-wrap gap-3 items-center">
-              <p className="mb-1 text-base font-normal text-gray-500">
+              <p className="mb-1 text-base font-semibold font-rubik">
                 {'Venture Funding'}
               </p>
+              <div className="flex flex-grow"></div>
               <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
                 {containsOnlyDigits(item.amount)
                   ? Number(item.amount).toLocaleString('en-US', {
