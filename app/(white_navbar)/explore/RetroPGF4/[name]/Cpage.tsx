@@ -24,7 +24,7 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
     { name: 'Overview', ref: overViewRef },
     { name: 'Funding Sources', ref: fundingRef },
     { name: 'GitHub', ref: githubRef },
-    { name: 'Contract Addresses', ref: contractRef },
+    { name: 'Contract Address', ref: contractRef },
   ])
   const insertAtPosition = 2
   useEffect(() => {
