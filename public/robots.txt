@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://retropgfhub.com/
+
+# Sitemaps
+Sitemap: https://retropgfhub.com/sitemap.xml
