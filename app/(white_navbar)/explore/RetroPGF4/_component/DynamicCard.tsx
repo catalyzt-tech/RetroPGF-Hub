@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { iRetroPGF4Project } from '../RetroType4'
-import { handleCategoryRound4 } from '@/app/lib/InitialMount'
+import { handleCategoryRound4, handleOpenSource } from '@/app/lib/InitialMount'
 import { cleanParamsName } from '@/app/lib/utils'
 
 export default function DynamicCard({
@@ -16,6 +16,7 @@ export default function DynamicCard({
   category = '',
   teamSize = 0,
   isEligible,
+  isOpenSource = false,
 }: // votes = 0,
 // opRecieve = 0,
 // rank = 0,
@@ -28,10 +29,12 @@ export default function DynamicCard({
   category?: string
   teamSize?: number
   isEligible?: boolean
+  isOpenSource?: boolean
   // votes?: number
   // opRecieve?: number
   // rank?: number
 }) {
+  console.log(isOpenSource)
   return (
     <div
       className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[18rem] min-h-[12rem] relative bg-white overflow-hidden`}
@@ -91,6 +94,7 @@ export default function DynamicCard({
 
           <div className="flex flex-wrap gap-2">
             {handleCategoryRound4(category)}
+            {handleOpenSource(isOpenSource)}
           </div>
           <div className="flex-grow"></div>
           <div className="flex gap-2">
@@ -100,6 +104,7 @@ export default function DynamicCard({
               <p className="text-sm font-light text-gray-600">People</p>
             </div>
           </div>
+
           {/* <div className="flex gap-2">
             <Trophy size={20} />
             <div className="flex gap-1">
