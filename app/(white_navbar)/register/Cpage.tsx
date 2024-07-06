@@ -81,14 +81,17 @@ export default function Cpage({}: {}) {
     const data = await SignInWithGoogle(googleProvider)
     if (data && data.user.email && data.user.uid) {
       //@ts-ignore
-      const { firstName, lastName } = data._tokenResponse
+      let { firstName, lastName } = data._tokenResponse
+      if (!lastName || lastName == "") {
+        lastName = 'unknown'
+      }
       const { email, displayName, photoURL } = data.user
       const source: string = data.providerId || 'third-party'
       const res = await AuthUserThirdParty(
         email,
         displayName || firstName + lastName,
         firstName,
-        lastName,
+        lastName || "unknown",
         data.user.uid,
         photoURL,
         source
