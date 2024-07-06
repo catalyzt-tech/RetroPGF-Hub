@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import Trophy from '@carbon/icons-react/lib/Trophy'
 import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
@@ -7,6 +8,17 @@ import { iRetroPGF4Project } from '../RetroType4'
 import { handleCategoryRound4, handleOpenSource } from '@/app/lib/InitialMount'
 import { cleanParamsName } from '@/app/lib/utils'
 
+interface iDynamicCard {
+  banner?: string
+  icon?: string
+  round?: string
+  title?: string
+  description?: string
+  category?: string
+  teamSize?: number
+  isEligible?: boolean
+  isOpenSource?: boolean
+}
 export default function DynamicCard({
   banner,
   icon,
@@ -17,17 +29,16 @@ export default function DynamicCard({
   teamSize = 0,
   isEligible,
   isOpenSource = false,
-}: {
-  banner?: string
-  icon?: string
-  round?: string
-  title?: string
-  description?: string
-  category?: string
-  teamSize?: number
-  isEligible?: boolean
-  isOpenSource?: boolean
-}) {
+}: iDynamicCard) {
+  const categoryElement = useMemo(
+    () => handleCategoryRound4(category),
+    [category]
+  )
+  const openSourceElement = useMemo(
+    () => handleOpenSource(isOpenSource),
+    [isOpenSource]
+  )
+
   return (
     <div
       className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[18rem] min-h-[12rem] relative bg-white overflow-hidden`}
@@ -54,11 +65,11 @@ export default function DynamicCard({
         ) : (
           <div className="flex items-center text-[0.75rem] bg-red-50 border border-red-500 font-medium text-red-700 px-1.5 py-0.5 rounded-lg">
             {' '}
-            <div className="w-2 h-2 rounded-full bg-red-500 mr-1"></div>Rejected
+            <div className="w-2 h-2 rounded-full bg-red-500 mr-1"></div>
+            Rejected
           </div>
         )}
       </div>
-
       {/* Avatar */}
       <div className="absolute top-10 lg:top-12 left-4 rounded-[0.25rem] bg-white flex flex-shrink-0 z-20 overflow-hidden">
         <Image
@@ -69,7 +80,6 @@ export default function DynamicCard({
           height={48}
         />
       </div>
-
       <div className="mt-20 lg:mt-[5.5rem]"></div>
       <div className="w-full h-full">
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
@@ -84,10 +94,9 @@ export default function DynamicCard({
               {description}
             </p>
           </div>
-
           <div className="flex flex-wrap gap-2">
-            {handleCategoryRound4(category)}
-            {handleOpenSource(isOpenSource)}
+            {categoryElement}
+            {openSourceElement}
           </div>
           <div className="flex-grow"></div>
           <div className="flex gap-2">
