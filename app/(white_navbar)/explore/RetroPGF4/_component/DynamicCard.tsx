@@ -17,10 +17,7 @@ export default function DynamicCard({
   teamSize = 0,
   isEligible,
   isOpenSource = false,
-}: // votes = 0,
-// opRecieve = 0,
-// rank = 0,
-{
+}: {
   banner?: string
   icon?: string
   round?: string
@@ -30,11 +27,7 @@ export default function DynamicCard({
   teamSize?: number
   isEligible?: boolean
   isOpenSource?: boolean
-  // votes?: number
-  // opRecieve?: number
-  // rank?: number
 }) {
-  console.log(isOpenSource)
   return (
     <div
       className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[18rem] min-h-[12rem] relative bg-white overflow-hidden`}
@@ -104,16 +97,6 @@ export default function DynamicCard({
               <p className="text-sm font-light text-gray-600">People</p>
             </div>
           </div>
-
-          {/* <div className="flex gap-2">
-            <Trophy size={20} />
-            <div className="flex gap-1">
-              <p className="text-sm font-semibold text-gray-800">
-                {opRecieve.toFixed(2)} OP
-              </p>
-              <p className="text-sm font-light text-gray-600">#{rank}</p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
