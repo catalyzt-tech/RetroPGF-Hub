@@ -339,6 +339,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps) {
                       // opRecieve={0}
                       round="4"
                       isEligible={item.isEligibleFinal}
+                      isOpenSource={item.impactMetrics?.is_oss}
                       // votes={0}
                       // rank={0}
                     />

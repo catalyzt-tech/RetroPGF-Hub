@@ -11,6 +11,27 @@ export const useIsMount = () => {
   return isMountRef.current
 }
 
+export function handleOpenSource(isOpenSource: boolean) {
+  if (isOpenSource) {
+    return (
+      <div className="px-2 py-1 bg-green-50 rounded-full w-fit">
+        <p className="text-green-700 text-xs font-medium line-clamp-1 break-words">
+          Open Source
+        </p>
+      </div>
+    )
+  }
+  if (!isOpenSource) {
+    return (
+      <div className="px-2 py-1 bg-red-50 rounded-full w-fit">
+        <p className="text-red-700 text-xs font-medium line-clamp-1 break-words">
+          Closed Source
+        </p>
+      </div>
+    )
+  }
+}
+
 export function handleCategoryRound4(category: string) {
   if (category === 'CeFi') {
     return (
