@@ -76,6 +76,18 @@ export const eligibilityStatus = [
   },
 ]
 
+export const isOpenSource = [
+  {
+    name: 'All',
+  },
+  {
+    name: 'Open Source',
+  },
+  {
+    name: 'Closed Source',
+  },
+]
+
 export const min = -1
 export const max = 663855
 export const itemsPerPage = 24

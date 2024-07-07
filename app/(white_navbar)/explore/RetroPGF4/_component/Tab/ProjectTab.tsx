@@ -1,11 +1,10 @@
 'use client'
 
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { FC, useEffect, useMemo, useState } from 'react'
 import { CheckBoxStateType, ExploreRoundState } from '../ExploreRoundType'
 import { category, itemsPerPage, max, min } from '../Text'
 import InputAndFilterBtn from './InputAndFilterBtn'
 import CheckBoxFilter from './CheckBoxFilter'
-// import { RetroRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { iRetroPGF4Project } from '../../RetroType4'
 import { Pagination } from 'react-headless-pagination'
 import DynamicCard from '../DynamicCard'
@@ -13,13 +12,12 @@ import ListCard from './ListCard'
 import DialogFilter from './Filter/DialogFilter'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
-import { Project } from '../../../../../hook/projectRequestType'
 import { isLetter } from '@/app/lib/utils'
 interface ProjectTabProps {
   round4: iRetroPGF4Project[]
 }
 
-export default function ProjectTab({ round4 }: ProjectTabProps) {
+export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
   const searchParams = useSearchParams()
 
   const [search, setSearch] = useState('')
@@ -46,6 +44,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps) {
     subCategory: [],
     receiveOP: [],
     eligibility: 'All',
+    isOpenSource: 'All',
     ballot: 'All Project',
   })
 
@@ -57,6 +56,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps) {
       // - > 17 vote
       // - All Project
       eligibility: 'All',
+      isOpenSource: 'All',
       ballot: 'All Project',
       subCategory: [],
     })
@@ -68,6 +68,10 @@ export default function ProjectTab({ round4 }: ProjectTabProps) {
 
   function handleChangeBallot(text: string) {
     setCheckBox((prev) => ({ ...prev, ballot: text }))
+  }
+
+  function handleChangeIsOpenSource(text: string) {
+    setCheckBox((prev) => ({ ...prev, isOpenSource: text }))
   }
 
   function handleChangeCategory(value: string) {
@@ -170,11 +174,23 @@ export default function ProjectTab({ round4 }: ProjectTabProps) {
         eligibilityCondition = !item.isEligibleFinal
       }
 
+      let isOpenSourceCondition: boolean = false
+      if (checkBox.isOpenSource === 'All') {
+        isOpenSourceCondition = true
+      } else if (checkBox.isOpenSource === 'Open Source') {
+        //only select true project
+        isOpenSourceCondition = item.impactMetrics?.is_oss ?? false
+      } else if (checkBox.isOpenSource === 'Closed Source') {
+        //only select false project
+        isOpenSourceCondition = !item.impactMetrics?.is_oss
+      }
+
       return (
         searchCondition &&
         categoryCondition &&
         subCategoryCondition &&
-        eligibilityCondition
+        eligibilityCondition &&
+        isOpenSourceCondition
       )
     })
   }, [round4, search, checkBox])
@@ -313,6 +329,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps) {
                 handleChangeBallot={handleChangeBallot}
                 handleChangeSubCategory={handleChangeSubCategory}
                 handleChangeEligibility={handleChangeEligibility}
+                handleChangeIsOpenSource={handleChangeIsOpenSource}
               />
             )}
 

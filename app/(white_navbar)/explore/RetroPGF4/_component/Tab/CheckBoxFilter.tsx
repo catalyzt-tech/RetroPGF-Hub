@@ -6,6 +6,7 @@ import InBallotDisclosure from './Filter/InBallotDisclosure'
 import { Disclosure, Transition } from '@headlessui/react'
 import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
 import EligibilityDisclosure from './Filter/EligibilityDisclosure'
+import IsOpenSourceDisclosure from './Filter/IsOpenSourceDisclosure'
 
 export default function CheckBoxFilter({
   checkBox,
@@ -18,6 +19,7 @@ export default function CheckBoxFilter({
   handleChangeBallot,
   handleChangeSubCategory,
   handleChangeEligibility,
+  handleChangeIsOpenSource,
 }: {
   checkBox: CheckBoxStateType
   handleChangeCategory: (value: string) => void
@@ -29,6 +31,7 @@ export default function CheckBoxFilter({
   setMaxVal: React.Dispatch<React.SetStateAction<number>>
   handleChangeSubCategory: (subCate: string) => void
   handleChangeEligibility: (eligibility: string) => void
+  handleChangeIsOpenSource: (isOpenSource: string) => void
 }) {
   return (
     <>
@@ -52,6 +55,10 @@ export default function CheckBoxFilter({
         <EligibilityDisclosure
           checkBox={checkBox}
           handleChangeEligibility={handleChangeEligibility}
+        />
+        <IsOpenSourceDisclosure
+          checkBox={checkBox}
+          handleChangeIsOpenSource={handleChangeIsOpenSource}
         />
       </div>
     </>
