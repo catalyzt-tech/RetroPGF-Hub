@@ -384,6 +384,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
                   handleChangeBallot={handleChangeBallot}
                   handleChangeSubCategory={handleChangeSubCategory}
                   handleChangeEligibility={handleChangeEligibility}
+                  handleChangeIsOpenSource={handleChangeIsOpenSource}
                 />
               </div>
             )}

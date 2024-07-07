@@ -38,7 +38,6 @@ export default function CheckBoxFilter({
       <div className="hidden lg:flex flex-col gap-4 border  min-w-60 max-w-60 h-fit rounded-lg p-4  animate-slideleft z-10 pb-4">
         <div className="flex items-center justify-between gap-1 ">
           <h6 className="text-sm font-bold text-gray-900 ">Filter</h6>
-
           <button onClick={handleClearFilter} className="underline">
             <h6 className="text-xs font-normal text-gray-900 ">
               Clear Filters
