@@ -10,5 +10,6 @@ export type CheckBoxStateType = {
   subCategory: string[]
   receiveOP: number[]
   eligibility: string
+  isOpenSource: string
   ballot: string
 }
