@@ -51,24 +51,6 @@ export default function CategoryDisclosure({
                         handleChangeCategory(e.target.value)
                       }}
                     />
-                    {/* <div className=" ml-4 flex flex-col gap-1 mt-2 mb-0.5">
-                      {item.name === checkBox.category[0] &&
-                        returnSubCategory() &&
-                        returnSubCategory()?.map((item, i) => (
-                          <Checkbox
-                            key={i}
-                            label={item}
-                            value={item}
-                            className="cursor-pointer"
-                            checked={checkBox.subCategory.includes(item)}
-                            onChange={(
-                              e: React.ChangeEvent<HTMLInputElement>
-                            ) => {
-                              handleChangeSubCategory(e.target.value)
-                            }}
-                          />
-                        ))}
-                    </div> */}
                   </div>
                 ))}
               </Disclosure.Panel>
