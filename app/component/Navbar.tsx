@@ -72,7 +72,7 @@ const Navbar = ({
         <div className="flex justify-start items-center">
           <div className="mr-12">
             <Link href={'/'}>
-              <div className="relative w-36 h-8 min-w-32 min-h-6 max-w-32 max-h-6 min-[300px]:min-w-36 min-[300px]:min-h-8 min-[300px]:max-w-36 min-[300px]:max-h-8">
+              <div className="relative w-40 h-8 min-w-32 min-h-6 max-w-32 max-h-6 min-[300px]:min-w-36 min-[300px]:min-h-8 min-[300px]:max-w-64 min-[300px]:max-h-8">
                 <Image src={'/logo/logo.svg'} alt="logo" fill />
               </div>
             </Link>
