@@ -1,4 +1,3 @@
-import { isOpenSource } from './_component/Text'
 export interface ContributionLink {
   type: string
   url: string
