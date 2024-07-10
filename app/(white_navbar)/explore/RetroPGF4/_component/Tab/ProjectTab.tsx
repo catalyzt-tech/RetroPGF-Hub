@@ -2,7 +2,7 @@
 
 import React, { FC, useEffect, useMemo, useState } from 'react'
 import { CheckBoxStateType, ExploreRoundState } from '../ExploreRoundType'
-import { category, itemsPerPage, max, min } from '../Text'
+import { category, itemsPerPage, max, min, isOpenSource } from '../Text'
 import InputAndFilterBtn from './InputAndFilterBtn'
 import CheckBoxFilter from './CheckBoxFilter'
 import { iRetroPGF4Project } from '../../RetroType4'
@@ -179,10 +179,10 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
         isOpenSourceCondition = true
       } else if (checkBox.isOpenSource === 'Open Source') {
         //only select true project
-        isOpenSourceCondition = item.impactMetrics?.is_oss ?? false
+        isOpenSourceCondition = item.isOpenSource
       } else if (checkBox.isOpenSource === 'Closed Source') {
         //only select false project
-        isOpenSourceCondition = !item.impactMetrics?.is_oss
+        isOpenSourceCondition = !item.isOpenSource ?? false
       }
 
       return (
@@ -356,7 +356,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
                       // opRecieve={0}
                       round="4"
                       isEligible={item.isEligibleFinal}
-                      isOpenSource={item.impactMetrics?.is_oss}
+                      isOpenSource={item.isOpenSource}
                       // votes={0}
                       // rank={0}
                     />
