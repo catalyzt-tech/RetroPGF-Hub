@@ -1,3 +1,4 @@
+import { isOpenSource } from './_component/Text'
 export interface ContributionLink {
   type: string
   url: string
@@ -79,4 +80,5 @@ export interface iRetroPGF4Project {
   }
   isEligibleFinal: boolean
   impactMetrics: ImpactMetrics | null
+  isOpenSource: boolean
 }
