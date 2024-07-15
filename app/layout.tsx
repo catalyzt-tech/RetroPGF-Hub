@@ -7,6 +7,7 @@ import 'swiper/css/navigation'
 import { Toaster } from 'react-hot-toast'
 import { GlobalProvider } from './provider/globalContext'
 import Footer from './component/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 const interFont = Inter({
   subsets: ['latin'],
@@ -55,6 +56,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${interFont.variable} ${rubikFont.variable} `}>
         <Toaster />
+        <Analytics />
         <GlobalProvider>{children}</GlobalProvider>
         <Footer />
       </body>
