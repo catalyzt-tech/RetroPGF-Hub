@@ -7,7 +7,6 @@ export interface ExploreRoundState {
 
 export type CheckBoxStateType = {
   category: string[]
-  subCategory: string[]
   receiveOP: number[]
   eligibility: string
   isOpenSource: string

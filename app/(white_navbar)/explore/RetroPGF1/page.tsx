@@ -104,7 +104,7 @@ export default async function page() {
 
             <div className="mt-4">
               <h6 className="font-rubik text-3xl md:text-5xl font-semibold text-gray-800 mb-3">
-                RetroPGF 1
+                Retro Funding 1
               </h6>
             </div>
           </div>
