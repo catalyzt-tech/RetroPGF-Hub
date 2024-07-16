@@ -25,7 +25,7 @@ export default async function page() {
 
             <div className="mt-4 inline-flex">
               <h6 className="font-rubik text-3xl md:text-5xl font-semibold text-gray-800 mb-3">
-                RetroPGF 4
+                Retro Funding 4
               </h6>
             </div>
           </div>
