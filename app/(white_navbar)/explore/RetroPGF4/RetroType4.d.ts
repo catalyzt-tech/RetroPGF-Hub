@@ -80,4 +80,5 @@ export interface iRetroPGF4Project {
   isEligibleFinal: boolean
   impactMetrics: ImpactMetrics | null
   isOpenSource: boolean
+  reward?: number
 }
