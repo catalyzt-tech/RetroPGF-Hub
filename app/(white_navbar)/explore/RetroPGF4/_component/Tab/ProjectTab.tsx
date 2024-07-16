@@ -357,6 +357,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
                       round="4"
                       isEligible={item.isEligibleFinal}
                       isOpenSource={item.isOpenSource}
+                      reward={item.reward ?? 0}
                       // votes={0}
                       // rank={0}
                     />
