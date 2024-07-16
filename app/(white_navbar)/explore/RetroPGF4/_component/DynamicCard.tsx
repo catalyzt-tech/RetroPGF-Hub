@@ -108,7 +108,7 @@ export default function DynamicCard({
             {/* <Star size={20} /> */}
             <div className="flex flex-row justify-center items-center gap-x-2 group-hover:scale-105 transition-all ease-linear">
               <p className="text-sm font-semibold text-gray-800">
-                {numberWithCommas(200000.88)}
+                {numberWithCommas(reward || 0)}
               </p>
               <p className="text-sm font-light text-gray-600">
                 <Image src={OpTokenPath} alt="OpToken" width={18} height={18} />

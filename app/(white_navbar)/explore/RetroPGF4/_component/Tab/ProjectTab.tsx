@@ -29,7 +29,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
     // - Least in ballots
     // Project Name (A-Z)
     // Project Name (Z-A)
-    sort: 'Project Name (A-Z)',
+    sort: 'Highest Rewards',
     // view have two option
     // - g stand for grid
     // - l stand for list
@@ -41,9 +41,8 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
   const [maxVal, setMaxVal] = useState(max)
   const [checkBox, setCheckBox] = useState<CheckBoxStateType>({
     category: [],
-    subCategory: [],
     receiveOP: [],
-    eligibility: 'All',
+    eligibility: 'Eligible',
     isOpenSource: 'All',
     ballot: 'All Project',
   })
@@ -55,15 +54,14 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
       // ballot can be two option
       // - > 17 vote
       // - All Project
-      eligibility: 'All',
+      eligibility: 'Eligible',
       isOpenSource: 'All',
       ballot: 'All Project',
-      subCategory: [],
     })
     setMinVal(min)
     setMaxVal(max)
     setSearch('')
-    setState((prev) => ({ ...prev, sort: 'Project Name (A-Z)' }))
+    setState((prev) => ({ ...prev, sort: 'Highest Rewards' }))
   }
 
   function handleChangeBallot(text: string) {
@@ -157,14 +155,6 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
         categoryCondition = true
       }
 
-      let subCategoryCondition: boolean
-      if (checkBox.subCategory.length !== 0) {
-        subCategoryCondition = checkBox.subCategory.some(
-          (elem) => elem === item.category
-        )
-      } else {
-        subCategoryCondition = true
-      }
       let eligibilityCondition: boolean = false
       if (checkBox.eligibility === 'All') {
         eligibilityCondition = true
@@ -188,7 +178,6 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
       return (
         searchCondition &&
         categoryCondition &&
-        subCategoryCondition &&
         eligibilityCondition &&
         isOpenSourceCondition
       )
@@ -207,7 +196,15 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
     // Project Name (A-Z)
     // Project Name (Z-A)
 
-    if (state.sort === 'Project Name (A-Z)') {
+    if (state.sort === 'Highest Rewards') {
+      sortedItems.sort((a, b) => {
+        return (b.reward ?? 0) - (a.reward ?? 0)
+      })
+    } else if (state.sort === 'Lowest Rewards') {
+      sortedItems.sort((a, b) => {
+        return (a.reward ?? 0) - (b.reward ?? 0)
+      })
+    } else if (state.sort === 'Project Name (A-Z)') {
       sortedItems.sort((a, b) => {
         const nameA = (a.name ?? '').toLowerCase()
         const nameB = (b.name ?? '').toLowerCase()
