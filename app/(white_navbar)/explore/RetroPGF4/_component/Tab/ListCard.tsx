@@ -1,10 +1,10 @@
 import Link from 'next/link'
-
 import { iRetroPGF4Project } from '../../RetroType4'
-import { handleCategoryRound3 } from '@/app/lib/InitialMount'
+import { handleCategoryRound4 } from '@/app/lib/InitialMount'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 
+const OpTokenPath = '/static/superchainLogo/optimism.svg'
 export default function ListCard({
   currentItems,
 }: {
@@ -25,33 +25,28 @@ export default function ListCard({
                     Categories
                   </h6>
                 </th>
-                {/* <th scope="col" className="py-4 px-3 w-[15%]">
+                <th scope="col" className="py-4 px-3 w-[20%] ">
                   <h6 className="text-base/semibold text-gray-700">
-                    In ballot
+                    OP Rewards
                   </h6>
                 </th>
-                <th scope="col" className="py-4 px-3 w-[20%] ">
-                  <h6 className="text-end text-base/semibold text-gray-700 shrink-0">
-                    OP Received
-                  </h6>
-                </th> */}
               </tr>
             </thead>
             <tbody>
               {currentItems.map((item, i) => (
                 <tr className="border rounded-3xl " key={i}>
-                  <th className="p-5 flex gap-2">
+                  <th className="p-5 flex gap-y-2 gap-x-6">
                     <div className="relative min-w-16 min-h-16 max-w-16 max-h-16 self-center">
                       <Image
                         src={item.projectAvatarUrl ?? '/random/avatar.png'}
                         alt="avatar image"
-                        className=""
+                        className="rounded-lg"
                         fill
                       />
                     </div>
                     <div className="flex flex-col">
                       <Link
-                        href={`/explore/RetroPGF3/${item.name}`}
+                        href={`/explore/RetroPGF4/${item.name}`}
                         className="flex gap-1 pb-2  items-center cursor-pointer hover:underline w-fit"
                       >
                         <h6 className="text-sm font-bold text-gray-900">
@@ -64,30 +59,24 @@ export default function ListCard({
                       </p>
                     </div>
                   </th>
-
                   <td className="py-4 px-3 ">
                     <div className="flex flex-col flex-wrap gap-2 ">
-                      {handleCategoryRound3(item.category)}
-                      {/* <div className="inline-flex px-2 py-1 rounded-full bg-slate-50 hover:bg-slate-100/75 cursor-pointer w-fit">
-                        <h6 className="text-xs font-normal text-gray-600 line-clamp-1 break-all">
-                          {item['Sub-category']}
-                        </h6>
-                      </div> */}
+                      {handleCategoryRound4(item.category)}
                     </div>
                   </td>
-                  {/* <td className="py-4 px-3">
-                    <h6 className="text-sm font-normal text-gray-500">
-                      {item.ballot}
-                    </h6>
-                  </td>
                   <td className="py-4 px-3">
-                    <h6 className="text-sm text-end font-normal text-gray-500">
-                      #{item.rank}
-                    </h6>
-                    <h6 className="text-sm text-end font-bold text-gray-700">
-                      {item.median}
-                    </h6>
-                  </td> */}
+                    <div className="flex flex-row flex-wrap gap-2 ">
+                      <h6 className="text-sm font-medium text-gray-500">
+                        {item.reward || 0}
+                      </h6>
+                      <Image
+                        src={OpTokenPath}
+                        alt="opToken"
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                  </td>
                 </tr>
               ))}
             </tbody>
