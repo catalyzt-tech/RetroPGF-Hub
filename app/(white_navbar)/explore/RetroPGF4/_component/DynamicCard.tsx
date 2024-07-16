@@ -1,12 +1,14 @@
 import { useMemo } from 'react'
 import Trophy from '@carbon/icons-react/lib/Trophy'
+import { User } from '@carbon/icons-react'
+import { Star } from '@carbon/icons-react'
 import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
-import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
-import { iRetroPGF4Project } from '../RetroType4'
 import { handleCategoryRound4, handleOpenSource } from '@/app/lib/InitialMount'
-import { cleanParamsName } from '@/app/lib/utils'
+import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
+
+const OpTokenPath = '/static/superchainLogo/optimism.svg'
 
 interface iDynamicCard {
   banner?: string
@@ -18,6 +20,7 @@ interface iDynamicCard {
   teamSize?: number
   isEligible?: boolean
   isOpenSource?: boolean
+  reward?: number
 }
 export default function DynamicCard({
   banner,
@@ -29,6 +32,7 @@ export default function DynamicCard({
   teamSize = 0,
   isEligible,
   isOpenSource = false,
+  reward = 0,
 }: iDynamicCard) {
   const categoryElement = useMemo(
     () => handleCategoryRound4(category),
@@ -99,11 +103,16 @@ export default function DynamicCard({
             {openSourceElement}
           </div>
           <div className="flex-grow"></div>
-          <div className="flex gap-2">
-            <Events size={20} />
-            <div className="flex gap-1">
-              <p className="text-sm font-semibold text-gray-800">{teamSize}</p>
-              <p className="text-sm font-light text-gray-600">People</p>
+          <div className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group">
+            {/* <Trophy size={20} /> */}
+            {/* <Star size={20} /> */}
+            <div className="flex flex-row justify-center items-center gap-x-2 group-hover:scale-105 transition-all ease-linear">
+              <p className="text-sm font-semibold text-gray-800">
+                {numberWithCommas(200000.88)}
+              </p>
+              <p className="text-sm font-light text-gray-600">
+                <Image src={OpTokenPath} alt="OpToken" width={18} height={18} />
+              </p>
             </div>
           </div>
         </div>
