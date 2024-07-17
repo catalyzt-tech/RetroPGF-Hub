@@ -3,7 +3,13 @@ import LinkIcon from '@carbon/icons-react/lib/Link'
 import Image from 'next/image'
 import { iRetroPGF4Project } from '../../../RetroType4'
 import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'
+import { numberWithCommas } from '@/app/lib/utils'
 // import { convertImageClodinary } from '@/app/lib/utils'
+
+const truncateProjectId = (projectId: string) => {
+  if (projectId.length <= 10) return projectId
+  return `${projectId.slice(0, 8)}...${projectId.slice(-8)}`
+}
 export default function ProjectDetailSection({
   data,
 }: {
@@ -33,10 +39,26 @@ export default function ProjectDetailSection({
             </div>
           </div>
 
-          <h3 className="text-3xl lg:text-4xl font-semibold text-gray-800">
+          <h3 className="flex text-3xl lg:text-4xl font-semibold text-gray-800">
             {data.name}
+
+            <div className="flex-grow"></div>
+            <div className="flex items-center px-10 py-3 rounded-xl text-xl bg-red-50">
+              {numberWithCommas(data.reward ?? 20000)}
+              <Image
+                src="/static/superchainLogo/optimism.svg"
+                alt="OP Token"
+                width={25}
+                height={25}
+                className="ml-2"
+              />
+            </div>
           </h3>
-          <div className="flex flex-wrap gap-6 mt-3">
+          <div className="bg-gray-100 text-gray-600 text-sm truncate w-fit px-3 py-1.5 rounded-full">
+            {/* Project ID {data.projectId} */}
+            {truncateProjectId(data.projectId)}
+          </div>
+          <div className="flex flex-wrap gap-6 mt-1">
             {data.socialLinks.website.length > 0 &&
               data.socialLinks.website.map((item, i) => (
                 <a
@@ -79,18 +101,6 @@ export default function ProjectDetailSection({
                 </h6>
               </a>
             )}
-          </div>
-
-          {/* Category */}
-          <div className="">
-            <div className="flex  flex-wrap gap-4 ">
-              {handleCategoryRound4(data.category)}
-              {/* <div className="inline-flex px-2 py-1 rounded-full bg-slate-50 hover:bg-slate-100/75 cursor-pointer w-fit">
-                <h6 className="text-xs font-normal text-gray-600 line-clamp-1 break-all">
-                  {''}
-                </h6>
-              </div> */}
-            </div>
           </div>
         </div>
       </div>
