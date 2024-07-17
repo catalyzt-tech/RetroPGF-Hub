@@ -52,7 +52,7 @@ export default function ListCard({
                         <h6 className="text-sm font-bold text-gray-900">
                           {item.name}
                         </h6>
-                        <ArrowUpRight size={20} className="fill-gray-600" />
+                        <ArrowUpRight size={16} className="fill-gray-600" />
                       </Link>
                       <p className="text-sm font-normal text-gray-500 line-clamp-2 ">
                         {item.description}
