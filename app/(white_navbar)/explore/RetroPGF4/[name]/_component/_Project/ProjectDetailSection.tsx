@@ -41,7 +41,6 @@ export default function ProjectDetailSection({
 
           <h3 className="flex text-3xl lg:text-4xl font-semibold text-gray-800">
             {data.name}
-
             <div className="flex-grow"></div>
             <div className="flex items-center px-10 py-3 rounded-xl text-xl bg-red-50">
               {numberWithCommas(data.reward ?? 20000)}
@@ -81,15 +80,17 @@ export default function ProjectDetailSection({
                   <h6 className="text-sm font-normal line-clamp-1">{item}</h6>
                 </a>
               ))}
-            <a
-              href={data.socialLinks.twitter}
-              className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
-            >
-              <LogoTwitter size={20} />
-              <h6 className="text-sm font-normal line-clamp-1">
-                {data.socialLinks.twitter}
-              </h6>
-            </a>
+            {data.socialLinks.twitter !== null && (
+              <a
+                href={data.socialLinks.twitter}
+                className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+              >
+                <LogoTwitter size={20} />
+                <h6 className="text-sm font-normal line-clamp-1">
+                  {data.socialLinks.twitter}
+                </h6>
+              </a>
+            )}
             {data.socialLinks.mirror !== null && (
               <a
                 href={data.socialLinks.mirror}
