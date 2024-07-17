@@ -7,7 +7,7 @@ import 'swiper/css/navigation'
 import { Toaster } from 'react-hot-toast'
 import { GlobalProvider } from './provider/globalContext'
 import Footer from './component/Footer'
-import { Analytics } from '@vercel/analytics/react'
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const interFont = Inter({
   subsets: ['latin'],
@@ -54,9 +54,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GA_ID as string} />
       <body className={`${interFont.variable} ${rubikFont.variable} `}>
         <Toaster />
-        <Analytics />
         <GlobalProvider>{children}</GlobalProvider>
         <Footer />
       </body>
