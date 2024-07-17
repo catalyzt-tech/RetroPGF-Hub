@@ -17,7 +17,6 @@ export default function CheckBoxFilter({
   maxVal,
   setMaxVal,
   handleChangeBallot,
-  handleChangeSubCategory,
   handleChangeEligibility,
   handleChangeIsOpenSource,
 }: {
@@ -29,7 +28,6 @@ export default function CheckBoxFilter({
   maxVal: number
   setMinVal: React.Dispatch<React.SetStateAction<number>>
   setMaxVal: React.Dispatch<React.SetStateAction<number>>
-  handleChangeSubCategory: (subCate: string) => void
   handleChangeEligibility: (eligibility: string) => void
   handleChangeIsOpenSource: (isOpenSource: string) => void
 }) {
@@ -49,7 +47,6 @@ export default function CheckBoxFilter({
         <CategoryDisclosure
           checkBox={checkBox}
           handleChangeCategory={handleChangeCategory}
-          handleChangeSubCategory={handleChangeSubCategory}
         />
         <EligibilityDisclosure
           checkBox={checkBox}

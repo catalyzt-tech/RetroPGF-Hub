@@ -7,12 +7,10 @@ import { CheckBoxStateType } from '../../ExploreRoundType'
 interface ICategoryDisclosure {
   checkBox: CheckBoxStateType
   handleChangeCategory: (value: string) => void
-  handleChangeSubCategory: (subCate: string) => void
 }
 export default function CategoryDisclosure({
   checkBox,
   handleChangeCategory,
-  handleChangeSubCategory,
 }: ICategoryDisclosure) {
   return (
     <>

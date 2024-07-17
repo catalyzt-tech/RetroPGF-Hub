@@ -87,22 +87,6 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
     setCheckBox((prev) => ({ ...prev, eligibility: text }))
   }
 
-  function handleChangeSubCategory(subCate: string) {
-    setCheckBox((prev) => {
-      let temp = { ...prev }
-
-      let index = temp.subCategory.findIndex((elem) => elem === subCate)
-
-      if (index === -1) {
-        temp.subCategory = [...temp.subCategory, subCate]
-      } else {
-        temp.subCategory = temp.subCategory.filter((elem) => elem != subCate)
-      }
-
-      return temp
-    })
-  }
-
   const handlePageClick = (page: number) => {
     setCurrentPage((prev) => page)
   }
@@ -314,7 +298,6 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
                 maxVal={maxVal}
                 setMaxVal={setMaxVal}
                 handleChangeBallot={handleChangeBallot}
-                handleChangeSubCategory={handleChangeSubCategory}
                 handleChangeEligibility={handleChangeEligibility}
                 handleChangeIsOpenSource={handleChangeIsOpenSource}
               />
@@ -370,7 +353,6 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
                   maxVal={maxVal}
                   setMaxVal={setMaxVal}
                   handleChangeBallot={handleChangeBallot}
-                  handleChangeSubCategory={handleChangeSubCategory}
                   handleChangeEligibility={handleChangeEligibility}
                   handleChangeIsOpenSource={handleChangeIsOpenSource}
                 />
@@ -436,7 +418,6 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
           open={state.drawer}
           checkBox={checkBox}
           handleChangeCategory={handleChangeCategory}
-          handleChangeSubCategory={handleChangeSubCategory}
           maxVal={maxVal}
           minVal={minVal}
           setMaxVal={setMaxVal}
