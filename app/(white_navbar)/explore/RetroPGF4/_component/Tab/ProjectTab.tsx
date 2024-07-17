@@ -78,16 +78,6 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
 
       let index = temp.category.findIndex((elem) => elem === value)
       // add new category
-      if (index === -1) {
-        temp.category = [value]
-        temp.subCategory =
-          category.find((elem) => elem.name === value)?.subCategory || []
-      }
-      // get rid off category
-      else {
-        temp.category = temp.category.filter((elem) => elem != value)
-        temp.subCategory = []
-      }
 
       return temp
     })
