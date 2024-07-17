@@ -67,7 +67,6 @@ export default function DialogFilter({
                   <CategoryDisclosure
                     checkBox={checkBox}
                     handleChangeCategory={handleChangeCategory}
-                    handleChangeSubCategory={handleChangeSubCategory}
                   />
                   <MultiSliderDisclosure
                     maxVal={maxVal}
