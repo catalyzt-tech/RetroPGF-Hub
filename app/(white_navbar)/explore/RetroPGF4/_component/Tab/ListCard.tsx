@@ -67,7 +67,7 @@ export default function ListCard({
                   <td className="py-4 px-3">
                     <div className="flex flex-row flex-wrap gap-2 ">
                       <h6 className="text-sm font-medium text-gray-500">
-                        {item.reward || 0}
+                        {item.reward}
                       </h6>
                       <Image
                         src={OpTokenPath}
