@@ -1,4 +1,5 @@
 import { iRetroPGF4Project } from '../../../RetroType4'
+import { handleCategoryRound4 } from '../../../../../../lib/InitialMount'
 export default function OverviewSection({ data }: { data: iRetroPGF4Project }) {
   return (
     <>
@@ -13,9 +14,10 @@ export default function OverviewSection({ data }: { data: iRetroPGF4Project }) {
             <p className="mb-1 text-base font-normal text-gray-500">
               Category:
             </p>
-            <p className="mb-1 text-base font-semibold text-gray-600">
-              {data.category}
-            </p>
+            <div className="mb-1 text-base font-semibold text-gray-600">
+              {/* {data.category} */}
+              {handleCategoryRound4(data.category)}
+            </div>
           </div>
         </div>
       </div>
