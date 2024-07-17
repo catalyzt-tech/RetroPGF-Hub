@@ -1,9 +1,8 @@
 import { handleCategoryRound4 } from '@/app/lib/InitialMount'
 import LinkIcon from '@carbon/icons-react/lib/Link'
 import Image from 'next/image'
-// import { RetroRound3 } from '../../../RetroType4'
 import { iRetroPGF4Project } from '../../../RetroType4'
-import { ThumbsUp } from '@carbon/icons-react'
+import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'
 // import { convertImageClodinary } from '@/app/lib/utils'
 export default function ProjectDetailSection({
   data,
@@ -38,17 +37,48 @@ export default function ProjectDetailSection({
             {data.name}
           </h3>
           <div className="flex flex-wrap gap-6 mt-3">
+            {data.socialLinks.website.length > 0 &&
+              data.socialLinks.website.map((item, i) => (
+                <a
+                  href={item}
+                  key={i}
+                  className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+                >
+                  <LinkIcon size={20} />
+                  <h6 className="text-sm font-normal line-clamp-1">{item}</h6>
+                </a>
+              ))}
+            {data.socialLinks.farcaster.length > 0 &&
+              data.socialLinks.farcaster.map((item, i) => (
+                <a
+                  href={item}
+                  key={i}
+                  className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+                >
+                  <Partnership size={20} />
+                  <h6 className="text-sm font-normal line-clamp-1">{item}</h6>
+                </a>
+              ))}
             <a
-              href={data.socialLinks.website[0]}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-wrap gap-1.5"
+              href={data.socialLinks.twitter}
+              className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
             >
-              <LinkIcon size={24} className="fill-gray-500" />
-              <p className="text-base font-medium text-gray-600 hover:underline">
-                Website
-              </p>
+              <LogoTwitter size={20} />
+              <h6 className="text-sm font-normal line-clamp-1">
+                {data.socialLinks.twitter}
+              </h6>
             </a>
+            {data.socialLinks.mirror !== null && (
+              <a
+                href={data.socialLinks.mirror}
+                className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+              >
+                <Book size={20} />
+                <h6 className="text-sm font-normal line-clamp-1">
+                  {data.socialLinks.mirror}
+                </h6>
+              </a>
+            )}
           </div>
 
           {/* Category */}
