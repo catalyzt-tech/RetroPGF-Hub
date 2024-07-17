@@ -60,6 +60,7 @@ export interface iRetroPGF4Project {
   github: Github[]
   packages: any[]
   contracts: any[]
+  projectId: string
   grantsAndFunding: GrantsAndFunding
   eligibilityReview: {
     isEligibilityResultStatus: boolean
