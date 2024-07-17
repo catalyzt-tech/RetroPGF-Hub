@@ -73,7 +73,7 @@ export default function DrawerNav({
                 <ul className="Drawer">
                   {menu.map((item, index) => (
                     <li key={index} className="flex p-4 py-6 items-center">
-                      <Link href={item.link} className="text-2xl font-semibold text-gray-800">
+                      <Link href={item.link} className="text-2xl font-semibold text-gray-800" onClick={onClose}>
                         {item.name}
                       </Link>
                     </li>
