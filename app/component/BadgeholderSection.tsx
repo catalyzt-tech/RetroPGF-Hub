@@ -4,33 +4,8 @@ import { makeRequest } from '../hook/makeRequest'
 import axios from 'axios'
 
 const BadgeholderSection = () => {
-    const agoraBaseUrl = process.env.NEXT_PUBLIC_AGORA_API_BASE
-
-    React.useEffect(() => {
-        // axios.get(`/retrofunding/rounds/4/ballots`, {
-        //     baseURL: agoraBaseUrl,
-        //     method: "GET",
-        //     headers: {
-        //         Authorization: `${process.env.NEXT_PUBLIC_AGORA_API_KEY}`
-        //     }
-        // }).then((res) => { console.log(res.data) })
-        let config = {
-            method: 'get',
-            maxBodyLength: Infinity,
-            url: 'https://vote.optimism.io/api/v1/retrofunding/rounds/4/ballots',
-            headers: { 
-              'Authorization': 'Bearer 5df291cb-37dd-49f8-9f2f-d649b6e5296f'
-            }
-          };
-          
-          axios.request(config)
-          .then((response) => {
-            console.log(JSON.stringify(response.data));
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-    }, [])
+  
+  //waiting for data pull
     
 
   return (
