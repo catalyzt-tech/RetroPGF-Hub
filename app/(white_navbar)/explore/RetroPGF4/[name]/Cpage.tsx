@@ -49,7 +49,7 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
     <div className="flex mt-8 gap-10">
       {/* Scroll Spy */}
 
-      <div className="lg:flex-grow flex flex-col gap-4 lg:gap-8">
+      <div className="w-full lg:flex-grow flex flex-col gap-4 lg:gap-8">
         <section
           className="w-full h-full flex flex-col gap-4 lg:gap-8 lg:flex-grow"
           id="Overview"
