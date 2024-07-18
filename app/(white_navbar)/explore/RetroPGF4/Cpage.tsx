@@ -8,6 +8,7 @@ import ProjectTab from './_component/Tab/ProjectTab'
 import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import HistorySection from '@/app/component/HistorySection'
 import StatisticSection from '@/app/component/StatisticSection'
+import BadgeholderSection from '@/app/component/BadgeholderSection'
 import RetroPGF4 from '@/public/static/rpgf4.json'
 export default function Cpage({ round4 }: { round4: iRetroPGF4Project[] }) {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
@@ -84,6 +85,20 @@ export default function Cpage({ round4 }: { round4: iRetroPGF4Project[] }) {
               leaveTo="transform scale-95 opacity-0"
             >
               <StatisticSection data={RetroPGF4} round={4} />
+            </Transition>
+          </Tab.Panel>
+          <Tab.Panel className="outline-none min-h-[70vh]">
+            <Transition
+              appear
+              show={selectedIndex === 3}
+              enter="transition duration-200 ease-out"
+              enterFrom="transform scale-95 opacity-0"
+              enterTo="transform scale-100 opacity-100"
+              leave="transition duration-200 ease-out"
+              leaveFrom="transform scale-100 opacity-100"
+              leaveTo="transform scale-95 opacity-0"
+            >
+              <BadgeholderSection />
             </Transition>
           </Tab.Panel>
         </Tab.Panels>
