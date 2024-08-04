@@ -12,9 +12,9 @@ export const tab = [
     index: 2,
   },
   {
-    text: 'Badgeholder',
+    text: `Badgeholder's Metrics`,
     index: 3,
-  }
+  },
 ]
 export const sorting = [
   {
