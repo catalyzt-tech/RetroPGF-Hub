@@ -14,8 +14,19 @@ export async function getJsonRound4(): Promise<iRetroPGF4Project[]> {
   return jsonData
 }
 
+export async function getJsonBadgeholderMetric(): Promise<any[]> {
+  const directoryPath = path.join(
+    process.cwd(),
+    'public/static/rpgf4/rpgf4_badgeholder_metrics.json'
+  )
+  const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
+  const jsonData: any[] = JSON.parse(fileContents)
+  return jsonData
+}
+
 export default async function page() {
   const round4 = await getJsonRound4()
+  const badgeholderData = await getJsonBadgeholderMetric()
 
   return (
     <>
@@ -34,7 +45,7 @@ export default async function page() {
           </div>
         </div>
         <div className="flex flex-col gap-6 mx-2 sm:mx-4 md:mx-6 lg:mx-20">
-          <Cpage round4={round4} />
+          <Cpage round4={round4} badgeholderData={badgeholderData} />
         </div>
       </div>
     </>

@@ -10,7 +10,13 @@ import HistorySection from '@/app/component/HistorySection'
 import StatisticSection from '@/app/component/StatisticSection'
 import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
 import RetroPGF4 from '@/public/static/rpgf4/rpgf4.json'
-export default function Cpage({ round4 }: { round4: iRetroPGF4Project[] }) {
+
+interface iCpage {
+  round4: iRetroPGF4Project[]
+  badgeholderData: any[]
+}
+
+export default function Cpage({ round4, badgeholderData }: iCpage) {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
   function handleChangeSelectedIndex(index: number) {
@@ -98,7 +104,7 @@ export default function Cpage({ round4 }: { round4: iRetroPGF4Project[] }) {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <BadgeholderSection />
+              <BadgeholderSection badgeholderData={badgeholderData} />
             </Transition>
           </Tab.Panel>
         </Tab.Panels>
