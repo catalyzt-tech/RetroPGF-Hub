@@ -1,9 +1,9 @@
-import React, { FC } from 'react'
-import BadgeholderCard from '../(white_navbar)/explore/RetroPGF4/_component/BadgeholderCard'
-import { makeRequest } from '../hook/makeRequest'
+import React, { FC, Fragment } from 'react'
+import BadgeholderCard from '../BadgeholderCard'
+import { makeRequest } from '../../../../../hook/makeRequest'
 import axios from 'axios'
 
-const BadgeholderSection: FC = () => {
+const BadgeholderTab: FC = () => {
   //waiting for data pull
 
   return (
@@ -11,13 +11,13 @@ const BadgeholderSection: FC = () => {
       <div className="font-rubik text-black text-2xl">Search Bar & Filter</div>
       <div className="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 flex-col gap-6">
         {/* {currentItems.map((item, i) => (
-          <React.Fragment key={i}>
+          <Fragment key={i}>
             <BadgeholderCard />
-          </React.Fragment>
+          </Fragment>
         ))} */}
       </div>
     </div>
   )
 }
 
-export default BadgeholderSection
+export default BadgeholderTab

@@ -15,7 +15,10 @@ interface pageProps {
 async function getSingleJson(
   projectName: string
 ): Promise<iRetroPGF4Project | undefined> {
-  const directoryPath = path.join(process.cwd(), 'public/static/rpgf4.json')
+  const directoryPath = path.join(
+    process.cwd(),
+    'public/static/rpgf4/rpgf4.json'
+  )
 
   const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
   const jsonData: iRetroPGF4Project[] = JSON.parse(fileContents)

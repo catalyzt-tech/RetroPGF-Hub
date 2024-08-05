@@ -5,7 +5,10 @@ import fs from 'fs'
 import path from 'path'
 
 export async function getJsonRound4(): Promise<iRetroPGF4Project[]> {
-  const directoryPath = path.join(process.cwd(), 'public/static/rpgf4.json')
+  const directoryPath = path.join(
+    process.cwd(),
+    'public/static/rpgf4/rpgf4.json'
+  )
   const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
   const jsonData: iRetroPGF4Project[] = JSON.parse(fileContents)
   return jsonData

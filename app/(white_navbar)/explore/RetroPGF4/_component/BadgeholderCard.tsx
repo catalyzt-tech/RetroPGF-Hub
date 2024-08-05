@@ -6,34 +6,32 @@ import { AudioConsole, RepoSourceCode } from '@carbon/icons-react'
 //TOCHECK: status can be PENDING, SUBMITTED, or NOT_SUBMITTED
 
 interface BadgeholderMetrics {
-    address: string;
-  round: number;
-  metric_id: string;
-  allocation: number;
-  locked: boolean;
-  created_at: string;
-  updated_at: string;
+  address: string
+  round: number
+  metric_id: string
+  allocation: number
+  locked: boolean
+  created_at: string
+  updated_at: string
 }
 
 const BadgeholderCard = ({
-    addr,
-    osOnly = false,
-    osMultiplier = 1,
-    metricCount = 1,
-    metric,
-    updatedAt,
-    status = 'PENDING',
-    
-  }: 
-  {
-    addr: string
-    osOnly?: boolean
-    osMultiplier?: number
-    metricCount?: number
-    metric?: BadgeholderMetrics[]
-    updatedAt?: string
-    status?: string  
-  }) => {
+  addr,
+  osOnly = false,
+  osMultiplier = 1,
+  metricCount = 1,
+  metric,
+  updatedAt,
+  status = 'PENDING',
+}: {
+  addr: string
+  osOnly?: boolean
+  osMultiplier?: number
+  metricCount?: number
+  metric?: BadgeholderMetrics[]
+  updatedAt?: string
+  status?: string
+}) => {
   const isPending = true
   const isOpenSourceOnly = false
   return (
@@ -53,7 +51,7 @@ const BadgeholderCard = ({
 
       {/* Submitted Status */}
       <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem] z-20">
-        {status === "PENDING" ? (
+        {status === 'PENDING' ? (
           <div className="flex items-center text-[0.75rem] bg-gray-50 border border-gray-400 font-medium text-gray-600 px-1.5 py-0.5 rounded-lg">
             {' '}
             <div className="w-2 h-2 rounded-full bg-gray-400 mr-1"></div>
@@ -71,7 +69,7 @@ const BadgeholderCard = ({
       {/* Avatar */}
       <div className="absolute top-8 lg:top-12 left-1/2 transform -translate-x-1/2 rounded-full bg-white flex flex-shrink-0 z-20 overflow-hidden">
         <Image
-        //resolve from ens name
+          //resolve from ens name
           src={'/random/OP-Logo.png'}
           alt="avatar image"
           className=""
@@ -85,15 +83,16 @@ const BadgeholderCard = ({
             {/* resolve to ens name */}
             {addr}
           </p>
-        
-        {
-            osOnly === true ? (
-                <p className="text-xs font-light text-green-700 px-1.5 py-0.5 bg-green-50 border border-green-600 rounded-full mt-2">Open Source Only</p>
-            ) : (
-                <p className="text-xs font-light text-gray-500 px-1.5 py-0.5 bg-gray-50 border border-gray-500 rounded-full mt-2">Mixed</p>
-            )
-        }
-          
+
+          {osOnly === true ? (
+            <p className="text-xs font-light text-green-700 px-1.5 py-0.5 bg-green-50 border border-green-600 rounded-full mt-2">
+              Open Source Only
+            </p>
+          ) : (
+            <p className="text-xs font-light text-gray-500 px-1.5 py-0.5 bg-gray-50 border border-gray-500 rounded-full mt-2">
+              Mixed
+            </p>
+          )}
         </div>
         <div className="flex-grow"></div>
         <div className="flex gap-2">
@@ -106,7 +105,9 @@ const BadgeholderCard = ({
         <div className="flex gap-2">
           <RepoSourceCode size={20} />
           <div className="flex gap-1">
-            <p className="text-sm font-semibold text-gray-800">x{osMultiplier}</p>
+            <p className="text-sm font-semibold text-gray-800">
+              x{osMultiplier}
+            </p>
             <p className="text-sm font-light text-gray-600">
               Open-Source Multiplied
             </p>
@@ -114,7 +115,7 @@ const BadgeholderCard = ({
         </div>
 
         <button className="w-1/2 bg-primaryRed hover:bg-red-700 text-white font-semibold text-sm py-2 rounded-lg self-center mt-4">
-            All Metrics
+          All Metrics
         </button>
       </div>
     </div>

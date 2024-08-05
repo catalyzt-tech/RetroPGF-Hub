@@ -8,8 +8,8 @@ import ProjectTab from './_component/Tab/ProjectTab'
 import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import HistorySection from '@/app/component/HistorySection'
 import StatisticSection from '@/app/component/StatisticSection'
-import BadgeholderSection from '@/app/component/BadgeholderSection'
-import RetroPGF4 from '@/public/static/rpgf4.json'
+import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
+import RetroPGF4 from '@/public/static/rpgf4/rpgf4.json'
 export default function Cpage({ round4 }: { round4: iRetroPGF4Project[] }) {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
 

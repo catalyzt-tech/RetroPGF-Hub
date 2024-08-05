@@ -1,12 +1,12 @@
 import { Dispatch, SetStateAction } from 'react'
-import { CheckBoxStateType, ExploreRoundState } from '../ExploreRoundType'
+import { CheckBoxStateType, ExploreRoundState } from '../../ExploreRoundType'
 import Input from '@/app/component/Input/Input'
-import { category } from '../Text'
+import { category } from '../../Text'
 import Search from '@carbon/icons-react/lib/Search'
 import Grid from '@carbon/icons-react/lib/Grid'
 import List from '@carbon/icons-react/lib/List'
 import SettingsAdjust from '@carbon/icons-react/lib/SettingsAdjust'
-import SortExploreRound from '../SortExploreRound'
+import SortExploreRound from '../../SortExploreRound'
 
 // this file include
 // - search input
