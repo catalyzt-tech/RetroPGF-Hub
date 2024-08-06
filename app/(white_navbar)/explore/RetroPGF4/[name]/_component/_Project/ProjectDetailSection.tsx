@@ -6,7 +6,7 @@ import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'
 import { numberWithCommas } from '@/app/lib/utils'
 // import { convertImageClodinary } from '@/app/lib/utils'
 
-const truncateProjectId = (projectId: string) => {
+export const truncateProjectId = (projectId: string) => {
   if (projectId.length <= 10) return projectId
   return `${projectId.slice(0, 8)}...${projectId.slice(-8)}`
 }

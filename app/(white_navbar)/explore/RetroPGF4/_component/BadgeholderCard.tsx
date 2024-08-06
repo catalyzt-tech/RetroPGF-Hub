@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { AudioConsole, RepoSourceCode } from '@carbon/icons-react'
-
+import { AudioConsole, RepoSourceCode, Star } from '@carbon/icons-react'
+import { truncateProjectId } from '../[name]/_component/_Project/ProjectDetailSection'
 interface BadgeholderCardProps {
   address: string
   ensName: string
@@ -69,8 +69,11 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
       </div>
       <div className="mt-24 lg:mt-28 p-4 flex flex-col justify-start items-start gap-3 w-full h-full">
         <div className="w-full flex flex-col flex-wrap items-center">
-          <p className="text-md font-normal text-gray-800 break-words line-clamp-1 max-w-full">
-            {address}
+          <p className="text-md font-medium text-gray-800 break-words line-clamp-1 max-w-full">
+            {ensName ? ensName : truncateProjectId(address)}
+          </p>
+          <p className="text-xs font-light text-gray-600 break-words truncate max-w-full">
+            Invitation By {invitedBy}
           </p>
 
           {/* {openSourceMultiplier === number ? (
@@ -105,9 +108,14 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
           </div>
         </div>
 
-        <button className="w-1/2 bg-primaryRed hover:bg-red-700 text-white font-semibold text-sm py-2 rounded-lg self-center mt-4">
-          All Metrics
-        </button>
+        <div className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group">
+          {/* <Trophy size={20} /> */}
+
+          <div className="flex flex-row justify-center items-center gap-x-2 group-hover:scale-105 transition-all ease-linear">
+            <Star size={20} />
+            <p className="text-sm font-semibold text-gray-800">View Metrics</p>
+          </div>
+        </div>
       </div>
     </div>
   )

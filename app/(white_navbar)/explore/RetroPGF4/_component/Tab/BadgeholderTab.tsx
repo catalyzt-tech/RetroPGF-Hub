@@ -1,6 +1,5 @@
 import { FC, Fragment, Suspense } from 'react'
 import BadgeholderCard from '../BadgeholderCard'
-import { getJsonBadgeholderMetric } from '../../page'
 import { BadgeholderMetrics } from '../../RetroType4'
 
 interface BadgeholderTabProps {
@@ -10,8 +9,8 @@ interface BadgeholderTabProps {
 const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
   console.log(badgeholderData)
   return (
-    <div className="xl:mx-10">
-      <div className="font-rubik text-black text-2xl">Search Bar & Filter</div>
+    <>
+      {/* <div className="font-rubik text-black text-2xl">Search Bar & Filter</div> */}
       <div className="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 flex-col gap-6">
         <Suspense fallback={<div>Loading...</div>}>
           <Fragment>
@@ -31,7 +30,7 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
           </Fragment>
         </Suspense>
       </div>
-    </div>
+    </>
   )
 }
 export default BadgeholderTab

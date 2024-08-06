@@ -146,7 +146,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
         isOpenSourceCondition = item.isOpenSource
       } else if (checkBox.isOpenSource === 'Closed Source') {
         //only select false project
-        isOpenSourceCondition = !item.isOpenSource ?? false
+        isOpenSourceCondition = !(item.isOpenSource ?? false)
       }
 
       return (
