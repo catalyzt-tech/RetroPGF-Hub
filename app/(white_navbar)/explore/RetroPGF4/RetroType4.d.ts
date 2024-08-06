@@ -83,3 +83,23 @@ export interface iRetroPGF4Project {
   isOpenSource: boolean
   reward?: number
 }
+
+export interface MetricSelected {
+  trusted_users_onboarded?: number
+  trusted_transaction_share?: number
+  log_gas_fees?: number
+  trusted_transaction_count?: number
+  transaction_count?: number
+}
+
+export interface BadgeholderMetrics {
+  address: string
+  ensName: string
+  joinMethod: string
+  joinDate: string
+  invitedBy: string
+  metricInBallot: number
+  metricViewed: number
+  openSourceMultiplier: number
+  metricSelected: MetricSelected[]
+}

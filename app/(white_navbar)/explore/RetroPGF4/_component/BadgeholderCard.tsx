@@ -1,39 +1,29 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AudioConsole, RepoSourceCode } from '@carbon/icons-react'
 
-//TOCHECK: status can be PENDING, SUBMITTED, or NOT_SUBMITTED
-
-interface BadgeholderMetrics {
+interface BadgeholderCardProps {
   address: string
-  round: number
-  metric_id: string
-  allocation: number
-  locked: boolean
-  created_at: string
-  updated_at: string
+  ensName: string
+  joinMethod: string
+  joinDate: string
+  invitedBy: string
+  metricInBallot: number
+  metricViewed: number
+  openSourceMultiplier: number
 }
 
-const BadgeholderCard = ({
-  addr,
-  osOnly = false,
-  osMultiplier = 1,
-  metricCount = 1,
-  metric,
-  updatedAt,
-  status = 'PENDING',
-}: {
-  addr: string
-  osOnly?: boolean
-  osMultiplier?: number
-  metricCount?: number
-  metric?: BadgeholderMetrics[]
-  updatedAt?: string
-  status?: string
+const BadgeholderCard: FC<BadgeholderCardProps> = ({
+  address,
+  ensName,
+  joinMethod,
+  joinDate,
+  invitedBy,
+  metricInBallot,
+  metricViewed,
+  openSourceMultiplier,
 }) => {
-  const isPending = true
-  const isOpenSourceOnly = false
   return (
     <div
       className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm relative min-w-16 bg-white overflow-hidden`}
@@ -80,11 +70,10 @@ const BadgeholderCard = ({
       <div className="mt-24 lg:mt-28 p-4 flex flex-col justify-start items-start gap-3 w-full h-full">
         <div className="w-full flex flex-col flex-wrap items-center">
           <p className="text-md font-normal text-gray-800 break-words line-clamp-1 max-w-full">
-            {/* resolve to ens name */}
-            {addr}
+            {address}
           </p>
 
-          {osOnly === true ? (
+          {/* {openSourceMultiplier === number ? (
             <p className="text-xs font-light text-green-700 px-1.5 py-0.5 bg-green-50 border border-green-600 rounded-full mt-2">
               Open Source Only
             </p>
@@ -92,13 +81,15 @@ const BadgeholderCard = ({
             <p className="text-xs font-light text-gray-500 px-1.5 py-0.5 bg-gray-50 border border-gray-500 rounded-full mt-2">
               Mixed
             </p>
-          )}
+          )} */}
         </div>
         <div className="flex-grow"></div>
         <div className="flex gap-2">
           <AudioConsole size={20} />
           <div className="flex gap-1">
-            <p className="text-sm font-semibold text-gray-800">{metricCount}</p>
+            <p className="text-sm font-semibold text-gray-800">
+              {metricInBallot}
+            </p>
             <p className="text-sm font-light text-gray-600">Metrics Selected</p>
           </div>
         </div>
@@ -106,7 +97,7 @@ const BadgeholderCard = ({
           <RepoSourceCode size={20} />
           <div className="flex gap-1">
             <p className="text-sm font-semibold text-gray-800">
-              x{osMultiplier}
+              x {openSourceMultiplier}
             </p>
             <p className="text-sm font-light text-gray-600">
               Open-Source Multiplied
