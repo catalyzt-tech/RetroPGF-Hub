@@ -1,5 +1,5 @@
 import { FC, Fragment, Suspense } from 'react'
-import BadgeholderCard from '../BadgeholderCard'
+import BadgeholderCard from './component/BadgeholderCard'
 import { BadgeholderMetrics } from '../../RetroType4'
 
 interface BadgeholderTabProps {

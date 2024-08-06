@@ -1,8 +1,11 @@
-import React, { FC } from 'react'
+import React, { FC, Fragment, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AudioConsole, RepoSourceCode, Star } from '@carbon/icons-react'
-import { truncateProjectId } from '../[name]/_component/_Project/ProjectDetailSection'
+import { truncateProjectId } from '../../../[name]/_component/_Project/ProjectDetailSection'
+import { Dialog, Transition } from '@headlessui/react'
+import detailDialog from './DialogDetail'
+
 interface BadgeholderCardProps {
   address: string
   ensName: string
@@ -24,6 +27,8 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
   metricViewed,
   openSourceMultiplier,
 }) => {
+  let [isOpen, setIsOpen] = useState(false)
+
   return (
     <div
       className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm relative min-w-16 bg-white overflow-hidden`}
@@ -108,14 +113,20 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group">
+        <button
+          className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {/* <Trophy size={20} /> */}
 
           <div className="flex flex-row justify-center items-center gap-x-2 group-hover:scale-105 transition-all ease-linear">
             <Star size={20} />
-            <p className="text-sm font-semibold text-gray-800">View Metrics</p>
+            <div className="text-sm font-semibold text-gray-800">
+              View Metrics
+            </div>
           </div>
-        </div>
+          {detailDialog({ isOpen, setIsOpen })}
+        </button>
       </div>
     </div>
   )
