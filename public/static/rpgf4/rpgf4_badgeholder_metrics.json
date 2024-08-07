@@ -5,26 +5,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "solarcurve.eth",
-    "metricInBallot": 5,
-    "metricViewed": 16,
-    "openSourceMultiplier": 2.6,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 12
-      },
-      {
-        "trusted_transaction_share": 24
-      },
-      {
-        "log_gas_fees": 26
-      },
-      {
-        "trusted_transaction_count": 18
-      },
-      {
-        "transaction_count": 20
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xf68d2bfcecd7895bba05a7451dd09a1749026454",
@@ -42,7 +27,8 @@
       {
         "gas_fees": 95
       }
-    ]
+    ],
+    "avatarUrl": "https://euc.li/mastermojo.eth"
   },
   {
     "address": "0xe422d6c46a69e989ba6468ccd0435cb0c5c243e3",
@@ -50,17 +36,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xc728dea8b2972e6e07493be8dc2f0314f7dc3e98",
-    "metricInBallot": 2,
-    "metricViewed": 16,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "monthly_active_addresses": 10
-      },
-      {
-        "log_gas_fees": 90
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x7fc80fad32ec41fd5cfcc14eee9c31953b6b4a8b",
@@ -84,7 +64,8 @@
       {
         "log_gas_fees": 50
       }
-    ]
+    ],
+    "avatarUrl": "https://euc.li/brichis.eth"
   },
   {
     "address": "0x3db5b38ef4b433d9c6a664bd35551be73313189a",
@@ -111,7 +92,8 @@
       {
         "recurring_addresses": 14.23548387096774
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x3b60e31cfc48a9074cd5bebb26c9eaa77650a43f",
@@ -144,7 +126,8 @@
       {
         "trusted_daily_active_users": 6
       }
-    ]
+    ],
+    "avatarUrl": "https://euc.li/ccarella.eth"
   },
   {
     "address": "0xcf79c7eaec5bdc1a9e32d099c5d6bdf67e4cf6e8",
@@ -152,26 +135,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xc5a756d63c5fe67b438acbe468aa62a52093fdef",
-    "metricInBallot": 5,
-    "metricViewed": 13,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "gas_fees": 50
-      },
-      {
-        "log_transaction_count": 10
-      },
-      {
-        "trusted_recurring_users": 20
-      },
-      {
-        "openrank_trusted_users_count": 10
-      },
-      {
-        "trusted_monthly_active_users": 10
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x07fda67513ec0897866098a11dc3858089d4a505",
@@ -195,7 +163,8 @@
       {
         "recurring_addresses": 15
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x94db037207f6fb697dbd33524aadffd108819dc8",
@@ -225,7 +194,8 @@
       {
         "transaction_count": 15
       }
-    ]
+    ],
+    "avatarUrl": "https://euc.li/joxes.eth"
   },
   {
     "address": "0x0331969e189d63fbc31d771bb04ab44227d748d8",
@@ -285,7 +255,8 @@
       {
         "monthly_active_addresses": 1.061769616026711
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x55aed0ce035883626e536254dda2f23a5b5d977f",
@@ -345,7 +316,8 @@
       {
         "log_transaction_count": 4
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x9934465ee73beaf148b1b3ff232c8cd86c4c2c63",
@@ -372,7 +344,8 @@
       {
         "trusted_users_onboarded": 20
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x288c53a1ba857ead34ad0e79f644087f8174185a",
@@ -380,20 +353,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0x13ebd3443fa5575f0eb173e323d8419f7452cfb1",
-    "metricInBallot": 3,
-    "metricViewed": 16,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 40
-      },
-      {
-        "trusted_recurring_users": 35
-      },
-      {
-        "gas_fees": 25
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x5d36a202687fd6bd0f670545334bf0b4827cc1e2",
@@ -417,7 +381,8 @@
       {
         "trusted_users_onboarded": 16
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xef32eb37f3e8b4bdddf99879b23015f309ed7304",
@@ -425,20 +390,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "yoav.eth",
-    "metricInBallot": 3,
-    "metricViewed": 16,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "monthly_active_addresses": 30
-      },
-      {
-        "recurring_addresses": 25
-      },
-      {
-        "log_transaction_count": 45
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xf4b0556b9b6f53e00a1fdd2b0478ce841991d8fa",
@@ -468,7 +424,8 @@
       {
         "trusted_daily_active_users": 16.666
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x75536cf4f01c2bfa528f5c74ddc1232db3af3ee5",
@@ -492,7 +449,8 @@
       {
         "gas_fees": 25
       }
-    ]
+    ],
+    "avatarUrl": "https://euc.li/katiegarcia.eth"
   },
   {
     "address": "0x00409fc839a2ec2e6d12305423d37cd011279c09",
@@ -525,7 +483,8 @@
       {
         "trusted_recurring_users": 10
       }
-    ]
+    ],
+    "avatarUrl": "https://euc.li/thesleeper.eth"
   },
   {
     "address": "0x06f455e2c297a4ae015191fa7a4a11c77c5b1b7c",
@@ -533,23 +492,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xda60aceb12a1a61d09b008ae4a60c760db32220f",
-    "metricInBallot": 4,
-    "metricViewed": 10,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "trusted_recurring_users": 20
-      },
-      {
-        "trusted_transaction_count": 27
-      },
-      {
-        "power_user_addresses": 25
-      },
-      {
-        "trusted_users_onboarded": 28
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x9c949881084dcbd97237f786710ab8e52a457136",
@@ -585,7 +532,8 @@
       {
         "daily_active_addresses": 5
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x6eda5acaff7f5964e1ecc3fd61c62570c186ca0c",
@@ -612,7 +560,8 @@
       {
         "trusted_transaction_count": 3
       }
-    ]
+    ],
+    "avatarUrl": "https://euc.li/opmichael.eth"
   },
   {
     "address": "0x15c6ac4cf1b5e49c44332fb0a1043ccab19db80a",
@@ -645,18 +594,8 @@
       {
         "log_gas_fees": 41.5
       }
-    ]
-  },
-  {
-    "address": "0x9194efdf03174a804f3552f4f7b7a4bb74badb7f",
-    "ensName": "kethic.eth",
-    "joinMethod": "Project Selection",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "0x3b3980936707a8299afb5424fa807c1cbac37ccb",
-    "metricInBallot": null,
-    "metricViewed": null,
-    "openSourceMultiplier": null,
-    "metricSelected": null
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x92bf20563e747b2f8711549be17a9d7b876c4053",
@@ -664,26 +603,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "zachxbt.eth",
-    "metricInBallot": 5,
-    "metricViewed": 0,
-    "openSourceMultiplier": 1,
-    "metricSelected": [
-      {
-        "transaction_count": 25
-      },
-      {
-        "gas_fees": 50
-      },
-      {
-        "daily_active_addresses": 10
-      },
-      {
-        "recurring_addresses": 5
-      },
-      {
-        "monthly_active_addresses": 10
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x826976d7c600d45fb8287ca1d7c76fc8eb732030",
@@ -691,26 +615,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xdcfe20e6c1d14c26930a28b1f92fb981cda26884",
-    "metricInBallot": 5,
-    "metricViewed": 11,
-    "openSourceMultiplier": 2.4,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 15
-      },
-      {
-        "log_trusted_transaction_count": 27
-      },
-      {
-        "log_gas_fees": 20.81176470588236
-      },
-      {
-        "trusted_transaction_share": 18
-      },
-      {
-        "monthly_active_addresses": 19.18823529411765
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x585639fbf797c1258eba8875c080eb63c833d252",
@@ -728,7 +637,8 @@
       {
         "log_gas_fees": 10
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xdcf7be2ff93e1a7671724598b1526f3a33b1ec25",
@@ -755,7 +665,8 @@
       {
         "recurring_addresses": 2
       }
-    ]
+    ],
+    "avatarUrl": "https://euc.li/gonna.eth"
   },
   {
     "address": "0x5a5d9ab7b1bd978f80909503ebb828879daca9c3",
@@ -779,7 +690,8 @@
       {
         "trusted_transaction_share": 20
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x839395e20bbb182fa440d08f850e6c7a8f6f0780",
@@ -815,7 +727,8 @@
       {
         "trusted_monthly_active_users": 10
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x1de2a056508e0d0dd88a88f1f5cdf9cfa510795c",
@@ -845,7 +758,8 @@
       {
         "trusted_recurring_users": 15
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x53e0b897eae600b2f6855fce4a42482e9229d2c2",
@@ -853,20 +767,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "jackanorak.eth",
-    "metricInBallot": 3,
-    "metricViewed": 15,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 50
-      },
-      {
-        "daily_active_addresses": 25
-      },
-      {
-        "gas_fees": 25
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x69e271483c38ed4902a55c3ea8aab9e7cc8617e5",
@@ -884,7 +789,8 @@
       {
         "log_gas_fees": 50
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x73186b2a81952c2340c4eb2e74e89869e1183df0",
@@ -917,7 +823,8 @@
       {
         "log_transaction_count": 18.27
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x4fd6b3204a6ab48978018b25821682f090840333",
@@ -938,7 +845,8 @@
       {
         "monthly_active_addresses": 30
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x64fed9e56b548343e7bb47c49ecd7ffa9f1a34fe",
@@ -959,7 +867,8 @@
       {
         "recurring_addresses": 25
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x434f5325ddcdbbfcce64be2617c72c4aa33ec3e7",
@@ -1004,7 +913,8 @@
       {
         "trusted_recurring_users": 5
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x6dc43be93a8b5fd37dc16f24872babc6da5e5e3e",
@@ -1034,7 +944,8 @@
       {
         "trusted_users_onboarded": 9.56661316211878
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x0f2ce18919b4eb9838760cfdda65e4c8766e9c19",
@@ -1042,17 +953,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "mattlosquadro.eth",
-    "metricInBallot": 2,
-    "metricViewed": 0,
-    "openSourceMultiplier": 1,
-    "metricSelected": [
-      {
-        "log_gas_fees": 30
-      },
-      {
-        "gas_fees": 70
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xa142ab9eab9264807a41f0e5cbdab877d204e233",
@@ -1060,20 +965,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 3,
-    "metricViewed": 3,
-    "openSourceMultiplier": 1,
-    "metricSelected": [
-      {
-        "gas_fees": 70
-      },
-      {
-        "monthly_active_addresses": 10
-      },
-      {
-        "transaction_count": 20
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x429f9ada43e9f345cbb85ec88681bb70df808892",
@@ -1100,7 +996,8 @@
       {
         "trusted_transaction_share": 11.5
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xd35e119782059a27fead4edda8b555f393650bc8",
@@ -1127,7 +1024,8 @@
       {
         "trusted_recurring_users": 20
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xbc39fb41fe0229352774930c5aa3bf1635c2665f",
@@ -1135,46 +1033,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "joxes.eth",
-    "metricInBallot": 8,
-    "metricViewed": 2,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 15
-      },
-      {
-        "trusted_transaction_share": 5
-      },
-      {
-        "trusted_monthly_active_users": 14
-      },
-      {
-        "trusted_transaction_count": 14
-      },
-      {
-        "log_gas_fees": 13
-      },
-      {
-        "log_transaction_count": 17
-      },
-      {
-        "trusted_recurring_users": 9
-      },
-      {
-        "recurring_addresses": 13
-      }
-    ]
-  },
-  {
-    "address": "0x66da63b03feca7dd44a5bb023bb3645d3252fa32",
-    "ensName": "keeks.eth",
-    "joinMethod": "Badgeholder Choice",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "0xdb150346155675dd0c93efd960d5985244a34820",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xc2e2b715d9e302947ec7e312fd2384b5a1296099",
@@ -1201,7 +1064,8 @@
       {
         "openrank_trusted_users_count": 25
       }
-    ]
+    ],
+    "avatarUrl": "https://euc.li/kbw.eth"
   },
   {
     "address": "0x07bf3cda34aa78d92949bbdce31520714ab5b228",
@@ -1209,70 +1073,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "vectorized.eth",
-    "metricInBallot": 16,
-    "metricViewed": 6,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "trusted_recurring_users": 7
-      },
-      {
-        "power_user_addresses": 6
-      },
-      {
-        "daily_active_addresses": 6
-      },
-      {
-        "trusted_daily_active_users": 7
-      },
-      {
-        "recurring_addresses": 5
-      },
-      {
-        "monthly_active_addresses": 6
-      },
-      {
-        "log_gas_fees": 5
-      },
-      {
-        "transaction_count": 7
-      },
-      {
-        "trusted_monthly_active_users": 7
-      },
-      {
-        "log_transaction_count": 7
-      },
-      {
-        "trusted_transaction_share": 7
-      },
-      {
-        "trusted_transaction_count": 7
-      },
-      {
-        "gas_fees": 5
-      },
-      {
-        "openrank_trusted_users_count": 7
-      },
-      {
-        "log_trusted_transaction_count": 7
-      },
-      {
-        "trusted_users_onboarded": 4
-      }
-    ]
-  },
-  {
-    "address": "0x2b888954421b424c5d3d9ce9bb67c9bd47537d12",
-    "ensName": "lefteris.eth",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x378c23b326504df4d29c81ba6757f53b2c59f315",
@@ -1280,59 +1085,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "ceresstation.eth",
-    "metricInBallot": 16,
-    "metricViewed": 16,
-    "openSourceMultiplier": 1.5,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 1
-      },
-      {
-        "gas_fees": 30
-      },
-      {
-        "trusted_monthly_active_users": 3
-      },
-      {
-        "trusted_daily_active_users": 3
-      },
-      {
-        "log_trusted_transaction_count": 2
-      },
-      {
-        "daily_active_addresses": 8
-      },
-      {
-        "monthly_active_addresses": 7
-      },
-      {
-        "transaction_count": 5
-      },
-      {
-        "log_gas_fees": 20
-      },
-      {
-        "trusted_transaction_count": 3
-      },
-      {
-        "trusted_recurring_users": 2
-      },
-      {
-        "log_transaction_count": 4
-      },
-      {
-        "openrank_trusted_users_count": 3
-      },
-      {
-        "power_user_addresses": 1
-      },
-      {
-        "recurring_addresses": 4
-      },
-      {
-        "trusted_transaction_share": 4
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x7899d9b1181cbb427b0b1be0684c096c260f7474",
@@ -1362,7 +1119,8 @@
       {
         "trusted_transaction_share": 15
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x17640d0d8c93bf710b6ee4208997bb727b5b7bc2",
@@ -1370,26 +1128,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "rotki.eth",
-    "metricInBallot": 5,
-    "metricViewed": 16,
-    "openSourceMultiplier": 1.8,
-    "metricSelected": [
-      {
-        "log_trusted_transaction_count": 1
-      },
-      {
-        "log_gas_fees": 48.5
-      },
-      {
-        "recurring_addresses": 1
-      },
-      {
-        "monthly_active_addresses": 1
-      },
-      {
-        "log_transaction_count": 48.5
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x849151d7d0bf1f34b70d5cad5149d28cc2308bf1",
@@ -1397,26 +1140,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-11-16T15:09:13.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 5,
-    "metricViewed": 0,
-    "openSourceMultiplier": 1.5,
-    "metricSelected": [
-      {
-        "trusted_daily_active_users": 10
-      },
-      {
-        "trusted_monthly_active_users": 35
-      },
-      {
-        "trusted_users_onboarded": 10
-      },
-      {
-        "trusted_recurring_users": 10
-      },
-      {
-        "gas_fees": 35
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x8c50651d964b1a573ba0cf51980ca51d9e42623c",
@@ -1424,23 +1152,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "thesleeper.eth",
-    "metricInBallot": 4,
-    "metricViewed": 16,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 20
-      },
-      {
-        "transaction_count": 20
-      },
-      {
-        "trusted_recurring_users": 10
-      },
-      {
-        "gas_fees": 50
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x1d3bf13f8f7a83390d03db5e23a950778e1d1309",
@@ -1464,7 +1180,8 @@
       {
         "trusted_users_onboarded": 15
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x45a10f35befa4ab841c77860204b133118b7ccae",
@@ -1491,7 +1208,8 @@
       {
         "trusted_users_onboarded": 20
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x842bb1bb84cc8a3d6277b0ff9729d22d55e9c50b",
@@ -1499,38 +1217,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xf5f7dd81069256ccbbb558fc29729d050636e7a0",
-    "metricInBallot": 9,
-    "metricViewed": 0,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "trusted_transaction_count": 15
-      },
-      {
-        "trusted_users_onboarded": 15
-      },
-      {
-        "power_user_addresses": 10
-      },
-      {
-        "trusted_daily_active_users": 6
-      },
-      {
-        "gas_fees": 20
-      },
-      {
-        "monthly_active_addresses": 8
-      },
-      {
-        "daily_active_addresses": 8
-      },
-      {
-        "trusted_monthly_active_users": 8
-      },
-      {
-        "openrank_trusted_users_count": 10
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xdc0a92c350a52b6583e235a57901b8731af8b249",
@@ -1538,26 +1229,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0x7ae8b0d6353f0931eb9fac0a3562fa9e4c6ff933",
-    "metricInBallot": 5,
-    "metricViewed": 1,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "log_gas_fees": 38
-      },
-      {
-        "trusted_monthly_active_users": 22
-      },
-      {
-        "trusted_daily_active_users": 10
-      },
-      {
-        "trusted_recurring_users": 20
-      },
-      {
-        "trusted_users_onboarded": 10
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x69dc230b06a15796e3f42baf706e0e55d4d5eaa1",
@@ -1584,7 +1260,8 @@
       {
         "trusted_recurring_users": 20
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x534631bcf33bdb069fb20a93d2fdb9e4d4dd42cf",
@@ -1608,18 +1285,8 @@
       {
         "power_user_addresses": 20
       }
-    ]
-  },
-  {
-    "address": "0xe53e89d978ff1da716f80baa6e6d8b3fa23f2284",
-    "ensName": "",
-    "joinMethod": "Foundation Choice",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "OP Foundation",
-    "metricInBallot": null,
-    "metricViewed": null,
-    "openSourceMultiplier": null,
-    "metricSelected": null
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xbf430a49c4d85aeed3908619d5387a1fbf8e74a9",
@@ -1627,32 +1294,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 7,
-    "metricViewed": 16,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "trusted_transaction_count": 5
-      },
-      {
-        "gas_fees": 35
-      },
-      {
-        "transaction_count": 10
-      },
-      {
-        "trusted_recurring_users": 20
-      },
-      {
-        "trusted_users_onboarded": 15
-      },
-      {
-        "monthly_active_addresses": 10
-      },
-      {
-        "trusted_monthly_active_users": 5
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x8f07bc36ff569312fdc41f3867d80bbd2fe94b76",
@@ -1682,7 +1328,8 @@
       {
         "transaction_count": 25
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xdadd7c883288cfe2e257b0a361865e5e9349808b",
@@ -1709,7 +1356,8 @@
       {
         "trusted_monthly_active_users": 15
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x75cac0ceb8a39ddb4942a83ad2aafaf0c2a3e13f",
@@ -1736,7 +1384,8 @@
       {
         "trusted_users_onboarded": 20
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xeee718c1e522ecb4b609265db7a83ab48ea0b06f",
@@ -1760,7 +1409,8 @@
       {
         "log_gas_fees": 15
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x98ab20307fdaba1ce8b16d69d22461c6dbe85459",
@@ -1778,29 +1428,8 @@
       {
         "gas_fees": 50
       }
-    ]
-  },
-  {
-    "address": "0x925afeb19355e289ed1346ede709633ca8788b25",
-    "ensName": "",
-    "joinMethod": "Badgeholder Choice",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "0x91031dcfdea024b4d51e775486111d2b2a715871",
-    "metricInBallot": null,
-    "metricViewed": null,
-    "openSourceMultiplier": null,
-    "metricSelected": null
-  },
-  {
-    "address": "0x885c327cad2aebb969dfaab4c928b73ca17e3887",
-    "ensName": "",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
-    "metricInBallot": null,
-    "metricViewed": null,
-    "openSourceMultiplier": null,
-    "metricSelected": null
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x8eb9e5e5375b72ee7c5cb786ce8564d854c26a86",
@@ -1808,26 +1437,11 @@
     "joinMethod": "Foundation Choice Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xe53e89d978ff1da716f80baa6e6d8b3fa23f2284",
-    "metricInBallot": 5,
-    "metricViewed": 15,
-    "openSourceMultiplier": 1.5,
-    "metricSelected": [
-      {
-        "log_transaction_count": 30
-      },
-      {
-        "monthly_active_addresses": 30
-      },
-      {
-        "recurring_addresses": 20
-      },
-      {
-        "trusted_monthly_active_users": 5
-      },
-      {
-        "trusted_users_onboarded": 15
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x12681667bb220521c222f50ece5eb752046bc144",
@@ -1835,20 +1449,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0x1c9a6c17ba87451520cc4aa4ca63db07dc180242",
-    "metricInBallot": 3,
-    "metricViewed": 0,
-    "openSourceMultiplier": 2.2,
-    "metricSelected": [
-      {
-        "log_gas_fees": 40
-      },
-      {
-        "trusted_monthly_active_users": 40
-      },
-      {
-        "trusted_users_onboarded": 20
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x512fce9b07ce64590849115ee6b32fd40ec0f5f3",
@@ -1872,7 +1477,8 @@
       {
         "log_gas_fees": 25.002499750025
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xb0623c91c65621df716ab8afe5f66656b21a9108",
@@ -1902,7 +1508,8 @@
       {
         "trusted_transaction_count": 20
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x801707059a55d748b23b02043c71b7a3d976f071",
@@ -1910,48 +1517,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "dunscomb.eth",
-    "metricInBallot": 5,
-    "metricViewed": 0,
-    "openSourceMultiplier": 1.5,
-    "metricSelected": [
-      {
-        "trusted_monthly_active_users": 25
-      },
-      {
-        "log_transaction_count": 25
-      },
-      {
-        "openrank_trusted_users_count": 10
-      },
-      {
-        "log_gas_fees": 30
-      },
-      {
-        "trusted_users_onboarded": 10
-      }
-    ]
-  },
-  {
-    "address": "0x7ae8b0d6353f0931eb9fac0a3562fa9e4c6ff933",
-    "ensName": "",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
-  },
-  {
-    "address": "0xe4c3768f48d4e676ae48c189db726edf8c1d401e",
-    "ensName": "",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
-    "metricInBallot": null,
-    "metricViewed": null,
-    "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x1e6d9f536a5d1cc04fc13b3133efdb90c8ee5ea1",
@@ -1959,20 +1529,11 @@
     "joinMethod": "Foundation Choice",
     "joinDate": "2023-12-07T15:18:41.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 3,
-    "metricViewed": 2,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "gas_fees": 50
-      },
-      {
-        "trusted_users_onboarded": 20
-      },
-      {
-        "log_trusted_transaction_count": 30
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xd31b671f1a398b519222fdaba5ab5464b9f2a3fa",
@@ -1999,7 +1560,8 @@
       {
         "trusted_transaction_count": 11.69642857142857
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x894aa5f1e45454677a8560dde3b45cb5c427ef92",
@@ -2026,7 +1588,8 @@
       {
         "gas_fees": 50
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x396a34c10b11e33a4bf6f3e6a419a23c54ad34fb",
@@ -2034,26 +1597,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "yoav.eth",
-    "metricInBallot": 5,
-    "metricViewed": 15,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "log_gas_fees": 25
-      },
-      {
-        "log_transaction_count": 25
-      },
-      {
-        "daily_active_addresses": 16.59204871060172
-      },
-      {
-        "monthly_active_addresses": 16.31446991404011
-      },
-      {
-        "recurring_addresses": 17.09348137535817
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x5e349eca2dc61abcd9dd99ce94d04136151a09ee",
@@ -2092,7 +1640,8 @@
       {
         "power_user_addresses": 1
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xabf28f8d9adfb2255f4a059e37d3bce9104969db",
@@ -2125,7 +1674,8 @@
       {
         "trusted_transaction_count": 12.40196078431373
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x146cfed833cc926b16b0da9257e8a281c2add9f3",
@@ -2133,42 +1683,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xbb105e3c6d6406a3f0aab98cd8d0e3a127bd6436",
-    "metricInBallot": 3,
-    "metricViewed": 3,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "trusted_transaction_count": 33.335
-      },
-      {
-        "openrank_trusted_users_count": 33.33333333333334
-      },
-      {
-        "trusted_recurring_users": 33.335
-      }
-    ]
-  },
-  {
-    "address": "0x634c474a393e4498bc2f0c1dee16a50e9e0ebe2b",
-    "ensName": "dankrad.eth",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
-  },
-  {
-    "address": "0x399e0ae23663f27181ebb4e66ec504b3aab25541",
-    "ensName": "superphiz.eth",
-    "joinMethod": "Badgeholder Choice",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "0x3b16821a5dbbff86e4a88ea0621ec6be016cd79a",
-    "metricInBallot": null,
-    "metricViewed": null,
-    "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x006a8a496889e9983a5256f34b608ee9569ba319",
@@ -2176,29 +1695,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xbf430a49c4d85aeed3908619d5387a1fbf8e74a9",
-    "metricInBallot": 6,
-    "metricViewed": 2,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "openrank_trusted_users_count": 2
-      },
-      {
-        "trusted_monthly_active_users": 5
-      },
-      {
-        "monthly_active_addresses": 20
-      },
-      {
-        "trusted_recurring_users": 21.78393305439331
-      },
-      {
-        "log_transaction_count": 21.78393305439331
-      },
-      {
-        "log_gas_fees": 29.43213389121339
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x91031dcfdea024b4d51e775486111d2b2a715871",
@@ -2206,17 +1707,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 2,
-    "metricViewed": 12,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "openrank_trusted_users_count": 75
-      },
-      {
-        "trusted_users_onboarded": 25
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x66810420d110919a0e8b550fde3fe24d50ef0e26",
@@ -2224,44 +1719,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-11-10T15:58:11.000Z",
     "invitedBy": "0x61b647d3b5a04eec7e78b1d9cfbf9dea593c7865",
-    "metricInBallot": 11,
-    "metricViewed": 14,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "monthly_active_addresses": 6.603040248747623
-      },
-      {
-        "trusted_transaction_share": 6.831058904819484
-      },
-      {
-        "trusted_recurring_users": 6.831058904819484
-      },
-      {
-        "trusted_users_onboarded": 15
-      },
-      {
-        "log_gas_fees": 6.831058904819484
-      },
-      {
-        "trusted_transaction_count": 6.878562791501122
-      },
-      {
-        "trusted_monthly_active_users": 20
-      },
-      {
-        "gas_fees": 10
-      },
-      {
-        "transaction_count": 6.840559682155812
-      },
-      {
-        "recurring_addresses": 6.840559682155812
-      },
-      {
-        "log_trusted_transaction_count": 7.344100880981169
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xa3eac0016f6581ac34768c0d4b99ddcd88071c3c",
@@ -2269,25 +1731,11 @@
     "joinMethod": "Foundation Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 1,
-    "metricViewed": 0,
-    "openSourceMultiplier": 1,
-    "metricSelected": [
-      {
-        "trusted_recurring_users": 100
-      }
-    ]
-  },
-  {
-    "address": "0x23936429fc179da0e1300644fb3b489c736d562f",
-    "ensName": "yuetloo.eth",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x665d84fffddd72d24df555e6b065b833478dffca",
@@ -2295,43 +1743,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xe4239eb12c1c6e5a84727db0a7b0507311eb5389",
-    "metricInBallot": 7,
-    "metricViewed": 16,
-    "openSourceMultiplier": 1.6,
-    "metricSelected": [
-      {
-        "trusted_transaction_share": 25
-      },
-      {
-        "log_gas_fees": 10
-      },
-      {
-        "log_transaction_count": 15
-      },
-      {
-        "power_user_addresses": 5
-      },
-      {
-        "recurring_addresses": 25
-      },
-      {
-        "trusted_users_onboarded": 10
-      },
-      {
-        "log_trusted_transaction_count": 10
-      }
-    ]
-  },
-  {
-    "address": "0x7a48a728d9fd2d5a55c545c4378e5ba909349e90",
-    "ensName": "faina.eth",
-    "joinMethod": "Badgeholder Choice",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "0xa142ab9eab9264807a41f0e5cbdab877d204e233",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xebb03f5a580ff088bd4269f88a0cfe5eaf00d2b0",
@@ -2339,49 +1755,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "rockman71.eth",
-    "metricInBallot": 9,
-    "metricViewed": 0,
-    "openSourceMultiplier": 1.7,
-    "metricSelected": [
-      {
-        "log_gas_fees": 20
-      },
-      {
-        "log_transaction_count": 5
-      },
-      {
-        "trusted_recurring_users": 15
-      },
-      {
-        "power_user_addresses": 10
-      },
-      {
-        "recurring_addresses": 10
-      },
-      {
-        "trusted_monthly_active_users": 12.5
-      },
-      {
-        "trusted_transaction_count": 5
-      },
-      {
-        "trusted_transaction_share": 10
-      },
-      {
-        "trusted_daily_active_users": 12.5
-      }
-    ]
-  },
-  {
-    "address": "0x60ca282757ba67f3adbf21f3ba2ebe4ab3eb01fc",
-    "ensName": "adamfuller.eth",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x5872ce037211233b9f6f5095c25988021f270c21",
@@ -2389,40 +1767,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 6,
-    "metricViewed": 2,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "trusted_recurring_users": 18
-      },
-      {
-        "trusted_users_onboarded": 18
-      },
-      {
-        "power_user_addresses": 15.98276657947377
-      },
-      {
-        "log_trusted_transaction_count": 15.98276657947377
-      },
-      {
-        "trusted_daily_active_users": 15.98276657947377
-      },
-      {
-        "trusted_monthly_active_users": 16.05170026157871
-      }
-    ]
-  },
-  {
-    "address": "0xbc3ed6b537f2980e66f396fe14210a56ba3f72c4",
-    "ensName": "wilsoncusack.eth",
-    "joinMethod": "Project Selection",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "0xd2135cfb216b74109775236e36d4b433f1df507b",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x57893e666bd15e886d74751b0879361a3383b57a",
@@ -2430,50 +1779,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "tracheopteryx.eth",
-    "metricInBallot": 13,
-    "metricViewed": 5,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 10
-      },
-      {
-        "transaction_count": 8
-      },
-      {
-        "trusted_recurring_users": 10
-      },
-      {
-        "openrank_trusted_users_count": 8
-      },
-      {
-        "log_transaction_count": 8
-      },
-      {
-        "log_trusted_transaction_count": 8
-      },
-      {
-        "trusted_transaction_count": 8
-      },
-      {
-        "gas_fees": 5
-      },
-      {
-        "recurring_addresses": 3
-      },
-      {
-        "monthly_active_addresses": 5
-      },
-      {
-        "trusted_monthly_active_users": 12
-      },
-      {
-        "trusted_daily_active_users": 10
-      },
-      {
-        "daily_active_addresses": 5
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xaeb99a255c3a243ab3e4f654041e9bf5340cf313",
@@ -2481,38 +1791,11 @@
     "joinMethod": "Foundation Choice Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "launamu.eth",
-    "metricInBallot": 9,
-    "metricViewed": 14,
-    "openSourceMultiplier": 2.3,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 13
-      },
-      {
-        "recurring_addresses": 10
-      },
-      {
-        "trusted_daily_active_users": 10
-      },
-      {
-        "trusted_transaction_share": 12.54166666666666
-      },
-      {
-        "trusted_monthly_active_users": 10
-      },
-      {
-        "trusted_transaction_count": 9
-      },
-      {
-        "transaction_count": 13
-      },
-      {
-        "gas_fees": 10
-      },
-      {
-        "trusted_recurring_users": 12.45833333333333
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x34aa3f359a9d614239015126635ce7732c18fdf3",
@@ -2572,18 +1855,8 @@
       {
         "trusted_transaction_count": 5.082205732576749
       }
-    ]
-  },
-  {
-    "address": "0x648aa14e4424e0825a5ce739c8c68610e143fb79",
-    "ensName": "sassal.eth",
-    "joinMethod": "Badgeholder Choice",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "polynya.eth",
-    "metricInBallot": null,
-    "metricViewed": null,
-    "openSourceMultiplier": null,
-    "metricSelected": null
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x5554672e67ba866b9861701d0e0494ab324ad19a",
@@ -2591,23 +1864,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xd9ed89a0f4cfbc1be4b7b1aa744b5bd25aca9979",
-    "metricInBallot": 4,
-    "metricViewed": 4,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "openrank_trusted_users_count": 15
-      },
-      {
-        "trusted_recurring_users": 25
-      },
-      {
-        "log_gas_fees": 35
-      },
-      {
-        "trusted_monthly_active_users": 25
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xdb150346155675dd0c93efd960d5985244a34820",
@@ -2615,45 +1876,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 4,
-    "metricViewed": 10,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "gas_fees": 25
-      },
-      {
-        "transaction_count": 25
-      },
-      {
-        "trusted_recurring_users": 20
-      },
-      {
-        "trusted_users_onboarded": 30
-      }
-    ]
-  },
-  {
-    "address": "0xac3a69dd4a8fecc18b172bfa9643d6b0863819c8",
-    "ensName": "",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
-  },
-  {
-    "address": "0x5507dbd48a5a5bace8a6030e878cc4e0af147c33",
-    "ensName": "nis.eth",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
-    "metricInBallot": null,
-    "metricViewed": null,
-    "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x53c61cfb8128ad59244e8c1d26109252ace23d14",
@@ -2661,40 +1888,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 6,
-    "metricViewed": 1,
-    "openSourceMultiplier": 1,
-    "metricSelected": [
-      {
-        "power_user_addresses": 5
-      },
-      {
-        "gas_fees": 28
-      },
-      {
-        "recurring_addresses": 5
-      },
-      {
-        "monthly_active_addresses": 14
-      },
-      {
-        "transaction_count": 20
-      },
-      {
-        "trusted_users_onboarded": 28
-      }
-    ]
-  },
-  {
-    "address": "0xe4239eb12c1c6e5a84727db0a7b0507311eb5389",
-    "ensName": "",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x28f569cc6c29d804a1720edc16bf1ebab2ea35b4",
@@ -2702,37 +1900,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 5,
-    "metricViewed": 15,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 20.00599940005999
-      },
-      {
-        "trusted_recurring_users": 19.99800019998
-      },
-      {
-        "log_trusted_transaction_count": 19.99800019998
-      },
-      {
-        "trusted_monthly_active_users": 19.99800019998
-      },
-      {
-        "trusted_transaction_share": 20
-      }
-    ]
-  },
-  {
-    "address": "0x48a63097e1ac123b1f5a8bbffafa4afa8192fab0",
-    "ensName": "ceresstation.eth",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x576f1e53afe5e99b2257258c7e3248d3a1822548",
@@ -2756,18 +1928,8 @@
       {
         "monthly_active_addresses": 20
       }
-    ]
-  },
-  {
-    "address": "0x488b2608a66e5d32e5a91eba21a198bd3fd8bcd9",
-    "ensName": "",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
-    "metricInBallot": null,
-    "metricViewed": null,
-    "openSourceMultiplier": null,
-    "metricSelected": null
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xf503017d7baf7fbc0fff7492b751025c6a78179b",
@@ -2827,7 +1989,8 @@
       {
         "trusted_daily_active_users": 6.244998999799961
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x616cad18642f45d3fa5fcaad0a2d81764a9cba84",
@@ -2851,7 +2014,8 @@
       {
         "gas_fees": 40
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xa50d0e425461ccab26ef30104cdd879b90db3843",
@@ -2884,7 +2048,8 @@
       {
         "recurring_addresses": 10
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x1f5d295778796a8b9f29600a585ab73d452acb1c",
@@ -2914,7 +2079,8 @@
       {
         "trusted_users_onboarded": 16
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xc5cd017ce8efd2fefedf114350657394531477ae",
@@ -2922,26 +2088,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 5,
-    "metricViewed": 1,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "gas_fees": 35
-      },
-      {
-        "recurring_addresses": 18
-      },
-      {
-        "trusted_recurring_users": 12
-      },
-      {
-        "trusted_users_onboarded": 15
-      },
-      {
-        "power_user_addresses": 20
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xda60aceb12a1a61d09b008ae4a60c760db32220f",
@@ -2949,20 +2100,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 3,
-    "metricViewed": 0,
-    "openSourceMultiplier": 1,
-    "metricSelected": [
-      {
-        "trusted_daily_active_users": 33.335
-      },
-      {
-        "trusted_users_onboarded": 33.335
-      },
-      {
-        "gas_fees": 33.33333333333334
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
@@ -2983,7 +2125,8 @@
       {
         "trusted_users_onboarded": 33.33333333333334
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x308fedfb88f6e85f27b85c8011ccb9b5e15bcbf7",
@@ -3001,7 +2144,8 @@
       {
         "trusted_users_onboarded": 35
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xdca1bb1fc782ea3fa76ea4ada42af10c85766b6a",
@@ -3009,37 +2153,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xc5cd017ce8efd2fefedf114350657394531477ae",
-    "metricInBallot": 5,
-    "metricViewed": 16,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 25
-      },
-      {
-        "gas_fees": 25
-      },
-      {
-        "recurring_addresses": 15
-      },
-      {
-        "trusted_recurring_users": 25
-      },
-      {
-        "log_gas_fees": 10
-      }
-    ]
-  },
-  {
-    "address": "0x51448923d8a215a5a8cd872a51f22c2f5c43b444",
-    "ensName": "chappy.eth",
-    "joinMethod": "Badgeholder Choice",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "kev.eth",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x14276eb29e90541831cb94c80331484ae6d2a1d8",
@@ -3047,37 +2165,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 5,
-    "metricViewed": 15,
-    "openSourceMultiplier": 2,
-    "metricSelected": [
-      {
-        "gas_fees": 40
-      },
-      {
-        "trusted_monthly_active_users": 17.5
-      },
-      {
-        "trusted_recurring_users": 12.5
-      },
-      {
-        "trusted_users_onboarded": 12.5
-      },
-      {
-        "trusted_daily_active_users": 17.5
-      }
-    ]
-  },
-  {
-    "address": "0x29c4dbc1a81d06c9aa2faed93bb8b4a78f3eabdb",
-    "ensName": "tracheopteryx.eth",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x1c9a6c17ba87451520cc4aa4ca63db07dc180242",
@@ -3085,23 +2177,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 4,
-    "metricViewed": 7,
-    "openSourceMultiplier": 1,
-    "metricSelected": [
-      {
-        "trusted_users_onboarded": 25.002499750025
-      },
-      {
-        "log_gas_fees": 25.002499750025
-      },
-      {
-        "trusted_monthly_active_users": 24.99500049995
-      },
-      {
-        "power_user_addresses": 25
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x7f22646e85da79953ac09e9b45ee1b3be3a42abc",
@@ -3109,32 +2189,11 @@
     "joinMethod": "Badgeholder Choice",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "revmiller.eth",
-    "metricInBallot": 7,
-    "metricViewed": 4,
-    "openSourceMultiplier": 2.5,
-    "metricSelected": [
-      {
-        "openrank_trusted_users_count": 14.285
-      },
-      {
-        "trusted_recurring_users": 14.28571428571429
-      },
-      {
-        "daily_active_addresses": 14.285
-      },
-      {
-        "trusted_monthly_active_users": 14.285
-      },
-      {
-        "trusted_daily_active_users": 14.285
-      },
-      {
-        "trusted_users_onboarded": 14.285
-      },
-      {
-        "monthly_active_addresses": 14.285
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xdb5781a835b60110298ff7205d8ef9678ff1f800",
@@ -3152,7 +2211,8 @@
       {
         "gas_fees": 50
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xa2bbe92f4e320185dd42261897464f60c9a05a35",
@@ -3191,7 +2251,8 @@
       {
         "power_user_addresses": 13.671282
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0xdd7a79b1b6e8dd444f99d68a7d493a85556944a2",
@@ -3199,31 +2260,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-10-11T23:01:09.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 3,
-    "metricViewed": 7,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "log_gas_fees": 50
-      },
-      {
-        "power_user_addresses": 25
-      },
-      {
-        "monthly_active_addresses": 25
-      }
-    ]
-  },
-  {
-    "address": "0xb8c6da1c1e8a4473f290941278e66bfdbe4fd6c8",
-    "ensName": "",
-    "joinMethod": "Badgeholder Choice",
-    "joinDate": "2023-10-13T22:25:37.000Z",
-    "invitedBy": "0xe4c3768f48d4e676ae48c189db726edf8c1d401e",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xde2b6860cb3212a6a1f8f8628abfe076723a4b39",
@@ -3231,29 +2272,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0x59cc3fc56b8b2988f259ec1e6f3446907130f728",
-    "metricInBallot": 6,
-    "metricViewed": 10,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "log_transaction_count": 22
-      },
-      {
-        "recurring_addresses": 20
-      },
-      {
-        "log_gas_fees": 23
-      },
-      {
-        "daily_active_addresses": 5
-      },
-      {
-        "monthly_active_addresses": 20
-      },
-      {
-        "trusted_users_onboarded": 10
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x490c91f38ec57e3ab00811e0c51a62bfed7e81f4",
@@ -3261,23 +2284,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "wmitsuda.eth",
-    "metricInBallot": 4,
-    "metricViewed": 0,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "transaction_count": 25.002499750025
-      },
-      {
-        "trusted_users_onboarded": 25
-      },
-      {
-        "gas_fees": 25.002499750025
-      },
-      {
-        "recurring_addresses": 24.99500049995
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0xdcf09a83e9cc4611b2215bfb7116bfaf5e906d3d",
@@ -3285,43 +2296,11 @@
     "joinMethod": "Project Selection",
     "joinDate": "2023-10-13T22:25:37.000Z",
     "invitedBy": "0xd8ce5ae15e2a9c8528fdce195ad43015782c5079",
-    "metricInBallot": 7,
-    "metricViewed": 8,
-    "openSourceMultiplier": 3,
-    "metricSelected": [
-      {
-        "log_gas_fees": 14.28571428571429
-      },
-      {
-        "trusted_transaction_count": 14.285
-      },
-      {
-        "log_trusted_transaction_count": 14.285
-      },
-      {
-        "openrank_trusted_users_count": 14.285
-      },
-      {
-        "recurring_addresses": 14.285
-      },
-      {
-        "trusted_recurring_users": 14.285
-      },
-      {
-        "trusted_daily_active_users": 14.285
-      }
-    ]
-  },
-  {
-    "address": "0xa2bf1b0a7e079767b4701b5a1d9d5700eb42d1d1",
-    "ensName": "kennethng.eth",
-    "joinMethod": "Past Badgeholder",
-    "joinDate": "2023-10-11T23:01:09.000Z",
-    "invitedBy": "OP Foundation",
     "metricInBallot": null,
     "metricViewed": null,
     "openSourceMultiplier": null,
-    "metricSelected": null
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x5555763613a12d8f3e73be831dff8598089d3dca",
@@ -3360,7 +2339,8 @@
       {
         "openrank_trusted_users_count": 11
       }
-    ]
+    ],
+    "avatarUrl": null
   },
   {
     "address": "0x61b647d3b5a04eec7e78b1d9cfbf9dea593c7865",
@@ -3368,32 +2348,11 @@
     "joinMethod": "Past Badgeholder",
     "joinDate": "2023-11-10T15:58:11.000Z",
     "invitedBy": "OP Foundation",
-    "metricInBallot": 7,
-    "metricViewed": 0,
-    "openSourceMultiplier": 1.5,
-    "metricSelected": [
-      {
-        "trusted_transaction_count": 14.23633736638083
-      },
-      {
-        "trusted_users_onboarded": 14.28571428571429
-      },
-      {
-        "log_gas_fees": 14.25647362856807
-      },
-      {
-        "log_trusted_transaction_count": 14.42763185715964
-      },
-      {
-        "trusted_recurring_users": 14.28667802184894
-      },
-      {
-        "gas_fees": 14.25647362856807
-      },
-      {
-        "trusted_monthly_active_users": 14.24640549747445
-      }
-    ]
+    "metricInBallot": null,
+    "metricViewed": null,
+    "openSourceMultiplier": null,
+    "metricSelected": null,
+    "avatarUrl": null
   },
   {
     "address": "0x00de4b13153673bcae2616b67bf822500d325fc3",
@@ -3417,6 +2376,7 @@
       {
         "trusted_users_onboarded": 19.5
       }
-    ]
+    ],
+    "avatarUrl": null
   }
 ]

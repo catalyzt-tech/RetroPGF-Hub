@@ -6,19 +6,16 @@ interface DialogProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const detailDialog: FC<DialogProps> = ({ isOpen, setIsOpen }) => {
-  function closeModal() {
-    setIsOpen(false)
+const DialogDetail: FC<DialogProps> = ({ isOpen, setIsOpen }) => {
+  function toggleModal() {
+    setIsOpen((prevState) => false)
   }
-
-  function openModal() {
-    setIsOpen(true)
-  }
+  console.log(isOpen)
 
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog as="div" className="relative z-20" onClose={toggleModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -30,7 +27,6 @@ const detailDialog: FC<DialogProps> = ({ isOpen, setIsOpen }) => {
           >
             <div className="fixed inset-0 bg-black/25" />
           </Transition.Child>
-
           <div className="fixed inset-0 overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <Transition.Child
@@ -60,7 +56,7 @@ const detailDialog: FC<DialogProps> = ({ isOpen, setIsOpen }) => {
                     <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModal}
+                      onClick={toggleModal}
                     >
                       Got it, thanks!
                     </button>
@@ -74,4 +70,4 @@ const detailDialog: FC<DialogProps> = ({ isOpen, setIsOpen }) => {
     </>
   )
 }
-export default detailDialog
+export default DialogDetail

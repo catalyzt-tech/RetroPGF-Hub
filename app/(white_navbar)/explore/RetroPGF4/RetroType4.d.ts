@@ -102,4 +102,5 @@ export interface BadgeholderMetrics {
   metricViewed: number
   openSourceMultiplier: number
   metricSelected: MetricSelected[]
+  avatarUrl: string
 }

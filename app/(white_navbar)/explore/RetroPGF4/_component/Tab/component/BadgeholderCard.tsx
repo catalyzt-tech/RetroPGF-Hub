@@ -1,10 +1,10 @@
-import React, { FC, Fragment, useState } from 'react'
+import React, { FC, Fragment, useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AudioConsole, RepoSourceCode, Star } from '@carbon/icons-react'
 import { truncateProjectId } from '../../../[name]/_component/_Project/ProjectDetailSection'
 import { Dialog, Transition } from '@headlessui/react'
-import detailDialog from './DialogDetail'
+import DialogDetail from './DialogDetail'
 
 interface BadgeholderCardProps {
   address: string
@@ -15,6 +15,7 @@ interface BadgeholderCardProps {
   metricInBallot: number
   metricViewed: number
   openSourceMultiplier: number
+  avatarUrl: string
 }
 
 const BadgeholderCard: FC<BadgeholderCardProps> = ({
@@ -26,17 +27,23 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
   metricInBallot,
   metricViewed,
   openSourceMultiplier,
+  avatarUrl,
 }) => {
-  let [isOpen, setIsOpen] = useState(false)
-
+  const [isOpen, setIsOpen] = useState(false)
+  useEffect(() => {
+    fetch('https://api.github.com/users/defunkt')
+  })
   return (
     <div
       className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm relative min-w-16 bg-white overflow-hidden`}
     >
+      <DialogDetail isOpen={isOpen} setIsOpen={setIsOpen} />
+      {/* {detailDialog({ isOpen, setIsOpen })} */}
+
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full h-16 lg:h-20 overflow-hidden">
         <Image
-          src={'/random/OP-Banner.png'}
+          src={`${avatarUrl ? avatarUrl : '/random/OP-Logo.png'}`}
           alt="background image"
           // Not sure about the aspect ratio, so using object-fit
           className="opacity-75 object-cover z-10"
@@ -65,7 +72,7 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
       <div className="absolute top-8 lg:top-12 left-1/2 transform -translate-x-1/2 rounded-full bg-white flex flex-shrink-0 z-20 overflow-hidden">
         <Image
           //resolve from ens name
-          src={'/random/OP-Logo.png'}
+          src={`${avatarUrl ? avatarUrl : '/random/OP-Logo.png'}`}
           alt="avatar image"
           className=""
           width={65}
@@ -115,7 +122,7 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
 
         <button
           className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(true)}
         >
           {/* <Trophy size={20} /> */}
 
@@ -125,7 +132,6 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
               View Metrics
             </div>
           </div>
-          {detailDialog({ isOpen, setIsOpen })}
         </button>
       </div>
     </div>

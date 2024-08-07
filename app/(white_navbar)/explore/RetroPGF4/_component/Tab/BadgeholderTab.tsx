@@ -25,6 +25,7 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
                 metricInBallot={item.metricInBallot}
                 metricViewed={item.metricViewed}
                 openSourceMultiplier={item.openSourceMultiplier}
+                avatarUrl={item.avatarUrl}
               />
             ))}
           </Fragment>
