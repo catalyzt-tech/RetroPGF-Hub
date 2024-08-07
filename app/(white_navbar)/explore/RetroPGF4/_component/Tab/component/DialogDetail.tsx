@@ -7,10 +7,9 @@ interface DialogProps {
 }
 
 const DialogDetail: FC<DialogProps> = ({ isOpen, setIsOpen }) => {
-  function toggleModal() {
+  const toggleModal = () => {
     setIsOpen((prevState) => false)
   }
-  console.log(isOpen)
 
   return (
     <>
@@ -51,7 +50,6 @@ const DialogDetail: FC<DialogProps> = ({ isOpen, setIsOpen }) => {
                       ballot. You have viewed xxx metrics in total.
                     </p>
                   </div>
-
                   <div className="mt-4">
                     <button
                       type="button"
