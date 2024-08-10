@@ -22,7 +22,10 @@ interface BadgeholderCardProps {
   openSourceMultiplier: number
   avatarUrl: string
 }
-
+export const truncateAddress = (address: string) => {
+  if (address.length <= 10) return address
+  return `${address.slice(0, 5)}...${address.slice(-5)}`
+}
 const BadgeholderCard: FC<BadgeholderCardProps> = ({
   address,
   ensName,
@@ -84,10 +87,10 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
         <div className="mt-24 lg:mt-28 p-4 flex flex-col justify-start items-start gap-3 w-full h-full">
           <div className="w-full flex flex-col flex-wrap items-center">
             <p className="text-md font-medium text-gray-800 break-words line-clamp-1 max-w-full">
-              {ensName ? ensName : truncateProjectId(address)}
+              {ensName ? ensName : truncateAddress(address)}
             </p>
             <p className="text-xs font-light text-gray-600 break-words truncate max-w-full">
-              Invitation By {invitedBy}
+              Selected By {truncateAddress(invitedBy)}
             </p>
 
             {/* {openSourceMultiplier === number ? (
