@@ -10,6 +10,7 @@ import {
 import { truncateProjectId } from '../../../[name]/_component/_Project/ProjectDetailSection'
 import { Dialog, Transition } from '@headlessui/react'
 import DialogDetail from './DialogDetail'
+import { ImpactMetrics, MetricSelected } from '../../../RetroType4'
 
 interface BadgeholderCardProps {
   address: string
@@ -21,6 +22,7 @@ interface BadgeholderCardProps {
   metricViewed: number
   openSourceMultiplier: number
   avatarUrl: string
+  metricSelected: Partial<ImpactMetrics[]>
 }
 export const truncateAddress = (address: string) => {
   if (address.length <= 10) return address
@@ -36,12 +38,17 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
   metricViewed,
   openSourceMultiplier,
   avatarUrl,
+  metricSelected,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
-      <DialogDetail isOpen={isOpen} setIsOpen={setIsOpen} />
+      <DialogDetail
+        metricSelected={metricSelected}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+      />
       <div
         className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm relative min-w-16 bg-white overflow-hidden`}
       >
