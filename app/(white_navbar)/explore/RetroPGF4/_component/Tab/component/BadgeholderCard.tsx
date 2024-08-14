@@ -46,6 +46,8 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
     <>
       <DialogDetail
         metricSelected={metricSelected}
+        metricInBallot={metricInBallot}
+        metricViewed={metricViewed}
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       />
