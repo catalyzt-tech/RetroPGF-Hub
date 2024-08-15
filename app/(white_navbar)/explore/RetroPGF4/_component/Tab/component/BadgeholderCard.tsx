@@ -41,7 +41,9 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
   metricSelected,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
-
+  const invitedByFormat = invitedBy.startsWith('0x')
+    ? truncateAddress(invitedBy)
+    : invitedBy
   return (
     <>
       <DialogDetail
@@ -60,7 +62,7 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
             src={`${avatarUrl ? avatarUrl : '/random/OP-Logo.png'}`}
             alt="background image"
             // Not sure about the aspect ratio, so using object-fit
-            className="opacity-75 object-cover z-10"
+            className="opacity-70 object-cover z-10"
             fill
           />
         </div>
@@ -86,11 +88,13 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
         <div className="absolute top-8 lg:top-12 left-1/2 transform -translate-x-1/2 rounded-full bg-white flex flex-shrink-0 z-20 overflow-hidden">
           <Image
             //resolve from ens name
-            src={`${avatarUrl ? avatarUrl : '/random/OP-Logo.png'}`}
+            src={`${
+              avatarUrl ? avatarUrl : '/static/loading/retropgf_sun-2.svg'
+            }`}
             alt="avatar image"
-            className=""
-            width={65}
-            height={65}
+            className={`${avatarUrl ? '' : 'bg-[#ff0420]'} w-16`}
+            width={25}
+            height={25}
           />
         </div>
         <div className="mt-24 lg:mt-28 p-4 flex flex-col justify-start items-start gap-3 w-full h-full">
@@ -99,7 +103,7 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
               {ensName ? ensName : truncateAddress(address)}
             </p>
             <p className="text-xs font-light text-gray-600 break-words truncate max-w-full">
-              Selected By {truncateAddress(invitedBy)}
+              Selected By {invitedByFormat}
             </p>
 
             {/* {openSourceMultiplier === number ? (
@@ -117,7 +121,7 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
             <AudioConsole size={20} />
             <div className="flex gap-1">
               <p className="text-xs font-semibold text-gray-800">
-                {metricInBallot}
+                {metricInBallot ? metricInBallot : '-'}
               </p>
               <p className="text-xs font-light text-gray-600">
                 Metrics Selected
@@ -128,7 +132,7 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
             <RepoSourceCode size={20} />
             <div className="flex gap-1">
               <p className="text-xs font-semibold text-gray-800">
-                x {openSourceMultiplier}
+                {openSourceMultiplier ? `x ${openSourceMultiplier}` : '-'}
               </p>
               <p className="text-xs font-light text-gray-600">
                 Open-Source Multiplied

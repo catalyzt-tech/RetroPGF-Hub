@@ -1,11 +1,12 @@
 import { FC, Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { ImpactMetrics, MetricSelected } from '../../../RetroType4'
+import { mapImpactMetrics } from '../../../[name]/Text'
 
 interface DialogProps {
   metricSelected: any[]
   metricInBallot: number
-  metricInViewed: number
+  metricViewed: number
   isOpen: boolean
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
@@ -13,14 +14,13 @@ interface DialogProps {
 const DialogDetail: FC<DialogProps> = ({
   metricSelected,
   metricInBallot,
-  metricInViewed,
+  metricViewed,
   isOpen,
   setIsOpen,
 }) => {
   const toggleModal = () => {
     setIsOpen((prevState) => false)
   }
-  console.log(metricSelected)
 
   return (
     <>
@@ -48,7 +48,7 @@ const DialogDetail: FC<DialogProps> = ({
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-[32em] max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-[40em] max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
@@ -58,7 +58,7 @@ const DialogDetail: FC<DialogProps> = ({
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
                       You have selected {metricInBallot} metrics to be included
-                      in the ballot. You have viewed {metricInViewed} metrics in
+                      in the ballot. You have viewed {metricViewed} metrics in
                       total.
                     </p>
                   </div>
@@ -84,12 +84,12 @@ const DialogDetail: FC<DialogProps> = ({
                                     key={i}
                                     className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
                                   >
-                                    <th
+                                    <td
                                       scope="row"
-                                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                      className="px-6 py-4 font-medium text-gray-900 dark:text-white max-w-32 text-wrap"
                                     >
-                                      {key}
-                                    </th>
+                                      {mapImpactMetrics(key)}
+                                    </td>
                                     <td className="px-6 py-4">
                                       {metric[
                                         key as keyof ImpactMetrics
