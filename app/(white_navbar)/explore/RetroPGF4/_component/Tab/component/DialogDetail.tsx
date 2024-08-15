@@ -2,6 +2,7 @@ import { FC, Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { ImpactMetrics, MetricSelected } from '../../../RetroType4'
 import { mapImpactMetrics } from '../../../[name]/Text'
+import AllocationChart from './AllocationChart'
 
 interface DialogProps {
   metricSelected: any[]
@@ -62,10 +63,13 @@ const DialogDetail: FC<DialogProps> = ({
                       total.
                     </p>
                   </div>
+                  {metricSelected != null && (
+                    <AllocationChart metricSelected={metricSelected} />
+                  )}
                   <div className="mt-4">
                     {metricSelected != null && (
-                      <div className="overflow-x-hidden sm:rounded-lg">
-                        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                      <div className="overflow-x-hidden sm:rounded-lg max-h-36">
+                        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
                           <thead className="text-xs text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                               <th scope="col" className="px-6 py-3">
@@ -76,7 +80,7 @@ const DialogDetail: FC<DialogProps> = ({
                               </th>
                             </tr>
                           </thead>
-                          <tbody>
+                          <tbody className="">
                             {metricSelected != null &&
                               metricSelected.map((metric, i) =>
                                 Object.keys(metric).map((key: string) => (
