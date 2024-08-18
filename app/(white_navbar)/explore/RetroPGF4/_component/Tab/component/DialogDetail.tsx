@@ -20,7 +20,7 @@ const DialogDetail: FC<DialogProps> = ({
   setIsOpen,
 }) => {
   const toggleModal = () => {
-    setIsOpen((prevState) => false)
+    setIsOpen(false)
   }
 
   return (
