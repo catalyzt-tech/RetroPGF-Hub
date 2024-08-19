@@ -26,7 +26,7 @@ const DialogDetail: FC<DialogProps> = ({
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-20" onClose={toggleModal}>
+        <Dialog as="div" className="relative z-50" onClose={toggleModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -49,19 +49,27 @@ const DialogDetail: FC<DialogProps> = ({
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-[40em] max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-[40em] max-w-md transform overflow-hidden rounded-2xl bg-white px-6 py-8 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
+                    className="text-center text-lg font-semibold leading-6 text-gray-900"
                   >
-                    Metrics Preference
+                    Bagdeholder's Metrics Preference
                   </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      You have selected {metricInBallot} metrics to be included
-                      in the ballot. You have viewed {metricViewed} metrics in
-                      total.
-                    </p>
+                  <div className="mt-4">
+                    {metricSelected != null ? (
+                      <p className="text-sm text-gray-500">
+                        You have selected {metricInBallot} metrics to be
+                        included in the ballot. You have viewed {metricViewed}{' '}
+                        metrics in total.
+                      </p>
+                    ) : (
+                      <p className="text-sm text-gray-500">
+                        No metrics selected, this badgeholder has not selected
+                        any metrics to be included in the ballot or anticipated
+                        in Retro Funding Round 4
+                      </p>
+                    )}
                   </div>
                   {metricSelected != null && (
                     <AllocationChart metricSelected={metricSelected} />
