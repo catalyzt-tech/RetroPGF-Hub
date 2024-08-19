@@ -1,4 +1,4 @@
-import React, { useState, useEffect, MutableRefObject } from 'react'
+import React, { useState, useEffect, MutableRefObject, useCallback, useMemo } from 'react'
 
 interface Section {
   name: string
@@ -20,23 +20,28 @@ export default function ScrollSpy({
     threshold: 0.1,
   },
 }: ScrollSpyProps) {
-  const [currentContent, setCurrentContent] = useState<string>(
-    sections[0]?.name || ''
-  )
-  const [visibleSections, setVisibleSections] = useState<
-    Record<string, boolean>
-  >(
+
+  const [visibleSections, setVisibleSections] = useState<Record<string, boolean>>(
     sections.reduce((acc, section) => {
       acc[section.name] = false
       return acc
     }, {} as Record<string, boolean>)
   )
+  
+  const currentContent = useMemo(() => {
+    const visibleSectionNames = Object.entries(visibleSections)
+      .filter(([_, isVisible]) => isVisible)
+      .map(([name]) => name)
+
+    return visibleSectionNames.length > 0
+      ? visibleSectionNames[visibleSectionNames.length - 1]
+      : sections[0]?.name || ''
+  }, [visibleSections, sections])
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const sectionId =
-          entry.target.getAttribute('id') || sections[0]?.name || ''
+        const sectionId = entry.target.getAttribute('id') || sections[0]?.name || ''
         setVisibleSections((prevSections) => ({
           ...prevSections,
           [sectionId]: entry.isIntersecting,
@@ -55,18 +60,22 @@ export default function ScrollSpy({
     }
   }, [sections, observerOptions])
 
-  useEffect(() => {
-    const visibleSectionNames = Object.entries(visibleSections)
-      .filter(([_, isVisible]) => isVisible)
-      .map(([name]) => name)
+  const handleSectionClick = useCallback((ref: MutableRefObject<HTMLElement | null>, name: string) => {
+    if (ref.current) {
+      const topOffset = ref.current.getBoundingClientRect().top + window.pageYOffset
+      const navbarHeight = 4.5 * 16 + 10
+      const scrollToPosition = topOffset - navbarHeight
 
-    const lastVisibleSection =
-      visibleSectionNames.length > 0
-        ? visibleSectionNames[visibleSectionNames.length - 1]
-        : sections[0]?.name || ''
-    console.log(lastVisibleSection)
-    setCurrentContent(lastVisibleSection)
-  }, [visibleSections, sections])
+      window.scrollTo({
+        top: scrollToPosition,
+        behavior: 'smooth',
+      })
+
+      setTimeout(() => {
+        setVisibleSections((prev) => ({ ...prev, [name]: true }))
+      }, 1500)
+    }
+  }, [])
 
   return (
     <div className={defaultClass}>
@@ -76,29 +85,12 @@ export default function ScrollSpy({
           {sections.map(({ name, ref }) => (
             <li key={name} className="list-none">
               <a
-                className={`text-base font-medium  text-gray-500 active flex cursor-pointer hover:text-primaryRed ${
-                  currentContent === name
-                    ? 'pl-2 text-red-600 border-l-[3px] border-primaryRed'
-                    : ''
-                }`}
-                onClick={() => {
-                  if (ref.current) {
-                    const topOffset =
-                      ref.current.getBoundingClientRect().top +
-                      window.pageYOffset
-                    const navbarHeight = 4.5 * 16 + 10
-                    const scrollToPosition = topOffset - navbarHeight
-
-                    window.scrollTo({
-                      top: scrollToPosition,
-                      behavior: 'smooth',
-                    })
-
-                    setTimeout(() => {
-                      setCurrentContent(ref.current ? ref.current.id : name)
-                    }, 1500)
-                  }
-                }}
+              className={`text-base font-medium text-gray-500 active flex cursor-pointer hover:text-primaryRed ${
+                currentContent === name
+                  ? 'pl-2 text-red-600 border-l-[3px] border-primaryRed'
+                  : ''
+              }`}
+              onClick={() => handleSectionClick(ref, name)}
               >
                 {name}
               </a>
