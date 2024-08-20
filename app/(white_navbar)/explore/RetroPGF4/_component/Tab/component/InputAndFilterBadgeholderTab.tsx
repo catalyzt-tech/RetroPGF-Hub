@@ -11,6 +11,7 @@ import Grid from '@carbon/icons-react/lib/Grid'
 import List from '@carbon/icons-react/lib/List'
 import SettingsAdjust from '@carbon/icons-react/lib/SettingsAdjust'
 import SortExploreRound from '../../SortExploreRound'
+import SortBadgeholder from './SortBadgeholder'
 
 interface InputAndFilterBadgeholderTabProps {
   search: string
@@ -22,6 +23,7 @@ interface InputAndFilterBadgeholderTabProps {
   handleClearFilter(): void
   handleChangeStatus(char: string): void
   handleChangeMultiplyOpenSource(char: string): void
+  handleChangeSort(char: string): void
 }
 
 const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
@@ -34,6 +36,7 @@ const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
   handleClearFilter,
   handleChangeStatus,
   handleChangeMultiplyOpenSource,
+  handleChangeSort,
 }) => {
   function handleSearchChange(e: React.ChangeEvent<HTMLInputElement>) {
     setSearch((prev) => e.target.value)
@@ -71,10 +74,10 @@ const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
             </div>
 
             {/* Sort button */}
-            {/* <SortExploreRound
+            <SortBadgeholder
               handleChangeSort={handleChangeSort}
               state={state}
-            /> */}
+            />
           </div>
           <div className="">
             <div className="hidden lg:flex gap-2 border p-1.5  rounded-full min-h-10 max-h-10">
@@ -118,7 +121,7 @@ const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
         <div className="hidden lg:flex gap-2 items-center flex-wrap mt-4">
           <div
             onClick={() => {
-              setState((prev) => ({ ...prev, filter: !prev.filter }))
+              setState((prev: any[]) => ({ ...prev, filter: !prev.filter }))
             }}
             className={`flex h-10 items-center gap-2 border  rounded-full px-3 py-2 cursor-pointer hover:bg-gray-100 ${
               state.filter && 'bg-gray-50'

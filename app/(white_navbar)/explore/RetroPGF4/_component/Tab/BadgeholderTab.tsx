@@ -7,7 +7,8 @@ import {
   CheckBoxStateBadgeholderType,
   ExploreRoundState,
 } from '../ExploreRoundType'
-import CheckBoxFilterBadgeholder from './component/checkBoxFilterBadgeholder'
+import { isLetter } from '@/app/lib/utils'
+import CheckBoxFilterBadgeholder from './component/CheckBoxFilterBadgeholder'
 
 interface BadgeholderTabProps {
   badgeholderData: BadgeholderMetrics[]
@@ -16,10 +17,10 @@ interface BadgeholderTabProps {
 const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
   const [loading, setLoading] = useState(true)
   const [search, setSearch] = useState<string>('')
-  const [state, setState] = useState({
+  const [state, setState] = useState<ExploreRoundState>({
     drawer: false,
     view: 'grid',
-    sort: 'newest',
+    sort: 'Badgeholder Name (A-Z)',
     filter: false,
   })
   const [checkBox, setCheckBox] = useState<CheckBoxStateBadgeholderType>({
@@ -32,7 +33,6 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
       status: 'All',
       multiplyOpenSource: 'All',
     })
-
     setSearch('')
   }
 
@@ -42,8 +42,9 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
   function handleChangeMultiplyOpenSource(value: string) {
     setCheckBox((prev) => ({ ...prev, multiplyOpenSource: value }))
   }
-
-  console.log(checkBox)
+  function handleChangeSort(char: string) {
+    setState((prev) => ({ ...prev, sort: char }))
+  }
 
   const filterJson = useMemo(() => {
     const badgeholderFilterData = badgeholderData.filter((item) => {
@@ -82,9 +83,55 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
   }, [checkBox, badgeholderData, search])
 
   const currentDataset = useMemo(() => {
-    // console.log('filter' + filterJson.length)
-    return filterJson
-  }, [filterJson])
+    let sortedItems = filterJson
+
+    if (state.sort === 'Badgeholder Name (A-Z)') {
+      sortedItems.sort((a, b) => {
+        const nameA = (a.ensName ?? '').toLowerCase()
+        const nameB = (b.ensName ?? '').toLowerCase()
+        for (let i = 0; i < Math.min(nameA.length, nameB.length); i++) {
+          const charCodeA = nameA.charCodeAt(i)
+          const charCodeB = nameB.charCodeAt(i)
+          const isALetter = isLetter(nameA[i])
+          const isBLetter = isLetter(nameB[i])
+          if (isALetter && isBLetter) {
+            if (charCodeA !== charCodeB) {
+              return charCodeA - charCodeB
+            }
+          } else if (isALetter) {
+            return -1
+          } else if (isBLetter) {
+            return 1
+          }
+        }
+        return nameA.length - nameB.length
+      })
+    } else if (state.sort === 'Badgeholder Name (Z-A)') {
+      sortedItems.sort((a, b) => {
+        const nameA = (a.ensName ?? '').toLowerCase()
+        const nameB = (b.ensName ?? '').toLowerCase()
+
+        for (let i = 0; i < Math.min(nameA.length, nameB.length); i++) {
+          const charCodeA = nameA.charCodeAt(i)
+          const charCodeB = nameB.charCodeAt(i)
+          const isALetter = isLetter(nameA[i])
+          const isBLetter = isLetter(nameB[i])
+
+          if (!isALetter && isBLetter) {
+            return -1
+          } else if (isALetter && !isBLetter) {
+            return 1
+          } else if (isALetter && isBLetter) {
+            if (charCodeA !== charCodeB) {
+              return charCodeB - charCodeA
+            }
+          }
+        }
+        return nameB.length - nameA.length
+      })
+    }
+    return sortedItems
+  }, [filterJson, state.sort])
 
   const load = () => {
     setTimeout(() => {
@@ -115,6 +162,7 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
         handleClearFilter={handleClearFilter}
         handleChangeStatus={handleChangeStatus}
         handleChangeMultiplyOpenSource={handleChangeMultiplyOpenSource}
+        handleChangeSort={handleChangeSort}
       />
 
       <div className=" relative animate-slideup">
@@ -128,9 +176,9 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
           <div className="w-full grid h-fit gap-6 grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
             <Suspense fallback={<div>Loading...</div>}>
               {currentDataset.map((item, i) => (
-                <Fragment>
+                <Fragment key={item.address}>
                   <BadgeholderCard
-                    key={i}
+                    key={item.address}
                     address={item.address}
                     ensName={item.ensName}
                     joinMethod={item.joinMethod}

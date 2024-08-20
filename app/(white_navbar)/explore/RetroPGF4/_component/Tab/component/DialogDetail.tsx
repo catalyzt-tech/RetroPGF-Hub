@@ -49,7 +49,7 @@ const DialogDetail: FC<DialogProps> = ({
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-[40em] max-w-md transform overflow-hidden rounded-2xl bg-white px-6 py-8 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="md:w-[40em] max-w-md transform overflow-hidden rounded-2xl bg-white px-6 py-8 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-center text-lg font-semibold leading-6 text-gray-900"

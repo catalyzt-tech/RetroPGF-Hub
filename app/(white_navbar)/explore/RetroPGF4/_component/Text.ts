@@ -1,5 +1,3 @@
-import { name } from '@cloudinary/url-gen/actions/namedTransformation'
-
 export const tab = [
   {
     text: 'Project',
@@ -123,5 +121,13 @@ export const badgeholderStatus = [
   },
   {
     name: 'Not Vote',
+  },
+]
+export const sortBadgeholderChoice = [
+  {
+    name: 'Badgeholder Name (A-Z)',
+  },
+  {
+    name: 'Badgeholder Name (Z-A)',
   },
 ]
