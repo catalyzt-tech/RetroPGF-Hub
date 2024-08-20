@@ -114,37 +114,38 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
         handleChangeStatus={handleChangeStatus}
         handleChangeMultiplyOpenSource={handleChangeMultiplyOpenSource}
       />
-      <div className="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 flex-col gap-6 animate-slowfade">
-        <div className=" relative animate-slideup">
-          <div className="mt-[2.5rem] animate-slideleft flex gap-6">
-            <CheckBoxFilterBadgeholder
-              checkBox={checkBox}
-              handleClearFilter={handleClearFilter}
-              handleChangeStatus={handleChangeStatus}
-              handleChangeMultiplyOpenSource={handleChangeMultiplyOpenSource}
-            />
+
+      <div className=" relative animate-slideup">
+        <div className="mt-[2.5rem] animate-slideleft flex gap-6">
+          <CheckBoxFilterBadgeholder
+            checkBox={checkBox}
+            handleClearFilter={handleClearFilter}
+            handleChangeStatus={handleChangeStatus}
+            handleChangeMultiplyOpenSource={handleChangeMultiplyOpenSource}
+          />
+
+          <div className="w-full grid h-fit gap-6 grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
+            <Suspense fallback={<div>Loading...</div>}>
+              {currentDataset.map((item, i) => (
+                <Fragment>
+                  <BadgeholderCard
+                    key={i}
+                    address={item.address}
+                    ensName={item.ensName}
+                    joinMethod={item.joinMethod}
+                    joinDate={item.joinDate}
+                    invitedBy={item.invitedBy}
+                    metricInBallot={item.metricInBallot}
+                    metricViewed={item.metricViewed}
+                    openSourceMultiplier={item.openSourceMultiplier}
+                    avatarUrl={item.avatarUrl}
+                    metricSelected={item.metricSelected}
+                  />
+                </Fragment>
+              ))}
+            </Suspense>
           </div>
         </div>
-
-        <Suspense fallback={<div>Loading...</div>}>
-          <Fragment>
-            {currentDataset.map((item, i) => (
-              <BadgeholderCard
-                key={i}
-                address={item.address}
-                ensName={item.ensName}
-                joinMethod={item.joinMethod}
-                joinDate={item.joinDate}
-                invitedBy={item.invitedBy}
-                metricInBallot={item.metricInBallot}
-                metricViewed={item.metricViewed}
-                openSourceMultiplier={item.openSourceMultiplier}
-                avatarUrl={item.avatarUrl}
-                metricSelected={item.metricSelected}
-              />
-            ))}
-          </Fragment>
-        </Suspense>
       </div>
     </>
   )
