@@ -1,32 +1,40 @@
-import { Dispatch, SetStateAction } from 'react'
-import { CheckBoxStateType, ExploreRoundState } from '../ExploreRoundType'
+import { Dispatch, FC, SetStateAction } from 'react'
+import {
+  CheckBoxStateBadgeholderType,
+  CheckBoxStateType,
+  ExploreRoundState,
+} from '../../ExploreRoundType'
 import Input from '@/app/component/Input/Input'
-import { category } from '../Text'
+import { category } from '../../Text'
 import Search from '@carbon/icons-react/lib/Search'
 import Grid from '@carbon/icons-react/lib/Grid'
 import List from '@carbon/icons-react/lib/List'
 import SettingsAdjust from '@carbon/icons-react/lib/SettingsAdjust'
-import SortExploreRound from '../SortExploreRound'
+import SortExploreRound from '../../SortExploreRound'
 
-// this file include
-// - search input
-// - sort by button
-// - change view (list, grid) data
-// - filter btn
-// - badge
-export default function InputAndFilterBtn({
+interface InputAndFilterBadgeholderTabProps {
+  search: string
+  setCheckBox: Dispatch<SetStateAction<any>>
+  setSearch: Dispatch<SetStateAction<string>>
+  setState: Dispatch<SetStateAction<any>>
+  checkBox: CheckBoxStateBadgeholderType
+  state: ExploreRoundState
+  handleClearFilter(): void
+  handleChangeStatus(char: string): void
+  handleChangeMultiplyOpenSource(char: string): void
+}
+
+const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
   search,
+  setCheckBox,
   setSearch,
   setState,
+  checkBox,
   state,
-  handleChangeSort,
-}: {
-  search: string
-  state: ExploreRoundState
-  setState: Dispatch<SetStateAction<ExploreRoundState>>
-  setSearch: Dispatch<SetStateAction<string>>
-  handleChangeSort(char: string): void
-}) {
+  handleClearFilter,
+  handleChangeStatus,
+  handleChangeMultiplyOpenSource,
+}) => {
   function handleSearchChange(e: React.ChangeEvent<HTMLInputElement>) {
     setSearch((prev) => e.target.value)
   }
@@ -43,7 +51,7 @@ export default function InputAndFilterBtn({
               className="
                             w-full pl-12  border placeholder-slate-500 bg-white text-slate-800 focus:ring focus:ring-primaryRed px-1 py-1.5 rounded-full  min-h-6 lg:min-h-10
                             "
-              placeholder="Search Project"
+              placeholder="Search Badgeholder Name"
             />
           </div>
           <div className="">
@@ -60,10 +68,10 @@ export default function InputAndFilterBtn({
             </div>
 
             {/* Sort button */}
-            <SortExploreRound
+            {/* <SortExploreRound
               handleChangeSort={handleChangeSort}
               state={state}
-            />
+            /> */}
           </div>
           <div className="">
             <div className="hidden lg:flex gap-2 border p-1.5  rounded-full min-h-10 max-h-10">
@@ -112,8 +120,34 @@ export default function InputAndFilterBtn({
             <SettingsAdjust size={24} className="" />
             <h6 className="text-base font-normal text-gray-600">Filter</h6>
           </div>
+
+          <div className="border w-[0.0625rem] h-[1.625rem] border-gray-200"></div>
+
+          <div
+            className={` 
+                            h-10
+                            hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
+                            border rounded-full px-3 py-2 cursor-pointer transition-colors self-center shrink-0
+                            ${
+                              Object.keys(checkBox).every(
+                                (key) =>
+                                  checkBox[
+                                    key as keyof CheckBoxStateBadgeholderType
+                                  ].length === 0
+                              )
+                                ? 'bg-secondaryRed text-primaryRed border-secondaryRed'
+                                : 'text-slate-900 border'
+                            }
+                                                    `}
+            onClick={handleClearFilter}
+          >
+            <p className="text-sm font-normal ">All</p>
+          </div>
+
+          {/* Badge */}
         </div>
       </div>
     </>
   )
 }
+export default InputAndFilterBadgeholderTab

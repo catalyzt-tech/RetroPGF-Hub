@@ -1,3 +1,5 @@
+import { name } from '@cloudinary/url-gen/actions/namedTransformation'
+
 export const tab = [
   {
     text: 'Project',
@@ -16,6 +18,7 @@ export const tab = [
     index: 3,
   },
 ]
+
 export const sorting = [
   {
     name: 'Highest Rewards',
@@ -98,3 +101,15 @@ export const isOpenSource = [
 export const min = -1
 export const max = 663855
 export const itemsPerPage = 24
+
+export const multiplyOpenSource = [
+  {
+    name: 'All',
+  },
+  {
+    name: 'Multiply Open-Source',
+  },
+  {
+    name: 'Not Multiply Open-Source',
+  },
+]

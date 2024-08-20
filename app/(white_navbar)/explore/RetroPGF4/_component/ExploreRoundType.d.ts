@@ -12,3 +12,8 @@ export type CheckBoxStateType = {
   isOpenSource: string
   ballot: string
 }
+
+export type CheckBoxStateBadgeholderType = {
+  status: string
+  multiplyOpenSource: string
+}
