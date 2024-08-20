@@ -58,7 +58,10 @@ const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
             {/* Open drawer btn */}
             <div
               onClick={() => {
-                setState((prev) => ({ ...prev, drawer: !prev.drawer }))
+                setState((prev: { drawer: any }) => ({
+                  ...prev,
+                  drawer: !prev.drawer,
+                }))
               }}
               className={`flex lg:hidden h-10 items-center gap-2 border  rounded-full px-3 py-2 cursor-pointer hover:bg-gray-100 ${
                 state.drawer && 'bg-gray-50'
@@ -79,7 +82,9 @@ const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
                 className={`px-1  cursor-pointer hover:bg-gray-50  rounded-tl-xl rounded-bl-xl rounded-br-sm rounded-tr-sm ${
                   state.view === 'g' && 'bg-gray-100'
                 }`}
-                onClick={() => setState((prev) => ({ ...prev, view: 'g' }))}
+                onClick={() =>
+                  setState((prev: any) => ({ ...prev, view: 'g' }))
+                }
               >
                 <Grid
                   size={28}
@@ -95,7 +100,9 @@ const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
                 className={`px-1  cursor-pointer hover:bg-gray-50  rounded-tl-sm rounded-bl-sm rounded-br-xl rounded-tr-xl ${
                   state.view === 'l' && 'bg-gray-100'
                 }`}
-                onClick={() => setState((prev) => ({ ...prev, view: 'l' }))}
+                onClick={() =>
+                  setState((prev: any) => ({ ...prev, view: 'l' }))
+                }
               >
                 <List
                   size={28}

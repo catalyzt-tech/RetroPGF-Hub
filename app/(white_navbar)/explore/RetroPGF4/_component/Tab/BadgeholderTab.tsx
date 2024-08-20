@@ -34,7 +34,6 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
     })
 
     setSearch('')
-    setState((prev) => ({ ...prev, sort: 'Highest Rewards' }))
   }
 
   function handleChangeStatus(value: string) {
@@ -60,10 +59,13 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
       let statusCondition: boolean = false
       if (checkBox.status === 'All') {
         statusCondition = true
+      } else if (checkBox.status === 'Vote') {
+        statusCondition = item.metricInBallot > 0
+      } else if (checkBox.status === 'Not Vote') {
+        statusCondition =
+          item.metricInBallot === 0 || item.metricInBallot === null
       }
-      // } else if{
-      //   statusCondition = item.status === checkBox.status
-      // }
+
       let multiplyOpenSourceCondition: boolean = false
       if (checkBox.multiplyOpenSource === 'All') {
         multiplyOpenSourceCondition = true
@@ -123,7 +125,6 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
             handleChangeStatus={handleChangeStatus}
             handleChangeMultiplyOpenSource={handleChangeMultiplyOpenSource}
           />
-
           <div className="w-full grid h-fit gap-6 grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
             <Suspense fallback={<div>Loading...</div>}>
               {currentDataset.map((item, i) => (

@@ -4,6 +4,7 @@ import { Disclosure, Transition } from '@headlessui/react'
 import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
 import { FC } from 'react'
 import MultiplyOpenSourceDisclosure from './MultiplyOpenSourceDisclosure'
+import BadgeholderStatusDisclosure from './BadgeholderStatusDisclosure'
 
 interface CheckBoxFilterBadgeholderProps {
   checkBox: CheckBoxStateBadgeholderType
@@ -30,6 +31,10 @@ export default function CheckBoxFilterBadgeholder({
           </button>
         </div>
         <hr className="h-[0.0625rem] bg-gray-200" />
+        <BadgeholderStatusDisclosure
+          checkBox={checkBox}
+          handleChangeStatus={handleChangeStatus}
+        />
         <MultiplyOpenSourceDisclosure
           checkBox={checkBox}
           handleChangeMultiplyOpenSource={handleChangeMultiplyOpenSource}

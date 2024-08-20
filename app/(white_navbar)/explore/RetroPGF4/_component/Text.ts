@@ -113,3 +113,15 @@ export const multiplyOpenSource = [
     name: 'Not Multiply Open-Source',
   },
 ]
+
+export const badgeholderStatus = [
+  {
+    name: 'All',
+  },
+  {
+    name: 'Vote',
+  },
+  {
+    name: 'Not Vote',
+  },
+]
