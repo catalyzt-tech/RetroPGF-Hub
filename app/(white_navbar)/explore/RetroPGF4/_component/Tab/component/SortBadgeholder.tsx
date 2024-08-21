@@ -21,7 +21,7 @@ export default function SortBadgeholder({
               className={` h-10 group
                             hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
                             border rounded-full px-3 py-2 cursor-pointer transition-colors 
-                            text-slate-900 flex items-center gap-2 self-center shrink-0}
+                            text-slate-900 flex items-center gap-2 self-center shrink-0
                             `}
             >
               <SortAscending
