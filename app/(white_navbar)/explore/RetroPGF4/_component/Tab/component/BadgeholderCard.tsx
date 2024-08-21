@@ -59,7 +59,9 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
         {/* Background Image */}
         <div className="absolute top-0 left-0 w-full h-16 lg:h-20 overflow-hidden">
           <Image
-            src={`${avatarUrl ? avatarUrl : '/random/OP-Logo.png'}`}
+            src={`${
+              avatarUrl ? avatarUrl : '/static/rpgf4/banner_gradient.png'
+            }`}
             alt="background image"
             // Not sure about the aspect ratio, so using object-fit
             className="opacity-70 object-cover z-10"

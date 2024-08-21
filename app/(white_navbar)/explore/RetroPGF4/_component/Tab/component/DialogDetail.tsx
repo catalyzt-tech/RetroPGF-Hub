@@ -77,8 +77,8 @@ const DialogDetail: FC<DialogProps> = ({
                   <div className="mt-4">
                     {metricSelected != null && (
                       <div className="overflow-x-hidden sm:rounded-lg max-h-36">
-                        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
-                          <thead className="text-xs text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                          <thead className="text-xs text-gray-700 bg-gray-50 ">
                             <tr>
                               <th scope="col" className="px-6 py-3">
                                 Metric Name
@@ -93,13 +93,10 @@ const DialogDetail: FC<DialogProps> = ({
                               (metric, i) =>
                                 metric &&
                                 Object.keys(metric).map((key: string) => (
-                                  <tr
-                                    key={i}
-                                    className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-                                  >
+                                  <tr key={i} className="bg-white border-b">
                                     <td
                                       scope="row"
-                                      className="px-6 py-4 font-medium text-gray-900 dark:text-white max-w-32 text-wrap"
+                                      className="px-6 py-4 font-medium text-gray-900 max-w-32 text-wrap"
                                     >
                                       {mapImpactMetrics(key)}
                                     </td>
