@@ -1,4 +1,4 @@
-import { FC, Fragment, Suspense, useMemo, useState } from 'react'
+import { FC, Fragment, Suspense, useEffect, useMemo, useState } from 'react'
 import BadgeholderCard from './component/BadgeholderCard'
 import { BadgeholderMetrics } from '../../RetroType4'
 import Image from 'next/image'
@@ -18,8 +18,8 @@ interface BadgeholderTabProps {
 
 const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
   const [currentPage, setCurrentPage] = useState<number>(0)
-  const [loading, setLoading] = useState(true)
-  const [search, setSearch] = useState<string>('')
+  const [loading, setLoading] = useState(() => true)
+  const [search, setSearch] = useState<string>(() => '')
   const [state, setState] = useState<ExploreRoundState>({
     drawer: false,
     view: 'grid',
@@ -80,8 +80,7 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
       } else if (checkBox.multiplyOpenSource === 'Multiply Open-Source') {
         multiplyOpenSourceCondition = item.openSourceMultiplier > 1
       } else if (checkBox.multiplyOpenSource === 'Not Multiply Open-Source') {
-        multiplyOpenSourceCondition =
-          item.openSourceMultiplier === 1 ? true : false
+        multiplyOpenSourceCondition = item.openSourceMultiplier === 1
       }
       // console.log(multiplyOpenSourceCondition)
       return searchCondition && statusCondition && multiplyOpenSourceCondition
@@ -149,12 +148,12 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
   const pageCount = useMemo(() => {
     return Math.ceil(filterJson.length / itemsPerPage)
   }, [filterJson])
-  const load = () => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000)
-  }
-  load()
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1000)
+    return () => clearTimeout(timer)
+  }, [])
+
   if (loading)
     return (
       <div className="flex flex-col justify-center items-center animate-pulse h-[40em]">

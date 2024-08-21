@@ -89,28 +89,27 @@ const DialogDetail: FC<DialogProps> = ({
                             </tr>
                           </thead>
                           <tbody className="">
-                            {metricSelected != null &&
-                              metricSelected.map((metric, i) =>
-                                Object.keys(metric).map((key: string) => (
-                                  <tr
-                                    key={i}
-                                    className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                            {metricSelected?.map((metric, i) =>
+                              Object.keys(metric).map((key: string) => (
+                                <tr
+                                  key={i}
+                                  className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                                >
+                                  <td
+                                    scope="row"
+                                    className="px-6 py-4 font-medium text-gray-900 dark:text-white max-w-32 text-wrap"
                                   >
-                                    <td
-                                      scope="row"
-                                      className="px-6 py-4 font-medium text-gray-900 dark:text-white max-w-32 text-wrap"
-                                    >
-                                      {mapImpactMetrics(key)}
-                                    </td>
-                                    <td className="px-6 py-4">
-                                      {metric[
-                                        key as keyof ImpactMetrics
-                                      ].toFixed(2)}{' '}
-                                      %
-                                    </td>
-                                  </tr>
-                                ))
-                              )}
+                                    {mapImpactMetrics(key)}
+                                  </td>
+                                  <td className="px-6 py-4">
+                                    {metric[key as keyof ImpactMetrics].toFixed(
+                                      2
+                                    )}{' '}
+                                    %
+                                  </td>
+                                </tr>
+                              ))
+                            )}
                           </tbody>
                         </table>
                       </div>
