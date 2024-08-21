@@ -2,9 +2,10 @@ import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import { FC } from 'react'
 import { mapImpactMetrics } from '../../../[name]/Text'
+import { ImpactMetrics } from '../../../RetroType4'
 
 interface AllocationChartProps {
-  metricSelected: any[]
+  metricSelected: Partial<ImpactMetrics[]>
 }
 
 const processDataFormat = (metricSelected: any[]) => {

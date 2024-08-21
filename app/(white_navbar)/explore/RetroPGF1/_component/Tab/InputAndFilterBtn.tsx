@@ -8,25 +8,20 @@ import List from '@carbon/icons-react/lib/List'
 import SettingsAdjust from '@carbon/icons-react/lib/SettingsAdjust'
 import SortExploreRound from '../SortExploreRound'
 
-// this file include
-// - search input
-// - sort by button
-// - change view (list, grid) data
-// - filter btn
-// - badge
+interface IInputAndFilterBadgeholderTabProps {
+  search: string
+  setSearch: Dispatch<SetStateAction<string>>
+  setState: Dispatch<SetStateAction<ExploreRoundState>>
+  state: ExploreRoundState
+  handleChangeSort(char: string): void
+}
 export default function InputAndFilterBtn({
   search,
   setSearch,
   setState,
   state,
   handleChangeSort,
-}: {
-  search: string
-  state: ExploreRoundState
-  setState: Dispatch<SetStateAction<ExploreRoundState>>
-  setSearch: Dispatch<SetStateAction<string>>
-  handleChangeSort(char: string): void
-}) {
+}: IInputAndFilterBadgeholderTabProps) {
   function handleSearchChange(e: React.ChangeEvent<HTMLInputElement>) {
     setSearch((prev) => e.target.value)
   }

@@ -92,7 +92,7 @@ const BadgeholderCard: FC<BadgeholderCardProps> = ({
               avatarUrl ? avatarUrl : '/static/loading/retropgf_sun-2.svg'
             }`}
             alt="avatar image"
-            className={`${avatarUrl ? '' : 'bg-[#ff0420]'} w-16`}
+            className={`${!avatarUrl && 'bg-[#ff0420]'} w-16`}
             width={25}
             height={25}
           />

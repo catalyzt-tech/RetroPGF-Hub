@@ -5,7 +5,7 @@ import { mapImpactMetrics } from '../../../[name]/Text'
 import AllocationChart from './AllocationChart'
 
 interface DialogProps {
-  metricSelected: any[]
+  metricSelected: Partial<ImpactMetrics[]>
   metricInBallot: number
   metricViewed: number
   isOpen: boolean
@@ -89,26 +89,41 @@ const DialogDetail: FC<DialogProps> = ({
                             </tr>
                           </thead>
                           <tbody className="">
-                            {metricSelected?.map((metric, i) =>
-                              Object.keys(metric).map((key: string) => (
-                                <tr
-                                  key={i}
-                                  className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-                                >
-                                  <td
-                                    scope="row"
-                                    className="px-6 py-4 font-medium text-gray-900 dark:text-white max-w-32 text-wrap"
+                            {metricSelected?.map(
+                              (metric, i) =>
+                                metric &&
+                                Object.keys(metric).map((key: string) => (
+                                  <tr
+                                    key={i}
+                                    className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
                                   >
-                                    {mapImpactMetrics(key)}
-                                  </td>
-                                  <td className="px-6 py-4">
-                                    {metric[key as keyof ImpactMetrics].toFixed(
-                                      2
-                                    )}{' '}
-                                    %
-                                  </td>
-                                </tr>
-                              ))
+                                    <td
+                                      scope="row"
+                                      className="px-6 py-4 font-medium text-gray-900 dark:text-white max-w-32 text-wrap"
+                                    >
+                                      {mapImpactMetrics(key)}
+                                    </td>
+                                    <td className="px-6 py-4">
+                                      {metric &&
+                                      metric[key as keyof ImpactMetrics] !==
+                                        undefined &&
+                                      metric[key as keyof ImpactMetrics] !==
+                                        undefined &&
+                                      typeof metric[
+                                        key as keyof ImpactMetrics
+                                      ] === 'number'
+                                        ? (
+                                            metric[
+                                              key as keyof ImpactMetrics
+                                            ] as number
+                                          ).toFixed(2)
+                                        : metric[
+                                            key as keyof ImpactMetrics
+                                          ]}{' '}
+                                      %
+                                    </td>
+                                  </tr>
+                                ))
                             )}
                           </tbody>
                         </table>

@@ -18,8 +18,8 @@ interface BadgeholderTabProps {
 
 const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
   const [currentPage, setCurrentPage] = useState<number>(0)
-  const [loading, setLoading] = useState(() => true)
-  const [search, setSearch] = useState<string>(() => '')
+  const [loading, setLoading] = useState(true)
+  const [search, setSearch] = useState<string>('')
   const [state, setState] = useState<ExploreRoundState>({
     drawer: false,
     view: 'grid',

@@ -15,9 +15,9 @@ import SortBadgeholder from './SortBadgeholder'
 
 interface IInputAndFilterBadgeholderTabProps {
   search: string
-  setCheckBox: Dispatch<SetStateAction<any>>
+  setCheckBox: Dispatch<SetStateAction<CheckBoxStateBadgeholderType>>
   setSearch: Dispatch<SetStateAction<string>>
-  setState: Dispatch<SetStateAction<any>>
+  setState: Dispatch<SetStateAction<ExploreRoundState>>
   checkBox: CheckBoxStateBadgeholderType
   state: ExploreRoundState
   handleClearFilter(): void
@@ -61,7 +61,7 @@ const InputAndFilterBadgeholderTab: FC<IInputAndFilterBadgeholderTabProps> = ({
             {/* Open drawer btn */}
             <div
               onClick={() => {
-                setState((prev: { drawer: any }) => ({
+                setState((prev: ExploreRoundState) => ({
                   ...prev,
                   drawer: !prev.drawer,
                 }))
@@ -121,7 +121,10 @@ const InputAndFilterBadgeholderTab: FC<IInputAndFilterBadgeholderTabProps> = ({
         <div className="hidden lg:flex gap-2 items-center flex-wrap mt-4">
           <div
             onClick={() => {
-              setState((prev: any[]) => ({ ...prev, filter: !prev.filter }))
+              setState((prev: ExploreRoundState) => ({
+                ...prev,
+                filter: !prev.filter,
+              }))
             }}
             className={`flex h-10 items-center gap-2 border  rounded-full px-3 py-2 cursor-pointer hover:bg-gray-100 ${
               state.filter && 'bg-gray-50'
