@@ -7,7 +7,7 @@ import {
   CheckBoxStateBadgeholderType,
   ExploreRoundState,
 } from '../ExploreRoundType'
-import { isLetter } from '@/app/lib/utils'
+import { isLetter, shuffle } from '@/app/lib/utils'
 import CheckBoxFilterBadgeholder from './component/CheckBoxFilterBadgeholder'
 
 interface BadgeholderTabProps {
@@ -129,7 +129,10 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
         }
         return nameB.length - nameA.length
       })
+    } else if (state.sort === 'Random Order') {
+      sortedItems = shuffle(sortedItems)
     }
+
     return sortedItems
   }, [filterJson, state.sort])
 
@@ -165,14 +168,16 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
         handleChangeSort={handleChangeSort}
       />
 
-      <div className=" relative animate-slideup">
+      <div className="relative animate-slideup">
         <div className="mt-[2.5rem] animate-slideleft flex gap-6">
-          <CheckBoxFilterBadgeholder
-            checkBox={checkBox}
-            handleClearFilter={handleClearFilter}
-            handleChangeStatus={handleChangeStatus}
-            handleChangeMultiplyOpenSource={handleChangeMultiplyOpenSource}
-          />
+          {state.filter && (
+            <CheckBoxFilterBadgeholder
+              checkBox={checkBox}
+              handleClearFilter={handleClearFilter}
+              handleChangeStatus={handleChangeStatus}
+              handleChangeMultiplyOpenSource={handleChangeMultiplyOpenSource}
+            />
+          )}
           <div className="w-full grid h-fit gap-6 grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
             <Suspense fallback={<div>Loading...</div>}>
               {currentDataset.map((item, i) => (

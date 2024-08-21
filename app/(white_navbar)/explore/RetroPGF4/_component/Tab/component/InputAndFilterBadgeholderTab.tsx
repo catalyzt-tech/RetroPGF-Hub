@@ -5,7 +5,7 @@ import {
   ExploreRoundState,
 } from '../../ExploreRoundType'
 import Input from '@/app/component/Input/Input'
-import { category } from '../../Text'
+import { badgeholderStatus, category } from '../../Text'
 import Search from '@carbon/icons-react/lib/Search'
 import Grid from '@carbon/icons-react/lib/Grid'
 import List from '@carbon/icons-react/lib/List'
@@ -13,7 +13,7 @@ import SettingsAdjust from '@carbon/icons-react/lib/SettingsAdjust'
 import SortExploreRound from '../../SortExploreRound'
 import SortBadgeholder from './SortBadgeholder'
 
-interface InputAndFilterBadgeholderTabProps {
+interface IInputAndFilterBadgeholderTabProps {
   search: string
   setCheckBox: Dispatch<SetStateAction<any>>
   setSearch: Dispatch<SetStateAction<string>>
@@ -26,7 +26,7 @@ interface InputAndFilterBadgeholderTabProps {
   handleChangeSort(char: string): void
 }
 
-const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
+const InputAndFilterBadgeholderTab: FC<IInputAndFilterBadgeholderTabProps> = ({
   search,
   setCheckBox,
   setSearch,
@@ -155,6 +155,30 @@ const InputAndFilterBadgeholderTab: FC<InputAndFilterBadgeholderTabProps> = ({
           </div>
 
           {/* Badge */}
+          {badgeholderStatus.map((item, i) => {
+            if (item.name !== 'All') {
+              return (
+                <div
+                  data-tooltip-id={item.name}
+                  key={i}
+                  className={` lg:block h-10 group relative ctn-category shadow-
+                            hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
+                            border rounded-full px-3 py-2 cursor-pointer transition-colors self-center shrink-0
+              ${
+                checkBox.status === item.name
+                  ? 'bg-secondaryRed text-primaryRed border-secondaryRed'
+                  : 'text-slate-900 border'
+              }
+                            }`}
+                  onClick={() => {
+                    handleChangeStatus(item.name)
+                  }}
+                >
+                  <p className=" text-sm font-normal ">{item.name}</p>
+                </div>
+              )
+            }
+          })}
         </div>
       </div>
     </>

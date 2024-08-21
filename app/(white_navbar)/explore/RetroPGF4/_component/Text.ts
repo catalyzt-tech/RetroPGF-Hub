@@ -130,4 +130,7 @@ export const sortBadgeholderChoice = [
   {
     name: 'Badgeholder Name (Z-A)',
   },
+  {
+    name: 'Random Order',
+  },
 ]
