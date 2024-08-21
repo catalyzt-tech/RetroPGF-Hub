@@ -241,10 +241,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
       })
     }
 
-    return sortedItems.slice(
-      currentPage * itemsPerPage,
-      (currentPage + 1) * itemsPerPage
-    )
+    return sortedItems
   }, [currentPage, filterJson, state.sort])
 
   const [loading, setLoading] = useState(true)

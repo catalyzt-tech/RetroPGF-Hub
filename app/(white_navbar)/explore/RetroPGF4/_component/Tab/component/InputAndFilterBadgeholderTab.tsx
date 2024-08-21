@@ -5,7 +5,7 @@ import {
   ExploreRoundState,
 } from '../../ExploreRoundType'
 import Input from '@/app/component/Input/Input'
-import { badgeholderStatus, category } from '../../Text'
+import { badgeholderStatus, category, multiplyOpenSource } from '../../Text'
 import Search from '@carbon/icons-react/lib/Search'
 import Grid from '@carbon/icons-react/lib/Grid'
 import List from '@carbon/icons-react/lib/List'
@@ -79,7 +79,7 @@ const InputAndFilterBadgeholderTab: FC<IInputAndFilterBadgeholderTabProps> = ({
               state={state}
             />
           </div>
-          <div className="">
+          {/* <div className="">
             <div className="hidden lg:flex gap-2 border p-1.5  rounded-full min-h-10 max-h-10">
               <div
                 className={`px-1  cursor-pointer hover:bg-gray-50  rounded-tl-xl rounded-bl-xl rounded-br-sm rounded-tr-sm ${
@@ -115,7 +115,7 @@ const InputAndFilterBadgeholderTab: FC<IInputAndFilterBadgeholderTabProps> = ({
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="hidden lg:flex gap-2 items-center flex-wrap mt-4">
@@ -172,6 +172,30 @@ const InputAndFilterBadgeholderTab: FC<IInputAndFilterBadgeholderTabProps> = ({
                             }`}
                   onClick={() => {
                     handleChangeStatus(item.name)
+                  }}
+                >
+                  <p className=" text-sm font-normal ">{item.name}</p>
+                </div>
+              )
+            }
+          })}
+          {multiplyOpenSource.map((item, i) => {
+            if (item.name !== 'All') {
+              return (
+                <div
+                  data-tooltip-id={item.name}
+                  key={i}
+                  className={` lg:block h-10 group relative ctn-category shadow-
+                            hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
+                            border rounded-full px-3 py-2 cursor-pointer transition-colors self-center shrink-0
+              ${
+                checkBox.status === item.name
+                  ? 'bg-secondaryRed text-primaryRed border-secondaryRed'
+                  : 'text-slate-900 border'
+              }
+                            }`}
+                  onClick={() => {
+                    handleChangeMultiplyOpenSource(item.name)
                   }}
                 >
                   <p className=" text-sm font-normal ">{item.name}</p>

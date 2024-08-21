@@ -9,24 +9,31 @@ import {
 } from '../ExploreRoundType'
 import { isLetter, shuffle } from '@/app/lib/utils'
 import CheckBoxFilterBadgeholder from './component/CheckBoxFilterBadgeholder'
+import { Pagination } from 'react-headless-pagination'
+import { itemsPerPage } from '../Text'
 
 interface BadgeholderTabProps {
   badgeholderData: BadgeholderMetrics[]
 }
 
 const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
+  const [currentPage, setCurrentPage] = useState<number>(0)
   const [loading, setLoading] = useState(true)
   const [search, setSearch] = useState<string>('')
   const [state, setState] = useState<ExploreRoundState>({
     drawer: false,
     view: 'grid',
     sort: 'Badgeholder Name (A-Z)',
-    filter: false,
+    filter: true,
   })
   const [checkBox, setCheckBox] = useState<CheckBoxStateBadgeholderType>({
     status: 'All',
     multiplyOpenSource: 'All',
   })
+
+  const handlePageClick = (page: number) => {
+    setCurrentPage((prev) => page)
+  }
 
   function handleClearFilter() {
     setCheckBox({
@@ -133,9 +140,15 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
       sortedItems = shuffle(sortedItems)
     }
 
-    return sortedItems
-  }, [filterJson, state.sort])
+    return sortedItems.slice(
+      currentPage * itemsPerPage,
+      (currentPage + 1) * itemsPerPage
+    )
+  }, [filterJson, state.sort, currentPage])
 
+  const pageCount = useMemo(() => {
+    return Math.ceil(filterJson.length / itemsPerPage)
+  }, [filterJson])
   const load = () => {
     setTimeout(() => {
       setLoading(false)
@@ -200,6 +213,40 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
             </Suspense>
           </div>
         </div>
+        {currentDataset.length !== 0 && (
+          <div className="mt-12 text-sm font-medium text-gray-500">
+            <Pagination
+              currentPage={currentPage}
+              setCurrentPage={handlePageClick}
+              className="flex flex-wrap justify-end"
+              truncableText="..."
+              truncableClassName="border min-w-[2rem] min-h-[2rem] max-w-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50"
+              edgePageCount={2}
+              middlePagesSiblingCount={1}
+              totalPages={pageCount}
+            >
+              <Pagination.PrevButton className="px-2 border min-h-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50">
+                Previous
+              </Pagination.PrevButton>
+
+              <div className="flex justify-center">
+                <div className="flex flex-wrap lg:items-center justify-start lg:justify-center list-none">
+                  <Pagination.PageButton
+                    as={<div />}
+                    activeClassName="bg-gray-100 cursor-pointer hover:bg-gray-50 list-none"
+                    inactiveClassName="list-none"
+                    className=" border min-w-[2rem] min-h-[2rem] max-w-[2rem] max-h-[2rem] flex items-center justify-center cursor-pointer hover:bg-gray-50 list-none"
+                    dataTestIdInactive="list-none"
+                  />
+                </div>
+              </div>
+
+              <Pagination.NextButton className="px-2 border  min-h-[2rem] max-h-[2rem] text-sm font-medium text-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-50">
+                Next
+              </Pagination.NextButton>
+            </Pagination>
+          </div>
+        )}
       </div>
     </>
   )
