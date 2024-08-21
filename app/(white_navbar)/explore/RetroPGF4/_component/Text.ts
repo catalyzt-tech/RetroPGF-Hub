@@ -12,10 +12,11 @@ export const tab = [
     index: 2,
   },
   {
-    text: 'Badgeholder',
+    text: `Badgeholder's Metrics`,
     index: 3,
-  }
+  },
 ]
+
 export const sorting = [
   {
     name: 'Highest Rewards',
@@ -98,3 +99,38 @@ export const isOpenSource = [
 export const min = -1
 export const max = 663855
 export const itemsPerPage = 24
+
+export const multiplyOpenSource = [
+  {
+    name: 'All',
+  },
+  {
+    name: 'Multiply Open-Source',
+  },
+  {
+    name: 'Not Multiply Open-Source',
+  },
+]
+
+export const badgeholderStatus = [
+  {
+    name: 'All',
+  },
+  {
+    name: 'Vote',
+  },
+  {
+    name: 'Not Vote',
+  },
+]
+export const sortBadgeholderChoice = [
+  {
+    name: 'Badgeholder Name (A-Z)',
+  },
+  {
+    name: 'Badgeholder Name (Z-A)',
+  },
+  {
+    name: 'Random Order',
+  },
+]

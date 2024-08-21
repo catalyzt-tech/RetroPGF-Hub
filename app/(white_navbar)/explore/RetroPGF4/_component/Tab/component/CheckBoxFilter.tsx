@@ -1,12 +1,12 @@
 'use client'
-import { CheckBoxStateType } from '../ExploreRoundType'
-import CategoryDisclosure from './Filter/CategoryDisclosure'
-import MultiSliderDisclosure from './Filter/MultiSliderDisclosure'
-import InBallotDisclosure from './Filter/InBallotDisclosure'
+import { CheckBoxStateType } from '../../ExploreRoundType'
+import CategoryDisclosure from '../Filter/CategoryDisclosure'
+import MultiSliderDisclosure from '../Filter/MultiSliderDisclosure'
+import InBallotDisclosure from '../Filter/InBallotDisclosure'
 import { Disclosure, Transition } from '@headlessui/react'
 import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
-import EligibilityDisclosure from './Filter/EligibilityDisclosure'
-import IsOpenSourceDisclosure from './Filter/IsOpenSourceDisclosure'
+import EligibilityDisclosure from '../Filter/EligibilityDisclosure'
+import IsOpenSourceDisclosure from '../Filter/IsOpenSourceDisclosure'
 
 export default function CheckBoxFilter({
   checkBox,

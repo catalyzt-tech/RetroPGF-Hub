@@ -3,12 +3,12 @@
 import React, { FC, useEffect, useMemo, useState } from 'react'
 import { CheckBoxStateType, ExploreRoundState } from '../ExploreRoundType'
 import { category, itemsPerPage, max, min, isOpenSource } from '../Text'
-import InputAndFilterBtn from './InputAndFilterBtn'
-import CheckBoxFilter from './CheckBoxFilter'
+import InputAndFilterBtn from './component/InputAndFilterBtn'
+import CheckBoxFilter from './component/CheckBoxFilter'
 import { iRetroPGF4Project } from '../../RetroType4'
 import { Pagination } from 'react-headless-pagination'
 import DynamicCard from '../DynamicCard'
-import ListCard from './ListCard'
+import ListCard from './component/ListCard'
 import DialogFilter from './Filter/DialogFilter'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
@@ -146,7 +146,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
         isOpenSourceCondition = item.isOpenSource
       } else if (checkBox.isOpenSource === 'Closed Source') {
         //only select false project
-        isOpenSourceCondition = !item.isOpenSource ?? false
+        isOpenSourceCondition = !(item.isOpenSource ?? false)
       }
 
       return (
@@ -241,10 +241,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
       })
     }
 
-    return sortedItems.slice(
-      currentPage * itemsPerPage,
-      (currentPage + 1) * itemsPerPage
-    )
+    return sortedItems
   }, [currentPage, filterJson, state.sort])
 
   const [loading, setLoading] = useState(true)

@@ -1,18 +1,37 @@
-import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
+import {
+  BadgeholderMetrics,
+  iRetroPGF4Project,
+} from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import Cpage from './Cpage'
 import BreadCumpExplore from './_component/BreadCumpExplore'
 import fs from 'fs'
 import path from 'path'
 
 export async function getJsonRound4(): Promise<iRetroPGF4Project[]> {
-  const directoryPath = path.join(process.cwd(), 'public/static/rpgf4.json')
+  const directoryPath = path.join(
+    process.cwd(),
+    'public/static/rpgf4/rpgf4.json'
+  )
   const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
   const jsonData: iRetroPGF4Project[] = JSON.parse(fileContents)
   return jsonData
 }
 
+export async function getJsonBadgeholderMetric(): Promise<
+  BadgeholderMetrics[]
+> {
+  const directoryPath = path.join(
+    process.cwd(),
+    'public/static/rpgf4/rpgf4_badgeholder_metrics.json'
+  )
+  const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
+  const jsonData: BadgeholderMetrics[] = JSON.parse(fileContents)
+  return jsonData
+}
+
 export default async function page() {
   const round4 = await getJsonRound4()
+  const badgeholderData = await getJsonBadgeholderMetric()
 
   return (
     <>
@@ -31,7 +50,7 @@ export default async function page() {
           </div>
         </div>
         <div className="flex flex-col gap-6 mx-2 sm:mx-4 md:mx-6 lg:mx-20">
-          <Cpage round4={round4} />
+          <Cpage round4={round4} badgeholderData={badgeholderData} />
         </div>
       </div>
     </>
