@@ -18,7 +18,6 @@ interface iCpage {
 }
 
 export default function Cpage({ projectData, badgeholderData }: iCpage) {
-  console.log('projectData', projectData)
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
   function handleChangeSelectedIndex(index: number) {
     setSelectedIndex(index)
