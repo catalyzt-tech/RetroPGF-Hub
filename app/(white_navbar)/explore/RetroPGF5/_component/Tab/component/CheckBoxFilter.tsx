@@ -7,7 +7,18 @@ import { Disclosure, Transition } from '@headlessui/react'
 import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
 import EligibilityDisclosure from '../Filter/EligibilityDisclosure'
 import IsOpenSourceDisclosure from '../Filter/IsOpenSourceDisclosure'
-
+interface CheckBoxFilterProps {
+  checkBox: CheckBoxStateType
+  handleChangeCategory: (value: string) => void
+  handleChangeBallot: (ballot: string) => void
+  handleClearFilter: () => void
+  minVal: number
+  maxVal: number
+  setMinVal: React.Dispatch<React.SetStateAction<number>>
+  setMaxVal: React.Dispatch<React.SetStateAction<number>>
+  handleChangeEligibility: (eligibility: string) => void
+  handleChangeIsOpenSource: (isOpenSource: string) => void
+}
 export default function CheckBoxFilter({
   checkBox,
   handleChangeCategory,
@@ -19,18 +30,7 @@ export default function CheckBoxFilter({
   handleChangeBallot,
   handleChangeEligibility,
   handleChangeIsOpenSource,
-}: {
-  checkBox: CheckBoxStateType
-  handleChangeCategory: (value: string) => void
-  handleChangeBallot(ballot: string): void
-  handleClearFilter: () => void
-  minVal: number
-  maxVal: number
-  setMinVal: React.Dispatch<React.SetStateAction<number>>
-  setMaxVal: React.Dispatch<React.SetStateAction<number>>
-  handleChangeEligibility: (eligibility: string) => void
-  handleChangeIsOpenSource: (isOpenSource: string) => void
-}) {
+}: CheckBoxFilterProps) {
   return (
     <>
       <div className="hidden lg:flex flex-col gap-4 border  min-w-60 max-w-60 h-fit rounded-lg p-4  animate-slideleft z-10 pb-4">

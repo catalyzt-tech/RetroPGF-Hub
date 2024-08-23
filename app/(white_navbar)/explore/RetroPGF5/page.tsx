@@ -1,9 +1,6 @@
-import {
-  BadgeholderMetrics,
-  iRetroPGF4Project,
-} from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
+import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import Cpage from './Cpage'
-import BreadCumpExplore from './_component/BreadCumpExplore'
+import BreadcrumbExplore from './_component/BreadcrumbExplore'
 import fs from 'fs'
 import path from 'path'
 import { RetroPGF5Project } from './type'
@@ -38,7 +35,7 @@ export default async function page() {
         <div className="bg-gradient-to-b from-[#ffdede]">
           <div className="flex flex-col mx-2 sm:mx-4 md:mx-6 lg:mx-20 gap-6">
             <div className="mt-10">
-              <BreadCumpExplore secondText={'RetroPGF 5'} />
+              <BreadcrumbExplore secondText={'RetroPGF 5'} />
             </div>
 
             <div className="mt-4 inline-flex">

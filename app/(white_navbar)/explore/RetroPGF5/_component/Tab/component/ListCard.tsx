@@ -3,13 +3,14 @@ import { RetroPGF5Project } from '../../../type'
 import { handleCategoryRound4 } from '@/app/lib/InitialMount'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
+import List from '@carbon/icons-react/lib/List'
 
 const OpTokenPath = '/static/superchainLogo/optimism.svg'
-export default function ListCard({
-  currentItems,
-}: {
+
+interface ListCardProps {
   currentItems: RetroPGF5Project[]
-}) {
+}
+export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
   return (
     <>
       {currentItems.length !== 0 ? (
@@ -34,7 +35,7 @@ export default function ListCard({
             </thead>
             <tbody>
               {currentItems.map((item, i) => (
-                <tr className="border rounded-3xl " key={i}>
+                <tr className="border rounded-3xl " key={item.name}>
                   <th className="p-5 flex gap-y-2 gap-x-6">
                     <div className="relative min-w-16 min-h-16 max-w-16 max-h-16 self-center">
                       <Image
