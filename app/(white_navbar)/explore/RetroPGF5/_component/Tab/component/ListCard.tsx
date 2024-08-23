@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { iRetroPGF4Project } from '../../../type'
+import { RetroPGF5Project } from '../../../type'
 import { handleCategoryRound4 } from '@/app/lib/InitialMount'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
@@ -8,7 +8,7 @@ const OpTokenPath = '/static/superchainLogo/optimism.svg'
 export default function ListCard({
   currentItems,
 }: {
-  currentItems: iRetroPGF4Project[]
+  currentItems: RetroPGF5Project[]
 }) {
   return (
     <>
@@ -38,7 +38,7 @@ export default function ListCard({
                   <th className="p-5 flex gap-y-2 gap-x-6">
                     <div className="relative min-w-16 min-h-16 max-w-16 max-h-16 self-center">
                       <Image
-                        src={item.projectAvatarUrl ?? '/random/avatar.png'}
+                        src={item.profileAvatarUrl ?? '/random/avatar.png'}
                         alt="avatar image"
                         className="rounded-lg"
                         fill
@@ -64,7 +64,7 @@ export default function ListCard({
                       {handleCategoryRound4(item.category)}
                     </div>
                   </td>
-                  <td className="py-4 px-3">
+                  {/* <td className="py-4 px-3">
                     <div className="flex flex-row flex-wrap gap-2 ">
                       <h6 className="text-sm font-medium text-gray-500">
                         {item.reward}
@@ -76,7 +76,7 @@ export default function ListCard({
                         height={20}
                       />
                     </div>
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>

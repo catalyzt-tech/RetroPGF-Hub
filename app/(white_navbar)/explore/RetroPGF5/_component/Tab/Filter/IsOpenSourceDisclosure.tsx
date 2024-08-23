@@ -38,9 +38,8 @@ export default function IsOpenSourceDisclosure({
               >
                 <Disclosure.Panel className="text-sm text-gray-500 flex gap-1 flex-col mt-3 gap-y-1.5">
                   {isOpenSource.map((item, i) => (
-                    <div key={i}>
+                    <div key={item.name}>
                       <Checkbox
-                        key={i}
                         label={`${item.name}`}
                         value={item.name}
                         className="cursor-pointer"

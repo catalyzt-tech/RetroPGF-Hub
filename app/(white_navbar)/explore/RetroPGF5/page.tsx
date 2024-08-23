@@ -8,7 +8,7 @@ import fs from 'fs'
 import path from 'path'
 import { RetroPGF5Project } from './type'
 
-export async function getJsonRound5(): Promise<RetroPGF5Project[]> {
+async function getJsonRound5(): Promise<RetroPGF5Project[]> {
   const directoryPath = path.join(
     process.cwd(),
     'public/static/rpgf5/dummy_rpgf5.json'
@@ -18,9 +18,7 @@ export async function getJsonRound5(): Promise<RetroPGF5Project[]> {
   return jsonData
 }
 
-export async function getJsonBadgeholderMetric(): Promise<
-  BadgeholderMetrics[]
-> {
+async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   const directoryPath = path.join(
     process.cwd(),
     'public/static/rpgf4/rpgf4_badgeholder_metrics.json'
