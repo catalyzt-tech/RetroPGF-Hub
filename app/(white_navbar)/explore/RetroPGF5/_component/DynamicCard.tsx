@@ -5,7 +5,7 @@ import { Star } from '@carbon/icons-react'
 import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
-import { handleCategoryRound4, handleOpenSource } from '@/app/lib/InitialMount'
+import { handleCategoryRound5 } from '@/app/lib/InitialMount'
 import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
 
 const OpTokenPath = '/static/superchainLogo/optimism.svg'
@@ -34,13 +34,9 @@ export default function DynamicCard({
   reward = 0,
 }: iDynamicCard) {
   const categoryElement = useMemo(
-    () => handleCategoryRound4(category),
+    () => handleCategoryRound5(category),
     [category]
   )
-  // const openSourceElement = useMemo(
-  //   () => handleOpenSource(isOpenSource),
-  //   [isOpenSource]
-  // )
 
   return (
     <div
@@ -88,7 +84,7 @@ export default function DynamicCard({
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF4/${cleanParamsName(title)}`}
+              href={`/explore/RetroPGF5/${cleanParamsName(title)}`}
               className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1"
             >
               {title}

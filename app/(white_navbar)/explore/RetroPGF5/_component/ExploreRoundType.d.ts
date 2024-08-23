@@ -9,8 +9,6 @@ export type CheckBoxStateType = {
   category: string[]
   receiveOP: number[]
   eligibility: string
-  isOpenSource: string
-  ballot: string
 }
 
 export type CheckBoxStateBadgeholderType = {

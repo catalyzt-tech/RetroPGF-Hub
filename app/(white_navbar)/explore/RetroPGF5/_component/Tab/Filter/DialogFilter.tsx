@@ -5,7 +5,6 @@ import { Fragment } from 'react'
 import CategoryDisclosure from './CategoryDisclosure'
 import { CheckBoxStateType } from '../../ExploreRoundType'
 import MultiSliderDisclosure from './MultiSliderDisclosure'
-import InBallotDisclosure from './InBallotDisclosure'
 import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
 
 export default function DialogFilter({
@@ -17,7 +16,6 @@ export default function DialogFilter({
   setMinVal,
   maxVal,
   setMaxVal,
-  handleChangeBallot,
   handleClearFilter,
 }: {
   open: boolean
@@ -28,7 +26,6 @@ export default function DialogFilter({
   maxVal: number
   setMinVal: React.Dispatch<React.SetStateAction<number>>
   setMaxVal: React.Dispatch<React.SetStateAction<number>>
-  handleChangeBallot: (ballot: string) => void
   handleClearFilter: () => void
 }) {
   return (
@@ -68,18 +65,13 @@ export default function DialogFilter({
                     checkBox={checkBox}
                     handleChangeCategory={handleChangeCategory}
                   />
-                  <MultiSliderDisclosure
+                  {/* Wait for result announcement */}
+                  {/* <MultiSliderDisclosure
                     maxVal={maxVal}
                     minVal={minVal}
                     setMaxVal={setMaxVal}
                     setMinVal={setMinVal}
-                  />
-                  <InBallotDisclosure
-                    checkBox={checkBox}
-                    handleChangeBallot={handleChangeBallot}
-                    allProjectId="all-project-dialog"
-                    secondProjectId="more-than-17-dialog"
-                  />
+                  /> */}
                 </div>
                 <div className="mt-8" />
 

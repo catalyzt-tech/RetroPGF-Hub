@@ -26,16 +26,7 @@ export default function ProjectTab({
   const [search, setSearch] = useState('')
   const [state, setState] = useState<ExploreRoundState>({
     drawer: false,
-    // sort have 5 options
-    // - Award Ranking
-    // - Most in ballots
-    // - Least in ballots
-    // Project Name (A-Z)
-    // Project Name (Z-A)
-    sort: 'Highest Rewards',
-    // view have two option
-    // - g stand for grid
-    // - l stand for list
+    sort: 'Project Name (A-Z)',
     view: 'g',
     filter: true,
   })
@@ -46,33 +37,18 @@ export default function ProjectTab({
     category: [],
     receiveOP: [],
     eligibility: 'Eligible',
-    isOpenSource: 'All',
-    ballot: 'All Project',
   })
 
   function handleClearFilter() {
     setCheckBox({
       category: [],
       receiveOP: [],
-      // ballot can be two option
-      // - > 17 vote
-      // - All Project
       eligibility: 'Eligible',
-      isOpenSource: 'All',
-      ballot: 'All Project',
     })
     setMinVal(min)
     setMaxVal(max)
     setSearch('')
-    setState((prev) => ({ ...prev, sort: 'Highest Rewards' }))
-  }
-
-  function handleChangeBallot(text: string) {
-    setCheckBox((prev) => ({ ...prev, ballot: text }))
-  }
-
-  function handleChangeIsOpenSource(text: string) {
-    setCheckBox((prev) => ({ ...prev, isOpenSource: text }))
+    setState((prev) => ({ ...prev, sort: 'Project Name (A-Z)' }))
   }
 
   function handleChangeCategory(value: string) {
@@ -81,13 +57,15 @@ export default function ProjectTab({
 
       let index = temp.category.findIndex((elem) => elem === value)
       // add new category
+      if (index === -1) {
+        temp.category.push(value)
+      } else {
+        // remove category
+        temp.category.splice(index, 1)
+      }
 
       return temp
     })
-  }
-
-  function handleChangeEligibility(text: string) {
-    setCheckBox((prev) => ({ ...prev, eligibility: text }))
   }
 
   const handlePageClick = (page: number) => {
@@ -116,50 +94,25 @@ export default function ProjectTab({
 
   const filterJson = useMemo(() => {
     setCurrentPage(0)
-    // return projectData.filter((item) => {
-    //   const searchCondition =
-    //     search !== ''
-    //       ? typeof item.name === 'string' &&
-    //         item.name.toLowerCase().includes(search.toLowerCase())
-    //       : true
+    return projectData.filter((item) => {
+      const searchCondition =
+        search !== ''
+          ? typeof item.name === 'string' &&
+            item.name.toLowerCase().includes(search.toLowerCase())
+          : true
 
-    //   let categoryCondition: boolean
-    //   if (checkBox.category.length !== 0) {
-    //     categoryCondition = checkBox.category.some(
-    //       (elem) => elem === item.category
-    //     )
-    //   } else {
-    //     categoryCondition = true
-    //   }
+      let categoryCondition: boolean
+      if (checkBox.category.length !== 0) {
+        categoryCondition = checkBox.category.some(
+          (elem) => elem === item.category
+        )
+      } else {
+        categoryCondition = true
+      }
 
-    //   let eligibilityCondition: boolean = false
-    //   if (checkBox.eligibility === 'All') {
-    //     eligibilityCondition = true
-    //   } else if (checkBox.eligibility === 'Eligible') {
-    //     eligibilityCondition = item.isEligibleFinal
-    //   } else if (checkBox.eligibility === 'Rejected') {
-    //     eligibilityCondition = !item.isEligibleFinal
-    //   }
-
-    //   let isOpenSourceCondition: boolean = false
-    //   if (checkBox.isOpenSource === 'All') {
-    //     isOpenSourceCondition = true
-    //   } else if (checkBox.isOpenSource === 'Open Source') {
-    //     //only select true project
-    //     isOpenSourceCondition = item.isOpenSource
-    //   } else if (checkBox.isOpenSource === 'Closed Source') {
-    //     //only select false project
-    //     isOpenSourceCondition = !(item.isOpenSource ?? false)
-    //   }
-
-    //   return (
-    //     searchCondition &&
-    //     categoryCondition &&
-    //     eligibilityCondition &&
-    //     isOpenSourceCondition
-    //   )
-    // })
-    return projectData
+      return searchCondition && categoryCondition
+    })
+    // return projectData
   }, [projectData, search, checkBox])
 
   const pageCount = useMemo(() => {
@@ -169,82 +122,74 @@ export default function ProjectTab({
   const currentItems = useMemo(() => {
     let sortedItems = filterJson
 
-    // if (state.sort === 'Highest Rewards') {
-    //   sortedItems.sort((a, b) => {
-    //     return (b.reward ?? 0) - (a.reward ?? 0)
-    //   })
-    // } else if (state.sort === 'Lowest Rewards') {
-    //   sortedItems.sort((a, b) => {
-    //     return (a.reward ?? 0) - (b.reward ?? 0)
-    //   })
-    // } else if (state.sort === 'Project Name (A-Z)') {
-    //   sortedItems.sort((a, b) => {
-    //     const nameA = (a.name ?? '').toLowerCase()
-    //     const nameB = (b.name ?? '').toLowerCase()
+    if (state.sort === 'Project Name (A-Z)') {
+      sortedItems.sort((a, b) => {
+        const nameA = (a.name ?? '').toLowerCase()
+        const nameB = (b.name ?? '').toLowerCase()
 
-    //     for (let i = 0; i < Math.min(nameA.length, nameB.length); i++) {
-    //       const charCodeA = nameA.charCodeAt(i)
-    //       const charCodeB = nameB.charCodeAt(i)
+        for (let i = 0; i < Math.min(nameA.length, nameB.length); i++) {
+          const charCodeA = nameA.charCodeAt(i)
+          const charCodeB = nameB.charCodeAt(i)
 
-    //       // Check if both characters are letters
-    //       const isALetter = isLetter(nameA[i])
-    //       const isBLetter = isLetter(nameB[i])
+          // Check if both characters are letters
+          const isALetter = isLetter(nameA[i])
+          const isBLetter = isLetter(nameB[i])
 
-    //       if (isALetter && isBLetter) {
-    //         // Both characters are letters, compare them normally
-    //         if (charCodeA !== charCodeB) {
-    //           return charCodeA - charCodeB
-    //         }
-    //       } else if (isALetter) {
-    //         // Character in nameA is a letter, prioritize it
-    //         return -1
-    //       } else if (isBLetter) {
-    //         // Character in nameB is a letter, prioritize it
-    //         return 1
-    //       }
-    //     }
+          if (isALetter && isBLetter) {
+            // Both characters are letters, compare them normally
+            if (charCodeA !== charCodeB) {
+              return charCodeA - charCodeB
+            }
+          } else if (isALetter) {
+            // Character in nameA is a letter, prioritize it
+            return -1
+          } else if (isBLetter) {
+            // Character in nameB is a letter, prioritize it
+            return 1
+          }
+        }
 
-    //     // If both names are equal so far, the shorter name should come first
-    //     return nameA.length - nameB.length
-    //   })
-    // } else if (state.sort === 'Project Name (Z-A)') {
-    //   sortedItems.sort((a, b) => {
-    //     const nameA = (a.name ?? '').toLowerCase()
-    //     const nameB = (b.name ?? '').toLowerCase()
+        // If both names are equal so far, the shorter name should come first
+        return nameA.length - nameB.length
+      })
+    } else if (state.sort === 'Project Name (Z-A)') {
+      sortedItems.sort((a, b) => {
+        const nameA = (a.name ?? '').toLowerCase()
+        const nameB = (b.name ?? '').toLowerCase()
 
-    //     for (let i = 0; i < Math.min(nameA.length, nameB.length); i++) {
-    //       const charCodeA = nameA.charCodeAt(i)
-    //       const charCodeB = nameB.charCodeAt(i)
+        for (let i = 0; i < Math.min(nameA.length, nameB.length); i++) {
+          const charCodeA = nameA.charCodeAt(i)
+          const charCodeB = nameB.charCodeAt(i)
 
-    //       // Check if both characters are letters
-    //       const isALetter = isLetter(nameA[i])
-    //       const isBLetter = isLetter(nameB[i])
+          // Check if both characters are letters
+          const isALetter = isLetter(nameA[i])
+          const isBLetter = isLetter(nameB[i])
 
-    //       if (!isALetter && isBLetter) {
-    //         // Special character in nameA, prioritize it
-    //         return -1
-    //       } else if (isALetter && !isBLetter) {
-    //         // Special character in nameB, prioritize it
-    //         return 1
-    //       } else if (isALetter && isBLetter) {
-    //         // Both characters are letters
-    //         if (charCodeA !== charCodeB) {
-    //           // Compare letters in descending order (Z-A)
-    //           return charCodeB - charCodeA
-    //         }
-    //       }
-    //     }
+          if (!isALetter && isBLetter) {
+            // Special character in nameA, prioritize it
+            return -1
+          } else if (isALetter && !isBLetter) {
+            // Special character in nameB, prioritize it
+            return 1
+          } else if (isALetter && isBLetter) {
+            // Both characters are letters
+            if (charCodeA !== charCodeB) {
+              // Compare letters in descending order (Z-A)
+              return charCodeB - charCodeA
+            }
+          }
+        }
 
-    //     // If both names are equal so far, the shorter name should come first
-    //     return nameB.length - nameA.length // Sort by length if everything else is equal
-    //   })
-    // }
+        // If both names are equal so far, the shorter name should come first
+        return nameB.length - nameA.length // Sort by length if everything else is equal
+      })
+    }
 
     return sortedItems.slice(
       currentPage * itemsPerPage,
       (currentPage + 1) * itemsPerPage
     )
-  }, [currentPage, filterJson])
+  }, [currentPage, filterJson, state.sort])
 
   const [loading, setLoading] = useState(true)
   const load = () => {
@@ -273,7 +218,7 @@ export default function ProjectTab({
         // - filter btn
         // - badge */}
 
-      {/* <InputAndFilterBtn
+      <InputAndFilterBtn
         state={state}
         checkBox={checkBox}
         search={search}
@@ -283,11 +228,11 @@ export default function ProjectTab({
         handleClearFilter={handleClearFilter}
         handleChangeCategory={handleChangeCategory}
         handleChangeSort={handleChangeSort}
-      /> */}
+      />
       <div className=" relative animate-slideup">
         {state.view === 'g' ? (
           <div className="mt-[2.5rem] animate-slideleft flex gap-6">
-            {/* {state.filter && (
+            {state.filter && (
               <CheckBoxFilter
                 checkBox={checkBox}
                 handleClearFilter={handleClearFilter}
@@ -296,11 +241,8 @@ export default function ProjectTab({
                 setMinVal={setMinVal}
                 maxVal={maxVal}
                 setMaxVal={setMaxVal}
-                handleChangeBallot={handleChangeBallot}
-                handleChangeEligibility={handleChangeEligibility}
-                handleChangeIsOpenSource={handleChangeIsOpenSource}
               />
-            )} */}
+            )}
 
             <div
               className={`
@@ -316,14 +258,13 @@ export default function ProjectTab({
                 currentItems.map((item, i) => (
                   <React.Fragment key={i}>
                     <DynamicCard
-                      icon={item.profileAvatarUrl}
-                      banner={item.projectCoverImageUrl}
-                      category={item.category}
-                      description={item.description}
+                      icon={item.projectAvatarUrl ?? ''}
+                      banner={item.projectCoverImageUrl ?? ''}
+                      category={item.category ?? ''}
+                      description={item.description ?? ''}
                       title={item.name}
                       teamSize={item.team.length}
-                      // opRecieve={0}
-                      round="4"
+                      round="5"
                       isEligible={true}
                       reward={0}
                       // votes={0}
@@ -350,9 +291,6 @@ export default function ProjectTab({
                   setMinVal={setMinVal}
                   maxVal={maxVal}
                   setMaxVal={setMaxVal}
-                  handleChangeBallot={handleChangeBallot}
-                  handleChangeEligibility={handleChangeEligibility}
-                  handleChangeIsOpenSource={handleChangeIsOpenSource}
                 />
               </div>
             )}
@@ -363,8 +301,8 @@ export default function ProjectTab({
               {currentItems.map((item, i) => (
                 <React.Fragment key={i}>
                   <DynamicCard
-                    category={item.category}
-                    description={item.description}
+                    category={item.category ?? ''}
+                    description={item.description ?? ''}
                     title={item.name}
                     // opRecieve={0}
                     round="4"
@@ -420,7 +358,6 @@ export default function ProjectTab({
           minVal={minVal}
           setMaxVal={setMaxVal}
           setMinVal={setMinVal}
-          handleChangeBallot={handleChangeBallot}
           handleClearFilter={handleClearFilter}
         />
       </div>

@@ -39,7 +39,7 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                   <th className="p-5 flex gap-y-2 gap-x-6">
                     <div className="relative min-w-16 min-h-16 max-w-16 max-h-16 self-center">
                       <Image
-                        src={item.profileAvatarUrl ?? '/random/avatar.png'}
+                        src={item.projectAvatarUrl ?? '/random/avatar.png'}
                         alt="avatar image"
                         className="rounded-lg"
                         fill
@@ -62,7 +62,7 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                   </th>
                   <td className="py-4 px-3 ">
                     <div className="flex flex-col flex-wrap gap-2 ">
-                      {handleCategoryRound4(item.category)}
+                      {handleCategoryRound4(item.category as string)}
                     </div>
                   </td>
                   {/* <td className="py-4 px-3">

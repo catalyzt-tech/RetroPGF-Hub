@@ -32,6 +32,65 @@ export function handleOpenSource(isOpenSource: boolean) {
   }
 }
 
+export function handleCategoryRound5(category: string) {
+  if (category === 'CeFi') {
+    return (
+      <div className="px-2 py-1 bg-yellow-50 rounded-full w-fit">
+        <p className="text-yellow-700 text-xs font-medium line-clamp-1 break-words">
+          {category}
+        </p>
+      </div>
+    )
+  } else if (category === 'DeFi') {
+    return (
+      <div className="px-2 py-1 bg-orange-50 rounded-full w-fit">
+        <p className="text-orange-600 text-xs font-medium line-clamp-1 break-words">
+          {category}
+        </p>
+      </div>
+    )
+  } else if (category === 'NFT') {
+    return (
+      <div className="px-2 py-1 bg-sky-50 rounded-full w-fit">
+        <p className="text-sky-600 text-xs font-medium line-clamp-1 break-words">
+          {category}
+        </p>
+      </div>
+    )
+  } else if (category === 'Social') {
+    return (
+      <div className="px-2 py-1 bg-emerald-50 rounded-full w-fit">
+        <p className="text-emerald-600 text-xs font-medium line-clamp-1 break-words">
+          {category}
+        </p>
+      </div>
+    )
+  } else if (category === 'Utility') {
+    return (
+      <div className="px-2 py-1 bg-pink-50 rounded-full w-fit">
+        <p className="text-pink-600 text-xs font-medium line-clamp-1 break-words">
+          {category}
+        </p>
+      </div>
+    )
+  } else if (category === 'Cross Chain') {
+    return (
+      <div className="px-2 py-1 bg-lime-50 rounded-full w-fit">
+        <p className="text-lime-600 text-xs font-medium line-clamp-1 break-words">
+          {category}
+        </p>
+      </div>
+    )
+  } else if (category === 'Governance') {
+    return (
+      <div className="px-2 py-1 bg-indigo-50 rounded-full w-fit">
+        <p className="text-indigo-600 text-xs font-medium line-clamp-1 break-words">
+          {category}
+        </p>
+      </div>
+    )
+  }
+}
 export function handleCategoryRound4(category: string) {
   if (category === 'CeFi') {
     return (
