@@ -76,7 +76,7 @@ export default function Cpage({ projectData, badgeholderData }: iCpage) {
               leaveTo="transform scale-95 opacity-0"
             >
               <div className="font-rubik">
-                <HistorySection round={4} />
+                <HistorySection round={5} />
               </div>
             </Transition>
           </Tab.Panel>
@@ -91,21 +91,7 @@ export default function Cpage({ projectData, badgeholderData }: iCpage) {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <StatisticSection data={projectData} round={4} />
-            </Transition>
-          </Tab.Panel>
-          <Tab.Panel className="outline-none min-h-[70vh]">
-            <Transition
-              appear
-              show={selectedIndex === 3}
-              enter="transition duration-200 ease-out"
-              enterFrom="transform scale-95 opacity-0"
-              enterTo="transform scale-100 opacity-100"
-              leave="transition duration-200 ease-out"
-              leaveFrom="transform scale-100 opacity-100"
-              leaveTo="transform scale-95 opacity-0"
-            >
-              <BadgeholderSection badgeholderData={badgeholderData} />
+              <StatisticSection data={projectData} round={5} />
             </Transition>
           </Tab.Panel>
         </Tab.Panels>

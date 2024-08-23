@@ -19,29 +19,28 @@ interface iDynamicCard {
   category?: string
   teamSize?: number
   isEligible?: boolean
-  isOpenSource?: boolean
+
   reward?: number
 }
 export default function DynamicCard({
   banner,
   icon,
-  round = '4',
+  round = '5',
   title = '',
   description = '',
   category = '',
   teamSize = 0,
-  isEligible,
-  isOpenSource = false,
+  isEligible = false,
   reward = 0,
 }: iDynamicCard) {
   const categoryElement = useMemo(
     () => handleCategoryRound4(category),
     [category]
   )
-  const openSourceElement = useMemo(
-    () => handleOpenSource(isOpenSource),
-    [isOpenSource]
-  )
+  // const openSourceElement = useMemo(
+  //   () => handleOpenSource(isOpenSource),
+  //   [isOpenSource]
+  // )
 
   return (
     <div
@@ -100,7 +99,7 @@ export default function DynamicCard({
           </div>
           <div className="flex flex-wrap gap-2">
             {categoryElement}
-            {openSourceElement}
+            {/* {openSourceElement} */}
           </div>
           <div className="flex-grow"></div>
           <div className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group">

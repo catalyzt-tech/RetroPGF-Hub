@@ -5,7 +5,7 @@ import { CheckBoxStateType, ExploreRoundState } from '../ExploreRoundType'
 import { category, itemsPerPage, max, min, isOpenSource } from '../Text'
 import InputAndFilterBtn from './component/InputAndFilterBtn'
 import CheckBoxFilter from './component/CheckBoxFilter'
-import { iRetroPGF4Project, RetroPGF5Project } from '../../type'
+import { RetroPGF5Project } from '../../type'
 import { Pagination } from 'react-headless-pagination'
 import DynamicCard from '../DynamicCard'
 import ListCard from './component/ListCard'
@@ -240,8 +240,11 @@ export default function ProjectTab({
     //   })
     // }
 
-    return sortedItems
-  }, [currentPage, filterJson, state.sort])
+    return sortedItems.slice(
+      currentPage * itemsPerPage,
+      (currentPage + 1) * itemsPerPage
+    )
+  }, [currentPage, filterJson])
 
   const [loading, setLoading] = useState(true)
   const load = () => {
@@ -270,7 +273,7 @@ export default function ProjectTab({
         // - filter btn
         // - badge */}
 
-      <InputAndFilterBtn
+      {/* <InputAndFilterBtn
         state={state}
         checkBox={checkBox}
         search={search}
@@ -280,11 +283,11 @@ export default function ProjectTab({
         handleClearFilter={handleClearFilter}
         handleChangeCategory={handleChangeCategory}
         handleChangeSort={handleChangeSort}
-      />
+      /> */}
       <div className=" relative animate-slideup">
         {state.view === 'g' ? (
           <div className="mt-[2.5rem] animate-slideleft flex gap-6">
-            {state.filter && (
+            {/* {state.filter && (
               <CheckBoxFilter
                 checkBox={checkBox}
                 handleClearFilter={handleClearFilter}
@@ -297,7 +300,7 @@ export default function ProjectTab({
                 handleChangeEligibility={handleChangeEligibility}
                 handleChangeIsOpenSource={handleChangeIsOpenSource}
               />
-            )}
+            )} */}
 
             <div
               className={`
@@ -313,17 +316,16 @@ export default function ProjectTab({
                 currentItems.map((item, i) => (
                   <React.Fragment key={i}>
                     <DynamicCard
-                      icon={item.projectAvatarUrl}
-                      banner={item.proejctCoverImageUrl}
+                      icon={item.profileAvatarUrl}
+                      banner={item.projectCoverImageUrl}
                       category={item.category}
                       description={item.description}
                       title={item.name}
                       teamSize={item.team.length}
                       // opRecieve={0}
                       round="4"
-                      isEligible={item.isEligibleFinal}
-                      isOpenSource={item.isOpenSource}
-                      reward={item.reward ?? 0}
+                      isEligible={false}
+                      reward={0}
                       // votes={0}
                       // rank={0}
                     />
