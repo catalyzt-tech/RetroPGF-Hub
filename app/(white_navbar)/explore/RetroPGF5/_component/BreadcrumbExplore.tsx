@@ -1,7 +1,7 @@
 import ChevronRight from '@carbon/icons-react/lib/ChevronRight'
 import Link from 'next/link'
 
-export default function BreadCumpExplore({
+export default function BreadcrumbExplore({
   secondText,
 }: {
   secondText: string
@@ -12,7 +12,8 @@ export default function BreadCumpExplore({
         href={'/explore'}
         className="text-xs font-normal text-gray-800 hover:text-red-500 hover:underline"
       >
-        ${' Explore '}
+        {' '}
+        Explore{' '}
       </Link>
       <ChevronRight />
       <p className="text-xs font-normal text-gray-500"> {secondText} </p>
