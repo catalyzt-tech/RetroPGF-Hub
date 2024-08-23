@@ -324,7 +324,7 @@ export default function ProjectTab({
                       teamSize={item.team.length}
                       // opRecieve={0}
                       round="4"
-                      isEligible={false}
+                      isEligible={true}
                       reward={0}
                       // votes={0}
                       // rank={0}

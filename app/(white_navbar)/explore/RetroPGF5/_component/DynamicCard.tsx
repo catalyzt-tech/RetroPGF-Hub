@@ -102,9 +102,9 @@ export default function DynamicCard({
             {/* {openSourceElement} */}
           </div>
           <div className="flex-grow"></div>
-          <div className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group">
-            {/* <Trophy size={20} /> */}
-            {/* <Star size={20} /> */}
+
+          {/* This is for result announced */}
+          {/* <div className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group">
             <div className="flex flex-row justify-center items-center gap-x-2 group-hover:scale-105 transition-all ease-linear">
               <p className="text-sm font-semibold text-gray-800">
                 {numberWithCommas(reward || 0)}
@@ -113,7 +113,7 @@ export default function DynamicCard({
                 <Image src={OpTokenPath} alt="OpToken" width={18} height={18} />
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
