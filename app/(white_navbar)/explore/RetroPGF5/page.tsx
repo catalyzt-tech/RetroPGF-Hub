@@ -5,16 +5,6 @@ import fs from 'fs'
 import path from 'path'
 import { RetroPGF5Project } from './type'
 
-export async function getJsonRound5(): Promise<RetroPGF5Project[]> {
-  const directoryPath = path.join(
-    process.cwd(),
-    'public/static/rpgf5/dummy_rpgf5.json'
-  )
-  const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
-  const jsonData: RetroPGF5Project[] = JSON.parse(fileContents)
-  return jsonData
-}
-
 async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   const directoryPath = path.join(
     process.cwd(),
@@ -26,7 +16,6 @@ async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
 }
 
 export default async function page() {
-  const projectData = await getJsonRound5()
   const badgeholderData = await getJsonBadgeholderMetric()
 
   return (
@@ -46,7 +35,7 @@ export default async function page() {
           </div>
         </div>
         <div className="flex flex-col gap-6 mx-2 sm:mx-4 md:mx-6 lg:mx-20">
-          <Cpage projectData={projectData} badgeholderData={badgeholderData} />
+          <Cpage badgeholderData={badgeholderData} />
         </div>
       </div>
     </>

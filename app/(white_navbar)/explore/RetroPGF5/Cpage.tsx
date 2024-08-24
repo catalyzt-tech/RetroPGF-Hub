@@ -20,14 +20,16 @@ interface iCpage {
 }
 
 export const getRealTimeRetroPGF5 = async (): Promise<RetroPGF5Project[]> => {
-  const data: RetroPGF5Project[] = await axios
-    .get(
+  try {
+    const response = await axios.get<RetroPGF5Project[]>(
       'https://worker.catalyzt.tech/api/retropgf5-live-data/retropgf5-live-data.json'
     )
-    .then((res) => res.data)
-
-  console.log(data)
-  return data
+    const data = response.data
+    return data
+  } catch (error) {
+    console.error('Error fetching data:', error)
+    throw error
+  }
 }
 export default function Cpage({ badgeholderData }: iCpage) {
   const [projectData, setProjectData] = useState<RetroPGF5Project[]>([])

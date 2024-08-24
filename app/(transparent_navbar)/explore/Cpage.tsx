@@ -46,15 +46,16 @@ iCpage) {
     Map<string, number>
   >(new Map())
 
-  useEffect(() => {
-    const data = shuffle(getRealTimeRetroPGF5())
+  async function fetchData() {
+    const dataRaw = await getRealTimeRetroPGF5()
+    const data = shuffle(dataRaw)
+
     const filterUniqueData = data.filter((item, index, self) => {
       return index === self.findIndex((x) => x.name === item.name)
     })
     console.log(filterUniqueData)
 
     setRound5(() => filterUniqueData)
-
     const newCateRound5Counter = new Map<string, number>()
 
     data.forEach((project: RetroPGF5Project) => {
@@ -71,6 +72,10 @@ iCpage) {
       }
       setCateRound5Counter(newCateRound5Counter)
     })
+  }
+
+  useEffect(() => {
+    fetchData()
   }, [])
 
   const round5Data = useMemo(() => {
