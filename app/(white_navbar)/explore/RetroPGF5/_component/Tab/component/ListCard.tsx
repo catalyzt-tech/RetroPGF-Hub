@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { RetroPGF5Project } from '../../../type'
-import { handleCategoryRound4 } from '@/app/lib/InitialMount'
+import { handleCategoryRound5 } from '@/app/lib/InitialMount'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 import List from '@carbon/icons-react/lib/List'
@@ -26,11 +26,11 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                     Categories
                   </h6>
                 </th>
-                <th scope="col" className="py-4 px-3 w-[20%] ">
+                {/* <th scope="col" className="py-4 px-3 w-[20%] ">
                   <h6 className="text-base/semibold text-gray-700">
                     OP Rewards
                   </h6>
-                </th>
+                </th> */}
               </tr>
             </thead>
             <tbody>
@@ -39,7 +39,7 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                   <th className="p-5 flex gap-y-2 gap-x-6">
                     <div className="relative min-w-16 min-h-16 max-w-16 max-h-16 self-center">
                       <Image
-                        src={item.projectAvatarUrl ?? '/random/avatar.png'}
+                        src={item.projectAvatarUrl ?? '/random/OP-Logo.png'}
                         alt="avatar image"
                         className="rounded-lg"
                         fill
@@ -47,7 +47,7 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                     </div>
                     <div className="flex flex-col">
                       <Link
-                        href={`/explore/RetroPGF4/${item.name}`}
+                        href={`/explore/RetroPGF5/${item.name}`}
                         className="flex gap-1 pb-2  items-center cursor-pointer hover:underline w-fit"
                       >
                         <h6 className="text-sm font-bold text-gray-900">
@@ -62,7 +62,7 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                   </th>
                   <td className="py-4 px-3 ">
                     <div className="flex flex-col flex-wrap gap-2 ">
-                      {handleCategoryRound4(item.category as string)}
+                      {handleCategoryRound5(item.category as string)}
                     </div>
                   </td>
                   {/* <td className="py-4 px-3">
