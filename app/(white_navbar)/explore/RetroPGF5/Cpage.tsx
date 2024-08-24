@@ -1,24 +1,57 @@
 'use client'
 
-import { classNames } from '@/app/lib/utils'
+import { classNames, shuffle } from '@/app/lib/utils'
 import { Tab, Transition } from '@headlessui/react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { tab } from './_component/Text'
 import ProjectTab from './_component/Tab/ProjectTab'
 import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import HistorySection from '@/app/component/HistorySection'
 import StatisticSection from '@/app/component/StatisticSection'
-import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
-
-import { RetroPGF5Project } from './type'
+// import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
+import { RetroPGF5Project, RetroPGF5Response } from './type'
+import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
 interface iCpage {
-  projectData: RetroPGF5Project[]
+  // projectData: RetroPGF5Project[]
   badgeholderData: BadgeholderMetrics[]
 }
 
-export default function Cpage({ projectData, badgeholderData }: iCpage) {
+export default function Cpage({ badgeholderData }: iCpage) {
+  const [projectData, setProjectData] = useState<RetroPGF5Project[]>([])
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
+
+  async function fetchData() {
+    const dataRaw = await getRealTimeRetroPGF5()
+    const data = dataRaw.data
+
+    const filterUniqueData = data.filter((item, index, self) => {
+      return index === self.findIndex((x) => x.name === item.name)
+    })
+    console.log(filterUniqueData)
+
+    setProjectData(() => filterUniqueData)
+    const newCateRound5Counter = new Map<string, number>()
+
+    data.forEach((project: RetroPGF5Project) => {
+      const cateRound5 = project.category
+      if (cateRound5) {
+        if (newCateRound5Counter.has(cateRound5)) {
+          newCateRound5Counter.set(
+            cateRound5,
+            newCateRound5Counter.get(cateRound5)! + 1
+          )
+        } else {
+          newCateRound5Counter.set(cateRound5, 1)
+        }
+      }
+    })
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
   function handleChangeSelectedIndex(index: number) {
     setSelectedIndex(index)
   }

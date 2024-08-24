@@ -1,3 +1,9 @@
+export interface RetroPGF5Response {
+  msg:  string;
+  type: string;
+  data: RetroPGF5Project[];
+}
+
 export interface RetroPGF5SocialLinks {
   website: string[]
   farcaster: string[]
