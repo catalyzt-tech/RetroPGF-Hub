@@ -28,10 +28,18 @@ export default function CardRound5({ title, round5, cateRound5 }: iCardRound5) {
   return (
     <div className="flex flex-col gap-4 w-full">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
+        <h2 className="text-2xl flex items-center justify-center font-semibold text-gray-900">
+          <div>{title} </div>
+            <div className="ml-4 flex items-center text-[0.75rem] bg-red-50 font-medium text-red-700 px-2.5 py-3 h-6 rounded-full">
+              {' '}
+                <div className="animate-pulse w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                Live
+            </div>
+        </h2>
+          
         <Link
           href={{
-            pathname: `/explore/RetroPGF4`,
+            pathname: `/explore/RetroPGF5`,
           }}
           className="md:hidden flex gap-2"
         >
