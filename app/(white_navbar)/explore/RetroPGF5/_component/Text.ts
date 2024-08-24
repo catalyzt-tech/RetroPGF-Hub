@@ -14,17 +14,11 @@ export const tab = [
 ]
 
 export const sorting = [
-  {
-    name: 'Highest Rewards',
-  },
-  {
-    name: 'Lowest Rewards',
-  },
   // {
-  //   name: 'Most in ballots',
+  //   name: 'Highest Rewards',
   // },
   // {
-  //   name: 'Least in ballots',
+  //   name: 'Lowest Rewards',
   // },
   {
     name: 'Project Name (A-Z)',

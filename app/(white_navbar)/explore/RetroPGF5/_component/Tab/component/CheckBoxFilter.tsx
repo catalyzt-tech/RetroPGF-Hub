@@ -1,23 +1,16 @@
 'use client'
 import { CheckBoxStateType } from '../../ExploreRoundType'
 import CategoryDisclosure from '../Filter/CategoryDisclosure'
-import MultiSliderDisclosure from '../Filter/MultiSliderDisclosure'
-import InBallotDisclosure from '../Filter/InBallotDisclosure'
-import { Disclosure, Transition } from '@headlessui/react'
 import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
-import EligibilityDisclosure from '../Filter/EligibilityDisclosure'
-import IsOpenSourceDisclosure from '../Filter/IsOpenSourceDisclosure'
+
 interface CheckBoxFilterProps {
   checkBox: CheckBoxStateType
   handleChangeCategory: (value: string) => void
-  handleChangeBallot: (ballot: string) => void
   handleClearFilter: () => void
   minVal: number
   maxVal: number
   setMinVal: React.Dispatch<React.SetStateAction<number>>
   setMaxVal: React.Dispatch<React.SetStateAction<number>>
-  handleChangeEligibility: (eligibility: string) => void
-  handleChangeIsOpenSource: (isOpenSource: string) => void
 }
 export default function CheckBoxFilter({
   checkBox,
@@ -27,9 +20,6 @@ export default function CheckBoxFilter({
   setMinVal,
   maxVal,
   setMaxVal,
-  handleChangeBallot,
-  handleChangeEligibility,
-  handleChangeIsOpenSource,
 }: CheckBoxFilterProps) {
   return (
     <>
@@ -48,14 +38,14 @@ export default function CheckBoxFilter({
           checkBox={checkBox}
           handleChangeCategory={handleChangeCategory}
         />
-        <EligibilityDisclosure
+        {/* <EligibilityDisclosure
           checkBox={checkBox}
           handleChangeEligibility={handleChangeEligibility}
         />
         <IsOpenSourceDisclosure
           checkBox={checkBox}
           handleChangeIsOpenSource={handleChangeIsOpenSource}
-        />
+        /> */}
       </div>
     </>
   )
