@@ -42,8 +42,8 @@ export async function getAllRound(limit: number): Promise<{
   round2: RetroRound2[]
   round3: RetroRound3[]
   round4: iRetroPGF4Project[]
-  round5: RetroPGF5Project[]
-  cateRound5: Map<string, number>
+  // round5: RetroPGF5Project[]
+  // cateRound5: Map<string, number>
   cateRound4: Map<string, number>
   cateRound3: Map<string, number>
   cateRound2: Map<string, number>
@@ -55,11 +55,11 @@ export async function getAllRound(limit: number): Promise<{
   const round2 = await getJsonRound2()
   const round3 = await getJsonRound3()
   const round4 = await getJsonRound4()
-  const round5 = await getJsonRound5()
+  // const round5 = await getJsonRound5()
   const cateRound2Counter = new Map<string, number>()
   const cateRound3Counter = new Map<string, number>()
   const cateRound4Counter = new Map<string, number>()
-  const cateRound5Counter = new Map<string, number>()
+  // const cateRound5Counter = new Map<string, number>()
 
   round2.forEach((project: RetroRound2) => {
     const cateRound2 = project.Category
@@ -103,33 +103,33 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
-  round5.forEach((project: RetroPGF5Project) => {
-    const cateRound5 = project.category
-    if (cateRound5) {
-      if (cateRound5Counter.has(cateRound5)) {
-        cateRound5Counter.set(
-          cateRound5,
-          cateRound5Counter.get(cateRound5)! + 1
-        )
-      } else {
-        cateRound5Counter.set(cateRound5, 1)
-      }
-    }
-  })
+  // round5.forEach((project: RetroPGF5Project) => {
+  //   const cateRound5 = project.category
+  //   if (cateRound5) {
+  //     if (cateRound5Counter.has(cateRound5)) {
+  //       cateRound5Counter.set(
+  //         cateRound5,
+  //         cateRound5Counter.get(cateRound5)! + 1
+  //       )
+  //     } else {
+  //       cateRound5Counter.set(cateRound5, 1)
+  //     }
+  //   }
+  // })
 
   const shuffledRound1 = shuffle([...round1])
   const shuffledRound2 = shuffle([...round2])
   const shuffledRound3 = shuffle([...round3])
   const shuffledRound4 = shuffle([...round4])
-  const shuffledRound5 = shuffle([...round5])
+  // const shuffledRound5 = shuffle([...round5])
 
   return {
     round1: shuffledRound1.slice(0, limit),
     round2: shuffledRound2.slice(0, limit),
     round3: shuffledRound3.slice(0, limit),
     round4: shuffledRound4.slice(0, limit),
-    round5: shuffledRound5.slice(0, limit),
-    cateRound5: cateRound5Counter,
+    // round5: shuffledRound5.slice(0, limit),
+    // cateRound5: cateRound5Counter,
     cateRound4: cateRound4Counter,
     cateRound3: cateRound3Counter,
     cateRound2: cateRound2Counter,
@@ -137,29 +137,18 @@ export async function getAllRound(limit: number): Promise<{
 }
 
 export default async function page({}: {}) {
-  const {
-    round1,
-    round2,
-    round3,
-    round4,
-    round5,
-    cateRound2,
-    cateRound3,
-    cateRound4,
-    cateRound5,
-  } = await getAllRound(20)
+  const { round1, round2, round3, round4, cateRound2, cateRound3, cateRound4 } =
+    await getAllRound(20)
 
   return (
     <Cpage
       cateRound2={cateRound2}
       cateRound3={cateRound3}
       cateRound4={cateRound4}
-      cateRound5={cateRound5}
       round1={round1}
       round2={round2}
       round3={round3}
       round4={round4}
-      round5={round5}
     />
   )
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import CardRound1 from './_component/CardRound1'
 import CardRound2 from './_component/CardRound2'
 import CardRound3 from './_component/CardRound3'
@@ -14,30 +14,64 @@ import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroT
 import { Car } from '@carbon/icons-react'
 import { RetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/type'
 import CardRound5 from './_component/CardRound5'
+import { getRealTimeRetroPGF5 } from '@/app/(white_navbar)/explore/RetroPGF5/Cpage'
+import { category } from '../../(white_navbar)/explore/RetroPGF2/_component/Text'
+import { shuffle } from '@/app/lib/utils'
 
 interface iCpage {
   round1: RetroRound1[]
   round2: RetroRound2[]
   round3: RetroRound3[]
   round4: iRetroPGF4Project[]
-  round5: RetroPGF5Project[]
+  // round5: RetroPGF5Project[]
   cateRound2: Map<string, number>
   cateRound3: Map<string, number>
   cateRound4: Map<string, number>
-  cateRound5: Map<string, number>
+  // cateRound5: Map<string, number>
 }
 export default function Cpage({
   round1,
   round2,
   round3,
   round4,
-  round5,
+  // round5,
   cateRound2,
   cateRound3,
   cateRound4,
-  cateRound5,
-}: iCpage) {
+}: // cateRound5,
+iCpage) {
   const [search, setSearch] = useState<string>('')
+  const [round5, setRound5] = useState<RetroPGF5Project[]>([])
+  const [cateRound5Counter, setCateRound5Counter] = useState<
+    Map<string, number>
+  >(new Map())
+
+  useEffect(() => {
+    const data = shuffle(getRealTimeRetroPGF5())
+    const filterUniqueData = data.filter((item, index, self) => {
+      return index === self.findIndex((x) => x.name === item.name)
+    })
+    console.log(filterUniqueData)
+
+    setRound5(() => filterUniqueData)
+
+    const newCateRound5Counter = new Map<string, number>()
+
+    data.forEach((project: RetroPGF5Project) => {
+      const cateRound5 = project.category
+      if (cateRound5) {
+        if (newCateRound5Counter.has(cateRound5)) {
+          newCateRound5Counter.set(
+            cateRound5,
+            newCateRound5Counter.get(cateRound5)! + 1
+          )
+        } else {
+          newCateRound5Counter.set(cateRound5, 1)
+        }
+      }
+      setCateRound5Counter(newCateRound5Counter)
+    })
+  }, [])
 
   const round5Data = useMemo(() => {
     return round5.filter((item) => {
@@ -62,7 +96,6 @@ export default function Cpage({
   }, [round4, search])
 
   const round3Data = useMemo(() => {
-    // console.log(round3.length)
     return round3.filter((item) => {
       const searchCondition =
         search !== ''
@@ -122,7 +155,7 @@ export default function Cpage({
         <CardRound5
           title="RetroPGF 5"
           round5={round5Data}
-          cateRound5={cateRound5}
+          cateRound5={cateRound5Counter}
         />
         <CardRound4
           title="RetroPGF 4"
