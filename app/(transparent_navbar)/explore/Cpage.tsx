@@ -14,9 +14,9 @@ import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroT
 import { Car } from '@carbon/icons-react'
 import { RetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/type'
 import CardRound5 from './_component/CardRound5'
-import { getRealTimeRetroPGF5 } from '@/app/(white_navbar)/explore/RetroPGF5/Cpage'
 import { category } from '../../(white_navbar)/explore/RetroPGF2/_component/Text'
 import { shuffle } from '@/app/lib/utils'
+import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
 interface iCpage {
   round1: RetroRound1[]
@@ -48,7 +48,7 @@ iCpage) {
 
   async function fetchData() {
     const dataRaw = await getRealTimeRetroPGF5()
-    const data = shuffle(dataRaw)
+    const data = dataRaw.data
 
     const filterUniqueData = data.filter((item, index, self) => {
       return index === self.findIndex((x) => x.name === item.name)
@@ -70,8 +70,8 @@ iCpage) {
           newCateRound5Counter.set(cateRound5, 1)
         }
       }
-      setCateRound5Counter(newCateRound5Counter)
     })
+    setCateRound5Counter(()=>newCateRound5Counter)
   }
 
   useEffect(() => {

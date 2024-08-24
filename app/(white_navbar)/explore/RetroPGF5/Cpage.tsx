@@ -8,45 +8,48 @@ import ProjectTab from './_component/Tab/ProjectTab'
 import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import HistorySection from '@/app/component/HistorySection'
 import StatisticSection from '@/app/component/StatisticSection'
-import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
-
-import { RetroPGF5Project } from './type'
-import { makeRequest } from '@/app/hook/makeRequest'
-import axios from 'axios'
+// import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
+import { RetroPGF5Project, RetroPGF5Response } from './type'
+import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
 interface iCpage {
   // projectData: RetroPGF5Project[]
   badgeholderData: BadgeholderMetrics[]
 }
 
-export const getRealTimeRetroPGF5 = async (): Promise<RetroPGF5Project[]> => {
-  try {
-    const response = await axios.get<RetroPGF5Project[]>(
-      'https://worker.catalyzt.tech/api/retropgf5-live-data/retropgf5-live-data.json'
-    )
-    const data = response.data
-    return data
-  } catch (error) {
-    console.error('Error fetching data:', error)
-    throw error
-  }
-}
 export default function Cpage({ badgeholderData }: iCpage) {
   const [projectData, setProjectData] = useState<RetroPGF5Project[]>([])
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
-  useEffect(() => {
-    async function fetchData() {
-      const data = await getRealTimeRetroPGF5()
-      setProjectData(data)
-    }
-    fetchData()
 
-    const data = shuffle(projectData)
+  async function fetchData() {
+    const dataRaw = await getRealTimeRetroPGF5()
+    const data = dataRaw.data
+
     const filterUniqueData = data.filter((item, index, self) => {
       return index === self.findIndex((x) => x.name === item.name)
     })
+    console.log(filterUniqueData)
 
-    setProjectData(filterUniqueData)
+    setProjectData(() => filterUniqueData)
+    const newCateRound5Counter = new Map<string, number>()
+
+    data.forEach((project: RetroPGF5Project) => {
+      const cateRound5 = project.category
+      if (cateRound5) {
+        if (newCateRound5Counter.has(cateRound5)) {
+          newCateRound5Counter.set(
+            cateRound5,
+            newCateRound5Counter.get(cateRound5)! + 1
+          )
+        } else {
+          newCateRound5Counter.set(cateRound5, 1)
+        }
+      }
+    })
+  }
+
+  useEffect(() => {
+    fetchData()
   }, [])
 
   function handleChangeSelectedIndex(index: number) {
