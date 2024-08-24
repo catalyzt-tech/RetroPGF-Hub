@@ -5,7 +5,7 @@ import fs from 'fs'
 import path from 'path'
 import { RetroPGF5Project } from './type'
 
-async function getJsonRound5(): Promise<RetroPGF5Project[]> {
+export async function getJsonRound5(): Promise<RetroPGF5Project[]> {
   const directoryPath = path.join(
     process.cwd(),
     'public/static/rpgf5/dummy_rpgf5.json'

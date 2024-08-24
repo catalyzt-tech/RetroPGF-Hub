@@ -12,25 +12,54 @@ import { RetroRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/RetroType2'
 import { RetroRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/RetroType1'
 import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import { Car } from '@carbon/icons-react'
+import { RetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/type'
+import CardRound5 from './_component/CardRound5'
 
+interface iCpage {
+  round1: RetroRound1[]
+  round2: RetroRound2[]
+  round3: RetroRound3[]
+  round4: iRetroPGF4Project[]
+  round5: RetroPGF5Project[]
+  cateRound2: Map<string, number>
+  cateRound3: Map<string, number>
+  cateRound4: Map<string, number>
+  cateRound5: Map<string, number>
+}
 export default function Cpage({
   round1,
   round2,
   round3,
   round4,
+  round5,
   cateRound2,
   cateRound3,
   cateRound4,
-}: {
-  round4: iRetroPGF4Project[]
-  round3: RetroRound3[]
-  round2: RetroRound2[]
-  round1: RetroRound1[]
-  cateRound2: Map<string, number>
-  cateRound3: Map<string, number>
-  cateRound4: Map<string, number>
-}) {
+  cateRound5,
+}: iCpage) {
   const [search, setSearch] = useState<string>('')
+
+  const round5Data = useMemo(() => {
+    return round5.filter((item) => {
+      const searchCondition =
+        search !== ''
+          ? typeof item.name === 'string' &&
+            item.name.toLowerCase().includes(search.toLowerCase())
+          : true
+      return searchCondition
+    })
+  }, [round5, search])
+
+  const round4Data = useMemo(() => {
+    return round4.filter((item) => {
+      const searchCondition =
+        search !== ''
+          ? typeof item.name === 'string' &&
+            item.name.toLowerCase().includes(search.toLowerCase())
+          : true
+      return searchCondition
+    })
+  }, [round4, search])
 
   const round3Data = useMemo(() => {
     // console.log(round3.length)
@@ -89,9 +118,15 @@ export default function Cpage({
 
       <div className="lg:px-20 px-4 flex flex-col gap-12 mt-12">
         {/* <CategorySection /> */}
+
+        <CardRound5
+          title="RetroPGF 5"
+          round5={round5Data}
+          cateRound5={cateRound5}
+        />
         <CardRound4
           title="RetroPGF 4"
-          round4={round4}
+          round4={round4Data}
           cateRound4={cateRound4}
         />
         <CardRound3
