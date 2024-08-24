@@ -28,8 +28,13 @@ export default async function page() {
             </div>
 
             <div className="mt-4 inline-flex">
-              <h6 className="font-rubik text-3xl md:text-5xl font-semibold text-gray-800 mb-3">
-                Retro Funding 5
+              <h6 className="font-rubik text-3xl md:text-5xl font-semibold text-gray-800 mb-3 flex items-center justify-center">
+                <div>Retro Funding 5</div>
+                <div className="ml-4 flex items-center border border-red-500 text-xl bg-red-50 font-medium text-red-700 px-4 py-2 h-fit rounded-full">
+                  {' '}
+                  <div className="animate-pulse w-3.5 h-3.5 rounded-full bg-red-500 mr-2.5"></div>
+                  Live
+                </div>
               </h6>
             </div>
           </div>
