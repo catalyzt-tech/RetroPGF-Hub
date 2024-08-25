@@ -10,7 +10,7 @@ import { getJsonRound4 } from '@/app/(white_navbar)/explore/RetroPGF4/page'
 import Cpage from './Cpage'
 import { Metadata } from 'next'
 import { shuffle } from '@/app/lib/utils'
-import { RetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/type'
+import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
 
 export const metadata: Metadata = {
   title: 'Explore | RetroPGF Hub',
@@ -42,7 +42,7 @@ export async function getAllRound(limit: number): Promise<{
   round2: RetroRound2[]
   round3: RetroRound3[]
   round4: iRetroPGF4Project[]
-  // round5: RetroPGF5Project[]
+  // round5: iRetroPGF5Project[]
   // cateRound5: Map<string, number>
   cateRound4: Map<string, number>
   cateRound3: Map<string, number>
@@ -103,7 +103,7 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
-  // round5.forEach((project: RetroPGF5Project) => {
+  // round5.forEach((project: iRetroPGF5Project) => {
   //   const cateRound5 = project.category
   //   if (cateRound5) {
   //     if (cateRound5Counter.has(cateRound5)) {

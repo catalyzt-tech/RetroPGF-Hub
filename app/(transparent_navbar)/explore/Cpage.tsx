@@ -12,7 +12,7 @@ import { RetroRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/RetroType2'
 import { RetroRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/RetroType1'
 import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import { Car } from '@carbon/icons-react'
-import { RetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/type'
+import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
 import CardRound5 from './_component/CardRound5'
 import { category } from '../../(white_navbar)/explore/RetroPGF2/_component/Text'
 import { shuffle } from '@/app/lib/utils'
@@ -41,7 +41,7 @@ export default function Cpage({
 }: // cateRound5,
 iCpage) {
   const [search, setSearch] = useState<string>('')
-  const [round5, setRound5] = useState<RetroPGF5Project[]>([])
+  const [round5, setRound5] = useState<iRetroPGF5Project[]>([])
   const [cateRound5Counter, setCateRound5Counter] = useState<
     Map<string, number>
   >(new Map())
@@ -58,7 +58,7 @@ iCpage) {
     setRound5(() => filterUniqueData)
     const newCateRound5Counter = new Map<string, number>()
 
-    data.forEach((project: RetroPGF5Project) => {
+    data.forEach((project: iRetroPGF5Project) => {
       const cateRound5 = project.category
       if (cateRound5) {
         if (newCateRound5Counter.has(cateRound5)) {

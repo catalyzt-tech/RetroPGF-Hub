@@ -1,5 +1,5 @@
 import axios from "axios"
-import { RetroPGF5Response } from "../(white_navbar)/explore/RetroPGF5/type"
+import { RetroPGF5Response } from "../(white_navbar)/explore/RetroPGF5/RetroType5"
 
 export const getRealTimeRetroPGF5 = async (): Promise<RetroPGF5Response> => {
     try {

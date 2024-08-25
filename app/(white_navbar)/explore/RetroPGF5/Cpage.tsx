@@ -9,16 +9,16 @@ import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/Retro
 import HistorySection from '@/app/component/HistorySection'
 import StatisticSection from '@/app/component/StatisticSection'
 // import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
-import { RetroPGF5Project, RetroPGF5Response } from './type'
+import { iRetroPGF5Project, RetroPGF5Response } from './RetroType5'
 import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
 interface iCpage {
-  // projectData: RetroPGF5Project[]
+  // projectData: iRetroPGF5Project[]
   badgeholderData: BadgeholderMetrics[]
 }
 
 export default function Cpage({ badgeholderData }: iCpage) {
-  const [projectData, setProjectData] = useState<RetroPGF5Project[]>([])
+  const [projectData, setProjectData] = useState<iRetroPGF5Project[]>([])
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
   async function fetchData() {
@@ -33,7 +33,7 @@ export default function Cpage({ badgeholderData }: iCpage) {
     setProjectData(() => filterUniqueData)
     const newCateRound5Counter = new Map<string, number>()
 
-    data.forEach((project: RetroPGF5Project) => {
+    data.forEach((project: iRetroPGF5Project) => {
       const cateRound5 = project.category
       if (cateRound5) {
         if (newCateRound5Counter.has(cateRound5)) {

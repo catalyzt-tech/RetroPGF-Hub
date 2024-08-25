@@ -3,7 +3,7 @@ import Cpage from './Cpage'
 import BreadcrumbExplore from './_component/BreadcrumbExplore'
 import fs from 'fs'
 import path from 'path'
-import { RetroPGF5Project } from './type'
+import { iRetroPGF5Project } from './RetroType5'
 
 async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   const directoryPath = path.join(

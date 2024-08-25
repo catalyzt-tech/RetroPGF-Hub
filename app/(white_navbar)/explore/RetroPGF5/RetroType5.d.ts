@@ -4,26 +4,26 @@ export interface RetroPGF5Response {
   data: RetroPGF5Project[];
 }
 
-export interface RetroPGF5SocialLinks {
+export interface SocialLinks {
   website: string[]
   farcaster: string[]
   twitter: string | null
   mirror: string | null
 }
 
-export interface RetroPGF5GitHub {
+export interface GitHub {
   url: string
   name: string | null
   description: string | null
 }
 
-export interface RetroPGF5Package {
+export interface Package {
   url: string
   name: string | null
   description: string | null
 }
 
-export interface RetroPGF5Contract {
+export interface Contract {
   address: string
   deploymentTxHash: string
   deployerAddress: string
@@ -31,13 +31,13 @@ export interface RetroPGF5Contract {
   chainId: number
 }
 
-export interface RetroPGF5VentureFunding {
+export interface VentureFunding {
   amount: string
   year: string
   details: string | null
 }
 
-export interface RetroPGF5Grant {
+export interface Grant {
   grant: string | null
   link: string | null
   amount: string
@@ -45,35 +45,35 @@ export interface RetroPGF5Grant {
   details: string | null
 }
 
-export interface RetroPGF5Revenue {
+export interface Revenue {
   amount: string
   details: string | null
 }
 
-export interface RetroPGF5Link {
+export interface Link {
   url: string
   name: string | null
   description: string | null
 }
 
-export interface RetroPGF5Project {
+export interface iRetroPGF5Project {
   name: string
   description: string | null
   projectAvatarUrl: string | null
   projectCoverImageUrl: string | null
   category: string | null
   osoSlug: string | null
-  socialLinks: RetroPGF5SocialLinks
+  socialLinks: SocialLinks
   team: string[]
-  github: RetroPGF5GitHub[]
-  packages: RetroPGF5Package[]
-  contracts: RetroPGF5Contract[]
+  github: GitHub[]
+  packages: Package[]
+  contracts: Contract[]
   grantsAndFunding: {
-    ventureFunding: RetroPGF5VentureFunding[]
-    grants: RetroPGF5Grant[]
-    revenue: RetroPGF5Revenue[]
+    ventureFunding: VentureFunding[]
+    grants: Grant[]
+    revenue: Revenue[]
   }
   pricingModel: string | null
   pricingModelDetails: string | null
-  links: RetroPGF5Link[]
+  links: Link[]
 }
