@@ -23,7 +23,7 @@ export default function PackageSection({ data, packageRef }: iPackageSection) {
 
             {data.packages.length !== 0 &&
                 data.packages.map((item, i) => (
-                <div className='flex flex-col gap-1 bg-slate-50 rounded-lg px-6 py-4 min-w-72'>
+                <div key={i} className='flex flex-col gap-1 bg-slate-50 rounded-lg px-6 py-4 min-w-72'>
                     <a 
                     key={i}
                     href={item.url || ''}

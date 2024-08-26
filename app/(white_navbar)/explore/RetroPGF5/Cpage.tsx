@@ -13,44 +13,29 @@ import { iRetroPGF5Project, RetroPGF5Response } from './RetroType5'
 import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
 interface iCpage {
-  // projectData: iRetroPGF5Project[]
+  projectRound5: iRetroPGF5Project[]
   badgeholderData: BadgeholderMetrics[]
 }
 
-export default function Cpage({ badgeholderData }: iCpage) {
-  const [projectData, setProjectData] = useState<iRetroPGF5Project[]>([])
+export default function Cpage({ projectRound5:projectData, badgeholderData }: iCpage) {
+  // const [projectData, setProjectData] = useState<iRetroPGF5Project[]>(projectRound5)
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
-  async function fetchData() {
-    const dataRaw = await getRealTimeRetroPGF5()
-    const data = dataRaw.data
+  // async function fetchData() {
+  //   const dataRaw = await getRealTimeRetroPGF5()
+  //   const data = dataRaw.data
 
-    const filterUniqueData = data.filter((item, index, self) => {
-      return index === self.findIndex((x) => x.name === item.name)
-    })
-    console.log(filterUniqueData)
+  //   const filterUniqueData = data.filter((item, index, self) => {
+  //     return index === self.findIndex((x) => x.name === item.name)
+  //   })
 
-    setProjectData(() => filterUniqueData)
-    const newCateRound5Counter = new Map<string, number>()
+  //   setProjectData(() => filterUniqueData)
 
-    data.forEach((project: iRetroPGF5Project) => {
-      const cateRound5 = project.category
-      if (cateRound5) {
-        if (newCateRound5Counter.has(cateRound5)) {
-          newCateRound5Counter.set(
-            cateRound5,
-            newCateRound5Counter.get(cateRound5)! + 1
-          )
-        } else {
-          newCateRound5Counter.set(cateRound5, 1)
-        }
-      }
-    })
-  }
+  // }
 
-  useEffect(() => {
-    fetchData()
-  }, [])
+  // useEffect(() => {
+  //   fetchData()
+  // }, [])
 
   function handleChangeSelectedIndex(index: number) {
     setSelectedIndex(index)

@@ -11,6 +11,7 @@ import Cpage from './Cpage'
 import { Metadata } from 'next'
 import { shuffle } from '@/app/lib/utils'
 import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
+import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
 export const metadata: Metadata = {
   title: 'Explore | RetroPGF Hub',
@@ -42,8 +43,9 @@ export async function getAllRound(limit: number): Promise<{
   round2: RetroRound2[]
   round3: RetroRound3[]
   round4: iRetroPGF4Project[]
-  // round5: iRetroPGF5Project[]
-  // cateRound5: Map<string, number>
+  round5: iRetroPGF5Project[]
+
+  cateRound5: Map<string, number>
   cateRound4: Map<string, number>
   cateRound3: Map<string, number>
   cateRound2: Map<string, number>
@@ -55,12 +57,14 @@ export async function getAllRound(limit: number): Promise<{
   const round2 = await getJsonRound2()
   const round3 = await getJsonRound3()
   const round4 = await getJsonRound4()
-  // const round5 = await getJsonRound5()
+  const round5Raw = await getRealTimeRetroPGF5()
+  
   const cateRound2Counter = new Map<string, number>()
   const cateRound3Counter = new Map<string, number>()
   const cateRound4Counter = new Map<string, number>()
-  // const cateRound5Counter = new Map<string, number>()
+  const cateRound5Counter = new Map<string, number>()
 
+  
   round2.forEach((project: RetroRound2) => {
     const cateRound2 = project.Category
     if (cateRound2) {
@@ -88,7 +92,7 @@ export async function getAllRound(limit: number): Promise<{
       }
     }
   })
-
+  
   round4.forEach((project: iRetroPGF4Project) => {
     const cateRound4 = project.category
     if (cateRound4) {
@@ -102,20 +106,24 @@ export async function getAllRound(limit: number): Promise<{
       }
     }
   })
+  
+  const filterUniqueRound5 = round5Raw.data.filter((item, index, self) => {
+    return index === self.findIndex((x) => x.name === item.name)
+  })
 
-  // round5.forEach((project: iRetroPGF5Project) => {
-  //   const cateRound5 = project.category
-  //   if (cateRound5) {
-  //     if (cateRound5Counter.has(cateRound5)) {
-  //       cateRound5Counter.set(
-  //         cateRound5,
-  //         cateRound5Counter.get(cateRound5)! + 1
-  //       )
-  //     } else {
-  //       cateRound5Counter.set(cateRound5, 1)
-  //     }
-  //   }
-  // })
+  filterUniqueRound5.forEach((project: iRetroPGF5Project) => {
+      const cateRound5 = project.category
+      if (cateRound5) {
+        if (cateRound5Counter.has(cateRound5)) {
+          cateRound5Counter.set(
+            cateRound5,
+            cateRound5Counter.get(cateRound5)! + 1
+          )
+        } else {
+          cateRound5Counter.set(cateRound5, 1)
+        }
+      }
+    })
 
   const shuffledRound1 = shuffle([...round1])
   const shuffledRound2 = shuffle([...round2])
@@ -128,27 +136,45 @@ export async function getAllRound(limit: number): Promise<{
     round2: shuffledRound2.slice(0, limit),
     round3: shuffledRound3.slice(0, limit),
     round4: shuffledRound4.slice(0, limit),
-    // round5: shuffledRound5.slice(0, limit),
-    // cateRound5: cateRound5Counter,
+    round5: filterUniqueRound5,
+
+    cateRound5: cateRound5Counter,
     cateRound4: cateRound4Counter,
     cateRound3: cateRound3Counter,
     cateRound2: cateRound2Counter,
+
   }
 }
 
 export default async function page({}: {}) {
-  const { round1, round2, round3, round4, cateRound2, cateRound3, cateRound4 } =
-    await getAllRound(20)
+  try {
+    const { round1, round2, round3, round4, round5, cateRound2, cateRound3, cateRound4, cateRound5 } =
+      await getAllRound(20)
 
-  return (
-    <Cpage
-      cateRound2={cateRound2}
-      cateRound3={cateRound3}
-      cateRound4={cateRound4}
-      round1={round1}
-      round2={round2}
-      round3={round3}
-      round4={round4}
-    />
-  )
+    return (
+      <Cpage
+        cateRound2={cateRound2}
+        cateRound3={cateRound3}
+        cateRound4={cateRound4}
+        cateRound5={cateRound5}
+        round1={round1}
+        round2={round2}
+        round3={round3}
+        round4={round4}
+        round5={round5}
+      />
+    )
+  } catch (error) {
+    console.error('Error fetching data:', error)
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold mb-4">Error</h1>
+          <p className="text-red-500">
+            {error instanceof Error ? error.message : 'An unexpected error occurred'}
+          </p>
+        </div>
+      </div>
+    )
+  }
 }

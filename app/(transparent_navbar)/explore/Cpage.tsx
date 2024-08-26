@@ -23,60 +23,55 @@ interface iCpage {
   round2: RetroRound2[]
   round3: RetroRound3[]
   round4: iRetroPGF4Project[]
-  // round5: RetroPGF5Project[]
+  round5: iRetroPGF5Project[]
   cateRound2: Map<string, number>
   cateRound3: Map<string, number>
   cateRound4: Map<string, number>
-  // cateRound5: Map<string, number>
+  cateRound5: Map<string, number>
 }
 export default function Cpage({
   round1,
   round2,
   round3,
   round4,
-  // round5,
+  round5,
   cateRound2,
   cateRound3,
   cateRound4,
-}: // cateRound5,
+  cateRound5:cateRound5Counter,
+}: 
 iCpage) {
   const [search, setSearch] = useState<string>('')
-  const [round5, setRound5] = useState<iRetroPGF5Project[]>([])
-  const [cateRound5Counter, setCateRound5Counter] = useState<
-    Map<string, number>
-  >(new Map())
+  // const [round5, setRound5] = useState<iRetroPGF5Project[]>(Round5Data)
 
-  async function fetchData() {
-    const dataRaw = await getRealTimeRetroPGF5()
-    const data = dataRaw.data
 
-    const filterUniqueData = data.filter((item, index, self) => {
-      return index === self.findIndex((x) => x.name === item.name)
-    })
-    console.log(filterUniqueData)
+  // async function fetchData() {
+  //   const dataRaw = await getRealTimeRetroPGF5()
+  //   const data = dataRaw.data
 
-    setRound5(() => filterUniqueData)
-    const newCateRound5Counter = new Map<string, number>()
+  //   const filterUniqueData = data.filter((item, index, self) => {
+  //     return index === self.findIndex((x) => x.name === item.name)
+  //   })
 
-    data.forEach((project: iRetroPGF5Project) => {
-      const cateRound5 = project.category
-      if (cateRound5) {
-        if (newCateRound5Counter.has(cateRound5)) {
-          newCateRound5Counter.set(
-            cateRound5,
-            newCateRound5Counter.get(cateRound5)! + 1
-          )
-        } else {
-          newCateRound5Counter.set(cateRound5, 1)
-        }
-      }
-    })
-    setCateRound5Counter(()=>newCateRound5Counter)
-  }
+  //   setRound5(() => filterUniqueData)
+  //   const newCateRound5Counter = new Map<string, number>()
 
-  useEffect(() => {
-    fetchData()
-  }, [])
+  //   data.forEach((project: iRetroPGF5Project) => {
+  //     const cateRound5 = project.category
+  //     if (cateRound5) {
+  //       if (newCateRound5Counter.has(cateRound5)) {
+  //         newCateRound5Counter.set(
+  //           cateRound5,
+  //           newCateRound5Counter.get(cateRound5)! + 1
+  //         )
+  //       } else {
+  //         newCateRound5Counter.set(cateRound5, 1)
+  //       }
+  //     }
+  //   })
+  //   setCateRound5Counter(()=>newCateRound5Counter)
+  // }
+
 
   const round5Data = useMemo(() => {
     return round5.filter((item) => {
