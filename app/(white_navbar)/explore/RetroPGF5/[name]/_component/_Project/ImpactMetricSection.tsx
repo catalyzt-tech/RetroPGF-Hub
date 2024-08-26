@@ -1,7 +1,6 @@
-import { iRetroPGF4Project } from '../../../RetroType4'
 import { mapImpactMetrics } from '../../Text'
-import { Help } from '@carbon/icons-react'
 import { numberWithCommas } from '@/app/lib/utils'
+import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 
 interface iImpactMetric {
   data: iRetroPGF4Project

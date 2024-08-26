@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import { iRetroPGF4Project } from '../../../RetroType4'
+import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 export default function AppealSection({ data }: { data: iRetroPGF4Project }) {
   return (
     <>
