@@ -16,12 +16,21 @@ async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   return []
 }
 
+
+
 async function getJsonRetroPGF5(): Promise<iRetroPGF5Project[]> {
   const data = await getRealTimeRetroPGF5()
   const filterUniqueData = data.data.filter((item, index, self) => {
     return index === self.findIndex((x) => x.name === item.name)
   })
-  return filterUniqueData
+  return new Response(JSON.stringify(filterUniqueData), {
+    headers: {
+      'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+      Pragma: 'no-cache',
+      Expires: '0',
+      'Surrogate-Control': 'no-store',
+    },
+  }).json();
 }
 
 export default async function page() {
