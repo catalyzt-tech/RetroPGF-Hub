@@ -11,25 +11,30 @@ interface pageProps {
   }
 }
 
-async function FindRound5Data(decodedString:string): Promise<iRetroPGF5Project | undefined> {
-    const data = await getRealTimeRetroPGF5() 
-    const projectData = data.data.find((elem) => {
-      return cleanParamsName(elem.name) === decodedString
-    })
-
-    return projectData
+async function FindRound5Data(
+  decodedString: string
+): Promise<iRetroPGF5Project | undefined> {
+  const data = await getRealTimeRetroPGF5()
+  const projectData = data.data.find((elem) => {
+    return cleanParamsName(elem.name) === decodedString
+  })
+  return projectData
 }
 
 export default async function page({ params }: pageProps) {
   try {
     const decodedString = decodeURIComponent(params.name)
-  
     const projectData = await FindRound5Data(decodedString)
-  
     if (!projectData) {
-      return <Error titleError='500 Failed to get project' subTitle='Cant find project that you looking for' desc='Something went wrong with finding the project that you looking for'  />
+      return (
+        <Error
+          titleError="500 Failed to get project"
+          subTitle="Cant find project that you looking for"
+          desc="Something went wrong with finding the project that you looking for"
+        />
+      )
     }
-  
+
     return (
       <div className="bg-gray-50 min-h-[calc(100vh-4.5rem)] h-full py-10">
         <div className="mx-2 sm:mx-6 lg:mx-20">
@@ -40,7 +45,7 @@ export default async function page({ params }: pageProps) {
     )
   } catch (error) {
     console.error('Error fetching data:', error)
-    let errorMessage = 'An unexpected error occurred';
+    let errorMessage = 'An unexpected error occurred'
     return (
       <div className="flex items-center justify-center h-screen">
         <div className="text-center">

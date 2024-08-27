@@ -1,5 +1,6 @@
 'use client'
 import { useRef, useState, useEffect } from 'react'
+import Image from 'next/image'
 import ProjectDetailSection from './_component/_Project/ProjectDetailSection'
 import OverviewSection from './_component/_Project/OverviewSection'
 import FundingSection from './_component/_Project/FundingSection'
@@ -13,8 +14,10 @@ import ContributionSection from './_component/_Project/ContributionSection'
 import PackageSection from './_component/_Project/PackageSection'
 import LinkSection from './_component/_Project/LinkSection'
 
-export default function Cpage({ data }: { data: iRetroPGF5Project }) {
-
+interface iCpage {
+  data: iRetroPGF5Project
+}
+export default function Cpage({ data }: iCpage) {
   const overViewRef = useRef<HTMLElement | null>(null)
   const packageRef = useRef<HTMLElement | null>(null)
   const fundingRef = useRef<HTMLElement | null>(null)
@@ -48,12 +51,28 @@ export default function Cpage({ data }: { data: iRetroPGF5Project }) {
   //     })
   //   }
   // }, [data.impactMetrics])
-
+  const [loading, setLoading] = useState(true)
+  const load = () => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000)
+  }
+  load()
+  if (loading)
+    return (
+      <div className="flex flex-col justify-center items-center animate-pulse h-[40em]">
+        <Image
+          src="/static/loading/small_sunny.svg"
+          width={55}
+          height={55}
+          alt="loading"
+        />
+      </div>
+    )
   return (
     <div className="flex mt-8 gap-10">
       {/* Scroll Spy */}
-
-      <div className="w-full lg:flex-grow flex flex-col gap-4 lg:gap-8">
+      <div className="w-full lg:flex-grow flex flex-col gap-4 lg:gap-8 animate-slowfade">
         <section
           className="w-full h-full flex flex-col gap-4 lg:gap-8 lg:flex-grow"
           id="Overview"
@@ -72,14 +91,8 @@ export default function Cpage({ data }: { data: iRetroPGF5Project }) {
         )} */}
         <GithubSection data={data} githubRef={githubRef} />
         <ContractSection data={data} contractRef={contractRef} />
-        <PackageSection
-        data={data}
-        packageRef={packageRef}
-        />
-        <LinkSection
-        data={data}
-        linkSectionRef={linkSectionRef}
-        />
+        <PackageSection data={data} packageRef={packageRef} />
+        <LinkSection data={data} linkSectionRef={linkSectionRef} />
       </div>
 
       <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">

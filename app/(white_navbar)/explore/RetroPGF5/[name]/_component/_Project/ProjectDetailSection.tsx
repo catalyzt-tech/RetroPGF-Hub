@@ -5,17 +5,14 @@ import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'
 import { numberWithCommas } from '@/app/lib/utils'
 import { iRetroPGF5Project } from '../../../RetroType5'
 // import { convertImageClodinary } from '@/app/lib/utils'
-
+interface iProjectDetailSection {
+  data: iRetroPGF5Project
+}
 export const truncateProjectId = (projectId: string) => {
   if (projectId.length <= 10) return projectId
   return `${projectId.slice(0, 8)}...${projectId.slice(-8)}`
 }
-export default function ProjectDetailSection({
-  data,
-}: {
-  data: iRetroPGF5Project
-}) {
-
+export default function ProjectDetailSection({ data }: iProjectDetailSection) {
   return (
     <>
       <div className=" flex flex-col bg-white rounded-lg overflow-hidden border">
@@ -42,9 +39,9 @@ export default function ProjectDetailSection({
           <div className="flex flex-col gap-4 p-2 sm:p-4 md:px-4 md:pt-0 lg:p-0 ">
             <h3 className="flex items-center text-3xl lg:text-4xl font-semibold text-gray-800">
               {data.name}
-              <div className="flex-grow"></div>
+              {/* <div className="flex-grow"></div>
               <div className="hidden md:flex items-center px-10 py-3 rounded-xl text-xl bg-red-50">
-                {/* {numberWithCommas(data.reward ?? 20000)} */}
+                {numberWithCommas(data.reward ?? 20000)}
                 0.00
                 <Image
                   src="/static/superchainLogo/optimism.svg"
@@ -53,19 +50,21 @@ export default function ProjectDetailSection({
                   height={25}
                   className="ml-2"
                 />
-              </div>
+              </div> */}
             </h3>
             <div className="hidden lg:block bg-gray-100 text-gray-600 text-sm truncate w-fit px-3 py-1.5 rounded-full">
-              {truncateProjectId("xxxxxxxxxxxxxxxxxxxx")}
+              {truncateProjectId('0xsdfjksdpfjsdijfpodsjfposdjf')}
             </div>
 
-            <div className='flex flex-col gap-1'>
-              <h6 className='text-base font-semibold text-gray-600'>
+            <div className="flex flex-col gap-1">
+              {/* <h6 className="text-base font-semibold text-gray-600">
                 Pricing Model: {data.pricingModel}
-              </h6>              
-              {data.pricingModelDetails && 
-                <p className='text-base font-normal text-gray-600'>{data.pricingModelDetails}</p>
-              }
+              </h6> */}
+              {data.pricingModelDetails && (
+                <p className="text-base font-normal text-gray-600">
+                  {data.pricingModelDetails}
+                </p>
+              )}
             </div>
 
             <div className="flex w-fit items-center md:hidden px-5 py-3 mb-4 rounded-xl text-base font-medium bg-red-50">

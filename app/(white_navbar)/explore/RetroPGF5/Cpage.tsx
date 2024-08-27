@@ -2,22 +2,23 @@
 
 import { classNames, shuffle } from '@/app/lib/utils'
 import { Tab, Transition } from '@headlessui/react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { tab } from './_component/Text'
 import ProjectTab from './_component/Tab/ProjectTab'
 import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
-import HistorySection from '@/app/component/HistorySection'
-import StatisticSection from '@/app/component/StatisticSection'
-// import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
-import { iRetroPGF5Project, RetroPGF5Response } from './RetroType5'
-import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
+import { iRetroPGF5Project } from './RetroType5'
+import HistoryTab from './_component/Tab/HistoryTab'
+import StatisticTab from './_component/Tab/StatisticTab'
 
 interface iCpage {
   projectRound5: iRetroPGF5Project[]
   badgeholderData: BadgeholderMetrics[]
 }
 
-export default function Cpage({ projectRound5:projectData, badgeholderData }: iCpage) {
+export default function Cpage({
+  projectRound5: projectData,
+  badgeholderData,
+}: iCpage) {
   // const [projectData, setProjectData] = useState<iRetroPGF5Project[]>(projectRound5)
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
@@ -93,7 +94,7 @@ export default function Cpage({ projectRound5:projectData, badgeholderData }: iC
               leaveTo="transform scale-95 opacity-0"
             >
               <div className="font-rubik">
-                <HistorySection round={5} />
+                <HistoryTab round={5} />
               </div>
             </Transition>
           </Tab.Panel>
@@ -108,7 +109,7 @@ export default function Cpage({ projectRound5:projectData, badgeholderData }: iC
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <StatisticSection data={projectData} round={5} />
+              <StatisticTab data={projectData} round={5} />
             </Transition>
           </Tab.Panel>
         </Tab.Panels>
