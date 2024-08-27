@@ -6,7 +6,7 @@ interface HistoryTabProps {
 export default function HistoryTab({ round }: HistoryTabProps) {
   return (
     <div>
-      <ComingSoon></ComingSoon>
+      <ComingSoon />
     </div>
   )
 }

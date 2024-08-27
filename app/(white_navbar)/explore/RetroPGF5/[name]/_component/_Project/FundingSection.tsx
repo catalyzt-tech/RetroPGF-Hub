@@ -2,11 +2,6 @@ import { formatText } from './ContributionSection'
 import { iRetroPGF5Project } from '../../../RetroType5'
 import LinkIcon from '@carbon/icons-react/lib/Link'
 import { ConvertStringToTime } from '@/app/lib/utils'
-const fundingSourcesMap = {
-  ventureFunding: 'Venture Funding',
-  grants: 'Grants',
-  revenue: 'Revenue',
-}
 
 function formatGrant(amount: string): string {
   return amount
@@ -89,18 +84,21 @@ export default function FundingSection({
           >
             <div className="flex flex-wrap gap-3 items-center">
               <p className="mb-1 text-lg font-semibold font-rubik">
-                {item.link ?
+                {item.link ? (
                   <a
                     href={item.link || ''}
                     key={i}
                     className="flex items-center gap-2 group"
                   >
-                      <LinkIcon size={20} className='group-hover:text-primaryRed' />
-                      {formatName(item.grant || '')}
-                    </a>
-                    :  
-                    formatName(item.grant || '')
-                  }
+                    <LinkIcon
+                      size={20}
+                      className="group-hover:text-primaryRed"
+                    />
+                    {formatName(item.grant || '')}
+                  </a>
+                ) : (
+                  formatName(item.grant || '')
+                )}
               </p>
               <p className="flex flex-grow"></p>
               <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
@@ -110,14 +108,12 @@ export default function FundingSection({
                     }) + ' OP'
                   : formatGrant(item.amount) + ' USD'}
               </p>
-              
 
-                  {item.date && 
-                    <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
-                      {ConvertStringToTime(item.date)}
-                    </p>
-                  }
-
+              {item.date && (
+                <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
+                  {ConvertStringToTime(item.date)}
+                </p>
+              )}
             </div>
             {item.details && (
               <p className="text-sm text-gray-500">{item.details}</p>

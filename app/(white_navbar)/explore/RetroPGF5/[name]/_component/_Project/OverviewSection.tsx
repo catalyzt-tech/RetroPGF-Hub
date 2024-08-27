@@ -1,6 +1,11 @@
 import { handleCategoryRound5 } from '../../../../../../lib/InitialMount'
 import { iRetroPGF5Project } from '../../../RetroType5'
-export default function OverviewSection({ data }: { data: iRetroPGF5Project }) {
+
+interface OverviewSectionProps {
+  data: iRetroPGF5Project
+}
+
+export default function OverviewSection({ data }: OverviewSectionProps) {
   return (
     <>
       <div className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border">
@@ -17,7 +22,7 @@ export default function OverviewSection({ data }: { data: iRetroPGF5Project }) {
             <div className="mb-1 text-base font-semibold text-gray-600">
               {handleCategoryRound5(data.category ?? '')}
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </>

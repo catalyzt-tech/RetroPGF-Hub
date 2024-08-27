@@ -8,7 +8,7 @@ interface StatisticTabProps {
 export default function StatisticTab({ data, round }: StatisticTabProps) {
   return (
     <div>
-      <ComingSoon></ComingSoon>
+      <ComingSoon />
     </div>
   )
 }
