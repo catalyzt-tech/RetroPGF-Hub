@@ -5,18 +5,14 @@ import CardRound1 from './_component/CardRound1'
 import CardRound2 from './_component/CardRound2'
 import CardRound3 from './_component/CardRound3'
 import CardRound4 from './_component/CardRound4'
-import CategorySection from './_component/CategorySection'
 import InputSearchExplore from './_component/InputSearchExplore'
 import { RetroRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { RetroRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/RetroType2'
 import { RetroRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/RetroType1'
 import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
-import { Car } from '@carbon/icons-react'
 import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
 import CardRound5 from './_component/CardRound5'
-import { category } from '../../(white_navbar)/explore/RetroPGF2/_component/Text'
-import { shuffle } from '@/app/lib/utils'
-import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
+
 
 interface iCpage {
   round1: RetroRound1[]

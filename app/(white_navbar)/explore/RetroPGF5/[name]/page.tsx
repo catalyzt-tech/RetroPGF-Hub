@@ -11,6 +11,8 @@ interface pageProps {
   }
 }
 
+export const dynamic = 'force-dynamic'
+
 async function FindRound5Data(
   decodedString: string
 ): Promise<iRetroPGF5Project | undefined> {
@@ -18,6 +20,7 @@ async function FindRound5Data(
   const projectData = data.data.find((elem) => {
     return cleanParamsName(elem.name) === decodedString
   })
+
   return projectData
 }
 

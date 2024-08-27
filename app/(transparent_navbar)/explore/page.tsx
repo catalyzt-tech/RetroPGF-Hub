@@ -13,6 +13,8 @@ import { shuffle } from '@/app/lib/utils'
 import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
 import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: 'Explore | RetroPGF Hub',
   description:
