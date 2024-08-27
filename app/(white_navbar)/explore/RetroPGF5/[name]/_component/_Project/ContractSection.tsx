@@ -15,11 +15,13 @@ export default function ContractSection({ data, contractRef }: iContract) {
     >
       <h3 className="text-2xl font-semibold">Contract Address</h3>
       <hr className="border-t-gray-100" />
-      <div className="text-gray-500">
-        Project contract addresses on different chains are listed below. All
-        contracts are verified for ownership on-chain, and off-chain
-        verification is conducted by Open Source Observer (OSO).
-      </div>
+      {data.contracts.length !== 0 && (
+        <div className="text-gray-500">
+          Project contract addresses on different chains are listed below. All
+          contracts are verified for ownership on-chain, and off-chain
+          verification is conducted by Open Source Observer (OSO).
+        </div>
+      )}
       {data.contracts.length == 0 && (
         <p className="text-base font-normal text-gray-600">
           There is no contract address for this project.

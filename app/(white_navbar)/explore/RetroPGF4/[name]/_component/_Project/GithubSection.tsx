@@ -4,6 +4,7 @@ import star from '@/public/static/githubCardSection/star'
 // import watch from '@/public/static/githubCardSection/watch'
 import fork from '@/public/static/githubCardSection/fork'
 import Link from 'next/link'
+import { formatGithubLink } from '@/app/lib/utils'
 
 export default function GithubSection({
   data,
@@ -12,10 +13,6 @@ export default function GithubSection({
   data: iRetroPGF4Project
   githubRef: React.MutableRefObject<HTMLElement | null>
 }) {
-  function formatGithubLink(inputString: string): string {
-    const formattedString = inputString.split('https://github.com/')[1]
-    return formattedString
-  }
   return (
     <section
       id="GitHub"

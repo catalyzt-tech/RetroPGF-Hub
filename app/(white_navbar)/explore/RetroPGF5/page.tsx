@@ -14,8 +14,7 @@ async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   return []
 }
 
-
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic'
 
 async function getJsonRetroPGF5(): Promise<iRetroPGF5Project[]> {
   const data = await getRealTimeRetroPGF5()
@@ -50,9 +49,10 @@ export default async function page() {
           </div>
         </div>
         <div className="flex flex-col gap-6 mx-2 sm:mx-4 md:mx-6 lg:mx-20">
-          <Cpage 
-          projectRound5={projectRound5}
-          badgeholderData={badgeholderData} />
+          <Cpage
+            projectRound5={projectRound5}
+            badgeholderData={badgeholderData}
+          />
         </div>
       </div>
     </>

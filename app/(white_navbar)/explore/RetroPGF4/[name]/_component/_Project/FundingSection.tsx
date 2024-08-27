@@ -1,36 +1,6 @@
 import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import { formatText } from './ContributionSection'
-
-const fundingSourcesMap = {
-  ventureFunding: 'Venture Funding',
-  grants: 'Grants',
-  revenue: 'Revenue',
-}
-
-function formatGrant(amount: string): string {
-  return amount
-    .split('-')
-    .map((word, index) =>
-      word ? word.charAt(0).toUpperCase() + word.slice(1) : word
-    )
-    .join('-')
-}
-
-function formatName(name: string): string {
-  if (name == '') {
-    return 'Not Disclosed'
-  }
-  return name
-    .split(/[-_ .,]/)
-    .map((word, index) =>
-      word ? word.charAt(0).toUpperCase() + word.slice(1) : word
-    )
-    .join(' ')
-}
-
-function containsOnlyDigits(str: string) {
-  return /^\d+$/.test(str)
-}
+import { containsOnlyDigits, formatGrant, formatName } from '@/app/lib/utils'
 
 export default function FundingSection({
   data,

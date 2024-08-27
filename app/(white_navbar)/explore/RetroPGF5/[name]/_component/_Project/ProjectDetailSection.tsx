@@ -1,8 +1,8 @@
 import LinkIcon from '@carbon/icons-react/lib/Link'
 import Image from 'next/image'
 import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'
-import { numberWithCommas } from '@/app/lib/utils'
 import { iRetroPGF5Project } from '../../../RetroType5'
+import Link from 'next/link'
 // import { convertImageClodinary } from '@/app/lib/utils'
 interface iProjectDetailSection {
   data: iRetroPGF5Project
@@ -51,9 +51,9 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 />
               </div> */}
             </h3>
-            <div className="hidden lg:block bg-gray-100 text-gray-600 text-sm truncate w-fit px-3 py-1.5 rounded-full">
+            {/* <div className="hidden lg:block bg-gray-100 text-gray-600 text-sm truncate w-fit px-3 py-1.5 rounded-full">
               {truncateProjectId('0xsdfjksdpfjsdijfpodsjfposdjf')}
-            </div>
+            </div> */}
 
             <div className="flex flex-col gap-1">
               {/* <h6 className="text-base font-semibold text-gray-600">
@@ -91,37 +91,39 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 ))}
               {data.socialLinks.farcaster.length > 0 &&
                 data.socialLinks.farcaster.map((item, i) => (
-                  <a
+                  <Link
                     href={item}
                     key={i}
                     className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
                   >
                     <Partnership size={20} />
                     <h6 className="text-sm font-normal line-clamp-1">{item}</h6>
-                  </a>
+                  </Link>
                 ))}
-              {data.socialLinks.twitter !== null && (
-                <a
-                  href={data.socialLinks.twitter}
-                  className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
-                >
-                  <LogoTwitter size={20} />
-                  <h6 className="text-sm font-normal line-clamp-1">
-                    {data.socialLinks.twitter}
-                  </h6>
-                </a>
-              )}
-              {data.socialLinks.mirror !== null && (
-                <a
-                  href={data.socialLinks.mirror}
-                  className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
-                >
-                  <Book size={20} />
-                  <h6 className="text-sm font-normal line-clamp-1">
-                    {data.socialLinks.mirror}
-                  </h6>
-                </a>
-              )}
+              {data.socialLinks.twitter !== null &&
+                data.socialLinks.twitter !== '' && (
+                  <Link
+                    href={data.socialLinks.twitter || ''}
+                    className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+                  >
+                    <LogoTwitter size={20} />
+                    <h6 className="text-sm font-normal line-clamp-1">
+                      {data.socialLinks.twitter}
+                    </h6>
+                  </Link>
+                )}
+              {data.socialLinks.mirror !== null &&
+                data.socialLinks.mirror !== '' && (
+                  <Link
+                    href={data.socialLinks.mirror || ''}
+                    className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+                  >
+                    <Book size={20} />
+                    <h6 className="text-sm font-normal line-clamp-1">
+                      {data.socialLinks.mirror}
+                    </h6>
+                  </Link>
+                )}
             </div>
           </div>
         </div>
