@@ -5,6 +5,7 @@ import fs from 'fs'
 import path from 'path'
 import { iRetroPGF5Project } from './RetroType5'
 import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
+import { NextResponse } from 'next/server'
 
 async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   // const directoryPath = path.join(
@@ -17,20 +18,14 @@ async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
 }
 
 
+export const dynamic = "force-dynamic";
 
 async function getJsonRetroPGF5(): Promise<iRetroPGF5Project[]> {
   const data = await getRealTimeRetroPGF5()
   const filterUniqueData = data.data.filter((item, index, self) => {
     return index === self.findIndex((x) => x.name === item.name)
   })
-  return new Response(JSON.stringify(filterUniqueData), {
-    headers: {
-      'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
-      Pragma: 'no-cache',
-      Expires: '0',
-      'Surrogate-Control': 'no-store',
-    },
-  }).json();
+  return filterUniqueData
 }
 
 export default async function page() {
