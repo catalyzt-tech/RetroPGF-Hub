@@ -11,6 +11,8 @@ interface pageProps {
   }
 }
 
+export const dynamic = "force-dynamic";
+
 async function FindRound5Data(decodedString:string): Promise<iRetroPGF5Project | undefined> {
     const data = await getRealTimeRetroPGF5() 
     const projectData = data.data.find((elem) => {

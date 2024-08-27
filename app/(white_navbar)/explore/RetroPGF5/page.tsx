@@ -1,11 +1,8 @@
 import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import Cpage from './Cpage'
 import BreadcrumbExplore from './_component/BreadcrumbExplore'
-import fs from 'fs'
-import path from 'path'
 import { iRetroPGF5Project } from './RetroType5'
 import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
-import { NextResponse } from 'next/server'
 
 async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   // const directoryPath = path.join(

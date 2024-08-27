@@ -10,7 +10,6 @@ import HistorySection from '@/app/component/HistorySection'
 import StatisticSection from '@/app/component/StatisticSection'
 // import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
 import { iRetroPGF5Project, RetroPGF5Response } from './RetroType5'
-import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
 interface iCpage {
   projectRound5: iRetroPGF5Project[]
