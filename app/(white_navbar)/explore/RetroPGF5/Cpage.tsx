@@ -19,24 +19,8 @@ export default function Cpage({
   projectRound5: projectData,
   badgeholderData,
 }: iCpage) {
-  // const [projectData, setProjectData] = useState<iRetroPGF5Project[]>(projectRound5)
+
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
-
-  // async function fetchData() {
-  //   const dataRaw = await getRealTimeRetroPGF5()
-  //   const data = dataRaw.data
-
-  //   const filterUniqueData = data.filter((item, index, self) => {
-  //     return index === self.findIndex((x) => x.name === item.name)
-  //   })
-
-  //   setProjectData(() => filterUniqueData)
-
-  // }
-
-  // useEffect(() => {
-  //   fetchData()
-  // }, [])
 
   function handleChangeSelectedIndex(index: number) {
     setSelectedIndex(index)
