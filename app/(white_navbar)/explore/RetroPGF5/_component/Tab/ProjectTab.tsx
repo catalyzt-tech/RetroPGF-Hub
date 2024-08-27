@@ -5,7 +5,7 @@ import { CheckBoxStateType, ExploreRoundState } from '../ExploreRoundType'
 import { category, itemsPerPage, max, min, isOpenSource } from '../Text'
 import InputAndFilterBtn from './component/InputAndFilterBtn'
 import CheckBoxFilter from './component/CheckBoxFilter'
-import { RetroPGF5Project } from '../../type'
+import { iRetroPGF5Project } from '../../RetroType5'
 import { Pagination } from 'react-headless-pagination'
 import DynamicCard from '../DynamicCard'
 import ListCard from './component/ListCard'
@@ -15,7 +15,7 @@ import Image from 'next/image'
 import { isLetter } from '@/app/lib/utils'
 
 interface ProjectTabProps {
-  projectData: RetroPGF5Project[]
+  projectData: iRetroPGF5Project[]
 }
 
 export default function ProjectTab({

@@ -94,3 +94,33 @@ export function getNameByChainId(chainId: number) {
       return 'Unknown'
   }
 }
+
+export function formatGrant(amount: string): string {
+  return amount
+    .split('-')
+    .map((word, index) =>
+      word ? word.charAt(0).toUpperCase() + word.slice(1) : word
+    )
+    .join('-')
+}
+
+export function formatName(name: string): string {
+  if (name == '') {
+    return 'Not Disclosed'
+  }
+  return name
+    .split(/[-_ .,]/)
+    .map((word, index) =>
+      word ? word.charAt(0).toUpperCase() + word.slice(1) : word
+    )
+    .join(' ')
+}
+
+export function containsOnlyDigits(str: string) {
+  return /^\d+$/.test(str)
+}
+
+export function formatGithubLink(inputString: string): string {
+  const formattedString = inputString.split('https://github.com/')[1]
+  return formattedString
+}

@@ -87,7 +87,7 @@ export default function DynamicCard({
             <Link
               // href={`/explore/RetroPGF5/${cleanParamsName(title)}`}
               // TODO: Redirect to proper project page
-              href={`#`}
+              href={`/explore/RetroPGF5/${cleanParamsName(title)}`}
               className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1"
             >
               {title}

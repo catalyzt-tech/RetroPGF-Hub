@@ -8,12 +8,12 @@ import ChevronRight from '@carbon/icons-react/lib/ChevronRight'
 import ArrowLeft from '@carbon/icons-react/lib/ArrowLeft'
 import ArrowRight from '@carbon/icons-react/lib/ArrowRight'
 import { cleanParamsName } from '@/app/lib/utils'
-import { RetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/type'
+import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
 import RetroCard5 from '@/app/component/Card/RetroCardRound5'
 
 interface iCardRound5 {
   title: string
-  round5: RetroPGF5Project[]
+  round5: iRetroPGF5Project[]
   cateRound5: Map<string, number>
 }
 

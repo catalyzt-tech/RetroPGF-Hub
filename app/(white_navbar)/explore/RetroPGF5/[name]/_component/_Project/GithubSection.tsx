@@ -1,18 +1,16 @@
-import { iRetroPGF4Project } from '../../../RetroType4'
 import Image from 'next/image'
 import star from '@/public/static/githubCardSection/star'
 // import watch from '@/public/static/githubCardSection/watch'
 import fork from '@/public/static/githubCardSection/fork'
 import Link from 'next/link'
+import { iRetroPGF5Project } from '../../../RetroType5'
 import { formatGithubLink } from '@/app/lib/utils'
 
-export default function GithubSection({
-  data,
-  githubRef,
-}: {
-  data: iRetroPGF4Project
+interface iGithubSection {
+  data: iRetroPGF5Project
   githubRef: React.MutableRefObject<HTMLElement | null>
-}) {
+}
+export default function GithubSection({ data, githubRef }: iGithubSection) {
   return (
     <section
       id="GitHub"
@@ -41,14 +39,15 @@ export default function GithubSection({
                 height={24}
               />
               <Link
-                href={item.githubLink}
+                href={item.url}
                 target="_blank"
                 className="text-base font-medium line-clamp-2"
               >
-                {formatGithubLink(item.githubLink)}
+                {formatGithubLink(item.url)}
               </Link>
               <div className="flex flex-row flex-grow"></div>
-              <div className="flex flex-row justify-start items-center gap-x-4">
+              {/* This will we use when data is available */}
+              {/* <div className="flex flex-row justify-start items-center gap-x-4">
                 <div className="flex flex-row justify-start items-center text-sm  text-gray-600 gap-1">
                   {star()}
                   <div>{item.star ?? '-'} Stars</div>
@@ -58,7 +57,7 @@ export default function GithubSection({
                   {fork()}
                   <div>{item.fork ?? '-'} Forks</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           ))}
       </div>

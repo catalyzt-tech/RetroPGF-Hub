@@ -1,14 +1,22 @@
-import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import { formatText } from './ContributionSection'
-import { containsOnlyDigits, formatGrant, formatName } from '@/app/lib/utils'
+import { iRetroPGF5Project } from '../../../RetroType5'
+import LinkIcon from '@carbon/icons-react/lib/Link'
+import {
+  containsOnlyDigits,
+  ConvertStringToTime,
+  formatGrant,
+  formatName,
+  numberWithCommas,
+} from '@/app/lib/utils'
+import Link from 'next/link'
 
-export default function FundingSection({
-  data,
-  fundingRef,
-}: {
-  data: iRetroPGF4Project
+interface iFundingSection {
+  data: iRetroPGF5Project
   fundingRef: React.MutableRefObject<HTMLElement | null>
-}) {
+}
+
+export default function FundingSection({ data, fundingRef }: iFundingSection) {
+  console.log(data)
   return (
     <section
       id="Funding Sources"
@@ -24,6 +32,7 @@ export default function FundingSection({
             There is no funding sources or revenue information for this project.
           </p>
         )}
+
       {data.grantsAndFunding.ventureFunding.length != 0 &&
         data.grantsAndFunding.ventureFunding.map((item, i) => (
           <div
@@ -41,7 +50,6 @@ export default function FundingSection({
                       maximumFractionDigits: 2,
                     }) + ' OP'
                   : formatGrant(item.amount) + ' USD'}
-                {item.currency || ''}
               </p>
             </div>
             {item.details && (
@@ -49,31 +57,46 @@ export default function FundingSection({
             )}
           </div>
         ))}
+
       {data.grantsAndFunding.grants.length != 0 &&
         data.grantsAndFunding.grants.map((item, i) => (
           <div
             className="flex flex-col gap-1 px-8 py-6 bg-slate-50 rounded-lg"
-            key={i}
+            key={item.details}
           >
             <div className="flex flex-wrap gap-3 items-center">
               <p className="mb-1 text-lg font-semibold font-rubik">
-                {formatName(item.grant) as string}
+                {formatName(item.grant ?? '')}
               </p>
               <p className="flex flex-grow"></p>
               <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
-                {containsOnlyDigits(item.amount)
-                  ? Number(item.amount).toLocaleString('en-US', {
-                      maximumFractionDigits: 2,
-                    }) + ' OP'
-                  : formatGrant(item.amount) + ' USD'}
-                {item.currency || ''}
+                {/* OP Grant Case */}
+                {item.grant &&
+                  containsOnlyDigits(item.amount) &&
+                  numberWithCommas(item.amount) + ' OP'}
+
+                {/* Only Number USD Grant Case */}
+                {item.grant === null &&
+                  containsOnlyDigits(item.amount) &&
+                  numberWithCommas(item.amount) + ' USD'}
+
+                {/* Not Number USD Grant Case */}
+                {item.grant === null &&
+                  !containsOnlyDigits(item.amount) &&
+                  formatGrant(item.amount) + ' USD'}
               </p>
             </div>
+            {item.date && (
+              <p className="mb-1 text-sm text-gray-600 font-rubik">
+                {ConvertStringToTime(item.date)}
+              </p>
+            )}
             {item.details && (
               <p className="text-sm text-gray-500">{item.details}</p>
             )}
           </div>
         ))}
+
       {data.grantsAndFunding.revenue.length != 0 &&
         data.grantsAndFunding.revenue.map((item, i) => (
           <div
@@ -87,11 +110,8 @@ export default function FundingSection({
               <p className="flex flex-grow"></p>
               <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
                 {containsOnlyDigits(item.amount)
-                  ? Number(item.amount).toLocaleString('en-US', {
-                      maximumFractionDigits: 2,
-                    }) + ' OP'
+                  ? numberWithCommas(item.amount) + ' OP'
                   : formatGrant(item.amount) + ' USD'}
-                {item.currency || ''}
               </p>
             </div>
             {item.details && (

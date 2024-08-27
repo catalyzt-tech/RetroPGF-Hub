@@ -2,55 +2,25 @@
 
 import { classNames, shuffle } from '@/app/lib/utils'
 import { Tab, Transition } from '@headlessui/react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { tab } from './_component/Text'
 import ProjectTab from './_component/Tab/ProjectTab'
 import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
-import HistorySection from '@/app/component/HistorySection'
-import StatisticSection from '@/app/component/StatisticSection'
-// import BadgeholderSection from '@/app/(white_navbar)/explore/RetroPGF4/_component/Tab/BadgeholderTab'
-import { RetroPGF5Project, RetroPGF5Response } from './type'
-import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
+import { iRetroPGF5Project } from './RetroType5'
+import HistoryTab from './_component/Tab/HistoryTab'
+import StatisticTab from './_component/Tab/StatisticTab'
 
 interface iCpage {
-  // projectData: RetroPGF5Project[]
+  projectRound5: iRetroPGF5Project[]
   badgeholderData: BadgeholderMetrics[]
 }
 
-export default function Cpage({ badgeholderData }: iCpage) {
-  const [projectData, setProjectData] = useState<RetroPGF5Project[]>([])
+export default function Cpage({
+  projectRound5: projectData,
+  badgeholderData,
+}: iCpage) {
+
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
-
-  async function fetchData() {
-    const dataRaw = await getRealTimeRetroPGF5()
-    const data = dataRaw.data
-
-    const filterUniqueData = data.filter((item, index, self) => {
-      return index === self.findIndex((x) => x.name === item.name)
-    })
-    console.log(filterUniqueData)
-
-    setProjectData(() => filterUniqueData)
-    const newCateRound5Counter = new Map<string, number>()
-
-    data.forEach((project: RetroPGF5Project) => {
-      const cateRound5 = project.category
-      if (cateRound5) {
-        if (newCateRound5Counter.has(cateRound5)) {
-          newCateRound5Counter.set(
-            cateRound5,
-            newCateRound5Counter.get(cateRound5)! + 1
-          )
-        } else {
-          newCateRound5Counter.set(cateRound5, 1)
-        }
-      }
-    })
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
 
   function handleChangeSelectedIndex(index: number) {
     setSelectedIndex(index)
@@ -108,7 +78,7 @@ export default function Cpage({ badgeholderData }: iCpage) {
               leaveTo="transform scale-95 opacity-0"
             >
               <div className="font-rubik">
-                <HistorySection round={5} />
+                <HistoryTab round={5} />
               </div>
             </Transition>
           </Tab.Panel>
@@ -123,7 +93,7 @@ export default function Cpage({ badgeholderData }: iCpage) {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <StatisticSection data={projectData} round={5} />
+              <StatisticTab data={projectData} round={5} />
             </Transition>
           </Tab.Panel>
         </Tab.Panels>
