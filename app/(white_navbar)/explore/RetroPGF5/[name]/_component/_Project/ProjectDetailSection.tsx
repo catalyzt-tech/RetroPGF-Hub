@@ -1,4 +1,3 @@
-import { handleCategoryRound4 } from '@/app/lib/InitialMount'
 import LinkIcon from '@carbon/icons-react/lib/Link'
 import Image from 'next/image'
 import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'

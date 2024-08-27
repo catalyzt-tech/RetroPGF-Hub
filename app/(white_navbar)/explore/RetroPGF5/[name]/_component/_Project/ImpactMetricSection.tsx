@@ -29,7 +29,9 @@ const ImpactMetricSection = ({ data, impactRef }: iImpactMetric) => {
           )
           .map(([impactName, impactValue], index) => {
             const displayValue =
-              typeof impactValue === 'number' ? impactValue.toFixed(2) : 'N/A'
+              typeof impactValue === 'number'
+                ? numberWithCommas(impactValue.toFixed(2))
+                : 'N/A'
 
             return (
               <div

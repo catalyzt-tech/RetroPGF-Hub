@@ -6,14 +6,13 @@ import { getJsonRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/page'
 import { getJsonRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/page'
 import { getJsonRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/page'
 import { getJsonRound4 } from '@/app/(white_navbar)/explore/RetroPGF4/page'
-//import { getJsonRound5 } from '@/app/(white_navbar)/explore/RetroPGF5/page'
 import Cpage from './Cpage'
 import { Metadata } from 'next'
 import { shuffle } from '@/app/lib/utils'
 import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
 import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Explore | RetroPGF Hub',
@@ -60,13 +59,12 @@ export async function getAllRound(limit: number): Promise<{
   const round3 = await getJsonRound3()
   const round4 = await getJsonRound4()
   const round5Raw = await getRealTimeRetroPGF5()
-  
+
   const cateRound2Counter = new Map<string, number>()
   const cateRound3Counter = new Map<string, number>()
   const cateRound4Counter = new Map<string, number>()
   const cateRound5Counter = new Map<string, number>()
 
-  
   round2.forEach((project: RetroRound2) => {
     const cateRound2 = project.Category
     if (cateRound2) {
@@ -94,7 +92,7 @@ export async function getAllRound(limit: number): Promise<{
       }
     }
   })
-  
+
   round4.forEach((project: iRetroPGF4Project) => {
     const cateRound4 = project.category
     if (cateRound4) {
@@ -108,24 +106,24 @@ export async function getAllRound(limit: number): Promise<{
       }
     }
   })
-  
+
   const filterUniqueRound5 = round5Raw.data.filter((item, index, self) => {
     return index === self.findIndex((x) => x.name === item.name)
   })
 
   filterUniqueRound5.forEach((project: iRetroPGF5Project) => {
-      const cateRound5 = project.category
-      if (cateRound5) {
-        if (cateRound5Counter.has(cateRound5)) {
-          cateRound5Counter.set(
-            cateRound5,
-            cateRound5Counter.get(cateRound5)! + 1
-          )
-        } else {
-          cateRound5Counter.set(cateRound5, 1)
-        }
+    const cateRound5 = project.category
+    if (cateRound5) {
+      if (cateRound5Counter.has(cateRound5)) {
+        cateRound5Counter.set(
+          cateRound5,
+          cateRound5Counter.get(cateRound5)! + 1
+        )
+      } else {
+        cateRound5Counter.set(cateRound5, 1)
       }
-    })
+    }
+  })
 
   const shuffledRound1 = shuffle([...round1])
   const shuffledRound2 = shuffle([...round2])
@@ -144,14 +142,22 @@ export async function getAllRound(limit: number): Promise<{
     cateRound4: cateRound4Counter,
     cateRound3: cateRound3Counter,
     cateRound2: cateRound2Counter,
-
   }
 }
 
-export default async function page({}: {}) {
+export default async function page() {
   try {
-    const { round1, round2, round3, round4, round5, cateRound2, cateRound3, cateRound4, cateRound5 } =
-      await getAllRound(20)
+    const {
+      round1,
+      round2,
+      round3,
+      round4,
+      round5,
+      cateRound2,
+      cateRound3,
+      cateRound4,
+      cateRound5,
+    } = await getAllRound(20)
 
     return (
       <Cpage
@@ -173,7 +179,9 @@ export default async function page({}: {}) {
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Error</h1>
           <p className="text-red-500">
-            {error instanceof Error ? error.message : 'An unexpected error occurred'}
+            {error instanceof Error
+              ? error.message
+              : 'An unexpected error occurred'}
           </p>
         </div>
       </div>

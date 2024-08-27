@@ -29,7 +29,7 @@ export default function ContractSection({ data, contractRef }: iContract) {
         data.contracts.map((item, i) => (
           <div
             className="flex flex-col gap-1 rounded-lg bg-slate-50 px-6 py-4"
-            key={i}
+            key={item.deploymentTxHash}
           >
             <div className="flex flex-row flex-wrap gap-3 items-center ">
               <div className="flex gap-3">

@@ -26,10 +26,10 @@ export default function ImpactSection({
         <div className="flex flex-col gap-4 overflow-hidden max-w-[70vw]">
           <h6 className="text-base font-bold text-gray-800">Impact Metrics</h6>
           {data.impactMetrics.map((item, i) => (
-            <div className="flex gap-2 group" key={i}>
+            <div className="flex gap-2 group" key={item.description}>
               <LinkIcon className="min-w-6 max-w-6 min-h-6 max-h-6 text-gray-500" />
               <a
-                href={item.url}
+                href={item.url ? item.url : '#'}
                 className="flex flex-col gap-0.5 group-hover:underline cursor-pointer"
               >
                 <h6 className="text-base font-semibold text-gray-600 line-clamp-1 ">

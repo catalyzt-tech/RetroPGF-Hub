@@ -20,25 +20,27 @@ export default function PackageSection({ data, packageRef }: iPackageSection) {
           There is no package for this project.
         </p>
       )}
-
-            {data.packages.length !== 0 &&
-                data.packages.map((item, i) => (
-                <div key={i} className='flex flex-col gap-1 bg-slate-50 rounded-lg px-6 py-4 min-w-72'>
-                    <a 
-                    key={i}
-                    href={item.url || ''}
-                    className="flex items-center gap-2  flex-grow text-base font-medium line-clamp-2 hover:text-primaryRed">
-                        <LinkIcon size={20} className='group-hover:text-primaryRed' />
-                        {item.name ? item.name : item.url}
-                    </a>
-
-                    <div>
-                    {item.description && (
-                        <p className="text-sm text-gray-500">{item.description}</p>
-                    )}
-                    </div>
-                </div>
-            ))}
+      {data.packages.length !== 0 &&
+        data.packages.map((item, i) => (
+          <div
+            key={item.name}
+            className="flex flex-col gap-1 bg-slate-50 rounded-lg px-6 py-4 min-w-72"
+          >
+            <Link
+              key={i}
+              href={item.url ? item.url : '#'}
+              className="flex items-center gap-2  flex-grow text-base font-medium line-clamp-2 hover:text-primaryRed"
+            >
+              <LinkIcon size={20} className="group-hover:text-primaryRed" />
+              {item.name ? item.name : item.url}
+            </Link>
+            <div>
+              {item.description && (
+                <p className="text-sm text-gray-500">{item.description}</p>
+              )}
+            </div>
+          </div>
+        ))}
     </section>
   )
 }

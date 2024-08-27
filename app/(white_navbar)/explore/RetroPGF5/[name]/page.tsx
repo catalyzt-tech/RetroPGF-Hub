@@ -1,5 +1,5 @@
 import BreadCump from './_component/BreadCump'
-import Error from '@/app/component/Error'
+import CustomError from '@/app/component/Error'
 import { cleanParamsName } from '@/app/lib/utils'
 import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 import { iRetroPGF5Project } from '../RetroType5'
@@ -30,7 +30,7 @@ export default async function page({ params }: pageProps) {
     const projectData = await FindRound5Data(decodedString)
     if (!projectData) {
       return (
-        <Error
+        <CustomError
           titleError="500 Failed to get project"
           subTitle="Cant find project that you looking for"
           desc="Something went wrong with finding the project that you looking for"

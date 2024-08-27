@@ -33,10 +33,10 @@ export default function GithubSection({
         {data.github.length != 0 &&
           data.github.map((item, i) => (
             <Link
-              href={item.url}
+              href={item.url ? item.url : '#'}
               target="_blank"
               className={`flex items-center gap-2 rounded-lg bg-slate-50 px-6 py-4 min-w-72 flex-grow text-base font-medium line-clamp-2 hover:text-primaryRed`}
-              key={i}
+              key={item.name}
             >
               <Image
                 src="/logo/github.svg"
@@ -45,7 +45,7 @@ export default function GithubSection({
                 width={30}
                 height={24}
               />
-                {formatGithubLink(item.url)}
+              {formatGithubLink(item.url)}
             </Link>
           ))}
       </div>
