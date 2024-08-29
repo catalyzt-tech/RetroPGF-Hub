@@ -65,7 +65,7 @@ export interface iRetroPGF5Project {
   osoSlug: string | null
   socialLinks: SocialLinks
   team: string[]
-  github: GitHub[]
+  github: GitHub[] | string[]
   packages: Package[]
   contracts: Contract[]
   grantsAndFunding: {
