@@ -25,41 +25,48 @@ export default function GithubSection({ data, githubRef }: iGithubSection) {
             There is no github repository for this project.
           </p>
         )}
-        {data.github.length != 0 &&
-          data.github.map((item, i) => (
-            <div
-              className={`flex flex-col gap-2 rounded-lg bg-slate-50 px-6 py-4 min-w-72 flex-grow h-36"`}
-              key={i}
-            >
-              <Image
-                src="/logo/github.svg"
-                alt="github logo"
-                className="rounded-full mb-1 bg-white"
-                width={30}
-                height={24}
-              />
-              <Link
-                href={item.url}
-                target="_blank"
-                className="text-base font-medium line-clamp-2"
-              >
-                {formatGithubLink(item.url)}
-              </Link>
-              <div className="flex flex-row flex-grow"></div>
-              {/* This will we use when data is available */}
-              {/* <div className="flex flex-row justify-start items-center gap-x-4">
-                <div className="flex flex-row justify-start items-center text-sm  text-gray-600 gap-1">
-                  {star()}
-                  <div>{item.star ?? '-'} Stars</div>
-                </div>
-
-                <div className="flex flex-row justify-start items-center text-sm  text-gray-600 gap-1">
-                  {fork()}
-                  <div>{item.fork ?? '-'} Forks</div>
-                </div>
-              </div> */}
-            </div>
-          ))}
+      {data.github.length !== 0 &&
+          data.github.map((item, i) => {
+            // Check if the item is an object or a string
+            if (typeof item === 'object' && item !== null) {
+              return (
+                <Link
+                  href={item.url}
+                  target="_blank"
+                  className={`flex items-center gap-2 rounded-lg bg-slate-50 px-6 py-4 min-w-72 flex-grow text-base font-medium line-clamp-2 hover:text-primaryRed`}
+                  key={i}
+                >
+                  <Image
+                    src="/logo/github.svg"
+                    alt="github logo"
+                    className="rounded-full mb-1 bg-white"
+                    width={30}
+                    height={24}
+                  />
+                  {formatGithubLink(item.url)}
+                </Link>
+              );
+            } else if (typeof item === 'string') {
+              return (
+                <Link
+                  href={item}
+                  target="_blank"
+                  className={`flex items-center gap-2 rounded-lg bg-slate-50 px-6 py-4 min-w-72 flex-grow text-base font-medium line-clamp-2 hover:text-primaryRed`}
+                  key={i}
+                >
+                  <Image
+                    src="/logo/github.svg"
+                    alt="github logo"
+                    className="rounded-full mb-1 bg-white"
+                    width={30}
+                    height={24}
+                  />
+                  {formatGithubLink(item)}
+                </Link>
+              );
+            }
+          })
+        }
       </div>
     </section>
   )
