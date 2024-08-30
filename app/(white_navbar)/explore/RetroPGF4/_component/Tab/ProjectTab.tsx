@@ -77,6 +77,12 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
       let temp = { ...prev }
 
       let index = temp.category.findIndex((elem) => elem === value)
+
+      if (index !== -1) {
+        temp.category.splice(index, 1)
+      } else {
+        temp.category.push(value)
+      }
       // add new category
 
       return temp
@@ -242,7 +248,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
     }
 
     return sortedItems
-  }, [currentPage, filterJson, state.sort])
+  }, [filterJson, state.sort])
 
   const [loading, setLoading] = useState(true)
   const load = () => {
