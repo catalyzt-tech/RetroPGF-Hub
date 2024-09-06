@@ -11,15 +11,17 @@ import ArrowRight from '@carbon/icons-react/lib/ArrowRight'
 import RetroCard3 from '@/app/component/Card/RetroCardRound3'
 import { cleanParamsName } from '@/app/lib/utils'
 
+interface iCardRound3 {
+  title: string
+  round3: RetroRound3[]
+  cateRound3: Map<string, number>
+}
+
 export default function CardRound3({
   title,
   round3,
   cateRound3,
-}: {
-  title: string
-  round3: RetroRound3[]
-  cateRound3: Map<string, number>
-}) {
+}: iCardRound3) {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null)
   const [state, setState] = useState({
     start: true,

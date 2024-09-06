@@ -8,13 +8,16 @@ import Link from 'next/link'
 import ArrowLeft from '@carbon/icons-react/lib/ArrowLeft'
 import ArrowRight from '@carbon/icons-react/lib/ArrowRight'
 
+interface iCardRound1 {
+  title: string
+  round1: RetroRound1[]
+}
+
+
 export default function CardRound1({
   title,
   round1,
-}: {
-  title: string
-  round1: RetroRound1[]
-}) {
+}: iCardRound1) {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null)
   const [state, setState] = useState({
     start: true,

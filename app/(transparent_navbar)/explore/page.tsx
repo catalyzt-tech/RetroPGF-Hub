@@ -107,6 +107,7 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
+  // TODO: Remove after 5th round data is from agora
   const filterUniqueRound5 = round5Raw.data.filter((item, index, self) => {
     return index === self.findIndex((x) => x.name === item.name)
   })
@@ -125,18 +126,14 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
-  const shuffledRound1 = shuffle([...round1])
-  const shuffledRound2 = shuffle([...round2])
-  const shuffledRound3 = shuffle([...round3])
-  const shuffledRound4 = shuffle([...round4])
-  // const shuffledRound5 = shuffle([...round5])
+//end remove
 
   return {
-    round1: shuffledRound1.slice(0, limit),
-    round2: shuffledRound2.slice(0, limit),
-    round3: shuffledRound3.slice(0, limit),
-    round4: shuffledRound4.slice(0, limit),
-    round5: filterUniqueRound5,
+    round1: round1.slice(0, limit),
+    round2: round2.slice(0, limit),
+    round3: round3.slice(0, limit),
+    round4: round4.slice(0, limit),
+    round5: filterUniqueRound5.slice(0, limit),
 
     cateRound5: cateRound5Counter,
     cateRound4: cateRound4Counter,

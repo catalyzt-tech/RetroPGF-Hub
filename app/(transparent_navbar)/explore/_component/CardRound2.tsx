@@ -11,15 +11,17 @@ import ArrowLeft from '@carbon/icons-react/lib/ArrowLeft'
 import ArrowRight from '@carbon/icons-react/lib/ArrowRight'
 import { cleanParamsName } from '@/app/lib/utils'
 
+interface iCardRound2 {
+  title: string
+  round2: RetroRound2[]
+  cateRound2: Map<string, number>
+}
+
 export default function CardRound2({
   title,
   round2,
   cateRound2,
-}: {
-  title: string
-  round2: RetroRound2[]
-  cateRound2: Map<string, number>
-}) {
+}: iCardRound2) {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null)
   const [state, setState] = useState({
     start: true,
