@@ -11,7 +11,7 @@ import ArrowRight from '@carbon/icons-react/lib/ArrowRight'
 import RetroCard4 from '@/app/component/Card/RetroCardRound4'
 import { cleanParamsName } from '@/app/lib/utils'
 
-export default function CardRound3({
+export default function CardRound4({
   title,
   round4,
   cateRound4,
