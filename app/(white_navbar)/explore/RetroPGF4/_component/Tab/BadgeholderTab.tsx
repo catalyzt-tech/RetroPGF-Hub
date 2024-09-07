@@ -27,7 +27,7 @@ const BadgeholderTab: FC<BadgeholderTabProps> = ({ badgeholderData }) => {
     filter: true,
   })
   const [checkBox, setCheckBox] = useState<CheckBoxStateBadgeholderType>({
-    status: 'All',
+    status: 'Vote',
     multiplyOpenSource: 'All',
   })
 
