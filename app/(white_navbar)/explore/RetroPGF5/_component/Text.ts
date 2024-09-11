@@ -76,6 +76,21 @@ export const applicationCategory = [
   },
 ]
 
+export const priceModel = [
+  {
+    name: 'Free',
+    value: 'free',
+  },
+  {
+    name: 'Freemium',
+    value: 'freemium',
+  },
+  {
+    name: 'Pay to Use',
+    value: 'pay_to_use',
+  },
+]
+
 export const eligibilityStatus = [
   {
     name: 'All',

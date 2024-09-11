@@ -36,6 +36,7 @@ export default function ProjectTab({
   const [checkBox, setCheckBox] = useState<CheckBoxStateType>({
     category: [],
     applicationCategory: [],
+    priceModel: [],
     receiveOP: [],
     eligibility: 'Eligible',
   })
@@ -44,6 +45,7 @@ export default function ProjectTab({
     setCheckBox({
       category: [],
       applicationCategory: [],
+      priceModel: [],
       receiveOP: [],
       eligibility: 'Eligible',
     })
@@ -82,6 +84,18 @@ export default function ProjectTab({
       return { ...prev, applicationCategory: updatedApplicationCategory }
     })
   }
+
+  function handleChangePriceModel(value: string) {
+    setCheckBox((prev) => {
+      let temp = { ...prev }
+      const updatedPriceModel = temp.priceModel.includes(value)
+        ? temp.priceModel.filter((elem) => elem !== value)
+        : [...temp.priceModel, value]
+
+      return { ...prev, priceModel: updatedPriceModel }
+    })
+  }
+
   const handlePageClick = (page: number) => {
     setCurrentPage((prev) => page)
   }
@@ -132,8 +146,20 @@ export default function ProjectTab({
       } else {
         applicationCategoryCondition = true
       }
+
+      let priceModelCondition: boolean
+      if (checkBox.priceModel.length !== 0) {
+        priceModelCondition = checkBox.priceModel.some(
+          (elem) => elem === item.pricingModel
+        )
+      } else {
+        priceModelCondition = true
+      }
       return (
-        searchCondition && categoryCondition && applicationCategoryCondition
+        searchCondition &&
+        categoryCondition &&
+        applicationCategoryCondition &&
+        priceModelCondition
       )
     })
     // return projectData
@@ -264,6 +290,7 @@ export default function ProjectTab({
                 handleChangeApplicationCategory={
                   handleChangeApplicationCategory
                 }
+                handleChangePriceModel={handleChangePriceModel}
                 minVal={minVal}
                 setMinVal={setMinVal}
                 maxVal={maxVal}
@@ -319,6 +346,7 @@ export default function ProjectTab({
                   handleChangeApplicationCategory={
                     handleChangeApplicationCategory
                   }
+                  handleChangePriceModel={handleChangePriceModel}
                   minVal={minVal}
                   setMinVal={setMinVal}
                   maxVal={maxVal}
