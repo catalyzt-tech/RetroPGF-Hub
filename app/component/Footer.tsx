@@ -45,7 +45,6 @@ function ReturnLinkLogo() {
       >
         <LinkIcon size={24} className="fill-gray-800" />
       </a>
-
       <a
         href="https://twitter.com/catalyzt_tech"
         className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
@@ -54,7 +53,6 @@ function ReturnLinkLogo() {
       >
         <LogoTwitter size={24} className="fill-gray-800" />
       </a>
-
       <a
         href="/"
         className="p-1 rounded-full bg-gray-100 hover:bg-gray-200"
@@ -80,7 +78,10 @@ export default function Footer({}: {}) {
           </h6>
           <div className="flex gap-0.5 flex-wrap text-sm text-gray-600">
             <span>This open-source project built by</span>
-            <Link href="https://catalyzt.tech/" className="font-semibold">@Catalyzt</Link>.
+            <Link href="https://catalyzt.tech/" className="font-semibold">
+              @Catalyzt
+            </Link>
+            .
           </div>
         </div>
       </div>
@@ -111,7 +112,10 @@ export default function Footer({}: {}) {
           <div className="">
             <h6 className="flex gap-1 text-base font-normal text-gray-600">
               This open-source project built by
-              <Link href="https://catalyzt.tech/" className="text-base font-semibold text-gray-600">
+              <Link
+                href="https://catalyzt.tech/"
+                className="text-base font-semibold text-gray-600"
+              >
                 @Catalyzt.
               </Link>
             </h6>
