@@ -37,7 +37,7 @@ export default function CardRound4({
           href={{
             pathname: `/explore/RetroPGF4`,
           }}
-          className="md:hidden flex gap-2"
+          className="lg:hidden flex gap-2"
         >
           <p className="text-sm font-semibold text-gray-600 hover:underline ">
             See all{' '}

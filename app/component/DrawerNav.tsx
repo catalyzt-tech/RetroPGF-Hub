@@ -88,7 +88,7 @@ export default function DrawerNav({
                   </li>
                   <li className="flex p-4 py-6 items-center">
                     <Link href={"/signin"} className="text-2xl font-semibold text-gray-800">
-                        Signin
+                        Sign In
                     </Link>
                   </li>
                  </>

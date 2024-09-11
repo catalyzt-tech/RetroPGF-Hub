@@ -21,6 +21,7 @@ interface iDynamicCard {
   isEligible?: boolean
   isOpenSource?: boolean
   reward?: number
+  rank?: number
 }
 export default function DynamicCard({
   banner,
@@ -33,6 +34,7 @@ export default function DynamicCard({
   isEligible,
   isOpenSource = false,
   reward = 0,
+  rank=0
 }: iDynamicCard) {
   const categoryElement = useMemo(
     () => handleCategoryRound4(category),
@@ -82,6 +84,7 @@ export default function DynamicCard({
           className=""
           width={48}
           height={48}
+          style={{ width: "48px", height: "48px" }}
         />
       </div>
       <div className="mt-20 lg:mt-[5.5rem]"></div>
@@ -103,16 +106,13 @@ export default function DynamicCard({
             {openSourceElement}
           </div>
           <div className="flex-grow"></div>
-          <div className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group">
-            {/* <Trophy size={20} /> */}
-            {/* <Star size={20} /> */}
-            <div className="flex flex-row justify-center items-center gap-x-2 group-hover:scale-105 transition-all ease-linear">
+          <div className="flex gap-2">
+            <Trophy size={20} />
+            <div className="flex gap-1">
               <p className="text-sm font-semibold text-gray-800">
-                {numberWithCommas(reward || 0)}
+              {numberWithCommas(reward.toFixed(2) || 0)} OP
               </p>
-              <p className="text-sm font-light text-gray-600">
-                <Image src={OpTokenPath} alt="OpToken" width={18} height={18} />
-              </p>
+              <p className="text-sm font-light text-gray-600">#{rank}</p>
             </div>
           </div>
         </div>

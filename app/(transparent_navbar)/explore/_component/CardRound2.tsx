@@ -36,7 +36,7 @@ export default function CardRound2({
           href={{
             pathname: `/explore/${cleanParamsName(title)}`,
           }}
-          className="md:hidden flex gap-2"
+          className="lg:hidden flex gap-2"
         >
           <p className="text-sm font-semibold text-gray-600 hover:underline ">
             See all{' '}

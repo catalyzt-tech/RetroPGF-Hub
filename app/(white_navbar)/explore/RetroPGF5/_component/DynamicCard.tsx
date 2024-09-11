@@ -78,6 +78,7 @@ export default function DynamicCard({
           className=""
           width={48}
           height={48}
+          style={{ width: "48px", height: "48px" }}
         />
       </div>
       <div className="mt-20 lg:mt-[5.5rem]"></div>

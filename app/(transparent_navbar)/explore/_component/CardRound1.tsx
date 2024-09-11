@@ -5,6 +5,7 @@ import { Pagination, Controller } from 'swiper/modules'
 import { RetroCard1 } from '@/app/component/Card/RetroCardRound1'
 import { RetroRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/RetroType1'
 import Link from 'next/link'
+import ChevronRight from '@carbon/icons-react/lib/ChevronRight'
 import ArrowLeft from '@carbon/icons-react/lib/ArrowLeft'
 import ArrowRight from '@carbon/icons-react/lib/ArrowRight'
 
@@ -32,7 +33,21 @@ export default function CardRound1({
           href={{
             pathname: `/explore/RetroPGF1`,
           }}
-          className=" flex gap-2"
+          className=" lg:hidden flex gap-2"
+        >
+          <p className="text-sm font-semibold text-gray-600 hover:underline ">
+            See all{' '}
+          </p>
+          <ChevronRight size={20} className="fill-gray-600" />
+        </Link>
+        <Link
+          href={{
+            pathname: `/explore/RetroPGF1`,
+          }}
+          className=" lg:block h-8 hidden
+                hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
+                rounded-full px-3 py-1.5 cursor-pointer transition-colors self-center shrink-0 text-slate-900 border
+                "
         >
           <p className=" text-sm font-normal ">See all</p>
         </Link>
