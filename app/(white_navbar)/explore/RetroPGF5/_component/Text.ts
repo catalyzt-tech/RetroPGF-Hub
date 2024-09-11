@@ -1,3 +1,5 @@
+import { name } from '@cloudinary/url-gen/actions/namedTransformation'
+
 export const tab = [
   {
     text: 'Project',
@@ -56,6 +58,21 @@ export const category = [
   {
     name: 'Governance',
     subCategory: [],
+  },
+]
+
+export const applicationCategory = [
+  {
+    name: 'ETHEREUM_CORE_CONTRIBUTIONS',
+    value: 'Ethereum Core Contributions',
+  },
+  {
+    name: 'OP_STACK_RESEARCH_AND_DEVELOPMENT',
+    value: 'OP Stack Research and Development',
+  },
+  {
+    name: 'OP_STACK_TOOLING',
+    value: 'OP Stack Tooling',
   },
 ]
 

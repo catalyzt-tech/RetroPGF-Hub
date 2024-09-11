@@ -13,7 +13,6 @@ import DialogFilter from './Filter/DialogFilter'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
 import { isLetter } from '@/app/lib/utils'
-import { app } from '../../../../../lib/firebase'
 
 interface ProjectTabProps {
   projectData: iRetroPGF5Project[]
@@ -36,6 +35,7 @@ export default function ProjectTab({
   const [maxVal, setMaxVal] = useState(max)
   const [checkBox, setCheckBox] = useState<CheckBoxStateType>({
     category: [],
+    applicationCategory: [],
     receiveOP: [],
     eligibility: 'Eligible',
   })
@@ -43,6 +43,7 @@ export default function ProjectTab({
   function handleClearFilter() {
     setCheckBox({
       category: [],
+      applicationCategory: [],
       receiveOP: [],
       eligibility: 'Eligible',
     })
@@ -69,6 +70,18 @@ export default function ProjectTab({
     })
   }
 
+  function handleChangeApplicationCategory(value: string) {
+    setCheckBox((prev) => {
+      let temp = { ...prev }
+      const updatedApplicationCategory = temp.applicationCategory.includes(
+        value
+      )
+        ? temp.applicationCategory.filter((elem) => elem !== value)
+        : [...temp.applicationCategory, value]
+
+      return { ...prev, applicationCategory: updatedApplicationCategory }
+    })
+  }
   const handlePageClick = (page: number) => {
     setCurrentPage((prev) => page)
   }
@@ -111,7 +124,17 @@ export default function ProjectTab({
         categoryCondition = true
       }
 
-      return searchCondition && categoryCondition
+      let applicationCategoryCondition: boolean
+      if (checkBox.applicationCategory.length !== 0) {
+        applicationCategoryCondition = checkBox.applicationCategory.some(
+          (elem) => elem === item.applicationCategory
+        )
+      } else {
+        applicationCategoryCondition = true
+      }
+      return (
+        searchCondition && categoryCondition && applicationCategoryCondition
+      )
     })
     // return projectData
   }, [projectData, search, checkBox])
@@ -238,6 +261,9 @@ export default function ProjectTab({
                 checkBox={checkBox}
                 handleClearFilter={handleClearFilter}
                 handleChangeCategory={handleChangeCategory}
+                handleChangeApplicationCategory={
+                  handleChangeApplicationCategory
+                }
                 minVal={minVal}
                 setMinVal={setMinVal}
                 maxVal={maxVal}
@@ -290,6 +316,9 @@ export default function ProjectTab({
                   checkBox={checkBox}
                   handleClearFilter={handleClearFilter}
                   handleChangeCategory={handleChangeCategory}
+                  handleChangeApplicationCategory={
+                    handleChangeApplicationCategory
+                  }
                   minVal={minVal}
                   setMinVal={setMinVal}
                   maxVal={maxVal}
@@ -357,6 +386,7 @@ export default function ProjectTab({
           open={state.drawer}
           checkBox={checkBox}
           handleChangeCategory={handleChangeCategory}
+          handleChangeApplicationCategory={handleChangeApplicationCategory}
           maxVal={maxVal}
           minVal={minVal}
           setMaxVal={setMaxVal}

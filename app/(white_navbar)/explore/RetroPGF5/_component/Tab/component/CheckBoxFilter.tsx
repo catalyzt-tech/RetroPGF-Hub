@@ -1,11 +1,13 @@
 'use client'
 import { CheckBoxStateType } from '../../ExploreRoundType'
+import ApplicationCategoryDisclosure from '../Filter/ApplicationCategoryDisclosure'
 import CategoryDisclosure from '../Filter/CategoryDisclosure'
 import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
 
 interface CheckBoxFilterProps {
   checkBox: CheckBoxStateType
   handleChangeCategory: (value: string) => void
+  handleChangeApplicationCategory: (value: string) => void
   handleClearFilter: () => void
   minVal: number
   maxVal: number
@@ -15,6 +17,7 @@ interface CheckBoxFilterProps {
 export default function CheckBoxFilter({
   checkBox,
   handleChangeCategory,
+  handleChangeApplicationCategory,
   handleClearFilter,
   minVal,
   setMinVal,
@@ -37,6 +40,10 @@ export default function CheckBoxFilter({
         <CategoryDisclosure
           checkBox={checkBox}
           handleChangeCategory={handleChangeCategory}
+        />
+        <ApplicationCategoryDisclosure
+          checkBox={checkBox}
+          handleChangeApplicationCategory={handleChangeApplicationCategory}
         />
         {/* <EligibilityDisclosure
           checkBox={checkBox}
