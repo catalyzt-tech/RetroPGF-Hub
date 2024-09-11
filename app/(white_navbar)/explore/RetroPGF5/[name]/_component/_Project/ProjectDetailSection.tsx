@@ -28,7 +28,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
           <div className="absolute -top-32 left-2 lg:-top-32 lg:left-6 rounded-[0.25rem] flex flex-shrink-0 z-20">
             <div className="relative w-28 h-28 lg:w-32 lg:h-32">
               <Image
-                src={data.projectAvatarUrl || '/random/OP-Logo.png'}
+                src={data.profileAvatarUrl || '/random/OP-Logo.png'}
                 alt="avatar image"
                 className="rounded-lg object-cover bg-white p-1.5"
                 fill
@@ -59,11 +59,11 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
               {/* <h6 className="text-base font-semibold text-gray-600">
                 Pricing Model: {data.pricingModel}
               </h6> */}
-              {data.pricingModelDetails && (
+              {/* {data.pricingModel && (
                 <p className="text-base font-normal text-gray-600">
-                  {data.pricingModelDetails}
+                  {data.pricingModel}
                 </p>
-              )}
+              )} */}
             </div>
 
             <div className="flex w-fit items-center md:hidden px-5 py-3 mb-4 rounded-xl text-base font-medium bg-red-50">

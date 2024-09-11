@@ -15,15 +15,15 @@ export default function PackageSection({ data, packageRef }: iPackageSection) {
     >
       <h3 className="text-2xl font-semibold">Package</h3>
       <hr className="border-t-gray-100" />
-      {data.packages.length == 0 && (
+      {data.packages?.length == 0 && (
         <p className="text-base font-normal text-gray-600">
           There is no package for this project.
         </p>
       )}
-      {data.packages.length !== 0 &&
-        data.packages.map((item, i) => (
+      {data.packages?.length !== 0 &&
+        data.packages?.map((item, i) => (
           <div
-            key={item.name}
+            key={item.description}
             className="flex flex-col gap-1 bg-slate-50 rounded-lg px-6 py-4 min-w-72"
           >
             <Link

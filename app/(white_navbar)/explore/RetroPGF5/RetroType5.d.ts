@@ -16,7 +16,7 @@ export interface iRetroPGF5Project {
   links?: Link[]
   name: string
   organization: Organization | null
-  packages: Array<Link | string>
+  packages: Link[] | null
   pricingModel?: PricingModel
   profileAvatarUrl: string
   projectCoverImageUrl: string
