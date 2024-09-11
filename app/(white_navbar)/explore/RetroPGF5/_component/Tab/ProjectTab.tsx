@@ -13,6 +13,7 @@ import DialogFilter from './Filter/DialogFilter'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
 import { isLetter } from '@/app/lib/utils'
+import { app } from '../../../../../lib/firebase'
 
 interface ProjectTabProps {
   projectData: iRetroPGF5Project[]
@@ -261,6 +262,7 @@ export default function ProjectTab({
                       icon={item.profileAvatarUrl ?? ''}
                       banner={item.projectCoverImageUrl ?? ''}
                       category={item.category ?? ''}
+                      applicationCategory={item.applicationCategory ?? ''}
                       description={item.description ?? ''}
                       title={item.name}
                       teamSize={item.team?.length ?? 0}

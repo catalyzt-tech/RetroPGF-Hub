@@ -5,8 +5,12 @@ import { Star } from '@carbon/icons-react'
 import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
-import { handleCategoryRound5 } from '@/app/lib/InitialMount'
+import {
+  handleApplicationCategoryRound5,
+  handleCategoryRound5,
+} from '@/app/lib/InitialMount'
 import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
+import { app } from '../../../../lib/firebase'
 
 interface iDynamicCard {
   banner?: string
@@ -15,6 +19,7 @@ interface iDynamicCard {
   title?: string
   description?: string
   category?: string
+  applicationCategory?: string
   teamSize?: number
   isEligible?: boolean
 
@@ -27,6 +32,7 @@ export default function DynamicCard({
   title = '',
   description = '',
   category = '',
+  applicationCategory = '',
   teamSize = 0,
   isEligible = false,
   reward = 0,
@@ -34,6 +40,10 @@ export default function DynamicCard({
   const categoryElement = useMemo(
     () => handleCategoryRound5(category),
     [category]
+  )
+  const applicationCategoryElement = useMemo(
+    () => handleApplicationCategoryRound5(applicationCategory),
+    [applicationCategory]
   )
 
   return (
@@ -93,6 +103,7 @@ export default function DynamicCard({
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
+            {applicationCategoryElement}
             {categoryElement}
             {/* {openSourceElement} */}
           </div>
