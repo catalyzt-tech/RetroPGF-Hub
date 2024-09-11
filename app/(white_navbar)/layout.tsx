@@ -9,7 +9,8 @@ export default function Layout({
   return (
     <div className="font-inter flex flex-col min-h-screen">
       <Navbar shadow={true} bgColor="bg-white sticky top-0 z-1" />
-      <div>{children}</div>
+      {children}
+      <Footer />
     </div>
   )
 }

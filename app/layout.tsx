@@ -58,7 +58,6 @@ export default function RootLayout({
       <body className={`${interFont.variable} ${rubikFont.variable} `}>
         <Toaster />
         <GlobalProvider>{children}</GlobalProvider>
-        <Footer />
       </body>
     </html>
   )

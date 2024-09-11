@@ -1,7 +1,7 @@
 export interface RetroPGF5Response {
-  msg:  string;
-  type: string;
-  data: iRetroPGF5Project[];
+  msg: string
+  type: string
+  data: iRetroPGF5Project[]
 }
 
 export interface SocialLinks {
