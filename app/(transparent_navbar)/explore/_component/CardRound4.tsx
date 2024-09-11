@@ -107,8 +107,8 @@ export default function CardRound4({
                     category={item.category}
                     description={item.description}
                     teamSize={item.team.length}
-                    // opRecieve={0}
-                    // rank={0}
+                    opRecieve={item.reward ?? 0}
+                    rank={0}
                     round="RetroPGF 4"
                     // vote={0}
                     icon={item.projectAvatarUrl}

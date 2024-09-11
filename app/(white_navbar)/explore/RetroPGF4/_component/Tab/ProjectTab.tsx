@@ -371,6 +371,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
                     category={item.category}
                     description={item.description}
                     title={item.name}
+                    teamSize={item.team.length}
                     // opRecieve={0}
                     round="4"
                     // votes={0}

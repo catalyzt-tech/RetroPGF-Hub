@@ -54,10 +54,9 @@ export default function DynamicCard({
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="avatar image"
-          className=""
+          className="w-12 h-12"
           width={48}
           height={48}
-          style={{ width: "48px", height: "48px" }}
         />
       </div>
 

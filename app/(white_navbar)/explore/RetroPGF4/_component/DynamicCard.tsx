@@ -81,10 +81,9 @@ export default function DynamicCard({
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="avatar image"
-          className=""
+          className="w-12 h-12"
           width={48}
           height={48}
-          style={{ width: "48px", height: "48px" }}
         />
       </div>
       <div className="mt-20 lg:mt-[5.5rem]"></div>
@@ -106,6 +105,15 @@ export default function DynamicCard({
             {openSourceElement}
           </div>
           <div className="flex-grow"></div>
+          <div className="flex gap-2">
+            <Events size={20} />
+            <div className="flex gap-1">
+              <p className="text-sm font-semibold text-gray-800">
+                {Math.ceil(teamSize).toString()}
+              </p>
+              <p className="text-sm font-light text-gray-600">People</p>
+            </div>
+          </div>
           <div className="flex gap-2">
             <Trophy size={20} />
             <div className="flex gap-1">
