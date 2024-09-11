@@ -252,6 +252,7 @@ export default function ProjectTab({ round1 }: { round1: RetroRound1[] }) {
                       opRecieve={item.allocation}
                       round="1"
                       leader={item.Leader}
+                      rank={item.rank}
                     />
                   </React.Fragment>
                 ))
@@ -287,6 +288,7 @@ export default function ProjectTab({ round1 }: { round1: RetroRound1[] }) {
                     title={item['Project Name']}
                     opRecieve={item.allocation}
                     round="1"
+                    rank={item.rank}
                   />
                 </React.Fragment>
               ))}

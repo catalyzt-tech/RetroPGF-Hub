@@ -15,6 +15,7 @@ export interface RetroRound2 {
     "Project Profile": string;
     iconPath:string;
     bannerPath:string;
+    rank : number;
 }
 
 export type CategoryRound2 = 'Education' | 'Tooling and utilities' | 'Infrastructure'

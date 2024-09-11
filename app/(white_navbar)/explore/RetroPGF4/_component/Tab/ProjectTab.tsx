@@ -374,7 +374,7 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
                     // opRecieve={0}
                     round="4"
                     // votes={0}
-                    // rank={0}
+                    rank={item.rank}
                   />
                 </React.Fragment>
               ))}

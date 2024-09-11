@@ -15,6 +15,7 @@ export default function DynamicCard({
   category = 'Education',
   votes = 0,
   opRecieve = 0,
+  rank = 0
 }: {
   round?: string
   icon?: string
@@ -24,6 +25,7 @@ export default function DynamicCard({
   category?: CategoryRound2
   votes?: number
   opRecieve?: number
+  rank : number
 }) {
   return (
     <div
@@ -92,6 +94,7 @@ export default function DynamicCard({
               <p className="text-sm font-semibold text-gray-800">
                 {numberWithCommas(opRecieve.toFixed(2)||0)} OP
               </p>
+              <p className="text-sm font-light text-gray-600">#{rank}</p>
             </div>
           </div>
         </div>

@@ -11,7 +11,8 @@ export default function DynamicCard({
     title="",
     description="",
     opRecieve=0,
-    leader
+    leader,
+    rank=0
 }:{
     background?:string;
     round?:string;
@@ -20,6 +21,7 @@ export default function DynamicCard({
     description?:string;
     opRecieve?:number;
     leader?:string;
+    rank?:number;
 })  {
 
   
@@ -77,6 +79,7 @@ return (
                     <Trophy size={20} />
                     <div className="flex gap-1">
                         <p className="text-sm font-semibold text-gray-800">{ numberWithCommas(opRecieve.toFixed(2)||0)} OP</p>
+                        <p className="text-sm font-light text-gray-600">#{rank}</p>
                     </div>
 
                 </div>
