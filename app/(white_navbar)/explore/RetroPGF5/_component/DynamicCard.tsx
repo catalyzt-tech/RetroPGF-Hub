@@ -8,8 +8,6 @@ import Link from 'next/link'
 import { handleCategoryRound5 } from '@/app/lib/InitialMount'
 import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
 
-const OpTokenPath = '/static/superchainLogo/optimism.svg'
-
 interface iDynamicCard {
   banner?: string
   icon?: string

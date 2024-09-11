@@ -258,12 +258,13 @@ export default function ProjectTab({
                 currentItems.map((item, i) => (
                   <React.Fragment key={i}>
                     <DynamicCard
-                      icon={item.projectAvatarUrl ?? ''}
+                      icon={item.profileAvatarUrl ?? ''}
                       banner={item.projectCoverImageUrl ?? ''}
                       category={item.category ?? ''}
                       description={item.description ?? ''}
                       title={item.name}
-                      teamSize={item.team.length}
+                      teamSize={item.team?.length ?? 0}
+                      // teamSize={1}
                       round="5"
                       isEligible={true}
                       reward={0}
