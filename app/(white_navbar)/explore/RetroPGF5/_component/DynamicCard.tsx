@@ -8,7 +8,7 @@ import Link from 'next/link'
 import {
   handleApplicationCategoryRound5,
   handleCategoryRound5,
-} from '@/app/lib/InitialMount'
+} from '@/app/lib/common'
 import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
 import { app } from '../../../../lib/firebase'
 

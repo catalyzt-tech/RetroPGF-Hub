@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { iRetroPGF5Project } from '../../../RetroType5'
-import { handleCategoryRound5 } from '@/app/lib/InitialMount'
+import { handleCategoryRound5 } from '@/app/lib/common'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 import List from '@carbon/icons-react/lib/List'
