@@ -29,7 +29,7 @@ export default function RetroCard2({
 }) {
   return (
     <div
-      className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[17rem] w-[14.25rem] relative ${marginX}`}
+      className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[17rem] w-[14.25rem] relative ${marginX} overflow-hidden`}
     >
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full max-h-14 overflow-hidden">
