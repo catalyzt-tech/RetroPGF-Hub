@@ -2,7 +2,7 @@ import Trophy from '@carbon/icons-react/lib/Trophy'
 import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
-import { handleCategoryRound3 } from '@/app/lib/InitialMount'
+import { handleCategoryRound3 } from '@/app/lib/common'
 import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { cleanParamsName } from '@/app/lib/utils'
 

@@ -1,4 +1,4 @@
-import { handleCategoryRound5 } from '../../../../../../lib/InitialMount'
+import { handleCategoryRound5 } from '@/app/lib/common'
 import { iRetroPGF5Project } from '../../../RetroType5'
 
 interface iOverviewSection {

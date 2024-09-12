@@ -7,6 +7,8 @@ export interface ExploreRoundState {
 
 export type CheckBoxStateType = {
   category: string[]
+  applicationCategory: string[]
+  priceModel: string[]
   receiveOP: number[]
   eligibility: string
 }

@@ -35,6 +35,8 @@ export default function ProjectTab({
   const [maxVal, setMaxVal] = useState(max)
   const [checkBox, setCheckBox] = useState<CheckBoxStateType>({
     category: [],
+    applicationCategory: [],
+    priceModel: [],
     receiveOP: [],
     eligibility: 'Eligible',
   })
@@ -42,6 +44,8 @@ export default function ProjectTab({
   function handleClearFilter() {
     setCheckBox({
       category: [],
+      applicationCategory: [],
+      priceModel: [],
       receiveOP: [],
       eligibility: 'Eligible',
     })
@@ -65,6 +69,30 @@ export default function ProjectTab({
       }
 
       return temp
+    })
+  }
+
+  function handleChangeApplicationCategory(value: string) {
+    setCheckBox((prev) => {
+      let temp = { ...prev }
+      const updatedApplicationCategory = temp.applicationCategory.includes(
+        value
+      )
+        ? temp.applicationCategory.filter((elem) => elem !== value)
+        : [...temp.applicationCategory, value]
+
+      return { ...prev, applicationCategory: updatedApplicationCategory }
+    })
+  }
+
+  function handleChangePriceModel(value: string) {
+    setCheckBox((prev) => {
+      let temp = { ...prev }
+      const updatedPriceModel = temp.priceModel.includes(value)
+        ? temp.priceModel.filter((elem) => elem !== value)
+        : [...temp.priceModel, value]
+
+      return { ...prev, priceModel: updatedPriceModel }
     })
   }
 
@@ -110,7 +138,29 @@ export default function ProjectTab({
         categoryCondition = true
       }
 
-      return searchCondition && categoryCondition
+      let applicationCategoryCondition: boolean
+      if (checkBox.applicationCategory.length !== 0) {
+        applicationCategoryCondition = checkBox.applicationCategory.some(
+          (elem) => elem === item.applicationCategory
+        )
+      } else {
+        applicationCategoryCondition = true
+      }
+
+      let priceModelCondition: boolean
+      if (checkBox.priceModel.length !== 0) {
+        priceModelCondition = checkBox.priceModel.some(
+          (elem) => elem === item.pricingModel
+        )
+      } else {
+        priceModelCondition = true
+      }
+      return (
+        searchCondition &&
+        categoryCondition &&
+        applicationCategoryCondition &&
+        priceModelCondition
+      )
     })
     // return projectData
   }, [projectData, search, checkBox])
@@ -237,6 +287,10 @@ export default function ProjectTab({
                 checkBox={checkBox}
                 handleClearFilter={handleClearFilter}
                 handleChangeCategory={handleChangeCategory}
+                handleChangeApplicationCategory={
+                  handleChangeApplicationCategory
+                }
+                handleChangePriceModel={handleChangePriceModel}
                 minVal={minVal}
                 setMinVal={setMinVal}
                 maxVal={maxVal}
@@ -258,12 +312,14 @@ export default function ProjectTab({
                 currentItems.map((item, i) => (
                   <React.Fragment key={i}>
                     <DynamicCard
-                      icon={item.projectAvatarUrl ?? ''}
+                      icon={item.profileAvatarUrl ?? ''}
                       banner={item.projectCoverImageUrl ?? ''}
                       category={item.category ?? ''}
+                      applicationCategory={item.applicationCategory ?? ''}
                       description={item.description ?? ''}
                       title={item.name}
-                      teamSize={item.team.length}
+                      teamSize={item.team?.length ?? 0}
+                      // teamSize={1}
                       round="5"
                       isEligible={true}
                       reward={0}
@@ -287,6 +343,10 @@ export default function ProjectTab({
                   checkBox={checkBox}
                   handleClearFilter={handleClearFilter}
                   handleChangeCategory={handleChangeCategory}
+                  handleChangeApplicationCategory={
+                    handleChangeApplicationCategory
+                  }
+                  handleChangePriceModel={handleChangePriceModel}
                   minVal={minVal}
                   setMinVal={setMinVal}
                   maxVal={maxVal}
@@ -354,6 +414,7 @@ export default function ProjectTab({
           open={state.drawer}
           checkBox={checkBox}
           handleChangeCategory={handleChangeCategory}
+          handleChangeApplicationCategory={handleChangeApplicationCategory}
           maxVal={maxVal}
           minVal={minVal}
           setMaxVal={setMaxVal}
