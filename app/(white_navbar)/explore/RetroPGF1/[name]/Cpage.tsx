@@ -11,7 +11,7 @@ export default function Cpage({ data }: { data: RetroRound1 }) {
       {/* Scroll Spy */}
 
       <div className="flex-grow flex flex-col gap-4 lg:gap-16">
-        <section className="w-full h-full flex flex-col gap-4 lg:gap-12 flex-growb">
+        <section className="w-full h-full flex flex-col gap-4 lg:gap-8 flex-grow">
           <ProjectDetailSection data={data} />
         </section>
       </div>

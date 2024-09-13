@@ -1,4 +1,5 @@
 import { RetroRound2 } from "../../../RetroType2";
+import { handleCategoryRound2 } from "@/app/lib/InitialMount";
 
 export default function OverviewSection({
     data
@@ -39,9 +40,10 @@ export default function OverviewSection({
 
                     <div className="flex flex-wrap gap-3 items-center">
                         <p className="mb-1 text-base font-normal text-gray-500">Category:</p>
-                        <p className="mb-1 text-base font-semibold text-gray-600">
-                            {data.Category}
-                        </p>
+                        <div className="flex flex-wrap gap-4 ">
+                        {handleCategoryRound2(data.Category!)}
+                       
+                    </div>
                     </div>
 
 

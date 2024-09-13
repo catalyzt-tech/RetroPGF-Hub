@@ -55,18 +55,6 @@ export default function ProjectDetailSection({
                 
                 </div>
 
-                {/* Category */}
-                <div className="">
-                    <div className="flex  flex-wrap gap-4 ">
-                        {handleCategoryRound3(data["New Main-Category"])}
-                        {/* <div className="inline-flex px-2 py-1 rounded-full bg-slate-50 hover:bg-slate-100/75 cursor-pointer w-fit">
-                            <h6 className="text-xs font-normal text-gray-600 line-clamp-1 break-all">
-                                {data['Sub-category']}
-                            </h6>
-                        </div> */}
-                    </div>
-                </div>
-
             </div>
         </div>
        
