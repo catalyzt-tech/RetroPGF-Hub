@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { iRetroPGF4Project } from '../../../RetroType4'
-import { handleCategoryRound4 } from '@/app/lib/InitialMount'
+import { handleCategoryRound4 } from '@/app/lib/common'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 

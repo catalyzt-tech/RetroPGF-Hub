@@ -1,5 +1,5 @@
 import { RetroRound3 } from "../../../RetroType3"
-import { handleCategoryRound3 } from "@/app/lib/InitialMount";
+import { handleCategoryRound3 } from "@/app/lib/common";
 
 export default function OverviewSection({
     data

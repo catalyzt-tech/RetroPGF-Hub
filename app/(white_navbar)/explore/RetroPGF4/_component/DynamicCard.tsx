@@ -5,7 +5,7 @@ import { Star } from '@carbon/icons-react'
 import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
-import { handleCategoryRound4, handleOpenSource } from '@/app/lib/InitialMount'
+import { handleCategoryRound4, handleOpenSource } from '@/app/lib/common'
 import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
 
 const OpTokenPath = '/static/superchainLogo/optimism.svg'

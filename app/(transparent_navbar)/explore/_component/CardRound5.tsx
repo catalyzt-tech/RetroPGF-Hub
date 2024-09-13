@@ -30,13 +30,13 @@ export default function CardRound5({ title, round5, cateRound5 }: iCardRound5) {
       <div className="flex justify-between items-center">
         <h2 className="text-2xl flex items-center justify-center font-semibold text-gray-900">
           <div>{title} </div>
-            <div className="ml-4 flex items-center text-[0.75rem] bg-red-50 font-medium text-red-700 px-2.5 py-3 h-6 rounded-full">
-              {' '}
-                <div className="animate-pulse w-3 h-3 rounded-full bg-red-500 mr-1"></div>
-                Live
-            </div>
+          <div className="ml-4 flex items-center text-[0.75rem] bg-red-50 font-medium text-red-700 px-2.5 py-3 h-6 rounded-full">
+            {' '}
+            <div className="animate-pulse w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+            Live
+          </div>
         </h2>
-          
+
         <Link
           href={{
             pathname: `/explore/RetroPGF5`,
@@ -110,12 +110,12 @@ export default function CardRound5({ title, round5, cateRound5 }: iCardRound5) {
                     title={item.name}
                     category={item.category ?? ''}
                     description={item.description ?? ''}
-                    teamSize={item.team.length}
+                    teamSize={item.team?.length ?? 0}
                     // opRecieve={0}
                     // rank={0}
                     round="RetroPGF 5"
                     // vote={0}
-                    icon={item.projectAvatarUrl ?? ''}
+                    icon={item.profileAvatarUrl ?? ''}
                     banner={item.projectCoverImageUrl ?? ''}
                     isEligible={true}
                   />
@@ -124,6 +124,7 @@ export default function CardRound5({ title, round5, cateRound5 }: iCardRound5) {
             </Swiper>
             {!state.start && (
               <button
+                title="Previous"
                 className="
                         rounded-full p-1 bg-slate-100 hover:bg-slate-200 
                         hidden lg:block absolute top-1/2 transform -translate-y-1/2 -left-6 cursor-pointer z-50"
@@ -135,6 +136,7 @@ export default function CardRound5({ title, round5, cateRound5 }: iCardRound5) {
 
             {!state.end && (
               <button
+                title="Next"
                 className="
                     rounded-full p-1 bg-slate-100 hover:bg-slate-200 
                     hidden lg:block absolute top-1/2 transform -translate-y-1/2 -right-8 cursor-pointer z-50"

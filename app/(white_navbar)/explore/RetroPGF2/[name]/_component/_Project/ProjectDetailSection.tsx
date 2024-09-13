@@ -1,4 +1,3 @@
-import { handleCategoryRound2 } from "@/app/lib/InitialMount";
 import LinkIcon from "@carbon/icons-react/lib/Link";
 import Image from "next/image";
 import { RetroRound2 } from "../../../RetroType2";

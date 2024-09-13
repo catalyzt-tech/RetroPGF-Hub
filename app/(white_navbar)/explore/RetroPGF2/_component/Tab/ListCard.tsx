@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { handleCategoryRound2, handleCategoryRound3 } from '@/app/lib/InitialMount'
+import { handleCategoryRound2, handleCategoryRound3 } from '@/app/lib/common'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 import { RetroRound2 } from '../../RetroType2'
@@ -7,7 +7,7 @@ import { RetroRound2 } from '../../RetroType2'
 export default function ListCard({
   currentItems,
 }: {
-    currentItems: RetroRound2[]
+  currentItems: RetroRound2[]
 }) {
   return (
     <>
@@ -17,9 +17,7 @@ export default function ListCard({
             <thead className="text-gray-700 text-base font-semibold ">
               <tr>
                 <th scope="col" className="py-4 px-3 w-[50%]">
-                  <h6 className="text-base/semibold text-gray-700">
-                    Project
-                   </h6>
+                  <h6 className="text-base/semibold text-gray-700">Project</h6>
                 </th>
                 <th scope="col" className="py-4 px-3 w-[25%]">
                   <h6 className="text-base/semibold text-gray-700">
@@ -38,34 +36,31 @@ export default function ListCard({
                 </th>
               </tr>
             </thead>
-            <tbody className="" style={{borderRadius:"1.5rem"}}>
+            <tbody className="" style={{ borderRadius: '1.5rem' }}>
               {currentItems.map((item, i) => (
                 <tr className="border rounded-3xl " key={i}>
                   <th className="p-5 flex gap-2">
                     <div className="relative min-w-16 min-h-16 max-w-16 max-h-16 self-center">
-                        <Image
-                            src={"/random/avatar.png"}
-                            alt="avatar image"
-                            className=""
-                            fill
-                        />
+                      <Image
+                        src={'/random/avatar.png'}
+                        alt="avatar image"
+                        className=""
+                        fill
+                      />
                     </div>
                     <div className="flex flex-col">
-                    <Link
-                      href={`/explore/RetroPGF2/${item.name}`}
-                      className="flex gap-1 pb-2  items-center cursor-pointer hover:underline w-fit"
-                    >
-                      <h6 className="text-sm font-bold text-gray-900">
-                        {item.name}
-                      </h6>
-                      <ArrowUpRight
-                      size={20}
-                      className="fill-gray-600"
-                      />
-                    </Link>
-                    <p className="text-sm font-normal text-gray-500 line-clamp-2 ">
-                      {item.about}
-                    </p>
+                      <Link
+                        href={`/explore/RetroPGF2/${item.name}`}
+                        className="flex gap-1 pb-2  items-center cursor-pointer hover:underline w-fit"
+                      >
+                        <h6 className="text-sm font-bold text-gray-900">
+                          {item.name}
+                        </h6>
+                        <ArrowUpRight size={20} className="fill-gray-600" />
+                      </Link>
+                      <p className="text-sm font-normal text-gray-500 line-clamp-2 ">
+                        {item.about}
+                      </p>
                     </div>
                   </th>
 

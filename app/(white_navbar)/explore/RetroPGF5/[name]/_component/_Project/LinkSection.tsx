@@ -14,13 +14,13 @@ export default function LinkSection({ data, linkSectionRef }: iLinkSection) {
     >
       <h3 className="text-2xl font-semibold">Link</h3>
       <hr className="border-t-gray-100" />
-      {data.links.length === 0 && (
+      {data.links?.length === 0 && (
         <p className="text-base font-normal text-gray-600">
           There is no link for this project.
         </p>
       )}
-      {data.links.length !== 0 &&
-        data.links.map((item, i) => (
+      {data.links?.length !== 0 &&
+        data.links?.map((item, i) => (
           <div
             className="flex flex-col gap-1 bg-slate-50 rounded-lg px-6 py-4 min-w-72"
             key={i}

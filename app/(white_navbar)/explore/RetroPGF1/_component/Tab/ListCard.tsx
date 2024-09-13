@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { handleCategoryRound2, handleCategoryRound3 } from '@/app/lib/InitialMount'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 import { RetroRound1 } from '../../RetroType1'
@@ -7,7 +6,7 @@ import { RetroRound1 } from '../../RetroType1'
 export default function ListCard({
   currentItems,
 }: {
-    currentItems: RetroRound1[]
+  currentItems: RetroRound1[]
 }) {
   return (
     <>
@@ -17,14 +16,10 @@ export default function ListCard({
             <thead className="text-gray-700 text-base font-semibold ">
               <tr>
                 <th scope="col" className="py-4 px-3 w-[50%]">
-                  <h6 className="text-base/semibold text-gray-700">
-                    Project
-                   </h6>
+                  <h6 className="text-base/semibold text-gray-700">Project</h6>
                 </th>
                 <th scope="col" className="py-4 px-3 w-[15%]">
-                  <h6 className="text-base/semibold text-gray-700">
-                    Leader
-                  </h6>
+                  <h6 className="text-base/semibold text-gray-700">Leader</h6>
                 </th>
                 <th scope="col" className="py-4 px-3 w-[20%] ">
                   <h6 className="text-end text-base/semibold text-gray-700 shrink-0">
@@ -33,34 +28,31 @@ export default function ListCard({
                 </th>
               </tr>
             </thead>
-            <tbody className="" style={{borderRadius:"1.5rem"}}>
+            <tbody className="" style={{ borderRadius: '1.5rem' }}>
               {currentItems.map((item, i) => (
                 <tr className="border rounded-3xl " key={i}>
                   <th className="p-5 flex gap-2">
                     <div className="relative min-w-16 min-h-16 max-w-16 max-h-16 self-center">
-                        <Image
-                            src={"/random/avatar.png"}
-                            alt="avatar image"
-                            className=""
-                            fill
-                        />
+                      <Image
+                        src={'/random/avatar.png'}
+                        alt="avatar image"
+                        className=""
+                        fill
+                      />
                     </div>
                     <div className="flex flex-col">
-                    <Link
-                      href={`/explore/RetroPGF1/${item['Project Name']}`}
-                      className="flex gap-1 pb-2  items-center cursor-pointer hover:underline w-fit"
-                    >
-                      <h6 className="text-sm font-bold text-gray-900">
-                        {item['Project Name']}
-                      </h6>
-                      <ArrowUpRight
-                      size={20}
-                      className="fill-gray-600"
-                      />
-                    </Link>
-                    <p className="text-sm font-normal text-gray-500 line-clamp-2 ">
-                      {item.Question}
-                    </p>
+                      <Link
+                        href={`/explore/RetroPGF1/${item['Project Name']}`}
+                        className="flex gap-1 pb-2  items-center cursor-pointer hover:underline w-fit"
+                      >
+                        <h6 className="text-sm font-bold text-gray-900">
+                          {item['Project Name']}
+                        </h6>
+                        <ArrowUpRight size={20} className="fill-gray-600" />
+                      </Link>
+                      <p className="text-sm font-normal text-gray-500 line-clamp-2 ">
+                        {item.Question}
+                      </p>
                     </div>
                   </th>
 

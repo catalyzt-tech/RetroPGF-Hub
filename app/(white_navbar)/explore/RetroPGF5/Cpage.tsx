@@ -19,7 +19,6 @@ export default function Cpage({
   projectRound5: projectData,
   badgeholderData,
 }: iCpage) {
-
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
   function handleChangeSelectedIndex(index: number) {

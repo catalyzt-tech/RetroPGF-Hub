@@ -143,7 +143,8 @@ export default async function Page() {
           Frequently asked questions
         </div>
         <div className="lg:w-[48rem] mt-6 font-inter text-base font-normal ">
-          Frequently asked questions ordered by popularity. Here you can find the answer to your doubts
+          Frequently asked questions ordered by popularity. Here you can find
+          the answer to your doubts
         </div>
         <QuestionPage />
       </div>

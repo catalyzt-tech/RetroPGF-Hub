@@ -3,7 +3,7 @@ import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
-import { handleCategoryRound3 } from '@/app/lib/InitialMount'
+import { handleCategoryRound3 } from '@/app/lib/common'
 import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
 
 export default function DynamicCard({

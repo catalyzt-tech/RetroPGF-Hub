@@ -13,7 +13,6 @@ import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroT
 import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
 import CardRound5 from './_component/CardRound5'
 
-
 interface iCpage {
   round1: RetroRound1[]
   round2: RetroRound2[]
@@ -34,12 +33,10 @@ export default function Cpage({
   cateRound2,
   cateRound3,
   cateRound4,
-  cateRound5:cateRound5Counter,
-}: 
-iCpage) {
+  cateRound5: cateRound5Counter,
+}: iCpage) {
   const [search, setSearch] = useState<string>('')
   // const [round5, setRound5] = useState<iRetroPGF5Project[]>(Round5Data)
-
 
   // async function fetchData() {
   //   const dataRaw = await getRealTimeRetroPGF5()
@@ -67,7 +64,6 @@ iCpage) {
   //   })
   //   setCateRound5Counter(()=>newCateRound5Counter)
   // }
-
 
   const round5Data = useMemo(() => {
     return round5.filter((item) => {

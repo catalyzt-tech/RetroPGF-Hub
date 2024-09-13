@@ -6,12 +6,14 @@ import CategoryDisclosure from './CategoryDisclosure'
 import { CheckBoxStateType } from '../../ExploreRoundType'
 import MultiSliderDisclosure from './MultiSliderDisclosure'
 import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
+import ApplicationCategoryDisclosure from './ApplicationCategoryDisclosure'
 
 export default function DialogFilter({
   onClose,
   open,
   checkBox,
   handleChangeCategory,
+  handleChangeApplicationCategory,
   minVal,
   setMinVal,
   maxVal,
@@ -27,6 +29,7 @@ export default function DialogFilter({
   setMinVal: React.Dispatch<React.SetStateAction<number>>
   setMaxVal: React.Dispatch<React.SetStateAction<number>>
   handleClearFilter: () => void
+  handleChangeApplicationCategory: (value: string) => void
 }) {
   return (
     <Transition appear show={open} as={Fragment}>
@@ -64,6 +67,12 @@ export default function DialogFilter({
                   <CategoryDisclosure
                     checkBox={checkBox}
                     handleChangeCategory={handleChangeCategory}
+                  />
+                  <ApplicationCategoryDisclosure
+                    checkBox={checkBox}
+                    handleChangeApplicationCategory={
+                      handleChangeApplicationCategory
+                    }
                   />
                   {/* Wait for result announcement */}
                   {/* <MultiSliderDisclosure
