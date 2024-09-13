@@ -12,7 +12,7 @@ export default function ProjectDetailSection({
 
     return (
 
-        <div className="flex flex-col bg-white rounded-lg">
+        <div className="flex flex-col bg-white rounded-lg overflow-hidden border">
             <div className="block relative w-full h-36 mb-16">
                 <Image
                     src={data.bannerPath || "/random/OP-Banner.png"}
@@ -42,30 +42,30 @@ export default function ProjectDetailSection({
                     <a
                         href={data.website}
                         target="_blank" rel="noopener noreferrer"
-                        className="flex flex-wrap gap-1.5">
-                        <LinkIcon size={24} className="fill-gray-500" />
-                        <p className="text-base font-medium text-gray-600 hover:underline">
-                            Website
+                        className="flex flex-wrap gap-1.5 text-gray-500 hover:text-primaryRed">
+                        <LinkIcon size={20} />
+                        <p className="text-sm font-normal line-clamp-1">
+                        {data.website}
                         </p>
                     </a>
 
                     <a
                         href={data.twitter}
                         target="_blank" rel="noopener noreferrer"
-                        className="flex flex-wrap gap-1.5">
-                        <LogoTwitter size={24} className="fill-gray-500" />
-                        <p className="text-base font-medium text-gray-600 hover:underline">
-                            Twiiter
+                        className="flex flex-wrap gap-1.5 text-gray-500 hover:text-primaryRed">
+                        <LogoTwitter size={20} />
+                        <p className="text-sm font-normal line-clamp-1">
+                            {data.twitter}
                         </p>
                     </a>
 
                     <a
                         href={data.github}
                         target="_blank" rel="noopener noreferrer"
-                        className="flex flex-wrap gap-1.5">
-                        <LogoGithub size={24} className="fill-gray-500" />
-                        <p className="text-base font-medium text-gray-600 hover:underline">
-                            Github
+                        className="flex flex-wrap gap-1.5 text-gray-500 hover:text-primaryRed">
+                        <LogoGithub size={20} />
+                        <p className="text-sm font-normal line-clamp-1">
+                        {data.github}
                         </p>
                     </a>
                 

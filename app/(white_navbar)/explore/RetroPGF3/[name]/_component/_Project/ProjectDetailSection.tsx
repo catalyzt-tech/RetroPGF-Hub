@@ -48,29 +48,10 @@ export default function ProjectDetailSection({
                         className="flex items-center gap-2 text-gray-500 hover:text-primaryRed">
                         <LinkIcon size={20} />
                         <p className="text-sm font-normal line-clamp-1">
-                            Website
+                        {data.websiteUrl}
                         </p>
                     </a>
 
-                    <a
-                        href={data["Agora URL"]}
-                        target="_blank" rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-gray-500 hover:text-primaryRed">
-                        <ThumbsUp size={20} />
-                        <p className="text-sm font-normal line-clamp-1">
-                            Agora Url
-                        </p>
-                    </a>
-
-                    <a
-                        href={data["West URL"]}
-                        target="_blank" rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-gray-500 hover:text-primaryRed">
-                        <LinkIcon size={20} />
-                        <p className="text-sm font-normal line-clamp-1">
-                            OP Mainnet
-                        </p>
-                    </a>
                 
                 </div>
 

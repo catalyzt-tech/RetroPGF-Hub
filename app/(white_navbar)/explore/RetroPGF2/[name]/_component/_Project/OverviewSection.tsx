@@ -9,7 +9,7 @@ export default function OverviewSection({
     return (
 
         <>
-            <div className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6">
+            <div className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border">
                 <h3 className="text-3xl font-semibold">
                     Overview
                 </h3>

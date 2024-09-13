@@ -10,7 +10,7 @@ export default function ProjectDetailSection({
     return (
 
         <>
-            <div className="flex flex-col bg-white rounded-lg">
+            <div className="flex flex-col bg-white rounded-lg overflow-hidden border">
                 <div className="block relative w-full h-36 mb-16">
                     <Image
                         src={"/random/OP-Banner.png"}
@@ -65,10 +65,10 @@ export default function ProjectDetailSection({
                         <a
                             href={data["Project Website"]}
                             target="_blank" rel="noopener noreferrer"
-                            className="flex flex-wrap gap-1.5">
-                            <LinkIcon size={24} className="fill-gray-500" />
-                            <p className="text-base font-medium text-gray-600 hover:underline">
-                                Website
+                            className="flex flex-wrap gap-1.5 text-gray-500 hover:text-primaryRed">
+                            <LinkIcon size={20}/>
+                            <p className="text-sm font-normal line-clamp-1">
+                                {data["Project Website"]}
                             </p>
                         </a>
                     </div>
@@ -77,7 +77,7 @@ export default function ProjectDetailSection({
                 </div>
             </div>
 
-            <section id="Question" className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6">
+            <section id="Question" className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border">
                 <h6 className="text-3xl font-semibold text-gray-800">
                 Why should this project receive retroactive public goods funding?
                 </h6>
