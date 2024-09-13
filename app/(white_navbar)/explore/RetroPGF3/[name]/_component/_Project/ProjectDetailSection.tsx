@@ -14,14 +14,14 @@ export default function ProjectDetailSection({
     return (
 
         <>
-        <div className="flex flex-col bg-white rounded-lg">
-            <div className="block relative w-full h-36 mb-16">
+        <div className="flex flex-col bg-white rounded-lg overflow-hidden border">
+            <div className="block relative w-full h-60 mb-16">
                 <Image
                     // convertImageClodinary(data.bannerPath, 947, 150)
                     src={data.bannerPath || "/random/OP-Banner.png"}
                     alt="background"
                     fill
-                    className="object-cover"
+                    className="w-fit object-cover"
                 />
             </div>
             <div className="relative flex flex-col gap-4 p-2 sm:p-4 lg:p-6">
@@ -30,7 +30,7 @@ export default function ProjectDetailSection({
                         <Image
                             src={data.iconPath || "/random/OP-Logo.png"}
                             alt="avatar image"
-                            className="rounded-full object-cover"
+                            className="rounded-lg object-cover"
                             fill
                         />
                     </div>
@@ -45,9 +45,9 @@ export default function ProjectDetailSection({
                     <a
                         href={data.websiteUrl}
                         target="_blank" rel="noopener noreferrer"
-                        className="flex flex-wrap gap-1.5">
-                        <LinkIcon size={24} className="fill-gray-500" />
-                        <p className="text-base font-medium text-gray-600 hover:underline">
+                        className="flex items-center gap-2 text-gray-500 hover:text-primaryRed">
+                        <LinkIcon size={20} />
+                        <p className="text-sm font-normal line-clamp-1">
                             Website
                         </p>
                     </a>
@@ -55,9 +55,9 @@ export default function ProjectDetailSection({
                     <a
                         href={data["Agora URL"]}
                         target="_blank" rel="noopener noreferrer"
-                        className="flex flex-wrap gap-1.5">
-                        <ThumbsUp size={24} className="fill-gray-500" />
-                        <p className="text-base font-medium text-gray-600 hover:underline">
+                        className="flex items-center gap-2 text-gray-500 hover:text-primaryRed">
+                        <ThumbsUp size={20} />
+                        <p className="text-sm font-normal line-clamp-1">
                             Agora Url
                         </p>
                     </a>
@@ -65,9 +65,9 @@ export default function ProjectDetailSection({
                     <a
                         href={data["West URL"]}
                         target="_blank" rel="noopener noreferrer"
-                        className="flex flex-wrap gap-1.5">
-                        <LinkIcon size={24} className="fill-gray-500" />
-                        <p className="text-base font-medium text-gray-600 hover:underline">
+                        className="flex items-center gap-2 text-gray-500 hover:text-primaryRed">
+                        <LinkIcon size={20} />
+                        <p className="text-sm font-normal line-clamp-1">
                             OP Mainnet
                         </p>
                     </a>
