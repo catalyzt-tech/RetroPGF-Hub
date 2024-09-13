@@ -15,7 +15,7 @@ const ImpactMetricSection = ({ data, impactRef }: iImpactMetric) => {
       className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border"
     >
       <h3 className="text-2xl font-semibold ">Impact Metrics</h3>
-      <hr className="border-t-gray-100" />
+      <hr className="hidden sm:block border-t-gray-100" />
       <div className="text-gray-500">
         These metrics are collected based on the data provided on-chain by Open
         Source Observer (OSO).

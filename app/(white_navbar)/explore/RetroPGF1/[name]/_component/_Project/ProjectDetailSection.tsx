@@ -11,7 +11,7 @@ export default function ProjectDetailSection({
 
         <>
             <div className="flex flex-col bg-white rounded-lg overflow-hidden border">
-                <div className="block relative w-full h-36 mb-16">
+                <div className="block relative w-full h-36 lg:h-60 mb-16">
                     <Image
                         src={"/random/OP-Banner.png"}
                         alt="background"
@@ -20,8 +20,8 @@ export default function ProjectDetailSection({
                     />
                 </div>
                 <div className="relative flex flex-col gap-4 p-2 sm:p-4 lg:p-6">
-                <div className="absolute -top-24 lg:-top-32 left-4 rounded-[0.25rem] flex flex-shrink-0 z-20">
-                    <div className="relative w-16 h-16 lg:w-32 lg:h-32">
+                <div className="absolute -top-32 left-2 lg:left-6 rounded-[0.25rem] flex flex-shrink-0 z-20">
+                    <div className="relative w-28 h-28 lg:w-32 lg:h-32">
                         <Image
                             src={"/random/OP-Logo.png"}
                             alt="avatar image"
@@ -30,7 +30,7 @@ export default function ProjectDetailSection({
                         />
                     </div>
                 </div>
-
+                    <div className="flex flex-col gap-4 p-2 sm:p-4 md:px-4 md:pt-0 lg:p-0">
                     <h3 className="text-3xl lg:text-5xl font-semibold text-gray-800">
                         {data["Project Name"]}
                     </h3>
@@ -61,18 +61,18 @@ export default function ProjectDetailSection({
                     </div>
 
                     {/* Link */}
-                    <div className="flex flex-wrap gap-6 mt-3">
+                    <div className="flex flex-wrap gap-6 my-1 md:my-3 lg:my-4">
                         <a
                             href={data["Project Website"]}
                             target="_blank" rel="noopener noreferrer"
-                            className="flex flex-wrap gap-1.5 text-gray-500 hover:text-primaryRed">
+                            className="flex flex-shrink gap-1.5 text-gray-500 hover:text-primaryRed">
                             <LinkIcon size={20}/>
                             <p className="text-sm font-normal line-clamp-1">
                                 {data["Project Website"]}
                             </p>
                         </a>
                     </div>
-
+                    </div>
 
                 </div>
             </div>
@@ -81,7 +81,7 @@ export default function ProjectDetailSection({
                 <h6 className="text-3xl font-semibold text-gray-800">
                 Why should this project receive retroactive public goods funding?
                 </h6>
-                <hr className="border-t-gray-100" />
+                <hr className="hidden sm:block border-t-gray-100" />
 
                 <div className="flex flex-col gap-2">
                     <p className="text-base break-words font-normal text-gray-600">

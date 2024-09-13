@@ -7,7 +7,7 @@ export default function Cpage({ data }: { data: RetroRound1 }) {
   // const questionRef = useRef<HTMLElement | null>(null)
 
   return (
-    <div className="flex mt-8 gap-10">
+    <div className="flex mt-4 lg:mt-8 gap-10">
       {/* Scroll Spy */}
 
       <div className="flex-grow flex flex-col gap-4 lg:gap-16">

@@ -18,7 +18,7 @@ return (
             <h6 className="text-3xl font-semibold text-gray-800">
                 Impact
             </h6>
-            <hr className="border-t-gray-100"/>
+            <hr className="hidden sm:block border-t-gray-100"/>
 
             {/* Impact Description */}
             <p className="text-base break-words font-normal text-gray-600">

@@ -38,7 +38,7 @@ export default async function page({ params }: pageProps) {
   }
 
   return (
-    <div className="bg-gray-50 min-h-[calc(100vh-4.5rem)] h-full py-10">
+    <div className="bg-gray-50 min-h-[calc(100vh-4.5rem)] h-full py-4 lg:py-10">
       <div className="mx-4 sm:mx-6 lg:mx-20">
         <BreadCump projectName={res?.name} />
         <Cpage data={res} />

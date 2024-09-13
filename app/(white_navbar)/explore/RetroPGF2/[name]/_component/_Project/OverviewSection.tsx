@@ -14,7 +14,7 @@ export default function OverviewSection({
                 <h3 className="text-3xl font-semibold">
                     Overview
                 </h3>
-                <hr className="border-t-gray-100" />
+                <hr className="hidden sm:block border-t-gray-100" />
                 <p
                     className="mb-1 text-base font-normal text-gray-600 break-all break-words"
                 >

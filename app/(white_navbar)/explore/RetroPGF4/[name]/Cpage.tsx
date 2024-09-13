@@ -46,7 +46,7 @@ export default function Cpage({ data }: { data: iRetroPGF4Project }) {
   }, [data.impactMetrics])
 
   return (
-    <div className="flex mt-8 gap-10">
+    <div className="flex mt-4 lg:mt-8 gap-10">
       {/* Scroll Spy */}
 
       <div className="w-full lg:flex-grow flex flex-col gap-4 lg:gap-8">

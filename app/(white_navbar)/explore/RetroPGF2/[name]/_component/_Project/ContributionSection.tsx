@@ -13,7 +13,7 @@ export default function ContributionSection({
             <h6 className="text-3xl font-semibold text-gray-800">
                 Contribution
             </h6>
-            <hr className="border-t-gray-100" />
+            <hr className="hidden sm:block border-t-gray-100" />
 
             {/* contributionDescription */}
             <p className="text-base break-word font-normal text-gray-600">

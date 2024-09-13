@@ -18,7 +18,7 @@ return (
             <h6 className="text-3xl font-semibold text-gray-800">
                 Detail
             </h6>
-            <hr className="border-t-gray-100"/>
+            <hr className="hidden sm:block border-t-gray-100"/>
 
            <div className="flex flex-col gap-2">
                 <h6 className="text-lg break-words font-semibold text-gray-800">

@@ -20,7 +20,7 @@ export default function Cpage({ data }: { data: RetroRound3 }) {
     { name: 'Funding Sources', ref: fundingRef },
   ]
   return (
-    <div className="flex mt-8 gap-10">
+    <div className="flex mt-4 lg:mt-8 gap-10">
       {/* Scroll Spy */}
 
       <div className="lg:flex-grow flex flex-col gap-4 lg:gap-8">

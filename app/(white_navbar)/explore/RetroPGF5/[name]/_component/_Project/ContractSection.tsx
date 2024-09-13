@@ -14,7 +14,7 @@ export default function ContractSection({ data, contractRef }: iContract) {
       className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border"
     >
       <h3 className="text-2xl font-semibold">Contract Address</h3>
-      <hr className="border-t-gray-100" />
+      <hr className="hidden sm:block border-t-gray-100" />
       {data.contracts.length !== 0 && (
         <div className="text-gray-500">
           Project contract addresses on different chains are listed below. All
