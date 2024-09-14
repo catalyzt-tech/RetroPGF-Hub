@@ -6,14 +6,14 @@ import OverviewSection from './_component/_Project/OverviewSection'
 import FundingSection from './_component/_Project/FundingSection'
 import GithubSection from './_component/_Project/GithubSection'
 import ContractSection from './_component/_Project/ContractSection'
-import AppealSection from './_component/_Project/AppealSection'
-import ImpactMetricSection from './_component/_Project/ImpactMetricSection'
+// import AppealSection from './_component/_Project/AppealSection'
+// import ImpactMetricSection from './_component/_Project/ImpactMetricSection'
 import ScrollSpy from '@/app/component/ScrollSpy'
 import { iRetroPGF5Project } from '../RetroType5'
-import ContributionSection from './_component/_Project/ContributionSection'
+// import ContributionSection from './_component/_Project/ContributionSection'
 import PackageSection from './_component/_Project/PackageSection'
 import LinkSection from './_component/_Project/LinkSection'
-import ImpactSection from './_component/_Project/ImpactStatementSection'
+import ImpactStatementSection from './_component/_Project/ImpactStatementSection'
 
 interface iCpage {
   data: iRetroPGF5Project
@@ -85,7 +85,7 @@ export default function Cpage({ data }: iCpage) {
           <ProjectDetailSection data={data} />
           <OverviewSection data={data} />
         </section>
-        <ImpactSection data={data} impactSectionRef={impactRef} />
+        <ImpactStatementSection data={data} impactSectionRef={impactRef} />
         <FundingSection data={data} fundingRef={fundingRef} />
         <GithubSection data={data} githubRef={githubRef} />
         <ContractSection data={data} contractRef={contractRef} />
