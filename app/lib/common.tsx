@@ -1,5 +1,17 @@
 import { CategoryRound2 } from '../(white_navbar)/explore/RetroPGF2/RetroType2'
 
+export function splitTextNewLine(text: string) {
+  return text.split('\n').map((paragraph, i) => (
+    <p
+      key={i}
+      className={`text-base font-normal text-gray-600 break-all break-words ${
+        i != text.split('\n').length - 1 ? 'mb-5' : ''
+      }`}
+    >
+      {paragraph}
+    </p>
+  ))
+}
 export function handleOpenSource(isOpenSource: boolean) {
   if (isOpenSource) {
     return (

@@ -13,19 +13,23 @@ import { iRetroPGF5Project } from '../RetroType5'
 import ContributionSection from './_component/_Project/ContributionSection'
 import PackageSection from './_component/_Project/PackageSection'
 import LinkSection from './_component/_Project/LinkSection'
+import ImpactSection from './_component/_Project/ImpactStatementSection'
 
 interface iCpage {
   data: iRetroPGF5Project
 }
 export default function Cpage({ data }: iCpage) {
+  console.log(data)
   const overViewRef = useRef<HTMLElement | null>(null)
   const packageRef = useRef<HTMLElement | null>(null)
   const fundingRef = useRef<HTMLElement | null>(null)
   const githubRef = useRef<HTMLElement | null>(null)
   const contractRef = useRef<HTMLElement | null>(null)
   const linkSectionRef = useRef<HTMLElement | null>(null)
+  const impactRef = useRef<HTMLElement | null>(null)
   const [sections, setSections] = useState([
     { name: 'Overview', ref: overViewRef },
+    { name: 'Impact Statement', ref: impactRef },
     { name: 'Funding Sources', ref: fundingRef },
     { name: 'GitHub', ref: githubRef },
     { name: 'Contract Address', ref: contractRef },
@@ -79,16 +83,10 @@ export default function Cpage({ data }: iCpage) {
           ref={overViewRef}
         >
           <ProjectDetailSection data={data} />
-          {/* {data.eligibilityReview?.appealed && <AppealSection data={data} />} */}
-
           <OverviewSection data={data} />
         </section>
-        {/* <ContributionSection data={data} contributionRef={contributionRef} /> */}
-        {/* <ImpactSection data={data} impactRef={impactRef} /> */}
+        <ImpactSection data={data} impactSectionRef={impactRef} />
         <FundingSection data={data} fundingRef={fundingRef} />
-        {/* {data.impactMetrics && (
-          <ImpactMetricSection data={data} impactRef={impactRef} />
-        )} */}
         <GithubSection data={data} githubRef={githubRef} />
         <ContractSection data={data} contractRef={contractRef} />
         <PackageSection data={data} packageRef={packageRef} />
