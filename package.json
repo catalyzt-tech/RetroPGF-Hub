@@ -27,7 +27,11 @@
     "react-dom": "^18",
     "react-headless-pagination": "^1.1.5",
     "react-hot-toast": "^2.4.1",
-    "swiper": "^11.1.0"
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "swiper": "^11.1.0",
+    "unified": "^11.0.5"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.6",

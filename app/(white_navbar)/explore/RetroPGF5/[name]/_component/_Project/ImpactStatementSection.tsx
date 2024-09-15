@@ -1,11 +1,10 @@
-import { splitTextNewLine } from '@/app/lib/common'
+import { convertMarkdownToHtml, splitTextNewLine } from '@/app/lib/common'
 import { iRetroPGF5Project } from '../../../RetroType5'
 
 interface iImpactStatementSection {
   data: iRetroPGF5Project
   impactSectionRef: React.MutableRefObject<HTMLElement | null>
 }
-
 export default function ImpactStatementSection({
   data,
   impactSectionRef,
@@ -23,7 +22,8 @@ export default function ImpactStatementSection({
           There is no impact for this project.
         </p>
       )}
-      {data.impactStatement.statement?.length !== 0 &&
+      {/* Don't delete this, this is experiment rendering markdown or split with \n */}
+      {/* {data.impactStatement.statement?.length !== 0 &&
         data.impactStatement.statement?.map((item, i) => (
           <div
             key={i}
@@ -37,6 +37,27 @@ export default function ImpactStatementSection({
                 <p className="text-sm text-gray-500">
                   {splitTextNewLine(item.answer)}
                 </p>
+              )}
+            </div>
+          </div>
+        ))} */}
+      {data.impactStatement.statement?.length !== 0 &&
+        data.impactStatement.statement?.map((item, i) => (
+          <div
+            key={i}
+            className="flex flex-col gap-1 bg-slate-50 rounded-lg px-6 py-4 min-w-72"
+          >
+            <p className="text-lg font-semibold font-rubik mb-1">
+              {item.question}
+            </p>
+            <div>
+              {item.answer && (
+                <a
+                  className="text-sm text-gray-500"
+                  dangerouslySetInnerHTML={{
+                    __html: convertMarkdownToHtml(item.answer),
+                  }}
+                ></a>
               )}
             </div>
           </div>

@@ -1,5 +1,17 @@
 import { CategoryRound2 } from '../(white_navbar)/explore/RetroPGF2/RetroType2'
+import rehypeStringify from 'rehype-stringify'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import { unified } from 'unified'
 
+export function convertMarkdownToHtml(markdown: string) {
+  return unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeStringify)
+    .processSync(markdown)
+    .toString()
+}
 export function splitTextNewLine(text: string) {
   return text.split('\n').map((paragraph, i) => (
     <p
