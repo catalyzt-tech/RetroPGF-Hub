@@ -1,3 +1,4 @@
+import { splitTextNewLine } from '@/app/lib/common'
 import { iRetroPGF5Project } from '../../../RetroType5'
 
 interface iImpactStatementSection {
@@ -33,7 +34,9 @@ export default function ImpactStatementSection({
             </p>
             <div>
               {item.answer && (
-                <p className="text-sm text-gray-500">{item.answer}</p>
+                <p className="text-sm text-gray-500">
+                  {splitTextNewLine(item.answer)}
+                </p>
               )}
             </div>
           </div>
