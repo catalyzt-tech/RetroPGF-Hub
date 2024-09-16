@@ -19,7 +19,6 @@ interface iCpage {
   data: iRetroPGF5Project
 }
 export default function Cpage({ data }: iCpage) {
-  console.log(data)
   const overViewRef = useRef<HTMLElement | null>(null)
   const packageRef = useRef<HTMLElement | null>(null)
   const fundingRef = useRef<HTMLElement | null>(null)

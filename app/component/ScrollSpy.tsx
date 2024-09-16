@@ -43,7 +43,6 @@ export default function ScrollSpy({
       visibleSectionNames.length > 0
         ? visibleSectionNames[visibleSectionNames.length - 1]
         : sections[0]?.name || ''
-    console.log(currentSection)
     return currentSection
   }, [visibleSections, sections])
 

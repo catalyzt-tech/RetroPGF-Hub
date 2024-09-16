@@ -5,12 +5,14 @@ import remarkRehype from 'remark-rehype'
 import { unified } from 'unified'
 
 export function convertMarkdownToHtml(markdown: string) {
-  return unified()
+  const filterHrMarkdown: string = markdown.replace(/---/g, '\n')
+  const htmlFormat: string = unified()
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypeStringify)
-    .processSync(markdown)
+    .processSync(filterHrMarkdown)
     .toString()
+  return htmlFormat
 }
 export function splitTextNewLine(text: string) {
   return text.split('\n').map((paragraph, i) => (
