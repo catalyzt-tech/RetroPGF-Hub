@@ -3,6 +3,7 @@ import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import { unified } from 'unified'
+import DOMPurify from 'dompurify'
 
 export function convertMarkdownToHtml(markdown: string) {
   const filterHrMarkdown: string = markdown.replace(/---/g, '\n')
@@ -12,7 +13,8 @@ export function convertMarkdownToHtml(markdown: string) {
     .use(rehypeStringify)
     .processSync(filterHrMarkdown)
     .toString()
-  return htmlFormat
+  const cleanHtml = DOMPurify.sanitize(htmlFormat)
+  return cleanHtml
 }
 export function splitTextNewLine(text: string) {
   return text.split('\n').map((paragraph, i) => (
