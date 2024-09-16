@@ -22,15 +22,18 @@ export default function OverviewSection({ data }: iOverviewSection) {
         </p>
         <div className="flex flex-col gap-1">
           <div className="flex flex-wrap gap-x-3 items-center">
-            <p className="mb-1 text-sm font-normal text-gray-500">Category</p>
+            <p className="mb-1 text-base font-normal text-gray-500">Category</p>
             <div className=" text-base font-semibold text-gray-600">
-              {handleCategoryRound5(data.category ?? '')}
+              {handleCategoryRound5(data.category, 'text-sm')}
             </div>
             {/* <p className="mb-1 text-sm font-normal text-gray-500">
               Application Category:
             </p> */}
             <div className=" text-base font-semibold text-gray-600">
-              {handleApplicationCategoryRound5(data.applicationCategory ?? '')}
+              {handleApplicationCategoryRound5(
+                data.applicationCategory ?? '',
+                'text-sm'
+              )}
             </div>
           </div>
         </div>
