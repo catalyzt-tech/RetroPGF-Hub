@@ -104,7 +104,7 @@ export default function RetroCard5({
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
-            {handleCategoryRound5(category!)}
+            {handleCategoryRound5(category!, 'text-xs')}
           </div>
           <div className="flex flex-grow"></div>
           <div className="flex justify-between items-center w-full">

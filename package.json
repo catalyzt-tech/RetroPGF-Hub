@@ -16,6 +16,7 @@
     "@headlessui/react": "^1.7.18",
     "@next/third-parties": "^14.2.5",
     "axios": "^1.6.8",
+    "dompurify": "^3.1.6",
     "firebase": "^10.10.0",
     "google": "link:@next/third-parties/google",
     "highcharts": "^11.4.1",
@@ -27,9 +28,14 @@
     "react-dom": "^18",
     "react-headless-pagination": "^1.1.5",
     "react-hot-toast": "^2.4.1",
-    "swiper": "^11.1.0"
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "swiper": "^11.1.0",
+    "unified": "^11.0.5"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.5",
     "@types/js-cookie": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^18",
