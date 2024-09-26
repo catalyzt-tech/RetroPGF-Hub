@@ -62,7 +62,7 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                   </th>
                   <td className="py-4 px-3 ">
                     <div className="flex flex-col flex-wrap gap-2 ">
-                      {handleCategoryRound5(item.category as string)}
+                      {handleCategoryRound5(item.category as string, 'text-sm')}
                     </div>
                   </td>
                   {/* <td className="py-4 px-3">

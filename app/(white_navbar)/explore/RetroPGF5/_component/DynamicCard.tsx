@@ -38,11 +38,11 @@ export default function DynamicCard({
   reward = 0,
 }: iDynamicCard) {
   const categoryElement = useMemo(
-    () => handleCategoryRound5(category),
+    () => handleCategoryRound5(category, 'text-xs'),
     [category]
   )
   const applicationCategoryElement = useMemo(
-    () => handleApplicationCategoryRound5(applicationCategory),
+    () => handleApplicationCategoryRound5(applicationCategory, 'text-xs'),
     [applicationCategory]
   )
 

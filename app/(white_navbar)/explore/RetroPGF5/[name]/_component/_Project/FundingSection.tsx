@@ -16,7 +16,6 @@ interface iFundingSection {
 }
 
 export default function FundingSection({ data, fundingRef }: iFundingSection) {
-  console.log(data)
   return (
     <section
       id="Funding Sources"

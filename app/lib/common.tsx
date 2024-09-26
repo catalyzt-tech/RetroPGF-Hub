@@ -1,5 +1,33 @@
 import { CategoryRound2 } from '../(white_navbar)/explore/RetroPGF2/RetroType2'
+import rehypeStringify from 'rehype-stringify'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import { unified } from 'unified'
+import DOMPurify from 'dompurify'
 
+export function convertMarkdownToHtml(markdown: string) {
+  const filterHrMarkdown: string = markdown.replace(/---/g, '\n')
+  const htmlFormat: string = unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeStringify)
+    .processSync(filterHrMarkdown)
+    .toString()
+  const cleanHtml = DOMPurify.sanitize(htmlFormat)
+  return cleanHtml
+}
+export function splitTextNewLine(text: string) {
+  return text.split('\n').map((paragraph, i) => (
+    <p
+      key={i}
+      className={`text-base font-normal text-gray-600 break-all break-words ${
+        i != text.split('\n').length - 1 ? 'mb-5' : ''
+      }`}
+    >
+      {paragraph}
+    </p>
+  ))
+}
 export function handleOpenSource(isOpenSource: boolean) {
   if (isOpenSource) {
     return (
@@ -21,11 +49,16 @@ export function handleOpenSource(isOpenSource: boolean) {
   }
 }
 
-export function handleApplicationCategoryRound5(category: string) {
+export function handleApplicationCategoryRound5(
+  category: string,
+  textSize: string
+) {
   if (category === 'ETHEREUM_CORE_CONTRIBUTIONS') {
     return (
       <div className="px-2 py-1 bg-yellow-50 rounded-full w-fit">
-        <p className="text-yellow-700 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-yellow-700 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           Ethereum Core Contributions
         </p>
       </div>
@@ -33,7 +66,9 @@ export function handleApplicationCategoryRound5(category: string) {
   } else if (category === 'OP_STACK_RESEARCH_AND_DEVELOPMENT') {
     return (
       <div className="px-2 py-1 bg-orange-50 rounded-full w-fit">
-        <p className="text-orange-600 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-orange-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           OP Stack Research and Development
         </p>
       </div>
@@ -41,18 +76,22 @@ export function handleApplicationCategoryRound5(category: string) {
   } else if (category === 'OP_STACK_TOOLING') {
     return (
       <div className="px-2 py-1 bg-sky-50 rounded-full w-fit">
-        <p className="text-sky-600 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-sky-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           OP Stack Tooling
         </p>
       </div>
     )
   }
 }
-export function handleCategoryRound5(category: string) {
+export function handleCategoryRound5(category: string, textSize: string) {
   if (category === 'CeFi') {
     return (
       <div className="px-2 py-1 bg-yellow-50 rounded-full w-fit">
-        <p className="text-yellow-700 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-yellow-700 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           {category}
         </p>
       </div>
@@ -60,7 +99,9 @@ export function handleCategoryRound5(category: string) {
   } else if (category === 'DeFi') {
     return (
       <div className="px-2 py-1 bg-orange-50 rounded-full w-fit">
-        <p className="text-orange-600 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-orange-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           {category}
         </p>
       </div>
@@ -68,7 +109,9 @@ export function handleCategoryRound5(category: string) {
   } else if (category === 'NFT') {
     return (
       <div className="px-2 py-1 bg-sky-50 rounded-full w-fit">
-        <p className="text-sky-600 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-sky-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           {category}
         </p>
       </div>
@@ -76,7 +119,9 @@ export function handleCategoryRound5(category: string) {
   } else if (category === 'Social') {
     return (
       <div className="px-2 py-1 bg-emerald-50 rounded-full w-fit">
-        <p className="text-emerald-600 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-emerald-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           {category}
         </p>
       </div>
@@ -84,7 +129,9 @@ export function handleCategoryRound5(category: string) {
   } else if (category === 'Utility') {
     return (
       <div className="px-2 py-1 bg-pink-50 rounded-full w-fit">
-        <p className="text-pink-600 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-pink-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           {category}
         </p>
       </div>
@@ -92,7 +139,9 @@ export function handleCategoryRound5(category: string) {
   } else if (category === 'Cross Chain') {
     return (
       <div className="px-2 py-1 bg-lime-50 rounded-full w-fit">
-        <p className="text-lime-600 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-lime-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           {category}
         </p>
       </div>
@@ -100,7 +149,9 @@ export function handleCategoryRound5(category: string) {
   } else if (category === 'Governance') {
     return (
       <div className="px-2 py-1 bg-indigo-50 rounded-full w-fit">
-        <p className="text-indigo-600 text-xs font-medium line-clamp-1 break-words">
+        <p
+          className={`text-indigo-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
           {category}
         </p>
       </div>
