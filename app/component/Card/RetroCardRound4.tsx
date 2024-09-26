@@ -25,8 +25,8 @@ export default function RetroCard4({
   category,
   description,
   teamSize,
-    opRecieve,
-    rank=0,
+  opRecieve,
+  rank = 0,
   round,
   title,
   //   vote,
@@ -43,8 +43,8 @@ export default function RetroCard4({
   teamSize?: number
   isEligible?: boolean
   //   vote?: number
-    opRecieve?: number
-    rank?: number
+  opRecieve?: number
+  rank?: number
 }) {
   return (
     <div
@@ -83,7 +83,7 @@ export default function RetroCard4({
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="icon image"
-          className={icon ? "bg-white" : "bg-[#FF0420]"}
+          className={icon ? 'bg-white' : 'bg-[#FF0420]'}
           width={48}
           height={48}
         />
@@ -111,11 +111,11 @@ export default function RetroCard4({
             <div className="flex gap-2">
               <Events size={20} />
               <div className="flex gap-1">
-              <p className="text-sm font-semibold text-gray-800">
-                {/* {Math.ceil(vote || 0).toString()} */}
-                {teamSize}
-              </p>
-              <p className="text-sm font-light text-gray-600">People</p>
+                <p className="text-sm font-semibold text-gray-800">
+                  {/* {Math.ceil(vote || 0).toString()} */}
+                  {teamSize}
+                </p>
+                <p className="text-sm font-light text-gray-600">People</p>
               </div>
             </div>
           </div>
