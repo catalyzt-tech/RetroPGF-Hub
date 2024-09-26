@@ -57,7 +57,7 @@ export default function RetroCard3({
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="icon image"
-          className="bg-white"
+          className={icon ? "bg-white" : "bg-[#FF0420]"}
           width={48}
           height={48}
         />

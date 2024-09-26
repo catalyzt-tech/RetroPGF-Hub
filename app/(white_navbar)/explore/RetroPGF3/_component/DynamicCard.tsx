@@ -54,7 +54,7 @@ export default function DynamicCard({
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="avatar image"
-          className="w-12 h-12"
+          className={`h-12 w-12 ${icon ? "bg-white" : "bg-[#FF0420]"}`}
           width={48}
           height={48}
         />
@@ -91,7 +91,7 @@ export default function DynamicCard({
             <Trophy size={20} />
             <div className="flex gap-1">
               <p className="text-sm font-semibold text-gray-800">
-                {numberWithCommas(opRecieve.toFixed(2)||0)} OP
+                {opRecieve!= -1 ? numberWithCommas(opRecieve.toFixed(2)||0) : 0} OP
               </p>
               <p className="text-sm font-light text-gray-600">#{rank}</p>
             </div>

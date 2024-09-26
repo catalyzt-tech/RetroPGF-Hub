@@ -52,7 +52,7 @@ return (
             <Image
                 src={avatar || "/random/avatar.png"}
                 alt="avatar image"
-                className="w-12 h-12"
+                className={`h-12 w-12 ${avatar ? "bg-white" : "bg-[#FF0420]"}`}
                 width={48}
                 height={48}
             />
@@ -77,7 +77,7 @@ return (
                 <div className="flex gap-2">
                     <Trophy size={20} />
                     <div className="flex gap-1">
-                        <p className="text-sm font-semibold text-gray-800">{ numberWithCommas(opRecieve.toFixed(2)||0)} OP</p>
+                        <p className="text-sm font-semibold text-gray-800">{opRecieve!= -1 ? numberWithCommas(opRecieve.toFixed(2)||0) : 0} OP</p>
                         <p className="text-sm font-light text-gray-600">#{rank}</p>
                     </div>
 

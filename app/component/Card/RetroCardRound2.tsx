@@ -51,11 +51,11 @@ export default function RetroCard2({
       </div>
 
       {/* Avatar */}
-      <div className="absolute top-6 left-4 rounded-[0.25rem] flex flex-shrink-0">
+      <div className="absolute top-6 left-4 rounded-[0.25rem] flex flex-shrink-0 overflow-hidden">
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="icon image"
-          className=""
+          className={icon ? "bg-white" : "bg-[#FF0420]"}
           width={48}
           height={48}
         />

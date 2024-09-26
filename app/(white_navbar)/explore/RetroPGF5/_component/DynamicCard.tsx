@@ -83,7 +83,7 @@ export default function DynamicCard({
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="avatar image"
-          className="w-12 h-12"
+          className={`h-12 w-12 ${icon ? "bg-white" : "bg-[#FF0420]"}`}
           width={48}
           height={48}
         />
