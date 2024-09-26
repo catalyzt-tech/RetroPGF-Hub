@@ -118,7 +118,7 @@ export default function DynamicCard({
             <Trophy size={20} />
             <div className="flex gap-1">
               <p className="text-sm font-semibold text-gray-800">
-              {reward!= -1 ? numberWithCommas(reward.toFixed(2)||0) : 0} OP
+              {numberWithCommas(reward.toFixed(2)||0)} OP
               </p>
               <p className="text-sm font-light text-gray-600">#{rank}</p>
             </div>

@@ -7,6 +7,8 @@ import { classNames } from '@/app/lib/utils';
 import { RetroRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/RetroType1';
 import { RetroRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/RetroType2';
 import { RetroRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3';
+import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4';
+import RetroCard4 from '@/app/component/Card/RetroCardRound4'
 import RetroCard3 from '@/app/component/Card/RetroCardRound3';
 import RetroCard2 from '@/app/component/Card/RetroCardRound2';
 import { RetroCard1 } from '@/app/component/Card/RetroCardRound1';
@@ -17,13 +19,17 @@ export default function RetroSection({
   round1,
   round2,
   round3,
+  round4
 }:{
   round1:RetroRound1[], 
   round2:RetroRound2[], 
-  round3:RetroRound3[]
+  round3:RetroRound3[],
+  round4:iRetroPGF4Project[]
+
 }) {
   
   let [state] = useState({
+    RetroPGF4: round4,
     RetroPGF3: round3,
     RetroPGF2: round2,
     RetroPGF1: round1,
@@ -31,6 +37,26 @@ export default function RetroSection({
   
   function handleDynamicRound(key:string) {
     switch (key) {
+      case "RetroPGF4":
+        return (
+         state["RetroPGF4"].map((item, i) => (
+            <SwiperSlide key={i} className="">
+              <RetroCard4
+                title={item.name}
+                category={item.category}
+                description={item.description}
+                teamSize={item.team.length}
+                opRecieve={item.reward ?? 0}
+                rank={0}
+                round="RetroPGF 4"
+                // vote={0}
+                icon={item.projectAvatarUrl}
+                banner={item.proejctCoverImageUrl}
+                isEligible={item.isEligibleFinal}
+                />
+            </SwiperSlide>
+         ))
+        )
       case "RetroPGF3":
         return (
          state["RetroPGF3"].map((item, i) => (
@@ -87,6 +113,24 @@ export default function RetroSection({
 
 function handleDynamicRoundNoSwiper(key:string) {
   switch (key) {
+    case "RetroPGF4":
+        return (
+         state["RetroPGF4"].map((item, i) => (
+              <RetroCard4
+                title={item.name}
+                category={item.category}
+                description={item.description}
+                teamSize={item.team.length}
+                opRecieve={item.reward ?? 0}
+                rank={0}
+                round="RetroPGF 4"
+                // vote={0}
+                icon={item.projectAvatarUrl}
+                banner={item.proejctCoverImageUrl}
+                isEligible={item.isEligibleFinal}
+                />
+         ))
+        )
     case "RetroPGF3":
       return (
        state["RetroPGF3"].map((item, i) => (

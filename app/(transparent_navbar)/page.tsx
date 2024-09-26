@@ -12,7 +12,7 @@ Lesson 2: Understanding the Optimism Ecosystem (Interactive Diagram & Quiz)
 Lesson 3: Benefits of Participating in RetroPGF (Text & Case Studies)`
 
 export default async function Page() {
-  const { round1, round2, round3 } = await getAllRound(8)
+  const { round1, round2, round3, round4 } = await getAllRound(8)
 
   return (
     <>
@@ -75,7 +75,7 @@ export default async function Page() {
           </p>
         </div>
         <div className="px-0 min-[350px]:px-8 sm:px-4 md:px-10 lg:px-24 xl:px-36  w-full lg:w-[60rem] xl:w-[80rem]">
-          <RetroSection round1={round1} round2={round2} round3={round3} />
+          <RetroSection round1={round1} round2={round2} round3={round3} round4={round4} />
         </div>
       </div>
 

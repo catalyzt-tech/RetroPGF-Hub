@@ -10,8 +10,8 @@ export default function Cpage({ data }: { data: RetroRound1 }) {
     <div className="flex mt-4 lg:mt-8 gap-10">
       {/* Scroll Spy */}
 
-      <div className="flex-grow flex flex-col gap-4 lg:gap-16">
-        <section className="w-full h-full flex flex-col gap-4 lg:gap-8 flex-grow">
+      <div className="flex-grow flex flex-col gap-4 lg:gap-16 items-center w-max">
+        <section className="w-full h-full flex flex-col gap-4 lg:gap-8 flex-grow max-w-screen-md">
           <ProjectDetailSection data={data} />
         </section>
       </div>
