@@ -42,6 +42,7 @@ export default function RetroSection({
          state["RetroPGF4"].map((item, i) => (
             <SwiperSlide key={i} className="">
               <RetroCard4
+              key={i}
                 title={item.name}
                 category={item.category}
                 description={item.description}
@@ -117,6 +118,7 @@ function handleDynamicRoundNoSwiper(key:string) {
         return (
          state["RetroPGF4"].map((item, i) => (
               <RetroCard4
+              key={i}
                 title={item.name}
                 category={item.category}
                 description={item.description}

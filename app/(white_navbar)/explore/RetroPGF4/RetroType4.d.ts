@@ -56,7 +56,6 @@ export interface iRetroPGF4Project {
   category: string
   osoSlug: string
   socialLinks: SocialLinks
-  rank: number
   team: string[]
   github: Github[]
   packages: any[]
