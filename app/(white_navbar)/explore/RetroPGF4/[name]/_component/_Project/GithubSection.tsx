@@ -20,7 +20,7 @@ export default function GithubSection({
       className="flex flex-col gap-5 bg-white rounded-lg p-4 lg:p-6 border"
     >
       <h3 className="text-2xl font-semibold ">GitHub</h3>
-      <hr className="border-t-gray-100" />
+      <hr className="hidden sm:block border-t-gray-100" />
       <div className="flex flex-row flex-wrap gap-4">
         {data.github.length == 0 && (
           <p className="text-base font-normal text-gray-600">

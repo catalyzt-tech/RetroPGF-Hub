@@ -37,7 +37,7 @@ export default function CardRound4({
           href={{
             pathname: `/explore/RetroPGF4`,
           }}
-          className="md:hidden flex gap-2"
+          className="lg:hidden flex gap-2"
         >
           <p className="text-sm font-semibold text-gray-600 hover:underline ">
             See all{' '}
@@ -107,8 +107,8 @@ export default function CardRound4({
                     category={item.category}
                     description={item.description}
                     teamSize={item.team.length}
-                    // opRecieve={0}
-                    // rank={0}
+                    opRecieve={item.reward ?? 0}
+                    rank={item.ranking}
                     round="RetroPGF 4"
                     // vote={0}
                     icon={item.projectAvatarUrl}

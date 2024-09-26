@@ -15,7 +15,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
   return (
     <>
       <div className=" flex flex-col bg-white rounded-lg overflow-hidden border">
-        <div className="block relative w-full h-60 mb-16">
+        <div className="block relative w-full h-36 lg:h-60 mb-16">
           <Image
             src={data.projectCoverImageUrl || '/random/OP-Banner.png'}
             alt="background"
@@ -25,7 +25,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
         </div>
 
         <div className="relative flex flex-col gap-4 p-2 sm:p-4 lg:p-6">
-          <div className="absolute -top-32 left-2 lg:-top-32 lg:left-6 rounded-[0.25rem] flex flex-shrink-0 z-20">
+          <div className="absolute -top-32 left-2 lg:left-6 rounded-[0.25rem] flex flex-shrink-0 z-20">
             <div className="relative w-28 h-28 lg:w-32 lg:h-32">
               <Image
                 src={data.profileAvatarUrl || '/random/OP-Logo.png'}
@@ -36,7 +36,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
             </div>
           </div>
           <div className="flex flex-col gap-4 p-2 sm:p-4 md:px-4 md:pt-0 lg:p-0 ">
-            <h3 className="flex items-center text-3xl lg:text-4xl font-semibold text-gray-800">
+            <h3 className="flex items-center text-3xl lg:text-5xl font-semibold text-gray-800">
               {data.name}
               {/* <div className="flex-grow"></div>
               <div className="hidden md:flex items-center px-10 py-3 rounded-xl text-xl bg-red-50">
@@ -77,13 +77,13 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 className="ml-2"
               />
             </div>
-            <div className="flex flex-wrap gap-6 mt-1 md:mt-3 lg:mt-4">
+            <div className="flex flex-wrap gap-6 my-1 md:my-3 lg:my-4">
               {data.socialLinks.website.length > 0 &&
                 data.socialLinks.website.map((item, i) => (
                   <a
                     href={item}
                     key={i}
-                    className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+                    className="flex flex-shrink items-center gap-2 text-gray-500 hover:text-primaryRed"
                   >
                     <LinkIcon size={20} />
                     <h6 className="text-sm font-normal line-clamp-1">{item}</h6>
@@ -94,7 +94,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                   <Link
                     href={item}
                     key={i}
-                    className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+                    className="flex flex-shrink items-center gap-2 text-gray-500 hover:text-primaryRed"
                   >
                     <Partnership size={20} />
                     <h6 className="text-sm font-normal line-clamp-1">{item}</h6>
@@ -104,7 +104,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 data.socialLinks.twitter !== '' && (
                   <Link
                     href={data.socialLinks.twitter || ''}
-                    className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+                    className="flex flex-shrink items-center gap-2 text-gray-500 hover:text-primaryRed"
                   >
                     <LogoTwitter size={20} />
                     <h6 className="text-sm font-normal line-clamp-1">
@@ -116,7 +116,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 data.socialLinks.mirror !== '' && (
                   <Link
                     href={data.socialLinks.mirror || ''}
-                    className="flex items-center gap-2 text-gray-500 hover:text-primaryRed"
+                    className="flex flex-shrink items-center gap-2 text-gray-500 hover:text-primaryRed"
                   >
                     <Book size={20} />
                     <h6 className="text-sm font-normal line-clamp-1">

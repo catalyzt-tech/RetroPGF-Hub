@@ -5,4 +5,5 @@ export interface RetroRound1 {
   Leader: string
   Question: string
   allocation: number
+  rank: number
 }

@@ -16,7 +16,7 @@ export default function ImpactStatementSection({
       className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border"
     >
       <h3 className="text-2xl font-semibold">Impact Statement</h3>
-      <hr className="border-t-gray-100" />
+      <hr className="hidden sm:block border-t-gray-100" />
       {data.impactStatement.statement?.length == 0 && (
         <p className="text-base font-normal text-gray-600">
           There is no impact for this project.
@@ -43,17 +43,14 @@ export default function ImpactStatementSection({
         ))} */}
       {data.impactStatement.statement?.length !== 0 &&
         data.impactStatement.statement?.map((item, i) => (
-          <div
-            key={i}
-            className="flex flex-col gap-1 bg-slate-50 rounded-lg px-6 py-4 min-w-72"
-          >
-            <p className="text-lg font-semibold font-rubik mb-1">
+          <div key={i} className='flex flex-col gap-2'>
+            <div className="text-lg break-words font-semibold text-gray-800">
               {item.question}
-            </p>
+            </div>
             <div>
               {item.answer && (
                 <a
-                  className="text-sm text-gray-500"
+                  className="text-base break-words font-normal text-gray-600"
                   dangerouslySetInnerHTML={{
                     __html: convertMarkdownToHtml(item.answer),
                   }}

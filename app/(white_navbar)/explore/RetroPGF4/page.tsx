@@ -49,7 +49,7 @@ export default async function page() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6 mx-2 sm:mx-4 md:mx-6 lg:mx-20">
+        <div className="flex flex-col gap-6 mx-4 md:mx-6 lg:mx-20">
           <Cpage round4={round4} badgeholderData={badgeholderData} />
         </div>
       </div>

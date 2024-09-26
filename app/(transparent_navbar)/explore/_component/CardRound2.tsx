@@ -34,9 +34,9 @@ export default function CardRound2({
         <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
         <Link
           href={{
-            pathname: `/explore/${cleanParamsName(title)}`,
+            pathname: `/explore/RetroPGF2`,
           }}
-          className="md:hidden flex gap-2"
+          className="lg:hidden flex gap-2"
         >
           <p className="text-sm font-semibold text-gray-600 hover:underline ">
             See all{' '}

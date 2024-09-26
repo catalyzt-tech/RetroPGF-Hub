@@ -291,6 +291,7 @@ export default function ProjectTab({ round2 }: { round2: RetroRound2[] }) {
                       votes={item['Vote_Recieved']}
                       banner={item.bannerPath}
                       icon={item.iconPath}
+                      rank = {item.rank}
                     />
                   </React.Fragment>
                 ))
@@ -329,6 +330,7 @@ export default function ProjectTab({ round2 }: { round2: RetroRound2[] }) {
                     opRecieve={item['OP Received']}
                     round="2"
                     votes={item.Vote_Recieved}
+                    rank = {item.rank}
                   />
                 </React.Fragment>
               ))}

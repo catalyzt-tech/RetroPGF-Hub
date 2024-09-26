@@ -41,7 +41,7 @@ export default function CardRound5({ title, round5, cateRound5 }: iCardRound5) {
           href={{
             pathname: `/explore/RetroPGF5`,
           }}
-          className="md:hidden flex gap-2"
+          className="lg:hidden flex gap-2"
         >
           <p className="text-sm font-semibold text-gray-600 hover:underline ">
             See all{' '}

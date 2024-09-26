@@ -82,6 +82,7 @@ export interface iRetroPGF4Project {
   impactMetrics: ImpactMetrics | null
   isOpenSource: boolean
   reward?: number
+  ranking?: number
 }
 
 export interface MetricSelected {

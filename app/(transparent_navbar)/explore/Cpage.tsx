@@ -141,7 +141,7 @@ export default function Cpage({
         </div>
       </div>
 
-      <div className="lg:px-20 px-4 flex flex-col gap-12 mt-12">
+      <div className="lg:mx-20 mx-4  flex flex-col gap-12 mt-12">
         {/* <CategorySection /> */}
 
         <CardRound5

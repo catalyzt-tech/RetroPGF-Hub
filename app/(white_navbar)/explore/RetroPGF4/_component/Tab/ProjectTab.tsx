@@ -331,8 +331,8 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
                       isEligible={item.isEligibleFinal}
                       isOpenSource={item.isOpenSource}
                       reward={item.reward ?? 0}
+                      rank={item.ranking}
                       // votes={0}
-                      // rank={0}
                     />
                   </React.Fragment>
                 ))
@@ -371,10 +371,11 @@ export default function ProjectTab({ round4 }: ProjectTabProps): JSX.Element {
                     category={item.category}
                     description={item.description}
                     title={item.name}
+                    teamSize={item.team.length}
                     // opRecieve={0}
                     round="4"
                     // votes={0}
-                    // rank={0}
+                    rank={item.ranking}
                   />
                 </React.Fragment>
               ))}

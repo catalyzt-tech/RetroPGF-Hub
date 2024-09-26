@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NewCategory } from '@/app/(white_navbar)/explore/RetroPGF3/RetroType3'
 import { handleCategoryRound3 } from '@/app/lib/common'
-import { cleanParamsName } from '@/app/lib/utils'
+import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
 
 export default function DynamicCard({
   banner,
@@ -29,15 +29,15 @@ export default function DynamicCard({
 }) {
   return (
     <div
-      className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[18rem] min-h-[18rem] relative bg-white`}
+      className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[20rem] min-h-[12rem] relative bg-white overflow-hidden`}
     >
       {/* Background Image */}
-      <div className="absolute top-0 left-0 w-full h-12 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-16 lg:h-20 overflow-hidden">
         <Image
           src={banner || '/random/OP-Banner.png'}
           alt="background image"
           // Not sure about the aspect ratio, so using object-fit
-          className="opacity-50 object-cover z-10"
+          className="opacity-75 object-cover z-10"
           fill
         />
       </div>
@@ -50,17 +50,17 @@ export default function DynamicCard({
       </div>
 
       {/* Avatar */}
-      <div className="absolute top-4 left-4 rounded-[0.25rem] flex flex-shrink-0 z-20">
+      <div className="absolute top-10 lg:top-12 left-4 rounded-[0.25rem] bg-white flex flex-shrink-0 z-20 overflow-hidden">
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="avatar image"
-          className=""
+          className={`h-12 w-12 ${icon ? "bg-white" : "bg-[#FF0420]"}`}
           width={48}
           height={48}
         />
       </div>
 
-      <div className="mt-14"></div>
+      <div className="mt-20 lg:mt-[5.5rem]"></div>
       <div className="w-full h-full">
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
           <div className="flex flex-col gap-0.5">
@@ -91,7 +91,7 @@ export default function DynamicCard({
             <Trophy size={20} />
             <div className="flex gap-1">
               <p className="text-sm font-semibold text-gray-800">
-                {opRecieve.toFixed(2)} OP
+                {numberWithCommas(opRecieve.toFixed(2)||0)} OP
               </p>
               <p className="text-sm font-light text-gray-600">#{rank}</p>
             </div>

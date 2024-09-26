@@ -21,6 +21,7 @@ interface iDynamicCard {
   isEligible?: boolean
   isOpenSource?: boolean
   reward?: number
+  rank?: number
 }
 export default function DynamicCard({
   banner,
@@ -33,6 +34,7 @@ export default function DynamicCard({
   isEligible,
   isOpenSource = false,
   reward = 0,
+  rank=0
 }: iDynamicCard) {
   const categoryElement = useMemo(
     () => handleCategoryRound4(category),
@@ -45,7 +47,7 @@ export default function DynamicCard({
 
   return (
     <div
-      className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[18rem] min-h-[12rem] relative bg-white overflow-hidden`}
+      className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[20rem] min-h-[12rem] relative bg-white overflow-hidden`}
     >
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full h-16 lg:h-20 overflow-hidden">
@@ -79,7 +81,7 @@ export default function DynamicCard({
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="avatar image"
-          className=""
+          className={`h-12 w-12 ${icon ? "bg-white" : "bg-[#FF0420]"}`}
           width={48}
           height={48}
         />
@@ -103,16 +105,22 @@ export default function DynamicCard({
             {openSourceElement}
           </div>
           <div className="flex-grow"></div>
-          <div className="flex justify-center items-center gap-2 bg-red-50 rounded-md px-4 py-2.5 w-full group">
-            {/* <Trophy size={20} /> */}
-            {/* <Star size={20} /> */}
-            <div className="flex flex-row justify-center items-center gap-x-2 group-hover:scale-105 transition-all ease-linear">
+          <div className="flex gap-2">
+            <Events size={20} />
+            <div className="flex gap-1">
               <p className="text-sm font-semibold text-gray-800">
-                {numberWithCommas(reward || 0)}
+                {Math.ceil(teamSize).toString()}
               </p>
-              <p className="text-sm font-light text-gray-600">
-                <Image src={OpTokenPath} alt="OpToken" width={18} height={18} />
+              <p className="text-sm font-light text-gray-600">People</p>
+            </div>
+          </div>
+          <div className="flex gap-2">
+            <Trophy size={20} />
+            <div className="flex gap-1">
+              <p className="text-sm font-semibold text-gray-800">
+              {numberWithCommas(reward.toFixed(2)||0)} OP
               </p>
+              <p className="text-sm font-light text-gray-600">#{rank}</p>
             </div>
           </div>
         </div>
