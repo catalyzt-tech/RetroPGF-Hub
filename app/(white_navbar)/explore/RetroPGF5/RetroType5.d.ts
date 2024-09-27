@@ -84,11 +84,15 @@ export interface VentureFunding {
 
 export interface ImpactStatement {
   category: ApplicationCategoryEnum | null
-  statement: Statement[] | null
+  statement: Record<Statement> | null
   subcategory: string[] | null
 }
 
 export interface Statement {
+  create: Create[] | null
+}
+
+export interface Create {
   answer: string
   question: string
 }
