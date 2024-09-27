@@ -78,7 +78,7 @@ export default function ProjectTab({ round1 }: { round1: RetroRound1[] }) {
 
       return searchCondition && recieveOP
     })
-  }, [round1, search, checkBox, minVal, maxVal])
+  }, [round1, search, minVal, maxVal])
 
   const pageCount = useMemo(() => {
     return Math.ceil(filterJson.length / itemsPerPage)

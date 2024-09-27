@@ -1,5 +1,5 @@
 import { convertMarkdownToHtml, splitTextNewLine } from '@/app/lib/common'
-import { iRetroPGF5Project } from '../../../RetroType5'
+import { Create, iRetroPGF5Project } from '../../../RetroType5'
 
 interface iImpactStatementSection {
   data: iRetroPGF5Project
@@ -9,6 +9,7 @@ export default function ImpactStatementSection({
   data,
   impactSectionRef,
 }: iImpactStatementSection) {
+  console.log(data)
   return (
     <section
       id="Impact Statement"
@@ -17,11 +18,12 @@ export default function ImpactStatementSection({
     >
       <h3 className="text-2xl font-semibold">Impact Statement</h3>
       <hr className="hidden sm:block border-t-gray-100" />
-      {data.impactStatement.statement?.length == 0 && (
-        <p className="text-base font-normal text-gray-600">
-          There is no impact for this project.
-        </p>
-      )}
+      {Array.isArray(data.impactStatement.statement?.create) &&
+        data.impactStatement.statement?.create.length === 0 && (
+          <p className="text-base font-normal text-gray-600">
+            There is no impact for this project.
+          </p>
+        )}
       {/* Don't delete this, this is experiment rendering markdown or split with \n */}
       {/* {data.impactStatement.statement?.length !== 0 &&
         data.impactStatement.statement?.map((item, i) => (
@@ -41,24 +43,27 @@ export default function ImpactStatementSection({
             </div>
           </div>
         ))} */}
-      {data.impactStatement.statement?.length !== 0 &&
-        data.impactStatement.statement?.map((item, i) => (
-          <div key={i} className='flex flex-col gap-2'>
-            <div className="text-lg break-words font-semibold text-gray-800">
-              {item.question}
+      {Array.isArray(data.impactStatement.statement?.create) &&
+        data.impactStatement.statement?.create.length !== 0 &&
+        data.impactStatement.statement?.create.map(
+          (item: Create, i: number) => (
+            <div key={i} className="flex flex-col gap-2">
+              <div className="text-lg break-words font-semibold text-gray-800">
+                {item.question}
+              </div>
+              <div>
+                {item.answer && (
+                  <a
+                    className="text-base break-words font-normal text-gray-600"
+                    dangerouslySetInnerHTML={{
+                      __html: convertMarkdownToHtml(item.answer),
+                    }}
+                  ></a>
+                )}
+              </div>
             </div>
-            <div>
-              {item.answer && (
-                <a
-                  className="text-base break-words font-normal text-gray-600"
-                  dangerouslySetInnerHTML={{
-                    __html: convertMarkdownToHtml(item.answer),
-                  }}
-                ></a>
-              )}
-            </div>
-          </div>
-        ))}
+          )
+        )}
     </section>
   )
 }
