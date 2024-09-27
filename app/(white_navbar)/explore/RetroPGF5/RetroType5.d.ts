@@ -84,7 +84,7 @@ export interface VentureFunding {
 
 export interface ImpactStatement {
   category: ApplicationCategoryEnum | null
-  statement: Record<Statement> | null
+  statement: Record<string, Statement> | null
   subcategory: string[] | null
 }
 
