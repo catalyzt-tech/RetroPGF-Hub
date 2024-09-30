@@ -2,7 +2,7 @@ import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/Retro
 import Cpage from './Cpage'
 import BreadcrumbExplore from './_component/BreadcrumbExplore'
 import { iRetroPGF5Project } from './RetroType5'
-import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
+import { getRealTimeRetroPGF } from '@/app/lib/realtime'
 
 async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   // const directoryPath = path.join(
@@ -17,7 +17,7 @@ async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
 export const dynamic = 'force-dynamic'
 
 async function getJsonRetroPGF5(): Promise<iRetroPGF5Project[]> {
-  const data = await getRealTimeRetroPGF5()
+  const data = await getRealTimeRetroPGF()
   const filterUniqueData = data.data.filter((item, index, self) => {
     return (
       item.applicationCategory &&
