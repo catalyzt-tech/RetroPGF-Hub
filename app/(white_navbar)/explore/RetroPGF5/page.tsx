@@ -18,7 +18,7 @@ export const dynamic = 'force-dynamic'
 
 async function getJsonRetroPGF5(): Promise<iRetroPGF5Project[]> {
   const data = await getRealTimeRetroPGF()
-  const filterUniqueData = data.data.filter((item, index, self) => {
+  const filterUniqueData = data.filter((item, index, self) => {
     return (
       item.applicationCategory &&
       index === self.findIndex((x) => x.name === item.name)

@@ -17,7 +17,7 @@ async function FindRound5Data(
   decodedString: string
 ): Promise<iRetroPGF5Project | undefined> {
   const data = await getRealTimeRetroPGF()
-  const projectData = data.data.find((elem) => {
+  const projectData = data.find((elem) => {
     return cleanParamsName(elem.name) === decodedString
   })
 

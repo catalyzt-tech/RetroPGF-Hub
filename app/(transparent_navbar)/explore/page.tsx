@@ -107,8 +107,8 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
-  // TODO: Remove after 5th round data is from agora
-  const filterUniqueRound5 = round5Raw.data.filter((item, index, self) => {
+  // TODO: Remove after 5th round data is from agora]
+  const filterUniqueRound5 = round5Raw.filter((item, index, self) => {
     return index === self.findIndex((x) => x.name === item.name)
   })
 
