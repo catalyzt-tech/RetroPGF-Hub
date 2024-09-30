@@ -1,5 +1,5 @@
 import { convertMarkdownToHtml, splitTextNewLine } from '@/app/lib/common'
-import { Create, iRetroPGF5Project } from '../../../RetroType5'
+import { Statement, iRetroPGF5Project } from '../../../RetroType5'
 
 interface iImpactStatementSection {
   data: iRetroPGF5Project
@@ -18,8 +18,8 @@ export default function ImpactStatementSection({
     >
       <h3 className="text-2xl font-semibold">Impact Statement</h3>
       <hr className="hidden sm:block border-t-gray-100" />
-      {Array.isArray(data.impactStatement.statement?.create) &&
-        data.impactStatement.statement?.create.length === 0 && (
+      {Array.isArray(data.impactStatement.statement) &&
+        data.impactStatement.statement?.length === 0 && (
           <p className="text-base font-normal text-gray-600">
             There is no impact for this project.
           </p>
@@ -43,10 +43,10 @@ export default function ImpactStatementSection({
             </div>
           </div>
         ))} */}
-      {Array.isArray(data.impactStatement.statement?.create) &&
-        data.impactStatement.statement?.create.length !== 0 &&
-        data.impactStatement.statement?.create.map(
-          (item: Create, i: number) => (
+      {Array.isArray(data.impactStatement.statement) &&
+        data.impactStatement.statement?.length !== 0 &&
+        data.impactStatement.statement?.map(
+          (item: Statement, i: number) => (
             <div key={i} className="flex flex-col gap-2">
               <div className="text-lg break-words font-semibold text-gray-800">
                 {item.question}
