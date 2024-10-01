@@ -3,6 +3,7 @@ import { Disclosure, Transition } from '@headlessui/react'
 import { priceModel } from '../../Text'
 import Checkbox from '@/app/component/Checkbox/Checkbox'
 import { CheckBoxStateType } from '../../ExploreRoundType'
+import React from 'react'
 
 interface IPriceModelDisclosure {
   checkBox: CheckBoxStateType

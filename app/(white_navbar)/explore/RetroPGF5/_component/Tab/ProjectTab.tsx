@@ -150,7 +150,7 @@ export default function ProjectTab({
       let priceModelCondition: boolean
       if (checkBox.priceModel.length !== 0) {
         priceModelCondition = checkBox.priceModel.some(
-          (elem) => elem === item.pricingModel
+          (elem) => elem === item.pricingModel.type
         )
       } else {
         priceModelCondition = true
@@ -366,6 +366,7 @@ export default function ProjectTab({
                     title={item.name}
                     // opRecieve={0}
                     round="4"
+                    isEligible={true}
                     // votes={0}
                     // rank={0}
                   />
