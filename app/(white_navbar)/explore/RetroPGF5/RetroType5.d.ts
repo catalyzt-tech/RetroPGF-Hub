@@ -28,7 +28,7 @@ export interface iRetroPGF5Project {
   links: Github[]
   contracts: Contract[]
   grantsAndFunding: GrantsAndFunding
-  pricingModel: PricingModelClass
+  pricingModel: PricingModel
   impactStatement: ImpactStatement
   testimonials: string
 }
@@ -114,12 +114,12 @@ export interface SocialLinks {
   mirror: null | string
 }
 
-export interface PricingModelClass {
-  type: PricingModel
+export interface PricingModel {
+  type: PricingModelEnum
   details: string
 }
 
-export enum PricingModel {
+export enum PricingModelEnum {
   Free = 'free',
   Freemium = 'freemium',
   PayToUse = 'pay_to_use',
