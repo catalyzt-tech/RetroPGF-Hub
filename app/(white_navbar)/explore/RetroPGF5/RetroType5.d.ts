@@ -23,9 +23,9 @@ export interface iRetroPGF5Project {
   projectCoverImageUrl: string
   socialLinks: SocialLinks
   team: Team[]
-  github: Github[]
-  packages: Github[]
-  links: Github[]
+  github: Link[]
+  packages: Link[]
+  links: Link[]
   contracts: Contract[]
   grantsAndFunding: GrantsAndFunding
   pricingModel: PricingModelClass | string
@@ -53,7 +53,7 @@ export interface Contract {
   chainId: number
 }
 
-export interface Github {
+export interface Link {
   url: string
   name: null | string
   description: null | string

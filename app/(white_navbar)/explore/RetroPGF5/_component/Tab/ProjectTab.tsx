@@ -23,6 +23,7 @@ export default function ProjectTab({
 }: ProjectTabProps): JSX.Element {
   const searchParams = useSearchParams()
 
+  console.log('projectData', projectData)
   const [search, setSearch] = useState('')
   const [state, setState] = useState<ExploreRoundState>({
     drawer: false,
@@ -121,7 +122,6 @@ export default function ProjectTab({
   }, [searchParams])
 
   const filterJson = useMemo(() => {
-
     setCurrentPage(0)
 
     return projectData.filter((item) => {
@@ -151,18 +151,15 @@ export default function ProjectTab({
 
       let priceModelCondition: boolean
       if (checkBox.priceModel.length !== 0) {
-        priceModelCondition = checkBox.priceModel.some(
-          (elem) => {
-            let str: string = ""
-            if (typeof(item.pricingModel) === "string"){
-              str = item.pricingModel
-            }
-            else if(typeof(item.pricingModel) === "object"){
-              str = item.pricingModel.type
-            }
-            return elem === str
+        priceModelCondition = checkBox.priceModel.some((elem) => {
+          let str: string = ''
+          if (typeof item.pricingModel === 'string') {
+            str = item.pricingModel
+          } else if (typeof item.pricingModel === 'object') {
+            str = item.pricingModel.type
           }
-        )
+          return elem === str
+        })
       } else {
         priceModelCondition = true
       }
