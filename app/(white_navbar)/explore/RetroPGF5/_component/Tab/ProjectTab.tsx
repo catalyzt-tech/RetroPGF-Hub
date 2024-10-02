@@ -121,7 +121,9 @@ export default function ProjectTab({
   }, [searchParams])
 
   const filterJson = useMemo(() => {
+
     setCurrentPage(0)
+
     return projectData.filter((item) => {
       const searchCondition =
         search !== ''
@@ -150,7 +152,16 @@ export default function ProjectTab({
       let priceModelCondition: boolean
       if (checkBox.priceModel.length !== 0) {
         priceModelCondition = checkBox.priceModel.some(
-          (elem) => elem === item.pricingModel.type
+          (elem) => {
+            let str: string = ""
+            if (typeof(item.pricingModel) === "string"){
+              str = item.pricingModel
+            }
+            else if(typeof(item.pricingModel) === "object"){
+              str = item.pricingModel.type
+            }
+            return elem === str
+          }
         )
       } else {
         priceModelCondition = true
@@ -416,11 +427,8 @@ export default function ProjectTab({
           checkBox={checkBox}
           handleChangeCategory={handleChangeCategory}
           handleChangeApplicationCategory={handleChangeApplicationCategory}
-          maxVal={maxVal}
-          minVal={minVal}
-          setMaxVal={setMaxVal}
-          setMinVal={setMinVal}
           handleClearFilter={handleClearFilter}
+          handleChangePriceModel={handleChangePriceModel}
         />
       </div>
     </>
