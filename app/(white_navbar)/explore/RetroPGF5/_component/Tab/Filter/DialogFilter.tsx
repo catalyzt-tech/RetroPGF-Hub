@@ -1,12 +1,11 @@
 'use client'
 import Close from '@carbon/icons-react/lib/Close'
-import { Dialog, Disclosure, Transition } from '@headlessui/react'
+import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import CategoryDisclosure from './CategoryDisclosure'
 import { CheckBoxStateType } from '../../ExploreRoundType'
-import MultiSliderDisclosure from './MultiSliderDisclosure'
-import ChevronDown from '@carbon/icons-react/lib/ChevronDown'
 import ApplicationCategoryDisclosure from './ApplicationCategoryDisclosure'
+import PriceModelDisclosure from './PriceModelDisclosure'
 
 export default function DialogFilter({
   onClose,
@@ -14,22 +13,16 @@ export default function DialogFilter({
   checkBox,
   handleChangeCategory,
   handleChangeApplicationCategory,
-  minVal,
-  setMinVal,
-  maxVal,
-  setMaxVal,
   handleClearFilter,
+  handleChangePriceModel
 }: {
   open: boolean
   onClose: () => void
   checkBox: CheckBoxStateType
   handleChangeCategory: (value: string) => void
-  minVal: number
-  maxVal: number
-  setMinVal: React.Dispatch<React.SetStateAction<number>>
-  setMaxVal: React.Dispatch<React.SetStateAction<number>>
   handleClearFilter: () => void
   handleChangeApplicationCategory: (value: string) => void
+  handleChangePriceModel: (value: string) => void
 }) {
   return (
     <Transition appear show={open} as={Fragment}>
@@ -81,6 +74,10 @@ export default function DialogFilter({
                     setMaxVal={setMaxVal}
                     setMinVal={setMinVal}
                   /> */}
+                  <PriceModelDisclosure
+                  checkBox={checkBox}
+                  handleChangePriceModel={handleChangePriceModel}
+                  />
                 </div>
                 <div className="mt-8" />
 
