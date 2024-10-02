@@ -15,7 +15,7 @@ export interface iRetroPGF5Project {
   id:                   string;
   applicationId:        string;
   projectId:            string;
-  category:             PurpleCategory;
+  category:             ProjectCategory;
   applicationCategory:  ApplicationCategoryEnum;
   organization:         Organization | null;
   name:                 string;
@@ -29,7 +29,7 @@ export interface iRetroPGF5Project {
   links:                Github[];
   contracts:            Contract[];
   grantsAndFunding:     GrantsAndFunding;
-  pricingModel:         PricingModelClass | PricingModel;
+  pricingModel:         PricingModelClass | string;
   impactStatement:      ImpactStatement;
   testimonials:         string;
 }
@@ -40,7 +40,7 @@ export enum ApplicationCategoryEnum {
   OpStackTooling = "OP_STACK_TOOLING",
 }
 
-export enum PurpleCategory {
+export enum ProjectCategory {
   CrossChain = "Cross Chain",
   DeFi = "DeFi",
   Utility = "Utility",
