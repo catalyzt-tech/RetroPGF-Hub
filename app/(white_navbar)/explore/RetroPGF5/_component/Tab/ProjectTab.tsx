@@ -121,9 +121,11 @@ export default function ProjectTab({
     })
   }, [searchParams])
 
-  const filterJson = useMemo(() => {
+  useEffect(() => {
     setCurrentPage(0)
+  }, [search, checkBox])
 
+  const filterJson = useMemo(() => {
     return projectData.filter((item) => {
       const searchCondition =
         search !== ''
@@ -152,12 +154,10 @@ export default function ProjectTab({
       let priceModelCondition: boolean
       if (checkBox.priceModel.length !== 0) {
         priceModelCondition = checkBox.priceModel.some((elem) => {
-          let str: string = ''
-          if (typeof item.pricingModel === 'string') {
-            str = item.pricingModel
-          } else if (typeof item.pricingModel === 'object') {
-            str = item.pricingModel.type
-          }
+          const str =
+            typeof item.pricingModel === 'object'
+              ? item.pricingModel?.type
+              : item.pricingModel ?? ''
           return elem === str
         })
       } else {
