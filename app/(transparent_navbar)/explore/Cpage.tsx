@@ -36,34 +36,6 @@ export default function Cpage({
   cateRound5: cateRound5Counter,
 }: iCpage) {
   const [search, setSearch] = useState<string>('')
-  // const [round5, setRound5] = useState<iRetroPGF5Project[]>(Round5Data)
-
-  // async function fetchData() {
-  //   const dataRaw = await getRealTimeRetroPGF5()
-  //   const data = dataRaw.data
-
-  //   const filterUniqueData = data.filter((item, index, self) => {
-  //     return index === self.findIndex((x) => x.name === item.name)
-  //   })
-
-  //   setRound5(() => filterUniqueData)
-  //   const newCateRound5Counter = new Map<string, number>()
-
-  //   data.forEach((project: iRetroPGF5Project) => {
-  //     const cateRound5 = project.category
-  //     if (cateRound5) {
-  //       if (newCateRound5Counter.has(cateRound5)) {
-  //         newCateRound5Counter.set(
-  //           cateRound5,
-  //           newCateRound5Counter.get(cateRound5)! + 1
-  //         )
-  //       } else {
-  //         newCateRound5Counter.set(cateRound5, 1)
-  //       }
-  //     }
-  //   })
-  //   setCateRound5Counter(()=>newCateRound5Counter)
-  // }
 
   const round5Data = useMemo(() => {
     return round5.filter((item) => {

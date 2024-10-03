@@ -1,18 +1,21 @@
 import axios from 'axios'
-import { RetroPGF5Response } from '../(white_navbar)/explore/RetroPGF5/RetroType5'
+import { WorkerResponse, iRetroPGF5Project } from '../(white_navbar)/explore/RetroPGF5/RetroType5'
 
-export const getRealTimeRetroPGF5 = async (): Promise<RetroPGF5Response> => {
+// Designed to only get the lastest round data, for the past round using this, please migrate to json file.
+export const getRealTimeRetroPGF = async (): Promise<iRetroPGF5Project[]> => {
   try {
-    // To be change until migrate agora cache to worker
-    // let apiUrl =
-    //   process.env.NODE_ENV == 'production'
-    //     ? process.env.NEXT_PUBLIC_WORKER_API_BASE!
-    //     : process.env.NEXT_PUBLIC_WORKER_API_DEV!
-    let apiUrl = process.env.NEXT_PUBLIC_TEMP_API_BASE as string
-    // apiUrl = apiUrl + '/api/retropgf5-live-data/retropgf5-live-data.json'
-    const response = await axios.get<RetroPGF5Response>(apiUrl)
-    const data: RetroPGF5Response = response.data
-    return data
+    let apiUrl = process.env.NODE_ENV == 'production' 
+    ? process.env.NEXT_PUBLIC_WORKER_API_BASE! 
+    : process.env.NEXT_PUBLIC_WORKER_API_DEV!
+    apiUrl = apiUrl + '/api/agora-cache/agora-cache.json'
+
+    const response = await axios.get<WorkerResponse>(apiUrl)
+    const data: WorkerResponse = response.data
+    if (!Array.isArray(data.data) || data.data.length === 0 || !Array.isArray(data.data[0].data)) {  
+      throw new Error('Unexpected response structure');  
+    }  
+    
+    return data.data[0].data
   } catch (error) {
     console.error('Error fetching data:', error)
     throw error
