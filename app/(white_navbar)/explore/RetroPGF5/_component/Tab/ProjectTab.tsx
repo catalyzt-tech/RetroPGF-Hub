@@ -120,16 +120,16 @@ export default function ProjectTab({
     })
   }, [searchParams])
 
-  useEffect(()=> {
+  useEffect(() => {
     setCurrentPage(0)
   }, [search, checkBox])
-  
+
   const filterJson = useMemo(() => {
     return projectData.filter((item) => {
       const searchCondition =
         search !== ''
           ? typeof item.name === 'string' &&
-            item.name.toLowerCase().includes(search.toLowerCase())
+          item.name.toLowerCase().includes(search.toLowerCase())
           : true
 
       let categoryCondition: boolean
@@ -154,13 +154,10 @@ export default function ProjectTab({
       if (checkBox.priceModel.length !== 0) {
         priceModelCondition = checkBox.priceModel.some(
           (elem) => {
-            let str: string = ""
-            if (typeof(item.pricingModel) === "string"){
-              str = item.pricingModel
-            }
-            else if(typeof(item.pricingModel) === "object"){
-              str = item.pricingModel.type
-            }
+            const str =
+              typeof item.pricingModel === 'object'
+                ? item.pricingModel?.type
+                : item.pricingModel ?? ''
             return elem === str
           }
         )
@@ -313,11 +310,10 @@ export default function ProjectTab({
             <div
               className={`
                             w-full grid h-fit gap-6 
-                            ${
-                              state.filter
-                                ? 'grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'
-                                : 'grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5'
-                            }
+                            ${state.filter
+                  ? 'grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'
+                  : 'grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5'
+                }
                             `}
             >
               {currentItems.length !== 0 ? (
@@ -335,8 +331,8 @@ export default function ProjectTab({
                       round="5"
                       isEligible={true}
                       reward={0}
-                      // votes={0}
-                      // rank={0}
+                    // votes={0}
+                    // rank={0}
                     />
                   </React.Fragment>
                 ))
@@ -378,8 +374,8 @@ export default function ProjectTab({
                     title={item.name}
                     // opRecieve={0}
                     round="4"
-                    // votes={0}
-                    // rank={0}
+                  // votes={0}
+                  // rank={0}
                   />
                 </React.Fragment>
               ))}
