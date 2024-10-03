@@ -120,10 +120,11 @@ export default function ProjectTab({
     })
   }, [searchParams])
 
-  const filterJson = useMemo(() => {
-
+  useEffect(()=> {
     setCurrentPage(0)
-
+  }, [search, checkBox])
+  
+  const filterJson = useMemo(() => {
     return projectData.filter((item) => {
       const searchCondition =
         search !== ''
