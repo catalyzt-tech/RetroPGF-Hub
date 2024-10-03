@@ -22,8 +22,6 @@ export default function ProjectTab({
   projectData,
 }: ProjectTabProps): JSX.Element {
   const searchParams = useSearchParams()
-
-  console.log('projectData', projectData)
   const [search, setSearch] = useState('')
   const [state, setState] = useState<ExploreRoundState>({
     drawer: false,
