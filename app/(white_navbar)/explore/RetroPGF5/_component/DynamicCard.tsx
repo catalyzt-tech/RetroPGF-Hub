@@ -34,7 +34,7 @@ export default function DynamicCard({
   category = '',
   applicationCategory = '',
   teamSize = 0,
-  isEligible = false,
+  isEligible = true,
   reward = 0,
 }: iDynamicCard) {
   const categoryElement = useMemo(
@@ -62,7 +62,7 @@ export default function DynamicCard({
       </div>
 
       {/* Eligibility Status */}
-      {/* <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem] z-20">
+      <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem] z-20">
         {isEligible === true ? (
           <div className="flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg">
             {' '}
@@ -76,14 +76,14 @@ export default function DynamicCard({
             Rejected
           </div>
         )}
-      </div> */}
+      </div>
 
       {/* Avatar */}
       <div className="absolute top-10 lg:top-12 left-4 rounded-[0.25rem] bg-white flex flex-shrink-0 z-20 overflow-hidden">
         <Image
           src={icon || '/random/OP-Logo.png'}
           alt="avatar image"
-          className={`h-12 w-12 ${icon ? "bg-white" : "bg-[#FF0420]"}`}
+          className={`h-12 w-12 ${icon ? 'bg-white' : 'bg-[#FF0420]'}`}
           width={48}
           height={48}
         />

@@ -3,6 +3,7 @@ import Cpage from './Cpage'
 import BreadcrumbExplore from './_component/BreadcrumbExplore'
 import { iRetroPGF5Project } from './RetroType5'
 import { getRealTimeRetroPGF } from '@/app/lib/realtime'
+import React from 'react'
 
 async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   // const directoryPath = path.join(

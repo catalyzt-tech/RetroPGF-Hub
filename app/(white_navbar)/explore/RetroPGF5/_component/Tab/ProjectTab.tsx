@@ -22,7 +22,6 @@ export default function ProjectTab({
   projectData,
 }: ProjectTabProps): JSX.Element {
   const searchParams = useSearchParams()
-
   const [search, setSearch] = useState('')
   const [state, setState] = useState<ExploreRoundState>({
     drawer: false,
@@ -129,7 +128,7 @@ export default function ProjectTab({
       const searchCondition =
         search !== ''
           ? typeof item.name === 'string' &&
-          item.name.toLowerCase().includes(search.toLowerCase())
+            item.name.toLowerCase().includes(search.toLowerCase())
           : true
 
       let categoryCondition: boolean
@@ -152,15 +151,13 @@ export default function ProjectTab({
 
       let priceModelCondition: boolean
       if (checkBox.priceModel.length !== 0) {
-        priceModelCondition = checkBox.priceModel.some(
-          (elem) => {
-            const str =
-              typeof item.pricingModel === 'object'
-                ? item.pricingModel?.type
-                : item.pricingModel ?? ''
-            return elem === str
-          }
-        )
+        priceModelCondition = checkBox.priceModel.some((elem) => {
+          const str =
+            typeof item.pricingModel === 'object'
+              ? item.pricingModel?.type
+              : item.pricingModel ?? ''
+          return elem === str
+        })
       } else {
         priceModelCondition = true
       }
@@ -310,10 +307,11 @@ export default function ProjectTab({
             <div
               className={`
                             w-full grid h-fit gap-6 
-                            ${state.filter
-                  ? 'grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'
-                  : 'grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5'
-                }
+                            ${
+                              state.filter
+                                ? 'grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'
+                                : 'grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5'
+                            }
                             `}
             >
               {currentItems.length !== 0 ? (
@@ -331,8 +329,8 @@ export default function ProjectTab({
                       round="5"
                       isEligible={true}
                       reward={0}
-                    // votes={0}
-                    // rank={0}
+                      // votes={0}
+                      // rank={0}
                     />
                   </React.Fragment>
                 ))
@@ -374,8 +372,9 @@ export default function ProjectTab({
                     title={item.name}
                     // opRecieve={0}
                     round="4"
-                  // votes={0}
-                  // rank={0}
+                    isEligible={true}
+                    // votes={0}
+                    // rank={0}
                   />
                 </React.Fragment>
               ))}

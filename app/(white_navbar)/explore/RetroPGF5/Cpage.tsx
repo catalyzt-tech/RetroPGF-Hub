@@ -9,6 +9,7 @@ import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/Retro
 import { iRetroPGF5Project } from './RetroType5'
 import HistoryTab from './_component/Tab/HistoryTab'
 import StatisticTab from './_component/Tab/StatisticTab'
+import React from 'react'
 
 interface iCpage {
   projectRound5: iRetroPGF5Project[]
