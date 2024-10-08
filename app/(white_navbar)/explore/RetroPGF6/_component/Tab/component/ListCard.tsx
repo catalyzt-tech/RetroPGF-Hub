@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { iRetroPGF5Project } from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
 import { handleCategoryRound5 } from '@/app/lib/common'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
@@ -8,7 +8,7 @@ import List from '@carbon/icons-react/lib/List'
 const OpTokenPath = '/static/superchainLogo/optimism.svg'
 
 interface ListCardProps {
-  currentItems: iRetroPGF5Project[]
+  currentItems: iRetroPGF6Project[]
 }
 export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
   return (

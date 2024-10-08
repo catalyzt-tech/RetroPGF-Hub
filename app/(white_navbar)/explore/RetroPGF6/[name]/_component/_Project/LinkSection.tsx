@@ -1,8 +1,8 @@
-import { iRetroPGF5Project } from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
 import LinkIcon from '@carbon/icons-react/lib/Link'
 
 interface iLinkSection {
-  data: iRetroPGF5Project
+  data: iRetroPGF6Project
   linkSectionRef: React.MutableRefObject<HTMLElement | null>
 }
 export default function LinkSection({ data, linkSectionRef }: iLinkSection) {

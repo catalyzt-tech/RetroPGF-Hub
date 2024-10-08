@@ -9,14 +9,14 @@ import ContractSection from './_component/_Project/ContractSection'
 // import AppealSection from './_component/_Project/AppealSection'
 // import ImpactMetricSection from './_component/_Project/ImpactMetricSection'
 import ScrollSpy from '@/app/component/ScrollSpy'
-import { iRetroPGF5Project } from '../RetroType6'
+import { iRetroPGF6Project } from '../RetroType6'
 // import ContributionSection from './_component/_Project/ContributionSection'
 import PackageSection from './_component/_Project/PackageSection'
 import LinkSection from './_component/_Project/LinkSection'
 import ImpactStatementSection from './_component/_Project/ImpactStatementSection'
 
 interface iCpage {
-  data: iRetroPGF5Project
+  data: iRetroPGF6Project
 }
 export default function Cpage({ data }: iCpage) {
   const overViewRef = useRef<HTMLElement | null>(null)

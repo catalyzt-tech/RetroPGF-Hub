@@ -1,7 +1,7 @@
 import ComingSoon from '@/app/ComingSoon'
-import { iRetroPGF5Project } from '../../RetroType6'
+import { iRetroPGF6Project } from '../../RetroType6'
 interface StatisticTabProps {
-  data: iRetroPGF5Project[]
+  data: iRetroPGF6Project[]
   round: number
 }
 

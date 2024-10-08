@@ -1,5 +1,5 @@
 import { formatText } from './ContributionSection'
-import { iRetroPGF5Project } from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
 import LinkIcon from '@carbon/icons-react/lib/Link'
 import {
   containsOnlyDigits,
@@ -11,7 +11,7 @@ import {
 import Link from 'next/link'
 
 interface iFundingSection {
-  data: iRetroPGF5Project
+  data: iRetroPGF6Project
   fundingRef: React.MutableRefObject<HTMLElement | null>
 }
 

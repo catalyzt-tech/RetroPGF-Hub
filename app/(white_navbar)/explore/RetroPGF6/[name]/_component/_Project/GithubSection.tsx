@@ -3,11 +3,11 @@ import star from '@/public/static/githubCardSection/star'
 // import watch from '@/public/static/githubCardSection/watch'
 import fork from '@/public/static/githubCardSection/fork'
 import Link from 'next/link'
-import { iRetroPGF5Project } from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
 import { formatGithubLink } from '@/app/lib/utils'
 
 interface iGithubSection {
-  data: iRetroPGF5Project
+  data: iRetroPGF6Project
   githubRef: React.MutableRefObject<HTMLElement | null>
 }
 export default function GithubSection({ data, githubRef }: iGithubSection) {

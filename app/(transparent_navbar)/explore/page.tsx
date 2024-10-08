@@ -10,7 +10,7 @@ import Cpage from './Cpage'
 import { Metadata } from 'next'
 import { shuffle } from '@/app/lib/utils'
 import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
-import { getRealTimeRetroPGF } from '@/app/lib/realtime'
+import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
 
 export const dynamic = 'force-dynamic'
 
@@ -58,7 +58,7 @@ export async function getAllRound(limit: number): Promise<{
   const round2 = await getJsonRound2()
   const round3 = await getJsonRound3()
   const round4 = await getJsonRound4()
-  const round5Raw = await getRealTimeRetroPGF()
+  const round5Raw = await getRealTimeRetroPGF5()
 
   const cateRound2Counter = new Map<string, number>()
   const cateRound3Counter = new Map<string, number>()
@@ -126,7 +126,7 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
-//end remove
+  //end remove
 
   return {
     round1: round1.slice(0, limit),

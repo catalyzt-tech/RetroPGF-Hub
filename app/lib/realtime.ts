@@ -3,9 +3,36 @@ import {
   WorkerResponse,
   iRetroPGF5Project,
 } from '../(white_navbar)/explore/RetroPGF5/RetroType5'
+import { iRetroPGF6Project } from '../(white_navbar)/explore/RetroPGF6/RetroType6'
 
 // Designed to only get the lastest round data, for the past round using this, please migrate to json file.
-export const getRealTimeRetroPGF = async (): Promise<iRetroPGF5Project[]> => {
+export const getRealTimeRetroPGF5 = async (): Promise<iRetroPGF5Project[]> => {
+  try {
+    const baseUrl =
+      process.env.NODE_ENV === 'production'
+        ? process.env.NEXT_PUBLIC_WORKER_API_BASE
+        : process.env.NEXT_PUBLIC_WORKER_API_DEV
+
+    if (!baseUrl) {
+      throw new Error('API base URL is not defined in environment variables.')
+    }
+    const apiUrl = baseUrl + '/api/agora-cache/agora-cache.json'
+    const response = await axios.get<WorkerResponse>(apiUrl)
+    const data: WorkerResponse = response.data
+    if (
+      !Array.isArray(data.data) ||
+      data.data.length === 0 ||
+      !Array.isArray(data.data[0].data)
+    ) {
+      throw new Error('Unexpected response structure')
+    }
+    return data.data[0].data
+  } catch (error) {
+    console.error('Error fetching data:', error)
+    throw error
+  }
+}
+export const getRealTimeRetroPGF6 = async (): Promise<iRetroPGF6Project[]> => {
   try {
     const baseUrl =
       process.env.NODE_ENV === 'production'

@@ -1,9 +1,9 @@
 import { mapChainId, getNameByChainId } from '@/app/lib/utils'
 import Image from 'next/image'
-import { iRetroPGF5Project } from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
 
 interface iContract {
-  data: iRetroPGF5Project
+  data: iRetroPGF6Project
   contractRef: React.MutableRefObject<HTMLElement | null>
 }
 export default function ContractSection({ data, contractRef }: iContract) {

@@ -1,11 +1,11 @@
 import LinkIcon from '@carbon/icons-react/lib/Link'
 import Image from 'next/image'
 import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'
-import { iRetroPGF5Project } from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
 import Link from 'next/link'
 // import { convertImageClodinary } from '@/app/lib/utils'
 interface iProjectDetailSection {
-  data: iRetroPGF5Project
+  data: iRetroPGF6Project
 }
 export const truncateProjectId = (projectId: string) => {
   if (projectId.length <= 10) return projectId

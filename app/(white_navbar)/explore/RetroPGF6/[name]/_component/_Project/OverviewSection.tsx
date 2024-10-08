@@ -3,10 +3,10 @@ import {
   handleCategoryRound5,
   splitTextNewLine,
 } from '@/app/lib/common'
-import { iRetroPGF5Project } from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
 
 interface iOverviewSection {
-  data: iRetroPGF5Project
+  data: iRetroPGF6Project
 }
 
 export default function OverviewSection({ data }: iOverviewSection) {

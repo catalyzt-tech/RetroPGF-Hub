@@ -2,7 +2,7 @@ import { BadgeholderMetrics } from '@/app/(white_navbar)/explore/RetroPGF4/Retro
 import Cpage from './Cpage'
 import BreadcrumbExplore from './_component/BreadcrumbExplore'
 import { iRetroPGF6Project } from './RetroType6'
-import { getRealTimeRetroPGF } from '@/app/lib/realtime'
+import { getRealTimeRetroPGF6 } from '@/app/lib/realtime'
 import React from 'react'
 
 async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
@@ -17,8 +17,8 @@ async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
 
 export const dynamic = 'force-dynamic'
 
-async function getJsonRetroPGF5(): Promise<iRetroPGF6Project[]> {
-  const data = await getRealTimeRetroPGF()
+async function getJsonRetroPGF6(): Promise<iRetroPGF6Project[]> {
+  const data = await getRealTimeRetroPGF6()
   const filterUniqueData = data.filter((item, index, self) => {
     return (
       item.applicationCategory &&
@@ -30,7 +30,7 @@ async function getJsonRetroPGF5(): Promise<iRetroPGF6Project[]> {
 
 export default async function page() {
   const badgeholderData = await getJsonBadgeholderMetric()
-  const projectRound5 = await getJsonRetroPGF5()
+  const projectRound6 = await getJsonRetroPGF6()
 
   return (
     <>
@@ -38,9 +38,8 @@ export default async function page() {
         <div className="bg-gradient-to-b from-[#ffdede]">
           <div className="flex flex-col mx-2 sm:mx-4 md:mx-6 lg:mx-20 gap-6">
             <div className="mt-10">
-              <BreadcrumbExplore secondText={'RetroPGF 5'} />
+              <BreadcrumbExplore secondText={'RetroPGF 6'} />
             </div>
-
             <div className="mt-4 inline-flex">
               <h6 className="font-rubik text-3xl md:text-5xl font-semibold text-gray-800 mb-3 flex items-center justify-center">
                 <div>Retro Funding 6</div>
@@ -54,7 +53,7 @@ export default async function page() {
         </div>
         <div className="flex flex-col gap-6 mx-4 md:mx-6 lg:mx-20">
           <Cpage
-            projectRound5={projectRound5}
+            projectRound6={projectRound6}
             badgeholderData={badgeholderData}
           />
         </div>

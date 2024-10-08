@@ -1,8 +1,8 @@
 import BreadCump from './_component/BreadCump'
 import CustomError from '@/app/component/Error'
 import { cleanParamsName } from '@/app/lib/utils'
-import { getRealTimeRetroPGF } from '@/app/lib/realtime'
-import { iRetroPGF5Project } from '../RetroType6'
+import { getRealTimeRetroPGF6 } from '@/app/lib/realtime'
+import { iRetroPGF6Project } from '../RetroType6'
 import Cpage from './Cpage'
 
 interface pageProps {
@@ -15,8 +15,8 @@ export const dynamic = 'force-dynamic'
 
 async function FindRound5Data(
   decodedString: string
-): Promise<iRetroPGF5Project | undefined> {
-  const data = await getRealTimeRetroPGF()
+): Promise<iRetroPGF6Project | undefined> {
+  const data = await getRealTimeRetroPGF6()
   const projectData = data.find((elem) => {
     return cleanParamsName(elem.name) === decodedString
   })

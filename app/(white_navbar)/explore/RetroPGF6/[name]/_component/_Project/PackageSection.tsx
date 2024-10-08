@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import { iRetroPGF5Project } from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
 import LinkIcon from '@carbon/icons-react/lib/Link'
 
 interface iPackageSection {
-  data: iRetroPGF5Project
+  data: iRetroPGF6Project
   packageRef: React.MutableRefObject<HTMLElement | null>
 }
 export default function PackageSection({ data, packageRef }: iPackageSection) {

@@ -12,12 +12,12 @@ import StatisticTab from './_component/Tab/StatisticTab'
 import React from 'react'
 
 interface iCpage {
-  projectRound5: iRetroPGF6Project[]
+  projectRound6: iRetroPGF6Project[]
   badgeholderData: BadgeholderMetrics[]
 }
 
 export default function Cpage({
-  projectRound5: projectData,
+  projectRound6: projectData,
   badgeholderData,
 }: iCpage) {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
