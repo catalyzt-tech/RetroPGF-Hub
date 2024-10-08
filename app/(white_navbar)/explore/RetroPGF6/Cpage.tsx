@@ -10,6 +10,7 @@ import { iRetroPGF6Project } from './RetroType6'
 import HistoryTab from './_component/Tab/HistoryTab'
 import StatisticTab from './_component/Tab/StatisticTab'
 import React from 'react'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iCpage {
   projectRound6: iRetroPGF6Project[]

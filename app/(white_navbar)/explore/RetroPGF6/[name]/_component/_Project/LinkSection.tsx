@@ -1,3 +1,4 @@
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 import { iRetroPGF6Project } from '../../../RetroType6'
 import LinkIcon from '@carbon/icons-react/lib/Link'
 

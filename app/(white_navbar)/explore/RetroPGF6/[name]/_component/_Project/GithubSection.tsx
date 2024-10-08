@@ -5,6 +5,7 @@ import fork from '@/public/static/githubCardSection/fork'
 import Link from 'next/link'
 import { iRetroPGF6Project } from '../../../RetroType6'
 import { formatGithubLink } from '@/app/lib/utils'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iGithubSection {
   data: iRetroPGF6Project

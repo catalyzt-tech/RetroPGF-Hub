@@ -14,6 +14,7 @@ import { iRetroPGF6Project } from '../RetroType6'
 import PackageSection from './_component/_Project/PackageSection'
 import LinkSection from './_component/_Project/LinkSection'
 import ImpactStatementSection from './_component/_Project/ImpactStatementSection'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iCpage {
   data: iRetroPGF6Project

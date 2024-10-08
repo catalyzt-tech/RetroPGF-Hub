@@ -14,10 +14,10 @@ export default function BreadCump({ projectName }: { projectName: string }) {
       <ChevronRight size={16} />
 
       <Link
-        href={'/explore/RetroPGF5'}
+        href={'/explore/RetroPGF6'}
         className="text-xs font-normal text-gray-500 hover:underline hover:text-red-500"
       >
-        RetroPGF 5
+        RetroPGF 6
       </Link>
 
       <ChevronRight size={16} />

@@ -1,6 +1,7 @@
 import { mapChainId, getNameByChainId } from '@/app/lib/utils'
 import Image from 'next/image'
 import { iRetroPGF6Project } from '../../../RetroType6'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iContract {
   data: iRetroPGF6Project
@@ -28,33 +29,42 @@ export default function ContractSection({ data, contractRef }: iContract) {
         </p>
       )}
       {data.contracts.length !== 0 &&
-        data.contracts.map((item, i) => (
-          <div
-            className="flex flex-col gap-1 rounded-lg bg-slate-50 px-6 py-4"
-            key={item.deploymentTxHash}
-          >
-            <div className="flex flex-row flex-wrap gap-3 items-center ">
-              <div className="flex gap-3">
-                <Image
-                  src={`/static/superchainLogo/${mapChainId(
-                    item.chainId
-                  )}.webp`}
-                  alt="chain"
-                  className="rounded-full"
-                  width={25}
-                  height={25}
-                />
-                <p className="font-medium font-rubik">
-                  {getNameByChainId(item.chainId)}
+        data.contracts.map(
+          (
+            item: {
+              chainId: number
+              deploymentTxHash: string
+              address: string
+            },
+            i: number
+          ) => (
+            <div
+              className="flex flex-col gap-1 rounded-lg bg-slate-50 px-6 py-4"
+              key={item.deploymentTxHash}
+            >
+              <div className="flex flex-row flex-wrap gap-3 items-center ">
+                <div className="flex gap-3">
+                  <Image
+                    src={`/static/superchainLogo/${mapChainId(
+                      item.chainId
+                    )}.webp`}
+                    alt="chain"
+                    className="rounded-full"
+                    width={25}
+                    height={25}
+                  />
+                  <p className="font-medium font-rubik">
+                    {getNameByChainId(item.chainId)}
+                  </p>
+                </div>
+                {/* <div>|</div> */}
+                <p className="text-base text-gray-500 font-rubik truncate">
+                  {item.address}
                 </p>
               </div>
-              {/* <div>|</div> */}
-              <p className="text-base text-gray-500 font-rubik truncate">
-                {item.address}
-              </p>
             </div>
-          </div>
-        ))}
+          )
+        )}
     </section>
   )
 }

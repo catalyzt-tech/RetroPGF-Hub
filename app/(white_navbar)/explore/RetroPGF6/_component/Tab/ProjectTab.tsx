@@ -13,6 +13,7 @@ import DialogFilter from './Filter/DialogFilter'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
 import { isLetter } from '@/app/lib/utils'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface ProjectTabProps {
   projectData: iRetroPGF6Project[]
@@ -143,7 +144,7 @@ export default function ProjectTab({
       let applicationCategoryCondition: boolean
       if (checkBox.applicationCategory.length !== 0) {
         applicationCategoryCondition = checkBox.applicationCategory.some(
-          (elem) => elem === item.applicationCategory
+          (elem) => elem === item.category
         )
       } else {
         applicationCategoryCondition = true
@@ -154,7 +155,7 @@ export default function ProjectTab({
         priceModelCondition = checkBox.priceModel.some((elem) => {
           const str =
             typeof item.pricingModel === 'object'
-              ? item.pricingModel?.type
+              ? item.pricingModel
               : item.pricingModel ?? ''
           return elem === str
         })
@@ -318,10 +319,10 @@ export default function ProjectTab({
                 currentItems.map((item, i) => (
                   <React.Fragment key={i}>
                     <DynamicCard
-                      icon={item.profileAvatarUrl ?? ''}
+                      icon={item.projectAvatarUrl ?? ''}
                       banner={item.projectCoverImageUrl ?? ''}
                       category={item.category ?? ''}
-                      applicationCategory={item.applicationCategory ?? ''}
+                      applicationCategory={item.category ?? ''}
                       description={item.description ?? ''}
                       title={item.name}
                       teamSize={item.team?.length ?? 0}

@@ -4,6 +4,7 @@ import { cleanParamsName } from '@/app/lib/utils'
 import { getRealTimeRetroPGF6 } from '@/app/lib/realtime'
 import { iRetroPGF6Project } from '../RetroType6'
 import Cpage from './Cpage'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface pageProps {
   params: {

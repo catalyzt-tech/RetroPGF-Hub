@@ -1,5 +1,6 @@
 import { convertMarkdownToHtml, splitTextNewLine } from '@/app/lib/common'
-import { Statement, iRetroPGF6Project } from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iImpactStatementSection {
   data: iRetroPGF6Project
@@ -18,12 +19,12 @@ export default function ImpactStatementSection({
     >
       <h3 className="text-2xl font-semibold">Impact Statement</h3>
       <hr className="hidden sm:block border-t-gray-100" />
-      {Array.isArray(data.impactStatement.statement) &&
+      {/* {Array.isArray(data.impactStatement.statement) &&
         data.impactStatement.statement?.length === 0 && (
           <p className="text-base font-normal text-gray-600">
             There is no impact for this project.
           </p>
-        )}
+        )} */}
       {/* Don't delete this, this is experiment rendering markdown or split with \n */}
       {/* {data.impactStatement.statement?.length !== 0 &&
         data.impactStatement.statement?.map((item, i) => (
@@ -43,7 +44,7 @@ export default function ImpactStatementSection({
             </div>
           </div>
         ))} */}
-      {Array.isArray(data.impactStatement.statement) &&
+      {/* {Array.isArray(data.impactStatement.statement) &&
         data.impactStatement.statement?.length !== 0 &&
         data.impactStatement.statement?.map((item: Statement, i: number) => (
           <div key={i} className="flex flex-col gap-2">
@@ -61,7 +62,7 @@ export default function ImpactStatementSection({
               )}
             </div>
           </div>
-        ))}
+        ))} */}
     </section>
   )
 }

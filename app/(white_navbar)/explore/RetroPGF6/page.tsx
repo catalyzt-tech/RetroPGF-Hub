@@ -4,6 +4,7 @@ import BreadcrumbExplore from './_component/BreadcrumbExplore'
 import { iRetroPGF6Project } from './RetroType6'
 import { getRealTimeRetroPGF6 } from '@/app/lib/realtime'
 import React from 'react'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 async function getJsonBadgeholderMetric(): Promise<BadgeholderMetrics[]> {
   // const directoryPath = path.join(
@@ -21,8 +22,7 @@ async function getJsonRetroPGF6(): Promise<iRetroPGF6Project[]> {
   const data = await getRealTimeRetroPGF6()
   const filterUniqueData = data.filter((item, index, self) => {
     return (
-      item.applicationCategory &&
-      index === self.findIndex((x) => x.name === item.name)
+      item.category && index === self.findIndex((x) => x.name === item.name)
     )
   })
   return filterUniqueData

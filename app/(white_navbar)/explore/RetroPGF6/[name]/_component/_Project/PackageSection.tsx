@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { iRetroPGF6Project } from '../../../RetroType6'
 import LinkIcon from '@carbon/icons-react/lib/Link'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iPackageSection {
   data: iRetroPGF6Project

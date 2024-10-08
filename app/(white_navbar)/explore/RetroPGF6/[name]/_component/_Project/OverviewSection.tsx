@@ -4,6 +4,7 @@ import {
   splitTextNewLine,
 } from '@/app/lib/common'
 import { iRetroPGF6Project } from '../../../RetroType6'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iOverviewSection {
   data: iRetroPGF6Project
@@ -24,16 +25,13 @@ export default function OverviewSection({ data }: iOverviewSection) {
           <div className="flex flex-wrap gap-x-3 items-center">
             <p className="mb-1 text-base font-normal text-gray-500">Category</p>
             <div className=" text-base font-semibold text-gray-600">
-              {handleCategoryRound5(data.category, 'text-sm')}
+              {handleCategoryRound5(data.category ?? '', 'text-sm')}
             </div>
             {/* <p className="mb-1 text-sm font-normal text-gray-500">
               Application Category:
             </p> */}
             <div className=" text-base font-semibold text-gray-600">
-              {handleApplicationCategoryRound5(
-                data.applicationCategory ?? '',
-                'text-sm'
-              )}
+              {handleApplicationCategoryRound5(data.category ?? '', 'text-sm')}
             </div>
           </div>
         </div>

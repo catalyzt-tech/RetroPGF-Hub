@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'
 import { iRetroPGF6Project } from '../../../RetroType6'
 import Link from 'next/link'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 // import { convertImageClodinary } from '@/app/lib/utils'
 interface iProjectDetailSection {
   data: iRetroPGF6Project
@@ -28,7 +29,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
           <div className="absolute -top-32 left-2 lg:left-6 rounded-[0.25rem] flex flex-shrink-0 z-20">
             <div className="relative w-28 h-28 lg:w-32 lg:h-32">
               <Image
-                src={data.profileAvatarUrl || '/random/OP-Logo.png'}
+                src={data.projectAvatarUrl || '/random/OP-Logo.png'}
                 alt="avatar image"
                 className="rounded-lg object-cover bg-white p-1.5"
                 fill

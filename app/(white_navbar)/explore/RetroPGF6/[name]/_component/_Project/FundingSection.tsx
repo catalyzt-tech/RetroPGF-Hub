@@ -9,6 +9,7 @@ import {
   numberWithCommas,
 } from '@/app/lib/utils'
 import Link from 'next/link'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iFundingSection {
   data: iRetroPGF6Project

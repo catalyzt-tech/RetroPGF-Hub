@@ -4,6 +4,7 @@ import { handleCategoryRound5 } from '@/app/lib/common'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 import List from '@carbon/icons-react/lib/List'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 const OpTokenPath = '/static/superchainLogo/optimism.svg'
 
@@ -39,7 +40,7 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                   <th className="p-5 flex gap-y-2 gap-x-6">
                     <div className="relative min-w-16 min-h-16 max-w-16 max-h-16 self-center">
                       <Image
-                        src={item.profileAvatarUrl ?? '/random/OP-Logo.png'}
+                        src={item.projectAvatarUrl ?? '/random/OP-Logo.png'}
                         alt="avatar image"
                         className="rounded-lg"
                         fill
