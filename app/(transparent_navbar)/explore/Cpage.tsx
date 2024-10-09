@@ -12,6 +12,8 @@ import { RetroRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/RetroType1'
 import { iRetroPGF4Project } from '@/app/(white_navbar)/explore/RetroPGF4/RetroType4'
 import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
 import CardRound5 from './_component/CardRound5'
+import { iRetroPGF6Project } from '@/app/(white_navbar)/explore/RetroPGF6/RetroType6'
+import CardRound6 from './_component/CardRound6'
 
 interface iCpage {
   round1: RetroRound1[]
@@ -19,10 +21,12 @@ interface iCpage {
   round3: RetroRound3[]
   round4: iRetroPGF4Project[]
   round5: iRetroPGF5Project[]
+  round6: iRetroPGF6Project[]
   cateRound2: Map<string, number>
   cateRound3: Map<string, number>
   cateRound4: Map<string, number>
   cateRound5: Map<string, number>
+  cateRound6: Map<string, number>
 }
 export default function Cpage({
   round1,
@@ -30,12 +34,25 @@ export default function Cpage({
   round3,
   round4,
   round5,
+  round6,
   cateRound2,
   cateRound3,
   cateRound4,
   cateRound5: cateRound5Counter,
+  cateRound6,
 }: iCpage) {
   const [search, setSearch] = useState<string>('')
+
+  const round6Data = useMemo(() => {
+    return round6.filter((item) => {
+      const searchCondition =
+        search !== ''
+          ? typeof item.name === 'string' &&
+            item.name.toLowerCase().includes(search.toLowerCase())
+          : true
+      return searchCondition
+    })
+  }, [round6, search])
 
   const round5Data = useMemo(() => {
     return round5.filter((item) => {
@@ -115,6 +132,12 @@ export default function Cpage({
 
       <div className="lg:mx-20 mx-4  flex flex-col gap-12 mt-12">
         {/* <CategorySection /> */}
+
+        <CardRound6
+          title="RetroPGF 6"
+          round6={round6Data}
+          cateRound6={cateRound6}
+        />
 
         <CardRound5
           title="RetroPGF 5"

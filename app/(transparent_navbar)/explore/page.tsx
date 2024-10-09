@@ -6,11 +6,12 @@ import { getJsonRound1 } from '@/app/(white_navbar)/explore/RetroPGF1/page'
 import { getJsonRound2 } from '@/app/(white_navbar)/explore/RetroPGF2/page'
 import { getJsonRound3 } from '@/app/(white_navbar)/explore/RetroPGF3/page'
 import { getJsonRound4 } from '@/app/(white_navbar)/explore/RetroPGF4/page'
+import { getRealTimeRetroPGF5, getRealTimeRetroPGF6 } from '@/app/lib/realtime'
 import Cpage from './Cpage'
 import { Metadata } from 'next'
 import { shuffle } from '@/app/lib/utils'
 import { iRetroPGF5Project } from '@/app/(white_navbar)/explore/RetroPGF5/RetroType5'
-import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
+import { iRetroPGF6Project } from '@/app/(white_navbar)/explore/RetroPGF6/RetroType6'
 
 export const dynamic = 'force-dynamic'
 
@@ -45,7 +46,8 @@ export async function getAllRound(limit: number): Promise<{
   round3: RetroRound3[]
   round4: iRetroPGF4Project[]
   round5: iRetroPGF5Project[]
-
+  round6: iRetroPGF6Project[]
+  cateRound6: Map<string, number>
   cateRound5: Map<string, number>
   cateRound4: Map<string, number>
   cateRound3: Map<string, number>
@@ -54,16 +56,18 @@ export async function getAllRound(limit: number): Promise<{
   const round1 = (await getJsonRound1()).sort((a: any, b: any) => {
     return b.allocation - a.allocation
   })
-
+  //Get the data from the json and api
   const round2 = await getJsonRound2()
   const round3 = await getJsonRound3()
   const round4 = await getJsonRound4()
   const round5Raw = await getRealTimeRetroPGF5()
+  const round6Raw = await getRealTimeRetroPGF6()
 
   const cateRound2Counter = new Map<string, number>()
   const cateRound3Counter = new Map<string, number>()
   const cateRound4Counter = new Map<string, number>()
   const cateRound5Counter = new Map<string, number>()
+  const cateRound6Counter = new Map<string, number>()
 
   round2.forEach((project: RetroRound2) => {
     const cateRound2 = project.Category
@@ -126,6 +130,24 @@ export async function getAllRound(limit: number): Promise<{
     }
   })
 
+  const filterUniqueRound6 = round6Raw.filter((item, index, self) => {
+    return index === self.findIndex((x) => x.name === item.name)
+  })
+
+  filterUniqueRound6.forEach((project: iRetroPGF6Project) => {
+    const cateRound6 = project.category
+    if (cateRound6) {
+      if (cateRound6Counter.has(cateRound6)) {
+        cateRound6Counter.set(
+          cateRound6,
+          cateRound6Counter.get(cateRound6)! + 1
+        )
+      } else {
+        cateRound6Counter.set(cateRound6, 1)
+      }
+    }
+  })
+
   //end remove
 
   return {
@@ -134,7 +156,8 @@ export async function getAllRound(limit: number): Promise<{
     round3: round3.slice(0, limit),
     round4: round4.slice(0, limit),
     round5: filterUniqueRound5.slice(0, limit),
-
+    round6: filterUniqueRound6.slice(0, limit),
+    cateRound6: cateRound6Counter,
     cateRound5: cateRound5Counter,
     cateRound4: cateRound4Counter,
     cateRound3: cateRound3Counter,
@@ -150,10 +173,12 @@ export default async function page() {
       round3,
       round4,
       round5,
+      round6,
       cateRound2,
       cateRound3,
       cateRound4,
       cateRound5,
+      cateRound6,
     } = await getAllRound(20)
 
     return (
@@ -162,11 +187,13 @@ export default async function page() {
         cateRound3={cateRound3}
         cateRound4={cateRound4}
         cateRound5={cateRound5}
+        cateRound6={cateRound6}
         round1={round1}
         round2={round2}
         round3={round3}
         round4={round4}
         round5={round5}
+        round6={round6}
       />
     )
   } catch (error) {
