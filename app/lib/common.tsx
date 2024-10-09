@@ -85,7 +85,44 @@ export function handleApplicationCategoryRound5(
     )
   }
 }
-export function handleCategoryRound5(category: string, textSize: string) {
+
+export function handleApplicationCategoryRound6(
+  category: string,
+  textSize: string
+) {
+  if (category === 'Governance Leadership') {
+    return (
+      <div className="px-2 py-1 bg-yellow-50 rounded-full w-fit">
+        <p
+          className={`text-yellow-700 ${textSize} font-medium line-clamp-1 break-words`}
+        >
+          Governance Leadership
+        </p>
+      </div>
+    )
+  } else if (category === 'Governance Infra & Tooling') {
+    return (
+      <div className="px-2 py-1 bg-orange-50 rounded-full w-fit">
+        <p
+          className={`text-orange-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
+          Governance Infra & Tooling
+        </p>
+      </div>
+    )
+  } else if (category === 'Governance Analytics') {
+    return (
+      <div className="px-2 py-1 bg-sky-50 rounded-full w-fit">
+        <p
+          className={`text-sky-600 ${textSize} font-medium line-clamp-1 break-words`}
+        >
+          Governance Analytics
+        </p>
+      </div>
+    )
+  }
+}
+export function handleProjectCategoryRound(category: string, textSize: string) {
   if (category === 'CeFi') {
     return (
       <div className="px-2 py-1 bg-yellow-50 rounded-full w-fit">

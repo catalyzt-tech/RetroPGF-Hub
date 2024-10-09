@@ -322,7 +322,7 @@ export default function ProjectTab({
                       icon={item.projectAvatarUrl ?? ''}
                       banner={item.projectCoverImageUrl ?? ''}
                       category={item.category ?? ''}
-                      applicationCategory={item.category ?? ''}
+                      applicationCategory={item.impactIpfs.category ?? ''}
                       description={item.description ?? ''}
                       title={item.name}
                       teamSize={item.team?.length ?? 0}

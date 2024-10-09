@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {
   handleApplicationCategoryRound5,
-  handleCategoryRound5,
+  handleProjectCategoryRound,
 } from '@/app/lib/common'
 import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
 import { app } from '../../../../lib/firebase'
@@ -38,7 +38,7 @@ export default function DynamicCard({
   reward = 0,
 }: iDynamicCard) {
   const categoryElement = useMemo(
-    () => handleCategoryRound5(category, 'text-xs'),
+    () => handleProjectCategoryRound(category, 'text-xs'),
     [category]
   )
   const applicationCategoryElement = useMemo(

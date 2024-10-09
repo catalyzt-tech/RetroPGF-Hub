@@ -2,7 +2,7 @@ import Trophy from '@carbon/icons-react/lib/Trophy'
 import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
-import { handleCategoryRound5 } from '@/app/lib/common'
+import { handleProjectCategoryRound } from '@/app/lib/common'
 import { cleanParamsName } from '@/app/lib/utils'
 
 interface iRetroCard5 {
@@ -104,7 +104,7 @@ export default function RetroCard5({
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
-            {handleCategoryRound5(category!, 'text-xs')}
+            {handleProjectCategoryRound(category!, 'text-xs')}
           </div>
           <div className="flex flex-grow"></div>
           <div className="flex justify-between items-center w-full">

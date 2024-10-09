@@ -1,6 +1,6 @@
 import {
   handleApplicationCategoryRound5,
-  handleCategoryRound5,
+  handleProjectCategoryRound,
   splitTextNewLine,
 } from '@/app/lib/common'
 import { iRetroPGF5Project } from '../../../RetroType5'
@@ -24,7 +24,7 @@ export default function OverviewSection({ data }: iOverviewSection) {
           <div className="flex flex-wrap gap-x-3 items-center">
             <p className="mb-1 text-base font-normal text-gray-500">Category</p>
             <div className=" text-base font-semibold text-gray-600">
-              {handleCategoryRound5(data.category, 'text-sm')}
+              {handleProjectCategoryRound(data.category, 'text-sm')}
             </div>
             {/* <p className="mb-1 text-sm font-normal text-gray-500">
               Application Category:

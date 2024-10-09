@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { iRetroPGF6Project } from '../../../RetroType6'
-import { handleCategoryRound5 } from '@/app/lib/common'
+import { handleProjectCategoryRound } from '@/app/lib/common'
 import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 import List from '@carbon/icons-react/lib/List'
@@ -63,7 +63,10 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                   </th>
                   <td className="py-4 px-3 ">
                     <div className="flex flex-col flex-wrap gap-2 ">
-                      {handleCategoryRound5(item.category as string, 'text-sm')}
+                      {handleProjectCategoryRound(
+                        item.category as string,
+                        'text-sm'
+                      )}
                     </div>
                   </td>
                   {/* <td className="py-4 px-3">
