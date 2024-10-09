@@ -1,4 +1,4 @@
-import BreadCrumb from './_component/BreadCump'
+import BreadCrumb from './_component/BreadCrumb'
 import CustomError from '@/app/component/Error'
 import { cleanParamsName } from '@/app/lib/utils'
 import { getRealTimeRetroPGF6 } from '@/app/lib/realtime'
@@ -14,7 +14,7 @@ interface pageProps {
 
 export const dynamic = 'force-dynamic'
 
-async function FindRound5Data(
+async function FindRound6Data(
   decodedString: string
 ): Promise<iRetroPGF6Project | undefined> {
   const data = await getRealTimeRetroPGF6()
@@ -28,7 +28,7 @@ async function FindRound5Data(
 export default async function page({ params }: pageProps) {
   try {
     const decodedString = decodeURIComponent(params.name)
-    const projectData = await FindRound5Data(decodedString)
+    const projectData = await FindRound6Data(decodedString)
     if (!projectData) {
       return (
         <CustomError

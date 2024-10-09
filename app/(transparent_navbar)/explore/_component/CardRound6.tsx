@@ -17,7 +17,7 @@ interface iCardRound6 {
   cateRound6: Map<string, number>
 }
 
-export default function CardRound5({ title, round6, cateRound6 }: iCardRound6) {
+export default function CardRound6({ title, round6, cateRound6 }: iCardRound6) {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null)
   const [state, setState] = useState({
     start: true,
