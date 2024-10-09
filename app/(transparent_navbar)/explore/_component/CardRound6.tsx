@@ -54,7 +54,7 @@ export default function CardRound5({ title, round6, cateRound6 }: iCardRound6) {
         <div className="flex flex-wrap gap-2">
           {Array.from(cateRound6).map(([category, count]) => (
             <Link
-              href={`/explore/RetroPGF5/?category=${category}`}
+              href={`/explore/RetroPGF6/?category=${category}`}
               key={category}
               className={` lg:block h-8
                      hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
@@ -70,7 +70,7 @@ export default function CardRound5({ title, round6, cateRound6 }: iCardRound6) {
 
         <Link
           href={{
-            pathname: `/explore/RetroPGF5`,
+            pathname: `/explore/RetroPGF6`,
           }}
           className=" lg:block h-8
                 hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
@@ -113,7 +113,7 @@ export default function CardRound5({ title, round6, cateRound6 }: iCardRound6) {
                     teamSize={item.team?.length ?? 0}
                     // opRecieve={0}
                     // rank={0}
-                    round="RetroPGF 5"
+                    round="RetroPGF 6"
                     // vote={0}
                     icon={item.projectAvatarUrl ?? ''}
                     banner={item.projectCoverImageUrl ?? ''}

@@ -1,7 +1,7 @@
-import ChevronRight from '@carbon/icons-react/lib/ChevronRight'
+import { ChevronRight } from '@carbon/icons-react/lib'
 import Link from 'next/link'
 
-export default function BreadCump({ projectName }: { projectName: string }) {
+export default function BreadCrumb({ projectName }: { projectName: string }) {
   return (
     <div className="flex flex-wrap gap-2 p-2 md:p-0">
       <Link

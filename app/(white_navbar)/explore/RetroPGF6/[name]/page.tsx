@@ -1,4 +1,4 @@
-import BreadCump from './_component/BreadCump'
+import BreadCrumb from './_component/BreadCump'
 import CustomError from '@/app/component/Error'
 import { cleanParamsName } from '@/app/lib/utils'
 import { getRealTimeRetroPGF6 } from '@/app/lib/realtime'
@@ -42,7 +42,7 @@ export default async function page({ params }: pageProps) {
     return (
       <div className="bg-gray-50 min-h-[calc(100vh-4.5rem)] h-full py-4 lg:py-10">
         <div className="mx-4 sm:mx-6 lg:mx-20">
-          <BreadCump projectName={projectData.name} />
+          <BreadCrumb projectName={projectData.name} />
           <Cpage data={projectData} />
         </div>
       </div>
