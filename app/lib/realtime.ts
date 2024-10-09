@@ -41,7 +41,7 @@ export const getRealTimeRetroPGF6 = async (): Promise<iRetroPGF6Project[]> => {
     const baseUrl =
       process.env.NODE_ENV === 'production'
         ? process.env.NEXT_PUBLIC_WORKER_API_BASE
-        : process.env.NEXT_PUBLIC_WORKER_API_BASE
+        : process.env.NEXT_PUBLIC_WORKER_API_DEV
 
     if (!baseUrl) {
       throw new Error('API base URL is not defined in environment variables.')

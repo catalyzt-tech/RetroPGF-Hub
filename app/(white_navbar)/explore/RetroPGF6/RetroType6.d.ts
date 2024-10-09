@@ -16,7 +16,10 @@ export interface iRetroPGF6Project extends EASProjectMetadata {
   projectUid: string
   impactIpfs: {
     round: string
-    category: string
+    category:
+      | 'Governance Leadership'
+      | 'Governance Infra & Tooling'
+      | 'Governance Analytics'
     subcategory: string
     impactStatement: {
       question: string

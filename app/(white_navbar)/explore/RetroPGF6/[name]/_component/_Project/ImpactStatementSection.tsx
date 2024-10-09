@@ -10,7 +10,6 @@ export default function ImpactStatementSection({
   data,
   impactSectionRef,
 }: iImpactStatementSection) {
-  console.log(data)
   return (
     <section
       id="Impact Statement"
@@ -19,15 +18,15 @@ export default function ImpactStatementSection({
     >
       <h3 className="text-2xl font-semibold">Impact Statement</h3>
       <hr className="hidden sm:block border-t-gray-100" />
-      {/* {Array.isArray(data.impactStatement.statement) &&
-        data.impactStatement.statement?.length === 0 && (
+      {Array.isArray(data.impactIpfs.impactStatement) &&
+        data.impactIpfs.impactStatement.length === 0 && (
           <p className="text-base font-normal text-gray-600">
             There is no impact for this project.
           </p>
-        )} */}
+        )}
       {/* Don't delete this, this is experiment rendering markdown or split with \n */}
-      {/* {data.impactStatement.statement?.length !== 0 &&
-        data.impactStatement.statement?.map((item, i) => (
+      {/* {data.impactIpfs.impactStatement.length !== 0 &&
+        data.impactIpfs.impactStatement.map((item, i) => (
           <div
             key={i}
             className="flex flex-col gap-1 bg-slate-50 rounded-lg px-6 py-4 min-w-72"
@@ -44,9 +43,9 @@ export default function ImpactStatementSection({
             </div>
           </div>
         ))} */}
-      {/* {Array.isArray(data.impactStatement.statement) &&
-        data.impactStatement.statement?.length !== 0 &&
-        data.impactStatement.statement?.map((item: Statement, i: number) => (
+      {Array.isArray(data.impactIpfs.impactStatement) &&
+        data.impactIpfs.impactStatement?.length !== 0 &&
+        data.impactIpfs.impactStatement?.map((item: any, i: number) => (
           <div key={i} className="flex flex-col gap-2">
             <div className="text-lg break-words font-semibold text-gray-800">
               {item.question}
@@ -62,7 +61,7 @@ export default function ImpactStatementSection({
               )}
             </div>
           </div>
-        ))} */}
+        ))}
     </section>
   )
 }

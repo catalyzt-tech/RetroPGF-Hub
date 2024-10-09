@@ -58,7 +58,7 @@ export default function ProjectTab({
   function handleChangeCategory(value: string) {
     setCheckBox((prev) => {
       let temp = { ...prev }
-
+      console.log('temp', temp)
       let index = temp.category.findIndex((elem) => elem === value)
       // add new category
       if (index === -1) {
@@ -144,7 +144,7 @@ export default function ProjectTab({
       let applicationCategoryCondition: boolean
       if (checkBox.applicationCategory.length !== 0) {
         applicationCategoryCondition = checkBox.applicationCategory.some(
-          (elem) => elem === item.category
+          (elem) => elem === item.impactIpfs.category
         )
       } else {
         applicationCategoryCondition = true

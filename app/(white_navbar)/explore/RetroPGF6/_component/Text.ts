@@ -63,16 +63,16 @@ export const category = [
 
 export const applicationCategory = [
   {
-    name: 'ETHEREUM_CORE_CONTRIBUTIONS',
-    value: 'Ethereum Core Contributions',
+    name: 'Governance Leadership',
+    value: 'Governance Leadership',
   },
   {
-    name: 'OP_STACK_RESEARCH_AND_DEVELOPMENT',
-    value: 'OP Stack Research and Development',
+    name: 'Governance Infra & Tooling',
+    value: 'Governance Infra & Tooling',
   },
   {
-    name: 'OP_STACK_TOOLING',
-    value: 'OP Stack Tooling',
+    name: 'Governance Analytics',
+    value: 'Governance Analytics',
   },
 ]
 
