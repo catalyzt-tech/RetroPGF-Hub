@@ -1,5 +1,6 @@
 import {
   handleApplicationCategoryRound5,
+  handleApplicationCategoryRound6,
   handleProjectCategoryRound,
   splitTextNewLine,
 } from '@/app/lib/common'
@@ -31,7 +32,10 @@ export default function OverviewSection({ data }: iOverviewSection) {
               Application Category:
             </p> */}
             <div className=" text-base font-semibold text-gray-600">
-              {handleApplicationCategoryRound5(data.category ?? '', 'text-sm')}
+              {handleApplicationCategoryRound6(
+                data.impactIpfs.category ?? '',
+                'text-sm'
+              )}
             </div>
           </div>
         </div>
