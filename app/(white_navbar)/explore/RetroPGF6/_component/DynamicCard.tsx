@@ -6,7 +6,7 @@ import Events from '@carbon/icons-react/lib/Events'
 import Image from 'next/image'
 import Link from 'next/link'
 import {
-  handleApplicationCategoryRound5,
+  handleApplicationCategoryRound6,
   handleProjectCategoryRound,
 } from '@/app/lib/common'
 import { cleanParamsName, numberWithCommas } from '@/app/lib/utils'
@@ -28,7 +28,7 @@ interface iDynamicCard {
 export default function DynamicCard({
   banner,
   icon,
-  round = '5',
+  round = '6',
   title = '',
   description = '',
   category = '',
@@ -42,7 +42,7 @@ export default function DynamicCard({
     [category]
   )
   const applicationCategoryElement = useMemo(
-    () => handleApplicationCategoryRound5(applicationCategory, 'text-xs'),
+    () => handleApplicationCategoryRound6(applicationCategory, 'text-xs'),
     [applicationCategory]
   )
 
@@ -62,7 +62,7 @@ export default function DynamicCard({
       </div>
 
       {/* Eligibility Status */}
-      <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem] z-20">
+      {/* <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem] z-20">
         {isEligible === true ? (
           <div className="flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg">
             {' '}
@@ -76,7 +76,7 @@ export default function DynamicCard({
             Rejected
           </div>
         )}
-      </div>
+      </div> */}
 
       {/* Avatar */}
       <div className="absolute top-10 lg:top-12 left-4 rounded-[0.25rem] bg-white flex flex-shrink-0 z-20 overflow-hidden">
@@ -93,7 +93,7 @@ export default function DynamicCard({
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF5/${cleanParamsName(title)}`}
+              href={`/explore/RetroPGF6/${cleanParamsName(title)}`}
               className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1"
             >
               {title}

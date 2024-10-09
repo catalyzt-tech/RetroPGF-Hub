@@ -1,9 +1,10 @@
-import BreadCump from './_component/BreadCump'
+import BreadCrumb from './_component/BreadCrumb'
 import CustomError from '@/app/component/Error'
 import { cleanParamsName } from '@/app/lib/utils'
-import { getRealTimeRetroPGF5 } from '@/app/lib/realtime'
-import { iRetroPGF5Project } from '../RetroType5'
+import { getRealTimeRetroPGF6 } from '@/app/lib/realtime'
+import { iRetroPGF6Project } from '../RetroType6'
 import Cpage from './Cpage'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface pageProps {
   params: {
@@ -13,10 +14,10 @@ interface pageProps {
 
 export const dynamic = 'force-dynamic'
 
-async function FindRound5Data(
+async function FindRound6Data(
   decodedString: string
-): Promise<iRetroPGF5Project | undefined> {
-  const data = await getRealTimeRetroPGF5()
+): Promise<iRetroPGF6Project | undefined> {
+  const data = await getRealTimeRetroPGF6()
   const projectData = data.find((elem) => {
     return cleanParamsName(elem.name) === decodedString
   })
@@ -27,7 +28,7 @@ async function FindRound5Data(
 export default async function page({ params }: pageProps) {
   try {
     const decodedString = decodeURIComponent(params.name)
-    const projectData = await FindRound5Data(decodedString)
+    const projectData = await FindRound6Data(decodedString)
     if (!projectData) {
       return (
         <CustomError
@@ -41,7 +42,7 @@ export default async function page({ params }: pageProps) {
     return (
       <div className="bg-gray-50 min-h-[calc(100vh-4.5rem)] h-full py-4 lg:py-10">
         <div className="mx-4 sm:mx-6 lg:mx-20">
-          <BreadCump projectName={projectData.name} />
+          <BreadCrumb projectName={projectData.name} />
           <Cpage data={projectData} />
         </div>
       </div>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { handleProjectCategoryRound } from '@/app/lib/common'
 import { cleanParamsName } from '@/app/lib/utils'
 
-interface iRetroCard5 {
+interface iRetroCard6 {
   marginX?: string
   icon?: string
   category?: string
@@ -32,7 +32,7 @@ const formatDescriptionExploreCard = (
   return description
 }
 
-export default function RetroCard5({
+export default function RetroCard6({
   marginX = 'mx-3',
   icon,
   category,
@@ -45,7 +45,7 @@ export default function RetroCard5({
   //   vote,
   banner,
   isEligible,
-}: iRetroCard5) {
+}: iRetroCard6) {
   return (
     <div
       className={`flex flex-col gap-2 flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm h-[16rem] w-[14.25rem] relative ${marginX} overflow-hidden`}
@@ -63,7 +63,7 @@ export default function RetroCard5({
       </div>
 
       {/* Eligibility Status */}
-      <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem]">
+      {/* <div className="absolute top-1 right-1 px-1 py-0.5 rounded-[0.25rem]">
         {isEligible === true ? (
           <div className="flex items-center text-[0.75rem] bg-green-50 border border-green-500 font-medium text-green-700 px-1.5 py-0.5 rounded-lg">
             {' '}
@@ -76,7 +76,7 @@ export default function RetroCard5({
             <div className="w-2 h-2 rounded-full bg-red-500 mr-1"></div>Rejected
           </div>
         )}
-      </div>
+      </div> */}
 
       {/* Avatar */}
       <div className="absolute top-6 left-4 rounded-[0.25rem] flex flex-shrink-0 overflow-hidden">
@@ -94,7 +94,7 @@ export default function RetroCard5({
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full">
           <div className="flex flex-col gap-0.5">
             <Link
-              href={`/explore/RetroPGF5/${cleanParamsName(title!)}`}
+              href={`/explore/RetroPGF6/${cleanParamsName(title!)}`}
               className="line-clamp-1 text-sm font-bold text-gray-800 z-30 hover:underline"
             >
               {title}

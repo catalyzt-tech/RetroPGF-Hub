@@ -1,12 +1,14 @@
 import {
   handleApplicationCategoryRound5,
+  handleApplicationCategoryRound6,
   handleProjectCategoryRound,
   splitTextNewLine,
 } from '@/app/lib/common'
-import { iRetroPGF5Project } from '../../../RetroType5'
+import { iRetroPGF6Project } from '../../../RetroType6'
+import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iOverviewSection {
-  data: iRetroPGF5Project
+  data: iRetroPGF6Project
 }
 
 export default function OverviewSection({ data }: iOverviewSection) {
@@ -24,14 +26,14 @@ export default function OverviewSection({ data }: iOverviewSection) {
           <div className="flex flex-wrap gap-x-3 items-center">
             <p className="mb-1 text-base font-normal text-gray-500">Category</p>
             <div className=" text-base font-semibold text-gray-600">
-              {handleProjectCategoryRound(data.category, 'text-sm')}
+              {handleProjectCategoryRound(data.category ?? '', 'text-sm')}
             </div>
             {/* <p className="mb-1 text-sm font-normal text-gray-500">
               Application Category:
             </p> */}
             <div className=" text-base font-semibold text-gray-600">
-              {handleApplicationCategoryRound5(
-                data.applicationCategory ?? '',
+              {handleApplicationCategoryRound6(
+                data.impactIpfs.category ?? '',
                 'text-sm'
               )}
             </div>
