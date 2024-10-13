@@ -47,7 +47,7 @@ export type EASProjectMetadata = {
       date: string
       details: string
       grant: string
-      link: stringß
+      link: string
     }[]
     revenue: {
       amount: string
