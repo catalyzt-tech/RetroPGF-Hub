@@ -4,6 +4,7 @@ import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'
 import { iRetroPGF6Project } from '../../../RetroType6'
 import Link from 'next/link'
 import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
+import { numberWithCommas } from '@/app/lib/utils'
 // import { convertImageClodinary } from '@/app/lib/utils'
 interface iProjectDetailSection {
   data: iRetroPGF6Project
@@ -66,10 +67,9 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 </p>
               )} */}
             </div>
-
-            <div className="flex w-fit items-center md:hidden px-5 py-3 mb-4 rounded-xl text-base font-medium bg-red-50">
-              {/* {numberWithCommas(data.reward ?? 20000)} */}
-              0.00
+            {/* This will show when project reward is available */}
+            {/* <div className="flex w-fit items-center md:hidden px-5 py-3 mb-4 rounded-xl text-base font-medium bg-red-50">
+              {numberWithCommas(0)}
               <Image
                 src="/static/superchainLogo/optimism.svg"
                 alt="OP Token"
@@ -77,7 +77,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 height={25}
                 className="ml-2"
               />
-            </div>
+            </div> */}
             <div className="flex flex-wrap gap-6 my-1 md:my-3 lg:my-4">
               {data.socialLinks.website.length > 0 &&
                 data.socialLinks.website.map((item, i) => (
