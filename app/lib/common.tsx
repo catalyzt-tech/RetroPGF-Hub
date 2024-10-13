@@ -20,7 +20,7 @@ export function splitTextNewLine(text: string) {
   return text.split('\n').map((paragraph, i) => (
     <p
       key={i}
-      className={`text-base font-normal text-gray-600 break-all break-words ${
+      className={`text-base font-normal text-gray-600 break-words ${
         i != text.split('\n').length - 1 ? 'mb-5' : ''
       }`}
     >
