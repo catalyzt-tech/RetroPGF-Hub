@@ -61,7 +61,6 @@ export interface Link {
 }
 
 export interface GrantsAndFunding {
-  ventureFunding: any[]
   grants: GrantElement[]
   revenue: any[]
   investment: Investment[]
