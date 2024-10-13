@@ -117,7 +117,7 @@ export function formatName(name: string): string {
 }
 
 export function containsOnlyDigits(str: string) {
-  return /^\d+$/.test(str)
+  return /^\d+(\.\d+)?$/.test(str)
 }
 
 export function formatGithubLink(inputString: string): string {
