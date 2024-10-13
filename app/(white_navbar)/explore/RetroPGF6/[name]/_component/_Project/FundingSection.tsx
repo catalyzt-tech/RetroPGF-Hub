@@ -97,6 +97,28 @@ export default function FundingSection({ data, fundingRef }: iFundingSection) {
           </div>
         ))}
 
+      {data.grantsAndFunding.retroFunding.length != 0 &&
+        data.grantsAndFunding.retroFunding.map((item, i) => (
+          <div
+            className="flex flex-col gap-1 px-8 py-6 bg-slate-50 rounded-lg"
+            key={i}
+          >
+            <div className="flex flex-wrap gap-3 items-center">
+              <p className="mb-1 text-lg font-semibold font-rubik">
+                {'Retro Funding'}
+              </p>
+              <p className="flex flex-grow"></p>
+              <p className="mb-1 text-base font-medium text-gray-600 font-rubik">
+                {containsOnlyDigits(item.amount)
+                  ? numberWithCommas(item.amount) + ' OP'
+                  : formatGrant(item.amount) + ' USD'}
+              </p>
+            </div>
+            {item.details && (
+              <p className="text-sm text-gray-500">{item.details}</p>
+            )}
+          </div>
+        ))}
       {data.grantsAndFunding.revenue.length != 0 &&
         data.grantsAndFunding.revenue.map((item, i) => (
           <div

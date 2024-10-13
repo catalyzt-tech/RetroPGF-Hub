@@ -42,6 +42,13 @@ export type EASProjectMetadata = {
       date: string
       details: string | null
     }[]
+    retroFunding: {
+      amount: string
+      date: string
+      details: string
+      grant: string
+      link: stringß
+    }[]
     revenue: {
       amount: string
       details: string | null
