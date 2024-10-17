@@ -2,19 +2,16 @@
 
 import { useEffect } from 'react'
 import { iRetroPGF6Project } from '../../../RetroType6'
-
+import AmountAttestation from './component/AmountAttestation'
 async function fetchImpactGardenMetrics({
   projectUID,
 }: {
   projectUID: string
 }) {
   //   const url = `https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=${projectUID}`
-  const url2 = `https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid?primaryProjectUid=${projectUID}`
-  console.log(url2)
-  const response = await fetch(
-    url2
-    // 'https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=0x4d840826049258b3895326fd67680cca25df9543d67859df49b9ff5635b62598'
-  )
+  const reviewListUrl = `https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid?primaryProjectUid=${projectUID}`
+  console.log(reviewListUrl)
+  const response = await fetch(reviewListUrl)
   const data = await response.json()
   console.log(data)
   return data
@@ -41,7 +38,9 @@ const ImpactGardenSection = ({ data }: iImpactGardenSectionProps) => {
         These metrics are collected based on attestations from the badgeholders,
         top 100 delegates, and other community members.
       </div>
-      <div className="flex flex-row flex-wrap gap-5  "></div>
+      <div className="flex flex-row flex-grow flex-wrap gap-5  ">
+        <AmountAttestation />
+      </div>
     </section>
   )
 }
