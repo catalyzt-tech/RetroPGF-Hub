@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { iRetroPGF6Project } from '../../../RetroType6'
 import AmountAttestation from './component/AmountAttestation'
 import AverageStar from './component/AverageStar'
+import FeelingIfNotExist from './component/FeelingIfNotExist'
 async function fetchImpactGardenMetrics({
   projectUID,
 }: {
@@ -40,6 +41,7 @@ const ImpactGardenSection = ({ data }: iImpactGardenSectionProps) => {
       <div className="flex flex-row flex-grow flex-wrap gap-5  ">
         <AmountAttestation />
         <AverageStar />
+        <FeelingIfNotExist />
       </div>
     </section>
   )
