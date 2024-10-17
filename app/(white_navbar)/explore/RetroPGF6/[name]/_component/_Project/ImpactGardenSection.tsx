@@ -1,4 +1,35 @@
-const ImpactGardenSection = () => {
+'use client'
+
+import { useEffect } from 'react'
+import { iRetroPGF6Project } from '../../../RetroType6'
+
+async function fetchImpactGardenMetrics({
+  projectUID,
+}: {
+  projectUID: string
+}) {
+  //   const url = `https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=${projectUID}`
+  const url2 = `https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid?primaryProjectUid=${projectUID}`
+  console.log(url2)
+  const response = await fetch(
+    url2
+    // 'https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=0x4d840826049258b3895326fd67680cca25df9543d67859df49b9ff5635b62598'
+  )
+  const data = await response.json()
+  console.log(data)
+  return data
+}
+
+interface iImpactGardenSectionProps {
+  data: iRetroPGF6Project
+}
+
+const ImpactGardenSection = ({ data }: iImpactGardenSectionProps) => {
+  const projectUID: string =
+    '0x4d840826049258b3895326fd67680cca25df9543d67859df49b9ff5635b62598'
+  useEffect(() => {
+    fetchImpactGardenMetrics({ projectUID })
+  }, [])
   return (
     <section
       id="Impact Metrics"

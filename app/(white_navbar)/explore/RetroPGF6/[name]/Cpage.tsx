@@ -15,6 +15,7 @@ import PackageSection from './_component/_Project/PackageSection'
 import LinkSection from './_component/_Project/LinkSection'
 import ImpactStatementSection from './_component/_Project/ImpactStatementSection'
 import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
+import ImpactGardenSection from './_component/_Project/ImpactGardenSection'
 
 interface iCpage {
   data: iRetroPGF6Project
@@ -86,6 +87,7 @@ export default function Cpage({ data }: iCpage) {
           <OverviewSection data={data} />
         </section>
         <ImpactStatementSection data={data} impactSectionRef={impactRef} />
+        <ImpactGardenSection data={data} />
         <FundingSection data={data} fundingRef={fundingRef} />
         <GithubSection data={data} githubRef={githubRef} />
         <ContractSection data={data} contractRef={contractRef} />
