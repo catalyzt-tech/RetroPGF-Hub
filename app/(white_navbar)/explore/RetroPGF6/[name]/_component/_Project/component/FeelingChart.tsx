@@ -2,7 +2,7 @@ import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 
 interface iFeelingChartProps {
-  feelingArray: any[]
+  feelingArray: { name: string; y: number }[]
 }
 
 export default function FeelingChart({ feelingArray }: iFeelingChartProps) {

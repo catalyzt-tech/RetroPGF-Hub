@@ -29,7 +29,7 @@ export interface iRetroPGF6Project extends EASProjectMetadata {
   }
 }
 
-export interface impactGardenMetrics {
+export interface ImpactGardenMetrics {
   attestationUID: string
   category: string
   contribution: string

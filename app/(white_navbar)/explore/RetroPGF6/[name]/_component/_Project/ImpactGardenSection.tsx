@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
-import { impactGardenMetrics, iRetroPGF6Project } from '../../../RetroType6'
+import { ImpactGardenMetrics, iRetroPGF6Project } from '../../../RetroType6'
 import AmountAttestation from './component/AmountAttestation'
 import AverageStar from './component/AverageStar'
 import FeelingIfNotExist from './component/FeelingIfNotExist'
 import Link from 'next/link'
 async function fetchImpactGardenMetrics(
   projectUID: string
-): Promise<impactGardenMetrics[]> {
+): Promise<ImpactGardenMetrics[]> {
   //   const url = `https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=${projectUID}`
   const reviewListUrl = `https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid?primaryProjectUid=${projectUID}`
   const response = await fetch(reviewListUrl)
@@ -27,7 +27,7 @@ const ImpactGardenSection = ({
   impactGardenRef,
 }: iImpactGardenSectionProps) => {
   const [impactGardenMetrics, setImpactGardenMetrics] = useState<
-    impactGardenMetrics[]
+    ImpactGardenMetrics[]
   >([
     {
       attestationUID: '',
@@ -52,7 +52,7 @@ const ImpactGardenSection = ({
     fetchImpactGardenMetrics(projectUID).then((data) => {
       setImpactGardenMetrics(data)
     })
-  }, [])
+  }, [projectUID])
   return (
     <section
       id="Impact Garden"
