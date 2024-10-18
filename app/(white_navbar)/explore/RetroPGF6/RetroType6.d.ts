@@ -14,6 +14,7 @@ export interface WorkerResponseRound6 {
 export interface iRetroPGF6Project extends EASProjectMetadata {
   //To be change after the new data is available from backend
   projectUid: string
+  projectRefUid: string
   impactIpfs: {
     round: string
     category:
@@ -26,4 +27,22 @@ export interface iRetroPGF6Project extends EASProjectMetadata {
       answer: string
     }[]
   }
+}
+
+export interface impactGardenMetrics {
+  attestationUID: string
+  category: string
+  contribution: string
+  createdAt: string
+  ecosystem: string
+  explanation: string
+  feeling_if_didnt_exist: string
+  id: number
+  likely_to_recommend: string
+  logoUrl: string
+  pfp: string
+  projectName: string
+  subcategory: string
+  userFid: string
+  username: string
 }

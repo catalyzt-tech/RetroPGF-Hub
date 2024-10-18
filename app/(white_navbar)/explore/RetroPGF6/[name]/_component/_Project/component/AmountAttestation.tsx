@@ -1,15 +1,24 @@
 import { RiUserFill } from '@remixicon/react'
+import { impactGardenMetrics } from '../../../../RetroType6'
 
-export default function AmountAttestation() {
+interface iAmountAttestationProps {
+  impactGardenMetrics: impactGardenMetrics[]
+}
+export default function AmountAttestation({
+  impactGardenMetrics,
+}: iAmountAttestationProps) {
+  const attestationCount: number = impactGardenMetrics.length
   return (
     <div className="flex grow bg-slate-50 w-80 min-h-44 rounded-lg px-8 py-8">
       <div className="flex flex-col gap-2">
         <div className="flex flex-col justify-center gap-y-3 text-lg font-medium h-full">
           <div className="flex-grow"></div>
-          <RiUserFill size={30} />
-          <div className="text-md font-semibold">100 Reviewers</div>
+          <RiUserFill size={30} color="#6895D2" />
+          <div className="text-md font-semibold">
+            {attestationCount} Reviewers
+          </div>
           <div className="text-sm font-normal text-gray-600">
-            Attestations from the badgeholders, top 100 delegates, and other
+            Attestations from the badgeholders, top 100 delegates, and others.
           </div>
         </div>
       </div>

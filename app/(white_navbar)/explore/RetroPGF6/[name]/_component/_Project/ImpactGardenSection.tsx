@@ -1,19 +1,19 @@
-import { useEffect } from 'react'
-import { iRetroPGF6Project } from '../../../RetroType6'
+import { useEffect, useState } from 'react'
+import { impactGardenMetrics, iRetroPGF6Project } from '../../../RetroType6'
 import AmountAttestation from './component/AmountAttestation'
 import AverageStar from './component/AverageStar'
 import FeelingIfNotExist from './component/FeelingIfNotExist'
-async function fetchImpactGardenMetrics({
-  projectUID,
-}: {
+import Link from 'next/link'
+async function fetchImpactGardenMetrics(
   projectUID: string
-}) {
+): Promise<impactGardenMetrics[]> {
   //   const url = `https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=${projectUID}`
   const reviewListUrl = `https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid?primaryProjectUid=${projectUID}`
-  console.log(reviewListUrl)
   const response = await fetch(reviewListUrl)
   const data = await response.json()
-  console.log(data)
+  if (!Array.isArray(data)) {
+    return []
+  }
   return data
 }
 
@@ -22,10 +22,32 @@ interface iImpactGardenSectionProps {
 }
 
 const ImpactGardenSection = ({ data }: iImpactGardenSectionProps) => {
-  const projectUID: string =
-    '0x4d840826049258b3895326fd67680cca25df9543d67859df49b9ff5635b62598'
+  const [impactGardenMetrics, setImpactGardenMetrics] = useState<
+    impactGardenMetrics[]
+  >([
+    {
+      attestationUID: '',
+      category: '',
+      contribution: '',
+      createdAt: '',
+      ecosystem: '',
+      explanation: '',
+      feeling_if_didnt_exist: '',
+      id: 0,
+      likely_to_recommend: '',
+      logoUrl: '',
+      pfp: '',
+      projectName: '',
+      subcategory: '',
+      userFid: '',
+      username: '',
+    },
+  ])
+  const projectUID: string = data.projectRefUid
   useEffect(() => {
-    fetchImpactGardenMetrics({ projectUID })
+    fetchImpactGardenMetrics(projectUID).then((data) => {
+      setImpactGardenMetrics(data)
+    })
   }, [])
   return (
     <section
@@ -36,12 +58,20 @@ const ImpactGardenSection = ({ data }: iImpactGardenSectionProps) => {
       <hr className="hidden sm:block border-t-gray-100" />
       <div className="text-gray-500">
         These metrics are collected based on attestations from the badgeholders,
-        top 100 delegates, and other community members.
+        top 100 delegates, and other community members.{' '}
+        <Link
+          className=" font-medium text-primaryRed self-start"
+          href={`https://www.metricsgarden.xyz/projects/${projectUID}/?tab=insights`}
+          target="_blank"
+        >
+          View More &gt;
+        </Link>
       </div>
+
       <div className="flex flex-row flex-grow flex-wrap gap-5  ">
-        <AmountAttestation />
-        <AverageStar />
-        <FeelingIfNotExist />
+        <AmountAttestation impactGardenMetrics={impactGardenMetrics} />
+        <AverageStar impactGardenMetrics={impactGardenMetrics} />
+        <FeelingIfNotExist impactGardenMetrics={impactGardenMetrics} />
       </div>
     </section>
   )
