@@ -19,9 +19,13 @@ async function fetchImpactGardenMetrics(
 
 interface iImpactGardenSectionProps {
   data: iRetroPGF6Project
+  impactGardenRef: React.MutableRefObject<HTMLElement | null>
 }
 
-const ImpactGardenSection = ({ data }: iImpactGardenSectionProps) => {
+const ImpactGardenSection = ({
+  data,
+  impactGardenRef,
+}: iImpactGardenSectionProps) => {
   const [impactGardenMetrics, setImpactGardenMetrics] = useState<
     impactGardenMetrics[]
   >([
@@ -51,7 +55,8 @@ const ImpactGardenSection = ({ data }: iImpactGardenSectionProps) => {
   }, [])
   return (
     <section
-      id="Impact Metrics"
+      id="Impact Garden"
+      ref={impactGardenRef}
       className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border"
     >
       <h3 className="text-2xl font-semibold ">Impact Garden</h3>

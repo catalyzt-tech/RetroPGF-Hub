@@ -24,7 +24,7 @@ export default function AverageStar({
           <div className="flex-grow"></div>
           <RiStarFill size={30} color="#FFC55A" />
           <div className="text-md font-semibold">
-            {averageScore.toFixed(2)} Average Scores
+            {averageScore.toFixed(2)}/10 Rating
           </div>
           <div className="text-sm font-normal text-gray-600">
             Badgeholders and delegates likely to recommend this project to
