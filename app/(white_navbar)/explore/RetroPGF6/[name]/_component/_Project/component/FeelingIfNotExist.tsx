@@ -38,23 +38,25 @@ export default function FeelingIfNotExist({
   ])
 
   useEffect(() => {
-    const initialArray = [
-      { name: '🙂 Neutral', y: 0 },
-      { name: '🫠 Somewhat Upset', y: 0 },
-      { name: '😭 Extremely Upset', y: 0 },
-    ]
-    const feelingMap: { [key: string]: number } = {
-      Neutral: 0,
-      'Somewhat Upset': 1,
-      'Extremely Upset': 2,
-    }
-    const updatedArray = impactGardenMetrics.reduce((acc, cur) => {
-      const index = feelingMap[cur.feeling_if_didnt_exist]
-      if (index !== undefined) {
-        acc[index].y++
-      }
-      return acc
-    }, initialArray)
+    const updatedArray = impactGardenMetrics.reduce(
+      (acc, { feeling_if_didnt_exist }) => {
+        const index = {
+          Neutral: 0,
+          'Somewhat Upset': 1,
+          'Extremely Upset': 2,
+        }[feeling_if_didnt_exist]
+
+        if (index !== undefined) {
+          acc[index].y++
+        }
+        return acc
+      },
+      [
+        { name: '🙂 Neutral', y: 0 },
+        { name: '🫠 Somewhat Upset', y: 0 },
+        { name: '😭 Extremely Upset', y: 0 },
+      ]
+    )
     setFeelingArray(updatedArray)
   }, [impactGardenMetrics])
 

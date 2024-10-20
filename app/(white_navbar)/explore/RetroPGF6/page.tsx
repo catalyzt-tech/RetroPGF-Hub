@@ -31,13 +31,17 @@ export const dynamic = 'force-dynamic'
 // }
 
 export async function getJsonRound6(): Promise<iRetroPGF6Project[]> {
-  const directoryPath = path.join(
-    process.cwd(),
-    'public/static/rpgf6/rpgf6.json'
-  )
-  const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
-  const jsonData: iRetroPGF6Project[] = JSON.parse(fileContents)
-  return jsonData
+  try {
+    const directoryPath = path.join(
+      process.cwd(),
+      'public/static/rpgf6/rpgf6.json'
+    )
+    const fileContents = await fs.promises.readFile(directoryPath, 'utf8')
+    return JSON.parse(fileContents) as iRetroPGF6Project[]
+  } catch (error) {
+    console.error('Error reading or parsing rpgf6.json:', error)
+    return []
+  }
 }
 
 export default async function page() {

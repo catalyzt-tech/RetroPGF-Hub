@@ -9,12 +9,20 @@ async function fetchImpactGardenMetrics(
 ): Promise<ImpactGardenMetrics[]> {
   //   const url = `https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=${projectUID}`
   const reviewListUrl = `https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid?primaryProjectUid=${projectUID}`
-  const response = await fetch(reviewListUrl)
-  const data = await response.json()
-  if (!Array.isArray(data)) {
+  try {
+    const response = await fetch(reviewListUrl)
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
+    const data = await response.json()
+    if (!Array.isArray(data)) {
+      return []
+    }
+    return data
+  } catch (error) {
+    console.error('Failed to fetch impact garden metrics:', error)
     return []
   }
-  return data
 }
 
 interface iImpactGardenSectionProps {
