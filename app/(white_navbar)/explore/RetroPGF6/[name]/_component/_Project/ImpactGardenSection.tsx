@@ -6,9 +6,12 @@ import FeelingIfNotExist from './component/FeelingIfNotExist'
 import Link from 'next/link'
 async function fetchImpactGardenMetrics(
   projectUID: string
-): Promise<ImpactGardenMetrics[]> {
+): Promise<ImpactGardenMetrics[] | null> {
   //   const url = `https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=${projectUID}`
-  const reviewListUrl = `https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid?primaryProjectUid=${projectUID}`
+  const baseUrl =
+    'https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid'
+  const query = `?primaryProjectUid=${projectUID}&limit=100&offset=0`
+  const reviewListUrl = baseUrl + query
   try {
     const response = await fetch(reviewListUrl)
     if (!response.ok) {
