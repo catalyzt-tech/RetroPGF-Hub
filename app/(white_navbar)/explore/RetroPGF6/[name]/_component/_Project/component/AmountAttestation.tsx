@@ -2,12 +2,12 @@ import { RiUserFill } from '@remixicon/react'
 import { ImpactGardenMetrics } from '../../../../RetroType6'
 
 interface iAmountAttestationProps {
-  impactGardenMetrics: ImpactGardenMetrics[]
+  impactGardenMetrics: ImpactGardenMetrics[] | null
 }
 export default function AmountAttestation({
   impactGardenMetrics,
 }: iAmountAttestationProps) {
-  const attestationCount: number = impactGardenMetrics.length
+  const attestationCount: number = impactGardenMetrics?.length || 0
   return (
     <div className="flex grow bg-slate-50 w-80 min-h-44 rounded-lg px-8 py-8">
       <div className="flex flex-col gap-2">

@@ -29,7 +29,7 @@ const titleMap: {
 export default function FeelingIfNotExist({
   impactGardenMetrics,
 }: {
-  impactGardenMetrics: ImpactGardenMetrics[]
+  impactGardenMetrics: ImpactGardenMetrics[] | null
 }) {
   const [feelingArray, setFeelingArray] = useState([
     { name: '🙂 Neutral', y: 0 },
@@ -38,7 +38,7 @@ export default function FeelingIfNotExist({
   ])
 
   useEffect(() => {
-    const updatedArray = impactGardenMetrics.reduce(
+    const updatedArray = impactGardenMetrics?.reduce(
       (acc, { feeling_if_didnt_exist }) => {
         const index = {
           Neutral: 0,
@@ -57,7 +57,9 @@ export default function FeelingIfNotExist({
         { name: '😭 Extremely Upset', y: 0 },
       ]
     )
-    setFeelingArray(updatedArray)
+    if (updatedArray) {
+      setFeelingArray(updatedArray)
+    }
   }, [impactGardenMetrics])
 
   const maxFeelingTopic = useMemo(() => {
@@ -80,7 +82,7 @@ export default function FeelingIfNotExist({
             </div>
           ))}
         </div>
-        {impactGardenMetrics.length !== 0 && (
+        {impactGardenMetrics?.length !== 0 && (
           <FeelingChart feelingArray={feelingArray} />
         )}
       </div>

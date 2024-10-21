@@ -38,7 +38,7 @@ const ImpactGardenSection = ({
   impactGardenRef,
 }: iImpactGardenSectionProps) => {
   const [impactGardenMetrics, setImpactGardenMetrics] = useState<
-    ImpactGardenMetrics[]
+    ImpactGardenMetrics[] | null
   >([
     {
       attestationUID: '',
@@ -47,9 +47,9 @@ const ImpactGardenSection = ({
       createdAt: '',
       ecosystem: '',
       explanation: '',
-      feeling_if_didnt_exist: '',
+      feeling_if_didnt_exist: '0',
       id: 0,
-      likely_to_recommend: '',
+      likely_to_recommend: '0',
       logoUrl: '',
       pfp: '',
       projectName: '',
@@ -79,6 +79,7 @@ const ImpactGardenSection = ({
           className=" font-medium text-primaryRed self-start"
           href={`https://www.metricsgarden.xyz/projects/${projectUID}/?tab=insights`}
           target="_blank"
+          rel="noopener noreferrer"
         >
           View More &gt;
         </Link>
