@@ -4,20 +4,20 @@ import AmountAttestation from './component/AmountAttestation'
 import AverageStar from './component/AverageStar'
 import FeelingIfNotExist from './component/FeelingIfNotExist'
 import Link from 'next/link'
+import { makeRequest } from '@/app/hook/makeRequest'
 async function fetchImpactGardenMetrics(
   projectUID: string
 ): Promise<ImpactGardenMetrics[] | null> {
-  //   const url = `https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=${projectUID}`
   const baseUrl =
     'https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid'
   const query = `?primaryProjectUid=${projectUID}`
   const reviewListUrl = baseUrl + query
   try {
-    const response = await fetch(reviewListUrl)
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`)
+    const response = await makeRequest<ImpactGardenMetrics[]>(reviewListUrl)
+    if (!response) {
+      throw new Error('Failed to fetch impact garden metrics')
     }
-    const data = await response.json()
+    const data = response
     if (!Array.isArray(data)) {
       return []
     }
