@@ -10,7 +10,7 @@ async function fetchImpactGardenMetrics(
   //   const url = `https://metrics-garden-api.vercel.app/api/projects/primaryProjectUid?primaryProjectUid=${projectUID}`
   const baseUrl =
     'https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid'
-  const query = `?primaryProjectUid=${projectUID}&limit=100&offset=0`
+  const query = `?primaryProjectUid=${projectUID}`
   const reviewListUrl = baseUrl + query
   try {
     const response = await fetch(reviewListUrl)
