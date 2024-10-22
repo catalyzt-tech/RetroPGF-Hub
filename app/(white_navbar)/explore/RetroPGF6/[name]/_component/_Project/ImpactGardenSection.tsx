@@ -1,10 +1,17 @@
 import { useEffect, useState } from 'react'
-import { ImpactGardenMetrics, iRetroPGF6Project } from '../../../RetroType6'
+import {
+  BadgeholderImpactGarden,
+  DelegateImpactGarden,
+  ImpactGardenMetrics,
+  iRetroPGF6Project,
+  UserRoleImpactGarden,
+} from '../../../RetroType6'
 import AmountAttestation from './component/AmountAttestation'
 import AverageStar from './component/AverageStar'
 import FeelingIfNotExist from './component/FeelingIfNotExist'
 import Link from 'next/link'
 import axios from 'axios'
+import ReviewerListsTable from './component/ReviewerListsTable'
 async function fetchImpactGardenMetrics(
   projectUID: string
 ): Promise<ImpactGardenMetrics[] | null> {
@@ -31,6 +38,48 @@ async function fetchImpactGardenMetrics(
   }
 }
 
+async function fetchDelegateUsers() {
+  const baseUrl = 'https://metrics-garden-api.vercel.app/api/users/getDelegates'
+  const userList = baseUrl
+  try {
+    const response = await axios
+      .get<DelegateImpactGarden[]>(userList)
+      .then((res) => res.data)
+    if (!response) {
+      throw new Error('Failed to fetch user reviews role')
+    }
+    const data = response
+    if (!Array.isArray(data)) {
+      return []
+    }
+    return data
+  } catch (error) {
+    console.error('Failed to fetch user reviews role:', error)
+    return []
+  }
+}
+
+async function fetchBadgeholderUsers() {
+  const baseUrl =
+    'https://metrics-garden-api.vercel.app/api/users/getBadgeholders'
+  const userList = baseUrl
+  try {
+    const response = await axios
+      .get<BadgeholderImpactGarden[]>(userList)
+      .then((res) => res.data)
+    if (!response) {
+      throw new Error('Failed to fetch user reviews role')
+    }
+    const data = response
+    if (!Array.isArray(data)) {
+      return []
+    }
+    return data
+  } catch (error) {
+    console.error('Failed to fetch user reviews role:', error)
+    return []
+  }
+}
 interface iImpactGardenSectionProps {
   data: iRetroPGF6Project
   impactGardenRef: React.MutableRefObject<HTMLElement | null>
@@ -61,10 +110,20 @@ const ImpactGardenSection = ({
       username: '',
     },
   ])
+  const [delegateUsers, setDelegateUsers] = useState<DelegateImpactGarden[]>([])
+  const [badgeholderUsers, setBadgeholderUsers] = useState<
+    BadgeholderImpactGarden[]
+  >([])
   const projectUID: string = data.projectRefUid
   useEffect(() => {
     fetchImpactGardenMetrics(projectUID).then((data) => {
       setImpactGardenMetrics(data)
+    })
+    fetchDelegateUsers().then((data) => {
+      setDelegateUsers(data)
+    })
+    fetchBadgeholderUsers().then((data) => {
+      setBadgeholderUsers(data)
     })
   }, [projectUID])
   return (
@@ -92,6 +151,11 @@ const ImpactGardenSection = ({
         <AmountAttestation impactGardenMetrics={impactGardenMetrics} />
         <AverageStar impactGardenMetrics={impactGardenMetrics} />
         <FeelingIfNotExist impactGardenMetrics={impactGardenMetrics} />
+        <ReviewerListsTable
+          impactGardenMetrics={impactGardenMetrics}
+          delegateUsers={delegateUsers}
+          badgeholderUsers={badgeholderUsers}
+        />
       </div>
     </section>
   )

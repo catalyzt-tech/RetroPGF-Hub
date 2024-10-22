@@ -46,3 +46,16 @@ export interface ImpactGardenMetrics {
   userFid: string
   username: string
 }
+
+export interface UserRoleImpactGarden {
+  userFid: string
+  role: string
+}
+
+export interface BadgeholderImpactGarden extends UserRoleImpactGarden {
+  opBadgeholder: boolean
+}
+
+export interface DelegateImpactGarden extends UserRoleImpactGarden {
+  delegate: boolean
+}

@@ -7,7 +7,7 @@ import FeelingChart from './FeelingChart'
 import { ImpactGardenMetrics } from '../../../../RetroType6'
 import { useEffect, useMemo, JSX, useState } from 'react'
 
-const titleMap: {
+export const titleMap: {
   [key: string]: { title: string; color: string; icon: JSX.Element }
 } = {
   '🙂 Neutral': {
