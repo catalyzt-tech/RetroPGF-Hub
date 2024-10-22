@@ -46,7 +46,7 @@ async function fetchDelegateUsers() {
       .get<DelegateImpactGarden[]>(userList)
       .then((res) => res.data)
     if (!response) {
-      throw new Error('Failed to fetch user reviews role')
+      throw new Error('Failed to fetch delegate users')
     }
     const data = response
     if (!Array.isArray(data)) {
@@ -54,7 +54,7 @@ async function fetchDelegateUsers() {
     }
     return data
   } catch (error) {
-    console.error('Failed to fetch user reviews role:', error)
+    console.error('Failed to fetch badgeholder users')
     return []
   }
 }
@@ -115,16 +115,21 @@ const ImpactGardenSection = ({
     BadgeholderImpactGarden[]
   >([])
   const projectUID: string = data.projectRefUid
+
   useEffect(() => {
-    fetchImpactGardenMetrics(projectUID).then((data) => {
-      setImpactGardenMetrics(data)
-    })
-    fetchDelegateUsers().then((data) => {
-      setDelegateUsers(data)
-    })
-    fetchBadgeholderUsers().then((data) => {
-      setBadgeholderUsers(data)
-    })
+    Promise.all([
+      fetchImpactGardenMetrics(projectUID),
+      fetchDelegateUsers(),
+      fetchBadgeholderUsers(),
+    ])
+      .then(([metrics, delegates, badgeholders]) => {
+        setImpactGardenMetrics(metrics)
+        setDelegateUsers(delegates)
+        setBadgeholderUsers(badgeholders)
+      })
+      .catch((err) => {
+        throw new Error(err)
+      })
   }, [projectUID])
   return (
     <section

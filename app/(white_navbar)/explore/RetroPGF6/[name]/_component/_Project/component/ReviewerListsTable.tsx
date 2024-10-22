@@ -21,6 +21,17 @@ export default function ReviewerListsTable({
     'Extremely Upset': '😭 Extremely Upset',
     'Somewhat Upset': '🫠 Somewhat Upset',
     Neutral: '🙂 Neutral',
+    Unknown: '❓ Unknown Feeling',
+  }
+  if (!impactGardenMetrics) {
+    return (
+      <div className="flex flex-col w-full bg-slate-50 rounded-md px-8 py-6 gap-y-4">
+        <div className="text-lg font-semibold">Reviewers List</div>
+        <div className="text-center py-4 text-gray-500">
+          No reviewer data available
+        </div>
+      </div>
+    )
   }
   return (
     <div className="flex flex-col w-full bg-slate-50 rounded-md px-8 py-6 gap-y-4">
@@ -36,18 +47,21 @@ export default function ReviewerListsTable({
             <table className="min-w-full text-left text-sm font-light">
               <thead className="font-medium sticky top-0 bg-white z-10">
                 <tr>
-                  {tableHeader.map((header) => (
-                    <th key={header} className="px-6 py-2 font-bold text-xs">
+                  {tableHeader.map((header, index) => (
+                    <th
+                      key={`${header}-${index}`}
+                      className="px-6 py-2 font-bold text-xs"
+                    >
                       {header}
                     </th>
                   ))}
                 </tr>
               </thead>
               <tbody>
-                {impactGardenMetrics?.map((impactGardenMetric) => (
+                {impactGardenMetrics?.map((impactGardenMetric, index) => (
                   <tr key={impactGardenMetric.id}>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-600">
-                      {impactGardenMetrics.indexOf(impactGardenMetric) + 1}
+                      {index + 1}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
@@ -74,11 +88,9 @@ export default function ReviewerListsTable({
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-600">
-                      {
-                        ifNotExistMapPassage[
-                          impactGardenMetric.feeling_if_didnt_exist as keyof typeof ifNotExistMapPassage
-                        ]
-                      }
+                      {ifNotExistMapPassage[
+                        impactGardenMetric.feeling_if_didnt_exist as keyof typeof ifNotExistMapPassage
+                      ] ?? ifNotExistMapPassage.Unknown}
                     </td>
                   </tr>
                 ))}
