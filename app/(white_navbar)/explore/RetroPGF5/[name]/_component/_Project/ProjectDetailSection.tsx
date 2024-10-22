@@ -66,8 +66,8 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
               )} */}
             </div>
             {/* This will show when project reward is available */}
-            {/* <div className="flex w-fit items-center md:hidden px-5 py-3 mb-4 rounded-xl text-base font-medium bg-red-50">
-              {numberWithCommas(0)}
+            <div className="flex w-fit items-center md:hidden px-5 py-3 mb-4 rounded-xl text-base font-medium bg-red-50">
+              {numberWithCommas(data.allocation ?? 0)}
               <Image
                 src="/static/superchainLogo/optimism.svg"
                 alt="OP Token"
@@ -75,7 +75,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 height={25}
                 className="ml-2"
               />
-            </div> */}
+            </div>
             <div className="flex flex-wrap gap-6 my-1 md:my-3 lg:my-4">
               {data.socialLinks.website.length > 0 &&
                 data.socialLinks.website.map((item, i) => (
