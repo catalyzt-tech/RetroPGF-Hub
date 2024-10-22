@@ -1,4 +1,4 @@
-import { RiStarFill } from '@remixicon/react'
+import { RiStarFill, RiUserSearchFill } from '@remixicon/react'
 import {
   BadgeholderImpactGarden,
   DelegateImpactGarden,
@@ -16,7 +16,7 @@ export default function ReviewerListsTable({
   delegateUsers,
   badgeholderUsers,
 }: iReviewerListsTable) {
-  const tableHeader = ['Reviewer', 'Rating', "Feeling if didn't exist"]
+  const tableHeader = ['No.', 'Reviewer', 'Rating', "Feeling if didn't exist"]
   const ifNotExistMapPassage = {
     'Extremely Upset': '😭 Extremely Upset',
     'Somewhat Upset': '🫠 Somewhat Upset',
@@ -24,18 +24,20 @@ export default function ReviewerListsTable({
   }
   return (
     <div className="flex flex-col w-full bg-slate-50 rounded-md px-8 py-6 gap-y-4">
+      <RiUserSearchFill size={30} color="#6895D2" />
       <div className="text-lg font-semibold">Reviewers List</div>
-      <div className="overflow-x-auto  h-64">
+      <p className="text-sm font-normal text-gray-600">
+        List of reviewers who have evaluated this project, along with their
+        ratings and feelings if the project didn't exist.
+      </p>
+      <div className="overflow-x-auto h-72 mt-2">
         <div className="inline-block min-w-full">
-          <div className="overflow-hidden">
-            <table className="min-w-full text-left text-sm font-light text-surface bg-white rounded-md">
-              <thead className="font-medium sticky top-0 bg-slate-50 z-10">
+          <div className="overflow-hidden bg-white px-4 py-6 rounded-md">
+            <table className="min-w-full text-left text-sm font-light">
+              <thead className="font-medium sticky top-0 bg-white z-10 ">
                 <tr>
                   {tableHeader.map((header) => (
-                    <th
-                      key={header}
-                      className="px-6 py-3 bg-slate-100 font-bold text-xs"
-                    >
+                    <th key={header} className="px-6 py-3 font-bold text-xs">
                       {header}
                     </th>
                   ))}
@@ -44,15 +46,18 @@ export default function ReviewerListsTable({
               <tbody>
                 {impactGardenMetrics?.map((impactGardenMetric) => (
                   <tr key={impactGardenMetric.id}>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-600">
+                      {impactGardenMetrics.indexOf(impactGardenMetric) + 1}
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
-                        <div className="flex-shrink-0 h-8 w-8">
+                        <div className="flex-shrink-0 h-7 w-7">
                           <Image
-                            className="h-8 w-8 rounded-full"
+                            className="h-7 w-7 rounded-full"
                             src={impactGardenMetric.pfp}
                             alt="Profile Picture"
-                            width={30}
-                            height={30}
+                            width={25}
+                            height={25}
                           />
                         </div>
                         <div className="ml-3">
@@ -62,11 +67,11 @@ export default function ReviewerListsTable({
                         </div>
                       </div>
                     </td>
-                    <td className="flex items-center px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-600 gap-x-1">
-                      <div>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-600">
+                      <div className="flex items-center gap-x-1">
                         {Number(impactGardenMetric.likely_to_recommend) / 2}
+                        <RiStarFill size={15} color="#FFC55A" />
                       </div>
-                      <RiStarFill size={15} color="#FFC55A" />
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-600">
                       {
