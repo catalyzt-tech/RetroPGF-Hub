@@ -30,14 +30,14 @@ export default function ReviewerListsTable({
         List of reviewers who have evaluated this project, along with their
         ratings and feelings if the project didn't exist.
       </p>
-      <div className="overflow-x-auto h-72 mt-2">
+      <div className="overflow-x-auto max-h-[calc(100vh-30rem)] mt-2">
         <div className="inline-block min-w-full">
           <div className="overflow-hidden bg-white px-4 py-6 rounded-md">
             <table className="min-w-full text-left text-sm font-light">
-              <thead className="font-medium sticky top-0 bg-white z-10 ">
+              <thead className="font-medium sticky top-0 bg-white z-10">
                 <tr>
                   {tableHeader.map((header) => (
-                    <th key={header} className="px-6 py-3 font-bold text-xs">
+                    <th key={header} className="px-6 py-2 font-bold text-xs">
                       {header}
                     </th>
                   ))}
