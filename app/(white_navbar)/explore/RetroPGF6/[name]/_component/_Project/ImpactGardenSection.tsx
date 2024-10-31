@@ -1,11 +1,5 @@
 import { useEffect, useState } from 'react'
-import {
-  BadgeholderImpactGarden,
-  DelegateImpactGarden,
-  ImpactGardenMetrics,
-  iRetroPGF6Project,
-  UserRoleImpactGarden,
-} from '../../../RetroType6'
+import { iRetroPGF6Project } from '../../../RetroType6'
 import AmountAttestation from './component/AmountAttestation'
 import AverageStar from './component/AverageStar'
 import FeelingIfNotExist from './component/FeelingIfNotExist'

@@ -30,7 +30,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
           <div className="absolute -top-32 left-2 lg:left-6 rounded-[0.25rem] flex flex-shrink-0 z-20">
             <div className="relative w-28 h-28 lg:w-32 lg:h-32">
               <Image
-                src={data.projectAvatarUrl || '/random/OP-Logo.png'}
+                src={data.profileAvatarUrl || '/random/OP-Logo.png'}
                 alt="avatar image"
                 className="rounded-lg object-cover bg-white p-1.5"
                 fill

@@ -12,6 +12,11 @@ interface iOverviewSection {
 }
 
 export default function OverviewSection({ data }: iOverviewSection) {
+  const applicationCategoryMap: { [key: string]: string } = {
+    GOVERNANCE_ANALYTICS: 'Governance Analytics',
+    GOVERNANCE_INFRA_AND_TOOLING: 'Governance Infra & Tooling',
+    GOVERNANCE_LEADERSHIP: 'Governance Leadership',
+  }
   return (
     <>
       <div className="flex flex-col gap-6 bg-white rounded-lg p-4 lg:p-6 border">
@@ -33,7 +38,7 @@ export default function OverviewSection({ data }: iOverviewSection) {
             </p> */}
             <div className=" text-base font-semibold text-gray-600">
               {handleApplicationCategoryRound6(
-                data.impactIpfs.category ?? '',
+                applicationCategoryMap[data.applicationCategory] ?? '',
                 'text-sm'
               )}
             </div>
