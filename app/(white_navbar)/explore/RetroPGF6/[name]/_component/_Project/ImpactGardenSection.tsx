@@ -6,9 +6,7 @@ import FeelingIfNotExist from './component/FeelingIfNotExist'
 import Link from 'next/link'
 import axios from 'axios'
 import ReviewerListsTable from './component/ReviewerListsTable'
-async function fetchImpactGardenMetrics(
-  projectUID: string
-): Promise<ImpactGardenMetrics[] | null> {
+async function fetchImpactGardenMetrics(projectUID: string): Promise<any> {
   const baseUrl =
     'https://metrics-garden-api.vercel.app/api/reviews/primaryProjectUid'
   const query = `?primaryProjectUid=${projectUID}`
@@ -16,7 +14,7 @@ async function fetchImpactGardenMetrics(
 
   try {
     const response = await axios
-      .get<ImpactGardenMetrics[]>(reviewListUrl)
+      .get<any[]>(reviewListUrl)
       .then((res) => res.data)
     if (!response) {
       throw new Error('Failed to fetch impact garden metrics')
@@ -32,48 +30,6 @@ async function fetchImpactGardenMetrics(
   }
 }
 
-async function fetchDelegateUsers() {
-  const baseUrl = 'https://metrics-garden-api.vercel.app/api/users/getDelegates'
-  const userList = baseUrl
-  try {
-    const response = await axios
-      .get<DelegateImpactGarden[]>(userList)
-      .then((res) => res.data)
-    if (!response) {
-      throw new Error('Failed to fetch delegate users')
-    }
-    const data = response
-    if (!Array.isArray(data)) {
-      return []
-    }
-    return data
-  } catch (error) {
-    console.error('Failed to fetch badgeholder users')
-    return []
-  }
-}
-
-async function fetchBadgeholderUsers() {
-  const baseUrl =
-    'https://metrics-garden-api.vercel.app/api/users/getBadgeholders'
-  const userList = baseUrl
-  try {
-    const response = await axios
-      .get<BadgeholderImpactGarden[]>(userList)
-      .then((res) => res.data)
-    if (!response) {
-      throw new Error('Failed to fetch user reviews role')
-    }
-    const data = response
-    if (!Array.isArray(data)) {
-      return []
-    }
-    return data
-  } catch (error) {
-    console.error('Failed to fetch user reviews role:', error)
-    return []
-  }
-}
 interface iImpactGardenSectionProps {
   data: iRetroPGF6Project
   impactGardenRef: React.MutableRefObject<HTMLElement | null>
@@ -83,9 +39,7 @@ const ImpactGardenSection = ({
   data,
   impactGardenRef,
 }: iImpactGardenSectionProps) => {
-  const [impactGardenMetrics, setImpactGardenMetrics] = useState<
-    ImpactGardenMetrics[] | null
-  >([
+  const [impactGardenMetrics, setImpactGardenMetrics] = useState<any>([
     {
       attestationUID: '',
       category: '',
@@ -104,22 +58,14 @@ const ImpactGardenSection = ({
       username: '',
     },
   ])
-  const [delegateUsers, setDelegateUsers] = useState<DelegateImpactGarden[]>([])
-  const [badgeholderUsers, setBadgeholderUsers] = useState<
-    BadgeholderImpactGarden[]
-  >([])
-  const projectUID: string = data.projectRefUid
+  const [delegateUsers, setDelegateUsers] = useState<any>([])
+  const [badgeholderUsers, setBadgeholderUsers] = useState<any>([])
+  const projectUID: string = '123456'
 
   useEffect(() => {
-    Promise.all([
-      fetchImpactGardenMetrics(projectUID),
-      fetchDelegateUsers(),
-      fetchBadgeholderUsers(),
-    ])
-      .then(([metrics, delegates, badgeholders]) => {
+    Promise.all([fetchImpactGardenMetrics(projectUID)])
+      .then(([metrics]) => {
         setImpactGardenMetrics(metrics)
-        setDelegateUsers(delegates)
-        setBadgeholderUsers(badgeholders)
       })
       .catch((err) => {
         throw new Error(err)

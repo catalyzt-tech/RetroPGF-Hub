@@ -1,19 +1,12 @@
 import { RiStarFill } from '@remixicon/react'
-import { ImpactGardenMetrics } from '../../../../RetroType6'
 
 interface iAverageStarProps {
-  impactGardenMetrics: ImpactGardenMetrics[] | null
+  impactGardenMetrics: any
 }
 export default function AverageStar({
   impactGardenMetrics,
 }: iAverageStarProps) {
-  const averageScore: number =
-    impactGardenMetrics && impactGardenMetrics.length > 0
-      ? impactGardenMetrics?.reduce((acc, cur) => {
-          const score = Number(cur.likely_to_recommend)
-          return acc + (isNaN(score) ? 0 : score)
-        }, 0) / impactGardenMetrics.length
-      : 0
+  const averageScore: number = 0
 
   return (
     <div className="flex grow bg-slate-50 w-80 min-h-44 rounded-lg px-8 py-8">

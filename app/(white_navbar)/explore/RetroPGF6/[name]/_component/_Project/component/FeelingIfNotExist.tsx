@@ -4,7 +4,6 @@ import {
   RiEmotionUnhappyFill,
 } from '@remixicon/react'
 import FeelingChart from './FeelingChart'
-import { ImpactGardenMetrics } from '../../../../RetroType6'
 import { useEffect, useMemo, JSX, useState } from 'react'
 
 export const titleMap: {
@@ -29,7 +28,7 @@ export const titleMap: {
 export default function FeelingIfNotExist({
   impactGardenMetrics,
 }: {
-  impactGardenMetrics: ImpactGardenMetrics[] | null
+  impactGardenMetrics: any
 }) {
   const [feelingArray, setFeelingArray] = useState([
     { name: '🙂 Neutral', y: 0 },
@@ -38,25 +37,11 @@ export default function FeelingIfNotExist({
   ])
 
   useEffect(() => {
-    const updatedArray = impactGardenMetrics?.reduce(
-      (acc, { feeling_if_didnt_exist }) => {
-        const index = {
-          Neutral: 0,
-          'Somewhat Upset': 1,
-          'Extremely Upset': 2,
-        }[feeling_if_didnt_exist]
-
-        if (index !== undefined) {
-          acc[index].y++
-        }
-        return acc
-      },
-      [
-        { name: '🙂 Neutral', y: 0 },
-        { name: '🫠 Somewhat Upset', y: 0 },
-        { name: '😭 Extremely Upset', y: 0 },
-      ]
-    )
+    const updatedArray = [
+      { name: '🙂 Neutral', y: 0 },
+      { name: '🫠 Somewhat Upset', y: 0 },
+      { name: '😭 Extremely Upset', y: 0 },
+    ]
     if (updatedArray) {
       setFeelingArray(updatedArray)
     }

@@ -27,7 +27,7 @@ export default function FundingSection({ data, fundingRef }: iFundingSection) {
       <hr className="hidden sm:block border-t-gray-100" />
       {data.grantsAndFunding.ventureFunding.length == 0 &&
         data.grantsAndFunding.grants.length == 0 &&
-        data.grantsAndFunding.retroFunding.length == 0 &&
+        data.grantsAndFunding.retroFunding?.length == 0 &&
         data.grantsAndFunding.revenue.length == 0 && (
           <p className="text-base font-normal text-gray-600">
             There is no funding sources or revenue information for this project.
@@ -98,8 +98,8 @@ export default function FundingSection({ data, fundingRef }: iFundingSection) {
           </div>
         ))}
 
-      {data.grantsAndFunding.retroFunding.length != 0 &&
-        data.grantsAndFunding.retroFunding.map((item, i) => (
+      {data.grantsAndFunding.retroFunding?.length != 0 &&
+        data.grantsAndFunding.retroFunding?.map((item, i) => (
           <div
             className="flex flex-col gap-1 px-8 py-6 bg-slate-50 rounded-lg"
             key={i}
