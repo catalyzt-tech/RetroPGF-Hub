@@ -89,7 +89,7 @@ export default function Cpage({ data }: iCpage) {
   return (
     <div className="flex justify-center lg:w-full ">
       <div className="flex flex-col mt-4 gap-4 lg:gap-0 ">
-        <div>
+        <div className="lg:max-w-[80.5rem]">
           <ProjectDetailSection data={data} />
         </div>
         <div className="flex lg:mt-8 gap-10 justify-center ">
