@@ -23,12 +23,13 @@ export default function GithubSection({ data, githubRef }: iGithubSection) {
       <hr className="hidden sm:block border-t-gray-100" />
 
       <div className="flex flex-wrap  gap-4 ">
-        {data.github.length == 0 && (
+        {data.github.length === 0 && (
           <p className="text-base font-normal text-gray-600">
             There is no github repository for this project.
           </p>
         )}
         {data.github.length !== 0 &&
+          Array.isArray(data.github) &&
           data.github.map((item, i) => {
             // Check if the item is an object or a string
             if (typeof item === 'object' && item !== null) {
@@ -43,7 +44,7 @@ export default function GithubSection({ data, githubRef }: iGithubSection) {
                   >
                     <div className="flex flex-col ">
                       <div className="font-semibold text-lg font-rubik mb-1">
-                        {item.name !== ''
+                        {item.name !== null && item.name !== ''
                           ? item.name
                           : formatGithubLink(item.url)}
                       </div>
@@ -55,23 +56,6 @@ export default function GithubSection({ data, githubRef }: iGithubSection) {
                     {/* {formatGithubLink(item.url)} */}
                   </Link>
                 </div>
-              )
-            } else if (typeof item === 'string') {
-              return (
-                <Link
-                  href={item}
-                  target="_blank"
-                  className={`flex items-center g flex-grow text-base  hover:text-primaryRed `}
-                  key={i}
-                >
-                  <div className="flex flex-col ">
-                    <div className="font-semibold text-lg font-rubik mb-1">
-                      {item !== '' ? item : formatGithubLink(item)}
-                    </div>
-                  </div>
-
-                  {/* {formatGithubLink(item.url)} */}
-                </Link>
               )
             }
           })}
