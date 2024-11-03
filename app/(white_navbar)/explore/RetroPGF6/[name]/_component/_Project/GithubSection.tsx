@@ -34,7 +34,10 @@ export default function GithubSection({ data, githubRef }: iGithubSection) {
             // Check if the item is an object or a string
             if (typeof item === 'object' && item !== null) {
               return (
-                <div className="flex flex-col flex-wrap gap-3 rounded-lg bg-slate-50 px-8 py-6 min-w-80 flex-grow flex-1">
+                <div
+                  className="flex flex-col flex-wrap gap-3 rounded-lg bg-slate-50 px-8 py-6 min-w-80 flex-grow flex-1"
+                  key={item.url}
+                >
                   <RiGithubFill size={35} color="#000" />
                   <Link
                     href={item.url}
