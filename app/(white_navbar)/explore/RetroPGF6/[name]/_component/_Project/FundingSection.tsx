@@ -70,7 +70,7 @@ export default function FundingSection({ data, fundingRef }: iFundingSection) {
             key={item.details}
           >
             <RiGovernmentFill size={25} color="#b3a98b" />
-            <div className="flex flex-col w-full ">
+            <div className="flex flex-col w-full">
               <div className="flex flex-wrap gap-3 items-center">
                 <p className="mb-1 text-lg font-semibold font-rubik">
                   {formatName(item.grant ?? '')}
