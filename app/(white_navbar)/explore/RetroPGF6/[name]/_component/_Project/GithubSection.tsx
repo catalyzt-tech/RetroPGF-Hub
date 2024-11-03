@@ -1,12 +1,8 @@
 import Image from 'next/image'
-import star from '@/public/static/githubCardSection/star'
-// import watch from '@/public/static/githubCardSection/watch'
-import fork from '@/public/static/githubCardSection/fork'
 import Link from 'next/link'
 import { iRetroPGF6Project } from '../../../RetroType6'
 import { formatGithubLink } from '@/app/lib/utils'
-import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
-import { RiGithubFill } from '@remixicon/react'
+import { RiArrowRightUpLine, RiGithubFill } from '@remixicon/react'
 
 interface iGithubSection {
   data: iRetroPGF6Project
@@ -42,20 +38,22 @@ export default function GithubSection({ data, githubRef }: iGithubSection) {
                   <Link
                     href={item.url}
                     target="_blank"
-                    className={`flex items-center g flex-grow text-base  hover:text-primaryRed  `}
+                    className={`flex items-center g flex-grow text-base  hover:text-primaryRed`}
                     key={i}
                   >
                     <div className="flex flex-col ">
-                      <div className="font-semibold text-lg font-rubik mb-1">
-                        {item.name !== null && item.name !== ''
-                          ? item.name
-                          : formatGithubLink(item.url)}
+                      <div className="flex items-center gap-x-2  mb-1">
+                        <div className="font-semibold text-lg font-rubik">
+                          {item.name !== null && item.name !== ''
+                            ? item.name
+                            : formatGithubLink(item.url)}
+                        </div>
+                        <RiArrowRightUpLine size={20} />
                       </div>
                       <div className="text-sm text-gray-500  line-clamp-2">
                         {item.description}
                       </div>
                     </div>
-
                     {/* {formatGithubLink(item.url)} */}
                   </Link>
                 </div>

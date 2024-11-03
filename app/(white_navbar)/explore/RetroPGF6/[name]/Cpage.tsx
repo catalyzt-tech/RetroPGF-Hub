@@ -41,12 +41,12 @@ export default function Cpage({ data }: iCpage) {
     ]
 
     if (data.applicationCategory === 'GOVERNANCE_INFRA_AND_TOOLING') {
-      initialSections.splice(2, 0, {
-        name: 'Impact Garden',
-        ref: impactGardenRef,
-      })
+      return [
+        ...initialSections.slice(0, 2),
+        { name: 'Impact Garden', ref: impactGardenRef },
+        ...initialSections.slice(2),
+      ]
     }
-
     return initialSections
   })
 
@@ -89,19 +89,13 @@ export default function Cpage({ data }: iCpage) {
   return (
     <div className="flex justify-center lg:w-full ">
       <div className="flex flex-col mt-4 gap-4 lg:gap-0 ">
-        <div className="lg:max-w-[80.5rem]">
+        <div className="lg:mt-4 lg:max-w-[80.5rem]">
           <ProjectDetailSection data={data} />
         </div>
         <div className="flex lg:mt-8 gap-10 justify-center ">
           {/* Scroll Spy */}
           <div className="lg:max-w-[60rem] lg:flex-grow flex flex-col gap-4 lg:gap-8 animate-slowfade ">
-            <section
-              className="w-full h-full flex flex-col gap-4 lg:gap-8 lg:flex-grow"
-              id="Overview"
-              ref={overViewRef}
-            >
-              <OverviewSection data={data} />
-            </section>
+            <OverviewSection data={data} overViewRef={overViewRef} />
             <ImpactStatementSection data={data} impactSectionRef={impactRef} />
             {data.applicationCategory === 'GOVERNANCE_INFRA_AND_TOOLING' && (
               <ImpactGardenSection
@@ -115,7 +109,6 @@ export default function Cpage({ data }: iCpage) {
             <PackageSection data={data} packageRef={packageRef} />
             <LinkSection data={data} linkSectionRef={linkSectionRef} />
           </div>
-
           <div className="hidden lg:block max-w-72 min-w-72 rounded-lg ">
             <ScrollSpy sections={sections} />
           </div>

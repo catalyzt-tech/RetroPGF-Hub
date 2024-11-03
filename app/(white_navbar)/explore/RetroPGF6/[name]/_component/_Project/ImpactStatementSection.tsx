@@ -1,10 +1,11 @@
-import { convertMarkdownToHtml, splitTextNewLine } from '@/app/lib/common'
+import { convertMarkdownToHtml } from '@/app/lib/common'
 import { iRetroPGF6Project } from '../../../RetroType6'
 
 interface iImpactStatementSection {
   data: iRetroPGF6Project
   impactSectionRef: React.MutableRefObject<HTMLElement | null>
 }
+
 export default function ImpactStatementSection({
   data,
   impactSectionRef,

@@ -1,12 +1,9 @@
-import LinkIcon from '@carbon/icons-react/lib/Link'
 import Image from 'next/image'
 import { Book, LogoTwitter, Partnership, ThumbsUp } from '@carbon/icons-react'
 import {
   RiArrowRightUpLine,
   RiGlobalLine,
   RiTeamLine,
-  RiTwitchLine,
-  RiTwitterLine,
   RiTwitterXLine,
 } from '@remixicon/react'
 import { iRetroPGF6Project } from '../../../RetroType6'
@@ -16,10 +13,11 @@ import {
   handleApplicationCategoryRound6,
   handleProjectCategoryRound,
 } from '@/app/lib/common'
-// import { convertImageClodinary } from '@/app/lib/utils'
+
 interface iProjectDetailSection {
   data: iRetroPGF6Project
 }
+
 export const truncateProjectId = (projectId: string) => {
   if (projectId.length <= 10) return projectId
   return `${projectId.slice(0, 8)}...${projectId.slice(-8)}`
@@ -27,13 +25,13 @@ export const truncateProjectId = (projectId: string) => {
 export default function ProjectDetailSection({ data }: iProjectDetailSection) {
   return (
     <>
-      <div className=" flex flex-col bg-white rounded-lg overflow-hidden border">
+      <div className=" flex flex-col bg-white rounded-lg overflow-hidden border animate-slowfade">
         <div className="block relative w-full h-52 lg:h-80 mb-16">
           <Image
             src={data.projectCoverImageUrl || '/random/OP-Banner.png'}
             alt="background"
             fill
-            className="w-fit object-cover rounded-xl"
+            className="w-fit object-cover rounded-t-lg rounded-b-xl"
           />
         </div>
 
@@ -103,9 +101,10 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
             <div className="flex flex-wrap gap-3 my-1 md:my-3 lg:my-4">
               {data.socialLinks.website.length > 0 &&
                 data.socialLinks.website.map((item, i) => (
-                  <a
+                  <Link
                     href={item}
                     key={i}
+                    target="_blank"
                     className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
                   >
                     <div className="p-1 rounded-full bg-white">
@@ -115,13 +114,14 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                       {item}
                     </h6>
                     <RiArrowRightUpLine size={16} />
-                  </a>
+                  </Link>
                 ))}
               {data.socialLinks.farcaster.length > 0 &&
                 data.socialLinks.farcaster.map((item, i) => (
                   <Link
                     href={item}
                     key={i}
+                    target="_blank"
                     className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
                   >
                     <div className="p-1 rounded-full bg-white">
@@ -137,6 +137,8 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 data.socialLinks.twitter !== '' && (
                   <Link
                     href={data.socialLinks.twitter || ''}
+                    key={data.socialLinks.twitter}
+                    target="_blank"
                     className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
                   >
                     <div className="p-1 rounded-full bg-white">
@@ -152,6 +154,8 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 data.socialLinks.mirror !== '' && (
                   <Link
                     href={data.socialLinks.mirror || ''}
+                    key={data.socialLinks.mirror}
+                    target="_blank"
                     className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
                   >
                     <div className="p-1 rounded-full bg-white">

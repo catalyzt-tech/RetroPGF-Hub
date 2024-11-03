@@ -1,5 +1,9 @@
 import { iRetroPGF6Project } from '../../../RetroType6'
-import { RiLinksFill } from '@remixicon/react'
+import {
+  RiArrowRightFill,
+  RiArrowRightUpLine,
+  RiLinksFill,
+} from '@remixicon/react'
 import Link from 'next/link'
 interface iLinkSection {
   data: iRetroPGF6Project
@@ -22,16 +26,18 @@ export default function LinkSection({ data, linkSectionRef }: iLinkSection) {
       {data.links?.length !== 0 &&
         data.links?.map((item, i) => (
           <div
-            className="flex px-8 py-6 bg-slate-50 rounded-lg gap-6 min-w-72"
+            className="flex px-8 py-6 bg-slate-50 rounded-lg gap-6 break-all"
             key={i}
           >
             <RiLinksFill size={25} color="#000" />
             <div className="flex flex-col w-full">
               <Link
                 href={item.url || ''}
-                className="mb-1 text-lg font-semibold font-rubik line-clamp-2 hover:text-primaryRed"
+                target="_blank"
+                className="flex items-center gap-x-2 mb-1 text-lg font-semibold font-rubik line-clamp-2 hover:text-primaryRed"
               >
-                {item.name ? item.name : item.url}
+                <span>{item.name ? item.name : item.url}</span>
+                <RiArrowRightUpLine size={20} />
               </Link>
               <div>
                 {item.description && (
