@@ -46,7 +46,8 @@ export default function DynamicCard({
   )
 
   return (
-    <div
+    <Link
+      href={`/explore/RetroPGF6/${cleanParamsName(title)}`}
       className={`flex flex-col flex-grow-1 flex-shrink-0 border rounded-lg shadow-sm max-h-[20rem] min-h-[12rem] relative bg-white overflow-hidden`}
     >
       {/* Background Image */}
@@ -91,12 +92,9 @@ export default function DynamicCard({
       <div className="w-full h-full">
         <div className="p-4 flex flex-col justify-start items-start gap-3 h-full overflow-hidden">
           <div className="flex flex-col gap-0.5">
-            <Link
-              href={`/explore/RetroPGF6/${cleanParamsName(title)}`}
-              className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1"
-            >
+            <p className="text-sm font-bold text-gray-800 z-20 hover:underline line-clamp-1">
               {title}
-            </Link>
+            </p>
             <p className="text-sm font-normal text-gray-600 line-clamp-2 break-all">
               {description}
             </p>
@@ -121,6 +119,6 @@ export default function DynamicCard({
           </div> */}
         </div>
       </div>
-    </div>
+    </Link>
   )
 }

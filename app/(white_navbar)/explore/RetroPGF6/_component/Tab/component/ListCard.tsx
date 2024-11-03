@@ -5,6 +5,7 @@ import { ArrowRight, ArrowUpRight } from '@carbon/icons-react'
 import Image from 'next/image'
 import List from '@carbon/icons-react/lib/List'
 import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
+import { cleanParamsName } from '@/app/lib/utils'
 
 const OpTokenPath = '/static/superchainLogo/optimism.svg'
 
@@ -48,7 +49,9 @@ export default function ListCard({ currentItems }: ListCardProps): JSX.Element {
                     </div>
                     <div className="flex flex-col">
                       <Link
-                        href={`/explore/RetroPGF5/${item.name}`}
+                        href={`/explore/RetroPGF6/${cleanParamsName(
+                          item.name
+                        )}`}
                         className="flex gap-1 pb-2  items-center cursor-pointer hover:underline w-fit"
                       >
                         <h6 className="text-sm font-bold text-gray-900">
