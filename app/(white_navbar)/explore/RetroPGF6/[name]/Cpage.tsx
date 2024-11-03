@@ -51,23 +51,23 @@ export default function Cpage({ data }: iCpage) {
   })
 
   const insertAtPosition = 2
-  // useEffect(() => {
-  //   if (data.impactMetrics) {
-  //     setSections((prevSections) => {
-  //       const impactMetricsExists = prevSections.find(
-  //         (section) => section.name === 'Impact Metrics'
-  //       )
-  //       if (!impactMetricsExists) {
-  //         return [
-  //           ...prevSections.slice(0, insertAtPosition),
-  //           { name: 'Impact Metrics', ref: impactRef },
-  //           ...prevSections.slice(insertAtPosition),
-  //         ]
-  //       }
-  //       return prevSections
-  //     })
-  //   }
-  // }, [data.impactMetrics])
+  useEffect(() => {
+    if (data.impactMetrics) {
+      setSections((prevSections) => {
+        const impactMetricsExists = prevSections.find(
+          (section) => section.name === 'Impact Metrics'
+        )
+        if (!impactMetricsExists) {
+          return [
+            ...prevSections.slice(0, insertAtPosition),
+            { name: 'Impact Metrics', ref: impactRef },
+            ...prevSections.slice(insertAtPosition),
+          ]
+        }
+        return prevSections
+      })
+    }
+  }, [data.impactMetrics])
   const [loading, setLoading] = useState(true)
   const load = () => {
     setTimeout(() => {
@@ -103,9 +103,12 @@ export default function Cpage({ data }: iCpage) {
               <OverviewSection data={data} />
             </section>
             <ImpactStatementSection data={data} impactSectionRef={impactRef} />
-            {/* {data.applicationCategory === 'GOVERNANCE_INFRA_AND_TOOLING' && (
-          <ImpactGardenSection data={data} impactGardenRef={impactGardenRef} />
-        )} */}
+            {data.applicationCategory === 'GOVERNANCE_INFRA_AND_TOOLING' && (
+              <ImpactGardenSection
+                data={data}
+                impactGardenRef={impactGardenRef}
+              />
+            )}
             <FundingSection data={data} fundingRef={fundingRef} />
             <GithubSection data={data} githubRef={githubRef} />
             <ContractSection data={data} contractRef={contractRef} />
