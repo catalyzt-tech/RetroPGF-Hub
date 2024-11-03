@@ -25,11 +25,6 @@ export const truncateProjectId = (projectId: string) => {
   return `${projectId.slice(0, 8)}...${projectId.slice(-8)}`
 }
 export default function ProjectDetailSection({ data }: iProjectDetailSection) {
-  const applicationCategoryMap: { [key: string]: string } = {
-    GOVERNANCE_ANALYTICS: 'Governance Analytics',
-    GOVERNANCE_INFRA_AND_TOOLING: 'Governance Infra & Tooling',
-    GOVERNANCE_LEADERSHIP: 'Governance Leadership',
-  }
   return (
     <>
       <div className=" flex flex-col bg-white rounded-lg overflow-hidden border">
@@ -75,7 +70,7 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
               </div>
               <div className=" text-base font-semibold text-gray-600">
                 {handleApplicationCategoryRound6(
-                  applicationCategoryMap[data.applicationCategory] ?? '',
+                  data.applicationCategory ?? '',
                   'text-sm'
                 )}
               </div>
