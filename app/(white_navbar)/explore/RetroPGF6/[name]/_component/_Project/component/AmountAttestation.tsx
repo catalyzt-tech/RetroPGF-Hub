@@ -2,7 +2,7 @@ import { RiUserFill } from '@remixicon/react'
 import { ImpactMetrics } from '../../../../RetroType6'
 
 interface iAmountAttestationProps {
-  impactGardenMetrics: ImpactMetrics
+  impactGardenMetrics?: ImpactMetrics
 }
 export default function AmountAttestation({
   impactGardenMetrics,

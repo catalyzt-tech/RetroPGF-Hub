@@ -1,12 +1,13 @@
 import { RiStarFill } from '@remixicon/react'
+import { ImpactMetrics } from '../../../../RetroType6'
 
 interface iAverageStarProps {
-  impactGardenMetrics: any
+  impactGardenMetrics?: ImpactMetrics
 }
 export default function AverageStar({
   impactGardenMetrics,
 }: iAverageStarProps) {
-  const averageScore: number = 0
+  const averageScore: number = impactGardenMetrics?.avg_nps_score || 0
 
   return (
     <div className="flex grow bg-slate-50 w-80 min-h-44 rounded-lg px-8 py-8">
@@ -18,8 +19,8 @@ export default function AverageStar({
             {averageScore.toFixed(2)}/10 Rating
           </div>
           <div className="text-sm font-normal text-gray-600">
-            Badgeholders and delegates likely to recommend this project to
-            someone else.
+            Badgeholders and delegates are likely to recommend this project to
+            others.
           </div>
         </div>
       </div>
