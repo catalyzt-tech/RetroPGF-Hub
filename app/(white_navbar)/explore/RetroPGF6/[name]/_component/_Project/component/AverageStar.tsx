@@ -14,8 +14,8 @@ export default function AverageStar({
       <div className="flex flex-col gap-2">
         <div className="flex flex-col justify-center gap-y-3 text-lg font-medium h-full">
           <div className="flex-grow"></div>
-          <RiStarFill size={30} color="#FFC55A" />
-          <div className="text-md font-semibold">
+          <RiStarFill size={25} color="#FFC55A" />
+          <div className="text-md font-semibold font-rubik">
             {averageScore.toFixed(2)}/10 Rating
           </div>
           <div className="text-sm font-normal text-gray-600">

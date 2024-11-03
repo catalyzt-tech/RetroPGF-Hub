@@ -18,8 +18,8 @@ export default function AmountAttestation({
       <div className="flex flex-col gap-2">
         <div className="flex flex-col justify-center gap-y-3 text-lg font-medium h-full">
           <div className="flex-grow"></div>
-          <RiUserFill size={30} color="#6895D2" />
-          <div className="text-md font-semibold">
+          <RiUserFill size={25} color="#6895D2" />
+          <div className="text-md font-semibold font-rubik">
             {attestationCount} Attestors
           </div>
           <div className="text-sm font-normal text-gray-600">

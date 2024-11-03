@@ -50,24 +50,24 @@ export default function Cpage({ data }: iCpage) {
     return initialSections
   })
 
-  const insertAtPosition = 2
-  useEffect(() => {
-    if (data.impactMetrics) {
-      setSections((prevSections) => {
-        const impactMetricsExists = prevSections.find(
-          (section) => section.name === 'Impact Metrics'
-        )
-        if (!impactMetricsExists) {
-          return [
-            ...prevSections.slice(0, insertAtPosition),
-            { name: 'Impact Metrics', ref: impactRef },
-            ...prevSections.slice(insertAtPosition),
-          ]
-        }
-        return prevSections
-      })
-    }
-  }, [data.impactMetrics])
+  // const insertAtPosition = 2
+  // useEffect(() => {
+  //   if (data.impactMetrics) {
+  //     setSections((prevSections) => {
+  //       const impactMetricsExists = prevSections.find(
+  //         (section) => section.name === 'Impact Metrics'
+  //       )
+  //       if (!impactMetricsExists) {
+  //         return [
+  //           ...prevSections.slice(0, insertAtPosition),
+  //           { name: 'Impact Metrics', ref: impactRef },
+  //           ...prevSections.slice(insertAtPosition),
+  //         ]
+  //       }
+  //       return prevSections
+  //     })
+  //   }
+  // }, [data.impactMetrics])
   const [loading, setLoading] = useState(true)
   const load = () => {
     setTimeout(() => {

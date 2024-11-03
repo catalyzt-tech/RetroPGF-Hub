@@ -45,7 +45,7 @@ const ImpactGardenSection = ({
       <div className="flex flex-row flex-grow flex-wrap gap-5  ">
         <AmountAttestation impactGardenMetrics={data.impactMetrics} />
         <AverageStar impactGardenMetrics={data.impactMetrics} />
-        {/* <FeelingIfNotExist impactGardenMetrics={impactGardenMetrics} /> */}
+        <FeelingIfNotExist impactGardenMetrics={data.impactMetrics} />
         {/* <ReviewerListsTable
           impactGardenMetrics={impactGardenMetrics}
           delegateUsers={delegateUsers}
