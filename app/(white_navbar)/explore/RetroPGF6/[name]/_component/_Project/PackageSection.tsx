@@ -30,7 +30,7 @@ export default function PackageSection({ data, packageRef }: iPackageSection) {
             <Link
               key={i}
               href={item.url ? item.url : '#'}
-              className="flex items-center gap-2  flex-grow text-base font-medium line-clamp-2 hover:text-primaryRed"
+              className="flex items-center gap-2 flex-grow text-base font-medium line-clamp-2 hover:text-primaryRed"
             >
               <LinkIcon size={20} className="group-hover:text-primaryRed" />
               {item.name ? item.name : item.url}

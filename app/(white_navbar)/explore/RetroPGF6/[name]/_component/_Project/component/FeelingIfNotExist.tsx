@@ -83,6 +83,7 @@ export default function FeelingIfNotExist({
             </div>
           ))}
         </div>
+        <div className="flex flex-grow"></div>
         {impactGardenMetrics && <FeelingChart feelingArray={feelingArray} />}
       </div>
     </div>
