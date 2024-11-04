@@ -98,76 +98,83 @@ export default function ProjectDetailSection({ data }: iProjectDetailSection) {
                 className="ml-2"
               />
             </div> */}
-            <div className="flex flex-wrap gap-3 my-1 md:my-3 lg:my-4">
-              {data.socialLinks.website.length > 0 &&
-                data.socialLinks.website.map((item, i) => (
-                  <Link
-                    href={item}
-                    key={i}
-                    target="_blank"
-                    className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
-                  >
-                    <div className="p-1 rounded-full bg-white">
-                      <RiGlobalLine size={16} />
-                    </div>
-                    <h6 className="text-xs font-normal truncate max-w-40 ">
-                      {item}
-                    </h6>
-                    <RiArrowRightUpLine size={16} />
-                  </Link>
-                ))}
-              {data.socialLinks.farcaster.length > 0 &&
-                data.socialLinks.farcaster.map((item, i) => (
-                  <Link
-                    href={item}
-                    key={i}
-                    target="_blank"
-                    className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
-                  >
-                    <div className="p-1 rounded-full bg-white">
-                      <RiTeamLine size={16} />
-                    </div>
-                    <h6 className="text-xs font-normal truncate max-w-40">
-                      {item}
-                    </h6>
-                    <RiArrowRightUpLine size={16} />
-                  </Link>
-                ))}
-              {data.socialLinks.twitter !== null &&
-                data.socialLinks.twitter !== '' && (
-                  <Link
-                    href={data.socialLinks.twitter || ''}
-                    key={data.socialLinks.twitter}
-                    target="_blank"
-                    className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
-                  >
-                    <div className="p-1 rounded-full bg-white">
-                      <RiTwitterXLine size={16} />
-                    </div>
-                    <h6 className="text-xs font-normal truncate max-w-40">
-                      {data.socialLinks.twitter}
-                    </h6>
-                    <RiArrowRightUpLine size={16} />
-                  </Link>
-                )}
-              {data.socialLinks.mirror !== null &&
-                data.socialLinks.mirror !== '' && (
-                  <Link
-                    href={data.socialLinks.mirror || ''}
-                    key={data.socialLinks.mirror}
-                    target="_blank"
-                    className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
-                  >
-                    <div className="p-1 rounded-full bg-white">
-                      <Book size={16} />
-                    </div>
-                    <h6 className="text-xs font-normal truncate max-w-40">
-                      {data.socialLinks.mirror}
-                    </h6>
-                    <RiArrowRightUpLine size={16} />
-                  </Link>
-                )}
-            </div>
+            {(data.socialLinks.website.length > 0 ||
+              data.socialLinks.farcaster.length > 0 ||
+              data.socialLinks.twitter !== null ||
+              data.socialLinks.twitter !== '' ||
+              data.socialLinks.mirror !== null ||
+              data.socialLinks.mirror !== '') && (
+              <div className="flex flex-wrap gap-3 my-1 md:my-3 lg:my-4">
+                {data.socialLinks.website.length > 0 &&
+                  data.socialLinks.website.map((item, i) => (
+                    <Link
+                      href={item}
+                      key={i}
+                      target="_blank"
+                      className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
+                    >
+                      <div className="p-1 rounded-full bg-white">
+                        <RiGlobalLine size={16} />
+                      </div>
+                      <h6 className="text-xs font-normal truncate max-w-40 ">
+                        {item}
+                      </h6>
+                      <RiArrowRightUpLine size={16} />
+                    </Link>
+                  ))}
+                {data.socialLinks.farcaster.length > 0 &&
+                  data.socialLinks.farcaster.map((item, i) => (
+                    <Link
+                      href={item}
+                      key={i}
+                      target="_blank"
+                      className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
+                    >
+                      <div className="p-1 rounded-full bg-white">
+                        <RiTeamLine size={16} />
+                      </div>
+                      <h6 className="text-xs font-normal truncate max-w-40">
+                        {item}
+                      </h6>
+                      <RiArrowRightUpLine size={16} />
+                    </Link>
+                  ))}
+                {data.socialLinks.twitter !== null &&
+                  data.socialLinks.twitter !== '' && (
+                    <Link
+                      href={data.socialLinks.twitter || ''}
+                      key={data.socialLinks.twitter}
+                      target="_blank"
+                      className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
+                    >
+                      <div className="p-1 rounded-full bg-white">
+                        <RiTwitterXLine size={16} />
+                      </div>
+                      <h6 className="text-xs font-normal truncate max-w-40">
+                        {data.socialLinks.twitter}
+                      </h6>
+                      <RiArrowRightUpLine size={16} />
+                    </Link>
+                  )}
+                {data.socialLinks.mirror !== null &&
+                  data.socialLinks.mirror !== '' && (
+                    <Link
+                      href={data.socialLinks.mirror || ''}
+                      key={data.socialLinks.mirror}
+                      target="_blank"
+                      className="flex flex-shrink items-center gap-2 text-gray-500 bg-slate-100 px-3 py-1.5 rounded-full hover:text-primaryRed"
+                    >
+                      <div className="p-1 rounded-full bg-white">
+                        <Book size={16} />
+                      </div>
+                      <h6 className="text-xs font-normal truncate max-w-40">
+                        {data.socialLinks.mirror}
+                      </h6>
+                      <RiArrowRightUpLine size={16} />
+                    </Link>
+                  )}
+              </div>
+            )}
           </div>
         </div>
       </div>
