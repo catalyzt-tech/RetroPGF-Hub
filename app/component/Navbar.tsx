@@ -29,7 +29,7 @@ const Navbar = ({
   const [open, setOpen] = useState(false)
   const menu = [
     { name: 'Explore', link: '/explore' },
-    { name: 'Community', link: '/community' },
+    // { name: 'Community', link: '/community' },
     { name: 'Resources', link: '/resource' },
   ]
 

@@ -1,11 +1,11 @@
-import { convertMarkdownToHtml, splitTextNewLine } from '@/app/lib/common'
+import { convertMarkdownToHtml } from '@/app/lib/common'
 import { iRetroPGF6Project } from '../../../RetroType6'
-import { EASProjectMetadata } from '@/app/types/realtime-api-agora'
 
 interface iImpactStatementSection {
   data: iRetroPGF6Project
   impactSectionRef: React.MutableRefObject<HTMLElement | null>
 }
+
 export default function ImpactStatementSection({
   data,
   impactSectionRef,
@@ -18,8 +18,8 @@ export default function ImpactStatementSection({
     >
       <h3 className="text-2xl font-semibold">Impact Statement</h3>
       <hr className="hidden sm:block border-t-gray-100" />
-      {Array.isArray(data.impactIpfs.impactStatement) &&
-        data.impactIpfs.impactStatement.length === 0 && (
+      {Array.isArray(data.impactStatement) &&
+        data.impactStatement.length === 0 && (
           <p className="text-base font-normal text-gray-600">
             There is no impact for this project.
           </p>
@@ -43,17 +43,17 @@ export default function ImpactStatementSection({
             </div>
           </div>
         ))} */}
-      {Array.isArray(data.impactIpfs.impactStatement) &&
-        data.impactIpfs.impactStatement?.length !== 0 &&
-        data.impactIpfs.impactStatement?.map((item: any, i: number) => (
-          <div key={i} className="flex flex-col gap-2">
+      {Array.isArray(data.impactStatement.statement) &&
+        data.impactStatement?.statement.length !== 0 &&
+        data.impactStatement?.statement.map((item: any, i: number) => (
+          <div key={i} className="flex flex-col gap-y-4">
             <div className="text-lg break-words font-semibold text-gray-800">
               {item.question}
             </div>
             <div>
               {item.answer && (
                 <a
-                  className="text-base break-words font-normal text-gray-600"
+                  className="text-base break-words font-normal text-gray-600 space-y-5"
                   dangerouslySetInnerHTML={{
                     __html: convertMarkdownToHtml(item.answer),
                   }}
